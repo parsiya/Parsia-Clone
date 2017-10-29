@@ -14,7 +14,7 @@ Copy of [https://parsiya.net/cheatsheet/][cheat-sheet-ext].
   - [Shortcut to IE \(or WinINET\) Proxy Settings](#shortcut-to-ie-or-wininet-proxy-settings)
 - [Amazon S3](#amazon-s3)
   - [Syncing a folder with an Amazon S3 bucket using s3cmd](#syncing-a-folder-with-an-amazon-s3-bucket-using-s3cmd)
-  - [Changing the mime-type of CSS file after it is uploaded to avoid an old issue](#changing-the-mime-type-of-css-file-after-it-is-uploaded-to-avoid-an-old-issue)
+  - [Changing the mime-type of CSS file after upload to fix CSS not displaying correctly](#changing-the-mime-type-of-css-file-after-upload-to-fix-css-not-displaying-correctly)
 - [Powershell](#powershell)
   - [List all files \(including hidden\)](#list-all-files-including-hidden)
   - [Diff in Powershell](#diff-in-powershell)
@@ -26,6 +26,7 @@ Copy of [https://parsiya.net/cheatsheet/][cheat-sheet-ext].
   - [Only clone a certain branch](#only-clone-a-certain-branch)
   - [Undo remote git history after push](#undo-remote-git-history-after-push)
   - [Update local fork from original repo](#update-local-fork-from-original-repo)
+  - [Use Notepad++ as git editor on Windows via Cygwin](#use-notepad-as-git-editor-on-windows-via-cygwin)
 - [Download Youtube videos with substitles](#download-youtube-videos-with-substitles)
 - [Delete file or directory with a path or name over the Windows limit](#delete-file-or-directory-with-a-path-or-name-over-the-windows-limit)
 - [Print Envelopes Using the Brother Printer and LibreOffice](#print-envelopes-using-the-brother-printer-and-libreoffice)
@@ -86,8 +87,8 @@ For example uploading the Hugo public directory to my website:\\
 * `--acl-public`: Anyone can only read.
 * `--delte-removed`: Delete objects with no corresponding local files.
 
-<a name="changing-the-mime-type-of-css-file-after-it-is-uploaded-to-avoid-an-old-issue"></a>
-### Changing the mime-type of CSS file after it is uploaded to avoid an old issue
+<a name="changing-the-mime-type-of-css-file-after-upload-to-fix-css-not-displaying-correctly"></a>
+### Changing the mime-type of CSS file after upload to fix CSS not displaying correctly
 `python s3cmd --acl-public --no-preserve --mime-type="text/css" put public/css/hugo-octopress.css s3://parsiya.net/css/hugo-octopress.css`
 
 ``` powershell
@@ -221,6 +222,20 @@ Note this will force the update and erase the commit history online. If not one 
 6. Merge upstream/master into local master - `git merge upstream/master`
 
 7. Push changes - `git push`
+
+<a name="use-notepad-as-git-editor-on-windows-via-cygwin"></a>
+### Use Notepad++ as git editor on Windows via Cygwin
+Create a file called `npp` with the following content and copy it to `cygwin\bin`. Modify the path of notepad++ to point to your installation.
+
+``` bash
+'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin "$(cygpath -w "$*")"
+```
+
+Run the following command in Cygwin to set it as global git editor:
+
+```
+$  git config --global core.editor npp
+```
 
 -----------
 
