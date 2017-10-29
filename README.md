@@ -6,10 +6,12 @@ This my clone. I have been maintaining one internally at Cigital/Synopsys since 
 
 - [Clone](#clone)
     - [Cheat Sheet](#cheat-sheet)
-    - [Abandoned "Research"](#abandoned-research)
-        - [BMC Track It 11.2](#bmc-track-it-112)
+    - ["Research" Notes](#research-notes)
+        - [Razer Comms](#razer-comms)
     - [Random](#random)
         - [Migration from Octopress to Hugo](#migration-from-octopress-to-hugo)
+    - [Abandoned "Research"](#abandoned-research)
+        - [BMC Track It 11.2](#bmc-track-it-112)
 - [Code](#code)
     - [Hipchat Proxy](#hipchat-proxy)
     - [Intro to .NET Remoting for Hackers](#intro-to-net-remoting-for-hackers)
@@ -25,16 +27,19 @@ This my clone. I have been maintaining one internally at Cigital/Synopsys since 
 ## Clone
 
 <a name="cheat-sheet"></a>
-### [Cheat Sheet](cheatsheet.md)
+### [Cheat Sheet](cheat-sheet.md)
 Copy of [https://parsiya.net/cheatsheet/][cheat-sheet-ext].
 
-<a name="abandoned-research"></a>
-### [Abandoned "Research"](clone/abandoned-research)
-I started something but gave up in the middle. You can find my notes here.
+-----
 
-<a name="bmc-track-it-112"></a>
-#### [BMC Track It 11.2](clone/abandoned-research/BMC-Track-It-11.2.md)
-Attempting to reproduce a .NET Remoting vulnerability.
+<a name="research-notes"></a>
+### ["Research" Notes](clone/research)
+Stuff I have done, most of these have their own blog posts. The extra notes are here.
+
+<a name="razer-comms"></a>
+#### [Razer Comms](clone/research/razer-comms/)
+
+-----
 
 <a name="random"></a>
 ### [Random](clone/random)
@@ -44,7 +49,19 @@ Random stuff that do not belong anywhere else.
 #### [Migration from Octopress to Hugo](clone/random/octopress-migration.md)
 Random scripts used to convert my Octopress blog to [Hugo][hugo-link], [blog posts][hugo-posts].
 
+-----
+
+<a name="abandoned-research"></a>
+### [Abandoned "Research"](clone/abandoned-research)
+I started something but gave up in the middle. You can find my notes here.
+
+<a name="bmc-track-it-112"></a>
+#### [BMC Track It 11.2](clone/abandoned-research/BMC-Track-It-11.2.md)
+Attempting to reproduce a .NET Remoting vulnerability.
+
 <!-- End Clone -->
+
+-----
 
 <!-- Start Code -->
 <a name="code"></a>

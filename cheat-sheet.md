@@ -1,5 +1,7 @@
 Copy of [https://parsiya.net/cheatsheet/][cheat-sheet-ext].
 
+# Contents
+
 <!-- MarkdownTOC -->
 
 - [Tar](#tar)
@@ -85,7 +87,7 @@ For example uploading the Hugo public directory to my website:\\
 * `--delte-removed`: Delete objects with no corresponding local files.
 
 <a name="changing-the-mime-type-of-css-file-after-it-is-uploaded-to-avoid-an-old-issue"></a>
-### Changing the mime-type of CSS file after it is uploaded to avoid [an old issue]({{< ref "2014-04-22-amazon-s3-and-css.markdown" >}} "Amazon S3 and CSS")
+### Changing the mime-type of CSS file after it is uploaded to avoid an old issue
 `python s3cmd --acl-public --no-preserve --mime-type="text/css" put public/css/hugo-octopress.css s3://parsiya.net/css/hugo-octopress.css`
 
 ``` powershell
