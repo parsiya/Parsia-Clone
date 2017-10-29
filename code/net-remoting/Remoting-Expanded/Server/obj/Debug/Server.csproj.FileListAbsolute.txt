@@ -1,0 +1,8 @@
+c:\users\x64\documents\visual studio 2015\Projects\Remoting-Expanded\Server\bin\Debug\Server.exe.config
+c:\users\x64\documents\visual studio 2015\Projects\Remoting-Expanded\Server\bin\Debug\Server.exe
+c:\users\x64\documents\visual studio 2015\Projects\Remoting-Expanded\Server\bin\Debug\Server.pdb
+c:\users\x64\documents\visual studio 2015\Projects\Remoting-Expanded\Server\bin\Debug\RemotingLibraryExpanded.dll
+c:\users\x64\documents\visual studio 2015\Projects\Remoting-Expanded\Server\bin\Debug\RemotingLibraryExpanded.pdb
+c:\users\x64\documents\visual studio 2015\Projects\Remoting-Expanded\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+c:\users\x64\documents\visual studio 2015\Projects\Remoting-Expanded\Server\obj\Debug\Server.exe
+c:\users\x64\documents\visual studio 2015\Projects\Remoting-Expanded\Server\obj\Debug\Server.pdb
