@@ -1,5 +1,5 @@
 # Parsiya Clone
-This my clone. I have been maintaining one internally at Cigital/Synopsys since mid 2016. It has been decently successful and well received. I have decided to make a public one too. There is going to be a lot of redundancy between here and my [website][parsiya.net] but that is expected. This repository will also contain code and random notes that do not get published there effectively removing the Random-Code and Random-Notes repositories I recently started.
+This is my clone. I have been maintaining one internally at Cigital/Synopsys since mid 2016. It has been decently successful and well received. I have decided to make a public one too. There is going to be a lot of redundancy between here and my [website][parsiya.net] but that is expected. This repository will also contain code and random notes that do not get published there effectively removing the Random-Code and Random-Notes repositories I recently started.
 
 ## Table of Contents
 <!-- MarkdownTOC -->
@@ -10,6 +10,7 @@ This my clone. I have been maintaining one internally at Cigital/Synopsys since 
         - [Razer Comms](#razer-comms)
     - [Random](#random)
         - [Migration from Octopress to Hugo](#migration-from-octopress-to-hugo)
+        - [Call Windows APIs with C++ using MinGW](#call-windows-apis-with-c-using-mingw)
     - [Abandoned "Research"](#abandoned-research)
         - [BMC Track It 11.2](#bmc-track-it-112)
 - [Code](#code)
@@ -38,6 +39,7 @@ Stuff I have done, most of these have their own blog posts. The extra notes are 
 
 <a name="razer-comms"></a>
 #### [Razer Comms](clone/research/razer-comms/)
+Now that Razer Comms has been retired, I am releasing my [mini report][razer-comms-blog] and notes.
 
 -----
 
@@ -49,11 +51,15 @@ Random stuff that do not belong anywhere else.
 #### [Migration from Octopress to Hugo](clone/random/octopress-migration.md)
 Random scripts used to convert my Octopress blog to [Hugo][hugo-link], [blog posts][hugo-posts].
 
+<a name="call-windows-apis-with-c-using-mingw"></a>
+#### [Call Windows APIs with C++ using MinGW](clone/random/mingw-windows.md)
+Simple examples for calling Windows APIs in C++ using MinGW.
+
 -----
 
 <a name="abandoned-research"></a>
 ### [Abandoned "Research"](clone/abandoned-research)
-I started something but gave up in the middle. You can find my notes here.
+I started these things but gave up in the middle. You can find my notes here.
 
 <a name="bmc-track-it-112"></a>
 #### [BMC Track It 11.2](clone/abandoned-research/BMC-Track-It-11.2.md)
@@ -111,5 +117,6 @@ This repository will inevitably contain content from other parts of the internet
 [cheat-sheet-ext]: https://parsiya.net/cheatsheet
 [hugo-posts]: https://parsiya.net/categories/migration-to-hugo/
 [hugo-link]: https://gohugo.io/
+[razer-comms-blog]: https://parsiya.net/blog/2017-09-21-razer-comms/
 
 <!-- End Links -->
