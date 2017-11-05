@@ -10,7 +10,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
         - [Razer Comms](#razer-comms)
     - [Random](#random)
         - [Migration from Octopress to Hugo](#migration-from-octopress-to-hugo)
-        - [Call Windows APIs with C++ using MinGW](#call-windows-apis-with-c-using-mingw)
+        - [Call Windows APIs in C/C++ using MinGW](#call-windows-apis-in-cc-using-mingw)
     - [Abandoned "Research"](#abandoned-research)
         - [BMC Track It 11.2](#bmc-track-it-112)
 - [Code](#code)
@@ -39,7 +39,7 @@ Stuff I have done, most of these have their own blog posts. The extra notes are 
 
 <a name="razer-comms"></a>
 #### [Razer Comms](clone/research/razer-comms/)
-Now that Razer Comms has been retired, I am releasing my [mini report][razer-comms-blog] and notes.
+Razer Comms [mini report][razer-comms-blog] and notes.
 
 -----
 
@@ -51,9 +51,9 @@ Random stuff that do not belong anywhere else.
 #### [Migration from Octopress to Hugo](clone/random/octopress-migration.md)
 Random scripts used to convert my Octopress blog to [Hugo][hugo-link], [blog posts][hugo-posts].
 
-<a name="call-windows-apis-with-c-using-mingw"></a>
-#### [Call Windows APIs with C++ using MinGW](clone/random/mingw-windows.md)
-Simple examples for calling Windows APIs in C++ using MinGW.
+<a name="call-windows-apis-in-cc-using-mingw"></a>
+#### [Call Windows APIs in C/C++ using MinGW](clone/random/mingw-windows.md)
+Simple examples for calling Windows APIs in C/C++ using MinGW.
 
 -----
 
