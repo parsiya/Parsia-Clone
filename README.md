@@ -11,6 +11,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
     - [Random](#random)
         - [Migration from Octopress to Hugo](#migration-from-octopress-to-hugo)
         - [Call Windows APIs in C/C++ using MinGW](#call-windows-apis-in-cc-using-mingw)
+        - [Windows SearchPath](#windows-searchpath)
     - [Abandoned "Research"](#abandoned-research)
         - [BMC Track It 11.2](#bmc-track-it-112)
 - [Code](#code)
@@ -53,7 +54,11 @@ Random scripts used to convert my Octopress blog to [Hugo][hugo-link], [blog pos
 
 <a name="call-windows-apis-in-cc-using-mingw"></a>
 #### [Call Windows APIs in C/C++ using MinGW](clone/random/mingw-windows.md)
-Simple examples for calling Windows APIs in C/C++ using MinGW.
+Notes on installing gcc on Windows and calling Windows APIs in C/C++.
+
+<a name="windows-searchpath"></a>
+#### [Windows SearchPath](clone/random/search-path.md)
+Notes about Windows SearchPath.
 
 -----
 
