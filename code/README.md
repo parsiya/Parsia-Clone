@@ -9,12 +9,19 @@ This table will help.
 
 <!-- MarkdownTOC -->
 
+- [WinAppDbg Tutorials](#winappdbg-tutorials)
 - [Hipchat Proxy](#hipchat-proxy)
 - [.NET Remoting](#net-remoting)
 - [Malware Adventure](#malware-adventure)
 - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
 
 <!-- /MarkdownTOC -->
+
+<a name="winappdbg-tutorials"></a>
+### [WinAppDbg Tutorials](winappdbg)
+Code for my set of WinAppDbg tutorials.
+
+- [Part 1 - Basics][winappdbg-1]
 
 <a name="hipchat-proxy"></a>
 ### [Hipchat Proxy](hipchat-proxy)
@@ -63,3 +70,4 @@ This is a fork of the the Octopress Image Popup Plugin at [https://github.com/ct
 [paws-github]: https://github.com/Moonbase59/PAWS
 [malware-adventure-blog]: https://parsiya.net/blog/2014-09-21-malware-adventure/
 [malware-adventure-github]: https://github.com/parsiya/malwareadventure
+[winappdbg-1]: https://parsiya.net/blog/2017-11-09-winappdbg---part-1---basics/
