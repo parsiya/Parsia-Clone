@@ -15,6 +15,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
     - [Abandoned "Research"](#abandoned-research)
         - [BMC Track It 11.2](#bmc-track-it-112)
 - [Code](#code)
+    - [WinAppDbg Tutorials](#winappdbg-tutorials)
     - [Hipchat Proxy](#hipchat-proxy)
     - [Intro to .NET Remoting for Hackers](#intro-to-net-remoting-for-hackers)
     - [Malware Adventure](#malware-adventure)
@@ -78,6 +79,18 @@ Attempting to reproduce a .NET Remoting vulnerability.
 <a name="code"></a>
 ## Code
 
+<a name="winappdbg-tutorials"></a>
+### [WinAppDbg Tutorials](winappdbg)
+Code for my set of WinAppDbg tutorials.
+
+1. Copy `winappdbg` directory to your Virtual Machine.
+2. Install Python, WinAppDbg and other software using instructions in part 1.
+3. Follow the tutorials and enjoy.
+4. If code is wrong, make an issue here or yell at me on Twitter/email/etc.
+
+- [Part 1 - Basics][winappdbg-1]
+- [Part 2 - Function Hooking and Others][winappdbg-2]
+
 <a name="hipchat-proxy"></a>
 ### [Hipchat Proxy](code/hipchat-proxy)
 Small proxy written in Python for Hipchat, [blog posts][hipchat-posts].
@@ -123,5 +136,7 @@ This repository will inevitably contain content from other parts of the internet
 [hugo-posts]: https://parsiya.net/categories/migration-to-hugo/
 [hugo-link]: https://gohugo.io/
 [razer-comms-blog]: https://parsiya.net/blog/2017-09-21-razer-comms/
+[winappdbg-1]: https://parsiya.net/blog/2017-11-09-winappdbg---part-1---basics/
+[winappdbg-2]: https://parsiya.net/blog/2017-11-11-winappdbg---part-2---function-hooking-and-others/
 
 <!-- End Links -->
