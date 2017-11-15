@@ -80,7 +80,7 @@ Attempting to reproduce a .NET Remoting vulnerability.
 ## Code
 
 <a name="winappdbg-tutorials"></a>
-### [WinAppDbg Tutorials](winappdbg)
+### [WinAppDbg Tutorials](code/winappdbg)
 Code for my set of WinAppDbg tutorials.
 
 1. Copy the `winappdbg` directory to your Virtual Machine.
