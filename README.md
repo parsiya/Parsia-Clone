@@ -14,6 +14,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
         - [Windows SearchPath](#windows-searchpath)
     - [Abandoned "Research"](#abandoned-research)
         - [BMC Track It 11.2](#bmc-track-it-112)
+        - [Learning Triton](#learning-triton)
 - [Code](#code)
     - [WinAppDbg Tutorials](#winappdbg-tutorials)
     - [Hipchat Proxy](#hipchat-proxy)
@@ -70,6 +71,10 @@ I started these things but gave up in the middle. You can find my notes here.
 <a name="bmc-track-it-112"></a>
 #### [BMC Track It 11.2](clone/abandoned-research/BMC-Track-It-11.2.md)
 Attempting to reproduce a .NET Remoting vulnerability.
+
+<a name="learning-triton"></a>
+#### [Learning Triton](clone/abandoned-research/learning-triton.md)
+Notes on [Triton](https://triton.quarkslab.com/) installation.
 
 <!-- End Clone -->
 
