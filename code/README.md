@@ -10,6 +10,7 @@ This table will help.
 <!-- MarkdownTOC -->
 
 - [WinAppDbg Tutorials](#winappdbg-tutorials)
+- [Cryptopals - Golang](#cryptopals---golang)
 - [Hipchat Proxy](#hipchat-proxy)
 - [.NET Remoting](#net-remoting)
 - [Malware Adventure](#malware-adventure)
@@ -30,6 +31,10 @@ Code for my set of WinAppDbg tutorials.
 - [Part 2 - Function Hooking and Others][winappdbg-2]
 - [Part 3 - Manipulating Function Calls][winappdbg-3]
 - [Part 4 - Bruteforcing FlareOn 2017 - Challenge 3][winappdbg-4]
+
+<a name="cryptopals---golang"></a>
+### [Cryptopals - Golang](cryptopals/go)
+Doing the Cryptopals challenges with `lol no generics`.
 
 <a name="hipchat-proxy"></a>
 ### [Hipchat Proxy](hipchat-proxy)

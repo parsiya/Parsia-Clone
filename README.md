@@ -17,6 +17,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
         - [Learning Triton](#learning-triton)
 - [Code](#code)
     - [WinAppDbg Tutorials](#winappdbg-tutorials)
+    - [Cryptopals - Golang](#cryptopals---golang)
     - [Hipchat Proxy](#hipchat-proxy)
     - [Intro to .NET Remoting for Hackers](#intro-to-net-remoting-for-hackers)
     - [Malware Adventure](#malware-adventure)
@@ -97,6 +98,11 @@ Code for my set of WinAppDbg tutorials.
 - [Part 2 - Function Hooking and Others][winappdbg-2]
 - [Part 3 - Manipulating Function Calls][winappdbg-3]
 - [Part 4 - Bruteforcing FlareOn 2017 - Challenge 3][winappdbg-4]
+
+
+<a name="cryptopals---golang"></a>
+### [Cryptopals - Golang](code/cryptopals/go)
+Doing the Cryptopals challenges with `lol no generics`.
 
 <a name="hipchat-proxy"></a>
 ### [Hipchat Proxy](code/hipchat-proxy)
