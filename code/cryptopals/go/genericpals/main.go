@@ -17,15 +17,6 @@ import (
     // "reflect"
 )
 
-// StrToByte converts string to []byte
-// Params:
-//      input: string to be converted to bytes
-//
-// Return: Byte array containing bytes from the string 
-func StrToByte(inputString string) []byte {
-    return []byte(inputString)
-}
-
 // Unhexlify converts an ASCII-Hex encoded string to the corresponding []byte
 // Params:
 //      hexString: string containing bytes
@@ -64,13 +55,13 @@ func B64EncodeByteToStr(inputBytes []byte) string {
 //      inputString: base64 encoded string
 //
 // Return: []byte containing decoded bytes
-func B64DecodeStrToByte(inputString string) []byte {
+func B64DecodeStrToByte(inputString string) ([]byte, error) {
     decoded, err := base64.StdEncoding.DecodeString(inputString)
     if err != nil {
-        return nil
+        return nil, err
     }
     
-    return decoded
+    return decoded, nil
 }
 
 // SameLengthXOR XORs two []byte of same length
@@ -240,7 +231,6 @@ func BreakSingleByteXOR(ciphertext []byte) Result {
 func ReadLines(filePath string) ([]string, error) {
   
   inputFile, err := os.Open(filePath)
-
   if err != nil {
     return nil, err
   }
@@ -310,7 +300,6 @@ func HammingDistance(stringBytes1 []byte, stringBytes2 []byte) int {
 // Return: string containing all characters in the file with new lines removed
 func ReadAllFile(filePath string) (string, error) {
     inputFile, err := os.Open(filePath)
-
     if err != nil {
         return "", err
     }
@@ -345,18 +334,18 @@ func GetTwoSeqBytes(input []byte, size int, n int) (block1, block2 []byte) {
     return block1, block2
 }
 
-// EncryptAESECB encrypts []byte plaintext to []byte ciphertext
+// ECBAESEncrypt encrypts []byte plaintext to []byte ciphertext
 // Params:
 //      plaintext: []byte plaintext
 //      key      : []byte key
 //
-// Return: []byte ciphertext
-func EncryptAESECB(plaintext []byte, key []byte) []byte {
+// Return: []byte ciphertext and error if any
+func ECBAESEncrypt(plaintext []byte, key []byte) ([]byte, error) {
 
     // Get an AES block
     block, err := aes.NewCipher(key)
     if err != nil {
-        panic(err.Error())
+        return nil, err
     }
 
     ciphertext := make([]byte, len(plaintext))
@@ -368,21 +357,21 @@ func EncryptAESECB(plaintext []byte, key []byte) []byte {
         block.Encrypt(ciphertext[i:i+blockSize], plaintext[i:i+blockSize])
     }
 
-    return ciphertext
+    return ciphertext, nil
 }
 
-// DecryptAESECB decrypt []byte ciphertext to []byte plaintext
+// ECBAESDecrypt decrypt []byte ciphertext to []byte plaintext
 // Params:
 //      ciphertext: []byte ciphertext
 //      key       : []byte key
 //
-// Return: []byte plaintext
-func DecryptAESECB(ciphertext []byte, key []byte) []byte {
+// Return: []byte plaintext and error if any
+func ECBAESDecrypt(ciphertext []byte, key []byte) ([]byte, error) {
 
     // Get an AES block
     block, err := aes.NewCipher(key)
     if err != nil {
-        panic(err.Error())
+        return nil, err
     }
 
     plaintext := make([]byte, len(ciphertext))
@@ -394,7 +383,7 @@ func DecryptAESECB(ciphertext []byte, key []byte) []byte {
         block.Decrypt(plaintext[i:i+blockSize], ciphertext[i:i+blockSize])
     }
 
-    return plaintext
+    return plaintext, nil
 }
 
 // SplitBytes splits a []byte into equal lengths of n
@@ -425,25 +414,151 @@ func SplitBytes(inputBytes []byte, n int) [][]byte {
     return splits
 }
 
-// PadPKCS7 pads a []byte to a multiple of blockSize
+// ByteRepeat creates a []byte by repeating a byte
+// It works the same way as bytes.Repeat([]byte, count) but accepts a single byte
+// Params:
+//      repeatByte: byte to be repeated
+//      n: int - number of times to repeat repeatByte
+//
+// Returns: []byte containing repeatByte n times
+func ByteRepeat(repeatByte byte, n int) []byte {
+
+    if n < 0 {
+        panic("Negative repeat count")
+    }
+
+    output := make([]byte, n)
+
+    for i := 0; i < n; i++ {
+        output[i] = repeatByte
+    }
+
+    return output
+}
+
+// PKCS7Pad pads a []byte to a multiple of blockSize
 // Padding value is the number of padded bytes
 // For example if we are padding 4 bytes, padding value will be 0x04
 // Params:
-//      inputBytes: []byte - unpadded input
+//      bytesToPad: []byte - unpadded input
 //      blockSize : int - input will be padded to a multiple of this number
 //
 // Return: []byte - padded input
-// func PadPKCS7(inputBytes []byte, blockSize int) []byte {
+func PKCS7Pad(bytesToPad []byte, blockSize int) []byte {
     
-//     if len(inputBytes) == 0 {
-//         panic("Cannot pad an empty []byte")
-//     }
+    if len(bytesToPad) == 0 {
+        panic("Cannot pad an empty []byte")
+    }
 
-//     padding := len(inputBytes) % blockSize
+    paddingSize := blockSize - (len(bytesToPad) % blockSize)
 
-//     // output := make([]byte, len(inputBytes) + padding)
+    // bytes.Repeat needs []byte - we have int
+    // Thus we use our own function
+    padding := ByteRepeat(byte(paddingSize), paddingSize)
 
-//     outputBytes := append(inputBytes, bytes.Repeat(byte(padding), padding))
+    // Second param of append needs the primitive time of the first param
+    // For example in this case bytesToPad is []byte so padding should be byte
+    // But because it's []byte, we pass it as padding... to pass the bytes
+    // one by one
+    // At this point I am not exactly sure how this works other than it works!
+    outputBytes := append(bytesToPad, padding...)
 
-//     return outputBytes
-// }
+    return outputBytes
+}
+
+// PKCS7Unpad removes PKCS7 padding from []byte if any
+// Reads the last byte, then reads that many bytes. If they are all the same 
+// value then we know padding is correct and we will remove it, otherwise error.
+// Params:
+//      paddedBytes: []byte padded input
+//
+// Return: []byte unpadded input and error if any
+func PKCS7Unpad(paddedBytes []byte) ([]byte, error) {
+
+    paddedLength := len(paddedBytes)
+
+    // Read the last byte
+    padding := paddedBytes[paddedLength-1]
+    paddingLength := int(padding)
+
+    // Check if we even have enough bytes
+    if paddedLength < paddingLength {
+        return nil, errors.New("Input is too small to be padded!")
+    }
+
+    // Read last n bytes
+    for i:=0; i<paddingLength; i++ {
+        if paddedBytes[paddedLength-1-i] != padding {
+
+            errorString := fmt.Sprintf("Wrong padding at byte %d." +
+                                       "\nExpected %x but got %x.",
+                                       padding, paddedBytes[paddedLength-1-i])
+
+            return nil, errors.New(errorString)
+        }
+    }
+
+    return paddedBytes[:paddedLength-paddingLength], nil
+}
+
+// CBCAESDecrypt decrypts []byte from using AES-CBC
+// Params:
+//      ciphertext: []byte - encrypted data
+//      key: []byte - should be aes.BlockSize (16) bytes
+//      iv : []byte - Initialization Vector, should be aes.BlockSize (16) bytes
+//
+// Returns: []byte - decrypted string and error if any
+func CBCAESDecrypt(ciphertext, key, iv []byte) ([]byte, error) {
+
+    // 1. Check if ciphertext is a multiple of aes.BlockSize
+    if len(ciphertext) % aes.BlockSize != 0 {
+        errorString := fmt.Sprintf("Ciphertext is %d bytes which is not" +
+                                   "a multiple of %d (aes.BlockSize).",
+                                   len(ciphertext), aes.BlockSize)
+
+        return nil, errors.New(errorString)
+    }
+
+    // 2. Check if IV and aes.BlockSize are of same length
+    if len(iv) != aes.BlockSize {
+        errorString := fmt.Sprintf("IV has wrong length." + 
+                                   "\nExpected %d, got %d",
+                                   aes.BlockSize, len(iv))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 3. Split the ciphertext into aes.BlockSize (16) byte blocks
+    blocks := SplitBytes(ciphertext, aes.BlockSize)
+
+    // 4.  For each block
+    // 4.1 ECBAESDecrypt the block
+    // 4.2 XOR with IV
+    // 4.3 store plaintext
+    // 4.4 IV := block (old ciphertext)
+
+    var plaintext []byte
+
+    for _, block := range blocks {
+        // 4.1 ECBAESDecrypt the block
+        decryptedBlock, err := ECBAESDecrypt(block, key)
+
+        // Check if it was decrypted correctly
+        if err != nil {
+            return nil, err
+        }
+
+        // 4.2 XOR with IV
+        decryptedBlock = XOR(decryptedBlock, iv)
+
+        // 4.3 store plaintext
+        plaintext = append(plaintext, decryptedBlock...)
+
+        // 4.4 IV := block (old ciphertext)
+        iv = block
+    }
+
+    return plaintext, nil
+}
+
+

@@ -97,8 +97,11 @@ func main() {
     }
 
     // Convert from base64 to decoded []byte
-    cipherBytes := genericpals.B64DecodeStrToByte(inputString)
-
+    cipherBytes, err := genericpals.B64DecodeStrToByte(inputString)
+    if err != nil {
+        panic(err)
+    }
+    
     type ham struct {
         Keysize int
         AvgDist float32

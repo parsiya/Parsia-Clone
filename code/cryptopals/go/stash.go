@@ -1,3 +1,5 @@
+// Code that is not used (yet)
+
 
 // StrToByte converts string to []byte
 // Params:

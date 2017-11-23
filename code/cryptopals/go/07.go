@@ -33,12 +33,19 @@ func main() {
     }
 
     // Convert from base64 to decoded []byte
-    cipherBytes := genericpals.B64DecodeStrToByte(inputString)
-
+    cipherBytes, err := genericpals.B64DecodeStrToByte(inputString)
+    if err != nil {
+        panic(err)
+    }
+    
     // Convert Key to []byte
     key := []byte(Key)
 
-    plaintext := genericpals.DecryptAESECB(cipherBytes, key)
+    plaintext, err := genericpals.ECBAESDecrypt(cipherBytes, key)
+
+    if err != nil {
+        panic(err)
+    }
 
     // Last 4 bytes will be padding 0x04
     plaintext = plaintext[:len(plaintext)-4]
