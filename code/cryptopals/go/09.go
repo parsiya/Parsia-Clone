@@ -29,7 +29,7 @@ func main() {
     unpadded  := "YELLOW SUBMARINE"
     blockSize := 20
 
-    padded := genericpals.PKCS7Pad([]byte(unpadded), blockSize)
+    padded := genericpals.PadPKCS7([]byte(unpadded), blockSize)
 
     fmt.Println(padded)
     fmt.Println(string(padded))
@@ -40,7 +40,7 @@ func main() {
     // padding or real data. This way we know it's real data because we have
     // one full block of padding after that.
     // As a result when unpadding, we know there's always padding to remove.
-    fmt.Println((genericpals.PKCS7Pad([]byte("0123456789"), 10)))
-    fmt.Println((genericpals.PKCS7Pad([]byte("Hello"), 5)))
+    fmt.Println((genericpals.PadPKCS7([]byte("0123456789"), 10)))
+    fmt.Println((genericpals.PadPKCS7([]byte("Hello"), 5)))
 
 }

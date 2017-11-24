@@ -14,6 +14,10 @@ import (
     "strings"
     "math/bits"
     "crypto/aes"
+    "time"
+    "math/rand"
+    "net/url"
+    "encoding/json"
     // "reflect"
 )
 
@@ -154,7 +158,7 @@ var frequency = map[string]float64 {
     " ": 0.1918182,
 }
 
-// printableEnglish returns a score based on closeness of the input string to
+// PrintableEnglish returns a score based on closeness of the input string to
 // the English language
 // All chars are parsed, for each char with a value in the frequency map, the
 // score is increased by the frequency value
@@ -334,15 +338,33 @@ func GetTwoSeqBytes(input []byte, size int, n int) (block1, block2 []byte) {
     return block1, block2
 }
 
-// ECBAESEncrypt encrypts []byte plaintext to []byte ciphertext
+// EncryptECB encrypts []byte plaintext to []byte ciphertext
 // Params:
 //      plaintext: []byte plaintext
 //      key      : []byte key
 //
 // Return: []byte ciphertext and error if any
-func ECBAESEncrypt(plaintext []byte, key []byte) ([]byte, error) {
+func EncryptECB(plaintext []byte, key []byte) ([]byte, error) {
 
-    // Get an AES block
+    // 1. Check if plaintext is a multiple of 16
+    if len(plaintext) % 16 != 0 {
+        errorString := fmt.Sprintf("Plaintext is %d bytes which is not " +
+                                   "a multiple of 16.",
+                                   len(plaintext))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 2. Check if key and 16 are of same length
+    if len(key) != 16 {
+        errorString := fmt.Sprintf("Key has wrong length." + 
+                                   "\nExpected %d, got %d",
+                                   16, len(key))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 3. Get an AES block
     block, err := aes.NewCipher(key)
     if err != nil {
         return nil, err
@@ -350,25 +372,41 @@ func ECBAESEncrypt(plaintext []byte, key []byte) ([]byte, error) {
 
     ciphertext := make([]byte, len(plaintext))
 
-    // This should be 16 for AES forever and ever
-    blockSize := block.BlockSize()
-
-    for i:= 0; i<len(plaintext); i+=blockSize {
-        block.Encrypt(ciphertext[i:i+blockSize], plaintext[i:i+blockSize])
+    // 4. Encrypt each block individually and store
+    for i:= 0; i<len(plaintext); i+=16 {
+        block.Encrypt(ciphertext[i:i+16], plaintext[i:i+16])
     }
 
     return ciphertext, nil
 }
 
-// ECBAESDecrypt decrypt []byte ciphertext to []byte plaintext
+// DecryptECB decrypt []byte ciphertext to []byte plaintext
 // Params:
 //      ciphertext: []byte ciphertext
 //      key       : []byte key
 //
 // Return: []byte plaintext and error if any
-func ECBAESDecrypt(ciphertext []byte, key []byte) ([]byte, error) {
+func DecryptECB(ciphertext []byte, key []byte) ([]byte, error) {
 
-    // Get an AES block
+    // 1. Check if ciphertext is a multiple of 16
+    if len(ciphertext) % 16 != 0 {
+        errorString := fmt.Sprintf("Ciphertext is %d bytes which is not " +
+                                   "a multiple of 16.",
+                                   len(ciphertext))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 2. Check if key and 16 are of same length
+    if len(key) != 16 {
+        errorString := fmt.Sprintf("Key has wrong length." + 
+                                   "\nExpected %d, got %d",
+                                   16, len(key))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 3. Get an AES block
     block, err := aes.NewCipher(key)
     if err != nil {
         return nil, err
@@ -376,11 +414,8 @@ func ECBAESDecrypt(ciphertext []byte, key []byte) ([]byte, error) {
 
     plaintext := make([]byte, len(ciphertext))
 
-    // This should be 16 for AES forever and ever
-    blockSize := block.BlockSize()
-
-    for i:=0; i<len(ciphertext); i+=blockSize {
-        block.Decrypt(plaintext[i:i+blockSize], ciphertext[i:i+blockSize])
+    for i:=0; i<len(ciphertext); i+=16 {
+        block.Decrypt(plaintext[i:i+16], ciphertext[i:i+16])
     }
 
     return plaintext, nil
@@ -436,7 +471,39 @@ func ByteRepeat(repeatByte byte, n int) []byte {
     return output
 }
 
-// PKCS7Pad pads a []byte to a multiple of blockSize
+// IsECB attempts to detect ECB mode based on repeated blocks
+// Input is split into 16 and then a score is calculated where it's
+// incremented by the number of repeated blocks minus the original
+// Params:
+//      ciphertext: []byte containing ciphertext
+//
+// Return: true if ECB mode is detected and error if applicable
+func IsECB(ciphertext []byte) (bool, error) {
+
+    if len(ciphertext) % 16 != 0 {
+        errorString := fmt.Sprintf("Ciphertext is not a multiple of %d", 
+                                   16)
+        return false, errors.New(errorString)
+    }
+
+    // Split into 16 byte
+    splits := SplitBytes(ciphertext, 16)
+
+    count := 0
+
+    // Calculate the number of occurrences-1 
+    for _, block := range splits {
+        count += (bytes.Count(ciphertext, block) - 1)
+    }
+
+    if count > 1 {
+        return true, nil
+    }
+
+    return false, nil
+}
+
+// PadPKCS7 pads a []byte to a multiple of blockSize
 // Padding value is the number of padded bytes
 // For example if we are padding 4 bytes, padding value will be 0x04
 // Params:
@@ -444,7 +511,7 @@ func ByteRepeat(repeatByte byte, n int) []byte {
 //      blockSize : int - input will be padded to a multiple of this number
 //
 // Return: []byte - padded input
-func PKCS7Pad(bytesToPad []byte, blockSize int) []byte {
+func PadPKCS7(bytesToPad []byte, blockSize int) []byte {
     
     if len(bytesToPad) == 0 {
         panic("Cannot pad an empty []byte")
@@ -466,14 +533,14 @@ func PKCS7Pad(bytesToPad []byte, blockSize int) []byte {
     return outputBytes
 }
 
-// PKCS7Unpad removes PKCS7 padding from []byte if any
+// UnpadPKCS7 removes PKCS7 padding from []byte if any
 // Reads the last byte, then reads that many bytes. If they are all the same 
 // value then we know padding is correct and we will remove it, otherwise error.
 // Params:
 //      paddedBytes: []byte padded input
 //
 // Return: []byte unpadded input and error if any
-func PKCS7Unpad(paddedBytes []byte) ([]byte, error) {
+func UnpadPKCS7(paddedBytes []byte) ([]byte, error) {
 
     paddedLength := len(paddedBytes)
 
@@ -501,38 +568,49 @@ func PKCS7Unpad(paddedBytes []byte) ([]byte, error) {
     return paddedBytes[:paddedLength-paddingLength], nil
 }
 
-// CBCAESDecrypt decrypts []byte from using AES-CBC
+// DecryptCBC decrypts []byte using AES-CBC
 // Params:
 //      ciphertext: []byte - encrypted data
-//      key: []byte - should be aes.BlockSize (16) bytes
-//      iv : []byte - Initialization Vector, should be aes.BlockSize (16) bytes
+//      key: []byte - should be 16 bytes
+//      iv : []byte - Initialization Vector, should be 16 bytes
 //
 // Returns: []byte - decrypted string and error if any
-func CBCAESDecrypt(ciphertext, key, iv []byte) ([]byte, error) {
+func DecryptCBC(ciphertext, key, iv []byte) ([]byte, error) {
 
-    // 1. Check if ciphertext is a multiple of aes.BlockSize
-    if len(ciphertext) % aes.BlockSize != 0 {
-        errorString := fmt.Sprintf("Ciphertext is %d bytes which is not" +
-                                   "a multiple of %d (aes.BlockSize).",
-                                   len(ciphertext), aes.BlockSize)
+    // 1. Check if ciphertext is a multiple of 16
+    if len(ciphertext) % 16 != 0 {
+        errorString := fmt.Sprintf("Ciphertext is %d bytes which is not " +
+                                   "a multiple of 16.",
+                                   len(ciphertext))
 
         return nil, errors.New(errorString)
     }
 
-    // 2. Check if IV and aes.BlockSize are of same length
-    if len(iv) != aes.BlockSize {
+    // 2. Check if IV and 16 are of same length
+    if len(iv) != 16 {
         errorString := fmt.Sprintf("IV has wrong length." + 
                                    "\nExpected %d, got %d",
-                                   aes.BlockSize, len(iv))
+                                   16, len(iv))
 
         return nil, errors.New(errorString)
     }
 
-    // 3. Split the ciphertext into aes.BlockSize (16) byte blocks
-    blocks := SplitBytes(ciphertext, aes.BlockSize)
+    // 2.5 Check if key and 16 are of same length
+    if len(key) != 16 {
+        errorString := fmt.Sprintf("Key has wrong length." + 
+                                   "\nExpected %d, got %d",
+                                   16, len(key))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 3. Split the ciphertext into 16 byte blocks
+    blocks := SplitBytes(ciphertext, 16)
 
     // 4.  For each block
-    // 4.1 ECBAESDecrypt the block
+    // https://upload.wikimedia.org/wikipedia/commons/2/2a/CBC_decryption.svg
+
+    // 4.1 DecryptECB the block
     // 4.2 XOR with IV
     // 4.3 store plaintext
     // 4.4 IV := block (old ciphertext)
@@ -540,8 +618,8 @@ func CBCAESDecrypt(ciphertext, key, iv []byte) ([]byte, error) {
     var plaintext []byte
 
     for _, block := range blocks {
-        // 4.1 ECBAESDecrypt the block
-        decryptedBlock, err := ECBAESDecrypt(block, key)
+        // 4.1 DecryptECB the block
+        decryptedBlock, err := DecryptECB(block, key)
 
         // Check if it was decrypted correctly
         if err != nil {
@@ -561,4 +639,228 @@ func CBCAESDecrypt(ciphertext, key, iv []byte) ([]byte, error) {
     return plaintext, nil
 }
 
+// EncryptCBC encrypts []byte using AES-CBC
+// Params:
+//      plaintext: []byte
+//      key: []byte - should be 16 bytes
+//      iv : []byte - Initialization Vector, should be 16 bytes
+//
+// Returns: []byte - encrypted string and error if any
+func EncryptCBC(plaintext, key, iv []byte) ([]byte, error) {
 
+    // 1. Check if ciphertext is a multiple of 16
+    if len(plaintext) % 16 != 0 {
+        errorString := fmt.Sprintf("Plaintext is %d bytes which is not " +
+                                   "a multiple of 16.",
+                                   len(plaintext))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 2. Check if IV and 16 are of same length
+    if len(iv) != 16 {
+        errorString := fmt.Sprintf("IV has wrong length." + 
+                                   "\nExpected %d, got %d",
+                                   16, len(iv))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 2.5 Check if key and 16 are of same length
+    if len(key) != 16 {
+        errorString := fmt.Sprintf("Key has wrong length." + 
+                                   "\nExpected %d, got %d",
+                                   16, len(key))
+
+        return nil, errors.New(errorString)
+    }
+
+    // 3. Split the plaintext into 16 byte blocks
+    blocks := SplitBytes(plaintext, 16)
+
+    // 4.  For each block
+    // https://upload.wikimedia.org/wikipedia/commons/8/80/CBC_encryption.svg
+
+    // 4.1 XOR with IV
+    // 4.2 EncryptECB the block
+    // 4.3 store ciphertext
+    // 4.4 IV := ciphertext
+
+    var ciphertext []byte
+
+    for _, block := range blocks {
+
+        // 4.1 XOR with IV
+        encryptedBlock := XOR(block, iv)
+
+        // 4.2 EncryptECB the block
+        encryptedBlock, err := EncryptECB(encryptedBlock, key)
+        if err != nil {
+            return nil, err
+        }
+
+        // 4.3 store ciphertext
+        ciphertext = append(ciphertext, encryptedBlock...)
+
+        // 4.4 IV := encryptedBlock
+        iv = encryptedBlock
+    }
+
+    return ciphertext, nil
+}
+
+// NSARand returns an NSA sponsored random number generator seeded by timestamp
+// Powered by math/rand, don't use for anything important
+//
+// Return: *rand.Rand
+func NSARand() *rand.Rand {
+
+    // Need to wait a bit between grabbing random bytes otherwise the output
+    // from different applications is the same if done back to back
+    // Same happens on https://play.golang.org/p/gjI3kNgZ4l
+    time.Sleep(1 * time.Millisecond)
+
+    // Create a seed
+    seed := rand.NewSource(time.Now().UnixNano())
+    // Seed the RNG and return
+    return rand.New(seed)
+}
+
+
+// RandomBytes returns a []byte with n "random" bytes
+// Powered by math/rand, don't use for anything important
+// Params:
+//      n: int - number o random bytes to return
+//
+// Return: []byte containing random bytes
+func RandomBytes(n int) []byte {
+
+    backdoored := NSARand()
+
+    randomBytes := make([]byte, n)
+    backdoored.Read(randomBytes)
+
+    return randomBytes
+}
+
+// RandomIntRange returns a "random" int in [lower, upper)
+// Powered by math/rand, don't use for anything important
+// Params:
+//      lower: int - lower range
+//      upper: int - upper range
+//
+// Return: int - "random" between [lower, upper)
+func RandomIntRange(lower, upper int) int {
+
+    backdoored := NSARand()
+    return backdoored.Intn(upper - lower) + lower
+}
+
+// EncryptionOracle encrypts input with random key according to cryptopals
+// challenge 11 requirements:
+//      encryption: AES
+//      key: random
+//      5-10 bytes added to the beginning or the end of input
+//      ECB 50% of the time and CBC the rest with a random IV
+//
+// Params:
+//      plaintext: []byte to be encrypted
+//
+// Return: []byte ciphertext
+func EncryptionOracle(plaintext []byte) []byte {
+
+    // Generate a random key
+    key := RandomBytes(16)
+
+    // Bytes to add to start and end
+    beforeBytes := RandomBytes(RandomIntRange(5, 10))
+    afterBytes  := RandomBytes(RandomIntRange(5, 10))
+
+    plaintext = append(beforeBytes, plaintext...)
+    plaintext = append(plaintext, afterBytes...)
+
+    plaintext = PadPKCS7(plaintext, 16)
+
+    var encrypted []byte
+    // Choose ECB or CBC
+    if mode := RandomIntRange(0, 2); mode > 0 {
+        // ECB
+        fmt.Println("ECB")
+        enc, err := EncryptECB(plaintext, key)
+        if err != nil {
+            panic(err)
+        }
+        encrypted = enc
+    } else {
+        // CBC
+        fmt.Println("CBC")
+        iv := RandomBytes(16)
+        enc, err := EncryptCBC(plaintext, key, iv)
+        if err != nil {
+            panic(err)
+        }
+        encrypted = enc
+    }
+
+    return encrypted
+}
+
+// ECBOracle appends the target text to our input and encrypts it in ECB mode
+// with a constant key for challenge 12
+// challenge 11 requirements:
+// Params:
+//      input: []byte containing our input
+//
+// Return: []byte ciphertext and errors if any
+func ECBOracle(input []byte) ([]byte, error) {
+
+    key := []byte("0123456789012345")
+
+    unknown := "Um9sbGluJyBpbiBteSA1LjAKV2l0aCBteSByYWctdG9wIGRvd24gc28gbXkg" +
+               "aGFpciBjYW4gYmxvdwpUaGUgZ2lybGllcyBvbiBzdGFuZGJ5IHdhdmluZyBq" +
+               "dXN0IHRvIHNheSBoaQpEaWQgeW91IHN0b3A/IE5vLCBJIGp1c3QgZHJvdmUg" +
+               "YnkK"
+
+    // Decode unknown bytes
+    unknownBytes, err := B64DecodeStrToByte(unknown)
+    if err != nil {
+        return nil, err
+    }
+
+    // Append our input to unknown bytes
+    plaintext := append(input, unknownBytes...)
+
+    // Pad them all to blocksize
+    plaintext = PadPKCS7(plaintext, 16)
+
+    // ECB encrypt with constant key
+    enc, err := EncryptECB(plaintext, key)
+    if err != nil {
+        return nil, err
+    }
+
+    return enc, nil
+}
+
+// QueryToJSON converts a query string into JSON
+// Params:
+//      queryString: string - key1=value1&key2=value2
+//
+// Return: []byte - JSON object with the parsed query string and error
+func QueryToJSON(queryString string) ([]byte, error) {
+
+    parsedQuery, err := url.ParseQuery(queryString)
+    if err != nil {
+        return nil, err
+    }
+
+    jsonString, err := json.Marshal(parsedQuery)
+    if err != nil {
+        return nil, err
+    }
+
+    return jsonString, nil
+
+}
+
+//

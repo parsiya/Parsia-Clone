@@ -41,14 +41,14 @@ func main() {
     // Convert Key to []byte
     key := []byte(Key)
 
-    plaintext, err := genericpals.ECBAESDecrypt(cipherBytes, key)
+    plaintext, err := genericpals.DecryptECB(cipherBytes, key)
 
     if err != nil {
         panic(err)
     }
 
     // Last 4 bytes will be padding 0x04
-    plaintext = plaintext[:len(plaintext)-4]
+    plaintext, _ = genericpals.UnpadPKCS7(plaintext)
 
     fmt.Printf("%s", string(plaintext))
 }

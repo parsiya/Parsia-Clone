@@ -14,7 +14,6 @@ package main
 
 import (
     "genericpals"
-    "bytes"
     "fmt"
     "crypto/aes"
 )
@@ -24,7 +23,6 @@ const DataFile = "data\\08.txt"
 
 func main() {
     allCiphers, err := genericpals.ReadLines(DataFile)
-
     if err != nil {
         panic(err)
     }
@@ -34,17 +32,13 @@ func main() {
         // Convert to byte
         byteCipher := genericpals.Unhexlify(cipher)
 
-        // Split into 16 byte
-        splits := genericpals.SplitBytes(byteCipher, aes.BlockSize)
-
-        count := 0
-
-        for _, part := range splits {
-
-            count += (bytes.Count(byteCipher, part) - 1)
+        isECB, err := genericpals.IsECB(byteCipher)
+        if err != nil {
+            panic(err)
         }
-
-        if count > 1 {
+        
+        if isECB {
+            splits := genericpals.SplitBytes(byteCipher, aes.BlockSize)
             for _, part := range splits {
                 fmt.Println(genericpals.Hexlify(part))
             }

@@ -33,9 +33,6 @@ const (
     StringKey = "YELLOW SUBMARINE"
 )
 
-// Because I always forget
-// https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CBC_decryption.svg/601px-CBC_decryption.svg.png
-
 func main() {
 
     // Create []byte IV and key
@@ -55,16 +52,16 @@ func main() {
     }
     
     // Decrypt AES-CBC
-    plaintext, err := genericpals.CBCAESDecrypt(byteCipher, key, iv)
+    plaintext, err := genericpals.DecryptCBC(byteCipher, key, iv)
     if err != nil {
         panic(err)
     }
     
     // PKCS7 unpad
-    unpaddedPlaintext, err := genericpals.PKCS7Unpad(plaintext)
+    unpaddedPlaintext, err := genericpals.UnpadPKCS7(plaintext)
     if err != nil {
         panic(err)
     }
-
+    
     fmt.Println(string(unpaddedPlaintext))
 }
