@@ -67,7 +67,7 @@ func main() {
     var blockSize int
     var inp1 []byte
 
-    enc1, err := genericpals.ECBOracle(inp1)
+    enc1, err := genericpals.ECBOracle12(inp1)
     if err != nil {
         panic(err)
     }
@@ -76,7 +76,7 @@ func main() {
 
     for i:=0; i<MaxBlockSize; i++ {
         inp1 = genericpals.ByteRepeat(byte(0x41), i)
-        enc2, err := genericpals.ECBOracle(inp1)
+        enc2, err := genericpals.ECBOracle12(inp1)
         if err != nil {
             panic(err)
         }
@@ -93,7 +93,7 @@ func main() {
     // Detect ECB mode
     // Send in three identical blocks of input and use IsECB
     ecbInput := genericpals.ByteRepeat(byte(0x41), 3*blockSize)
-    ecbEnc, err := genericpals.ECBOracle(ecbInput)
+    ecbEnc, err := genericpals.ECBOracle12(ecbInput)
     if err != nil {
         panic(err)
     }
@@ -129,7 +129,7 @@ func main() {
             // fmt.Println(static)
 
             // Grab the result from the oracle
-            target, _ := genericpals.ECBOracle(static)
+            target, _ := genericpals.ECBOracle12(static)
 
             // Start bruteforcing
             for j:=0; j<0x100; j++ {
@@ -142,7 +142,7 @@ func main() {
                 dynamic = append(dynamic, b)
 
                 // Ask the oracle
-                bruteforce, _ := genericpals.ECBOracle(dynamic)
+                bruteforce, _ := genericpals.ECBOracle12(dynamic)
 
                 // Compare if they match
                 cmp1 := bruteforce[currentBlock*16:(currentBlock+1)*16]

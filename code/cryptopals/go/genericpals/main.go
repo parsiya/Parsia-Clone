@@ -511,6 +511,9 @@ func IsECB(ciphertext []byte) (bool, error) {
 //      blockSize : int - input will be padded to a multiple of this number
 //
 // Return: []byte - padded input
+// If input is exactly a multiple of blockSize, we add a complete block of
+// padding. This is done to differentiate between the last byte of input being
+// 0x01 vs. when the last block is 15 bytes and it gets a 0x01 padding byte
 func PadPKCS7(bytesToPad []byte, blockSize int) []byte {
     
     if len(bytesToPad) == 0 {
@@ -805,16 +808,15 @@ func EncryptionOracle(plaintext []byte) []byte {
     return encrypted
 }
 
-// ECBOracle appends the target text to our input and encrypts it in ECB mode
+// ECBOracle12 appends the target text to our input and encrypts it in ECB mode
 // with a constant key for challenge 12
-// challenge 11 requirements:
 // Params:
 //      input: []byte containing our input
 //
 // Return: []byte ciphertext and errors if any
-func ECBOracle(input []byte) ([]byte, error) {
+func ECBOracle12(input []byte) ([]byte, error) {
 
-    key := []byte("0123456789012345")
+    ch12Key := []byte("0123456789012345")
 
     unknown := "Um9sbGluJyBpbiBteSA1LjAKV2l0aCBteSByYWctdG9wIGRvd24gc28gbXkg" +
                "aGFpciBjYW4gYmxvdwpUaGUgZ2lybGllcyBvbiBzdGFuZGJ5IHdhdmluZyBq" +
@@ -834,7 +836,7 @@ func ECBOracle(input []byte) ([]byte, error) {
     plaintext = PadPKCS7(plaintext, 16)
 
     // ECB encrypt with constant key
-    enc, err := EncryptECB(plaintext, key)
+    enc, err := EncryptECB(plaintext, ch12Key)
     if err != nil {
         return nil, err
     }
@@ -860,7 +862,172 @@ func QueryToJSON(queryString string) ([]byte, error) {
     }
 
     return jsonString, nil
+}
+
+// ProfileFor13 creates a query string URL based on user's email for challenge 13
+// profile_for("foo@bar.com") should return "email=foo@bar.com&uid=10&role=user"
+// Params:
+//      email: string - user's email
+//
+// Return: string containing the query string
+func ProfileFor13(email string) string {
+    
+    value := url.Values{}
+    value.Add("email", email)
+
+    // Using value.Add will change the sequence and sort the attributes
+    // meaning it will be role=user&uid=10
+    // value.Add("uid", "10")
+    // value.Add("role", "user")
+
+    encoded := value.Encode()
+
+    encoded, _ = url.QueryUnescape(encoded)
+
+    return encoded+"&uid=10&role=user"
+}
+
+// EncryptProfile13 creates a userprofile based on their email using ProfileFor13
+// and then encrypts it in ECB mode using a static AES key for challenge 13
+// Params:
+//      email: string - user's email and error if applicable
+//
+// Return: encryptedProfile - []byte
+func EncryptProfile13(email string) ([]byte , error) {
+
+    ch13Key := []byte("0123456789012345")
+
+    // Create profile
+    profile := ProfileFor13(email)
+    // Convert to []byte
+    profileBytes := []byte(profile)
+    // Pad it to blocksize
+    profileBytes = PadPKCS7(profileBytes, 16)
+
+    // encryptedProfile, err := EncryptECB(profileBytes, ch13Key)
+    // if err != nil {
+    //     return nil, err
+    // }
+
+    // return encryptedProfile, nil
+
+    // Save a few instructions and look kewl
+    return EncryptECB(profileBytes, ch13Key)
+}
+
+// DecryptProfile13 decrypts a userprofile, parses the query string and returns JSON
+// Params:
+//      encryptedProfile: []byte encrypted bytes
+//
+// Return: profile: string - JSON object with user profile and errors if any
+func DecryptProfile13(encryptedProfile []byte) (string, error) {
+
+    ch13Key := []byte("0123456789012345")
+
+    // Check if encryptedProfile length is a multiple of 16
+    if len(encryptedProfile) % 16 != 0 {
+        errorString := fmt.Sprintf("Input length %d is not a multiple of 16\n",
+                                  len(encryptedProfile))
+        return "", errors.New(errorString)
+    }
+
+    decryptedProfile, err := DecryptECB(encryptedProfile, ch13Key)
+    if err != nil {
+        return "", err
+    }
+   
+    return string(decryptedProfile), err
 
 }
 
+// ECBOracle14 prepends a number of random bytes to our input, appends it with
+// the target text and encrypts it in ECB with a constant key for challenge 14
+// Params:
+//      input: []byte containing our input
 //
+// Return: []byte ciphertext and errors if any
+func ECBOracle14(input []byte) ([]byte, error) {
+
+    key := []byte("0123456789012345")
+
+    unknown := "Um9sbGluJyBpbiBteSA1LjAKV2l0aCBteSByYWctdG9wIGRvd24gc28gbXkg" +
+               "aGFpciBjYW4gYmxvdwpUaGUgZ2lybGllcyBvbiBzdGFuZGJ5IHdhdmluZyBq" +
+               "dXN0IHRvIHNheSBoaQpEaWQgeW91IHN0b3A/IE5vLCBJIGp1c3QgZHJvdmUg" +
+               "YnkK"
+
+    // Decode unknown bytes
+    unknownBytes, err := B64DecodeStrToByte(unknown)
+    if err != nil {
+        return nil, err
+    }
+
+    // THE LENGTH OF PREFIX IS UNKNOWN BUT CONSTANT
+    // Intially I was generating a random-length prefix which makes solving
+    // almost impossible
+    beforeBytes := RandomBytes(25)
+
+    plaintext := append(beforeBytes, input...)
+
+    // fmt.Println(len(plaintext))
+
+    // Append our input to unknown bytes
+    plaintext = append(plaintext, unknownBytes...)
+
+    // Pad them all to blocksize
+    plaintext = PadPKCS7(plaintext, 16)
+
+    // ECB encrypt with constant key
+    enc, err := EncryptECB(plaintext, key)
+    if err != nil {
+        return nil, err
+    }
+
+    return enc, nil
+}
+
+// CBCEncrypt16 prepends and appends user input with two strings, uses PKCS7 to
+// pad them and finally encrypt everything with unknown but static key, IV
+// using AES-CBC for challenge 16
+// Params:
+//      input: string - user input
+//
+// Return: ciphertext: []byte containing encrypted text
+func CBCEncrypt16(input string) []byte {
+    
+    key := []byte("0123456789012345")
+    iv  := []byte("AnimeWasAMistake")
+
+    preString  := "comment1=cooking%20MCs;userdata="
+    postString := ";comment2=%20like%20a%20pound%20of%20bacon"
+
+    newString := preString + input + postString
+
+    newBytes := []byte(newString)
+    paddedBytes := PadPKCS7(newBytes, 16)
+
+    enc, err := EncryptCBC(paddedBytes, key, iv)
+    if err != nil {
+        panic(err)
+    }
+    
+    return enc
+}
+
+// CBCDecrypt16 decrypts the input and returns true if it contains ";admin=true"
+// otherwise returns false
+// Params:
+//      encrypted: []byte - encrypted bytes
+//
+// Return: bool - true if decrypted string contains ";admin=true"
+func CBCDecrypt16(input []byte) bool {
+
+    key := []byte("0123456789012345")
+    iv  := []byte("AnimeWasAMistake")
+
+    dec, err := DecryptCBC(input, key, iv)
+    if err != nil {
+        return false
+    }
+    
+    return strings.Contains(string(dec), ";admin=true")
+}
