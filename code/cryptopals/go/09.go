@@ -20,27 +20,27 @@ of padding to the end of the block. For instance,
 package main
 
 import (
-    "genericpals"
-    "fmt"
+	"fmt"
+	"genericpals"
 )
 
 func main() {
-    
-    unpadded  := "YELLOW SUBMARINE"
-    blockSize := 20
 
-    padded := genericpals.PadPKCS7([]byte(unpadded), blockSize)
+	unpadded := "YELLOW SUBMARINE"
+	blockSize := 20
 
-    fmt.Println(padded)
-    fmt.Println(string(padded))
+	padded := genericpals.PadPKCS7([]byte(unpadded), blockSize)
 
-    // Check if we add a full block of padding if input is a multiple of
-    // block size. This is done to prevent data lose.
-    // For example if the last byte of input is 0x01, how do we know if it's
-    // padding or real data. This way we know it's real data because we have
-    // one full block of padding after that.
-    // As a result when unpadding, we know there's always padding to remove.
-    fmt.Println((genericpals.PadPKCS7([]byte("0123456789"), 10)))
-    fmt.Println((genericpals.PadPKCS7([]byte("Hello"), 5)))
+	fmt.Println(padded)
+	fmt.Println(string(padded))
+
+	// Check if we add a full block of padding if input is a multiple of
+	// block size. This is done to prevent data lose.
+	// For example if the last byte of input is 0x01, how do we know if it's
+	// padding or real data. This way we know it's real data because we have
+	// one full block of padding after that.
+	// As a result when unpadding, we know there's always padding to remove.
+	fmt.Println((genericpals.PadPKCS7([]byte("0123456789"), 10)))
+	fmt.Println((genericpals.PadPKCS7([]byte("Hello"), 5)))
 
 }

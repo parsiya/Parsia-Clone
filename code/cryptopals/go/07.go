@@ -15,40 +15,40 @@ Easiest way: use OpenSSL::Cipher and give it AES-128-ECB as the cipher.
 package main
 
 import (
-    "genericpals"
-    "fmt"
+	"fmt"
+	"genericpals"
 )
 
 const (
-    Key = "YELLOW SUBMARINE"
-    DataFile = "data\\07.txt"
+	Key      = "YELLOW SUBMARINE"
+	DataFile = "data\\07.txt"
 )
 
 func main() {
 
-    // Read base64 from input file without EOL
-    inputString, err := genericpals.ReadAllFile(DataFile)
-    if err != nil {
-        panic(err)
-    }
+	// Read base64 from input file without EOL
+	inputString, err := genericpals.ReadAllFile(DataFile)
+	if err != nil {
+		panic(err)
+	}
 
-    // Convert from base64 to decoded []byte
-    cipherBytes, err := genericpals.B64DecodeStrToByte(inputString)
-    if err != nil {
-        panic(err)
-    }
-    
-    // Convert Key to []byte
-    key := []byte(Key)
+	// Convert from base64 to decoded []byte
+	cipherBytes, err := genericpals.B64DecodeStrToByte(inputString)
+	if err != nil {
+		panic(err)
+	}
 
-    plaintext, err := genericpals.DecryptECB(cipherBytes, key)
+	// Convert Key to []byte
+	key := []byte(Key)
 
-    if err != nil {
-        panic(err)
-    }
+	plaintext, err := genericpals.DecryptECB(cipherBytes, key)
 
-    // Last 4 bytes will be padding 0x04
-    plaintext, _ = genericpals.UnpadPKCS7(plaintext)
+	if err != nil {
+		panic(err)
+	}
 
-    fmt.Printf("%s", string(plaintext))
+	// Last 4 bytes will be padding 0x04
+	plaintext, _ = genericpals.UnpadPKCS7(plaintext)
+
+	fmt.Printf("%s", string(plaintext))
 }

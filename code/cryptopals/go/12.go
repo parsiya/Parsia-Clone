@@ -50,123 +50,123 @@ dictionary. You've now discovered the first byte of unknown-string.
 package main
 
 import (
-    "fmt"
-    "genericpals"
-    "bytes"
+	"bytes"
+	"fmt"
+	"genericpals"
 )
 
 const (
-    MaxBlockSize = 20
+	MaxBlockSize = 20
 )
 
 func main() {
-    
-    // Detect blocksize
-    // Increase input until output length changes, the difference is blocksize
 
-    var blockSize int
-    var inp1 []byte
+	// Detect blocksize
+	// Increase input until output length changes, the difference is blocksize
 
-    enc1, err := genericpals.ECBOracle12(inp1)
-    if err != nil {
-        panic(err)
-    }
+	var blockSize int
+	var inp1 []byte
 
-    originalLength := len(enc1)
+	enc1, err := genericpals.ECBOracle12(inp1)
+	if err != nil {
+		panic(err)
+	}
 
-    for i:=0; i<MaxBlockSize; i++ {
-        inp1 = genericpals.ByteRepeat(byte(0x41), i)
-        enc2, err := genericpals.ECBOracle12(inp1)
-        if err != nil {
-            panic(err)
-        }
-        
-        // If length has changed, we have found blocksize
-        if len(enc2) != originalLength {
-            blockSize = len(enc2) - originalLength
-            break
-        }
-    }
+	originalLength := len(enc1)
 
-    fmt.Printf("Blocksize detected: %d\n", blockSize)
+	for i := 0; i < MaxBlockSize; i++ {
+		inp1 = genericpals.ByteRepeat(byte(0x41), i)
+		enc2, err := genericpals.ECBOracle12(inp1)
+		if err != nil {
+			panic(err)
+		}
 
-    // Detect ECB mode
-    // Send in three identical blocks of input and use IsECB
-    ecbInput := genericpals.ByteRepeat(byte(0x41), 3*blockSize)
-    ecbEnc, err := genericpals.ECBOracle12(ecbInput)
-    if err != nil {
-        panic(err)
-    }
-    
-    if ecb, _ := genericpals.IsECB(ecbEnc); !ecb {
-        fmt.Printf("ECB mode not detected - returning!")
-        return
-    }
+		// If length has changed, we have found blocksize
+		if len(enc2) != originalLength {
+			blockSize = len(enc2) - originalLength
+			break
+		}
+	}
 
-    fmt.Println("ECB Mode: true")
+	fmt.Printf("Blocksize detected: %d\n", blockSize)
 
-    maxBlocks := originalLength / blockSize
+	// Detect ECB mode
+	// Send in three identical blocks of input and use IsECB
+	ecbInput := genericpals.ByteRepeat(byte(0x41), 3*blockSize)
+	ecbEnc, err := genericpals.ECBOracle12(ecbInput)
+	if err != nil {
+		panic(err)
+	}
 
-    // Let's just do it for one byte
+	if ecb, _ := genericpals.IsECB(ecbEnc); !ecb {
+		fmt.Printf("ECB mode not detected - returning!")
+		return
+	}
 
-    // Grab the first block of encrypted text for all iterations of "A"*15 + byte
+	fmt.Println("ECB Mode: true")
 
-    var secret []byte
+	maxBlocks := originalLength / blockSize
 
-    // For all blocks
-    for currentBlock:=0; currentBlock<maxBlocks; currentBlock++ {
+	// Let's just do it for one byte
 
-        // Do this for each block
-        for i:=0; i<blockSize; i++ {
+	// Grab the first block of encrypted text for all iterations of "A"*15 + byte
 
-            // fmt.Println("secret")
-            // fmt.Println(secret)
+	var secret []byte
 
-            // Create the "AAAAA" that will be sent
-            static := genericpals.ByteRepeat(0x41, blockSize-i-1)
+	// For all blocks
+	for currentBlock := 0; currentBlock < maxBlocks; currentBlock++ {
 
-            // fmt.Println("static")
-            // fmt.Println(static)
+		// Do this for each block
+		for i := 0; i < blockSize; i++ {
 
-            // Grab the result from the oracle
-            target, _ := genericpals.ECBOracle12(static)
+			// fmt.Println("secret")
+			// fmt.Println(secret)
 
-            // Start bruteforcing
-            for j:=0; j<0x100; j++ {
-                b := byte(j)
+			// Create the "AAAAA" that will be sent
+			static := genericpals.ByteRepeat(0x41, blockSize-i-1)
 
-                // Add current known plaintext to start of bruteforce payload
-                dynamic := append(static, secret...)
+			// fmt.Println("static")
+			// fmt.Println(static)
 
-                // Append bruteforce byte
-                dynamic = append(dynamic, b)
+			// Grab the result from the oracle
+			target, _ := genericpals.ECBOracle12(static)
 
-                // Ask the oracle
-                bruteforce, _ := genericpals.ECBOracle12(dynamic)
+			// Start bruteforcing
+			for j := 0; j < 0x100; j++ {
+				b := byte(j)
 
-                // Compare if they match
-                cmp1 := bruteforce[currentBlock*16:(currentBlock+1)*16]
-                cmp2 := target[currentBlock*16:(currentBlock+1)*16]
+				// Add current known plaintext to start of bruteforce payload
+				dynamic := append(static, secret...)
 
-                if bytes.Equal(cmp1, cmp2) {
+				// Append bruteforce byte
+				dynamic = append(dynamic, b)
 
-                    // fmt.Println(b)
-                    // fmt.Println(i)
+				// Ask the oracle
+				bruteforce, _ := genericpals.ECBOracle12(dynamic)
 
-                    // Add recovered byte to known bytes
-                    secret = append(secret, b)
-                    break
-                }
-            }
+				// Compare if they match
+				cmp1 := bruteforce[currentBlock*16 : (currentBlock+1)*16]
+				cmp2 := target[currentBlock*16 : (currentBlock+1)*16]
 
-        }
+				if bytes.Equal(cmp1, cmp2) {
 
-    }
+					// fmt.Println(b)
+					// fmt.Println(i)
 
-    // Unpad PKCS7 - this can be seen after all of unknown bytes is discovered
-    secret, _ = genericpals.UnpadPKCS7(secret)
+					// Add recovered byte to known bytes
+					secret = append(secret, b)
+					break
+				}
+			}
 
-    // Print recovered plaintext
-    fmt.Println(string(secret))
+		}
+
+	}
+
+	// Unpad PKCS7 - this can be seen after all of unknown bytes is discovered
+	secret, _ = genericpals.UnpadPKCS7(secret)
+
+	// Print recovered plaintext
+	fmt.Println(string(secret))
 
 }

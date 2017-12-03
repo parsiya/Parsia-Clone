@@ -17,20 +17,18 @@ Evaluate each output and choose the one with the best score.
 package main
 
 import (
-    "genericpals"
-    "fmt"
+	"fmt"
+	"genericpals"
 )
 
-
-
-const CipherText = "1b37373331363f78151b7f2b783431333"+
-                   "d78397828372d363c78373e783a393b3736"
+const CipherText = "1b37373331363f78151b7f2b783431333" +
+	"d78397828372d363c78373e783a393b3736"
 
 func main() {
-    ciphertext := genericpals.Unhexlify(CipherText)
+	ciphertext := genericpals.Unhexlify(CipherText)
 
-    result := genericpals.BreakSingleByteXOR(ciphertext)
+	result := genericpals.BreakSingleByteXOR(ciphertext)
 
-    fmt.Printf("Key: 0x%x\nPlaintext: %s", result.Key, result.Plaintext)
+	fmt.Printf("Key: 0x%x\nPlaintext: %s", result.Key, result.Plaintext)
 
 }

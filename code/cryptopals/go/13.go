@@ -50,116 +50,116 @@ make a role=admin profile.
 package main
 
 import (
-    "fmt"
-    "genericpals"
-    "strings"
+	"fmt"
+	"genericpals"
+	"strings"
 )
 
 const (
-    MaxBlockSize = 20
+	MaxBlockSize = 20
 )
 
 func main() {
 
-    // JSON tests
-    // query := "foo=bar&baz=qux&zap=zazzle"
-    // js, _ := genericpals.QueryToJSON(query)
-    // fmt.Println(string(js))
-    // nem, _ := json.Unmarshal(jsonString)
-    // fmt.Println(string(nem))
+	// JSON tests
+	// query := "foo=bar&baz=qux&zap=zazzle"
+	// js, _ := genericpals.QueryToJSON(query)
+	// fmt.Println(string(js))
+	// nem, _ := json.Unmarshal(jsonString)
+	// fmt.Println(string(nem))
 
-    // Profile encrypt-decrypt-tests
-    // fmt.Println(genericpals.ProfileFor13("nem@nem.com"))
+	// Profile encrypt-decrypt-tests
+	// fmt.Println(genericpals.ProfileFor13("nem@nem.com"))
 
-    // nem, err := genericpals.EncryptProfile13("nem@nem.com")
-    // if err != nil {
-    //     panic(err)
-    // }
-    
-    // fmt.Println(genericpals.Hexlify(nem))
+	// nem, err := genericpals.EncryptProfile13("nem@nem.com")
+	// if err != nil {
+	//     panic(err)
+	// }
 
-    // dec, err := genericpals.DecryptProfile13(nem)
-    // if err != nil {
-    //     panic(err)
-    // }
+	// fmt.Println(genericpals.Hexlify(nem))
 
-    // fmt.Println(dec)
-    
-    // Detect blocksize - from challenge 12
-    // Increase input until output length changes, the difference is blocksize
+	// dec, err := genericpals.DecryptProfile13(nem)
+	// if err != nil {
+	//     panic(err)
+	// }
 
-    var blockSize int
-    var inp1 string
+	// fmt.Println(dec)
 
-    enc1, err := genericpals.EncryptProfile13(inp1)
-    if err != nil {
-        panic(err)
-    }
+	// Detect blocksize - from challenge 12
+	// Increase input until output length changes, the difference is blocksize
 
-    originalLength := len(enc1)
+	var blockSize int
+	var inp1 string
 
-    for i:=0; i<MaxBlockSize; i++ {
-        inp1 = strings.Repeat("A", i)
-        enc2, err := genericpals.EncryptProfile13(inp1)
-        if err != nil {
-            panic(err)
-        }
-        
-        // If length has changed, we have found blocksize
-        if len(enc2) != originalLength {
-            blockSize = len(enc2) - originalLength
-            break
-        }
-    }
+	enc1, err := genericpals.EncryptProfile13(inp1)
+	if err != nil {
+		panic(err)
+	}
 
-    fmt.Printf("Blocksize detected: %d\n", blockSize)
+	originalLength := len(enc1)
 
-    // So here's how it works - we are taking advantage of whitespace too
-    // First we send this payload (without quotes):
-    // "12@345.comadmin           " - 11 spaces to send admin to next block
-    // This will be encoded as:
-    // email=12@345.com
-    // admin+++++++++++  <-- we want this block (+ = space)          
-    // &uid=10&role=user
-    // Now we have the ciphertext block that just says admin and a bunch of +
-    //
-    // Then we send another payload:
-    // "12@345.com   " - 3 spaces to send user to next block
-    // We get ciphertext for
-    // email=12%403.com  <-- we want this block
-    // +++&uid=10&role=  <-- we want this block too
-    // user
-    //
-    // Now we have the ciphertext block that says
-    // "email=12%403.com+++&uid=10&role="
-    // Append the ciphertext block for "admin+++++++++++"
-    // Spaces have been converted to + but they will be ignored when parsing
+	for i := 0; i < MaxBlockSize; i++ {
+		inp1 = strings.Repeat("A", i)
+		enc2, err := genericpals.EncryptProfile13(inp1)
+		if err != nil {
+			panic(err)
+		}
 
-    inp3 := "12@345.comadmin           "
-    enc3, _ := genericpals.EncryptProfile13(inp3)
-    dec3, _ := genericpals.DecryptProfile13(enc3)
+		// If length has changed, we have found blocksize
+		if len(enc2) != originalLength {
+			blockSize = len(enc2) - originalLength
+			break
+		}
+	}
 
-    // Grabbing second block for admin
-    adminBlock := enc3[16:32]
+	fmt.Printf("Blocksize detected: %d\n", blockSize)
 
-    fmt.Println(dec3)
+	// So here's how it works - we are taking advantage of whitespace too
+	// First we send this payload (without quotes):
+	// "12@345.comadmin           " - 11 spaces to send admin to next block
+	// This will be encoded as:
+	// email=12@345.com
+	// admin+++++++++++  <-- we want this block (+ = space)
+	// &uid=10&role=user
+	// Now we have the ciphertext block that just says admin and a bunch of +
+	//
+	// Then we send another payload:
+	// "12@345.com   " - 3 spaces to send user to next block
+	// We get ciphertext for
+	// email=12%403.com  <-- we want this block
+	// +++&uid=10&role=  <-- we want this block too
+	// user
+	//
+	// Now we have the ciphertext block that says
+	// "email=12%403.com+++&uid=10&role="
+	// Append the ciphertext block for "admin+++++++++++"
+	// Spaces have been converted to + but they will be ignored when parsing
 
-    inp4 := "12@345.com   "
-    enc4, _ := genericpals.EncryptProfile13(inp4)
-    dec4, _ := genericpals.DecryptProfile13(enc4)
+	inp3 := "12@345.comadmin           "
+	enc3, _ := genericpals.EncryptProfile13(inp3)
+	dec3, _ := genericpals.DecryptProfile13(enc3)
 
-    // Grabbing first and second block
-    userBlock := enc4[0:32]
+	// Grabbing second block for admin
+	adminBlock := enc3[16:32]
 
-    fmt.Println(dec4)
+	fmt.Println(dec3)
 
-    craftedProfile := append(userBlock, adminBlock...)
+	inp4 := "12@345.com   "
+	enc4, _ := genericpals.EncryptProfile13(inp4)
+	dec4, _ := genericpals.DecryptProfile13(enc4)
 
-    dec5, err := genericpals.DecryptProfile13(craftedProfile)
-    if err != nil {
-        panic(err)
-    }
+	// Grabbing first and second block
+	userBlock := enc4[0:32]
 
-    fmt.Println(dec5)
+	fmt.Println(dec4)
+
+	craftedProfile := append(userBlock, adminBlock...)
+
+	dec5, err := genericpals.DecryptProfile13(craftedProfile)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println(dec5)
 
 }

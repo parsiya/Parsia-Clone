@@ -20,25 +20,25 @@ a282b2f20430a652e2c652a3124333a653e2b2027630c692b20283165286326302e27282f
 package main
 
 import (
-    "fmt"
-    "genericpals"
+	"fmt"
+	"genericpals"
 )
 
 func main() {
 
-    // Don't forget the space at the end of first line, otherwise your output
-    // will not match with the one in the exercise
-    input := "Burning 'em, if you ain't quick and nimble " +
-             "I go crazy when I hear a cymbal"
+	// Don't forget the space at the end of first line, otherwise your output
+	// will not match with the one in the exercise
+	input := "Burning 'em, if you ain't quick and nimble " +
+		"I go crazy when I hear a cymbal"
 
-    fmt.Println(input)
+	fmt.Println(input)
 
-    key := "ICE"
+	key := "ICE"
 
-    inputBytes := []byte(input)
-    keyBytes := []byte(key)
+	inputBytes := []byte(input)
+	keyBytes := []byte(key)
 
-    outputBytes := genericpals.XOR(inputBytes, keyBytes)
+	outputBytes := genericpals.XOR(inputBytes, keyBytes)
 
-    fmt.Printf("%s", genericpals.Hexlify(outputBytes))
+	fmt.Printf("%s", genericpals.Hexlify(outputBytes))
 }

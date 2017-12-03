@@ -49,132 +49,130 @@ actually break it, and a similar technique breaks something much more important.
 package main
 
 import (
-    "genericpals"
-    "fmt"
-    "sort"
+	"fmt"
+	"genericpals"
+	"sort"
 )
 
 const (
-    HammingTest1 = "this is a test"
-    HammingTest2 = "wokka wokka!!!"
+	HammingTest1 = "this is a test"
+	HammingTest2 = "wokka wokka!!!"
 
-    DataFile = "data\\06.txt"
+	DataFile = "data\\06.txt"
 
-    // # of sequential bytes used in calculating the normalized hamming distance
-    // This allows us to finetune the keysize
-    // Note, this will result in error if Num*keysize > len(ciphertext)
-    Num = 20
+	// # of sequential bytes used in calculating the normalized hamming distance
+	// This allows us to finetune the keysize
+	// Note, this will result in error if Num*keysize > len(ciphertext)
+	Num = 20
 
-    // # of top keysize choices used for bruteforcing
-    Top = 5
+	// # of top keysize choices used for bruteforcing
+	Top = 5
 
-    // Minimum keysize used in Hamming distance test
-    MinKeySize = 2
+	// Minimum keysize used in Hamming distance test
+	MinKeySize = 2
 
-    // Maximum keysize used in Hamming distance test
-    MaxKeySize = 40
-
+	// Maximum keysize used in Hamming distance test
+	MaxKeySize = 40
 )
-
 
 func main() {
 
-    hammingBytes1 := []byte(HammingTest1)
-    hammingBytes2 := []byte(HammingTest2)
+	hammingBytes1 := []byte(HammingTest1)
+	hammingBytes2 := []byte(HammingTest2)
 
-    testDist := genericpals.HammingDistance(hammingBytes1, hammingBytes2)
+	testDist := genericpals.HammingDistance(hammingBytes1, hammingBytes2)
 
-    // Test HammingDistance function
-    if testDist != 37 {
-        panic("Wrong distance")
-        return
-    }
+	// Test HammingDistance function
+	if testDist != 37 {
+		panic("Wrong distance")
+		return
+	}
 
-    // Read base64 from input file without EOL
-    inputString, err := genericpals.ReadAllFile(DataFile)
-    if err != nil {
-        panic(err)
-    }
+	// Read base64 from input file without EOL
+	inputString, err := genericpals.ReadAllFile(DataFile)
+	if err != nil {
+		panic(err)
+	}
 
-    // Convert from base64 to decoded []byte
-    cipherBytes, err := genericpals.B64DecodeStrToByte(inputString)
-    if err != nil {
-        panic(err)
-    }
-    
-    type ham struct {
-        Keysize int
-        AvgDist float32
-    }
+	// Convert from base64 to decoded []byte
+	cipherBytes, err := genericpals.B64DecodeStrToByte(inputString)
+	if err != nil {
+		panic(err)
+	}
 
-    var hammings []ham
+	type ham struct {
+		Keysize int
+		AvgDist float32
+	}
 
-    // For key sizes 2 to 40
-    for keysize:=MinKeySize; keysize<MaxKeySize; keysize++ {
+	var hammings []ham
 
-        var hammingTotal float32
+	// For key sizes 2 to 40
+	for keysize := MinKeySize; keysize < MaxKeySize; keysize++ {
 
-        for n:=0; n<Num; n++ {
-            block1, block2 := genericpals.GetTwoSeqBytes(cipherBytes, keysize, n)
+		var hammingTotal float32
 
-            hammingTotal += float32(genericpals.HammingDistance(block1, block2))
-        }
+		for n := 0; n < Num; n++ {
+			block1, block2 := genericpals.GetTwoSeqBytes(cipherBytes, keysize, n)
 
-        avgHamming := hammingTotal / float32(Num*keysize)
+			hammingTotal += float32(genericpals.HammingDistance(block1, block2))
+		}
 
-        hammings = append(hammings, ham{Keysize: keysize, AvgDist: avgHamming})
-    }
+		avgHamming := hammingTotal / float32(Num*keysize)
 
-    // Sort by distance (ascending)
-    sort.Slice(hammings, func(i, j int) bool {
-        return hammings[i].AvgDist < hammings[j].AvgDist
-    })
+		hammings = append(hammings, ham{Keysize: keysize, AvgDist: avgHamming})
+	}
 
-    // Get Top keys
-    topKeySizes := hammings[:Top]
+	// Sort by distance (ascending)
+	sort.Slice(hammings, func(i, j int) bool {
+		return hammings[i].AvgDist < hammings[j].AvgDist
+	})
 
-    // Struct to hold the results
-    type breakXORResults struct {
-        Key []byte
-        PrintableScore float64
-        Plaintext string
-    }
+	// Get Top keys
+	topKeySizes := hammings[:Top]
 
-    topResults := make([]breakXORResults, Top)
+	// Struct to hold the results
+	type breakXORResults struct {
+		Key            []byte
+		PrintableScore float64
+		Plaintext      string
+	}
 
-    for index, key := range topKeySizes {
-        blobs := make([][]byte, key.Keysize)
+	topResults := make([]breakXORResults, Top)
 
-        // Divide bytes into slices
-        for j := 0; j < len(cipherBytes); j++ {
-            blobs[j % key.Keysize] = append(blobs[j % key.Keysize], cipherBytes[j])
-        }
+	for index, key := range topKeySizes {
+		blobs := make([][]byte, key.Keysize)
 
-        secretKey := make([]byte, key.Keysize)
+		// Divide bytes into slices
+		for j := 0; j < len(cipherBytes); j++ {
+			blobs[j%key.Keysize] = append(blobs[j%key.Keysize], cipherBytes[j])
+		}
 
-        // Break each one
-        for k := 0; k < key.Keysize; k++ {
-            tempResult := genericpals.BreakSingleByteXOR(blobs[k])
+		secretKey := make([]byte, key.Keysize)
 
-            secretKey[k] = tempResult.Key
-        }
-        
-        plaintext := genericpals.XOR(cipherBytes, secretKey)
-        topResults[index].Plaintext = string(plaintext)
-        topResults[index].Key = secretKey
-        topResults[index].PrintableScore = genericpals.PrintableEnglish(plaintext)
+		// Break each one
+		for k := 0; k < key.Keysize; k++ {
+			tempResult := genericpals.BreakSingleByteXOR(blobs[k])
 
-        // fmt.Printf("Keysize: %v - Key: %v\n", key, string(secretKey))
-    }
+			secretKey[k] = tempResult.Key
+		}
 
-    // Now we have all the good stuff
+		plaintext := genericpals.XOR(cipherBytes, secretKey)
+		topResults[index].Plaintext = string(plaintext)
+		topResults[index].Key = secretKey
+		topResults[index].PrintableScore = genericpals.PrintableEnglish(plaintext)
 
-    // Sort top results by PrintableScore descending
-    sort.Slice(topResults, func(i, j int) bool {
-        return topResults[i].PrintableScore > topResults[j].PrintableScore
-    })
+		// fmt.Printf("Keysize: %v - Key: %v\n", key, string(secretKey))
+	}
 
-    // Print the best we have
-    fmt.Printf("Key: %v\n", string(topResults[0].Key))
-    fmt.Printf("Plaintext\n\n%v", topResults[0].Plaintext)
+	// Now we have all the good stuff
+
+	// Sort top results by PrintableScore descending
+	sort.Slice(topResults, func(i, j int) bool {
+		return topResults[i].PrintableScore > topResults[j].PrintableScore
+	})
+
+	// Print the best we have
+	fmt.Printf("Key: %v\n", string(topResults[0].Key))
+	fmt.Printf("Plaintext\n\n%v", topResults[0].Plaintext)
 }

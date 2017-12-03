@@ -27,17 +27,17 @@ ECB or CBC, tells you which one is happening.
 package main
 
 import (
-    "fmt"
-    "genericpals"
+	"fmt"
+	"genericpals"
 )
 
 func main() {
-    input := []byte("111111111111111111111111111111111111111111111111111111")
-    nem := genericpals.EncryptionOracle(input)
+	input := []byte("111111111111111111111111111111111111111111111111111111")
+	nem := genericpals.EncryptionOracle(input)
 
-    if isECB, _ := genericpals.IsECB(nem); isECB {
-        fmt.Println("ECB mode")
-        return
-    }
-    fmt.Println("CBC mode")
+	if isECB, _ := genericpals.IsECB(nem); isECB {
+		fmt.Println("ECB mode")
+		return
+	}
+	fmt.Println("CBC mode")
 }

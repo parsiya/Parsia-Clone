@@ -25,38 +25,37 @@ Crypto nerds know where we're going with this. Bear with us.
 package main
 
 import (
-    "fmt"
-    "genericpals"
+	"fmt"
+	"genericpals"
 )
 
 func main() {
-    
-    validPadding := append([]byte("ICE ICE BABY"),
-                           genericpals.ByteRepeat(0x04, 4)...)
 
-    invalidPadding1 := append([]byte("ICE ICE BABY"),
-                              genericpals.ByteRepeat(0x05, 4)...)
+	validPadding := append([]byte("ICE ICE BABY"),
+		genericpals.ByteRepeat(0x04, 4)...)
 
-    invalidPadding2 := append([]byte("ICE ICE BABY"),
-                              genericpals.Unhexlify("01020304")...)
+	invalidPadding1 := append([]byte("ICE ICE BABY"),
+		genericpals.ByteRepeat(0x05, 4)...)
 
+	invalidPadding2 := append([]byte("ICE ICE BABY"),
+		genericpals.Unhexlify("01020304")...)
 
-    unpad1, err := genericpals.UnpadPKCS7(validPadding)
-    if err != nil {
-        fmt.Println("Invalid padding")
-    }
-    fmt.Println(string(unpad1))
+	unpad1, err := genericpals.UnpadPKCS7(validPadding)
+	if err != nil {
+		fmt.Println("Invalid padding")
+	}
+	fmt.Println(string(unpad1))
 
-    unpad2, err := genericpals.UnpadPKCS7(invalidPadding1)
-    if err != nil {
-        fmt.Println("Invalid padding")
-    }
-    fmt.Println(unpad2)
-    
-    unpad3, err := genericpals.UnpadPKCS7(invalidPadding2)
-    if err != nil {
-        fmt.Println("Invalid padding")
-    }
-    fmt.Println(unpad3)
-    
+	unpad2, err := genericpals.UnpadPKCS7(invalidPadding1)
+	if err != nil {
+		fmt.Println("Invalid padding")
+	}
+	fmt.Println(unpad2)
+
+	unpad3, err := genericpals.UnpadPKCS7(invalidPadding2)
+	if err != nil {
+		fmt.Println("Invalid padding")
+	}
+	fmt.Println(unpad3)
+
 }

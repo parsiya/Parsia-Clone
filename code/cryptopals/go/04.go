@@ -10,29 +10,28 @@ Find it.
 package main
 
 import (
-    "genericpals"
-    "fmt"
-
+	"fmt"
+	"genericpals"
 )
 
 const FileName = "data\\04.txt"
 
 func main() {
 
-    ciphers, _ := genericpals.ReadLines(FileName)
+	ciphers, _ := genericpals.ReadLines(FileName)
 
-    var bestResult genericpals.Result
+	var bestResult genericpals.Result
 
-    for i := 0; i < len(ciphers); i++ {
+	for i := 0; i < len(ciphers); i++ {
 
-        byteCipher := genericpals.Unhexlify(ciphers[i])
+		byteCipher := genericpals.Unhexlify(ciphers[i])
 
-        tempResult := genericpals.BreakSingleByteXOR(byteCipher)
+		tempResult := genericpals.BreakSingleByteXOR(byteCipher)
 
-        if tempResult.PrintableScore > bestResult.PrintableScore {
-            bestResult = tempResult
-        }
-    }
+		if tempResult.PrintableScore > bestResult.PrintableScore {
+			bestResult = tempResult
+		}
+	}
 
-    fmt.Printf("%#v\n", bestResult)
+	fmt.Printf("%#v\n", bestResult)
 }

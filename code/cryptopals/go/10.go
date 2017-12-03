@@ -23,45 +23,45 @@ The file here is intelligible (somewhat) when CBC decrypted against
 package main
 
 import (
-    "genericpals"
-    "fmt"
-    "crypto/aes"
+	"crypto/aes"
+	"fmt"
+	"genericpals"
 )
 
 const (
-    DataFile = "data\\10.txt"
-    StringKey = "YELLOW SUBMARINE"
+	DataFile  = "data\\10.txt"
+	StringKey = "YELLOW SUBMARINE"
 )
 
 func main() {
 
-    // Create []byte IV and key
-    iv  := genericpals.ByteRepeat(0x00, aes.BlockSize)
-    key := []byte(StringKey)
+	// Create []byte IV and key
+	iv := genericpals.ByteRepeat(0x00, aes.BlockSize)
+	key := []byte(StringKey)
 
-    // Read encrypted data from file
-    base64Cipher, err := genericpals.ReadAllFile(DataFile)
-    if err != nil {
-        panic(err)
-    }
+	// Read encrypted data from file
+	base64Cipher, err := genericpals.ReadAllFile(DataFile)
+	if err != nil {
+		panic(err)
+	}
 
-    // Decode from base64
-    byteCipher, err := genericpals.B64DecodeStrToByte(base64Cipher)
-    if err != nil {
-        panic(err)
-    }
-    
-    // Decrypt AES-CBC
-    plaintext, err := genericpals.DecryptCBC(byteCipher, key, iv)
-    if err != nil {
-        panic(err)
-    }
-    
-    // PKCS7 unpad
-    unpaddedPlaintext, err := genericpals.UnpadPKCS7(plaintext)
-    if err != nil {
-        panic(err)
-    }
-    
-    fmt.Println(string(unpaddedPlaintext))
+	// Decode from base64
+	byteCipher, err := genericpals.B64DecodeStrToByte(base64Cipher)
+	if err != nil {
+		panic(err)
+	}
+
+	// Decrypt AES-CBC
+	plaintext, err := genericpals.DecryptCBC(byteCipher, key, iv)
+	if err != nil {
+		panic(err)
+	}
+
+	// PKCS7 unpad
+	unpaddedPlaintext, err := genericpals.UnpadPKCS7(plaintext)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println(string(unpaddedPlaintext))
 }

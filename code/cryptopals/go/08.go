@@ -13,35 +13,34 @@ the same 16 byte plaintext block will always produce the same 16 byte ciphertext
 package main
 
 import (
-    "genericpals"
-    "fmt"
-    "crypto/aes"
+	"crypto/aes"
+	"fmt"
+	"genericpals"
 )
 
 const DataFile = "data\\08.txt"
 
-
 func main() {
-    allCiphers, err := genericpals.ReadLines(DataFile)
-    if err != nil {
-        panic(err)
-    }
+	allCiphers, err := genericpals.ReadLines(DataFile)
+	if err != nil {
+		panic(err)
+	}
 
-    for _, cipher := range allCiphers {
+	for _, cipher := range allCiphers {
 
-        // Convert to byte
-        byteCipher := genericpals.Unhexlify(cipher)
+		// Convert to byte
+		byteCipher := genericpals.Unhexlify(cipher)
 
-        isECB, err := genericpals.IsECB(byteCipher)
-        if err != nil {
-            panic(err)
-        }
-        
-        if isECB {
-            splits := genericpals.SplitBytes(byteCipher, aes.BlockSize)
-            for _, part := range splits {
-                fmt.Println(genericpals.Hexlify(part))
-            }
-        }
-    }
+		isECB, err := genericpals.IsECB(byteCipher)
+		if err != nil {
+			panic(err)
+		}
+
+		if isECB {
+			splits := genericpals.SplitBytes(byteCipher, aes.BlockSize)
+			for _, part := range splits {
+				fmt.Println(genericpals.Hexlify(part))
+			}
+		}
+	}
 }
