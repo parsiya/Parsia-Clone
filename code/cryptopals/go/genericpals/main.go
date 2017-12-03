@@ -75,7 +75,7 @@ func B64DecodeStrToByte(inputString string) ([]byte, error) {
 // Return: XOR result and error if applicable
 func SameLengthXOR(inputBytes1 []byte, inputBytes2 []byte) ([]byte, error) {
 	if len(inputBytes1) != len(inputBytes2) {
-		errorString := fmt.Sprintf("Input1 length %d != %d Input2 length",
+		errorString := fmt.Sprintf("input1 length %d != %d Input2 length",
 			len(inputBytes1), len(inputBytes2))
 		return nil, errors.New(errorString)
 	} else {
@@ -278,7 +278,7 @@ func XOR(inputBytes []byte, key []byte) []byte {
 // Return: Hamming distance as int
 func HammingDistance(stringBytes1 []byte, stringBytes2 []byte) int {
 	if len(stringBytes1) != len(stringBytes2) {
-		panic("Input bytes are not of same length")
+		panic("input bytes are not of same length")
 		return -1
 	}
 
@@ -347,7 +347,7 @@ func EncryptECB(plaintext []byte, key []byte) ([]byte, error) {
 
 	// 1. Check if plaintext is a multiple of 16
 	if len(plaintext)%16 != 0 {
-		errorString := fmt.Sprintf("Plaintext is %d bytes which is not "+
+		errorString := fmt.Sprintf("plaintext is %d bytes which is not "+
 			"a multiple of 16.",
 			len(plaintext))
 
@@ -356,8 +356,8 @@ func EncryptECB(plaintext []byte, key []byte) ([]byte, error) {
 
 	// 2. Check if key and 16 are of same length
 	if len(key) != 16 {
-		errorString := fmt.Sprintf("Key has wrong length."+
-			"\nExpected %d, got %d",
+		errorString := fmt.Sprintf("key has wrong length."+
+			"\nexpected %d, got %d",
 			16, len(key))
 
 		return nil, errors.New(errorString)
@@ -389,7 +389,7 @@ func DecryptECB(ciphertext []byte, key []byte) ([]byte, error) {
 
 	// 1. Check if ciphertext is a multiple of 16
 	if len(ciphertext)%16 != 0 {
-		errorString := fmt.Sprintf("Ciphertext is %d bytes which is not "+
+		errorString := fmt.Sprintf("ciphertext is %d bytes which is not "+
 			"a multiple of 16.",
 			len(ciphertext))
 
@@ -398,8 +398,8 @@ func DecryptECB(ciphertext []byte, key []byte) ([]byte, error) {
 
 	// 2. Check if key and 16 are of same length
 	if len(key) != 16 {
-		errorString := fmt.Sprintf("Key has wrong length."+
-			"\nExpected %d, got %d",
+		errorString := fmt.Sprintf("key has wrong length."+
+			"\nexpected %d, got %d",
 			16, len(key))
 
 		return nil, errors.New(errorString)
@@ -458,7 +458,7 @@ func SplitBytes(inputBytes []byte, n int) [][]byte {
 func ByteRepeat(repeatByte byte, n int) []byte {
 
 	if n < 0 {
-		panic("Negative repeat count")
+		panic("negative repeat count")
 	}
 
 	output := make([]byte, n)
@@ -480,7 +480,7 @@ func ByteRepeat(repeatByte byte, n int) []byte {
 func IsECB(ciphertext []byte) (bool, error) {
 
 	if len(ciphertext)%16 != 0 {
-		errorString := fmt.Sprintf("Ciphertext is not a multiple of %d",
+		errorString := fmt.Sprintf("ciphertext is not a multiple of %d",
 			16)
 		return false, errors.New(errorString)
 	}
@@ -516,7 +516,7 @@ func IsECB(ciphertext []byte) (bool, error) {
 func PadPKCS7(bytesToPad []byte, blockSize int) []byte {
 
 	if len(bytesToPad) == 0 {
-		panic("Cannot pad an empty []byte")
+		panic("cannot pad an empty []byte")
 	}
 
 	paddingSize := blockSize - (len(bytesToPad) % blockSize)
@@ -552,15 +552,15 @@ func UnpadPKCS7(paddedBytes []byte) ([]byte, error) {
 
 	// Check if we even have enough bytes
 	if paddedLength < paddingLength {
-		return nil, errors.New("Input is too small to be padded!")
+		return nil, errors.New("input is too small to be padded!")
 	}
 
 	// Read last n bytes
 	for i := 0; i < paddingLength; i++ {
 		if paddedBytes[paddedLength-1-i] != padding {
 
-			errorString := fmt.Sprintf("Wrong padding at byte %d."+
-				"\nExpected %x but got %x.",
+			errorString := fmt.Sprintf("wrong padding at byte %d."+
+				"\nexpected %x but got %x.",
 				padding, paddedBytes[paddedLength-1-i])
 
 			return nil, errors.New(errorString)
@@ -581,7 +581,7 @@ func DecryptCBC(ciphertext, key, iv []byte) ([]byte, error) {
 
 	// 1. Check if ciphertext is a multiple of 16
 	if len(ciphertext)%16 != 0 {
-		errorString := fmt.Sprintf("Ciphertext is %d bytes which is not "+
+		errorString := fmt.Sprintf("ciphertext is %d bytes which is not "+
 			"a multiple of 16.",
 			len(ciphertext))
 
@@ -591,7 +591,7 @@ func DecryptCBC(ciphertext, key, iv []byte) ([]byte, error) {
 	// 2. Check if IV and 16 are of same length
 	if len(iv) != 16 {
 		errorString := fmt.Sprintf("IV has wrong length."+
-			"\nExpected %d, got %d",
+			"\nexpected %d, got %d",
 			16, len(iv))
 
 		return nil, errors.New(errorString)
@@ -599,8 +599,8 @@ func DecryptCBC(ciphertext, key, iv []byte) ([]byte, error) {
 
 	// 2.5 Check if key and 16 are of same length
 	if len(key) != 16 {
-		errorString := fmt.Sprintf("Key has wrong length."+
-			"\nExpected %d, got %d",
+		errorString := fmt.Sprintf("key has wrong length."+
+			"\nexpected %d, got %d",
 			16, len(key))
 
 		return nil, errors.New(errorString)
@@ -652,7 +652,7 @@ func EncryptCBC(plaintext, key, iv []byte) ([]byte, error) {
 
 	// 1. Check if ciphertext is a multiple of 16
 	if len(plaintext)%16 != 0 {
-		errorString := fmt.Sprintf("Plaintext is %d bytes which is not "+
+		errorString := fmt.Sprintf("plaintext is %d bytes which is not "+
 			"a multiple of 16.",
 			len(plaintext))
 
@@ -662,7 +662,7 @@ func EncryptCBC(plaintext, key, iv []byte) ([]byte, error) {
 	// 2. Check if IV and 16 are of same length
 	if len(iv) != 16 {
 		errorString := fmt.Sprintf("IV has wrong length."+
-			"\nExpected %d, got %d",
+			"\nexpected %d, got %d",
 			16, len(iv))
 
 		return nil, errors.New(errorString)
@@ -670,8 +670,8 @@ func EncryptCBC(plaintext, key, iv []byte) ([]byte, error) {
 
 	// 2.5 Check if key and 16 are of same length
 	if len(key) != 16 {
-		errorString := fmt.Sprintf("Key has wrong length."+
-			"\nExpected %d, got %d",
+		errorString := fmt.Sprintf("key has wrong length."+
+			"\nexpected %d, got %d",
 			16, len(key))
 
 		return nil, errors.New(errorString)
@@ -786,7 +786,7 @@ func EncryptionOracle(plaintext []byte) []byte {
 	// Choose ECB or CBC
 	if mode := RandomIntRange(0, 2); mode > 0 {
 		// ECB
-		fmt.Println("ECB")
+		// fmt.Println("ECB")
 		enc, err := EncryptECB(plaintext, key)
 		if err != nil {
 			panic(err)
@@ -794,7 +794,7 @@ func EncryptionOracle(plaintext []byte) []byte {
 		encrypted = enc
 	} else {
 		// CBC
-		fmt.Println("CBC")
+		// fmt.Println("CBC")
 		iv := RandomBytes(16)
 		enc, err := EncryptCBC(plaintext, key, iv)
 		if err != nil {
@@ -924,7 +924,7 @@ func DecryptProfile13(encryptedProfile []byte) (string, error) {
 
 	// Check if encryptedProfile length is a multiple of 16
 	if len(encryptedProfile)%16 != 0 {
-		errorString := fmt.Sprintf("Input length %d is not a multiple of 16\n",
+		errorString := fmt.Sprintf("input length %d is not a multiple of 16\n",
 			len(encryptedProfile))
 		return "", errors.New(errorString)
 	}
