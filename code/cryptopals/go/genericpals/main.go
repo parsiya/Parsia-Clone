@@ -64,7 +64,6 @@ func B64DecodeStrToByte(inputString string) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-
 	return decoded, nil
 }
 
@@ -84,7 +83,6 @@ func SameLengthXOR(inputBytes1 []byte, inputBytes2 []byte) ([]byte, error) {
 		for i := 0; i < len(inputBytes1); i++ {
 			outputBytes[i] = inputBytes1[i] ^ inputBytes2[i]
 		}
-
 		return outputBytes, nil
 	}
 }
@@ -107,11 +105,9 @@ func ByteArrayEqual(inputBytes1 []byte, inputBytes2 []byte) bool {
 // Return: XOR-ed []byte
 func SingleByteXOR(inputBytes []byte, key byte) []byte {
 	outputBytes := make([]byte, len(inputBytes))
-
 	for i := 0; i < len(inputBytes); i++ {
 		outputBytes[i] = inputBytes[i] ^ key
 	}
-
 	return outputBytes
 }
 
@@ -169,17 +165,14 @@ var frequency = map[string]float64{
 func PrintableEnglish(textBytes []byte) float64 {
 
 	var score float64
-
 	for _, char := range textBytes {
 		ch := strings.ToLower(string(char))
-
 		if frequency[ch] != 0 {
 			score += frequency[ch]
 		} else {
 			score -= 0.01
 		}
 	}
-
 	return score
 }
 
@@ -202,7 +195,6 @@ func BreakSingleByteXOR(ciphertext []byte) Result {
 	results := make([]Result, 0x100)
 
 	for key := 0; key < 0x100; key++ {
-
 		plaintext := SingleByteXOR(ciphertext, byte(key))
 
 		results[key].Plaintext = string(plaintext)
@@ -270,7 +262,7 @@ func XOR(inputBytes []byte, key []byte) []byte {
 	return outputBytes
 }
 
-// HammingDistance calculates the hammind distance between two []byte strings
+// HammingDistance calculates the hamming distance between two []byte strings
 // XOR two bytes and then count the 1 bits in result
 // Params:
 //      stringBytes1, stringBytes2: []byte
@@ -285,10 +277,8 @@ func HammingDistance(stringBytes1 []byte, stringBytes2 []byte) int {
 	dist := 0
 
 	for i := 0; i < len(stringBytes1); i++ {
-
 		// Thanks Travis
 		d1 := bits.OnesCount8(stringBytes1[i] ^ stringBytes2[i])
-
 		dist += d1
 	}
 
@@ -330,7 +320,7 @@ func ReadAllFile(filePath string) (string, error) {
 // Returns: Two sequential []byte of same size
 func GetTwoSeqBytes(input []byte, size int, n int) (block1, block2 []byte) {
 
-	// 0 is unnecessary but this will readable 6 months down the road
+	// 0 is unnecessary but this will be readable 6 months down the road
 	block1 = input[(2*n+0)*size : (2*n+1)*size]
 	block2 = input[(2*n+1)*size : (2*n+2)*size]
 
