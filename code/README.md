@@ -11,6 +11,8 @@ This table will help.
 
 - [WinAppDbg Tutorials](#winappdbg-tutorials)
 - [Cryptopals - Golang](#cryptopals---golang)
+- [Go - Infosec](#go---infosec)
+    - [pcap Tutorial](#pcap-tutorial)
 - [Hipchat Proxy](#hipchat-proxy)
 - [.NET Remoting](#net-remoting)
 - [Malware Adventure](#malware-adventure)
@@ -35,6 +37,14 @@ Code for my set of WinAppDbg tutorials.
 <a name="cryptopals---golang"></a>
 ### [Cryptopals - Golang](cryptopals/go)
 Doing the Cryptopals challenges with `lol no generics`.
+
+<a name="go---infosec"></a>
+### [Go - Infosec](go-infosec/)
+Collection of my security related code in Go.
+
+<a name="pcap-tutorial"></a>
+#### [pcap Tutorial](go-infosec/pcap-tutorial)
+Code for the blog post [Go and pcaps][go-pcap] which explains how to use Go to extract icmp echo payloads from a pcap file.
 
 <a name="hipchat-proxy"></a>
 ### [Hipchat Proxy](hipchat-proxy)
@@ -87,3 +97,4 @@ This is a fork of the the Octopress Image Popup Plugin at [https://github.com/ct
 [winappdbg-2]: https://parsiya.net/blog/2017-11-11-winappdbg---part-2---function-hooking-and-others/
 [winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg---part-3---manipulating-function-calls/
 [winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg---part-4---bruteforcing-flareon-2017---challenge-3/
+[go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/

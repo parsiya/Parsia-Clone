@@ -18,6 +18,8 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
 - [Code](#code)
     - [WinAppDbg Tutorials](#winappdbg-tutorials)
     - [Cryptopals - Golang](#cryptopals---golang)
+    - [Go - Infosec](#go---infosec)
+        - [pcap Tutorial](#pcap-tutorial)
     - [Hipchat Proxy](#hipchat-proxy)
     - [Intro to .NET Remoting for Hackers](#intro-to-net-remoting-for-hackers)
     - [Malware Adventure](#malware-adventure)
@@ -102,7 +104,15 @@ Code for my set of WinAppDbg tutorials.
 
 <a name="cryptopals---golang"></a>
 ### [Cryptopals - Golang](code/cryptopals/go)
-Doing the Cryptopals challenges with `lol no generics`.
+Doing the Cryptopals challenges with Go.
+
+<a name="go---infosec"></a>
+### [Go - Infosec](code/go-infosec/)
+Collection of my security related code in Go.
+
+<a name="pcap-tutorial"></a>
+#### [pcap Tutorial](code/go-infosec/pcap-tutorial)
+Code for the blog post [Go and pcaps][go-pcap] which explains how to use Go to extract icmp echo payloads from a pcap file.
 
 <a name="hipchat-proxy"></a>
 ### [Hipchat Proxy](code/hipchat-proxy)
@@ -153,5 +163,6 @@ This repository will inevitably contain content from other parts of the internet
 [winappdbg-2]: https://parsiya.net/blog/2017-11-11-winappdbg---part-2---function-hooking-and-others/
 [winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg---part-3---manipulating-function-calls/
 [winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg---part-4---bruteforcing-flareon-2017---challenge-3/
+[go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/
 
 <!-- End Links -->
