@@ -19,6 +19,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
     - [WinAppDbg Tutorials](#winappdbg-tutorials)
     - [Cryptopals - Golang](#cryptopals---golang)
     - [Go - Infosec](#go---infosec)
+        - [SSH Harvester](#ssh-harvester)
         - [pcap Tutorial](#pcap-tutorial)
     - [Hipchat Proxy](#hipchat-proxy)
     - [Intro to .NET Remoting for Hackers](#intro-to-net-remoting-for-hackers)
@@ -101,7 +102,6 @@ Code for my set of WinAppDbg tutorials.
 - [Part 3 - Manipulating Function Calls][winappdbg-3]
 - [Part 4 - Bruteforcing FlareOn 2017 - Challenge 3][winappdbg-4]
 
-
 <a name="cryptopals---golang"></a>
 ### [Cryptopals - Golang](code/cryptopals/go)
 Doing the Cryptopals challenges with Go.
@@ -109,6 +109,10 @@ Doing the Cryptopals challenges with Go.
 <a name="go---infosec"></a>
 ### [Go - Infosec](code/go-infosec/)
 Collection of my security related code in Go.
+
+<a name="ssh-harvester"></a>
+#### [SSH Harvester](go-infosec/ssh-harvester)
+Initial version of tool written in Go that harvests SSH certificates. For explanation of code please see the blog post [Simple SSH Harvester in Go][go-sshharvester].
 
 <a name="pcap-tutorial"></a>
 #### [pcap Tutorial](code/go-infosec/pcap-tutorial)
@@ -164,5 +168,6 @@ This repository will inevitably contain content from other parts of the internet
 [winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg---part-3---manipulating-function-calls/
 [winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg---part-4---bruteforcing-flareon-2017---challenge-3/
 [go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/
+[go-sshharvester]: https://parsiya.net/blog/2017-12-28-simple-ssh-harvester-in-go/
 
 <!-- End Links -->

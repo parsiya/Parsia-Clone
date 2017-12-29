@@ -12,6 +12,7 @@ This table will help.
 - [WinAppDbg Tutorials](#winappdbg-tutorials)
 - [Cryptopals - Golang](#cryptopals---golang)
 - [Go - Infosec](#go---infosec)
+    - [SSH Harvester](#ssh-harvester)
     - [pcap Tutorial](#pcap-tutorial)
 - [Hipchat Proxy](#hipchat-proxy)
 - [.NET Remoting](#net-remoting)
@@ -39,12 +40,16 @@ Code for my set of WinAppDbg tutorials.
 Doing the Cryptopals challenges with `lol no generics`.
 
 <a name="go---infosec"></a>
-### [Go - Infosec](go-infosec/)
+### Go - Infosec
 Collection of my security related code in Go.
+
+<a name="ssh-harvester"></a>
+#### [SSH Harvester](go-infosec/ssh-harvester)
+Initial version of tool written in Go that harvests SSH certificates. For explanation of code please see the blog post [Simple SSH Harvester in Go][go-sshharvester].
 
 <a name="pcap-tutorial"></a>
 #### [pcap Tutorial](go-infosec/pcap-tutorial)
-Code for the blog post [Go and pcaps][go-pcap] which explains how to use Go to extract icmp echo payloads from a pcap file.
+Code for the blog post [Go and pcaps][go-pcap], explaining how to use Go to extract ICMP echo payloads from a pcap file.
 
 <a name="hipchat-proxy"></a>
 ### [Hipchat Proxy](hipchat-proxy)
