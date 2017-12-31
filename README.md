@@ -108,7 +108,9 @@ Doing the Cryptopals challenges with Go.
 
 <a name="go---infosec"></a>
 ### [Go - Infosec](code/go-infosec/)
-Collection of my security related code in Go.
+New Go security projects will be in a different repository at:
+
+- [https://github.com/parsiya/Go-Security](https://github.com/parsiya/Go-Security)
 
 <a name="ssh-harvester"></a>
 #### [SSH Harvester](go-infosec/ssh-harvester)
