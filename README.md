@@ -9,6 +9,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
     - ["Research" Notes](#research-notes)
         - [Razer Comms](#razer-comms)
     - [Random](#random)
+        - [FlareOn 2017 CTF Notes](#flareon-2017-ctf-notes)
         - [Migration from Octopress to Hugo](#migration-from-octopress-to-hugo)
         - [Call Windows APIs in C/C++ using MinGW](#call-windows-apis-in-cc-using-mingw)
         - [Windows SearchPath](#windows-searchpath)
@@ -53,6 +54,10 @@ Razer Comms [mini report][razer-comms-blog] and notes.
 <a name="random"></a>
 ### [Random](clone/random)
 Random stuff that do not belong anywhere else.
+
+<a name="flareon-2017-ctf-notes"></a>
+#### [FlareOn 2017 CTF Notes](clone/random/flareon-2017)
+Random notes from FlareOn 2017 Reverse Engineering CTF.
 
 <a name="migration-from-octopress-to-hugo"></a>
 #### [Migration from Octopress to Hugo](clone/random/octopress-migration.md)
