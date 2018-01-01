@@ -1,11 +1,10 @@
-# Parsiya Clone
+# Parsia Clone
 This is my clone. I have been maintaining one internally at Cigital/Synopsys since mid 2016. It has been decently successful and well received. I have decided to make a public one too. There is going to be a lot of redundancy between here and my [website][parsiya.net] but that is expected. This repository will also contain code and random notes that do not get published there effectively removing the Random-Code and Random-Notes repositories I recently started.
 
 ## Table of Contents
 <!-- MarkdownTOC -->
 
 - [Clone](#clone)
-    - [Cheat Sheet](#cheat-sheet)
     - ["Research" Notes](#research-notes)
         - [Razer Comms](#razer-comms)
     - [Random](#random)
@@ -34,12 +33,6 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
 <!-- Start Clone -->
 <a name="clone"></a>
 ## Clone
-
-<a name="cheat-sheet"></a>
-### [Cheat Sheet](cheat-sheet.md)
-Copy of [https://parsiya.net/cheatsheet/][cheat-sheet-ext].
-
------
 
 <a name="research-notes"></a>
 ### ["Research" Notes](clone/research)
@@ -155,8 +148,8 @@ This repository will inevitably contain content from other parts of the internet
 <a name="todo"></a>
 ## TODO
 1. Add FAQ.
-2. ~~Add cheat sheet from website.~~
-    - Find a way to keep the cheat sheet here updated when I modify the other one. 
+2. ~~Add cheat sheet from website.~~ Removed cheat sheet, no need to have two copies.
+    - ~~Find a way to keep the cheat sheet here updated when I modify the other one.~~
 
 
 <!-- Start Links -->
