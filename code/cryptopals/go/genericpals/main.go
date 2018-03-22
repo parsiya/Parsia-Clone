@@ -74,9 +74,8 @@ func B64DecodeStrToByte(inputString string) ([]byte, error) {
 // Return: XOR result and error if applicable
 func SameLengthXOR(inputBytes1 []byte, inputBytes2 []byte) ([]byte, error) {
 	if len(inputBytes1) != len(inputBytes2) {
-		errorString := fmt.Sprintf("input1 length %d != %d Input2 length",
+		return nil, fmt.Errorf("input1 length %d != %d Input2 length",
 			len(inputBytes1), len(inputBytes2))
-		return nil, errors.New(errorString)
 	} else {
 		// Make a slice because Go does not have dynamic-length arrays
 		outputBytes := make([]byte, len(inputBytes1))
@@ -337,20 +336,14 @@ func EncryptECB(plaintext []byte, key []byte) ([]byte, error) {
 
 	// 1. Check if plaintext is a multiple of 16
 	if len(plaintext)%16 != 0 {
-		errorString := fmt.Sprintf("plaintext is %d bytes which is not "+
-			"a multiple of 16.",
-			len(plaintext))
-
-		return nil, errors.New(errorString)
+		return nil, fmt.Errorf("plaintext is %d bytes which is not "+
+			"a multiple of 16.", len(plaintext))
 	}
 
 	// 2. Check if key and 16 are of same length
 	if len(key) != 16 {
-		errorString := fmt.Sprintf("key has wrong length."+
-			"\nexpected %d, got %d",
+		return nil, fmt.Errorf("key has wrong length.\nexpected %d, got %d",
 			16, len(key))
-
-		return nil, errors.New(errorString)
 	}
 
 	// 3. Get an AES block
@@ -379,20 +372,14 @@ func DecryptECB(ciphertext []byte, key []byte) ([]byte, error) {
 
 	// 1. Check if ciphertext is a multiple of 16
 	if len(ciphertext)%16 != 0 {
-		errorString := fmt.Sprintf("ciphertext is %d bytes which is not "+
-			"a multiple of 16.",
-			len(ciphertext))
-
-		return nil, errors.New(errorString)
+		return nil, fmt.Errorf("ciphertext is %d bytes which is not "+
+			"a multiple of 16.", len(ciphertext))
 	}
 
 	// 2. Check if key and 16 are of same length
 	if len(key) != 16 {
-		errorString := fmt.Sprintf("key has wrong length."+
-			"\nexpected %d, got %d",
+		return nil, fmt.Errorf("key has wrong length.\nexpected %d, got %d",
 			16, len(key))
-
-		return nil, errors.New(errorString)
 	}
 
 	// 3. Get an AES block
@@ -470,9 +457,7 @@ func ByteRepeat(repeatByte byte, n int) []byte {
 func IsECB(ciphertext []byte) (bool, error) {
 
 	if len(ciphertext)%16 != 0 {
-		errorString := fmt.Sprintf("ciphertext is not a multiple of %d",
-			16)
-		return false, errors.New(errorString)
+		return false, fmt.Errorf("ciphertext is not a multiple of %d", 16)
 	}
 
 	// Split into 16 byte
@@ -548,12 +533,9 @@ func UnpadPKCS7(paddedBytes []byte) ([]byte, error) {
 	// Read last n bytes
 	for i := 0; i < paddingLength; i++ {
 		if paddedBytes[paddedLength-1-i] != padding {
-
-			errorString := fmt.Sprintf("wrong padding at byte %d."+
+			return nil, fmt.Errorf("wrong padding at byte %d."+
 				"\nexpected %x but got %x.",
-				padding, paddedBytes[paddedLength-1-i])
-
-			return nil, errors.New(errorString)
+				i, padding, paddedBytes[paddedLength-1-i])
 		}
 	}
 
@@ -571,29 +553,21 @@ func DecryptCBC(ciphertext, key, iv []byte) ([]byte, error) {
 
 	// 1. Check if ciphertext is a multiple of 16
 	if len(ciphertext)%16 != 0 {
-		errorString := fmt.Sprintf("ciphertext is %d bytes which is not "+
+		return nil, fmt.Errorf("ciphertext is %d bytes which is not "+
 			"a multiple of 16.",
 			len(ciphertext))
-
-		return nil, errors.New(errorString)
 	}
 
 	// 2. Check if IV and 16 are of same length
 	if len(iv) != 16 {
-		errorString := fmt.Sprintf("IV has wrong length."+
-			"\nexpected %d, got %d",
+		return nil, fmt.Errorf("IV has wrong length.\nexpected %d, got %d",
 			16, len(iv))
-
-		return nil, errors.New(errorString)
 	}
 
 	// 2.5 Check if key and 16 are of same length
 	if len(key) != 16 {
-		errorString := fmt.Sprintf("key has wrong length."+
-			"\nexpected %d, got %d",
+		return nil, fmt.Errorf("key has wrong length.\nexpected %d, got %d",
 			16, len(key))
-
-		return nil, errors.New(errorString)
 	}
 
 	// 3. Split the ciphertext into 16 byte blocks
@@ -642,29 +616,20 @@ func EncryptCBC(plaintext, key, iv []byte) ([]byte, error) {
 
 	// 1. Check if ciphertext is a multiple of 16
 	if len(plaintext)%16 != 0 {
-		errorString := fmt.Sprintf("plaintext is %d bytes which is not "+
-			"a multiple of 16.",
-			len(plaintext))
-
-		return nil, errors.New(errorString)
+		return nil, fmt.Errorf("plaintext is %d bytes which is not "+
+			"a multiple of 16.", len(plaintext))
 	}
 
 	// 2. Check if IV and 16 are of same length
 	if len(iv) != 16 {
-		errorString := fmt.Sprintf("IV has wrong length."+
-			"\nexpected %d, got %d",
+		return nil, fmt.Errorf("IV has wrong length.\nexpected %d, got %d",
 			16, len(iv))
-
-		return nil, errors.New(errorString)
 	}
 
 	// 2.5 Check if key and 16 are of same length
 	if len(key) != 16 {
-		errorString := fmt.Sprintf("key has wrong length."+
-			"\nexpected %d, got %d",
+		return nil, fmt.Errorf("key has wrong length.\nexpected %d, got %d",
 			16, len(key))
-
-		return nil, errors.New(errorString)
 	}
 
 	// 3. Split the plaintext into 16 byte blocks
@@ -914,9 +879,8 @@ func DecryptProfile13(encryptedProfile []byte) (string, error) {
 
 	// Check if encryptedProfile length is a multiple of 16
 	if len(encryptedProfile)%16 != 0 {
-		errorString := fmt.Sprintf("input length %d is not a multiple of 16\n",
+		return "", fmt.Errorf("input length %d is not a multiple of 16\n",
 			len(encryptedProfile))
-		return "", errors.New(errorString)
 	}
 
 	decryptedProfile, err := DecryptECB(encryptedProfile, ch13Key)
