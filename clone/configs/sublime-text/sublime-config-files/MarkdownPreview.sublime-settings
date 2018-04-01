@@ -1,0 +1,5 @@
+{
+	"enable_autoreload": true,
+	"enabled_parsers": ["markdown"],
+	"enable_highlight": true
+}

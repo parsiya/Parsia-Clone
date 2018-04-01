@@ -10,6 +10,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
     - ["Research" Notes](#research-notes)
         - [Razer Comms](#razer-comms)
     - [Configurations](#configurations)
+        - [Sublime Text 3 Config and Packages](#sublime-text-3-config-and-packages)
         - [Ubuntu 16 Setup](#ubuntu-16-setup)
     - [Random](#random)
         - [FlareOn 2017 CTF Notes](#flareon-2017-ctf-notes)
@@ -59,6 +60,10 @@ Razer Comms [mini report][razer-comms-blog] and notes.
 <a id="configurations"></a>
 ### [Configurations](clone/configs)
 Configurations for Operating Systems, editors and other programs.
+
+<a id="sublime-text-3-config-and-packages"></a>
+#### [Sublime Text 3 Config and Packages](clone/configs/sublime-text)
+My Sublime Text 3 config files and packages, [blog post][from-atom-to-sublime].
 
 <a id="ubuntu-16-setup"></a>
 #### [Ubuntu 16 Setup](clone/configs/ubuntu-16-setup.md)
@@ -192,5 +197,6 @@ This repository will inevitably contain content from other parts of the internet
 [go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/
 [go-sshharvester]: https://parsiya.net/blog/2017-12-28-simple-ssh-harvester-in-go/
 [blockchain-security-1]: https://drive.google.com/file/d/1aXJgpGs6TznOx5uO7U1cvkvi-zVEjPSJ/view
+[from-atom-to-sublime]: https://parsiya.net/blog/2017-07-08-from-atom-to-sublime-text/
 
 <!-- End Links -->

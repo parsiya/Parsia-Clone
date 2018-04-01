@@ -1,0 +1,41 @@
+{
+	"added_words":
+	[
+		"json",
+		"github",
+		"plugins",
+		"autoreload",
+		"livereload",
+		"blog",
+		"internet",
+		"online",
+		"referer",
+		"Thickclient",
+		"proxying",
+		"thickclient",
+		"blockchains",
+		"blockchain",
+		"Bitcoin",
+		"Litecoin",
+		"Ethereum",
+		"permissionless",
+		"permissioned",
+		"cryptocurrency",
+		"incentivized",
+		"cryptocurrencies",
+		"incentivizes"
+	],
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Extended (SL).tmTheme",
+	"font_size": 15,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"tab_size": 4,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
