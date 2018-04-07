@@ -63,7 +63,7 @@ Some packages are not installed by default.
 
 ``` bash
 sudo apt-get update
-sudo apt-get install curl git
+sudo apt-get install curl git libltdl-dev 
 ```
 
 <a id="disable-screenlock-and-screensaver"></a>
@@ -104,7 +104,7 @@ Apply settings with:
 # Install VS Code
 Electron app, so be sure to ~~download more RAM~~ assign lots of RAM to VM.
 
-Copied from [official instructions][vs_code_official_installation]:
+Copied from [official instructions][vs-code-official-installation]:
 
 ``` bash
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -144,5 +144,10 @@ sudo apt-get install docker-ce docker-compose
 sudo docker run hello-world
 ```
 
+If `docker-compose` does not work after installation and you get this error message `Couldn't connect to Docker daemon at http+unix://var/run/docker.sock` or [something similar][docker-compose-issue], add yourself to the `docker` group, logout and login:
+
+- `usermod -aG docker ${USER}`
+
 <!-- Links -->
-[vs_code_official_installation]: https://code.visualstudio.com/docs/setup/linux#_installation
+[vs-code-official-installation]: https://code.visualstudio.com/docs/setup/linux#_installation
+[docker-compose-issue]: https://github.com/docker/compose/issues/1214#issuecomment-102246925
