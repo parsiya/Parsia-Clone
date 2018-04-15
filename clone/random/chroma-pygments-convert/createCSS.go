@@ -11,7 +11,7 @@ func main() {
 	f, _ := os.Create("solarized-dark.css")
 	defer f.Close()
 
-	formatter := html.New(html.WithClasses(), html.WithLineNumbers())
+	formatter := html.New(html.WithClasses())
 	if err := formatter.WriteCSS(f, styles.Get("solarized-dark")); err != nil {
 		panic(err)
 	}
