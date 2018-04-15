@@ -17,6 +17,7 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
         - [Migration from Octopress to Hugo](#migration-from-octopress-to-hugo)
         - [Call Windows APIs in C/C++ using MinGW](#call-windows-apis-in-cc-using-mingw)
         - [Windows SearchPath](#windows-searchpath)
+        - [Converting Pygments Styles to Chroma](#converting-pygments-styles-to-chroma)
     - [Abandoned "Research"](#abandoned-research)
         - [BMC Track It 11.2](#bmc-track-it-112)
         - [Learning Triton](#learning-triton)
@@ -90,6 +91,10 @@ Notes on installing gcc on Windows and calling Windows APIs in C/C++.
 <a id="windows-searchpath"></a>
 #### [Windows SearchPath](clone/random/search-path.md)
 Notes about Windows SearchPath.
+
+<a id="converting-pygments-styles-to-chroma"></a>
+#### [Converting Pygments Styles to Chroma](clone/random/chroma-pygments-convert)
+Instructions for converting a Pygments style to [Chroma][chroma].
 
 -----
 
@@ -198,5 +203,6 @@ This repository will inevitably contain content from other parts of the internet
 [go-sshharvester]: https://parsiya.net/blog/2017-12-28-simple-ssh-harvester-in-go/
 [blockchain-security-1]: https://drive.google.com/file/d/1aXJgpGs6TznOx5uO7U1cvkvi-zVEjPSJ/view
 [from-atom-to-sublime]: https://parsiya.net/blog/2017-07-08-from-atom-to-sublime-text/
+[chroma]: https://github.com/alecthomas/chroma
 
 <!-- End Links -->
