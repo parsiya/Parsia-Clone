@@ -4,7 +4,7 @@
 Chroma has a [built-in tool for converting styles][chroma-styles] `_tools/style.py`.
 
 ## Instructions
-These are for an Ubuntu 16 machine, but can be adapted for any OS.
+These steps are for an Ubuntu 16 machine, but can be adapted for any OS.
 
 1. Install Go.
 2. Install Chroma with `https://github.com/alecthomas/chroma`.
@@ -13,7 +13,7 @@ These are for an Ubuntu 16 machine, but can be adapted for any OS.
 5. Install Pystache for Python 3: `sudo apt-get install python3-pystache`.
 5. Clone `solarized dark`: `git clone https://github.com/john2x/solarized-pygment/` (do not need to install it).
 6. (Optional) Rename the three py files inside `solarized=pygment/pygments_solarized` to more descriptive names. For example `dark.py` might become `solarized-dark.py`.
-7. Open each of them and note the class name. For example for `dark.py` it's `SolarizedDarkStyle`.
+7. Open each of them and note the style class name. For example for `dark.py` it's `SolarizedDarkStyle`.
 8. Copy the files to the `pygments` installation path. On my machine it was:
     * `/usr/local/lib/python3.5/dist-packages/Pygments-2.2.0-py3.5.egg/pygments/styles`.
 9. Use the `_tools/style.py` to generate `go` files from styles:
@@ -48,7 +48,11 @@ These are for an Ubuntu 16 machine, but can be adapted for any OS.
         }
     }
     ```
-14. Your CSS file is now ready.
+14. Copy/paste the CSS files to your theme's CSS.
+15. Inside your site's config file:
+    * Remove `pygmentsUseClassic`: This will tell Hugo to use Chroma.
+    * `pygmentsuseclasses = true`: Use CSS for highlighting.
+    * `pygmentscodefences = true`: This adds code highlight to code fences.
 
 
 <!-- Links -->
