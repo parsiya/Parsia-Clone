@@ -200,7 +200,7 @@ This repository will inevitably contain content from other parts of the internet
 [winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg---part-3---manipulating-function-calls/
 [winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg---part-4---bruteforcing-flareon-2017---challenge-3/
 [go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/
-[go-sshharvester]: https://parsiya.net/blog/2017-12-28-simple-ssh-harvester-in-go/
+[go-sshharvester]: https://parsiya.net/blog/2017-12-29-simple-ssh-harvester-in-go/
 [blockchain-security-1]: https://drive.google.com/file/d/1aXJgpGs6TznOx5uO7U1cvkvi-zVEjPSJ/view
 [from-atom-to-sublime]: https://parsiya.net/blog/2017-07-08-from-atom-to-sublime-text/
 [chroma]: https://github.com/alecthomas/chroma
