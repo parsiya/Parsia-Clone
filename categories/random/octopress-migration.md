@@ -1,21 +1,33 @@
+---
+draft: false
+toc: false
+comments: false
+categories:
+- Random
+tags:
+- Hugo
+- Octopress
+title: "Migration from Octopress to Hugo"
+wip: false
+snippet: "Random scripts used to convert my Octopress blog to [Hugo](https://gohugo.io/), [blog posts](https://parsiya.net/categories/migration-to-hugo/)."
+---
+
 # Migration from Octopress to Hugo
 Read about it here: https://parsiya.net/blog/2016-02-02-from-octopress-to-hugo/
 
 ## For the original imgcap
-sed -i -- 's/{{< imgcap src=\"\" caption=\"\" \([^ ]*\) \(.*\) >}}/{{< imgcap src="\1" caption="\2" >}}/' *.markdown
-
 what it should have been
 
 ``` bash
-sed -i -- 's/{% imgcap \([^ ]*\) \(.*\) %}/{{< imgcap src="\1" caption="\2" >}}/' *.markdown
+sed -i -- 's/{% imgcap \([^ ]*\) \(.*\) %}/{{</* imgcap src="\1" caption="\2" */>}}/' *.markdown
 
-sed -i -- 's/{% imgpopup \([^ ]*\) [^ ]* \(.*\) >}}/{{< imgcap src="\1" caption="\2" >}}/' *.markdown
+sed -i -- 's/{% imgpopup \([^ ]*\) [^ ]* \(.*\) >}}/{{</* imgcap src="\1" caption="\2" */>}}/' *.markdown
 
-sed -i -- 's/{% codeblock lang:\([^ ]*\) \(.*\) >}}/{{< codecaption lang="\1" title="\2" >}}/' *.markdown
+sed -i -- 's/{% codeblock lang:\([^ ]*\) \(.*\) >}}/{{</* codecaption lang="\1" title="\2" */>}}/' *.markdown
 
 {% codeblock lang:bash creating our root CA >}}
 
-{{< codecaption lang="csharp" title="RemotingLibrary.cs" >}}
+{{</* codecaption lang="csharp" title="RemotingLibrary.cs" */>}}
 
 s3cmd sync --delete-removed -P . s3://$BUCKET_NAME
 

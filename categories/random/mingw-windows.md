@@ -1,3 +1,17 @@
+---
+draft: false
+toc: false
+comments: false
+categories:
+- Random
+tags:
+- mingw
+- Windows
+title: "Call Windows APIs in C/C++ using MinGW"
+wip: false
+snippet: "Notes on installing gcc on Windows and calling Windows APIs in C/C++."
+---
+
 # Call Windows APIs with C++ using MinGW
 This can be accomplished without Cygwin/MSYS.
 
