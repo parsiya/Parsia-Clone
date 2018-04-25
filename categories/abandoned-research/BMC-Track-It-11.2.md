@@ -1,3 +1,16 @@
+---
+draft: false
+toc: false
+comments: false
+categories:
+- Abandoned Research
+tags:
+- .NET Remoting
+title: "BMC Track It 11.2"
+wip: false
+snippet: "Attempting to reproduce a .NET Remoting vulnerability."
+---
+
 # BMC Track It 11.2
 Download BMC Track It 11.2 from CNET. http://download.cnet.com/BMC-Track-It/3000-18482_4-10003961.html?tag=bc
 

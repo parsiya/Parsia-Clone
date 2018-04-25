@@ -1,3 +1,17 @@
+---
+draft: false
+toc: false
+comments: false
+categories:
+- Random
+tags:
+- Windows
+- SearchPath
+title: "Windows SearchPath"
+wip: false
+snippet: "Notes about Windows SearchPath."
+---
+
 A while ago I was playing with the Windows API [SearchPath][searchpath-link]. It will search for a specific file in `PATH`.
 
 ``` cpp

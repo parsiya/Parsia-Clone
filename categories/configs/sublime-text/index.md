@@ -1,3 +1,17 @@
+---
+draft: false
+toc: false
+comments: false
+categories:
+- Configs
+tags:
+- .NET Remoting
+title: "Sublime Text 3 Config"
+wip: false
+snippet: "My Sublime Text 3 config files and packages, [blog post](https://parsiya.net/blog/2017-07-08-from-atom-to-sublime-text/)."
+
+---
+
 # Setting up Sublime Text
 I have moved from Atom to Sublime. Atom is a nice editor with a lot of features but it has a lot of performance issues for what I want to do.
 
@@ -252,13 +266,13 @@ Unofficial documentation page: http://docs.sublimetext.info/en/latest/extensibil
 
 Actual snippet is in the `content` tag which supports new lines inside `CDATA`.
 
-For example the Snippet for my Hugo shortcode `codecaption` [(link)][hugo-codecap-link].
+For example the Snippet for my Hugo shortcode `codecaption` [(link)][hugo-codecap-link] (remove the `/*`s).
 
 ``` xml
 <snippet>
-  <content><![CDATA[{{< codecaption title="$1" lang="$2" >}}
+  <content><![CDATA[{{</* codecaption title="$1" lang="$2" >}}
 ${3:default text}
-{{< /codecaption >}}
+{{</* /codecaption >}}
     ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>codecap</tabTrigger>
@@ -273,11 +287,11 @@ ${3:default text}
 
 `scope`is where the snippet will be active. Without a scope, it's active in all documents. To get the current scope press `ctrl+alt+shift+p` or through `Tools > Developer > Show Scope Name`.
 
-Same thing can be done for `imgcaption` [(link)][hugo-imgcap-link].
+Same thing can be done for `imgcaption` [(link)][hugo-imgcap-link] (remove the `/ *`, `* /`s).
 
 ``` xml
 <snippet>
-  <content><![CDATA[{{< imgcap title="$1" src="/images/2017/${2:imagepath}" >}}]]></content>
+  <content><![CDATA[{{</* imgcap title="$1" src="/images/2017/${2:imagepath}" */>}}]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>imgcap</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
@@ -286,6 +300,7 @@ Same thing can be done for `imgcaption` [(link)][hugo-imgcap-link].
   <description>Imagecaption Hugo Shortcode</description>
 </snippet>
 ```
+
 <a id="completions"></a>
 ### Completions
 I prefer completions because all can be in one file. For most purposes we can treat them like snippets. They are JSON files so escape `"` with `\"` and new line is `\n`.
@@ -302,8 +317,8 @@ Sample completion file for markdown for the same shortcodes. Note the triggers a
 
    "completions":
    [
-      { "trigger": "codecap\tCodecaption Hugo Shortcode", "contents": "{{< codecaption title=\"$1\" lang=\"$2\" >}}\n${3:default text}\n{{< /codecaption >}}" },
-      { "trigger": "imgcap\tImagecaption Hugo Shortcode", "contents": "{{< imgcap title=\"$1\" src=\"/images/2017/${2:1.png}\" >}}" }
+      { "trigger": "codecap\tCodecaption Hugo Shortcode", "contents": "{{</* codecaption title=\"$1\" lang=\"$2\" */>}}\n${3:default text}\n{{</* /codecaption */>}}" },
+      { "trigger": "imgcap\tImagecaption Hugo Shortcode", "contents": "{{</* imgcap title=\"$1\" src=\"/images/2017/${2:1.png}\" */>}}" }
    ]
 }
 ```

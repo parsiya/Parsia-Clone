@@ -1,3 +1,17 @@
+---
+draft: false
+toc: false
+comments: false
+categories:
+- Configs
+tags:
+- Ubuntu
+title: "Ubuntu Setup after Installation"
+wip: false
+snippet: "Attempting to reproduce a .NET Remoting vulnerability."
+
+---
+
 # Ubuntu Setup after Installation
 Every once in a while I setup a new Ubuntu VM and I have to redo all these steps. This will help me speed things up.
 

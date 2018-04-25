@@ -54,7 +54,6 @@ These steps are for an Ubuntu 16 machine, but can be adapted for any OS.
     * `pygmentsuseclasses = true`: Use CSS for highlighting.
     * `pygmentscodefences = true`: This adds code highlight to code fences.
 
-
 <!-- Links -->
 
 [chroma]: https://github.com/alecthomas/chroma

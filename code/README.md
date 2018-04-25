@@ -1,3 +1,18 @@
+---
+draft: false
+toc: false
+comments: false
+categories:
+- Code
+tags:
+- Go
+- Python
+title: "Random Code"
+wip: false
+snippet: "Most of the code that I write for my blog posts."
+
+---
+
 # Random Code
 This repository contains most of the code that I write for my blog posts. I realized I have random repositories on Github and am consolidating them into one.
 

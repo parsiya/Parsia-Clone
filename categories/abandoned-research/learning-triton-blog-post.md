@@ -1,8 +1,16 @@
-+++
-date = "2016-02-09T00:03:40-05:00"
-draft = true
-title = "Learning Triton - Part 1"
-+++
+---
+draft: false
+toc: false
+comments: false
+categories:
+- Abandoned Research
+tags:
+- testtag
+title: "Learning Triton"
+wip: false
+snippet: "Notes on [Triton](https://triton.quarkslab.com/) installation."
+
+---
 
 So I decided to look at [Triton][triton-link].
 
@@ -42,7 +50,7 @@ deb installers for `libcapstone` can be downloaded from here: https://www.capsto
 
 Need `cmake` so `sudo apt-get install cmake`.
 
-
+[triton-link]: https://triton.quarkslab.com/
 [installation-link]: http://triton.quarkslab.com/documentation/doxygen/#install_sec
 [z3-release]: https://github.com/Z3Prover/z3/releases
 [z3-github]: https://github.com/Z3Prover/z3/releases
