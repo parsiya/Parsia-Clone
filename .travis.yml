@@ -1,0 +1,27 @@
+# safelist
+branches:
+  only:
+  - master
+  # - travis
+install:
+- wget https://github.com/gohugoio/hugo/releases/download/v0.40/hugo_0.40_Linux-64bit.deb
+- sudo dpkg -i hugo*.deb
+- git clone https://github.com/parsiya/parsiya.io parsiya.io
+- cd parsiya.io
+- git submodule init
+- git submodule update --recursive --remote
+script:
+- hugo
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: test-travis-parsia
+  region: us-east-1
+  local-dir: public
+  skip_cleanup: true
+  acl: public_read
+  on:
+    # Work on branches other than master.
+    branch:
+    - master
