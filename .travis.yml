@@ -16,7 +16,7 @@ deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
-  bucket: test-travis-parsia
+  bucket: parsiya.io
   region: us-east-1
   local-dir: public
   skip_cleanup: true
