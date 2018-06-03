@@ -4,7 +4,7 @@ branches:
   - master
   # - travis
 install:
-- wget https://github.com/gohugoio/hugo/releases/download/v0.40/hugo_0.40_Linux-64bit.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.41/hugo_0.41_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 - git clone https://github.com/parsiya/parsiya.io parsiya.io
 - cd parsiya.io

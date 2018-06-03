@@ -1,19 +1,4 @@
----
-date: 2018-04-27T23:03:22-04:00
-draft: false
-toc: false
-comments: false
-categories:
-- Research
-tags:
-- Go-Fuzz
-- Fuzzing
-title: "Go-Fuzz Quickstart"
-wip: false
-snippet: "Steps to get fuzzing with Go-Fuzz quickly."
----
-
-# Quickstart
+# Go-Fuzz Quickstart
 
 1. Get Go-fuzz by `go get github.com/dvyukov/go-fuzz`.
 2. Build and install `go-fuzz` and `go-fuzz-build`.
