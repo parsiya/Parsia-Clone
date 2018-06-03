@@ -10,7 +10,6 @@ tags:
 title: "Volatility on Windows Notes"
 wip: false
 snippet: "Using Volatility on Windows."
-date: 2018-06-02T21:42:13-04:00
 ---
 
 # rekal
