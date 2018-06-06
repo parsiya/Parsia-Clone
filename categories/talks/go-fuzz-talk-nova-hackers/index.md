@@ -15,7 +15,7 @@ wip: false
 I did a talk at NoVA Hackers on using Go-Fuzz.
 
 * [Slides in PDF](coverage-guided-fuzzing.pdf).
-* [Slides using go-talks.appspot.com](https://go-talks.appspot.com/github.com/parsiya/Parsia-Clone/tree/master/code/talks/coverage-guided-fuzzing/coverage-guided-fuzzing.slide): Looks much nicer than PDF.
+* [Slides using go-talks.appspot.com](https://go-talks.appspot.com/github.com/parsiya/parsia-clone/code/coverage-guided-fuzzing/coverage-guided-fuzzing.slide#1): Looks much nicer than PDF.
 * Using the [Go present](https://godoc.org/golang.org/x/tools/present) you can view the slides locally in your browser.
 
 Related blogs are at:
