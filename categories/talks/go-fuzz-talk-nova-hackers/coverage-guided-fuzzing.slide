@@ -1,0 +1,194 @@
+# Go present tool test
+Coverage Guided Fuzzing with GoFuzz
+NoVA Hackers
+14 May 2018
+Tags: Go, Go-Fuzz, Fuzzing
+
+Parsia
+
+* Outline
+- Intro
+- What is Go-Fuzz?
+- Fuzzing iprange
+- Demo
+- More demos if time permits
+- Questions
+
+# -----
+
+* Intro
+
+What is Fuzzing?
+
+- Throwing random input at software
+- Basically 70% of security
+- Hopefully intelligent
+
+# -----
+
+* What is Go-Fuzz?
+
+- AFL for Go
+- Coverage Guided Fuzzing
+- https://github.com/dvyukov/go-fuzz
+
+# -----
+
+*What*does*Go-Fuzz*do?*
+
+- Reports panics (Go crashes)
+- Receives feedback on fuzzing input
+- Adds good input to corpus
+
+# -----
+
+* Fuzzing iprange
+
+# -----
+
+* iprange package
+
+- https://github.com/malfunkt/iprange
+
+.image iprange.png
+
+# -----
+
+* iprange usage
+
+.play iprange-usage.go
+
+# -----
+
+* iprange Fuzz.go
+
+Return value is feedback to fuzzer:
+
+- 1 : Good input, add to corpus
+- 0 : Bad input, ignore unless it gave us more coverage
+- -1: Bad input, ignore even if it gave us more coverage
+
+.code -edit iprange-fuzz.go
+
+# -----
+
+* Advantages of Go-Fuzz
+
+- Fuzz internal packages because `Fuzz` is part of the package
+- Fuzz specific functions (e.g. packet parser instead of fuzzing the network socket)
+- Perform pre-processing on data before passing them to package (e.g. checksums, field lengths)
+- Easy to setup
+- Feedback on good/bad input
+
+# -----
+
+* Demo iprange
+
+# -----
+
+* binary.Uint32
+
+.code binary-uint32.go
+
+We can test the panic:
+
+.code test-uint32-panic.go
+
+# -----
+
+* Parse
+
+.code case5-parse.go
+
+# -----
+
+* CIDRMask
+
+Returns `nil` if input is valid. For example `CIDRMask(80,` `32)`.
+
+.code cidrmask.go
+
+# -----
+
+* Fix panic?
+
+Check the value of mask:
+
+- Before passing to CIDRMask.
+- Immediately after reading input.
+
+# -----
+
+* Why fix things? or philosophical rants
+
+- Just finding vulns == limited value
+- Pointing and laughing got us here today
+- security `consultant` (what I am) `==>` security `engineer` (what I want to be)
+
+# -----
+
+* Fuzzing goexif2
+
+# -----
+
+* goexif2 package
+
+- https://github.com/xor-gate/goexif2
+- Fork of https://github.com/rwcarlsen/goexif
+
+.image goexif2.png
+
+# -----
+
+* goexif2 Fuzz.go
+
+.code -edit goexif2-fuzz.go
+
+# -----
+
+* Fuzzing problems
+
+.image download-ram.png
+
+# -----
+
+* Out of memory crashes
+
+These are usually false positives.
+
+.code out-of-memory-crashes.txt
+
+# -----
+
+* Demo goexif2
+
+# -----
+
+* Int64 crash
+
+.code int64-crash.txt
+
+# -----
+
+* tag.Int64 method
+
+.code -edit tag-int64.go
+
+Fix it?
+
+.code -edit tag-int64-fixed.go
+
+# -----
+
+* More reading:
+
+- https://github.com/dvyukov/go-fuzz
+- https://medium.com/@dgryski/go-fuzz-github-com-arolek-ase-3c74d5a3150c
+- https://mijailovic.net/2017/07/29/go-fuzz/
+- https://blog.cloudflare.com/dns-parser-meet-go-fuzzer/
+- https://go-talks.appspot.com/github.com/dvyukov/go-fuzz/slides/fuzzing.slide#1
+- https://parsiya.net/blog/2018-04-29-learning-go-fuzz-1-iprange/
+- https://parsiya.net/blog/2018-05-05-learning-go-fuzz-2-goexif2/
+
+# -----
+
