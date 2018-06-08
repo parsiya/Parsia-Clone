@@ -205,10 +205,10 @@ As another example, I have created two snippets for my [Hugo shortcodes](https:/
     "codecaption": {
 		"prefix": "codecap",
 		"body": [
-            // */ is a placeholder to prevent Hugo from generating the shortcode.
-			"{{< codecaption title=\"${1:title}\" lang=\"${2:language}\"*/>}}",
+            // comment is a placeholder to prevent Hugo from generating the shortcode.
+			"{{</* codecaption title=\"${1:title}\" lang=\"${2:language}\" */>}}",
 			"${3:code}",
-			"{{< /codecaption >}}",
+			"{{</* /codecaption */>}}",
 			"", // empty line after shortcode
 			"$0"
 		],
