@@ -1,46 +1,39 @@
----
-draft: false
-toc: false
-comments: false
-categories:
-- Configs
-tags:
-- Sublime text
-title: "Sublime Text 3 Config"
-wip: false
-snippet: "My Sublime Text 3 config files and packages, [blog post](https://parsiya.net/blog/2017-07-08-from-atom-to-sublime-text/)."
-
----
-
-# Setting up Sublime Text <!-- omit in toc -->
+# Setting up Sublime Text
 I have moved from Atom to Sublime. Atom is a nice editor with a lot of features but it has a lot of performance issues for what I want to do.
 
 Below is my setup for reference. When I want to do it again in a year (or a new machine) I can just use everything here or just use the config files.
 
-- [Install Package Control](#install-package-control)
-- [Install Packages](#install-packages)
-- [Markdown Packages](#markdown-packages)
-- [How to Use the Config Files](#how-to-use-the-config-files)
-- [Package Settings and Locations](#package-settings-and-locations)
-- [Markdown Highlighting and Spell Check](#markdown-highlighting-and-spell-check)
-- [Setting up Markdown Live Preview](#setting-up-markdown-live-preview)
-  - [Enable LiveReload via Settings](#enable-livereload-via-settings)
-  - [Enable LiveReload Manually (repeat after every Sublime launch)](#enable-livereload-manually-repeat-after-every-sublime-launch)
-  - [Configure Markdown Preview](#configure-markdown-preview)
-  - [Preview Files](#preview-files)
-  - [Preview Keybind](#preview-keybind)
-- [Markdown Table of Content](#markdown-table-of-content)
-  - [TOC Keybind](#toc-keybind)
-- [Change Bold and Italic Markers](#change-bold-and-italic-markers)
-- [Snippets vs. Completions](#snippets-vs-completions)
-  - [Snippet](#snippet)
-  - [Completions](#completions)
-  - [Snippet and Completion Triggers](#snippet-and-completion-triggers)
-- [Fix "MarGo build failed" for GoSublime on Windows](#fix-margo-build-failed-for-gosublime-on-windows)
+<!-- MarkdownTOC -->
 
+- [Setting up Sublime Text](#setting-up-sublime-text)
+  - [Install Package Control](#install-package-control)
+  - [Install Packages](#install-packages)
+  - [Markdown Packages](#markdown-packages)
+  - [How to Use the Config Files](#how-to-use-the-config-files)
+  - [Package Settings and Locations](#package-settings-and-locations)
+  - [Markdown Highlighting and Spell Check](#markdown-highlighting-and-spell-check)
+  - [Setting up Markdown Live Preview](#setting-up-markdown-live-preview)
+    - [Enable LiveReload via Settings](#enable-livereload-via-settings)
+    - [Enable LiveReload Manually (need to do after every Sublime launch)](#enable-livereload-manually-need-to-do-after-every-sublime-launch)
+    - [Configure Markdown Preview](#configure-markdown-preview)
+    - [Preview Files](#preview-files)
+    - [Preview Keybind](#preview-keybind)
+  - [Markdown Table of Content](#markdown-table-of-content)
+    - [TOC Keybind](#toc-keybind)
+  - [Change Bold and Italic Markers](#change-bold-and-italic-markers)
+  - [Snippets vs. Completions](#snippets-vs-completions)
+    - [Snippet](#snippet)
+    - [Completions](#completions)
+    - [Snippet and Completion Triggers](#snippet-and-completion-triggers)
+  - [Fix "MarGo build failed" for GoSublime on Windows](#fix-margo-build-failed-for-gosublime-on-windows)
+
+<!-- /MarkdownTOC -->
+
+<a id="install-package-control"></a>
 ## Install Package Control
 Install package control using: https://packagecontrol.io/installation.
 
+<a id="install-packages"></a>
 ##  Install Packages
 Now you can install packages.
 
@@ -49,6 +42,7 @@ Now you can install packages.
 3. Type the name of the package you are looking for to search for it.
 4. Select the package and press Enter.
 
+<a id="markdown-packages"></a>
 ##  Markdown Packages
 
 1. Markdown Extended: Syntax highlighting.
@@ -59,10 +53,12 @@ Now you can install packages.
 6. MarkdownTOC: Automatically generate clickable table of contents to markdown documents.
 7. TOML: TOML highlighting.
 
+<a id="how-to-use-the-config-files"></a>
 ## How to Use the Config Files
 After installing packages, just copy the config files to the user package settings directory. On Windows it will be `"%Appdata%\Sublime Text 3\Packages\User\"` (don't forget the double quotes if you want to just paste it into the run prompt).
 
-## Package Settings and Locations
+<a id="package-settings-and-locations"></a>
+##  Package Settings and Locations
 Generally sublime and each package have two types of settings, default and user. User settings are used to override default ones. Both are in JSON.
 
 Settings can be opened via `Preferences > Package Settings > Settings Default/User`. I usually copy from default file to user, remove the unneeded settings and override the rest.
@@ -71,7 +67,8 @@ Package settings on Windows are at `%Appdata%\Sublime Text 3\Packages\User\packa
 
 Main settings can be overridden in `Preferences.sublime-settings` or accessed via `Preferences > Settings`. This will open two files in one window. Left are the defaults settings and right is the user settings file. Copy from left pane to the right one and override.
 
-## Markdown Highlighting and Spell Check
+<a id="markdown-highlighting-and-spell-check"></a>
+##  Markdown Highlighting and Spell Check
 `Markdown Editing` has its own color scheme. I don't like it. Instead I use `Monokai Extended`. It can be selected from `Preferences > Color Scheme > Monokai Extended > Monokai Extended`.
 
 In order for it to kick in, the document type need to be set to `Markdown Extended`. This can be set by clicking on document type (bottom right).
@@ -98,9 +95,11 @@ Go to `Preferences > Settings - Syntax Specific` or edit package settings `Markd
 
 Note that `Markdown Editing` has added itself for `.mdown` files. You can just delete the file `Markdown.sublime-settings` and add the extensions in the previous file.
 
-## Setting up Markdown Live Preview
+<a id="setting-up-markdown-live-preview"></a>
+##  Setting up Markdown Live Preview
 
-### Enable LiveReload via Settings
+<a id="enable-livereload-via-settings"></a>
+###  Enable LiveReload via Settings
 Add the following to user settings for the LiveReload package `LiveReload.sublime-settings`:
 
 ``` json
@@ -113,13 +112,15 @@ Add the following to user settings for the LiveReload package `LiveReload.sublim
 ```
 This way it does not need to be re-enabled after every start.
 
-### Enable LiveReload Manually (repeat after every Sublime launch)
+<a id="enable-livereload-manually-need-to-do-after-every-sublime-launch"></a>
+###  Enable LiveReload Manually (need to do after every Sublime launch)
 1. Open command palette and type `livereload`.
 2. Select `LiveReload: Enable/disable plug-ins`.
 3. Select `Enable - Simple Reload with delay(400ms)`.
 4. You should see a console message saying it was enabled. Note that the menu will say `Enable` whether it's enabled or not, if it's already enabled choosing the menu will disable it so make sure to look at the console messages.
 
-### Configure Markdown Preview
+<a id="configure-markdown-preview"></a>
+###  Configure Markdown Preview
 Supposedly these two plugins work out of the box. It was not in my case. I had to add autoreload in markdown preview. I removed the `github` parser because it sends the markdown file to Github to be processed.
 
 Add the following to `MarkdownPreview.sublime-settings`:
@@ -132,11 +133,13 @@ Add the following to `MarkdownPreview.sublime-settings`:
 }
 ```
 
-### Preview Files
+<a id="preview-files"></a>
+###  Preview Files
 1. Open command palette and select `Markdown Preview: Preview in Browser`.
 2. A new browser window will open to display the rendered document.
 2. Browser should update after every save.
 
+<a id="preview-keybind"></a>
 ### Preview Keybind
 Add the following to `Default (Windows).sublime-keymap` or open it via `Preferences > Key Bindings`.
 
@@ -155,7 +158,8 @@ Add the following to `Default (Windows).sublime-keymap` or open it via `Preferen
 ]
 ```
 
-## Markdown Table of Content
+<a id="markdown-table-of-content"></a>
+##  Markdown Table of Content
 1. Install package `Markdown TOC`.
 2. Add the following user settings to `MarkdownTOC.sublime-settings`:
 
@@ -179,6 +183,7 @@ Add the following to `Default (Windows).sublime-keymap` or open it via `Preferen
 <!-- /MarkdownTOC -->
 ```
 
+<a id="toc-keybind"></a>
 ### TOC Keybind
 Add the following to the keymap `Default (Windows).sublime-keymap`:
 
@@ -191,6 +196,7 @@ Add the following to the keymap `Default (Windows).sublime-keymap`:
 }
 ```
 
+<a id="change-bold-and-italic-markers"></a>
 ## Change Bold and Italic Markers
 By default in markdown editing, bold marker is `__` and italic is `_`. I am more used to `**` for bold and `*` for italic.
 
@@ -229,6 +235,7 @@ Simply add a file named `Bold and Italic Markers.tmPreferences` and put it in th
 </plist>
 ```
 
+<a id="snippets-vs-completions"></a>
 ## Snippets vs. Completions
 Essentially both do the same.
 
@@ -238,6 +245,7 @@ Essentially both do the same.
 
 Mainly as a result of 3, I went with completions because it's just one file and easier to manage (although harder to read).
 
+<a id="snippet"></a>
 ### Snippet
 `Tools > Developer > New Snippet` will create and open a template. Files are stored in the `User` directory similar to config files (although packages can have their own snippets). Extension for snippets is `sublime-snippet`.
 
@@ -280,6 +288,7 @@ Same thing can be done for `imgcaption` [(link)][hugo-imgcap-link] (remove the `
 </snippet>
 ```
 
+<a id="completions"></a>
 ### Completions
 I prefer completions because all can be in one file. For most purposes we can treat them like snippets. They are JSON files so escape `"` with `\"` and new line is `\n`.
 
@@ -305,6 +314,7 @@ Note the `trigger`, the first part is the actual trigger and everything after `\
 
 There are tons of `completion` files for different languages and frameworks online and in package control.
 
+<a id="snippet-and-completion-triggers"></a>
 ### Snippet and Completion Triggers
 In short type the trigger (or parts of it if it's unique) and press `tab`. If there are snippets and completions with the same triggers, snippets always have priority.
 
@@ -312,6 +322,7 @@ In short type the trigger (or parts of it if it's unique) and press `tab`. If th
 - Typing `code` and `ctrl+space` will show it in the auto-complete menu.
 - Typing `snippet` in the command palette will show all snippets for the current scope along with their triggers.
 
+<a id="fix-margo-build-failed-for-gosublime-on-windows"></a>
 ## Fix "MarGo build failed" for GoSublime on Windows
 GoSublime's executable has Go version in it. In most cases, it cannot grab the version on Windows and the build will fail like this:
 

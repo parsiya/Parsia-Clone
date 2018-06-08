@@ -1,0 +1,72 @@
+{
+    // Open a new file when an empty instance is started
+    "workbench.startupEditor": "newUntitledFile",
+    // Disable npm script detection
+    "npm.autoDetect": "off",
+    // Use Unix style EOL
+    "files.eol": "\n",
+    // Set ruler at 80 characters
+    "editor.rulers": [80],
+    // Disable the annoying extension recommendation pop-up
+    "extensions.ignoreRecommendations": false,
+
+    // **Intellisense**
+    // Send snippets to top
+    "editor.snippetSuggestions": "top",
+    // Enable tab complete for snippets
+    "editor.tabCompletion": true,
+    // Show parameter documentation as you type
+    "editor.parameterHints": true,
+    // Suggest snippets as you type trigger characters
+    "editor.suggestOnTriggerCharacters": true,
+    // Enable quick suggestions
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+    // **Go lint options**
+    // Use gometalinter
+    "go.lintTool": "gometalinter",
+    // Lint all workspace, this is good for source code review
+    // Other options are "off" or "package"
+    "go.lintOnSave": "workspace",
+
+    // **Markdown options**
+    "[markdown]": {
+        // Enable word based suggestions
+        "editor.wordBasedSuggestions": true,
+        // Disable drag and drop in markdown files
+        "editor.dragAndDrop": false,
+        // Enable quick suggestions
+        "editor.quickSuggestions": true,
+        // Send snippets to top in suggestion list
+        "editor.snippetSuggestions": "top",
+    },
+    // Markdown Lint settings
+    "markdownlint.config": {
+        // Disable some rules - hover with mouse for description (only works in settings file)
+        "MD022": false,
+        "MD032": false,
+        "MD007": false,
+        "MD010": false,
+    },
+    // Markdown All in One options
+    // Generate Github compatible table of content
+    "markdown.extension.toc.githubCompatibility": true,
+    // Update the table of content on save
+    "markdown.extension.toc.updateOnSave": true,
+
+    // **Git**
+    // **uncomment to disable git**
+    // "git.enabled": false,
+    // "git.path": null,
+    // "git.autofetch": false,
+
+    // **Disable some gitlens stuff**
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.historyExplorer.enabled": false,
+
+}
