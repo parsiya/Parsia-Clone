@@ -14,6 +14,7 @@
 		"prefix": "imgcap",
 		"body": [
 			"{{< imgcap title=\"${1:title}\" src=\"${2:filename}.png\" >}}",
+			"",
 			"$0"
 		],
 		"description": "image caption Hugo shortcode"
