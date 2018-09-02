@@ -4,14 +4,14 @@ branches:
   - master
   # - travis
 install:
-- wget https://github.com/gohugoio/hugo/releases/download/v0.41/hugo_0.41_Linux-64bit.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.48/hugo_0.48_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 - git clone https://github.com/parsiya/parsiya.io parsiya.io
 - cd parsiya.io
 - git submodule init
 - git submodule update --recursive --remote
 script:
-- hugo
+- hugo --minify
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
@@ -22,6 +22,6 @@ deploy:
   skip_cleanup: true
   acl: public_read
   on:
-    # Work on branches other than master.
+    # Add other branches here.
     branch:
     - master
