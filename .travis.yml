@@ -3,25 +3,38 @@ branches:
   only:
   - master
   # - travis
+
 install:
+# Download and install Hugo
 - wget https://github.com/gohugoio/hugo/releases/download/v0.48/hugo_0.48_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
+
+# Clone and update the repo
 - git clone https://github.com/parsiya/parsiya.io parsiya.io
 - cd parsiya.io
 - git submodule init
 - git submodule update --recursive --remote
+
+# Download and install s3deploy
+- wget https://github.com/bep/s3deploy/releases/download/v2.0.2/s3deploy_2.0.2_Linux-64bit.deb
+- sudo dpkg -i s3deploy*.deb
+
 script:
 - hugo --minify
-deploy:
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  bucket: parsiya.io
-  region: us-east-1
-  local-dir: public
-  skip_cleanup: true
-  acl: public_read
-  on:
-    # Add other branches here.
-    branch:
-    - master
+- s3deploy -source=public/ -region=us-east-1 -bucket=parsiya.io
+
+
+# Disable Travis deploy to use s3deploy
+# deploy:
+#   provider: s3
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key: $AWS_SECRET_ACCESS_KEY
+#   bucket: parsiya.io
+#   region: us-east-1
+#   local-dir: public
+#   skip_cleanup: true
+#   acl: public_read
+#   on:
+#     # Add other branches here.
+#     branch:
+#     - master
