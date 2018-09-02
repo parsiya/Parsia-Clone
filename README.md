@@ -3,11 +3,11 @@ This is my clone. I have been maintaining one internally at Cigital/Synopsys sin
 
 The clone resides at [parsiya.io][parsiya-io]. Previously, the articles were added via git and the index was manually generated. You can see the old (and outdated) read me at [old-readme.md](Old-READMD.md).
 
-Currently the website is generated from this repository using a modified version of my theme. You can find the template at https://github.com/parsiya/parsiya.io. 
+I have explained how I create the resulting website in these two blog posts:
 
-TODO:
+- [Deploying my Knowledge Base at parsiya.io to S3 with Travis CI](https://parsiya.net/blog/2018-04-24-deploying-my-knowledge-base-at-parsiya.io-to-s3-with-travis-ci/)
+- [Semi-Automated Cloning: Pain-Free Knowledge Base Creation](https://parsiya.net/blog/2018-04-24-semi-automated-cloning-pain-free-knowledge-base-creation/)
 
-- Write a blog post explaining what has been modified and the flow.
 
 <!-- Links -->
 [parsiya-net]: https://parsiya.net
