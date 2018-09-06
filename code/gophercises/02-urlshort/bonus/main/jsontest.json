@@ -1,0 +1,18 @@
+[
+    {
+      "path": "/urlshort",
+      "url": "https://github.com/gophercises/urlshort"
+    },
+    {
+      "path": "/urlshort-final",
+      "url": "https://github.com/gophercises/urlshort/tree/solution"
+    },
+    {
+      "path": "/example",
+      "url": "https://example.net"
+    },
+    {
+      "path": "/google",
+      "url": "https://google.com"
+    }
+]
