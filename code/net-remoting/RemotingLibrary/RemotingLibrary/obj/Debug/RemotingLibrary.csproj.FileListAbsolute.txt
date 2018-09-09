@@ -1,4 +1,0 @@
-c:\users\x64\documents\visual studio 2015\Projects\RemotingLibrary\RemotingLibrary\bin\Debug\RemotingLibrary.dll
-c:\users\x64\documents\visual studio 2015\Projects\RemotingLibrary\RemotingLibrary\bin\Debug\RemotingLibrary.pdb
-c:\users\x64\documents\visual studio 2015\Projects\RemotingLibrary\RemotingLibrary\obj\Debug\RemotingLibrary.dll
-c:\users\x64\documents\visual studio 2015\Projects\RemotingLibrary\RemotingLibrary\obj\Debug\RemotingLibrary.pdb

@@ -8,6 +8,8 @@ I have explained how I create the resulting website in these two blog posts:
 - [Deploying my Knowledge Base at parsiya.io to S3 with Travis CI](https://parsiya.net/blog/2018-04-24-deploying-my-knowledge-base-at-parsiya.io-to-s3-with-travis-ci/)
 - [Semi-Automated Cloning: Pain-Free Knowledge Base Creation](https://parsiya.net/blog/2018-04-24-semi-automated-cloning-pain-free-knowledge-base-creation/)
 
+# Content License
+Except where otherwise noted, non-code material on this website is licensed under a <a rel="license"  target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY-NC</a>.
 
 <!-- Links -->
 [parsiya-net]: https://parsiya.net

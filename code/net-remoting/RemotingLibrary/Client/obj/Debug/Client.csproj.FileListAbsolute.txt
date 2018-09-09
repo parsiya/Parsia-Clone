@@ -1,8 +1,0 @@
-C:\Users\x64\Documents\Visual Studio 2015\Projects\RemotingLibrary\Client\bin\Debug\Client.exe.config
-C:\Users\x64\Documents\Visual Studio 2015\Projects\RemotingLibrary\Client\bin\Debug\Client.exe
-C:\Users\x64\Documents\Visual Studio 2015\Projects\RemotingLibrary\Client\bin\Debug\Client.pdb
-C:\Users\x64\Documents\Visual Studio 2015\Projects\RemotingLibrary\Client\bin\Debug\RemotingLibrary.dll
-C:\Users\x64\Documents\Visual Studio 2015\Projects\RemotingLibrary\Client\bin\Debug\RemotingLibrary.pdb
-C:\Users\x64\Documents\Visual Studio 2015\Projects\RemotingLibrary\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
-C:\Users\x64\Documents\Visual Studio 2015\Projects\RemotingLibrary\Client\obj\Debug\Client.exe
-C:\Users\x64\Documents\Visual Studio 2015\Projects\RemotingLibrary\Client\obj\Debug\Client.pdb
