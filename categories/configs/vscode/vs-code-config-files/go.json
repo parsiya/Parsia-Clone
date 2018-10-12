@@ -1,0 +1,12 @@
+{
+	"if panic(err)": {
+		"prefix": "ifpanic",
+		"body": [
+			"if err != nil {",
+			"    panic(err)",
+			"}",
+			"$0",
+		],
+		"description": "Create if with panic(err)"
+	}
+}
