@@ -6,7 +6,7 @@ branches:
 
 install:
 # Download and install Hugo
-- wget https://github.com/gohugoio/hugo/releases/download/v0.48/hugo_0.48_Linux-64bit.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.49.2/hugo_0.49.2_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 
 # Clone and update the repo
@@ -16,7 +16,7 @@ install:
 - git submodule update --recursive --remote
 
 # Download and install s3deploy
-- wget https://github.com/bep/s3deploy/releases/download/v2.0.2/s3deploy_2.0.2_Linux-64bit.deb
+- wget https://github.com/bep/s3deploy/releases/download/v2.2.0/s3deploy_2.2.0_Linux-64bit.deb
 - sudo dpkg -i s3deploy*.deb
 
 script:

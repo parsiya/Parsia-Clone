@@ -48,3 +48,10 @@ No one knows what "coding in the application security" means.
 Source: HackerNews
 
 ![](img/fields-medal.png)
+
+## Seen in Northern Virginia
+Someone has a bit of economic anxiety.
+
+Source: Myself.
+
+![](crazy-in-nova.jpg)
