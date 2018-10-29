@@ -1,3 +1,6 @@
+# Use a smaller/faster container.
+language: minimal
+
 # safelist
 branches:
   only:

@@ -26,14 +26,16 @@ snippet: "Steps to get fuzzing with Go-Fuzz quickly."
 5. Create a function named `Fuzz` inside `Fuzz.go` with this signature `func Fuzz(data []byte) int`.
 6. `Fuzz` should return `1` if input is good and `0` otherwise.
 7. Create fuzzing directory, e.g. `go-fuzz-project-name`.
-8. `go-fuzz-build github.com/author/project` (note forward slashes even on Windows). Copy the resulting file (`project-fuzz.zip`) to fuzzing directory.
+8. `go-fuzz-build github.com/author/project` (note forward slashes even on Windows). Copy the resulting file (`project-fuzz.zip`) to the fuzzing directory.
 9. Make a directory called `corpus` and store samples there.
 10. `go-fuzz -bin=project-fuzz.zip -workdir=.` to begin fuzzing.
 
 ## Links
 
 - Main repo: https://github.com/dvyukov/go-fuzz
-- Example by @dgryski: https://medium.com/@dgryski/go-fuzz-github-com-arolek-ase-3c74d5a3150c
-- Example by Nemanja Mijailovic: https://mijailovic.net/2017/07/29/go-fuzz/
+- "Fuzzing the new unit testing" by Dmitry Vyukov (Go-Fuzz creator): https://go-talks.appspot.com/github.com/dvyukov/go-fuzz/slides/fuzzing.slide#1
+- "go-fuzz github.com/arolek/ase" by Damian Gryski: https://medium.com/@dgryski/go-fuzz-github-com-arolek-ase-3c74d5a3150c
+- "Going down the rabbit hole with go-fuzz" by Nemanja Mijailovic: https://mijailovic.net/2017/07/29/go-fuzz/
 - DNS parser, meet Go fuzzer by Filippo Valsorda: https://blog.cloudflare.com/dns-parser-meet-go-fuzzer/
-    - His talk at GothamGo 2015: https://www.youtube.com/watch?v=kOZbFSM7PuI
+    - "Automated Testing with Go-Fuzz" GothamGo 2015: https://www.youtube.com/watch?v=kOZbFSM7PuI
+- "Fuzzing Markdown parser written in Go" by Krzysztof Kowalczyk: https://blog.kowalczyk.info/article/n/fuzzing-markdown-parser-written-in-go.html
