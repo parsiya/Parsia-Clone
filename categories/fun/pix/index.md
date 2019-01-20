@@ -12,7 +12,7 @@ snippet: "\"lol no generics\""
 ---
 
 ### Information Security Restrooms
-Where you go to "dump" you exploits. It's a place in Reston, Virginia.
+Where you go to "dump" you exploits. It's located in Reston, Virginia.
 
 ![](img/infosec-restrooms.jpg)
 
