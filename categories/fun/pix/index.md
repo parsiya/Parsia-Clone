@@ -7,8 +7,7 @@ categories:
 tags:
 - Pictures
 title: "Random Images"
-wip: true
-snippet: "\"lol no generics\""
+wip: false
 ---
 
 ### Information Security Restrooms
@@ -50,8 +49,8 @@ Source: HackerNews
 ![](img/fields-medal.png)
 
 ## Seen in Northern Virginia
-Someone has a bit of economic anxiety.
+Someone shouldn't be driving.
 
-Source: Myself.
+Source: Myself
 
-![](crazy-in-nova.jpg)
+![](img/crazy-in-nova.jpg)
