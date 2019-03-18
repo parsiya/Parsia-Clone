@@ -16,7 +16,7 @@ Where you go to "dump" you exploits. It's located in Reston, Virginia.
 ![](img/infosec-restrooms.jpg)
 
 ### You did this? I did this.
-Let me just take add my name to your code.
+Let me just take credit for your code.
 
 ![](img/i-did-this.png)
 
@@ -54,3 +54,8 @@ Someone shouldn't be driving.
 Source: Myself
 
 ![](img/crazy-in-nova.jpg)
+
+## Genuine Fake Watches
+Took the picture at Kusadaci, Turkey in June 2018. Amazing city by the way.
+
+![](img/genuine-fake.jpg)

@@ -8,7 +8,7 @@ tags:
 - books
 title: "Old Book List"
 wip: false
-snippet: "I used to keep track of books I had read and the time."
+snippet: "I used to keep track of books I had read and the time I finished them."
 
 ---
 
