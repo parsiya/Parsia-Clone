@@ -1,13 +1,43 @@
 {
-    // Disable telemetry
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    "editor.fontSize": 15,
+    "markdown.preview.fontSize": 16,
+    "cSpell.userWords": [
+        "Bitbucket",
+        "Cigital",
+        "Comms",
+        "Gitlab",
+        "Synopsys",
+        "blockchain",
+        "cheatsheet",
+        "codecaption",
+        "executables",
+        "hakimian",
+        "imgcap",
+        "markdownify",
+        "octopress",
+        "parsia",
+        "parsiya",
+        "procmon",
+        "relref",
+        "videogames"
+    ],
+
+    // Open a new file when an empty instance is started
+    "workbench.startupEditor": "newUntitledFile",
+    // Disable npm script detection
+    "npm.autoDetect": "off",
+    // Use Unix style EOL
+    "files.eol": "\n",
+    // Set ruler at 80 characters
+    "editor.rulers": [80],
+    // Disable the annoying extension recommendation pop-up
+    "extensions.ignoreRecommendations": true,
 
     // **Intellisense**
     // Send snippets to top
     "editor.snippetSuggestions": "top",
     // Enable tab complete for snippets
-    "editor.tabCompletion": "onlySnippets",
+    "editor.tabCompletion": true,
     // Show parameter documentation as you type
     "editor.parameterHints": true,
     // Suggest snippets as you type trigger characters
@@ -16,36 +46,21 @@
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
-        "strings": false
+        "strings": true
     },
 
-    // **editor misc**
-    // Set ruler at 80 and 100 characters
-    "editor.rulers": [80,100],
-    // Font size
-    "editor.fontSize": 15,
-    // Open a new file when an empty instance is started
-    "workbench.startupEditor": "newUntitledFile",
-    // Use Unix style EOL
-    "files.eol": "\n",
-
-    // **Go**
+    // **Go lint options**
+    // Use gometalinter
+    "go.lintTool": "gometalinter",
     // Lint all workspace, this is good for source code review
     // Other options are "off" or "package"
-    "go.lintOnSave": "workspace",
-    // Complete functions with parameters
+    "go.lintOnSave": "package",
+    // Enable auto population of function parameters.
     "go.useCodeSnippetsOnFunctionSuggest": true,
-    // golang-ci
-    "go.lintTool":"golangci-lint",
-    "go.lintFlags": [
-        "--fast",
-        "--enable=gosec",
-        "--enable=gofmt",
-        "--enable=misspell",
-        "--enable=unparam"
-    ],
+    // Increase timeout for running tests.
+    "go.testTimeout": "600s",
 
-    // **Markdown**
+    // **Markdown options**
     "[markdown]": {
         // Enable word based suggestions
         "editor.wordBasedSuggestions": true,
@@ -56,20 +71,25 @@
         // Send snippets to top in suggestion list
         "editor.snippetSuggestions": "top",
     },
-    // "Markdown Lint" settings
+    // Markdown Lint settings
     "markdownlint.config": {
         // Disable some rules - hover with mouse for description (only works in settings file)
         "MD022": false,
         "MD032": false,
         "MD007": false,
         "MD010": false,
+        "MD004": false,
     },
-    // "Markdown All in One" options
+    // Markdown All in One options
     // Generate Github compatible table of content
     "markdown.extension.toc.githubCompatibility": true,
     // Update the table of content on save
     "markdown.extension.toc.updateOnSave": true,
-    
+    // Set list indentation to inherit
+    "markdown.extension.list.indentationSize": "inherit",
+    // Convert toc to lowercase to work on Github and Hugo
+    "markdown.extension.toc.downcaseLink": true,
+
     // **Git**
     // **uncomment to disable git**
     // "git.enabled": false,
@@ -80,8 +100,16 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.historyExplorer.enabled": false,
-    
-    // **misc**
-    // Disable npm script detection
-    "npm.autoDetect": "off",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "window.zoomLevel": 0,
+    "workbench.statusBar.feedback.visible": false,
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "gitlens.advanced.telemetry.enabled": false,
 }

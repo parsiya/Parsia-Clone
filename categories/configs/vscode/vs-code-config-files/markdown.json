@@ -35,7 +35,7 @@
 	"codefence": {
 		"prefix": "ffe",
 		"body": [
-			"``` ${1:language}",
+			"```${1:language}",
 			"${2:code}",
 			"```",
 			"",
@@ -46,10 +46,49 @@
 	"relref": {
 		"prefix": "relref",
 		"body": [
-			"[${1:link-text}]({{< relref \"/post/${2:2018-08-01-blog/index.markdown#anchor}\" >}} \"${3:hover text}\") $0"
+			"[${1:link-text}]({{< relref \"/post/${2:2018-08-01-blog/index.markdown#anchor}\" >}} \"${1:hover text}\") $0"
 		],
 		"description": "relref shortcode"
 	},
+	"wp": {
+		"prefix": "wp",
+		"body": [
+			"{{< wp tag=\"${1:tag}\" lang=\"${2:lang}\" title=\"${:title}\" >}}"
+		],
+		"description": "wikipedia link generator"
+	},
+	"blockquote": {
+		"prefix": "bq",
+		"body": [
+			"{{< blockquote author=\"${1:author}\" link=\"${2:link}\" title=\"${3:title}\" >}}",
+			"${4:quote}",
+			"{{< blockquote >}}",
+			"",
+			"$0"
+		],
+		"description": "blockquote"
+	},
+	"current year": {
+		"prefix": "year",
+		"body": [
+			"{{< year >}}"
+		],
+		"description": "current year"
+	},
+	"abbr": {
+		"prefix": "abbr",
+		"body": [
+			"{{< abbr title=\"$1\" text=\"$2\" >}} $3"
+		],
+		"description": "abbr HTML tag"
+	},
+	"mark": {
+		"prefix": "mark",
+		"body": [
+			"{{< mark text=\"$1\" >}} $2"
+		],
+		"description": "mark HTML tag"
+	}
 }
 
 
