@@ -31,6 +31,9 @@ snippet: "This is my random list of (mostly security) links."
     * https://medium.com/@KentGruber/tracking-down-a-golang-memory-leak-with-grmon-74569a00a177
 * Using Go modules with vendor support on Travis CI
     * https://arslan.io/2018/08/26/using-go-modules-with-vendor-support-on-travis-ci/
+* A quick one-liner to list all imports of your current project
+    * https://www.reddit.com/r/golang/comments/8cl6jb/a_quick_oneliner_to_list_all_imports_of_your/
+    * `go list -json . | jq .Imports,.TestImports | sort | uniq | tail -n +3`
 
 # .NET
 
@@ -64,6 +67,15 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/quickbreach/ExchangeRelayX
 * windows-acl: working with ACLs in Rust
     * https://blog.trailofbits.com/2018/08/23/introducing-windows-acl-working-with-acls-in-rust/
+* Notable: Note taking app
+    * https://github.com/jmcfarlane/notable
+* TCPHound: Win32 utility for auditing TCP connections
+    * https://github.com/limbenjamin/TCPHound
+
+# Static Analysis
+
+* Static Program Analysis book (updated regularly)
+    * https://cs.au.dk/~amoeller/spa/spa.pdf
 
 # Cloud
 
@@ -160,6 +172,14 @@ snippet: "This is my random list of (mostly security) links."
     * https://blogs.technet.microsoft.com/srd/2018/04/04/triaging-a-dll-planting-vulnerability/
 * Watch your Downloads: the risk of the "auto-download" feature on Microsoft Edge and Google Chrome
     * http://justhaifei1.blogspot.com/2015/10/watch-your-downloads-risk-of-auto.html
+* Fix Windows 10 Privacy
+    * https://fix10.isleaked.com/
+* The Art of Becoming TrustedInstaller - Task Scheduler Edition
+    * https://tyranidslair.blogspot.com/2019/09/the-art-of-becoming-trustedinstaller.html
+* Modern Windows Attacks and Defense Lab
+    * https://github.com/jaredhaight/WindowsAttackAndDefenseLab
+* Spying on HTTPS - How Antivirus apps monitor HTTPs
+    * https://textslashplain.com/2019/08/11/spying-on-https/
 
 # Reverse Engineering
 
@@ -193,11 +213,27 @@ snippet: "This is my random list of (mostly security) links."
     3. Chromatic aberration: https://astralcode.blogspot.com/2017/10/reverse-engineering-rendering-of_26.html
     4. Vignette: https://astralcode.blogspot.com/2018/02/reverse-engineering-rendering-of.html
     5. Drunk effect: https://astralcode.blogspot.com/2018/08/reverse-engineering-rendering-of.html
+* Behind Enemy Lines- Reverse Engineering C++ in Modern Ages
+    * https://drive.google.com/file/d/1PgK-gWSgq48oVWQE7borOQHG4rpdmt60/view
+* COM Hijacking Techniques David Tulis - DerbyCon 2019
+    * https://www.youtube.com/watch?v=pH14BvUiTLY
+* WinDbg commands flash cards
+    * https://quizlet.com/12323606/windbg-commands-flash-cards/
+* "Modern Debugging with WinDbg Preview" DEFCON 27 workshop
+    * https://github.com/hugsy/defcon_27_windbg_workshop
+    * WinDbg cheatsheet: https://github.com/hugsy/defcon_27_windbg_workshop/blob/master/windbg_cheatsheet.md
+* Analysing RPC With Ghidra and Neo4j
+    * https://blog.xpnsec.com/analysing-rpc-with-ghidra-neo4j/
+* Trusted types & the end of DOM XSS - Krzysztof Kotowicz - LocoMocoSec 2019
+    * https://www.youtube.com/watch?v=po6GumtHRmU&list=PLFTyE08qmQMUOJju0ebY3ep__XT9U3R0G&index=7&t=0s
+* 
 
 # Python
 
 * CPython internals: A ten-hour codewalk through the Python interpreter source code
     * https://www.youtube.com/playlist?list=PLzV58Zm8FuBL6OAv1Yu6AwXZrnsFbbR0S
+* Pyshark - Python Wrapper For Tshark, Allowing Python Packet Parsing Using Wireshark Dissectors 
+    * https://www.kitploit.com/2019/08/pyshark-python-wrapper-for-tshark.html
 
 # Websec
 
@@ -215,6 +251,12 @@ snippet: "This is my random list of (mostly security) links."
     * https://digi.ninja/projects/vulndap.php
 * How to Hack WebSockets and Socket.io
     * https://www.blackhillsinfosec.com/how-to-hack-websockets-and-socket-io/
+* JSON Web Token Best Current Practices
+    * https://tools.ietf.org/html/draft-ietf-oauth-jwt-bcp-04
+* The Illustrated TLS Connection
+    * https://tls.ulfheim.net/
+* OAuth 2.0 Security Best Current Practice
+    * https://tools.ietf.org/html/draft-ietf-oauth-security-topics-13
 
 # Misc - Security
 
@@ -224,6 +266,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://docs.google.com/presentation/d/19HfkIojyLE8L8X8aZT-lJont96JqIg4PqEhb2juIK2c/
 * Learning PowerShell
     * https://www.verboon.info/2018/03/its-never-too-late-to-start-learning-powershell/
+* ShellCheck, a static analysis tool for shell scripts
+    * https://github.com/koalaman/shellcheck
 
 # Exploit Dev
 
@@ -258,3 +302,15 @@ snippet: "This is my random list of (mostly security) links."
 
 * Driving OWASP @zaproxy using Selenium
     * https://www.facebook.com/OWASPLondon/videos/266758580490230/
+
+# Docker
+
+* Unprivileged Docker Builds – A Proof of Concept
+    * https://zwischenzugs.com/2018/04/23/unprivileged-docker-builds-a-proof-of-concept/
+
+# AFL
+
+* Fuzzing projects with american fuzzy lop (AFL)
+    * https://0x00sec.org/t/fuzzing-projects-with-american-fuzzy-lop-afl/6498
+* AFL-unicorn: What is it and how to use it?
+    * https://tthtlc.wordpress.com/2019/03/16/afl-unicorn-what-is-it-and-how-to-use-it/amp/
