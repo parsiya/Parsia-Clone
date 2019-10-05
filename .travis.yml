@@ -9,7 +9,7 @@ branches:
 
 install:
 # Download and install Hugo
-- wget https://github.com/gohugoio/hugo/releases/download/v0.49.2/hugo_0.49.2_Linux-64bit.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.58.3/hugo_0.58.3_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 
 # Clone and update the repo
@@ -26,8 +26,7 @@ script:
 - hugo --minify
 - s3deploy -source=public/ -region=us-east-1 -bucket=parsiya.io
 
-
-# Disable Travis deploy to use s3deploy
+# Disable Travis deploy and use s3deploy
 # deploy:
 #   provider: s3
 #   access_key_id: $AWS_ACCESS_KEY
