@@ -34,6 +34,13 @@ snippet: "This is my random list of (mostly security) links."
 * A quick one-liner to list all imports of your current project
     * https://www.reddit.com/r/golang/comments/8cl6jb/a_quick_oneliner_to_list_all_imports_of_your/
     * `go list -json . | jq .Imports,.TestImports | sort | uniq | tail -n +3`
+* Go Compiler Internals
+    * https://eli.thegreenplace.net/2019/go-compiler-internals-adding-a-new-statement-to-go-part-1/
+    * https://eli.thegreenplace.net/2019/go-compiler-internals-adding-a-new-statement-to-go-part-2/
+* goebpf - Library to work with eBPF programs from Go
+    * https://github.com/dropbox/goebpf
+* script - Making it easy to write shell-like scripts in Go
+    * https://github.com/bitfield/script
 
 # .NET
 
@@ -71,6 +78,14 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/jmcfarlane/notable
 * TCPHound: Win32 utility for auditing TCP connections
     * https://github.com/limbenjamin/TCPHound
+* PolarProxy is a transparent TLS proxy that creates PCAP files with the decrypted data.
+    * https://www.netresec.com/?page=PolarProxy
+* InfinityHook: Hook system calls, context switches, page faults and more.
+    * https://github.com/everdox/InfinityHook
+* Fermion, an electron wrapper for Frida & Monaco.
+    * https://github.com/FuzzySecurity/Fermion
+* pown-cdb: Automate common Chrome Debug Protocol tasks to help debug web applications from the command-line
+    * https://github.com/pownjs/pown-cdb
 
 # Static Analysis
 
@@ -98,6 +113,24 @@ snippet: "This is my random list of (mostly security) links."
     * https://medium.com/@kennethpoon/lets-write-swift-code-to-intercept-ssl-pinning-https-requests-12446303cc9d
 * Android CrackMes
     * https://github.com/reoky/android-crackme-challenge
+* Defeating an Android Packer with FRIDA
+    * https://www.fortinet.com/blog/threat-research/defeating-an-android-packer-with-frida.html
+* Frida-onload: Frida module to hook module initializations on Android
+    * https://github.com/iGio90/frida-onload
+* The Path to the Payload - Android Edition - Recon 2019
+    * https://github.com/maddiestone/ConPresentations/blob/master/REcon2019.PathToThePayload.pdf
+* SafetyNet Killer - a Frida script to bypass SafetyNet attestation
+    * https://github.com/iGio90/SNetKiller
+* Bypassing Certificate Pinning on iOS 12 with Frida
+    * https://medium.com/@macho_reverser/bypassing-certificate-pinning-on-ios-12-with-frida-809acdb875e7
+* Breaking mobile userland w[0x42]alls - Giovanni - iGio90 - Rocca
+    * https://drive.google.com/file/d/1HwG6Ks_2dO0ut2plyPx1-svfNVKL1Mhu/view
+* Skiptracing: Reversing Spotify.app
+    * https://medium.com/@lerner98/skiptracing-reversing-spotify-app-3a6df367287d
+* Reverse Engineering the iClicker Base Station
+    * https://blog.ammaraskar.com/iclicker-reverse-engineering/
+* Calling iOS Native Functions from Python Using Frida and RPC
+    * https://grepharder.github.io/blog/0x04_calling_ios_native_functions_from_python_using_frida_and_rpc.html
 
 # CTF
 
@@ -130,6 +163,14 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/dwizzzle/Presentations/blob/master/David%20Weston%20-%20Zer0ing%20Trust%20-%20Do%20Zero%20Trust%20Approaches%20Deliver%20Real%20Security.pdf
 * OSCP Journey: Exam & Lab Prep Tips
     * https://h4ck.co/oscp-journey-exam-lab-prep-tips/
+* How to write an Nmap script
+    * https://www.peerlyst.com/posts/how-to-write-an-nmap-script-chiheb-chebbi
+* Bloodhound Walkthrough. A Tool for Many Tradecrafts
+    * https://www.pentestpartners.com/security-blog/bloodhound-walkthrough-a-tool-for-many-tradecrafts/
+* Understanding UNC paths, SMB, and WebDAV
+    * https://www.n00py.io/2019/06/understanding-unc-paths-smb-and-webdav/
+* Video: nmap Service Detection Customization
+    * https://isc.sans.edu/diary/24970
 
 # Not Security
 
@@ -155,6 +196,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://javarevisited.blogspot.com/2017/04/how-hostname-to-ip-address-conversion-or-name-resolution-works-in-Linux.html
 * Lin.security – practice your Linux privilege escalation foo
     * https://in.security/lin-security-practise-your-linux-privilege-escalation-foo/
+* Replace a string with a new one in all files using sed and xargs
+    * https://totallynoob.com/replace-a-string-with-a-new-one-in-all-files-using-sed-and-xargs/
 
 # Windows
 
@@ -180,6 +223,33 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/jaredhaight/WindowsAttackAndDefenseLab
 * Spying on HTTPS - How Antivirus apps monitor HTTPs
     * https://textslashplain.com/2019/08/11/spying-on-https/
+* An In Depth Tutorial on Linux Development on Windows with WSL and Visual Studio Code
+    * https://devblogs.microsoft.com/commandline/an-in-depth-tutorial-on-linux-development-on-windows-with-wsl-and-visual-studio-code/
+* [How To] Identify File Types in Windows
+    * https://www.youtube.com/watch?v=-vsfm1IqmWA
+* CVE-2019–13142: Razer Surround Elevation of Privilege
+    * https://posts.specterops.io/cve-2019-13142-razer-surround-1-1-63-0-eop-f18c52b8be0c
+* Executing Code Using Microsoft Teams Updater
+    * https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/executing-code-using-microsoft-teams-updater/
+* Windows API Hooking
+    * https://ired.team/offensive-security/code-injection-process-injection/how-to-hook-windows-api-using-c++
+* How to Transfer and Share Files Between Windows and Linux
+    * https://www.makeuseof.com/tag/transfer-share-files-windows-linux/
+* Deobfuscating Powershell Scripts
+    * https://securityliterate.com/malware-analysis-in-5-minutes-deobfuscating-powershell-scripts/
+* "whoami /priv" - Hack in Paris 2019
+    * https://github.com/decoder-it/whoami-priv-Hackinparis2019/blob/master/whoamiprivParis_Split.pdf
+* Sysmon 10 - New features including DNS monitoring
+    * https://medium.com/@olafhartong/sysmon-10-0-new-features-and-changes-e82106f2e00
+* Hunting COM Objects
+    * Part 1: https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects.html
+    * Part 2: https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects-part-two.html
+* Hello World - Compiling Executables for the Classic POSIX Subsystem on Windows
+    * https://blog.ret2.io/2017/09/20/subsystem-posix/
+* 1-click RCE with Skype Web Plugin and QT apps
+    * https://0x41.cf/infosec/2019/05/28/skype-web-plugin-ez-rce.html
+* Windows 10 - Task Scheduler service - Privilege Escalation/Persistence through DLL planting
+    * https://remoteawesomethoughts.blogspot.com/2019/05/windows-10-task-schedulerservice.html
 
 # Reverse Engineering
 
@@ -225,8 +295,28 @@ snippet: "This is my random list of (mostly security) links."
 * Analysing RPC With Ghidra and Neo4j
     * https://blog.xpnsec.com/analysing-rpc-with-ghidra-neo4j/
 * Trusted types & the end of DOM XSS - Krzysztof Kotowicz - LocoMocoSec 2019
-    * https://www.youtube.com/watch?v=po6GumtHRmU&list=PLFTyE08qmQMUOJju0ebY3ep__XT9U3R0G&index=7&t=0s
-* 
+    * https://www.youtube.com/watch?v=po6GumtHRmU
+* Malware Unicorn RE workshops
+    * https://malwareunicorn.org/#/workshops
+* Electronegativity - Electron security checks
+    * https://github.com/doyensec/electronegativity
+* Overcoming Fear: Reversing With Radare2 - Arnau Gamez Montolio
+    * https://www.youtube.com/watch?v=317dNavABKo
+* hm0x14 CTF: reversing a (not so simple) crackme
+    * https://antonioparata.blogspot.com/2019/06/hm0x14-ctf-reversing-not-so-simple.html
+* Ghidra Utilities for Analyzing PC Firmware
+    * https://github.com/al3xtjames/ghidra-firmware-utils
+* Implementing a New CPU Architecture for Ghidra 
+    * Slides: https://docs.google.com/presentation/d/1b955DV2ii-Dgv6YR4kUrJtjGugEqXD3FffTHRfvVSYo/edit
+    * Code: https://github.com/guedou/ghidra-processor-mep
+* gdbghidra - a visual bridge between a GDB session and GHIDRA
+    * https://github.com/Comsecuris/gdbghidra
+* python-decompile3: Python decompiler for 3.7+
+    * https://github.com/rocky/python-decompile3
+* Dragon Dance - Binary code coverage visualizer plugin for Ghidra
+    * https://github.com/0ffffffffh/dragondance
+* Overcoming fear: reversing with Radare2
+    * https://conference.hitb.org/hitbsecconf2019ams/materials/D1T3%20-%20Reversing%20with%20Radare2%20-%20Arnau%20Gamez%20Montolio.pdf 
 
 # Python
 
@@ -257,8 +347,36 @@ snippet: "This is my random list of (mostly security) links."
     * https://tls.ulfheim.net/
 * OAuth 2.0 Security Best Current Practice
     * https://tools.ietf.org/html/draft-ietf-oauth-security-topics-13
+* Automating local DTD discovery for XXE exploitation
+    * https://www.gosecure.net/blog/2019/07/16/automating-local-dtd-discovery-for-xxe-exploitation
+    * https://github.com/GoSecure/dtd-finder
+* Jackson gadgets - Anatomy of a vulnerability - Java Deserialization
+    * https://blog.doyensec.com/2019/07/22/jackson-gadgets.html
+* Knife: A Burp extension that add some useful function to Context Menu
+    * https://github.com/bit4woo/knife
+* Better API Penetration Testing with Postman
+    * https://blog.secureideas.com/2019/03/better-api-penetration-testing-with-postman-part-1.html
+    * https://blog.secureideas.com/2019/03/better-api-penetration-testing-with-postman-part-2.html
+    * https://blog.secureideas.com/2019/04/better-api-penetration-testing-with-postman-part-3.html
+    * https://blog.secureideas.com/2019/06/better-api-penetration-testing-with-postman-part-4.html
+* JavaScript Supply Chain Security - LocoMocoSec 2019
+    * https://www.youtube.com/watch?v=HDo2iOlkbyc
+* XXE: How to become a Jedi - Yaroslav Babin
+    * https://www.slideshare.net/ssuserf09cba/xxe-how-to-become-a-jedi
+* Java Serialization: A Practical Exploitation Guide
+    * https://www.rapid7.com/research/report/exploiting-jsos/
+* XML External Entity(XXE)
+    * http://ghostlulz.com/xml-external-entityxxe/
+* Exploiting XXE with local DTD files
+    * https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files/
+* The parts of JWT security nobody talks about
+    * https://pragmaticwebsecurity.com/talks/jwtsecurity.html
+* Pro Tips: Testing Applications Using Burp, and More
+    * https://www.coalfire.com/Solutions/Coalfire-Labs/The-Coalfire-LABS-Blog/june-2018/protips-testing-applications-using-burp-and-more
+* burptime:- Burp Show Response Time.
+    * https://github.com/virusdefender/burptime
 
-# Misc - Security
+# Misc
 
 * Mainframe Hacking
     * https://www.youtube.com/playlist?list=PLBVy6TfEpKmGdX1OE_xjK0GKGjSLwxVn_
@@ -268,6 +386,13 @@ snippet: "This is my random list of (mostly security) links."
     * https://www.verboon.info/2018/03/its-never-too-late-to-start-learning-powershell/
 * ShellCheck, a static analysis tool for shell scripts
     * https://github.com/koalaman/shellcheck
+* CrystalBall, Data Gathering and Machine Learning System for SAT Solvers
+    * Blog: https://www.msoos.org/2019/06/crystalball-sat-solving-data-gathering-and-machine-learning/
+    * Code: https://github.com/msoos/cryptominisat/tree/crystalball
+    * Paper: https://www.msoos.org/wordpress/wp-content/uploads/2019/06/sat19-skm.pdf
+* Beyond your studies: a presentation about job interviews by Ange Albertini
+    * Youtube: https://www.youtube.com/watch?v=Prgv9pNvy24
+    * Slides: https://speakerdeck.com/ange/beyond-your-studies
 
 # Exploit Dev
 
@@ -275,21 +400,27 @@ snippet: "This is my random list of (mostly security) links."
     * Introduction: https://tuonilabs.wordpress.com/2018/07/30/return-oriented-programming-series-introduction/
     * Setup: https://tuonilabs.wordpress.com/2018/07/30/rop-environment-setup/
     * Writeups: https://tuonilabs.wordpress.com/2018/07/31/rop-write-ups/
+* Exploiting TurboFan Through Bounds Check Elimination
+    * https://gts3.org/2019/turbofan-BCE-exploit.html
+* HowTo: ExploitDev Fuzzing
+    * https://hansesecure.de/2018/03/howto-exploitdev-fuzzing/
+* Vulnerable C++ code for practice
+    * https://github.com/atxsinn3r/VulnCases
 
 # C
 
 * Project Based Tutorials in C
     * https://github.com/rby90/Project-Based-Tutorials-in-C/
 
-# Ethereum
+# Blockchain
 
 * Wireshark dissectors for Ethereum ÐEVp2p protocols
     * https://media.consensys.net/releasing-wireshark-dissectors-for-ethereum-%C3%B0%CE%BEvp2p-protocols-215c9656dd9c
-
-# Hyperledger Fabric
-
 * Using a Hardware Security Module with Hyperledger Fabric 1.2 SDK for Node.js
     * https://www.linkedin.com/pulse/using-hardware-security-module-hyperledger-fabric-12-sdk-girard/
+* Fumblechain - A Purposefully Vulnerable Blockchain
+    * https://research.kudelskisecurity.com/2019/07/25/introducing-fumblechain-a-purposefully-vulnerable-blockchain/
+    * https://github.com/kudelskisecurity/fumblechain
 
 # Cryptography
 
@@ -307,10 +438,34 @@ snippet: "This is my random list of (mostly security) links."
 
 * Unprivileged Docker Builds – A Proof of Concept
     * https://zwischenzugs.com/2018/04/23/unprivileged-docker-builds-a-proof-of-concept/
+* Understanding Docker container escapes
+    * https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/
+* Docker for Pentesters
+    * https://blog.ropnop.com/docker-for-pentesters/
 
-# AFL
+# AFL - Fuzzing
 
 * Fuzzing projects with american fuzzy lop (AFL)
     * https://0x00sec.org/t/fuzzing-projects-with-american-fuzzy-lop-afl/6498
 * AFL-unicorn: What is it and how to use it?
     * https://tthtlc.wordpress.com/2019/03/16/afl-unicorn-what-is-it-and-how-to-use-it/amp/
+* A Simple Tutorial of AFL-Fuzzer
+    * http://spencerwuwu-blog.logdown.com/posts/1366733-a-simple-guide-of-afl-fuzzer
+* FUZZING - AMERICAN FUZZY LOP, ADDRESS SANITIZER AND LIBFUZZER
+    * https://int21.de/slides/auscert-fuzzing/#/
+* Binary fuzzing strategies: what works, what doesn't by AFL creator
+    * https://lcamtuf.blogspot.com/2014/08/binary-fuzzing-strategies-what-works.html
+* Google Fuzzing repository
+    * https://github.com/google/fuzzing
+* Mindshare: Automated Bug Hunting by Modeling Vulnerable Code
+    * https://www.zerodayinitiative.com/blog/2019/7/16/mindshare-automated-bug-hunting-by-modeling-vulnerable-code
+* Putting the Hype in the Hypervisor - Brandon Falk
+    * https://www.youtube.com/watch?v=4nz-7ktdU_k
+* Microsoft lain fuzzing framework (in Rust)
+    * https://github.com/microsoft/lain
+* Grizzly: A cross-platform browser fuzzing framework
+    * https://github.com/MozillaSecurity/grizzly
+* Fuzzing the Kernel Using AFL-Unicorn
+    * https://github.com/fgsect/unicorefuzz
+* Provoking Browser Quirks With Behavioural Fuzzing
+    * https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing
