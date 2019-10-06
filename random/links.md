@@ -250,6 +250,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://0x41.cf/infosec/2019/05/28/skype-web-plugin-ez-rce.html
 * Windows 10 - Task Scheduler service - Privilege Escalation/Persistence through DLL planting
     * https://remoteawesomethoughts.blogspot.com/2019/05/windows-10-task-schedulerservice.html
+* Windows NamedPipes 101 + Privilege Escalation
+    * https://ired.team/offensive-security/privilege-escalation/windows-namedpipes-privilege-escalation
 
 # Reverse Engineering
 
