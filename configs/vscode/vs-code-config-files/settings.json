@@ -2,11 +2,8 @@
     "editor.fontSize": 15,
     "markdown.preview.fontSize": 16,
     "cSpell.userWords": [
-        "Bitbucket",
-        "Cigital",
         "Comms",
         "Gitlab",
-        "Synopsys",
         "blockchain",
         "cheatsheet",
         "codecaption",
@@ -103,13 +100,14 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
+	"gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+	"gitlens.advanced.telemetry.enabled": false,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "C_Cpp.clang_format_fallbackStyle": "LLVM",
     "window.zoomLevel": 0,
     "workbench.statusBar.feedback.visible": false,
-    "gitlens.views.fileHistory.enabled": false,
-    "gitlens.views.lineHistory.enabled": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "gitlens.advanced.telemetry.enabled": false,
+    // Disable telemetry
+	"telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
 }
