@@ -8,7 +8,7 @@ tags:
 - Ubuntu
 title: "Ubuntu Setup after Installation"
 wip: false
-snippet: "Attempting to reproduce a .NET Remoting vulnerability."
+snippet: "What to do after starting a fresh Ubuntu VM."
 
 ---
 
