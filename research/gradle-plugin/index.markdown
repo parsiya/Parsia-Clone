@@ -10,7 +10,7 @@ tags:
 - Java
 - Gradle
 wip: false
-snippet: "How to create a sample custom Gradle plugin in Java that reads parameters the command line."
+snippet: "How to create a sample custom Gradle plugin in Java and Groovy that reads parameters the command line."
 ---
 
 To add a plugin to an existing Java project we can add it under `buildSrc`. This
@@ -240,11 +240,6 @@ task whatever() {
 If the command line parameter is always provided. Access it with `$param` and
 pass it to the Gradle task like this `gradle taskname -Pparam=value`.
 
-1. Some parameters are reserved and already have values like `$path` and
-   `$project`.
-2. If the parameter is not provided to the task an exception occurs.
-    * `Could not get unknown property 'param' for task ':whatever' of type org.gradle.api.DefaultTask.` 
-
 ```groovy
 task whatever() {
     doLast {
@@ -254,10 +249,15 @@ task whatever() {
 // Run `gradle whatever -Pparam=value`
 ```
 
+1. Some parameters are reserved and already have values like `$path` and
+   `$project`.
+2. If the parameter is not provided to the task an exception occurs.
+    * `Could not get unknown property 'param' for task ':whatever' of type org.gradle.api.DefaultTask.` 
+
 A better way is to use `project.hasProperty('param')` to check if the project
 has such a property first.
 
-* https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html#hasProperty-java.lang.String-
+https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html#hasProperty-java.lang.String-
 
 ```groovy
 task whatever() {
