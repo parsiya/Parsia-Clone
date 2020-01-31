@@ -1,5 +1,5 @@
 ---
-title: "Gradle Plugin Sample"
+title: "Gradle Plugin Notes"
 date: 2020-01-29T22:47:17-08:00
 draft: false
 toc: false
@@ -156,4 +156,128 @@ Run with --scan to get full insights.
 * Get more help at https://help.gradle.org
 BUILD FAILED in 837ms
 ```
+
+## Using Groovy in build.gradle
+It's also possible to write the task in `build.gradle` instead.
+
+### Executing Shell Commands
+To execute commands per OS (Windows needs `cmd.exe /c`) we can use:
+
+Source: https://stackoverflow.com/a/54315477
+
+```groovy
+private static Iterable<String> osAdaptiveCommand(String... commands) {
+    def newCommands = []
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        newCommands = ['cmd', '/c']
+    }
+
+    newCommands.addAll(commands)
+    return newCommands
+}
+```
+
+Now we can create a task like this:
+
+```groovy
+task executeCommand(type: Exec) {    
+    commandLine osAdaptiveCommand('aws', 'ecr', 'get-login', '--no-include-email')
+}
+```
+
+### Defining Multiple commandLines in One Task
+We cannot have multiple `commandLine`s in the same task without `exec`s.
+
+```groovy
+task whatever() {
+
+    commandLine 'cmd.exe', '/c', 'dir'
+
+    commandLine osAdaptiveCommand('whatever.exe', '--switch')
+}
+```
+
+Based on my observation, only the last one will be executed. Instead put each
+one in a separate `exec`. See below.
+
+### Defining Multiple execs in One Task
+When defining multiple `commandLine`s, we need to make sure they are not
+executed in the configuration phase. I am not sure how it works but if you
+create a task like this, it will be executed every time any task is executed.
+Meaning the task is executed in the configuration phase.
+
+```groovy
+task whatever() {
+    exec {
+        // optional workingDir 'path/to/workingdir`
+        commandLine 'cmd.exe', '/c', 'dir'
+    }
+    exec {
+        commandLine osAdaptiveCommand('whatever.exe', '--switch')
+    }
+}
+```
+
+Both of these execs will run whenever any task is executed.
+
+The solution is to put it in `doLast`:
+
+```groovy
+task whatever() {
+    doLast {
+        exec {
+        // optional workingDir 'path/to/workingdir`
+            commandLine 'cmd.exe', '/c', 'dir'
+        }
+        exec {
+            commandLine osAdaptiveCommand('whatever.exe', '--switch')
+        }
+    }
+}
+```
+
+### Accessing Command Line Parameters
+If the command line parameter is always provided. Access it with `$param` and
+pass it to the Gradle task like this `gradle taskname -Pparam=value`.
+
+1. Some parameters are reserved and already have values like `$path` and
+   `$project`.
+2. If the parameter is not provided to the task an exception occurs.
+    * `Could not get unknown property 'param' for task ':whatever' of type org.gradle.api.DefaultTask.` 
+
+```groovy
+task whatever() {
+    doLast {
+        println "param = $param" // Note that we have to use double-quotes.
+    }
+}
+// Run `gradle whatever -Pparam=value`
+```
+
+A better way is to use `project.hasProperty('param')` to check if the project
+has such a property first.
+
+* https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html#hasProperty-java.lang.String-
+
+```groovy
+task whatever() {
+    doLast {
+        if (project.hasProperty('param')) {
+            println "param = $param"
+        } else {
+            // Can also use else.
+        }
+    }
+}
+```
+
+### Get Current Working directory
+
+* `System.properties['user.dir']`
+    * https://stackoverflow.com/a/6492287
+
+To get the script path:
+
+* scriptFile = getClass().protectionDomain.codeSource.location.path
+    * https://stackoverflow.com/a/1169196
 
