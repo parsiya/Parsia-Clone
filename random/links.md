@@ -1,6 +1,6 @@
 ---
 draft: false
-toc: false
+toc: true
 comments: false
 categories:
 - Random
@@ -86,6 +86,10 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/FuzzySecurity/Fermion
 * pown-cdb: Automate common Chrome Debug Protocol tasks to help debug web applications from the command-line
     * https://github.com/pownjs/pown-cdb
+* VS Code x Frida
+    * https://github.com/chichou/vscode-frida
+* burptime:- Burp Show Response Time.
+    * https://github.com/virusdefender/burptime
 
 # Static Analysis
 
@@ -113,7 +117,7 @@ snippet: "This is my random list of (mostly security) links."
     * https://medium.com/@kennethpoon/lets-write-swift-code-to-intercept-ssl-pinning-https-requests-12446303cc9d
 * Android CrackMes
     * https://github.com/reoky/android-crackme-challenge
-* Defeating an Android Packer with FRIDA
+* Defeating an Android Packer with Frida
     * https://www.fortinet.com/blog/threat-research/defeating-an-android-packer-with-frida.html
 * Frida-onload: Frida module to hook module initializations on Android
     * https://github.com/iGio90/frida-onload
@@ -252,6 +256,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://remoteawesomethoughts.blogspot.com/2019/05/windows-10-task-schedulerservice.html
 * Windows NamedPipes 101 + Privilege Escalation
     * https://ired.team/offensive-security/privilege-escalation/windows-namedpipes-privilege-escalation
+* DLL Import Redirection in Windows 10 1909
+    * https://www.tiraniddo.dev/2020/02/dll-import-redirection-in-windows-10_8.html
 
 # Reverse Engineering
 
@@ -304,6 +310,7 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/doyensec/electronegativity
 * Overcoming Fear: Reversing With Radare2 - Arnau Gamez Montolio
     * https://www.youtube.com/watch?v=317dNavABKo
+    * https://conference.hitb.org/hitbsecconf2019ams/materials/D1T3%20-%20Reversing%20with%20Radare2%20-%20Arnau%20Gamez%20Montolio.pdf
 * hm0x14 CTF: reversing a (not so simple) crackme
     * https://antonioparata.blogspot.com/2019/06/hm0x14-ctf-reversing-not-so-simple.html
 * Ghidra Utilities for Analyzing PC Firmware
@@ -317,8 +324,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/rocky/python-decompile3
 * Dragon Dance - Binary code coverage visualizer plugin for Ghidra
     * https://github.com/0ffffffffh/dragondance
-* Overcoming fear: reversing with Radare2
-    * https://conference.hitb.org/hitbsecconf2019ams/materials/D1T3%20-%20Reversing%20with%20Radare2%20-%20Arnau%20Gamez%20Montolio.pdf 
+* Course materials for Advanced Binary Deobfuscation by NTT Secure Platform Laboratories
+    * https://github.com/malrev/ABD
 
 # Python
 
@@ -326,6 +333,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://www.youtube.com/playlist?list=PLzV58Zm8FuBL6OAv1Yu6AwXZrnsFbbR0S
 * Pyshark - Python Wrapper For Tshark, Allowing Python Packet Parsing Using Wireshark Dissectors 
     * https://www.kitploit.com/2019/08/pyshark-python-wrapper-for-tshark.html
+* FOIA-ed NSA Python Course
+    * https://archive.org/details/comp3321
 
 # Websec
 
@@ -375,8 +384,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://pragmaticwebsecurity.com/talks/jwtsecurity.html
 * Pro Tips: Testing Applications Using Burp, and More
     * https://www.coalfire.com/Solutions/Coalfire-Labs/The-Coalfire-LABS-Blog/june-2018/protips-testing-applications-using-burp-and-more
-* burptime:- Burp Show Response Time.
-    * https://github.com/virusdefender/burptime
+* Actual XSS in 2020
+    * https://netsec.expert/2020/02/01/xss-in-2020.html
 
 # Misc
 
@@ -395,6 +404,10 @@ snippet: "This is my random list of (mostly security) links."
 * Beyond your studies: a presentation about job interviews by Ange Albertini
     * Youtube: https://www.youtube.com/watch?v=Prgv9pNvy24
     * Slides: https://speakerdeck.com/ange/beyond-your-studies
+* Wireshark Tutorial: Examining Qakbot Infections
+    * https://unit42.paloaltonetworks.com/tutorial-qakbot-infection/
+* Alfa AWUS036ACH Kali Configuration Guide
+    * https://forums.hak5.org/topic/43124-alfa-awus036ach-kali-configuration-guide/
 
 # Exploit Dev
 
@@ -471,3 +484,22 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/fgsect/unicorefuzz
 * Provoking Browser Quirks With Behavioural Fuzzing
     * https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing
+
+# Game Hacking
+
+* Simple C++ DLL Injecting Source Code Tutorial
+    * https://www.youtube.com/watch?v=PZLhlWUmMs0
+* How to Reverse Engineer Save Game Files - Titan Quest Cheats
+    * https://guidedhacking.com/threads/how-to-reverse-engineer-save-game-files-titan-quest-cheats.14469/
+
+# Documentation/Automation
+
+* Documentation Writing for System Administrators - 2003
+    * https://www.usenix.org/short-topics/documentation-writing-system-administrators
+    * My notes: https://parsiya.net/blog/2020-02-06-documentation-writing-for-system-administrators-notes/
+* Manual Work is a Bug
+    * https://queue.acm.org/detail.cfm?id=3197520
+    * Reflections on "Manual Work is a Bug": https://parsiya.net/blog/2018-10-03-reflections-on-manual-work-is-a-bug/
+    * The Dark Side of "Manual Work is a Bug": https://parsiya.net/blog/2019-04-17-the-dark-side-of-manual-work-is-a-bug/
+* Effective Engineer:
+    * https://gist.github.com/rondy/af1dee1d28c02e9a225ae55da2674a6f
