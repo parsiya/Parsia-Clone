@@ -258,6 +258,10 @@ snippet: "This is my random list of (mostly security) links."
     * https://ired.team/offensive-security/privilege-escalation/windows-namedpipes-privilege-escalation
 * DLL Import Redirection in Windows 10 1909
     * https://www.tiraniddo.dev/2020/02/dll-import-redirection-in-windows-10_8.html
+* Debug C++ applications inside the Windows Subsystem for Linux using Visual Studio Code
+    * https://code.visualstudio.com/docs/cpp/config-wsl
+* CVE-2020-0668 - A Trivial Privilege Escalation Bug in Windows Service Tracing
+    * https://itm4n.github.io/cve-2020-0668-windows-service-tracing-eop/
 
 # Reverse Engineering
 
@@ -326,6 +330,14 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/0ffffffffh/dragondance
 * Course materials for Advanced Binary Deobfuscation by NTT Secure Platform Laboratories
     * https://github.com/malrev/ABD
+* Virtual Method Table for newbies
+    * Part 1: https://littlemastermind.codes/2020/02/01/virtual-method-table-for-newbies/
+    * Part 2: https://littlemastermind.codes/2020/02/01/virtual-method-table-for-newbies-2/
+* Using OOAnalyzer to Reverse Engineer Object Oriented Code with Ghidra
+    * https://insights.sei.cmu.edu/sei_blog/2019/07/using-ooanalyzer-to-reverse-engineer-object-oriented-code-with-ghidra.html
+* Extending LLVM for Code Obfuscation
+    * Part 1: https://www.praetorian.com/blog/extending-llvm-for-code-obfuscation-part-1
+    * Part 2: https://www.praetorian.com/blog/extending-llvm-for-code-obfuscation-part-2
 
 # Python
 
@@ -386,6 +398,12 @@ snippet: "This is my random list of (mostly security) links."
     * https://www.coalfire.com/Solutions/Coalfire-Labs/The-Coalfire-LABS-Blog/june-2018/protips-testing-applications-using-burp-and-more
 * Actual XSS in 2020
     * https://netsec.expert/2020/02/01/xss-in-2020.html
+* XXE & SQLi In PaperThin CommonSpot CMS
+    * https://www.aon.com/cyber-solutions/aon_cyber_labs/xxe-sqli-in-paperthin-commonspot-cms/
+* OpenID Connect & OAuth 2.0 Security Best Practices
+    * https://speakerdeck.com/leastprivilege/oauth-and-openid-connect-security-best-practices
+* Reverb: speculative debugging for web applications
+    * https://blog.acolyer.org/2020/01/27/reverb-speculative-debugging/
 
 # Misc
 
@@ -408,6 +426,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://unit42.paloaltonetworks.com/tutorial-qakbot-infection/
 * Alfa AWUS036ACH Kali Configuration Guide
     * https://forums.hak5.org/topic/43124-alfa-awus036ach-kali-configuration-guide/
+* Resistance Isn't Futile: A Practical Approach to Threat Modeling
+    * https://www.slideshare.net/KatieNickels/resistance-isnt-futile-a-practical-approach-to-threat-modeling
 
 # Exploit Dev
 
@@ -421,6 +441,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://hansesecure.de/2018/03/howto-exploitdev-fuzzing/
 * Vulnerable C++ code for practice
     * https://github.com/atxsinn3r/VulnCases
+* Finding and exploiting CVE-2018–7445 (unauthenticated RCE in MikroTik’s RouterOS SMB)
+    * https://medium.com/@maxi./finding-and-exploiting-cve-2018-7445-f3103f163cc1
 
 # C
 
@@ -492,7 +514,7 @@ snippet: "This is my random list of (mostly security) links."
 * How to Reverse Engineer Save Game Files - Titan Quest Cheats
     * https://guidedhacking.com/threads/how-to-reverse-engineer-save-game-files-titan-quest-cheats.14469/
 
-# Documentation/Automation
+# Documentation/Automation/Efficiency
 
 * Documentation Writing for System Administrators - 2003
     * https://www.usenix.org/short-topics/documentation-writing-system-administrators
@@ -503,3 +525,5 @@ snippet: "This is my random list of (mostly security) links."
     * The Dark Side of "Manual Work is a Bug": https://parsiya.net/blog/2019-04-17-the-dark-side-of-manual-work-is-a-bug/
 * Effective Engineer:
     * https://gist.github.com/rondy/af1dee1d28c02e9a225ae55da2674a6f
+* From Idiot to Imposter: how to get started in a new field
+    * https://www.emfcamp.org/schedule/2018/76-from-idiot-to-imposter-how-to-get-started-in-a-new-field
