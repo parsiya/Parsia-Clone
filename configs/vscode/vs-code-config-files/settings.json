@@ -86,6 +86,8 @@
     "markdown.extension.list.indentationSize": "inherit",
     // Convert toc to lowercase to work on Github and Hugo
     "markdown.extension.toc.downcaseLink": true,
+    // Use '*' to indicate italic and not '_'
+    "markdown.extension.italic.indicator": "*",
 
     // **Git**
     // **uncomment to disable git**
