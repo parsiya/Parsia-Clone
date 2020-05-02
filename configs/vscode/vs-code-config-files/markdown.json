@@ -46,7 +46,7 @@
 	"relref": {
 		"prefix": "relref",
 		"body": [
-			"[${1:link-text}]({{< relref \"/post/${2:2018-08-01-blog/index.markdown#anchor}\" >}} \"${1:hover text}\") $0"
+			"[${1:link-text}]({{< relref \"/post/${2:2020/2020-01-01-blog}/index.markdown#anchor\" >}} \"${1:hover text}\") $0"
 		],
 		"description": "relref shortcode"
 	},
@@ -86,6 +86,13 @@
 		"prefix": "mark",
 		"body": [
 			"{{< mark text=\"$1\" >}} $2"
+		],
+		"description": "mark HTML tag"
+	},
+	"link": {
+		"prefix": "llnk",
+		"body": [
+			"[${1:reference}]: $2"
 		],
 		"description": "mark HTML tag"
 	}

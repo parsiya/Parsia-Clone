@@ -109,5 +109,8 @@
     "workbench.statusBar.feedback.visible": false,
     // Disable telemetry
 	"telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false
 }
