@@ -1,0 +1,30 @@
+name: Deploy Clone
+  
+# run on every commit on the master branch
+on:
+  push:
+    branches:
+      - master
+      - github-action
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo and the theme
+        uses: actions/checkout@v2
+        with:
+          repository: 'parsiya/parsiya.io' # we want to checkout parsiya.io
+          submodules: recursive
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.58.3'
+      - name: Run Hugo
+        run: hugo --minify
+      - name: Download s3deploy
+        run: wget https://github.com/bep/s3deploy/releases/download/v2.2.0/s3deploy_2.2.0_Linux-64bit.deb
+      - name: Install s3deploy
+        run: sudo dpkg -i s3deploy*.deb
+      - name: Run s3deploy
+        run: s3deploy -source=public/ -region=us-east-1 -bucket=parsiya.io -key ${{ secrets.ID }} -secret ${{ secrets.KEY }}
