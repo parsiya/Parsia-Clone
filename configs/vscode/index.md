@@ -18,7 +18,7 @@ This is how I setup my VS Code. I mostly use it for reading/writing markdown and
 - [Quick Start Guide](#quick-start-guide)
 - [Extensions](#extensions)
     - [Go](#go)
-        - [Go Metalinter](#go-metalinter)
+        - [golangci-lint](#golangci-lint)
         - [Go Snippets](#go-snippets)
     - [Markdown All in One](#markdown-all-in-one)
         - [Table of Content](#table-of-content)
@@ -32,6 +32,10 @@ This is how I setup my VS Code. I mostly use it for reading/writing markdown and
         - [Word Separator Note](#word-separator-note)
 - [Creating Snippets](#creating-snippets)
 
+**Note:** This was originally made in early 2019. Some of the options and
+extensions have changed since then. For example, gometalinter is not supported
+anymore. I have not updated the guide, yet. Keep that in mind when reading this
+document. The `settings.json` is always updated, regardless.
 
 # Quick Start Guide
 
@@ -51,17 +55,20 @@ Some useful extensions.
 - Docs: https://code.visualstudio.com/docs/languages/go
 - Source: https://github.com/Microsoft/vscode-go
 
-### Go Metalinter
-To enable [go metalinter](https://github.com/alecthomas/gometalinter) set the following in config:
+### golangci-lint
+To enable [golangci-lint](https://github.com/golangci/golangci-lint) set the following in config:
 
 ``` json
-    "go.lintTool": "gometalinter",
+    "go.lintTool": "golangci-lint",
     // Lint all workspace, this is good for source code review
     // Other options are "off" or "package"
     "go.lintOnSave": "workspace",
 ```
 
-Next open up any Go file and the extension will prompt you to install tools. Select all and tools will be installed.
+Then run `go get -v github.com/golangci/golangci-lint/cmd/golangci-lint`.
+
+Next, open up any Go file and the extension will prompt you to install tools.
+Select all and tools will be installed.
 
 ### Go Snippets
 Go extension comes with some snippets. These snippets are at:
@@ -75,15 +82,26 @@ Helps with editing markdown.
 
 ``` json
     // Generate Github compatible table of content
-    "markdown.extension.toc.githubCompatibility": true,
+    "markdown.extension.toc.slugifyMode": "github",
     // Update the table of content on save
     "markdown.extension.toc.updateOnSave": true,
+    // Set list indentation to inherit
+    "markdown.extension.list.indentationSize": "inherit",
+    // Convert toc to lowercase to work on Github and Hugo
+    "markdown.extension.toc.downcaseLink": true,
+    // Use '*' to indicate italic and not '_'
+    "markdown.extension.italic.indicator": "*",
 ```
 
 ### Table of Content
+Add the initial table of content: Press `ctrl+shift+p` and type `ctoc` in the
+palette.
 
-- Add the initial table of content: Press `ctrl+shift+p` and type `ctoc` in the palette.
-- To ignore a heading and all its subheadings, add `<!-- omit in toc -->` at the end of the heading. This is useful for eliminating the top-level Github heading. Just be sure that the rest of your headings are not subheadings for the top one (e.g. if top heading is `h1`, next heading should also be `h1`). In this document I have ignored the top heading `VS Code Config`.
+To ignore a heading and all its subheadings, add `<!-- omit in toc -->` at the
+end of the heading. This is useful for eliminating the top-level Github heading.
+Just be sure that the rest of your headings are not subheadings for the top one
+(e.g. if top heading is `h1`, next heading should also be `h1`). In this
+document I have ignored the top heading `VS Code Config`.
 
 ## MarkdownLint
 Linter for markdown.
@@ -126,7 +144,8 @@ You must also install specific language supports. E.g. English:
 - https://marketplace.visualstudio.com/items?itemName=adamvoss.vscode-languagetool-en
 
 ## Code Spell Checker
-Enables spell check. You can add new words to it (they will be stored in user settings file):
+Enables spell check. You can add new words to it (they will be stored in user
+settings file):
 
 - https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 
@@ -145,7 +164,9 @@ Helps with performance inside VMs where I do not need git integration.
 ```
 
 ## Markdown Settings
-These settings only affect markdown files. VS Code has a recent bug where some universal settings (e.g. `quickSuggestions`) are not automatically applied to some languages such as Markdown. These are added here.
+These settings only affect markdown files. VS Code has a recent bug where some
+universal settings (e.g. `quickSuggestions`) are not automatically applied to
+some languages such as Markdown. These are added here.
 
 ``` json
     // Markdown language settings
@@ -162,7 +183,10 @@ These settings only affect markdown files. VS Code has a recent bug where some u
 ```
 
 ### Word Separator Note
-Unlike Sublime, VS Code counts `-` as word separator. In VS Code this is called `word pattern`. This means you will not get suggestions for `this-long-word`. The `editor.wordSeparators` config setting does not have any effect on word patterns:
+Unlike Sublime, VS Code counts `-` as word separator. In VS Code this is called
+`word pattern`. This means you will not get suggestions for `this-long-word`.
+The `editor.wordSeparators` config setting does not have any effect on word
+patterns:
 
 ``` json
     // "editor.wordSeparators" does not affect word pattern :(
@@ -171,9 +195,15 @@ Unlike Sublime, VS Code counts `-` as word separator. In VS Code this is called 
 ```
 
 # Creating Snippets
-Similar to other editors, you can create snippets in VS Code. Snippets are stored in JSON files. To create a snippet for a specific language use `File (menu) > Preferences > User Snippets`. Then select the language. In this case, I will create some Markdown snippets, so I will select `markdown.json`.
+Similar to other editors, you can create snippets in VS Code. Snippets are
+stored in JSON files. To create a snippet for a specific language use `File
+(menu) > Preferences > User Snippets`. Then select the language. In this case, I
+will create some Markdown snippets, so I will select `markdown.json`.
 
-The JSON object is easy to read. The important parts are `prefix` (which si the trigger) and `body`. Note that you do not need to enter new lines with `\n`. Simply create a new cell in the body array and it will be printed in a new line. The following snippet will create a codefence.
+The JSON object is easy to read. The important parts are `prefix` (which is the
+trigger) and `body`. Note that you do not need to enter new lines with `\n`.
+Simply create a new cell in the body array and it will be printed in a new line.
+The following snippet will create a codefence.
 
 ``` json
 {
@@ -196,9 +226,12 @@ The JSON object is easy to read. The important parts are `prefix` (which si the 
 - It's the first place where your cursor is after the snippet is activated.
 - The default text is `language`.
 
-After pressing tab, cursor will go to `$2` and so on. After running out of placeholders, final tab will land at `$0` which is useful for leaving the snippet without having to manually placing the cursor.
+After pressing tab, cursor will go to `$2` and so on. After running out of
+placeholders, final tab will land at `$0` which is useful for leaving the
+snippet without having to manually placing the cursor.
 
-As another example, I have created two snippets for my [Hugo shortcodes](https://github.com/parsiya/Hugo-Shortcodes):
+As another example, I have created two snippets for my
+[Hugo shortcodes](https://github.com/parsiya/Hugo-Shortcodes):
 
 ``` json
 {
