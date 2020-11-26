@@ -147,10 +147,14 @@
                     "js",
                     "gif",
                     "jpg",
+                    "jpeg",
                     "png",
                     "css",
                     "woff",
-                    "woff2"
+                    "woff2",
+                    "ico",
+                    "otf",
+                    "ttf"
                 ],
                 "hide_specific":false,
                 "show_items":[
@@ -264,8 +268,8 @@
             ]
         },
         "intercept_web_sockets_messages":{
-            "client_to_server_messages":true,
-            "server_to_client_messages":true
+            "client_to_server_messages":false,
+            "server_to_client_messages":false
         },
         "match_replace_rules":[
             {
@@ -396,177 +400,57 @@
             "rules":[
                 {
                     "enabled":true,
-                    "host":"^accounts\\.google\\.com$",
+                    "host":"^.*mozilla\\.(com|net|org)$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^aka\\.ms$",
+                    "host":"^.*\\.google\\.com$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^api\\.ghostery\\.net$",
+                    "host":"^.*\\.gvt1\\.com$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^aus5\\.mozilla\\.org$",
+                    "host":"^.*\\.ghostery\\.(com|net)$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^az667904\\.vo\\.msecnd\\.net$",
+                    "host":"^.*\\.aka\\.ms$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^az700632\\.vo\\.msecnd\\.net$",
+                    "host":"^.*\\.msecnd\\.net$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^az764295\\.vo\\.msecnd\\.net$",
+                    "host":"^.*\\.skype\\.com$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^cdn\\.ghostery\\.com$",
+                    "host":"^.*\\.microsoft\\.com$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^cdn\\.ghostery\\.net$",
+                    "host":"^.*\\.visualstudio\\.com$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^checkappexec\\.microsoft\\.com$",
+                    "host":"^.*\\.msn\\.com$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^classify-client\\.services\\.mozilla\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^clientservices\\.googleapis\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^cmp-cdn\\.ghostery\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^collector-hpn\\.ghostery\\.net$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^config\\.edge\\.skype\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^content-signature-2\\.cdn\\.mozilla\\.net$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^d\\.ghostery\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^download\\.visualstudio\\.microsoft\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^edge\\.microsoft\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^fe2cr\\.update\\.microsoft\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^fe3cr\\.delivery\\.mp\\.microsoft\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^firefox\\.settings\\.services\\.mozilla\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^go\\.microsoft\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^marketplace\\.visualstudio\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^nav\\.smartscreen\\.microsoft\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^normandy\\.cdn\\.mozilla\\.net$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^ntp\\.msn\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^offers-api\\.ghostery\\.net$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^ogs\\.google\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^onecs-live\\.azureedge\\.net$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^otf\\.msn\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^push\\.services\\.mozilla\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^r2---sn-ov80nxj5-t8ge\\.gvt1\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^redirector\\.gvt1\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^safe-browsing-quorum\\.privacy\\.ghostery\\.net$",
+                    "host":"^.*\\.azureedge\\.net$",
                     "protocol":"any"
                 },
                 {
@@ -576,59 +460,18 @@
                 },
                 {
                     "enabled":true,
-                    "host":"^search\\.services\\.mozilla\\.com$",
+                    "host":"^.*\\.msedge\\.net$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^update\\.code\\.visualstudio\\.com$",
+                    "host":"^.*\\.bing\\.com$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^update\\.googleapis\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^visualstudio-devdiv-c2s\\.msedge\\.net$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^vscodeexperiments\\.azureedge\\.net$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^www\\.bing\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^www\\.google\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^www\\.msn\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":"^ocsp\\.digicert\\.com$",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/msdownload/update/v3/static/trustedr/en/disallowedcertstl\\.cab.*",
-                    "host":"^ctldl\\.windowsupdate\\.com$",
+                    "host":"^.*\\.windowsupdate\\.com$",
                     "protocol":"http"
-                },
-                {
-                    "enabled":true,
-                    "host":"^vortex\\.data\\.microsoft\\.com$",
-                    "protocol":"any"
                 },
                 {
                     "enabled":true,
@@ -642,27 +485,7 @@
                 },
                 {
                     "enabled":true,
-                    "host":".*\\.windowsupdate\\.com",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":".*\\.microsoft\\.com",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":".*mozilla\\.(com|net|org)",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":".*digicert\\.com",
-                    "protocol":"any"
-                },
-                {
-                    "enabled":true,
-                    "host":".*visualstudio\\.com",
+                    "host":".*\\.digicert\\.com",
                     "protocol":"any"
                 }
             ]
@@ -726,18 +549,16 @@
             },
             "by_file_extension":{
                 "hide_items":[
-                    "js",
                     "gif",
                     "jpg",
                     "png",
-                    "css"
+                    "css",
+                    "woff",
+                    "woff2"
                 ],
                 "hide_specific":false,
                 "show_items":[
-                    "asp",
-                    "aspx",
-                    "jsp",
-                    "php"
+                    "js"
                 ],
                 "show_only_specific":false
             },
@@ -776,344 +597,7 @@
         "scope":{
             "advanced_mode":true,
             "exclude":[],
-            "include":[
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^accounts\\.google\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^aka\\.ms$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^api\\.ghostery\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^aus5\\.mozilla\\.org$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^az667904\\.vo\\.msecnd\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^az700632\\.vo\\.msecnd\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^az764295\\.vo\\.msecnd\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^cdn\\.ghostery\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^cdn\\.ghostery\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^checkappexec\\.microsoft\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^ciscobinary\\.openh264\\.org$",
-                    "port":"^80$",
-                    "protocol":"http"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^classify-client\\.services\\.mozilla\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^clientservices\\.googleapis\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^cmp-cdn\\.ghostery\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^collector-hpn\\.ghostery\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^config\\.edge\\.skype\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^content-signature-2\\.cdn\\.mozilla\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^ctldl\\.windowsupdate\\.com$",
-                    "port":"^80$",
-                    "protocol":"http"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^d\\.ghostery\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^download\\.visualstudio\\.microsoft\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^edge\\.microsoft\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^fe2cr\\.update\\.microsoft\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^fe3cr\\.delivery\\.mp\\.microsoft\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^firefox\\.settings\\.services\\.mozilla\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^go\\.microsoft\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^marketplace\\.visualstudio\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^msedge\\.b\\.tlu\\.dl\\.delivery\\.mp\\.microsoft\\.com$",
-                    "port":"^80$",
-                    "protocol":"http"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^nav\\.smartscreen\\.microsoft\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^normandy\\.cdn\\.mozilla\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^ntp\\.msn\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^offers-api\\.ghostery\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^ogs\\.google\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^onecs-live\\.azureedge\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^otf\\.msn\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^push\\.services\\.mozilla\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^r2---sn-ov80nxj5-t8ge\\.gvt1\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^redirector\\.gvt1\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^safe-browsing-quorum\\.privacy\\.ghostery\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^sb\\.scorecardresearch\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^search\\.services\\.mozilla\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^targetednotifications-tm\\.trafficmanager\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^update\\.code\\.visualstudio\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^update\\.googleapis\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^visualstudio-devdiv-c2s\\.msedge\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^vscodeexperiments\\.azureedge\\.net$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^www\\.bing\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^www\\.google\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                },
-                {
-                    "enabled":true,
-                    "file":"^/.*",
-                    "host":"^www\\.msn\\.com$",
-                    "port":"^443$",
-                    "protocol":"https"
-                }
-            ]
+            "include":[]
         }
     }
 }
