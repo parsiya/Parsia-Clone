@@ -5,16 +5,21 @@ on:
   push:
     branches:
       - master
+      - github-action
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the repo and the theme
+      - name: Checkout parsiya.io
         uses: actions/checkout@v2
         with:
-          repository: 'parsiya/parsiya.io' # we want to checkout parsiya.io
-          submodules: recursive
+          repository: 'parsiya/parsiya.io'
+      - name: Checkout parsia-clone
+        uses: actions/checkout@v2
+        with:
+          repository: 'parsiya/parsia-clone'
+          path: 'content' # checkout parsia-clone into the content directory
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
