@@ -1,7 +1,7 @@
 #.gitconfig alias
 [alias]
 	add-dry = add . --dry-run
-	co = checkout -b
+	cb = checkout -b
 	# Add everything and commit. Usage: `git cm "commit msg"`
 	cm = !git add . && git commit -m
 	# Merge branch into master and squash merge.
