@@ -20,6 +20,8 @@ jobs:
         with:
           repository: 'parsiya/parsia-clone'
           path: 'content' # checkout parsia-clone into the content directory
+      - name: Go back up one directory from content
+        run: cd ..
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
