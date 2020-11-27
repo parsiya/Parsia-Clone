@@ -11,17 +11,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout parsiya.io
-        uses: actions/checkout@v2
-        with:
-          repository: 'parsiya/parsiya.io'
-      - name: Checkout parsia-clone
-        uses: actions/checkout@v2
-        with:
-          repository: 'parsiya/parsia-clone'
-          path: 'content' # checkout parsia-clone into the content directory
-      - name: Go back up one directory from content
-        run: cd ..
+      - name: Install git
+        run: run: sudo apt-get install git
+      - name: Clone and update the repo
+        run: |
+          git clone https://github.com/parsiya/parsiya.io parsiya.io
+          cd parsiya.io
+          git submodule init
+          git submodule update --recursive --remote
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
