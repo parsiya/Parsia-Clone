@@ -382,6 +382,12 @@
                 "listen_mode":"loopback_only",
                 "listener_port":8080,
                 "running":true
+            },
+            {
+                "certificate_mode":"per_host",
+                "listen_mode":"loopback_only",
+                "listener_port":8090,
+                "running":true
             }
         ],
         "response_modification":{
@@ -486,6 +492,26 @@
                 {
                     "enabled":true,
                     "host":".*\\.digicert\\.com",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":".*\\.trafficmanager\\.net",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":".*default\\.exp-tas\\.com",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":".*\\.vsassets\\.io",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"clientservices\\.googleapis\\.com",
                     "protocol":"any"
                 }
             ]
