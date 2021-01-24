@@ -14,7 +14,7 @@ outdated) read me at [old-readme.md](Old-READMD.md).
 I have explained how I create the resulting website in these two blog posts:
 
 - [Deploying my Knowledge Base at parsiya.io to S3 with Travis CI](https://parsiya.net/blog/2018-04-24-deploying-my-knowledge-base-at-parsiya.io-to-s3-with-travis-ci/)
-    - As of November 2020, I am using github actions instead of Travis CI. See
+    - As of November 2020, I am using Github actions instead of Travis CI. See
       the [.github/workflows/deploy.yml](.github/workflows/deploy.yml) file for
       details. The old travis file is [.travis.yml](.travis.yml).
 - [Semi-Automated Cloning: Pain-Free Knowledge Base Creation](https://parsiya.net/blog/2018-04-24-semi-automated-cloning-pain-free-knowledge-base-creation/)
