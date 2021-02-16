@@ -1,6 +1,6 @@
 # Parsia Clone ![Deploy Clone](https://github.com/parsiya/parsia-clone/workflows/Deploy%20Blog/badge.svg)
 This is my clone. I have been maintaining one internally at my work
-(Cigita/Synopsys/EA) since mid 2016. It has been decently successful and well
+(Cigital/Synopsys/EA) since mid 2016. It has been decently successful and well
 received. I have decided to make a public one. There is going to be a lot of
 redundancy between here and [parsiya.net][parsiya-net] but that is expected.
 This repository will also contain code and random notes that do not get
