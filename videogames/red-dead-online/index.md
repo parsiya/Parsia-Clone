@@ -6,7 +6,7 @@ categories:
 - Videogames
 tags:
 - Skyrim
-title: "Red Dead Online - Notes"
+title: "Red Dead Online"
 wip: true
 ---
 

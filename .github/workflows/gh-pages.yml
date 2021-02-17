@@ -1,0 +1,40 @@
+# https://gohugo.io/hosting-and-deployment/hosting-on-github/
+name: github pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout parsiya.io
+        uses: actions/checkout@v2
+        with:
+          repository: 'parsiya/parsiya.io' # Get parsiya.io the parent repo
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 1    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Checkout parsia-clone # Otherwise the outdated commit will be pulled
+        uses: actions/checkout@v2
+        with:
+          repository: 'parsiya/parsia-clone'
+          path: 'content'
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        # need to use v3 here and not `latest`: https://github.com/peaceiris/actions-gh-pages/issues/566
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

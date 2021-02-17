@@ -6,7 +6,7 @@ categories:
 - Videogames
 tags:
 - Skyrim
-title: "Elder Scrolls 5: Skyrim - Notes"
+title: "Elder Scrolls 5: Skyrim"
 wip: true
 ---
 
@@ -41,6 +41,7 @@ The actual post from this link on reddit
 https://www.reddit.com/r/skyrim/comments/23w2jy/what_is_the_fastest_way_to_lvl_up_alchemy/ch14wwe/
 is copied below in case it gets deleted in the future.
 
+---------- Start ----------
 
 Do you have Hearthfire?
 
@@ -117,5 +118,4 @@ Muiri's Ring, for +15% Fortify Alchemy. Between that ring and training to level
 alchemists.... And in addition to training you and buying all your potions,
 Babette also stocks some ingredients for you to use once you hit level 100.
 
-----------
-
+---------- end ----------
