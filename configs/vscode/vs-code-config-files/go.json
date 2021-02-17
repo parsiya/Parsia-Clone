@@ -1,0 +1,24 @@
+{
+	"if panic(err)": {
+		"prefix": "ifpanic",
+		"body": [
+			"if err != nil {",
+			"    panic(err)",
+			"}",
+			"$0",
+		],
+		"description": "Create if with panic(err)"
+	},
+	"open file": {
+		"prefix": "openfile",
+		"body": [
+			"${1:fi}, err := os.Open(\"${2:filename}\")",
+			"if err != nil {",
+			"    panic(err)",
+			"}",
+			"defer $1.Close()",
+			"$0",
+		],
+		"description": "Open a file and handle errors"
+	}
+}

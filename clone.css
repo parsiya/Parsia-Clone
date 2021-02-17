@@ -1,0 +1,52 @@
+/* Change font size of toc title */
+/* Add margin to title of toc */
+aside.sidebar h2 {
+    margin-left: 0.4em;
+    margin-top: 1em;
+}
+
+/* Remove border from sidebar toc */
+/* aside.sidebar li, */
+.side-shadow-border,
+aside.sidebar section h1
+ {
+    -webkit-box-shadow: #fff 0 1px;
+    -moz-box-shadow: #fff 0 1px;
+    box-shadow: #fff 0 1px
+}
+
+/* Remove bottom margin in sidebar (not really needed?) */
+aside.sidebar ul {
+    margin-bottom: 0.3em;
+    margin-left: 0
+}
+
+/* Remove bottom border from sidebar */
+aside.sidebar li {
+    list-style: none;
+    border: none;
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+aside.sidebar ul {
+    margin-left: 0.5em;
+}
+
+/* Reduce padding for items in sidebar toc */
+aside.sidebar ul ul,
+aside.sidebar ul ol,
+aside.sidebar ol,
+aside.sidebar ol ul,
+aside.sidebar ol ol  {
+    margin-left: 1em;
+}
+
+/* Reduce padding in headers */
+article header {
+    position: relative;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}

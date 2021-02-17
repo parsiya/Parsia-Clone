@@ -1,0 +1,8 @@
+{
+   "scope": "source.python, source.py",
+
+   "completions":
+   [
+      { "trigger": "main\tMain function", "contents": "def main():\n    $1\n\nif __name__ == \"__main__\":\n    main()\n" }
+   ]
+}

@@ -1,0 +1,70 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Copypastas</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.80.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="Copypastas"><meta name=twitter:description content="Rust Copypasta Of course Rust is superior to [insert programming language]/You should use Rust for [insert project] because you get:
+ Zero-cost abstractions Move semantics Guaranteed memory safety Threads without data races Trait-based generics Pattern matching Type inference Minimal runtime Efficient C bindings  And last but not least:
+ Fearless concurrency  Note: I am not joking about Fearless Concurrency see:
+https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html
+lol Golang  &ldquo;lol no generics.&rdquo; &ldquo;Art&rdquo; stolen from reddit."><meta name=twitter:domain content="parsiya.io"><meta name=twitter:creator content="@CryptoGangsta"></head><body><header role=banner><hgroup><h1><a href=http://parsiya.io/>Parsia-Clone</a></h1><h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value;">
+<option value>Navigate…</option>
+<option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option>
+<option value=https://parsiya.net/categories/clone/>» How did I make this?</option>
+<option value=https://parsiya.net>» My Main Website</option></select></fieldset><ul class=main-navigation><li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank>Parsia-Clone on Github</a></li><li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank>How did I make this?</a></li><li><a href=https://parsiya.net title="My Main Website" target=_blank>My Main Website</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
+<input type=hidden name=q value=site:http://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>3 minute read
+- <a class=label href=http://parsiya.io/categories/fun/>Fun</a></p><h1 class=entry-title>Copypastas</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/master/fun/copypastas.md target=_blank>Github Link</a></header><div class=entry-content><h2 id=rust-copypasta>Rust Copypasta</h2><p>Of course Rust is superior to <code>[insert programming language]</code>/You should use
+Rust for <code>[insert project]</code> because you get:</p><ul><li>Zero-cost abstractions</li><li>Move semantics</li><li>Guaranteed memory safety</li><li>Threads without data races</li><li>Trait-based generics</li><li>Pattern matching</li><li>Type inference</li><li>Minimal runtime</li><li>Efficient C bindings</li></ul><p>And last but not least:</p><ul><li><strong>Fearless concurrency</strong></li></ul><p>Note: I am not joking about <code>Fearless Concurrency</code> see:<br><a href=https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html>https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html</a></p><h2 id=lol-golang>lol Golang</h2><ul><li>&ldquo;lol no generics.&rdquo; &ldquo;Art&rdquo; stolen from reddit.</li></ul><pre><code>_________________
+&lt; lol no generics &gt;
+-----------------
+   \
+    \    ,_---~~~~~----._         
+ _,,_,*^____      _____``*g*\&quot;*,
+/ __/ /'     ^.  /      \ ^   f
+[   | @))    |  | @))   l  0 _/  
+`/   ~____ / __ _____/    \   
+ |           _l__l_           I   
+ |          [______]           I  
+ |            | | |            |  
+ |             ~ ~             |  
+ |                             |   
+ |                             |
+
+</code></pre><ul><li>Cannot create a DLL from your package. Is this still true?</li><li>Horrible error handling. Half of your code will be the following (Atom even
+has a snippet for it, type <code>iferr</code> and press enter):</li></ul><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go>funcReturn, err <span style=color:#719e07>:=</span> <span style=color:#268bd2>func</span>()
+<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+  <span style=color:#719e07>return</span>  <span style=color:#586e75>// pro error handling
+</span><span style=color:#586e75></span>}
+</code></pre></div><ul><li>The opening curly braces must be on the same line as the statement. Below is
+correct:</li></ul><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#719e07>if</span> whatever &gt; <span style=color:#2aa198>10</span> {
+  <span style=color:#586e75>// do whatever
+</span><span style=color:#586e75></span>}
+</code></pre></div><p>But this is wrong:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#719e07>if</span> whatever &gt; <span style=color:#2aa198>10</span>
+{
+  <span style=color:#586e75>// do whatever
+</span><span style=color:#586e75></span>}
+</code></pre></div><p>They justify it <a href=https://golang.org/doc/faq#semicolons>in the FAQ</a>. They are
+Google, they are special.</p><h2 id=seinfeld-and-javascript-by-jamie>Seinfeld and JavaScript by Jamie</h2><p>What is the deal with JavaScript? Is it a java or is it a script?</p><p>And don&rsquo;t get me started on just how messy JavaScript is. It&rsquo;s not cleanly
+compiled like Java or C++ and it&rsquo;s not held in a walled garden and interpreted
+like PHP. It just goes everywhere. And when it does get somewhere it&rsquo;s not
+supposed to, it goes terribly."</p><p>Your server hands JavaScript to the browser and the browser just innocently
+accepts it. It runs it. I mean, what kind of a rube just executes code like
+that? Internet Explorer. That&rsquo;s who.</p><p>So anyway, I&rsquo;m testing this web app and I see a button. It&rsquo;s an innocent, nice
+little button, but I&rsquo;m a dick. So I decide to type in some JavaScript, click the
+button, and off it goes. My browser refreshes and then that JavaScript comes
+back. It&rsquo;s messy. CSS Elements are flying everywhere. The browser is throwing
+alerts like crazy. But that&rsquo;s not the worst part. I go to the developers and
+they&rsquo;re like &lsquo;but we blacklisted the &lt; character&rsquo;. You blacklisted it? Like
+that&rsquo;s going to keep some guy from just encoding it? So I sent him a kindly
+worded email that I was a crown prince of Nigeria and long story short, I&rsquo;m rich
+now.</p><p>Thank you! Try the veal, tip your waitress, I&rsquo;ll be here all week!</p><h2 id=linux-fortune>Linux Fortune</h2><pre><code>[user@linuxbox ~]$ fortune | cowsay -f tux
+ _________________________________________
+/ You are only young once, but you can    \
+\ stay immature indefinitely.             /
+ -----------------------------------------
+   \
+    \
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+</code></pre></div><footer><p class=meta></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#rust-copypasta>Rust Copypasta</a></li><li><a href=#lol-golang>lol Golang</a></li><li><a href=#seinfeld-and-javascript-by-jamie>Seinfeld and JavaScript by Jamie</a></li><li><a href=#linux-fortune>Linux Fortune</a></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.</p></footer></body></html>

@@ -1,0 +1,101 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"codecaption": {
+		"prefix": "codecap",
+		"body": [
+			"{{< codecaption title=\"${1:title}\" lang=\"${2:language}\" >}}",
+			"${3:code}",
+			"{{< /codecaption >}}",
+			"",
+			"$0"
+		],
+		"description": "codecaption Hugo shortcode"
+	},
+	"imgcap": {
+		"prefix": "imgcap",
+		"body": [
+			"{{< imgcap title=\"${1:title}\" src=\"${2:filename}.png\" >}}",
+			"",
+			"$0"
+		],
+		"description": "image caption Hugo shortcode"
+	},
+	"codefence": {
+		"prefix": "ffe",
+		"body": [
+			"```${1:language}",
+			"${2:code}",
+			"```",
+			"",
+			"$0"
+		],
+		"description": "Markdown codefence"
+	},
+	"relref": {
+		"prefix": "relref",
+		"body": [
+			"[${1:link-text}]({{< relref \"/post/${2:2020/2020-01-01-blog}/index.markdown#anchor\" >}} \"${1:hover text}\") $0"
+		],
+		"description": "relref shortcode"
+	},
+	"wp": {
+		"prefix": "wp",
+		"body": [
+			"{{< wp tag=\"${1:tag}\" lang=\"${2:lang}\" title=\"${:title}\" >}}"
+		],
+		"description": "wikipedia link generator"
+	},
+	"blockquote": {
+		"prefix": "bq",
+		"body": [
+			"{{< blockquote author=\"${1:author}\" link=\"${2:link}\" title=\"${3:title}\" >}}",
+			"${4:quote}",
+			"{{< blockquote >}}",
+			"",
+			"$0"
+		],
+		"description": "blockquote"
+	},
+	"current year": {
+		"prefix": "year",
+		"body": [
+			"{{< year >}}"
+		],
+		"description": "current year"
+	},
+	"abbr": {
+		"prefix": "abbr",
+		"body": [
+			"{{< abbr title=\"$1\" text=\"$2\" >}} $3"
+		],
+		"description": "abbr HTML tag"
+	},
+	"mark": {
+		"prefix": "mark",
+		"body": [
+			"{{< mark text=\"$1\" >}} $2"
+		],
+		"description": "mark HTML tag"
+	},
+	"link": {
+		"prefix": "llnk",
+		"body": [
+			"[${1:reference}]: $2"
+		],
+		"description": "mark HTML tag"
+	}
+}
+
+

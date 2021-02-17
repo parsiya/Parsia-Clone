@@ -1,0 +1,9 @@
+{
+   "scope": "source.golang, source.go",
+
+   "completions":
+   [
+      { "trigger": "iferr\tNEXT LEVEL ERROR HANDLING", "contents": "if err != nil {\n\t${1:panic(err)}\n}\n$2" },
+      { "trigger": "multimport\tMultiple import", "contents": "import (\n\t\"${1:fmt}\"\n\t\"${2:genericpals}\"\n\t\"${3:otherimport}\"\n)" }
+   ]
+}
