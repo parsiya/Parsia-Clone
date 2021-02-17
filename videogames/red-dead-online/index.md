@@ -10,6 +10,45 @@ title: "Red Dead Online - Notes"
 wip: true
 ---
 
+# Maps
+
+* [https://jeanropke.github.io/RDOMap/][rdo-map]
+* [https://jeanropke.github.io/RDR2CollectorsMap/][collectors-map]
+
+[collectors-map]: https://jeanropke.github.io/RDR2CollectorsMap/
+
+[rdo-map]: https://jeanropke.github.io/RDOMap/
+
+# Challenges
+Do at least one daily challenge every day. The streak will increase the gold
+payout. This section has my notes about how to complete them quickly-ish.
+
+## General
+
+### Desert Sage
+Between the two `O`s in Gaptooth Ridge on the map. Near Tumbleweed.
+
+Source: https://www.reddit.com/r/RedDeadOnline/comments/f97n4u/all_the_desert_sage_you_need_for_the_daily_is/
+
+### Alligators
+Around Lagras lake. Use the Lagras fast travel point.
+
+## Collector
+Collector challenges are mostly straight forward and can be completed quickly by
+using the [collector's map][collectors-map].
+
+### Yates Diamond Ring
+To force respawn, go to the location western edge of the map (not south west,
+just west). North of `Little Creek River` and north of `E` in West Elizabeth on
+the map is a group of houses. The ring is in a lock box on the top floor of the
+house. If it's not there, press escape to open the menu, select `Online` and
+then `Free Roam`. You will be back in the same area and the ring has respawned.
+You can do it once per reset.
+
+Source: https://www.youtube.com/watch?v=4Wqqoxtfttc
+
+**Possible with other jewelry?**
+
 # Buy the Outlaw Pass
 I got the Outlaw Pass 4. I bought the gold with microtransactions but I had
 bought the stand alone game for 5 USD. The pass gave me 15% and then 30% role
@@ -21,16 +60,18 @@ Getting to rank 100 in the pass was not that hard. Considering the XP needed for
 every rank is the same (and does not exponentially go up). It's a quick thing.
 
 # What to Buy When Starting Out?
-Start with the Collector's track. Go to Madam Nazar and buy the bag. I think it
-is 15 gold bars. Then you can start collecting. Use this amazing map to figure
+Start with the Collector's track. Go to Madam Nazar and buy the bag. It costs 15
+gold bars. Then you can start collecting. Use this amazing map to figure
 out what is where and collect everything around you.
+
+When starting out you probably do not have the gold bars to buy anything. I
+bought gold with cash which was worth it for me because I did not want to grind
+challenges for a few weeks.
 
 [https://jeanropke.github.io/RDR2CollectorsMap/][collectors-map]
 
-[collectors-map]: https://jeanropke.github.io/RDR2CollectorsMap/
-
-Then buy the shovel and then the metal detector. Be sure to buy the shovel
-first, because the metal detector is useless without the shovel.
+Then buy the shovel and then the metal detector. Be sure to **buy the shovel
+first**, because the metal detector is useless without the shovel.
 
 On consoles, the controller vibrates when you have the metal detector out and
 you are around special locations. On PC you gotta go to first person (press `v`)
@@ -41,7 +82,11 @@ are not marked on the map above. Do I go around with the detector in my hand and
 hope to find things? I dunno. I am on PC so I cannot rely on the controller
 vibration.
 
-After doing missions, delivery sessions, events and 
+After doing missions, delivery sessions, events and more, you will have enough
+cash and gold to buy the other items for professions. If you are not in a hurry
+and you can wait, wait for a weekly bonus that has the items at a discount. For
+example, I started the hunter track with a discount and bought the Naturalist
+role item a few weeks later when it was 15 gold bars instead of 25.
 
 # Hunting in Bayou Nwa
 I put my camp in Bayou Nwa. I go around the Lagras lake and kill the large
@@ -52,14 +97,26 @@ run away unless you shoot them directly.
 Shoot them with the bolt action rifle in the head so the pelt quality does not
 go down. The smaller alligators that you can pick up are more valuable.
 
-The snapping turtles are considered large animals so you should shoot them in
-the head with a rifle.
+The alligator snapping turtles are considered large animals so you should shoot
+them in the head with a rifle.
 
 Skin the birds and sell the feathers. Do not donate them to Cripps. Kill them
 with the Varmint rifle.
 
 One annoying issue with carcasses is them disappearing when they go off screen.
 Even if I am only 30 seconds of running away.
+
+## Selling Items to Gus vs. Donating
+It's preferable to donate items but you can also sell items to Gus so he can
+craft items and trinkets for you. Especially, you should go for the
+`Buck Antler Trinket` which somewhat helps and preserves pelt quality. If you
+shoot a 3 star animal the pelt quality might not drop.
+
+To make the trinket, you need a `Dane Topaz Necklace`, two buck antlers and some
+cash. Trinkets stack, so buy as many as you can afford and think are useful.
+
+More info about all the trinkets you can buy:
+https://www.reddit.com/r/RedDeadOnline/comments/ia92c4/before_you_buy_trinkets_gus_trapper_store/
 
 ## The Hunting Wagon
 I would say it's not really a necessity. It is of course convenient if I find a

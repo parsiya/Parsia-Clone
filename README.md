@@ -21,7 +21,7 @@ I have explained how I create the resulting website in these two blog posts:
 
 # Content License
 Except where otherwise noted, non-code material on this website is licensed under
-a <a rel="license"  target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY-NC</a>.
+a <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY-NC</a>.
 
 <!-- Links -->
 [parsiya-net]: https://parsiya.net
