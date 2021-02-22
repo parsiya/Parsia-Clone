@@ -5,7 +5,7 @@ comments: false
 categories:
 - Videogames
 tags:
-- Skyrim
+- Red Dead Online
 title: "Red Dead Online"
 wip: true
 ---
@@ -32,6 +32,20 @@ Source: https://www.reddit.com/r/RedDeadOnline/comments/f97n4u/all_the_desert_sa
 
 ### Alligators
 Around Lagras lake. Use the Lagras fast travel point.
+
+### Longnose Garl
+Go to the inlet north of `Saint Denis`. On the map, almost right on top of the
+`E` in `Lemoyne`.
+
+* Bait: Crayfish. Buy from the bait shop further north.
+
+![Longnose Garl fishing location](longnose-garl.jpg)
+
+Press the middle mouse button (eagle eye) to see the fish. You are looking for
+the big ones.
+
+Source for the location:
+https://www.reddit.com/r/RedDeadOnline/comments/gdaewh/longnose_gar_location_and_how_to_catch_rdr2_online/fpgejgu/
 
 ## Collector
 Collector challenges are mostly straight forward and can be completed quickly by
@@ -98,7 +112,15 @@ Shoot them with the bolt action rifle in the head so the pelt quality does not
 go down. The smaller alligators that you can pick up are more valuable.
 
 The alligator snapping turtles are considered large animals so you should shoot
-them in the head with a rifle.
+them in the head with a rifle. They are also and are usually sedated with three
+shots to the head, so good for those "sample two creatures in 10 minutes"
+challenges.
+
+You will get a lot of big game meat from the alligators. Large alligators drop 5
+pieces and the maximum is 20. Fortunately, one of the superior stew recipes
+needs 3 big game meats so you can always create stew. When going to the butcher,
+you can see 20 of them for $15 which is OK money. Be sure to sell all of your
+big game meat at the butcher because you will be getting a tone of them.
 
 Skin the birds and sell the feathers. Do not donate them to Cripps. Kill them
 with the Varmint rifle.
@@ -122,7 +144,10 @@ https://www.reddit.com/r/RedDeadOnline/comments/ia92c4/before_you_buy_trinkets_g
 I would say it's not really a necessity. It is of course convenient if I find a
 bunch of animals in the wild and I kill them.
 
-It also spawns only on major roads so be sure to do it there.
+It also spawns only on major roads so be sure to do it there. The reddit
+comments mentioned looking at the ground in first person when summoning. Because
+it gets summoned out of sight looking down might help? I have not been able to
+prove this.
 
 One good thing about the wagon is that you can put stuff in it and then dismiss
 it. Later in camp or at the shop you can summon it. The stuff on the wagon

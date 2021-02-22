@@ -11,7 +11,11 @@ The clone resides at [parsiya.io][parsiya-io]. Previously, the articles were
 added via git and the index was manually generated. You can see the old (and
 outdated) read me at [old-readme.md](Old-READMD.md).
 
-I have explained how I create the resulting website in these two blog posts:
+## Old Deployment via Travis CI
+As of February 2021, the site is built with Github actions and hosted on Github
+pages.
+
+I explained how I create the resulting website in these two blog posts:
 
 - [Deploying my Knowledge Base at parsiya.io to S3 with Travis CI](https://parsiya.net/blog/2018-04-24-deploying-my-knowledge-base-at-parsiya.io-to-s3-with-travis-ci/)
     - As of November 2020, I am using Github actions instead of Travis CI. See
