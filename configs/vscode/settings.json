@@ -1,0 +1,122 @@
+{
+    "editor.fontSize": 15,
+    "markdown.preview.fontSize": 16,
+    "cSpell.userWords": [
+        "Comms",
+        "Gitlab",
+        "allowlist",
+        "blockchain",
+        "cheatsheet",
+        "codecaption",
+        "executables",
+        "hakimian",
+        "imgcap",
+        "markdownify",
+        "octopress",
+        "parsia",
+        "parsiya",
+        "procmon",
+        "relref",
+        "skyrim",
+        "symlink",
+        "videogames"
+    ],
+
+    // Open a new file when an empty instance is started
+    "workbench.startupEditor": "newUntitledFile",
+    // Disable npm script detection
+    "npm.autoDetect": "off",
+    // Use Unix style EOL
+    "files.eol": "\n",
+    // Set ruler at 80 characters
+    "editor.rulers": [80],
+    // Disable the annoying extension recommendation pop-up
+    "extensions.ignoreRecommendations": true,
+    // Edit settings as json
+    "workbench.settings.editor": "json",
+
+    // **Intellisense**
+    // Send snippets to top
+    "editor.snippetSuggestions": "top",
+    // Enable tab complete for snippets
+    "editor.tabCompletion": "on",
+    // Suggest snippets as you type trigger characters
+    "editor.suggestOnTriggerCharacters": true,
+    // Enable quick suggestions
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.suggestSelection": "first",
+
+    // **Go lint**
+    "go.lintTool": "golangci-lint",
+    // Lint all workspace, this is good for source code review
+    // Other options are "off" or "package"
+    "go.lintOnSave": "package",
+    // Enable auto population of function parameters.
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    // Increase timeout for running tests.
+    "go.testTimeout": "600s",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+
+    // **Markdown**
+    "[markdown]": {
+        // Enable word based suggestions
+        "editor.wordBasedSuggestions": true,
+        // Disable drag and drop in markdown files
+        "editor.dragAndDrop": false,
+        // Enable quick suggestions
+        "editor.quickSuggestions": true,
+        // Send snippets to top in suggestion list
+        "editor.snippetSuggestions": "top",
+    },
+
+    // **Markdown All in One**
+    // Generate Github compatible table of content
+    "markdown.extension.toc.slugifyMode": "github",
+    // Update the table of contents on save
+    "markdown.extension.toc.updateOnSave": true,
+    // Set list indentation to inherit
+    "markdown.extension.list.indentationSize": "inherit",
+    // Convert toc to lowercase to work on Github and Hugo
+    "markdown.extension.toc.downcaseLink": true,
+    // Use '*' to indicate italic and not '_'
+    "markdown.extension.italic.indicator": "*",
+
+    // **Git**
+    // **uncomment to disable git**
+    // "git.enabled": false,
+    // "git.path": null,
+    // "git.autofetch": false,
+
+    // **Disable some gitlens stuff**
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    // Disable telemetry
+	"telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    // **Markdown Notes**
+    "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
+    // **VSNotes**
+    "vsnotes.defaultNoteTitle": "{title}.{ext}",
+    "vsnotes.templates": [
+        "bug",
+        "note",
+    ],
+    "vsnotes.defaultSnippet": {
+        "langId": "markdown",
+        "name": "vsnote_template_note"
+    },
+    // Spaces in title will be converted to this.
+    "vsnotes.noteTitleConvertSpaces": "-",
+
+    // Misc
+    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    // Use bash instead of cmd
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "window.zoomLevel": 0,
+}
