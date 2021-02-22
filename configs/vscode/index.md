@@ -41,7 +41,7 @@ document. The `settings.json` is always updated, regardless.
 
 1. Install Go. I mostly code in Go these days, so that's a step.
 2. Download and install VS Code (optionally install Git when VS Code asks).
-3. Copy paste the `settings.json` from the [Github repository](https://github.com/parsiya/Parsia-Clone/tree/master/categories/configs/vscode/vs-code-config-files/settings.json) (or [here](vs-code-config-files/settings.json)) to user config (shortcut `ctrl + ,`).
+3. Copy paste the `settings.json` from the [Github repository](https://github.com/parsiya/Parsia-Clone/tree/main/configs/vscode/vs-code-config-files/settings.json) (or [here](vs-code-config-files/settings.json)) to user config (shortcut `ctrl + ,`).
 4. Install `Go` extension and reload.
 5. Open any file with `go` extension. When prompted, select `Install All`. Wait until all tools are installed.
 6. Optionally install the `Markdown All in One` extension and reload.
@@ -73,7 +73,7 @@ Select all and tools will be installed.
 ### Go Snippets
 Go extension comes with some snippets. These snippets are at:
 
-- https://github.com/Microsoft/vscode-go/blob/master/snippets/go.json
+- https://github.com/golang/vscode-go/blob/master/snippets/go.json
 
 ## Markdown All in One
 Helps with editing markdown.

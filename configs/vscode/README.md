@@ -4,7 +4,7 @@ This is how I setup my VS Code. I mostly use it for reading/writing markdown and
 - [Quick Start Guide](#quick-start-guide)
 - [Extensions](#extensions)
     - [Go](#go)
-        - [Go Metalinter](#go-metalinter)
+        - [Golangci-lint](#golangci-lint)
         - [Go Snippets](#go-snippets)
     - [Markdown All in One](#markdown-all-in-one)
         - [Table of Content](#table-of-content)
@@ -23,7 +23,7 @@ This is how I setup my VS Code. I mostly use it for reading/writing markdown and
 
 1. Install Go. I mostly code in Go these days, so that's a step.
 2. Download and install VS Code (optionally install Git when VS Code asks).
-3. Copy paste the `settings.json` from the [Github repository](https://github.com/parsiya/Parsia-Clone/tree/master/categories/configs/vscode/vs-code-config-files/settings.json) (or [here](vs-code-config-files/settings.json)) to user config (shortcut `ctrl + ,`).
+3. Copy paste the `settings.json` from the [Github repository](https://github.com/parsiya/Parsia-Clone/tree/main/configs/vscode/vs-code-config-files/settings.json) (or [here](vs-code-config-files/settings.json)) to user config (shortcut `ctrl + ,`).
 4. Install `Go` extension and reload.
 5. Open any file with `go` extension. When prompted, select `Install All`. Wait until all tools are installed.
 6. Optionally install the `Markdown All in One` extension and reload.
@@ -37,14 +37,23 @@ Some useful extensions.
 - Docs: https://code.visualstudio.com/docs/languages/go
 - Source: https://github.com/Microsoft/vscode-go
 
-### Go Metalinter
-To enable [go metalinter](https://github.com/alecthomas/gometalinter) set the following in config:
+### Golangci-lint
+instead. This section To enable
+[golangci-lint](https://github.com/golangci/golangci-lint) set the following in
+config:
 
 ``` json
-    "go.lintTool": "gometalinter",
-    // Lint all workspace, this is good for source code review
-    // Other options are "off" or "package"
-    "go.lintOnSave": "workspace",
+// **Go lint**
+"go.lintTool": "golangci-lint",
+// Lint all workspace, this is good for source code review
+// Other options are "off" or "package"
+"go.lintOnSave": "package",
+// Enable auto population of function parameters.
+"go.useCodeSnippetsOnFunctionSuggest": true,
+// Increase timeout for running tests.
+"go.testTimeout": "600s",
+"go.formatTool": "goimports",
+"go.useLanguageServer": true,
 ```
 
 Next open up any Go file and the extension will prompt you to install tools. Select all and tools will be installed.
@@ -60,10 +69,10 @@ Helps with editing markdown.
 - https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 
 ``` json
-    // Generate Github compatible table of content
-    "markdown.extension.toc.githubCompatibility": true,
-    // Update the table of content on save
-    "markdown.extension.toc.updateOnSave": true,
+// Generate Github compatible table of content
+"markdown.extension.toc.githubCompatibility": true,
+// Update the table of content on save
+"markdown.extension.toc.updateOnSave": true,
 ```
 
 ### Table of Content
@@ -79,14 +88,14 @@ Linter for markdown.
 You can disable specific rules in config:
 
 ``` json
-    // Markdown Lint settings
-    "markdownlint.config": {
-        // Disable some rules
-        "MD022": false,
-        "MD032": false,
-        "MD007": false,
-        "MD010": false,
-    },
+// Markdown Lint settings
+"markdownlint.config": {
+    // Disable some rules
+    "MD022": false,
+    "MD032": false,
+    "MD007": false,
+    "MD010": false,
+},
 ```
 
 ## GitLens
@@ -97,9 +106,9 @@ Adds Git Integration.
 I have disabled some clutter:
 
 ``` json
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.historyExplorer.enabled": false,
+"gitlens.codeLens.recentChange.enabled": false,
+"gitlens.codeLens.authors.enabled": false,
+"gitlens.historyExplorer.enabled": false,
 ```
 
 ## LanguageTool for Visual Studio Code
@@ -134,17 +143,17 @@ Helps with performance inside VMs where I do not need git integration.
 These settings only affect markdown files. VS Code has a recent bug where some universal settings (e.g. `quickSuggestions`) are not automatically applied to some languages such as Markdown. These are added here.
 
 ``` json
-    // Markdown language settings
-    "[markdown]": {
-        // Enable word based suggestions
-        "editor.wordBasedSuggestions": true,
-        // Disable drag and drop in markdown files
-        "editor.dragAndDrop": false,
-        // Enable quick suggestions
-        "editor.quickSuggestions": true,
-        // Send snippets to top in suggestion list
-        "editor.snippetSuggestions": "top",
-    },
+// Markdown language settings
+"[markdown]": {
+    // Enable word based suggestions
+    "editor.wordBasedSuggestions": true,
+    // Disable drag and drop in markdown files
+    "editor.dragAndDrop": false,
+    // Enable quick suggestions
+    "editor.quickSuggestions": true,
+    // Send snippets to top in suggestion list
+    "editor.snippetSuggestions": "top",
+},
 ```
 
 ### Word Separator Note
@@ -159,7 +168,7 @@ Unlike Sublime, VS Code counts `-` as word separator. In VS Code this is called 
 # Creating Snippets
 Similar to other editors, you can create snippets in VS Code. Snippets are stored in JSON files. To create a snippet for a specific language use `File (menu) > Preferences > User Snippets`. Then select the language. In this case, I will create some Markdown snippets, so I will select `markdown.json`.
 
-The JSON object is easy to read. The important parts are `prefix` (which si the trigger) and `body`. Note that you do not need to enter new lines with `\n`. Simply create a new cell in the body array and it will be printed in a new line. The following snippet will create a codefence.
+The JSON object is easy to read. The important parts are `prefix` (which is the trigger) and `body`. Note that you do not need to enter new lines with `\n`. Simply create a new cell in the body array and it will be printed in a new line. The following snippet will create a codefence.
 
 ``` json
 {
