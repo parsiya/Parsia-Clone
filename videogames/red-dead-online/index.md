@@ -21,7 +21,8 @@ wip: true
 
 # Challenges
 Do at least one daily challenge every day. The streak will increase the gold
-payout. This section has my notes about how to complete them quickly-ish.
+payout. This section has my notes about how to complete some of them
+quickly-ish. Seems like the streak resets at 28 days since December 2020, boo!.
 
 ## General
 
@@ -42,10 +43,15 @@ Go to the inlet north of `Saint Denis`. On the map, almost right on top of the
 ![Longnose Garl fishing location](longnose-garl.jpg)
 
 Press the middle mouse button (eagle eye) to see the fish. You are looking for
-the big ones.
+the big ones. Try to throw your bait close to them. Going first person might
+help.
 
 Source for the location:
 https://www.reddit.com/r/RedDeadOnline/comments/gdaewh/longnose_gar_location_and_how_to_catch_rdr2_online/fpgejgu/
+
+### Catch Fish with Food
+Make sure to use the `bread` bait. The cheese bait did not work for me (26 Feb
+2021).
 
 ## Collector
 Collector challenges are mostly straight forward and can be completed quickly by
@@ -88,19 +94,24 @@ Then buy the shovel and then the metal detector. Be sure to **buy the shovel
 first**, because the metal detector is useless without the shovel.
 
 On consoles, the controller vibrates when you have the metal detector out and
-you are around special locations. On PC you gotta go to first person (press `v`)
-and then see where the detector starts blinking more rapidly.
+you are around special locations. On PC, sometimes you have to first person
+(press `v`) and then see where the detector starts blinking more rapidly.
 
 I still do not know if it's possible to find things with the metal detector that
 are not marked on the map above. Do I go around with the detector in my hand and
-hope to find things? I dunno. I am on PC so I cannot rely on the controller
+hope to find things? Not sure. I am on PC so I cannot rely on the controller
 vibration.
 
 After doing missions, delivery sessions, events and more, you will have enough
 cash and gold to buy the other items for professions. If you are not in a hurry
-and you can wait, wait for a weekly bonus that has the items at a discount. For
-example, I started the hunter track with a discount and bought the Naturalist
-role item a few weeks later when it was 15 gold bars instead of 25.
+and you can wait, wait for a weekly bonus that has these starting items at a
+discount. For example, I started the hunter track with a discount and bought the
+Naturalist role item a few weeks later when it was 15 gold bars instead of 25.
+Later, the moonshine shack was also discounted.
+
+These weekly discounts usually come with XP and payout bonuses. This means you
+can concentrate on that role to get to level 20 faster (especially with the
+boost from the Outlaw pass).
 
 # Hunting in Bayou Nwa
 I put my camp in Bayou Nwa. I go around the Lagras lake and kill the large
@@ -119,23 +130,25 @@ challenges.
 You will get a lot of big game meat from the alligators. Large alligators drop 5
 pieces and the maximum is 20. Fortunately, one of the superior stew recipes
 needs 3 big game meats so you can always create stew. When going to the butcher,
-you can see 20 of them for $15 which is OK money. Be sure to sell all of your
+you can sell 20 of them for $15 which is OK money. Be sure to sell all of your
 big game meat at the butcher because you will be getting a tone of them.
 
 Skin the birds and sell the feathers. Do not donate them to Cripps. Kill them
 with the Varmint rifle.
 
-One annoying issue with carcasses is them disappearing when they go off screen.
-Even if I am only 30 seconds of running away.
+One annoying issue with carcasses, corpses and items is them disappearing when
+they go off screen. Even if I am only 30 seconds of running away.
 
 ## Selling Items to Gus vs. Donating
-It's preferable to donate items but you can also sell items to Gus so he can
-craft items and trinkets for you. Especially, you should go for the
-`Buck Antler Trinket` which somewhat helps and preserves pelt quality. If you
-shoot a 3 star animal the pelt quality might not drop.
+It's better to donate items but you can also sell items to Gus so he can craft
+items and trinkets for you. Especially, you should go for the `Buck Antler
+Trinket` which somewhat helps and preserves pelt quality. If you shoot a 3 star
+animal the pelt quality might not drop. I managed to buy all trinkets during a
+30% off at Gus store weekly bonus week.
 
 To make the trinket, you need a `Dane Topaz Necklace`, two buck antlers and some
-cash. Trinkets stack, so buy as many as you can afford and think are useful.
+cash. Different trinket bonuses stack, so ideally, you want to have all of them.
+Although, you can buy each one only once.
 
 More info about all the trinkets you can buy:
 https://www.reddit.com/r/RedDeadOnline/comments/ia92c4/before_you_buy_trinkets_gus_trapper_store/
@@ -151,12 +164,12 @@ prove this.
 
 One good thing about the wagon is that you can put stuff in it and then dismiss
 it. Later in camp or at the shop you can summon it. The stuff on the wagon
-persist between sessions.
+persists between sessions.
 
-It has a capacity of 10 points for carcasses and big pelts (e.g., alligator
-pelts). Each large carcass or pelt is 2 points, each small carcass (e.g., birds)
-is 1. I do not think there is a limit on the number of non-large pelts (the ones
-you can stow on the horse without taking space).
+It has a capacity of 10 points for carcasses and big pelts (e.g., large
+alligator pelts). Each large carcass or large pelt is 2 points, each small
+carcass (e.g., birds) is 1. I have read the limit on the number of non-large
+pelts (the ones you can stow on the horse without taking space) is 50.
 
 It's very fragile. I have had my wagon break down when going through mud.
 

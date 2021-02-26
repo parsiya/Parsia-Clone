@@ -35,7 +35,9 @@ This is how I setup my VS Code. I mostly use it for reading/writing markdown and
 **Note:** This guide was originally made in early 2019. Some of the options and
 extensions have changed since then. For example, gometalinter is not supported
 anymore. I have not updated the guide, yet. Keep that in mind when reading this
-document. The `settings.json` is always updated, regardless.
+document. The
+[vs-code-config-files/settings.json](vs-code-config-files/settings.json) is
+always updated, regardless.
 
 # Quick Start Guide
 
