@@ -53,6 +53,15 @@ https://www.reddit.com/r/RedDeadOnline/comments/gdaewh/longnose_gar_location_and
 Make sure to use the `bread` bait. The cheese bait did not work for me (26 Feb
 2021).
 
+### Catch Fish with Live Bait
+Live bait is either crickets or worms. However, there is a "catch" (lol). The
+first time when you use a bait, it's live. Sometimes, the bait is note removed
+after catching the fish. These subsequent catches with the original bait do not
+count.
+
+So if you catch a fish and the bait is not removed, change the bait so you get a
+live one.
+
 ## Collector
 Collector challenges are mostly straight forward and can be completed quickly by
 using the [collector's map][collectors-map].
@@ -69,51 +78,26 @@ Source: https://www.youtube.com/watch?v=4Wqqoxtfttc
 
 **Possible with other jewelry?**
 
-# Buy the Outlaw Pass
-I got the Outlaw Pass 4. I bought the gold with microtransactions but I had
-bought the stand alone game for 5 USD. The pass gave me 15% and then 30% role
-bonus which helped me make more gold and money. It also gave me back 30 gold
-bars along with a 10 gold bar discount on the bounty hunter license. So it
-pretty much paid itself back.
+## Moonshiner
 
-Getting to rank 100 in the pass was not that hard. Considering the XP needed for
-every rank is the same (and does not exponentially go up). It's a quick thing.
+### Revenue Agent Blockades
+At least true in Bayou Nwa (probably in other places). The blockades have three
+wagons in them. One is full one moonshine and one is completely empty. The last
+one has a lockbox in it. Inside the lockbox there is always:
 
-# What to Buy When Starting Out?
-Start with the Collector's track. Go to Madam Nazar and buy the bag. It costs 15
-gold bars. Then you can start collecting. Use this amazing map to figure
-out what is where and collect everything around you.
+1. A bottle of Moonshine.
+1. Cocaine gum.
+2. Gold pocket watch (worth 7 or 8 dollars). Note that you can only carry like
+   5-6 of them at a time so sell them to fences as soon as you can.
+3. Regular revolver bullets.
 
-When starting out you probably do not have the gold bars to buy anything. I
-bought gold with cash which was worth it for me because I did not want to grind
-challenges for a few weeks.
+Make sure to loot it.
 
-[https://jeanropke.github.io/RDR2CollectorsMap/][collectors-map]
+## Trader
+When doing delivery missions, use the railroad tracks to get there if you can.
+Usually. the drop off location is a train station and near the railroad tracks.
 
-Then buy the shovel and then the metal detector. Be sure to **buy the shovel
-first**, because the metal detector is useless without the shovel.
-
-On consoles, the controller vibrates when you have the metal detector out and
-you are around special locations. On PC, sometimes you have to first person
-(press `v`) and then see where the detector starts blinking more rapidly.
-
-I still do not know if it's possible to find things with the metal detector that
-are not marked on the map above. Do I go around with the detector in my hand and
-hope to find things? Not sure. I am on PC so I cannot rely on the controller
-vibration.
-
-After doing missions, delivery sessions, events and more, you will have enough
-cash and gold to buy the other items for professions. If you are not in a hurry
-and you can wait, wait for a weekly bonus that has these starting items at a
-discount. For example, I started the hunter track with a discount and bought the
-Naturalist role item a few weeks later when it was 15 gold bars instead of 25.
-Later, the moonshine shack was also discounted.
-
-These weekly discounts usually come with XP and payout bonuses. This means you
-can concentrate on that role to get to level 20 faster (especially with the
-boost from the Outlaw pass).
-
-# Hunting in Bayou Nwa
+## Hunting in Bayou Nwa
 I put my camp in Bayou Nwa. I go around the Lagras lake and kill the large
 alligators. There are usually a few spawn around the camp. So I can quickly kill
 them. The alligators are not that valuable but they are easy to kill and do not
@@ -169,7 +153,8 @@ persists between sessions.
 It has a capacity of 10 points for carcasses and big pelts (e.g., large
 alligator pelts). Each large carcass or large pelt is 2 points, each small
 carcass (e.g., birds) is 1. I have read the limit on the number of non-large
-pelts (the ones you can stow on the horse without taking space) is 50.
+pelts (the ones you can stow on the horse without taking space) is 50 but I have
+never reached that limit.
 
 It's very fragile. I have had my wagon break down when going through mud.
 
@@ -182,3 +167,46 @@ One trick to make things easier:
 5. Drop everything in the wagon.
 6. Dismiss the wagon.
 
+# Buy the Outlaw Pass
+I got the Outlaw Pass 4. I bought the gold with microtransactions but I had
+bought the stand alone game for 5 USD. The pass gave me 15% and then 30% role
+bonus which helped me make more gold and money. It also gave me back 30 gold
+bars along with a 10 gold bar discount on the bounty hunter license. So it
+pretty much paid itself back.
+
+Getting to rank 100 in the pass was not that hard. Considering the XP needed for
+every rank is the same (and does not exponentially go up). It's a quick thing.
+
+# What to Buy When Starting Out?
+Start with the Collector's track. Go to Madam Nazar and buy the bag. It costs 15
+gold bars. Then you can start collecting. Use this amazing map to figure
+out what is where and collect everything around you.
+
+When starting out you probably do not have the gold bars to buy anything. I
+bought gold with cash which was worth it for me because I did not want to grind
+challenges for a few weeks.
+
+[https://jeanropke.github.io/RDR2CollectorsMap/][collectors-map]
+
+Then buy the shovel and then the metal detector. Be sure to **buy the shovel
+first**, because the metal detector is useless without the shovel.
+
+On consoles, the controller vibrates when you have the metal detector out and
+you are around special locations. On PC, sometimes you have to first person
+(press `v`) and then see where the detector starts blinking more rapidly.
+
+I still do not know if it's possible to find things with the metal detector that
+are not marked on the map above. Do I go around with the detector in my hand and
+hope to find things? Not sure. I am on PC so I cannot rely on the controller
+vibration.
+
+After doing missions, delivery sessions, events and more, you will have enough
+cash and gold to buy the other items for professions. If you are not in a hurry
+and you can wait, wait for a weekly bonus that has these starting items at a
+discount. For example, I started the hunter track with a discount and bought the
+Naturalist role item a few weeks later when it was 15 gold bars instead of 25.
+Later, the moonshine shack was also discounted.
+
+These weekly discounts usually come with XP and payout bonuses. This means you
+can concentrate on that role to get to level 20 faster (especially with the
+boost from the Outlaw pass).
