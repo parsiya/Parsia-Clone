@@ -4,7 +4,7 @@
 <input type=hidden name=q value=site:http://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>Jan 29, 2020 -
 5 minute read
 - <a class=label href=http://parsiya.io/categories/research/>Research</a></p><h1 class=entry-title>Gradle Plugin Notes</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/main/research/gradle-plugin/index.markdown target=_blank>Github Link</a></header><div class=entry-content><p>To add a plugin to an existing Java project we can add it under <code>buildSrc</code>. This
-way we can use it in the project <code>build.gradle</code> without hassle.</p><ul><li><a href=https://www.vogella.com/tutorials/Gradle/article.html#apply-the-java-gradle-plugin-plug-in>https://www.vogella.com/tutorials/Gradle/article.html#apply-the-java-gradle-plugin-plug-in</a></li></ul><p>Inside the <code>buildSrc</code> directory, we will need to create a separate Java project
+way we can use it in the project <code>build.gradle</code> without hassle.</p><ul><li><a href=https://www.vogella.com/tutorials/Gradle/article.html#apply-the-java-gradle-plugin-plug-in rel=nofollow target=_blank>https://www.vogella.com/tutorials/Gradle/article.html#apply-the-java-gradle-plugin-plug-in</a></li></ul><p>Inside the <code>buildSrc</code> directory, we will need to create a separate Java project
 with all the bells and whistles. This means we have to create another
 <code>build.gradle</code> inside.</p><figure class=code><figcaption><span>buildSrc/build.gradle</span></figcaption><div class=codewrapper><div class=highlight><div style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#495050"> 1
 </span><span style="margin-right:.4em;padding:0 .4em;color:#495050"> 2
@@ -141,10 +141,9 @@ the task.</p><figure class=code><figcaption><span>buildSrc/Installation.java</sp
 <span style=color:#719e07>}</span></code></pre></td></tr></table></div></div></div></figure><p>The interesting part of the code is the <code>Option</code>. We can use this to get
 parameters/switch from the command line. In this case, we are creating an option
 named <code>project</code> and we will store it in <code>projectPath</code>. Now we can do what we
-want with <code>projectPath</code>.</p><ul><li><a href=https://docs.gradle.org/current/userguide/custom_tasks.html#sec:declaring_and_using_command_line_options>https://docs.gradle.org/current/userguide/custom_tasks.html#sec:declaring_and_using_command_line_options</a></li></ul><p>Our plugin is now ready. Now we need to add it to the project <code>build.gradle</code>
+want with <code>projectPath</code>.</p><ul><li><a href=https://docs.gradle.org/current/userguide/custom_tasks.html#sec:declaring_and_using_command_line_options rel=nofollow target=_blank>https://docs.gradle.org/current/userguide/custom_tasks.html#sec:declaring_and_using_command_line_options</a></li></ul><p>Our plugin is now ready. Now we need to add it to the project <code>build.gradle</code>
 which is inside the root directory of the project. Add this line to it:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#586e75>// The id here is the same as
-</span><span style=color:#586e75></span>apply plugin<span style=color:#719e07>:</span> &#39;mypluginid&#39; in `buildSrc<span style=color:#719e07>/</span>build<span style=color:#719e07>.</span>gradle`<span style=color:#719e07>.</span>
-</code></pre></div><p>Now we can call this task with a command line parameter from the project
+</span><span style=color:#586e75></span>apply plugin<span style=color:#719e07>:</span> &#39;mypluginid&#39; in `buildSrc<span style=color:#719e07>/</span>build<span style=color:#719e07>.</span>gradle`<span style=color:#719e07>.</span></code></pre></div><p>Now we can call this task with a command line parameter from the project
 directory. The command line parameter is passed a <code>--project=value</code> or
 <code>--project value</code>.</p><pre><code>gradlew install --project=cli-value
 
@@ -152,15 +151,14 @@ directory. The command line parameter is passed a <code>--project=value</code> o
 Option value: cli-value
 
 BUILD SUCCESSFUL in 956ms
-1 actionable task: 1 executed
-</code></pre><p>Note that if we pass a parameter that is not defined, we get an error in this
+1 actionable task: 1 executed</code></pre><p>Note that if we pass a parameter that is not defined, we get an error in this
 setup.</p><pre><code>gradlew install --param value
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
 Problem configuring task :install from command line.
-&gt; Unknown command-line option '--param'.
+&gt; Unknown command-line option &#39;--param&#39;.
 
 * Try:
 Run gradlew help --task :install to get task usage details.
@@ -169,8 +167,7 @@ Run with --info or --debug option to get more log output.
 Run with --scan to get full insights.
 
 * Get more help at https://help.gradle.org
-BUILD FAILED in 837ms
-</code></pre><h2 id=using-groovy-in-buildgradle>Using Groovy in build.gradle</h2><p>It&rsquo;s also possible to write the task in <code>build.gradle</code> instead.</p><h3 id=executing-shell-commands>Executing Shell Commands</h3><p>To execute commands per OS (Windows needs <code>cmd.exe /c</code>) we can use:</p><p>Source: <a href=https://stackoverflow.com/a/54315477>https://stackoverflow.com/a/54315477</a></p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy><span style=color:#268bd2>private</span> <span style=color:#268bd2>static</span> Iterable<span style=color:#719e07>&lt;</span>String<span style=color:#719e07>&gt;</span> osAdaptiveCommand<span style=color:#719e07>(</span>String<span style=color:#719e07>...</span> commands<span style=color:#719e07>)</span> <span style=color:#719e07>{</span>
+BUILD FAILED in 837ms</code></pre><h2 id=using-groovy-in-build-gradle>Using Groovy in build.gradle</h2><p>It's also possible to write the task in <code>build.gradle</code> instead.</p><h3 id=executing-shell-commands>Executing Shell Commands</h3><p>To execute commands per OS (Windows needs <code>cmd.exe /c</code>) we can use:</p><p>Source: <a href=https://stackoverflow.com/a/54315477 rel=nofollow target=_blank>https://stackoverflow.com/a/54315477</a></p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy><span style=color:#268bd2>private</span> <span style=color:#268bd2>static</span> Iterable<span style=color:#719e07>&lt;</span>String<span style=color:#719e07>&gt;</span> osAdaptiveCommand<span style=color:#719e07>(</span>String<span style=color:#719e07>...</span> commands<span style=color:#719e07>)</span> <span style=color:#719e07>{</span>
     <span style=color:#dc322f>def</span> newCommands <span style=color:#719e07>=</span> <span style=color:#719e07>[]</span>
     <span style=color:#719e07>if</span> <span style=color:#719e07>(</span>Os<span style=color:#719e07>.</span>isFamily<span style=color:#719e07>(</span>Os<span style=color:#719e07>.</span>FAMILY_WINDOWS<span style=color:#719e07>))</span> <span style=color:#719e07>{</span>
         newCommands <span style=color:#719e07>=</span> <span style=color:#719e07>[</span><span style=color:#2aa198>&#39;cmd&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;/c&#39;</span><span style=color:#719e07>]</span>
@@ -178,17 +175,14 @@ BUILD FAILED in 837ms
 
     newCommands<span style=color:#719e07>.</span>addAll<span style=color:#719e07>(</span>commands<span style=color:#719e07>)</span>
     <span style=color:#719e07>return</span> newCommands
-<span style=color:#719e07>}</span>
-</code></pre></div><p>Now we can create a task like this:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>executeCommand</span><span style=color:#719e07>(</span>type: Exec<span style=color:#719e07>)</span> <span style=color:#719e07>{</span>    
+<span style=color:#719e07>}</span></code></pre></div><p>Now we can create a task like this:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>executeCommand</span><span style=color:#719e07>(</span>type: Exec<span style=color:#719e07>)</span> <span style=color:#719e07>{</span>    
     commandLine <span style=color:#268bd2>osAdaptiveCommand</span><span style=color:#719e07>(</span><span style=color:#2aa198>&#39;aws&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;ecr&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;get-login&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;--no-include-email&#39;</span><span style=color:#719e07>)</span>
-<span style=color:#719e07>}</span>
-</code></pre></div><h3 id=defining-multiple-commandlines-in-one-task>Defining Multiple commandLines in One Task</h3><p>We cannot have multiple <code>commandLine</code>s in the same task without <code>exec</code>s.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
+<span style=color:#719e07>}</span></code></pre></div><h3 id=defining-multiple-commandlines-in-one-task>Defining Multiple commandLines in One Task</h3><p>We cannot have multiple <code>commandLine</code>s in the same task without <code>exec</code>s.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
 
     commandLine <span style=color:#2aa198>&#39;cmd.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;/c&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;dir&#39;</span>
 
     commandLine <span style=color:#268bd2>osAdaptiveCommand</span><span style=color:#719e07>(</span><span style=color:#2aa198>&#39;whatever.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;--switch&#39;</span><span style=color:#719e07>)</span>
-<span style=color:#719e07>}</span>
-</code></pre></div><p>Based on my observation, only the last one will be executed. Instead put each
+<span style=color:#719e07>}</span></code></pre></div><p>Based on my observation, only the last one will be executed. Instead put each
 one in a separate <code>exec</code>. See below.</p><h3 id=defining-multiple-execs-in-one-task>Defining Multiple execs in One Task</h3><p>When defining multiple <code>commandLine</code>s, we need to make sure they are not
 executed in the configuration phase. I am not sure how it works but if you
 create a task like this, it will be executed every time any task is executed.
@@ -200,8 +194,7 @@ Meaning the task is executed in the configuration phase.</p><div class=highlight
     exec <span style=color:#719e07>{</span>
         commandLine <span style=color:#268bd2>osAdaptiveCommand</span><span style=color:#719e07>(</span><span style=color:#2aa198>&#39;whatever.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;--switch&#39;</span><span style=color:#719e07>)</span>
     <span style=color:#719e07>}</span>
-<span style=color:#719e07>}</span>
-</code></pre></div><p>Both of these execs will run whenever any task is executed.</p><p>The solution is to put it in <code>doLast</code>:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
+<span style=color:#719e07>}</span></code></pre></div><p>Both of these execs will run whenever any task is executed.</p><p>The solution is to put it in <code>doLast</code>:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
     doLast <span style=color:#719e07>{</span>
         exec <span style=color:#719e07>{</span>
         <span style=color:#586e75>// optional workingDir &#39;path/to/workingdir`
@@ -211,17 +204,15 @@ Meaning the task is executed in the configuration phase.</p><div class=highlight
             commandLine <span style=color:#268bd2>osAdaptiveCommand</span><span style=color:#719e07>(</span><span style=color:#2aa198>&#39;whatever.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;--switch&#39;</span><span style=color:#719e07>)</span>
         <span style=color:#719e07>}</span>
     <span style=color:#719e07>}</span>
-<span style=color:#719e07>}</span>
-</code></pre></div><h3 id=accessing-command-line-parameters>Accessing Command Line Parameters</h3><p>If the command line parameter is always provided. Access it with <code>$param</code> and
+<span style=color:#719e07>}</span></code></pre></div><h3 id=accessing-command-line-parameters>Accessing Command Line Parameters</h3><p>If the command line parameter is always provided. Access it with <code>$param</code> and
 pass it to the Gradle task like this <code>gradle taskname -Pparam=value</code>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
     doLast <span style=color:#719e07>{</span>
         println <span style=color:#2aa198>&#34;param = $param&#34;</span> <span style=color:#586e75>// Note that we have to use double-quotes.
 </span><span style=color:#586e75></span>    <span style=color:#719e07>}</span>
 <span style=color:#719e07>}</span>
-<span style=color:#586e75>// Run `gradle whatever -Pparam=value`
-</span></code></pre></div><ol><li>Some parameters are reserved and already have values like <code>$path</code> and
+<span style=color:#2aa198>//</span> Run `gradle whatever <span style=color:#719e07>-</span>Pparam<span style=color:#719e07>=</span>value`</code></pre></div><ol><li>Some parameters are reserved and already have values like <code>$path</code> and
 <code>$project</code>.</li><li>If the parameter is not provided to the task an exception occurs.<ul><li><code>Could not get unknown property 'param' for task ':whatever' of type org.gradle.api.DefaultTask.</code></li></ul></li></ol><p>A better way is to use <code>project.hasProperty('param')</code> to check if the project
-has such a property first.</p><p><a href=https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html#hasProperty-java.lang.String->https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html#hasProperty-java.lang.String-</a></p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
+has such a property first.</p><p><a href=https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html#hasProperty-java.lang.String- rel=nofollow target=_blank>https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html#hasProperty-java.lang.String-</a></p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
     doLast <span style=color:#719e07>{</span>
         <span style=color:#719e07>if</span> <span style=color:#719e07>(</span>project<span style=color:#719e07>.</span>hasProperty<span style=color:#719e07>(</span><span style=color:#2aa198>&#39;param&#39;</span><span style=color:#719e07>))</span> <span style=color:#719e07>{</span>
             println <span style=color:#2aa198>&#34;param = $param&#34;</span>
@@ -229,7 +220,6 @@ has such a property first.</p><p><a href=https://docs.gradle.org/current/javadoc
             <span style=color:#586e75>// Can also use else.
 </span><span style=color:#586e75></span>        <span style=color:#719e07>}</span>
     <span style=color:#719e07>}</span>
-<span style=color:#719e07>}</span>
-</code></pre></div><h3 id=get-current-working-directory>Get Current Working directory</h3><ul><li><code>System.properties['user.dir']</code><ul><li><a href=https://stackoverflow.com/a/6492287>https://stackoverflow.com/a/6492287</a></li></ul></li></ul><p>To get the script path:</p><ul><li>scriptFile = getClass().protectionDomain.codeSource.location.path<ul><li><a href=https://stackoverflow.com/a/1169196>https://stackoverflow.com/a/1169196</a></li></ul></li></ul></div><footer><p class=meta><span class=categories>Tags:
-<a class=category href=http://parsiya.io/tags/java>Java</a> <a class=category href=http://parsiya.io/tags/gradle>Gradle</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#using-groovy-in-buildgradle>Using Groovy in build.gradle</a><ul><li><a href=#executing-shell-commands>Executing Shell Commands</a></li><li><a href=#defining-multiple-commandlines-in-one-task>Defining Multiple commandLines in One Task</a></li><li><a href=#defining-multiple-execs-in-one-task>Defining Multiple execs in One Task</a></li><li><a href=#accessing-command-line-parameters>Accessing Command Line Parameters</a></li><li><a href=#get-current-working-directory>Get Current Working directory</a></li></ul></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<span style=color:#719e07>}</span></code></pre></div><h3 id=get-current-working-directory>Get Current Working directory</h3><ul><li><code>System.properties['user.dir']</code><ul><li><a href=https://stackoverflow.com/a/6492287 rel=nofollow target=_blank>https://stackoverflow.com/a/6492287</a></li></ul></li></ul><p>To get the script path:</p><ul><li>scriptFile = getClass().protectionDomain.codeSource.location.path<ul><li><a href=https://stackoverflow.com/a/1169196 rel=nofollow target=_blank>https://stackoverflow.com/a/1169196</a></li></ul></li></ul></div><footer><p class=meta><span class=categories>Tags:
+<a class=category href=http://parsiya.io/tags/java>Java</a> <a class=category href=http://parsiya.io/tags/gradle>Gradle</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><ul><li><a href=#using-groovy-in-build-gradle>Using Groovy in build.gradle</a><ul><li><a href=#executing-shell-commands>Executing Shell Commands</a></li><li><a href=#defining-multiple-commandlines-in-one-task>Defining Multiple commandLines in One Task</a></li><li><a href=#defining-multiple-execs-in-one-task>Defining Multiple execs in One Task</a></li><li><a href=#accessing-command-line-parameters>Accessing Command Line Parameters</a></li><li><a href=#get-current-working-directory>Get Current Working directory</a></li></ul></li></ul></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
 <span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.</p></footer></body></html>
