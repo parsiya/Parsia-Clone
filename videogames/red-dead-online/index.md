@@ -62,6 +62,13 @@ count.
 So if you catch a fish and the bait is not removed, change the bait so you get a
 live one.
 
+### Alpine Goats
+Alpine goats are domesticated animals. You can find them in a ranch to the East
+of Emerald Station. There should be a goat around. If not, use
+`Online > Free Roam` to join a new session. Rinse and repeat.
+
+Source: https://www.guidestash.com/guide/red-dead-redemption-2/alpine-goat-location-red-dead-online/
+
 ## Collector
 Collector challenges are mostly straight forward and can be completed quickly by
 using the [collector's map][collectors-map].
