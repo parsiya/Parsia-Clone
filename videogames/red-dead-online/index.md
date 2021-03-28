@@ -100,11 +100,32 @@ one has a lockbox in it. Inside the lockbox there is always:
 
 Make sure to loot it.
 
+## Quaker's Cove Moonshine Mission
+This is a stealth mission and is pretty easy to do. Obviously, use the bow.
+
+![Quaker's Cove Moonshine Mission Guide](quakers-cove-moonshine-mission.jpg)
+
+1. #3 is moving between where he is in the picture and #6. Along the red line.
+2. #5 is in a shack and cannot see #1.
+3. Kill #1 when #3 is not walking towards it. I do not think can see him anyways.
+4. Then move around the shack and kill #2. #2 is sitting on a chair on the docks.
+5. Then either wait for #3 to get to where he is in the picture or if he is moving back towards #6, you can kill #4.
+   1. #4 is fishing and looking towards the sea. The corpse will fall into the water. Even if it does not, #3 does not seem to see it/care.
+6. Kill #5 who is in a shack. #6 is looking down and does not see him.
+7. Go by the shack where #5 was killed and kill #6. He seems to be looking down and does not see you.
+   1. This step and the next are interchangeable.
+8. Go slowly into the shack, #7 is sitting besides the still and does not notice you. You can kill him, no need to panic or be quick. Take your time.
+9. Poison the still
+10. When leaving, go where #6 is. There is a table with Apple (and other things on it) and a box on its right side (East).
+11. Leave
+
 ## Trader
 When doing delivery missions, use the railroad tracks to get there if you can.
 Usually. the drop off location is a train station and near the railroad tracks.
 
-## Hunting in Bayou Nwa
+# Good Camp Locations
+
+## Bayou Nwa
 I put my camp in Bayou Nwa. I go around the Lagras lake and kill the large
 alligators. There are usually a few spawn around the camp. So I can quickly kill
 them. The alligators are not that valuable but they are easy to kill and do not
@@ -115,11 +136,11 @@ go down. The smaller alligators that you can pick up are more valuable.
 
 The alligator snapping turtles are considered large animals so you should shoot
 them in the head with a rifle. They are also and are usually sedated with three
-shots to the head, so good for those "sample two creatures in 10 minutes"
+shots to the head, so good for those "sample x creatures in 10 minutes"
 challenges.
 
 You will get a lot of big game meat from the alligators. Large alligators drop 5
-pieces and the maximum is 20. Fortunately, one of the superior stew recipes
+pieces and the maximum is ~~20~~30. Fortunately, one of the superior stew recipes
 needs 3 big game meats so you can always create stew. When going to the butcher,
 you can sell 20 of them for $15 which is OK money. Be sure to sell all of your
 big game meat at the butcher because you will be getting a tone of them.
@@ -129,6 +150,23 @@ with the Varmint rifle.
 
 One annoying issue with carcasses, corpses and items is them disappearing when
 they go off screen. Even if I am only 30 seconds of running away.
+
+## Great Plains
+Great plains is another good camp location. The camp will be around Blackwater.
+Usually, you can get to Blackwater quickly. Sometimes, the camp is close to
+Manzanita Post.
+
+The area is mostly flat and you can use the hunting wagon easily. There are
+deer, elks, coyotes, and bison around. Unfortunately, none of them have "big
+game meat" that is needed for the superior stew.
+
+If you have put your Moonshine shack in the same area, the shack is super close
+to Manzanita Post.
+
+Be sure to go near the `Quaker's Cove`. There is usually a stealth moonshine
+operation (which is super easy, guide below) or a hideout.
+
+# Random Tips
 
 ## Selling Items to Gus vs. Donating
 It's better to donate items but you can also sell items to Gus so he can craft
@@ -174,7 +212,7 @@ One trick to make things easier:
 5. Drop everything in the wagon.
 6. Dismiss the wagon.
 
-# Buy the Outlaw Pass
+## Buy the Outlaw Pass
 I got the Outlaw Pass 4. I bought the gold with microtransactions but I had
 bought the stand alone game for 5 USD. The pass gave me 15% and then 30% role
 bonus which helped me make more gold and money. It also gave me back 30 gold
@@ -184,10 +222,12 @@ pretty much paid itself back.
 Getting to rank 100 in the pass was not that hard. Considering the XP needed for
 every rank is the same (and does not exponentially go up). It's a quick thing.
 
-# What to Buy When Starting Out?
+# Starting Out?
 Start with the Collector's track. Go to Madam Nazar and buy the bag. It costs 15
 gold bars. Then you can start collecting. Use this amazing map to figure
 out what is where and collect everything around you.
+
+You can get 10 gold bars by enabling 2FA in your Rockstar account.
 
 When starting out you probably do not have the gold bars to buy anything. I
 bought gold with cash which was worth it for me because I did not want to grind
