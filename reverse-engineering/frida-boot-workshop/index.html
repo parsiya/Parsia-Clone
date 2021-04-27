@@ -1,0 +1,581 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Frida-Boot Workshop Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.82.1"><meta name=twitter:card content="summary"><meta name=twitter:title content="Frida-Boot Workshop Notes"><meta name=twitter:description content="Frida-Boot workshop https://github.com/leonjza/frida-boot
+Youtube link: https://www.youtube.com/watch?v=CLpW1tZCblo
+Chapter 1 - Part 1: LD_PRELOAD ~/code$ ldd pew linux-vdso.so.1 (0x00007ffd6abd4000) libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd0396d2000) /lib64/ld-linux-x86-64.so.2 (0x00007fd0398a0000) Identify shared libraries that we can mess with LD_PRELOAD.
+If the binary is compiled statically == no external shared libraries. LD_PRELOAD will not help here.
+~/code$ gcc -static pew.c -o pew-static ~/code$ ldd pew-static not a dynamic executable Not discussed in the video but to discover shared library calls we can also use ltrace."><meta name=twitter:domain content="parsiya.io"><meta name=twitter:creator content="@CryptoGangsta"></head><body><header role=banner><hgroup><h1><a href=http://parsiya.io/>Parsia-Clone</a></h1><h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select></fieldset><ul class=main-navigation><li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank>Parsia-Clone on Github</a></li><li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank>How did I make this?</a></li><li><a href=https://parsiya.net title="My Main Website" target=_blank>My Main Website</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
+<input type=hidden name=q value=site:http://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>16 minute read
+- <a class=label href=http://parsiya.io/categories/reverse-engineering/>Reverse engineering</a></p><h1 class=entry-title>Frida-Boot Workshop Notes</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/main/reverse-engineering/frida-boot-workshop/index.md target=_blank>Github Link</a></header><div class=entry-content><nav id=TableOfContents><ul><li><a href=#frida-boot-workshop>Frida-Boot workshop</a></li><li><a href=#chapter-1-part-1-ld-preload>Chapter 1 - Part 1: LD_PRELOAD</a></li><li><a href=#chapter-1-part-2-gdb>Chapter 1 - Part 2: gdb</a></li><li><a href=#chapter-2-part-1-frida>Chapter 2 - Part 1: Frida</a><ul><li><a href=#some-tmux-stuff>Some tmux Stuff</a></li><li><a href=#frida-repl>Frida REPL</a></li></ul></li><li><a href=#chapter-2-part-2-interceptor>Chapter 2 - Part 2: Interceptor</a><ul><li><a href=#resolving-sleep-in-gdb>Resolving sleep in gdb</a></li><li><a href=#resolving-sleep-in-frida>Resolving sleep in Frida</a><ul><li><a href=#process-enumeratemodulessync>Process.enumerateModulesSync</a></li><li><a href=#module-getbaseaddress>Module.getBaseAddress</a></li><li><a href=#process-getmodulebyname-enumerateexports>Process.getModuleByName.enumerateExports</a></li><li><a href=#module-getexportbyname>Module.getExportByName</a></li><li><a href=#debugsymbol-getfunctionbyname>DebugSymbol.getFunctionByName</a></li></ul></li><li><a href=#interceptor>Interceptor</a></li></ul></li><li><a href=#chapter-2-part-3-hooking-arguments-and-return-values>Chapter 2 - Part 3: Hooking Arguments and Return Values</a><ul><li><a href=#modifying-arguments>Modifying Arguments</a><ul><li><ul><li><a href=#how-to-allocate-strings>How to Allocate Strings</a></li><li><a href=#get-registers-context>Get Registers/Context</a></li></ul></li></ul></li><li><a href=#modifying-return-values>Modifying Return Values</a></li></ul></li><li><a href=#chapter-2-part-4-reusing-existing-code>Chapter 2 - Part 4: Reusing Existing Code</a><ul><li><a href=#calling-functions>Calling Functions</a></li></ul></li><li><a href=#chapter-3-part-1-python-tools>Chapter 3 - Part 1: Python Tools</a></li><li><a href=#chapter-3-part-2-send-and-receive>Chapter 3 - Part 2: Send and Receive</a><ul><li><a href=#send-from-javascript>Send From JavaScript</a></li><li><a href=#send-from-python>Send From Python</a></li><li><a href=#frida-rpc-interface>Frida RPC Interface</a><ul><li><a href=#refactor-bruteforce>Refactor Bruteforce</a></li><li><a href=#bruteforce-in-python>Bruteforce in Python</a></li></ul></li></ul></li><li><a href=#chapter-3-part-3-typescript>Chapter 3 - Part 3: Typescript</a><ul><li><a href=#inject-a-web-server-into-the-target-process>Inject a Web Server into the Target Process</a></li></ul></li><li><a href=#chapter-3-part-4-frida-tools>Chapter 3 - Part 4: frida-tools</a></li><li><a href=#chapter-4-part-5-operating-modes>Chapter 4 - Part 5: Operating Modes</a></li></ul></nav><h1 id=frida-boot-workshop>Frida-Boot workshop</h1><p><a href=https://github.com/leonjza/frida-boot rel=nofollow target=_blank>https://github.com/leonjza/frida-boot</a></p><p>Youtube link: <a href="https://www.youtube.com/watch?v=CLpW1tZCblo" rel=nofollow target=_blank>https://www.youtube.com/watch?v=CLpW1tZCblo</a></p><h1 id=chapter-1-part-1-ld-preload>Chapter 1 - Part 1: LD_PRELOAD</h1><pre><code>~/code$ ldd pew
+	linux-vdso.so.1 (0x00007ffd6abd4000)
+	libc.so.6 =&gt; /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd0396d2000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd0398a0000)</code></pre><p>Identify shared libraries that we can mess with <code>LD_PRELOAD</code>.</p><p>If the binary is compiled statically == no external shared libraries.
+<code>LD_PRELOAD</code> will not help here.</p><pre><code>~/code$ gcc -static pew.c -o pew-static
+~/code$ ldd pew-static 
+	not a dynamic executable</code></pre><p><strong>Not discussed in the video</strong> but to discover shared library calls we can also
+use <code>ltrace</code>.</p><pre><code>~/code$ ltrace ./pew
+puts(&#34;[+] Starting up!&#34;[+] Starting up!                                         = 17
+time(0)                                                                         = 1619288817
+srand(0x608462f1, 0x55dd85dfc2a0, 0, 0x7ff07518e673)                            = 0
+rand(1, 5, 0x7ff07525c1d0, 0)                                                   = 0x1340f51f
+printf(&#34;[+] Sleeping for %d seconds\n&#34;, 5[+] Sleeping for 5 seconds             = 27
+sleep(5)                                                                        = 0
+rand(1, 5, 0, 0x7ff07516ae93)                                                   = 0xaf08cb7
+printf(&#34;[+] Sleeping for %d seconds\n&#34;, 4[+] Sleeping for 4 seconds)            = 27
+sleep(4)                                                                        = 0
+rand(1, 5, 0, 0x7ff07516ae93)                                                   = 0x61534c8c
+printf(&#34;[+] Sleeping for %d seconds\n&#34;, 2[+] Sleeping for 2 seconds             = 27
+sleep(2^C &lt;no return ...&gt;
+--- SIGINT (Interrupt) ---
++++ killed by SIGINT +++</code></pre><p>Or use <code>nm</code>:</p><pre><code>~/code$ nm -D pew
+    w __cxa_finalize@@GLIBC_2.2.5
+    w __gmon_start__
+    w _ITM_deregisterTMCloneTable
+    w _ITM_registerTMCloneTable
+    U __libc_start_main@@GLIBC_2.2.5
+    U printf@@GLIBC_2.2.5
+    U puts@@GLIBC_2.2.5
+    U rand@@GLIBC_2.2.5
+    U sleep@@GLIBC_2.2.5
+    U srand@@GLIBC_2.2.5
+    U time@@GLIBC_2.2.5</code></pre><p>We want to hook <code>sleep</code> and ``.</p><p>Make our own implementation of sleep. We need to know the function signature.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#719e07>#include</span> <span style=color:#719e07>&lt;stdio.h&gt;</span><span style=color:#719e07>
+</span><span style=color:#719e07></span>
+<span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> <span style=color:#268bd2>sleep</span>(<span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> seconds) {
+    
+    printf(<span style=color:#2aa198>&#34; [-] sleep goes brrr</span><span style=color:#cb4b16>\n</span><span style=color:#2aa198>&#34;</span>);
+    <span style=color:#719e07>return</span> <span style=color:#2aa198>0</span>;
+}</code></pre></div><p>Now, we need to compile it into a shared object with <code>gcc</code> using <code>-shared</code>.
+<code>fPIC</code> generates position-independent code.</p><pre><code>~/code$ gcc -fPIC -shared ../software/fake_sleep.c -o fake_sleep.so</code></pre><p><code>LD_PRELOAD</code> needs a full path.</p><pre><code>~/code$ LD_PRELOAD=./fake_sleep.so ./pew</code></pre><p>The app prints the strings but does not sleep at all because we have modified
+the <code>sleep</code> function.</p><p>Now let's make a proxy so. E.g., <code>fake_sleep</code> calls <code>sleep</code>. To get the original
+sleep we need to call <a href=https://man7.org/linux/man-pages/man3/dlsym.3.html rel=nofollow target=_blank>dlsym</a>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#719e07>#define _GNU_SOURCE
+</span><span style=color:#719e07></span>
+<span style=color:#719e07>#include</span> <span style=color:#719e07>&lt;stdio.h&gt;</span><span style=color:#719e07>
+</span><span style=color:#719e07>#include</span> <span style=color:#719e07>&lt;dlfcn.h&gt;</span><span style=color:#719e07>
+</span><span style=color:#719e07></span>
+<span style=color:#586e75>// man 3 sleep
+</span><span style=color:#586e75>//  unsigned int sleep(unsigned int seconds);
+</span><span style=color:#586e75></span><span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> <span style=color:#268bd2>sleep</span>(<span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> seconds) {
+
+    <span style=color:#586e75>// you&#39;ve never slept this well in your life!
+</span><span style=color:#586e75></span>    printf(<span style=color:#2aa198>&#34;[-] sleep goes brrr</span><span style=color:#cb4b16>\n</span><span style=color:#2aa198>&#34;</span>);
+
+    seconds <span style=color:#719e07>=</span> <span style=color:#2aa198>1</span>;
+
+    <span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> (<span style=color:#719e07>*</span>original_sleep)(<span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span>);
+    <span style=color:#586e75>// &#34;RTLD_NEXT&#34;: Get the handle for the next symbol named &#34;sleep&#34;
+</span><span style=color:#586e75></span>    original_sleep <span style=color:#719e07>=</span> dlsym(RTLD_NEXT, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+
+    <span style=color:#719e07>return</span> (original_sleep)(seconds);
+}
+</code></pre></div><p>Now, we need to add the <code>-ldl</code> switch <strong>in the end</strong>.</p><p><code>LD_PRELOAD=./fake_sleep.so ./pew</code>: each sleep is now 1 second.</p><hr><h1 id=chapter-1-part-2-gdb>Chapter 1 - Part 2: gdb</h1><p><code>gdb -q ./pew</code></p><p>Inside we can do <code>info func</code> to list all functions. Some functions have plt in
+the end <code>printf@plt</code>. <code>PLT</code> stands for Procedure Linkage Table. Inside PLT we
+have <code>GOT</code> or Global Offset Table.</p><ol><li>First call: Check if <code>printf</code> exists in the GOT. It's not because it has not
+been called before.</li><li>If it does not exist, dynamic linker it looks for it in all of the shared
+libraries.</li><li>Write the record in the GOT and store the address of the real <code>printf</code>.</li><li>Every new call, the program uses the record in the GOT.</li></ol><p>Inside gdb (probably need <code>gef</code>) we can do <code>got</code> to see the GOT. The items that have been resolved are
+in green and the rest are red (color is definitely <code>gef</code>).</p><pre><code>gef➤  got
+
+GOT protection: Partial RelRO | GOT functions: 6
+ 
+[0x5569a25ec018] puts@GLIBC_2.2.5  →  0x7f9b8a61b030    # this is green
+[0x5569a25ec020] printf@GLIBC_2.2.5  →  0x5569a25e9046  # the rest is yellow
+[0x5569a25ec028] srand@GLIBC_2.2.5  →  0x5569a25e9056
+[0x5569a25ec030] time@GLIBC_2.2.5  →  0x5569a25e9066
+[0x5569a25ec038] sleep@GLIBC_2.2.5  →  0x5569a25e9076
+[0x5569a25ec040] rand@GLIBC_2.2.5  →  0x5569a25e9086
+
+gef➤  info symbol 0x5569a25ec018
+puts@got.plt in section .got.plt of /root/code/pew # puts have been resolved to its actual address
+
+gef➤  info symbol 0x5569a25ec020
+printf@got.plt in section .got.plt of /root/code/pew # printf has not been resolved, yet</code></pre><p><strong>Rage quit, moved on to the Frida stuff.</strong></p><hr><h1 id=chapter-2-part-1-frida>Chapter 2 - Part 1: Frida</h1><h2 id=some-tmux-stuff>Some tmux Stuff</h2><p>Everything starts with <code>ctrl+b</code> then you get one character to do stuff.</p><p><code>ctrl+b</code> then <code>w</code> list all windows.</p><p>To destroy any window, select it from the list above, then <code>ctrl+b</code> then <code>&</code>. A prompt will ask for <code>y/n</code>, press <code>y</code>.</p><p>splits: <code>ctrl+b</code> then</p><ul><li><code>%</code>: horizontal split</li><li><p><code>"</code>: vertical split</p><pre><code>ctrl+b then
+o  swap panes
+q  show pane numbers
+x  kill pane
+space - toggle between layouts</code></pre></li></ul><p>From outside to kill and list sessions.</p><pre><code>tmux list-session
+
+# then kill
+tmux kill-session -t 2</code></pre><p>scroll up and down</p><p><code>ctrl+b</code> <code>[</code> then you can use <code>page up/down</code> or <code>arrow key</code>. <code>ctrl+c</code> when done.</p><p>tmux cheat sheet: <a href=https://gist.github.com/MohamedAlaa/2961058 rel=nofollow target=_blank>https://gist.github.com/MohamedAlaa/2961058</a></p><h2 id=frida-repl>Frida REPL</h2><p><code>frida pew --runtime=v8</code> will attach to the process named <code>pew</code>. Will not work
+if we have multiple processes named <code>pew</code>. We can do <code>frida -p pid</code> instead.</p><p>Using the v8 runtime allows us to use things like arrow functions or raw format
+strings (e.g., <code>value is ${val}</code>).</p><p><code>frida pew -l index.js</code> loads the script. We can modify the script on the fly
+and after the save the script will be executed again.</p><h1 id=chapter-2-part-2-interceptor>Chapter 2 - Part 2: Interceptor</h1><p><a href=https://frida.re/docs/javascript-api/#interceptor rel=nofollow target=_blank>https://frida.re/docs/javascript-api/#interceptor</a></p><p>The target in the end is a memory address. In practice it can be offset or
+symbol. With symbol we get the address quickly.</p><h2 id=resolving-sleep-in-gdb>Resolving sleep in gdb</h2><p>Let's try to resolve <code>sleep</code> in pew.</p><pre><code>~/code$ nm pew | grep -i &#34;sleep&#34;
+    U sleep@@GLIBC_2.2.5</code></pre><p>Next, we need to figure out which library has libc.</p><pre><code>~/code$ ldd pew
+    linux-vdso.so.1 (0x00007fff4e3de000)
+    libc.so.6 =&gt; /lib/x86_64-linux-gnu/libc.so.6 (0x00007f140beac000)
+    /lib64/ld-linux-x86-64.so.2 (0x00007f140c07a000)</code></pre><p>To see the address of <code>sleep</code> inside libc.</p><pre><code># -D or -dynamic
+# Display the dynamic symbols rather than the normal symbols. This is only
+# meaningful for dynamic objects, such as certain types of shared libraries.
+
+~/code$ nm -D /lib/x86_64-linux-gnu/libc.so.6 | grep -i &#34;sleep&#34;
+000000000010a3c0 T __clock_nanosleep@@GLIBC_PRIVATE
+000000000010a3c0 W clock_nanosleep@@GLIBC_2.17
+00000000000cae80 T __nanosleep@@GLIBC_2.2.6
+00000000000cae80 W nanosleep@@GLIBC_2.2.5
+00000000000f35d0 T __nanosleep_nocancel@@GLIBC_PRIVATE
+00000000000cad90 W sleep@@GLIBC_2.2.5
+0000000000084d70 T thrd_sleep@@GLIBC_2.28
+00000000000f5870 T usleep@@GLIBC_2.2.5</code></pre><p>So the offset of <code>sleep</code> is <code>0xcad90</code> here.</p><p>To confirm it:</p><ol><li>Run pew in gdb.</li><li><code>b *main</code> and then run with <code>r</code>.</li><li><code>info proc map</code> or <code>vmmap</code> to get the libc's 0x00 offset address to get its base address.</li><li><p>Add <code>0xcad90</code> to it to get the <code>sleep</code>'s address.</p><pre><code>gef➤  info proc map
+process 411
+Mapped address spaces:
+
+    Start Addr           End Addr       Size     Offset objfile
+0x55b349b21000     0x55b349b22000     0x1000        0x0 /root/code/pew
+0x55b349b22000     0x55b349b23000     0x1000     0x1000 /root/code/pew
+0x55b349b23000     0x55b349b24000     0x1000     0x2000 /root/code/pew
+0x55b349b24000     0x55b349b25000     0x1000     0x2000 /root/code/pew
+0x55b349b25000     0x55b349b26000     0x1000     0x3000 /root/code/pew
+0x7fdd58148000     0x7fdd5816d000    0x25000        0x0 /lib/x86_64-linux-gnu/libc-2.30.so # this is what we want, offset 0x00
+0x7fdd5816d000     0x7fdd582b7000   0x14a000    0x25000 /lib/x86_64-linux-gnu/libc-2.30.so
+0x7fdd582b7000     0x7fdd58301000    0x4a000   0x16f000 /lib/x86_64-linux-gnu/libc-2.30.so
+0x7fdd58301000     0x7fdd58304000     0x3000   0x1b8000 /lib/x86_64-linux-gnu/libc-2.30.so
+0x7fdd58304000     0x7fdd58307000     0x3000   0x1bb000 /lib/x86_64-linux-gnu/libc-2.30.so
+...
+
+gef➤  vmmap
+[ Legend:  Code | Heap | Stack ]
+Start              End                Offset             Perm Path
+0x000055b349b21000 0x000055b349b22000 0x0000000000000000 r-- /root/code/pew
+0x000055b349b22000 0x000055b349b23000 0x0000000000001000 r-x /root/code/pew
+0x000055b349b23000 0x000055b349b24000 0x0000000000002000 r-- /root/code/pew
+0x000055b349b24000 0x000055b349b25000 0x0000000000002000 r-- /root/code/pew
+0x000055b349b25000 0x000055b349b26000 0x0000000000003000 rw- /root/code/pew
+0x00007fdd58148000 0x00007fdd5816d000 0x0000000000000000 r-- /lib/x86_64-linux-gnu/libc-2.30.so # offset 0x00 (3rd column)
+0x00007fdd5816d000 0x00007fdd582b7000 0x0000000000025000 r-x /lib/x86_64-linux-gnu/libc-2.30.so
+0x00007fdd582b7000 0x00007fdd58301000 0x000000000016f000 r-- /lib/x86_64-linux-gnu/libc-2.30.so
+0x00007fdd58301000 0x00007fdd58304000 0x00000000001b8000 r-- /lib/x86_64-linux-gnu/libc-2.30.so
+0x00007fdd58304000 0x00007fdd58307000 0x00000000001bb000 rw- /lib/x86_64-linux-gnu/libc-2.30.so</code></pre></li></ol><p>The address is <code>0x7fdd58148000</code> in both commands. So <code>sleep</code> will be
+<code>7fdd58148000 + cad90</code> = <code>7fdd58212d90</code> (we do need to do this manually).</p><p>We can check it in gdb:</p><pre><code>gef➤  info symbol 0x7fdd58148000 + 0xcad90
+sleep in section .text of /lib/x86_64-linux-gnu/libc.so.6</code></pre><h2 id=resolving-sleep-in-frida>Resolving sleep in Frida</h2><p>We can get the base address in different ways:</p><ul><li><code>Process.enumerateModulesSync</code></li><li><code>Module.getBaseAddress</code></li><li><code>Process.getModuleByName.enumerateExports</code></li><li><code>Module.getExportByName</code></li><li><code>DebugSymbol.getFunctionByName</code></li></ul><h3 id=process-enumeratemodulessync>Process.enumerateModulesSync</h3><pre><code>[Local::pew]-&gt; Process.enumerateModulesSync();
+
+    // ...
+    {
+        &#34;base&#34;: &#34;0x7f28c98c6000&#34;,
+        &#34;name&#34;: &#34;libc-2.30.so&#34;,
+        &#34;path&#34;: &#34;/lib/x86_64-linux-gnu/libc-2.30.so&#34;,
+        &#34;size&#34;: 1830912
+    },</code></pre><p>But we can also pass a filter here which is a function.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>Process.enumerateModulesSync().filter(ex =&gt; ex.name.includes(<span style=color:#2aa198>&#34;libc&#34;</span>));
+
+<span style=color:#586e75>// Without the v8 runtime, we had to use:
+</span><span style=color:#586e75></span>
+Process.enumerateModulesSync().filter(<span style=color:#268bd2>function</span>(m) { <span style=color:#719e07>return</span> m.name.includes(<span style=color:#2aa198>&#34;libc&#34;</span>);});
+</code></pre></div><p>Both return the same result:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>[
+    {
+        <span style=color:#268bd2>&#34;base&#34;</span>: <span style=color:#2aa198>&#34;0x7f7286eb2000&#34;</span>,
+        <span style=color:#268bd2>&#34;name&#34;</span>: <span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>,
+        <span style=color:#268bd2>&#34;path&#34;</span>: <span style=color:#2aa198>&#34;/lib/x86_64-linux-gnu/libc-2.30.so&#34;</span>,
+        <span style=color:#268bd2>&#34;size&#34;</span>: <span style=color:#2aa198>1830912</span>
+    }
+]</code></pre></div><p>We can also do</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Process.getModuleByName(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>);
+{
+    <span style=color:#2aa198>&#34;base&#34;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>&#34;0x7f7286eb2000&#34;</span>,
+    <span style=color:#2aa198>&#34;name&#34;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>,
+    <span style=color:#2aa198>&#34;path&#34;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>&#34;/lib/x86_64-linux-gnu/libc-2.30.so&#34;</span>,
+    <span style=color:#2aa198>&#34;size&#34;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>1830912</span>
+}
+</code></pre></div><p>We can just get the <code>base</code> with <code>.base</code> in both cases:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Process.getModuleByName(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>).base;
+<span style=color:#2aa198>&#34;0x7f7286eb2000&#34;</span>
+<span style=color:#586e75>// enumerateModulesSync returns an array so we need to choose the first element.
+</span><span style=color:#586e75></span>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Process.enumerateModulesSync().filter(ex =&gt; ex.name.includes(<span style=color:#2aa198>&#34;libc&#34;</span>))[<span style=color:#2aa198>0</span>].base;
+<span style=color:#2aa198>&#34;0x7f7286eb2000&#34;</span>
+</code></pre></div><h3 id=module-getbaseaddress>Module.getBaseAddress</h3><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Module.getBaseAddress(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>);
+<span style=color:#2aa198>&#34;0x7f7286eb2000&#34;</span>
+</code></pre></div><p>Response is a native pointer so we can <code>add</code> to directly get the <code>sleep</code>
+offset.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Module.getBaseAddress(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>).add(<span style=color:#2aa198>&#34;0xcad90&#34;</span>);
+<span style=color:#2aa198>&#34;0x7f7286f7cd90&#34;</span>
+</code></pre></div><h3 id=process-getmodulebyname-enumerateexports>Process.getModuleByName.enumerateExports</h3><p><code>sleep</code> is an export in libc so we can just ask Frida to resolve it for us.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Process.getModuleByName(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>).enumerateExports().filter(ex =&gt; ex.name <span style=color:#719e07>===</span> <span style=color:#2aa198>&#34;sleep&#34;</span>);
+[
+    {
+        <span style=color:#2aa198>&#34;address&#34;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>&#34;0x7f7286f7cd90&#34;</span>,
+        <span style=color:#2aa198>&#34;name&#34;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>&#34;sleep&#34;</span>,
+        <span style=color:#2aa198>&#34;type&#34;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>&#34;function&#34;</span>
+    }
+]
+</code></pre></div><p>It's an array so you should get the address with <code>[0].address</code> (append to the
+end of the command above).</p><h3 id=module-getexportbyname>Module.getExportByName</h3><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+<span style=color:#2aa198>&#34;0x7f7286f7cd90&#34;</span>
+
+<span style=color:#586e75>// first argument is the name of the library but sleep is unique so we do not
+</span><span style=color:#586e75>// care about duplicates
+</span><span style=color:#586e75></span>
+[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Module.getExportByName(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+<span style=color:#2aa198>&#34;0x7f7286f7cd90&#34;</span>
+</code></pre></div><h3 id=debugsymbol-getfunctionbyname>DebugSymbol.getFunctionByName</h3><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span>  DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;sleep&#34;</span>)
+<span style=color:#2aa198>&#34;0x7f7286f7cd90&#34;</span>
+</code></pre></div><h2 id=interceptor>Interceptor</h2><p><code>Inteceptor.attach(target, callbacks[, data]);</code></p><p>callbacks is an object with two functions.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>Interceptor.attach(sleepPtr, {
+
+    onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(args) {},  <span style=color:#586e75>// we can modify the arguments
+</span><span style=color:#586e75></span>
+    onLeave<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(retval) {} <span style=color:#586e75>// we can modify the return value
+</span><span style=color:#586e75></span>});
+</code></pre></div><p><strong>Note:</strong> It's important to not use the arrow function syntax for <code>onEnter</code> and
+<code>onLeave</code>. Oh, well!</p><p>Now, we can modify the <code>sleep</code> function with Frida. I am going to use ES6
+because I will change my runtime to v8.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// frida pew -l myinterceptor-attach.js --runtime=v8
+</span><span style=color:#586e75></span>
+<span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+
+Interceptor.attach(sleep, {
+    <span style=color:#586e75>// in this case using the arrow function is not that bad because we are not
+</span><span style=color:#586e75></span>    <span style=color:#586e75>// doing anything complex.
+</span><span style=color:#586e75></span>
+    onEnter<span style=color:#719e07>:</span> args =&gt; { console.log(<span style=color:#2aa198>&#34;[*] Sleep from Frida!&#34;</span>); },
+
+    onLeave<span style=color:#719e07>:</span> retval =&gt; {console.log(<span style=color:#2aa198>&#34;[*] Done sleeping from Frida!&#34;</span>); }
+});
+</code></pre></div><h1 id=chapter-2-part-3-hooking-arguments-and-return-values>Chapter 2 - Part 3: Hooking Arguments and Return Values</h1><h2 id=modifying-arguments>Modifying Arguments</h2><p>We can modify the arguments inside <code>onEnter</code>.</p><ul><li><code>args</code> does not know how many arguments are in there.</li><li><code>args[0]</code> is the first arg.</li><li>Args are of type <a href=https://frida.re/docs/javascript-api/#nativepointer rel=nofollow target=_blank>NativePointer</a>.</li></ul><p>Frida does not do bounds checking here. It's possible to read the memory past
+the valid arguments. E.g., <code>args[10]</code> when the function only has 2 arguments.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// parse-sleep-args.js
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+
+Interceptor.attach(sleep, {
+
+    onEnter<span style=color:#719e07>:</span> args =&gt; { console.log(<span style=color:#2aa198>&#34;[*] Argument for sleep() =&gt; &#34;</span>, <span style=color:#b58900>parseInt</span>(args[<span style=color:#2aa198>0</span>])); },
+
+    onLeave<span style=color:#719e07>:</span> retval =&gt; { console.log(<span style=color:#2aa198>&#34;[*] Done sleeping from Frida!&#34;</span>); }
+});
+</code></pre></div><p>Now, we can modify the arguments. Create a new pointer and assign it.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> ptr(<span style=color:#2aa198>&#34;0x01&#34;</span>);
+args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativePointer(<span style=color:#2aa198>&#34;0x01&#34;</span>);
+</code></pre></div><p>Let's modify sleep argument to 2.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// modify-sleep-args.js
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+
+Interceptor.attach(sleep, {
+
+    onEnter<span style=color:#719e07>:</span> args =&gt; {
+
+        console.log(<span style=color:#2aa198>&#34;[*] The original argument for sleep() =&gt; &#34;</span>, <span style=color:#b58900>parseInt</span>(args[<span style=color:#2aa198>0</span>]));
+        args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> ptr(<span style=color:#2aa198>&#34;0x02&#34;</span>); <span style=color:#586e75>// change it to 2
+</span><span style=color:#586e75></span>    },
+
+    onLeave<span style=color:#719e07>:</span> retval =&gt; { console.log(<span style=color:#2aa198>&#34;[*] Done sleeping from Frida!&#34;</span>); }
+});
+</code></pre></div><h4 id=how-to-allocate-strings>How to Allocate Strings</h4><p>Allocate a new char array with <code>Memory.allocUtf8String</code> like this:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span> (args) {
+    <span style=color:#268bd2>var</span> buf <span style=color:#719e07>=</span> Memory.allocUtf8String(<span style=color:#2aa198>&#39;mystring&#39;</span>); <span style=color:#586e75>// create a new string on memory
+</span><span style=color:#586e75></span>    <span style=color:#719e07>this</span>.buf <span style=color:#719e07>=</span> buf;                               <span style=color:#586e75>// assign it to this
+</span><span style=color:#586e75></span>    args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> buf;                                <span style=color:#586e75>// pass it to args
+</span><span style=color:#586e75></span>}
+</code></pre></div><p>According to
+<a href=https://frida.re/docs/best-practices/#string-allocation-utf-8utf-16ansi rel=nofollow target=_blank>Best Practices - String allocation</a></p><blockquote><p>this is bound to an object that is per-thread and per-invocation, and anything
+you store there will be available in onLeave, and this even works in case of
+recursion. This way you can read arguments in onEnter and access them later in
+onLeave. It is also the recommended way to keep memory allocations alive for
+the duration of the function-call.</p></blockquote><p>Let's modify <code>printf</code> arguments.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;printf&#34;</span>);
+<span style=color:#268bd2>var</span> strBuf <span style=color:#719e07>=</span> Memory.allocUtf8String(<span style=color:#2aa198>&#34;pewpewpew\n&#34;</span>);
+
+Interceptor.attach(sleep, {
+
+    onEnter<span style=color:#719e07>:</span> args =&gt; {
+        <span style=color:#586e75>// this did not work, I would get the pews printed after detaching Frida
+</span><span style=color:#586e75></span>        <span style=color:#586e75>// maybe because I am in an arrow function?
+</span><span style=color:#586e75></span>        <span style=color:#586e75>// var strBuf = Memory.allocUtf8String(&#34;pewpewpew\n&#34;); 
+</span><span style=color:#586e75></span>
+        console.log(<span style=color:#2aa198>&#34;[*] The original argument for printf() =&gt; &#34;</span>, args[<span style=color:#2aa198>0</span>]);
+        args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> strBuf;
+    }
+
+    <span style=color:#586e75>// onLeave: retval =&gt; { console.log(&#34;[*] Done sleeping from Frida!&#34;); }
+</span><span style=color:#586e75></span>});
+</code></pre></div><h4 id=get-registers-context>Get Registers/Context</h4><p><code>this</code> does not work in the arrow function so, we have to use a normal one.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// get-context.js
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;printf&#34;</span>);
+
+Interceptor.attach(sleep, {
+
+    onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(args) {
+        console.log(JSON.stringify(<span style=color:#719e07>this</span>.context, <span style=color:#cb4b16>null</span>, <span style=color:#2aa198>4</span>));
+    }
+});
+</code></pre></div><p>We can modify the registers here, too.</p><h2 id=modifying-return-values>Modifying Return Values</h2><p>Trying to modifying the return value <code>rand_range</code> in pew. We need to do
+<code>retval.replace(ptr(...));</code>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// modify-return-rand-range.js
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> randRange <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;rand_range&#34;</span>); <span style=color:#586e75>// we have symbols
+</span><span style=color:#586e75></span>
+Interceptor.attach(randRange, {
+
+    onLeave<span style=color:#719e07>:</span> retval =&gt; { retval.replace(ptr(<span style=color:#2aa198>&#34;0x01&#34;</span>)); }
+});
+</code></pre></div><p>Without using arrow functions and like it was mentioned in the string allocation
+section, we can pass variables to <code>this</code> inside <code>onEnter</code> and then use them in
+<code>onLeave</code>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// modify-return-rand-range2.js
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> randRange <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;rand_range&#34;</span>); <span style=color:#586e75>// we have symbols
+</span><span style=color:#586e75></span>
+Interceptor.attach(randRange, {
+
+    onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(args) {
+        <span style=color:#719e07>this</span>.arg0 <span style=color:#719e07>=</span> args[<span style=color:#2aa198>0</span>];
+    },
+
+    onLeave<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(retval) {
+        console.log(retval);
+        retval.replace(<span style=color:#719e07>this</span>.arg0); <span style=color:#586e75>// now we can use this.arg0 here
+</span><span style=color:#586e75></span>    }
+});
+</code></pre></div><h1 id=chapter-2-part-4-reusing-existing-code>Chapter 2 - Part 4: Reusing Existing Code</h1><p>The <code>crypt</code> utility asks for a PIN and then checks it with <code>test_pin</code>. We want
+to hook this function and return 1.</p><p><a href=https://frida.re/docs/javascript-api/#hexdump rel=nofollow target=_blank>hexdump</a> generates a hex dump from an ArrayBuffer or NativePointer.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+
+Interceptor.attach(testPIN, {
+
+    onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(args) {
+        console.log(<span style=color:#2aa198>&#34;test_pin args:&#34;</span>, hexdump(args[<span style=color:#2aa198>0</span>]));
+    },
+
+    onLeave<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(retval) {
+        console.log(<span style=color:#2aa198>&#34;test_pin return value:&#34;</span>, retval);
+    }
+});
+</code></pre></div><p>Let's modify the return value to always return <code>1</code>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+
+Interceptor.attach(testPIN, {
+
+    onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(args) {
+        <span style=color:#586e75>// console.log(&#34;test_pin args:&#34;, hexdump(args[0]));
+</span><span style=color:#586e75></span>    },
+
+    onLeave<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(retval) {
+        <span style=color:#586e75>// console.log(&#34;test_pin return value:&#34;, retval);
+</span><span style=color:#586e75></span>        retval.replace(ptr(<span style=color:#2aa198>&#34;0x01&#34;</span>));
+    }
+});
+</code></pre></div><h2 id=calling-functions>Calling Functions</h2><p>Try and call <code>test_pin</code> manually. We use <a href=https://frida.re/docs/javascript-api/#nativefunction rel=nofollow target=_blank>NativeFunction</a>.
+Create a JavaScript wrapper around a function. We can use it to call the target
+function.</p><p><code>NativeFunction(address, returnType, argTypes[, abi])</code></p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+<span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+
+<span style=color:#268bd2>var</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(<span style=color:#2aa198>&#34;1234&#34;</span>);
+<span style=color:#268bd2>var</span> res <span style=color:#719e07>=</span> testPINFunction(pin);
+console.log(<span style=color:#2aa198>&#34;test_pin(1234):&#34;</span>, res);
+</code></pre></div><p>We can do this to call arbitrary functions or do things like bruteforce. Run
+with <code>--runtime=v8</code> to enable the raw string.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// frida crypt -l crypt-bruteforce-pin.js  --runtime=v8
+</span><span style=color:#586e75></span>
+<span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+<span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+
+<span style=color:#719e07>for</span> (<span style=color:#268bd2>var</span> i<span style=color:#719e07>=</span><span style=color:#2aa198>0</span>; i<span style=color:#719e07>&lt;</span><span style=color:#2aa198>9999</span>; i<span style=color:#719e07>++</span>) {
+    <span style=color:#268bd2>var</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(i);
+    <span style=color:#268bd2>var</span> res <span style=color:#719e07>=</span> testPINFunction(pin);
+    console.log(<span style=color:#586e75>`test_pin(</span><span style=color:#2aa198>${</span>i<span style=color:#2aa198>}</span><span style=color:#586e75>) = </span><span style=color:#2aa198>${</span>res<span style=color:#2aa198>}</span><span style=color:#586e75>`</span>);
+
+    <span style=color:#719e07>if</span> (res <span style=color:#719e07>===</span> <span style=color:#2aa198>1</span>) {
+        console.log(<span style=color:#2aa198>&#34;Found PIN:&#34;</span>, pin);
+        <span style=color:#719e07>break</span>;
+    }
+}
+</code></pre></div><hr><h1 id=chapter-3-part-1-python-tools>Chapter 3 - Part 1: Python Tools</h1><p>We can use our own Python tools and use the message bus to pass info between the
+agent and the Python script. Do fancy stuff.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=color:#719e07>import</span> frida
+<span style=color:#719e07>import</span> sys
+
+session <span style=color:#719e07>=</span> frida<span style=color:#719e07>.</span>attach(<span style=color:#2aa198>&#34;crypt&#34;</span>) <span style=color:#586e75># attach to crypt</span>
+script <span style=color:#719e07>=</span> session<span style=color:#719e07>.</span>create_script(<span style=color:#2aa198>&#34;&#34;&#34;
+</span><span style=color:#2aa198>    console.log(Frida.version);
+</span><span style=color:#2aa198>&#34;&#34;&#34;</span>)
+script<span style=color:#719e07>.</span>load()</code></pre></div><p>If we want to load an external agent instead.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// tool2.js
+</span><span style=color:#586e75></span>console.log(Frida.version);
+</code></pre></div><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=color:#719e07>import</span> frida
+<span style=color:#719e07>import</span> sys
+
+<span style=color:#719e07>with</span> <span style=color:#b58900>open</span>(<span style=color:#2aa198>&#34;tool2.js&#34;</span>, <span style=color:#2aa198>&#34;r&#34;</span>) <span style=color:#719e07>as</span> f:
+    agent <span style=color:#719e07>=</span> f<span style=color:#719e07>.</span>read()
+
+session <span style=color:#719e07>=</span> frida<span style=color:#719e07>.</span>attach(<span style=color:#2aa198>&#34;crypt&#34;</span>)
+script <span style=color:#719e07>=</span> session<span style=color:#719e07>.</span>create_script(agent, runtime<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;v8&#34;</span>)
+script<span style=color:#719e07>.</span>load()</code></pre></div><h1 id=chapter-3-part-2-send-and-receive>Chapter 3 - Part 2: Send and Receive</h1><p><code>script.load()</code> usually has a maximum time of 30 seconds. You don't want a lot
+of stuff happening in the initial script that is loaded.</p><h2 id=send-from-javascript>Send From JavaScript</h2><p>In Python and JavaScript we can send message with <a href=https://frida.re/docs/javascript-api/#communication-send rel=nofollow target=_blank>send</a>:
+<code>send(message[,data])</code>.</p><p>To <a href=https://frida.re/docs/javascript-api/communication-recv rel=nofollow target=_blank>receive</a> messages in Python, we need to create handlers:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#586e75># tool4.py</span>
+<span style=color:#719e07>import</span> frida
+<span style=color:#719e07>import</span> sys
+
+<span style=color:#586e75># define the handler</span>
+<span style=color:#719e07>def</span> <span style=color:#268bd2>incoming</span>(message, data):
+    <span style=color:#719e07>print</span>(message)
+    <span style=color:#719e07>print</span>(data)
+
+<span style=color:#719e07>with</span> <span style=color:#b58900>open</span>(<span style=color:#2aa198>&#34;tool4.js&#34;</span>, <span style=color:#2aa198>&#34;r&#34;</span>) <span style=color:#719e07>as</span> f:
+    agent <span style=color:#719e07>=</span> f<span style=color:#719e07>.</span>read()
+
+session <span style=color:#719e07>=</span> frida<span style=color:#719e07>.</span>attach(<span style=color:#2aa198>&#34;crypt&#34;</span>)
+script <span style=color:#719e07>=</span> session<span style=color:#719e07>.</span>create_script(agent, runtime<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;v8&#34;</span>)
+script<span style=color:#719e07>.</span>on(<span style=color:#2aa198>&#34;message&#34;</span>, incoming)
+script<span style=color:#719e07>.</span>load()</code></pre></div><p>The agent is the same, it sends out the PIN instead of printing it locally:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// tool4.js
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+<span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+
+send(<span style=color:#2aa198>&#34;Starting brute forcer&#34;</span>);
+
+<span style=color:#719e07>for</span> (<span style=color:#268bd2>var</span> i<span style=color:#719e07>=</span><span style=color:#2aa198>0</span>; i<span style=color:#719e07>&lt;</span><span style=color:#2aa198>9999</span>; i<span style=color:#719e07>++</span>) {
+    <span style=color:#268bd2>var</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(i.toString());
+    <span style=color:#268bd2>var</span> res <span style=color:#719e07>=</span> testPINFunction(pin);
+
+    <span style=color:#719e07>if</span> (res <span style=color:#719e07>===</span> <span style=color:#2aa198>1</span>) {
+        send(<span style=color:#586e75>`Found PIN: </span><span style=color:#2aa198>${</span>i<span style=color:#2aa198>}</span><span style=color:#586e75>`</span>);
+        send(<span style=color:#2aa198>&#34;Finished brute forcing&#34;</span>);
+        <span style=color:#719e07>break</span>;
+    }
+}
+</code></pre></div><p>And the result is the same:</p><pre><code>~/code$ python3 tool4.py 
+{&#39;type&#39;: &#39;send&#39;, &#39;payload&#39;: &#39;Starting brute forcer&#39;}
+{&#39;type&#39;: &#39;send&#39;, &#39;payload&#39;: &#39;Found PIN: 3428&#39;}
+{&#39;type&#39;: &#39;send&#39;, &#39;payload&#39;: &#39;Finished brute forcing&#39;}</code></pre><h2 id=send-from-python>Send From Python</h2><p>Inside Python we can do:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py>script<span style=color:#719e07>.</span>post(<span style=color:#2aa198>&#34;whatever&#34;</span>)
+sys<span style=color:#719e07>.</span>stdin<span style=color:#719e07>.</span>read() <span style=color:#586e75># wait for input to see the output from the script</span></code></pre></div><p>And in JavaScript we have a <code>recv</code> function:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>recv(<span style=color:#268bd2>function</span>(msg) {
+    console.log(<span style=color:#2aa198>&#34;message:&#34;</span> <span style=color:#719e07>+</span> msg);
+});
+
+<span style=color:#586e75>// recv(msg =&gt; console.log(&#34;message:&#34;, msg);)
+</span></code></pre></div><h2 id=frida-rpc-interface>Frida RPC Interface</h2><p>Exports functions in the agent and add them to <code>rpc.exports</code> and in the Python
+script use them with <code>script.exports.func</code>.</p><p><a href=https://frida.re/docs/javascript-api/#rpc-exports rel=nofollow target=_blank>https://frida.re/docs/javascript-api/#rpc-exports</a></p><p>Function names in JavaScript vs. Python? The talk says <code>testPin</code> in JS becomes
+<code>test_pin</code> in Python. How is the conversion done? Can I find any
+documentation/articles about this?</p><p>Apparently, this is to keep PEP8 in the Python side.</p><blockquote><p>I should add that the intention here is to be able to follow the
+camelCase-convention commonly used in the JavaScript world – and used by
+Frida's own APIs – and still be able to follow PEP 8 on the Python side, i.e.
+<code>readByte</code> on the JS side becomes <code>read_byte</code> on the Python side. Similarly a
+C#/.NET binding would map it to <code>ReadByte</code>. Cheers!</p></blockquote><p><a href=https://github.com/frida/frida-python/issues/104#issuecomment-281666759 rel=nofollow target=_blank>https://github.com/frida/frida-python/issues/104#issuecomment-281666759</a></p><p><strong>Tip:</strong> Better to export everything as all lower case.</p><p>Seems like we can also name things in <code>rpc.exports</code> like this:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>function</span> internalFunction(e) {
+    <span style=color:#586e75>// ...
+</span><span style=color:#586e75></span>}
+
+rpc.exports <span style=color:#719e07>=</span> {
+    <span style=color:#586e75>// export an internal function
+</span><span style=color:#586e75></span>    exportedName<span style=color:#719e07>:</span> internalFunction, <span style=color:#586e75>// exported_name in Python
+</span><span style=color:#586e75></span>    <span style=color:#586e75>// we can also define and export a function right here
+</span><span style=color:#586e75></span>    name2<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(e) {
+        <span style=color:#586e75>// ...
+</span><span style=color:#586e75></span>    }
+}
+</code></pre></div><h3 id=refactor-bruteforce>Refactor Bruteforce</h3><p>The agent is like this:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// tool6.js
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+<span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+
+<span style=color:#268bd2>function</span> brute() {
+    send(<span style=color:#2aa198>&#34;Starting brute forcer&#34;</span>);
+
+    <span style=color:#719e07>for</span> (<span style=color:#268bd2>var</span> i<span style=color:#719e07>=</span><span style=color:#2aa198>0</span>; i<span style=color:#719e07>&lt;</span><span style=color:#2aa198>9999</span>; i<span style=color:#719e07>++</span>) {
+        <span style=color:#268bd2>var</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(i.toString());
+        <span style=color:#268bd2>var</span> res <span style=color:#719e07>=</span> testPINFunction(pin);
+
+        <span style=color:#719e07>if</span> (res <span style=color:#719e07>===</span> <span style=color:#2aa198>1</span>) {
+            send(<span style=color:#586e75>`Found PIN: </span><span style=color:#2aa198>${</span>i<span style=color:#2aa198>}</span><span style=color:#586e75>`</span>);
+            send(<span style=color:#2aa198>&#34;Finished brute forcing&#34;</span>);
+            <span style=color:#719e07>break</span>;
+        }
+    }
+};
+
+rpc.exports <span style=color:#719e07>=</span> {
+    bruteForcer<span style=color:#719e07>:</span> brute <span style=color:#586e75>// become brute_forcer in Python
+</span><span style=color:#586e75></span>};
+</code></pre></div><p>We can call it as <code>brute_forcer</code> in Python:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=color:#586e75># tool6.py</span>
+<span style=color:#719e07>import</span> frida
+<span style=color:#719e07>import</span> sys
+
+<span style=color:#586e75># define the handler</span>
+<span style=color:#719e07>def</span> <span style=color:#268bd2>incoming</span>(message, data):
+    <span style=color:#719e07>print</span>(message)
+
+<span style=color:#719e07>with</span> <span style=color:#b58900>open</span>(<span style=color:#2aa198>&#34;tool6.js&#34;</span>, <span style=color:#2aa198>&#34;r&#34;</span>) <span style=color:#719e07>as</span> f:
+    agent <span style=color:#719e07>=</span> f<span style=color:#719e07>.</span>read()
+
+session <span style=color:#719e07>=</span> frida<span style=color:#719e07>.</span>attach(<span style=color:#2aa198>&#34;crypt&#34;</span>)
+script <span style=color:#719e07>=</span> session<span style=color:#719e07>.</span>create_script(agent, runtime<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;v8&#34;</span>)
+script<span style=color:#719e07>.</span>on(<span style=color:#2aa198>&#34;message&#34;</span>, incoming)
+script<span style=color:#719e07>.</span>load()
+api <span style=color:#719e07>=</span> script<span style=color:#719e07>.</span>exports
+api<span style=color:#719e07>.</span>brute_forcer()
+sys<span style=color:#719e07>.</span>stdin<span style=color:#719e07>.</span>read()</code></pre></div><h3 id=bruteforce-in-python>Bruteforce in Python</h3><p>Change the agent and export the <code>test_pin</code> function, then loop and brute force
+in Python. The agent just exports the <code>testpin</code> function.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// tool7.js
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+<span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
+</span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+
+<span style=color:#268bd2>function</span> testPin(e) {
+    <span style=color:#268bd2>var</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(e.toString());
+    <span style=color:#719e07>return</span> testPINFunction(pin);
+}
+
+rpc.exports <span style=color:#719e07>=</span> {
+    testpin<span style=color:#719e07>:</span> testPin <span style=color:#586e75>// all lowercase export name
+</span><span style=color:#586e75></span>};
+</code></pre></div><p>And the Python script calls <code>testpin</code> and does the bruteforce.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=color:#586e75># tool7.py</span>
+<span style=color:#719e07>import</span> frida
+<span style=color:#719e07>import</span> sys
+
+<span style=color:#719e07>with</span> <span style=color:#b58900>open</span>(<span style=color:#2aa198>&#34;tool7.js&#34;</span>, <span style=color:#2aa198>&#34;r&#34;</span>) <span style=color:#719e07>as</span> f:
+    agent <span style=color:#719e07>=</span> f<span style=color:#719e07>.</span>read()
+
+session <span style=color:#719e07>=</span> frida<span style=color:#719e07>.</span>attach(<span style=color:#2aa198>&#34;crypt&#34;</span>)
+script <span style=color:#719e07>=</span> session<span style=color:#719e07>.</span>create_script(agent, runtime<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;v8&#34;</span>)
+script<span style=color:#719e07>.</span>load()
+api <span style=color:#719e07>=</span> script<span style=color:#719e07>.</span>exports
+
+<span style=color:#586e75># we can do the loop here</span>
+<span style=color:#719e07>for</span> pin <span style=color:#719e07>in</span> <span style=color:#b58900>range</span>(<span style=color:#2aa198>0</span>, <span style=color:#2aa198>9999</span>):
+    <span style=color:#719e07>if</span>(api<span style=color:#719e07>.</span>testpin(pin) <span style=color:#719e07>==</span> <span style=color:#2aa198>1</span>): <span style=color:#586e75># we are converting it to string in the JS</span>
+        <span style=color:#719e07>print</span>(f<span style=color:#2aa198>&#34;Pin found: {pin}&#34;</span>)
+        <span style=color:#719e07>break</span></code></pre></div><h1 id=chapter-3-part-3-typescript>Chapter 3 - Part 3: Typescript</h1><p>We are gonna use <a href=https://github.com/oleavr/frida-agent-example rel=nofollow target=_blank>https://github.com/oleavr/frida-agent-example</a>.</p><p>Rewriting <code>testPIN</code> in TypeScript.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ts data-lang=ts><span style=color:#586e75>// agent1.ts
+</span><span style=color:#586e75>// reimplementing testPIN in Typescript
+</span><span style=color:#586e75></span><span style=color:#268bd2>import</span> { log } <span style=color:#268bd2>from</span> <span style=color:#2aa198>&#34;./logger&#34;</span>;
+
+<span style=color:#268bd2>const</span> testPINSymbol <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+<span style=color:#268bd2>const</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPINSymbol, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+
+<span style=color:#268bd2>function</span> testPIN(pin: <span style=color:#dc322f>string</span>) {
+    <span style=color:#268bd2>const</span> pinStr <span style=color:#719e07>=</span> Memory.allocUtf8String(pin);
+    <span style=color:#719e07>return</span> testPINFunction(pinStr);
+};
+
+rpc.exports <span style=color:#719e07>=</span> {
+    testpin: <span style=color:#dc322f>testPIN</span>
+};
+</code></pre></div><p>And the Python tool does not change other than loading <code>_agent.js</code>.</p><h2 id=inject-a-web-server-into-the-target-process>Inject a Web Server into the Target Process</h2><p>We need to modify our agent and do it.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#586e75>// agent2.ts
+</span><span style=color:#586e75></span><span style=color:#268bd2>import</span> { log } from <span style=color:#2aa198>&#34;./logger&#34;</span>;
+<span style=color:#268bd2>import</span> <span style=color:#719e07>*</span> as http from <span style=color:#2aa198>&#34;http&#34;</span>;
+
+<span style=color:#268bd2>const</span> testPINSymbol <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+<span style=color:#268bd2>const</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPINSymbol, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+
+<span style=color:#268bd2>function</span> testpin(p<span style=color:#719e07>:</span> string) {
+    <span style=color:#268bd2>const</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(p);
+    <span style=color:#719e07>return</span> testPINFunction(pin);
+};
+
+<span style=color:#268bd2>function</span> httpServer() {
+    http.createServer((req, res) =&gt; {
+        <span style=color:#268bd2>const</span> pin <span style=color:#719e07>=</span> req.url<span style=color:#719e07>?</span> req.url.replace(<span style=color:#2aa198>&#39;/&#39;</span>, <span style=color:#2aa198>&#39;&#39;</span>) <span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;&#39;</span>;
+        <span style=color:#268bd2>const</span> check <span style=color:#719e07>=</span> testpin(pin);
+
+        log(<span style=color:#586e75>`Request to check </span><span style=color:#2aa198>${</span>req.url<span style=color:#2aa198>}</span><span style=color:#586e75> returned </span><span style=color:#2aa198>${</span>check<span style=color:#2aa198>}</span><span style=color:#586e75>`</span>);
+
+        <span style=color:#719e07>if</span> (check <span style=color:#719e07>==</span> <span style=color:#2aa198>1</span>) {
+            res.writeHead(<span style=color:#2aa198>200</span>, {<span style=color:#2aa198>&#39;Content-Type&#39;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;text/plain&#39;</span>});
+            res.write(<span style=color:#586e75>`Welcome!\n`</span>);
+        } <span style=color:#719e07>else</span> {
+            res.writeHead(<span style=color:#2aa198>401</span>, {<span style=color:#2aa198>&#39;Content-Type&#39;</span><span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;text/plain&#39;</span>});
+            res.write(<span style=color:#586e75>`Wrong PIN\n`</span>);
+        }
+
+        res.end();
+    }).listen(<span style=color:#2aa198>1337</span>);
+};
+
+
+rpc.exports <span style=color:#719e07>=</span> {
+    testpin<span style=color:#719e07>:</span> testpin,
+    httpServer<span style=color:#719e07>:</span> httpServer
+}
+</code></pre></div><p>And the Python tool is still similar:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#586e75># tool2.py</span>
+<span style=color:#719e07>import</span> frida
+<span style=color:#719e07>import</span> sys
+
+<span style=color:#719e07>with</span> <span style=color:#b58900>open</span>(<span style=color:#2aa198>&#34;_agent.js&#34;</span>, <span style=color:#2aa198>&#34;r&#34;</span>) <span style=color:#719e07>as</span> f:
+    agent <span style=color:#719e07>=</span> f<span style=color:#719e07>.</span>read()
+
+session <span style=color:#719e07>=</span> frida<span style=color:#719e07>.</span>attach(<span style=color:#2aa198>&#34;crypt&#34;</span>)
+script <span style=color:#719e07>=</span> session<span style=color:#719e07>.</span>create_script(agent)
+script<span style=color:#719e07>.</span>load()
+
+api <span style=color:#719e07>=</span> script<span style=color:#719e07>.</span>exports
+<span style=color:#719e07>print</span>(<span style=color:#2aa198>&#34;starting HTTP server...&#34;</span>)
+api<span style=color:#719e07>.</span>httpserver()
+
+<span style=color:#586e75># keep the server alive now</span>
+sys<span style=color:#719e07>.</span>stdin<span style=color:#719e07>.</span>read()</code></pre></div><p>Now, we can query <code>http://localhost:1337/1234</code> to test if PIN is 1234.
+<code>curl http://localhost:1337/3428</code>.</p><h1 id=chapter-3-part-4-frida-tools>Chapter 3 - Part 4: frida-tools</h1><p><code>frida-trace crypt -i "ato*"</code> generates handlers to log/hook (?) for these
+functions.</p><h1 id=chapter-4-part-5-operating-modes>Chapter 4 - Part 5: Operating Modes</h1><p><code>frida-server</code> is the most important one. Run it on the device and connect to
+it, similar to IDA server.</p><p><code>frida-gadget</code> inject into the app or embed it into the app. See
+<a href=https://koz.io/using-frida-on-android-without-root/ rel=nofollow target=_blank>https://koz.io/using-frida-on-android-without-root/</a>.</p></div><footer><p class=meta><span class=categories>Tags:
+<a class=category href=http://parsiya.io/tags/frida>frida</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#frida-boot-workshop>Frida-Boot workshop</a></li><li><a href=#chapter-1-part-1-ld-preload>Chapter 1 - Part 1: LD_PRELOAD</a></li><li><a href=#chapter-1-part-2-gdb>Chapter 1 - Part 2: gdb</a></li><li><a href=#chapter-2-part-1-frida>Chapter 2 - Part 1: Frida</a><ul><li><a href=#some-tmux-stuff>Some tmux Stuff</a></li><li><a href=#frida-repl>Frida REPL</a></li></ul></li><li><a href=#chapter-2-part-2-interceptor>Chapter 2 - Part 2: Interceptor</a><ul><li><a href=#resolving-sleep-in-gdb>Resolving sleep in gdb</a></li><li><a href=#resolving-sleep-in-frida>Resolving sleep in Frida</a><ul><li><a href=#process-enumeratemodulessync>Process.enumerateModulesSync</a></li><li><a href=#module-getbaseaddress>Module.getBaseAddress</a></li><li><a href=#process-getmodulebyname-enumerateexports>Process.getModuleByName.enumerateExports</a></li><li><a href=#module-getexportbyname>Module.getExportByName</a></li><li><a href=#debugsymbol-getfunctionbyname>DebugSymbol.getFunctionByName</a></li></ul></li><li><a href=#interceptor>Interceptor</a></li></ul></li><li><a href=#chapter-2-part-3-hooking-arguments-and-return-values>Chapter 2 - Part 3: Hooking Arguments and Return Values</a><ul><li><a href=#modifying-arguments>Modifying Arguments</a><ul><li><ul><li><a href=#how-to-allocate-strings>How to Allocate Strings</a></li><li><a href=#get-registers-context>Get Registers/Context</a></li></ul></li></ul></li><li><a href=#modifying-return-values>Modifying Return Values</a></li></ul></li><li><a href=#chapter-2-part-4-reusing-existing-code>Chapter 2 - Part 4: Reusing Existing Code</a><ul><li><a href=#calling-functions>Calling Functions</a></li></ul></li><li><a href=#chapter-3-part-1-python-tools>Chapter 3 - Part 1: Python Tools</a></li><li><a href=#chapter-3-part-2-send-and-receive>Chapter 3 - Part 2: Send and Receive</a><ul><li><a href=#send-from-javascript>Send From JavaScript</a></li><li><a href=#send-from-python>Send From Python</a></li><li><a href=#frida-rpc-interface>Frida RPC Interface</a><ul><li><a href=#refactor-bruteforce>Refactor Bruteforce</a></li><li><a href=#bruteforce-in-python>Bruteforce in Python</a></li></ul></li></ul></li><li><a href=#chapter-3-part-3-typescript>Chapter 3 - Part 3: Typescript</a><ul><li><a href=#inject-a-web-server-into-the-target-process>Inject a Web Server into the Target Process</a></li></ul></li><li><a href=#chapter-3-part-4-frida-tools>Chapter 3 - Part 4: frida-tools</a></li><li><a href=#chapter-4-part-5-operating-modes>Chapter 4 - Part 5: Operating Modes</a></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.</p></footer></body></html>
