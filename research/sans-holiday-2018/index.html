@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>SANS Holiday Hack Challenge 2018 - Raw Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.82.1"><meta name=twitter:card content="summary"><meta name=twitter:title content="SANS Holiday Hack Challenge 2018 - Raw Notes"><meta name=twitter:description content="OSINT Happy Trails
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>SANS Holiday Hack Challenge 2018 - Raw Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.83.1"><meta name=twitter:card content="summary"><meta name=twitter:title content="SANS Holiday Hack Challenge 2018 - Raw Notes"><meta name=twitter:description content="OSINT Happy Trails
 vim q!
 The Name Game Using 2, it's vulnerable to command injection.
 Asks for a server address and does a ping but we can inject commands after ;.
@@ -59,7 +59,7 @@ onboard.db: SQLite 3.x database</code></pre><p><code>menu.ps1</code></p><div cla
     <span style=color:#b58900>Write-Host</span> <span style=color:#2aa198>&#34;</span><span style=color:#cb4b16>`n</span><span style=color:#2aa198>&#34;</span>
 }
 
-<span style=color:#719e07>function</span> Employee-Onboarding-Form
+<span style=color:#719e07>function</span> <span style=color:#b58900>Employee-Onboarding</span>-Form
 {
     <span style=color:#b58900>Write-Host</span> <span style=color:#2aa198>&#34;</span><span style=color:#cb4b16>`n`n</span><span style=color:#2aa198>Welcome to Santa&#39;s Castle!</span><span style=color:#cb4b16>`n`n</span><span style=color:#2aa198>&#34;</span>
     <span style=color:#b58900>Write-Host</span> <span style=color:#2aa198>&#34;At Santa&#39;s Castle, our employees are our family. We care for each other,&#34;</span>
@@ -104,7 +104,7 @@ onboard.db: SQLite 3.x database</code></pre><p><code>menu.ps1</code></p><div cla
         {
             <span style=color:#2aa198>&#39;1&#39;</span> {
                 <span style=color:#b58900>cls
-</span><span style=color:#b58900></span>                Employee-Onboarding-Form
+</span><span style=color:#b58900></span>                <span style=color:#b58900>Employee-Onboarding</span>-Form
             } <span style=color:#2aa198>&#39;2&#39;</span> {
                 <span style=color:#b58900>cls
 </span><span style=color:#b58900></span>                <span style=color:#b58900>Write-Host</span> <span style=color:#2aa198>&#34;Validating data store for employee onboard information.&#34;</span>
@@ -749,13 +749,11 @@ Date:   Thu Nov 8 13:25:32 2018 -0500
 <span style=color:#586e75>// Database URL
 </span><span style=color:#586e75></span>module.exports <span style=color:#719e07>=</span> {
     <span style=color:#2aa198>&#39;url&#39;</span> <span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;mongodb://username:password@127.0.0.1:27017/node-api&#39;</span>
-};
-</code></pre></div><p>But instead of going around and trying to figure out the stuff in the <code>.git</code> directory, we can just revert to the commit BEFORE THAT and then look inside that file.</p><p><code>git checkout b2376f4a</code></p><p>Now we can see inside <code>config.js</code>:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>elf@<span style=color:#2aa198>03</span>a47cb7373b<span style=color:#719e07>:~</span>/kcconfmgmt/server/config$ cat config.js 
+};</code></pre></div><p>But instead of going around and trying to figure out the stuff in the <code>.git</code> directory, we can just revert to the commit BEFORE THAT and then look inside that file.</p><p><code>git checkout b2376f4a</code></p><p>Now we can see inside <code>config.js</code>:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>elf@<span style=color:#2aa198>03</span>a47cb7373b<span style=color:#719e07>:~</span>/kcconfmgmt/server/config$ cat config.js 
 <span style=color:#586e75>// Database URL
 </span><span style=color:#586e75></span>module.exports <span style=color:#719e07>=</span> {
     <span style=color:#2aa198>&#39;url&#39;</span> <span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;mongodb://sredberry:twinkletwinkletwinkle@127.0.0.1:27017/node-api&#39;</span>
-};
-</code></pre></div><p>Answer is <code>twinkletwinkletwinkle</code>.</p><pre><code>elf@cb4b2e9db7f3:~$ runtoanswer twinkletwinkletwinkle
+};</code></pre></div><p>Answer is <code>twinkletwinkletwinkle</code>.</p><pre><code>elf@cb4b2e9db7f3:~$ runtoanswer twinkletwinkletwinkle
 Loading, please wait......
 
 Enter Sparkle Redberry&#39;s password: twinkletwinkletwinkle
@@ -790,22 +788,22 @@ On a tooootally unrelated note, have you seen the HTTP2 talk at at KringleCon by
 
 
 Error: ENOENT: no such file or directory, open &#39;/opt/http2/uploads//nem,.rxr&#39;</code></pre><p>We want to look for server-side code, according to the hints they are at <code>web root</code></p><p>There's also comments refering to <code>app.js</code></p><p><code>//File upload Function. All extensions and sizes are validated server-side in app.js</code></p><p>POST request for upload goes to <code>/api/list</code> but everything inside <code>/api</code> is unauthorized.</p><p>It's under <code>pub</code></p><p><a href=https://packalyzer.kringlecastle.com/pub/app.js rel=nofollow target=_blank>https://packalyzer.kringlecastle.com/pub/app.js</a></p><p>Inside <code>app.js</code> we can see paths to the keys?</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>const</span> dev_mode <span style=color:#719e07>=</span> <span style=color:#cb4b16>true</span>;
-<span style=color:#268bd2>const</span> key_log_path <span style=color:#719e07>=</span> ( <span style=color:#719e07>!</span>dev_mode <span style=color:#719e07>||</span> __dirname <span style=color:#719e07>+</span> process.env.DEV <span style=color:#719e07>+</span> process.env.SSLKEYLOGFILE )
+<span style=color:#268bd2>const</span> key_log_path <span style=color:#719e07>=</span> ( <span style=color:#719e07>!</span>dev_mode <span style=color:#719e07>||</span> <span style=color:#2aa198>__</span>dirname <span style=color:#719e07>+</span> process.env.DEV <span style=color:#719e07>+</span> process.env.SSLKEYLOGFILE )
 <span style=color:#268bd2>const</span> options <span style=color:#719e07>=</span> {
-  key<span style=color:#719e07>:</span> fs.readFileSync(__dirname <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;/keys/server.key&#39;</span>),
-  cert<span style=color:#719e07>:</span> fs.readFileSync(__dirname <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;/keys/server.crt&#39;</span>),
+  key<span style=color:#719e07>:</span> fs.readFileSync(<span style=color:#2aa198>__</span>dirname <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;/keys/server.key&#39;</span>),
+  cert<span style=color:#719e07>:</span> fs.readFileSync(<span style=color:#2aa198>__</span>dirname <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;/keys/server.crt&#39;</span>),
   http2<span style=color:#719e07>:</span> {
     protocol<span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;h2&#39;</span>,         <span style=color:#586e75>// HTTP2 only. NOT HTTP1 or HTTP1.1
 </span><span style=color:#586e75></span>    protocols<span style=color:#719e07>:</span> [ <span style=color:#2aa198>&#39;h2&#39;</span> ],
   },
   keylog <span style=color:#719e07>:</span> key_log_path     <span style=color:#586e75>//used for dev mode to view traffic. Stores a few minutes worth at a time
-</span></code></pre></div><p><code>dev_mode</code> is on so it should be in those places?</p><p><code>__dirname</code> is the current directory of the module.</p><p>From <a href=https://nodejs.org/docs/latest/api/modules.html#modules_dirname rel=nofollow target=_blank>https://nodejs.org/docs/latest/api/modules.html#modules_dirname</a></p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>The directory name <span style=color:#719e07>of</span> the current module. This is the same as the path.dirname() <span style=color:#719e07>of</span> the __filename.
+</span></code></pre></div><p><code>dev_mode</code> is on so it should be in those places?</p><p><code>__dirname</code> is the current directory of the module.</p><p>From <a href=https://nodejs.org/docs/latest/api/modules.html#modules_dirname rel=nofollow target=_blank>https://nodejs.org/docs/latest/api/modules.html#modules_dirname</a></p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>The directory name <span style=color:#719e07>of</span> the current module. This is the same as the path.dirname() <span style=color:#719e07>of</span> the <span style=color:#2aa198>__</span>filename.
 
 Example<span style=color:#719e07>:</span> running node example.js from <span style=color:#719e07>/</span>Users<span style=color:#719e07>/</span>mjr
 
-console.log(__dirname);
+console.log(<span style=color:#2aa198>__</span>dirname);
 <span style=color:#586e75>// Prints: /Users/mjr
-</span><span style=color:#586e75></span>console.log(path.dirname(__filename));
+</span><span style=color:#586e75></span>console.log(path.dirname(<span style=color:#2aa198>__</span>filename));
 <span style=color:#586e75>// Prints: /Users/mjr
 </span></code></pre></div><p>Look at <code>load_envs</code>, they are opening up directories based on names of environmental variables.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>function</span> load_envs() {
   <span style=color:#268bd2>var</span> dirs <span style=color:#719e07>=</span> []
@@ -822,8 +820,7 @@ console.log(__dirname);
 </span><span style=color:#586e75></span>    <span style=color:#268bd2>const</span> env_dirs <span style=color:#719e07>=</span> load_envs();
 } <span style=color:#719e07>else</span> {
     <span style=color:#268bd2>const</span> env_dirs <span style=color:#719e07>=</span> [<span style=color:#2aa198>&#39;/pub/&#39;</span>,<span style=color:#2aa198>&#39;/uploads/&#39;</span>];
-}
-</code></pre></div><p>So if we navigate to <a href=https://packalyzer.kringlecastle.com/SSLKEYLOGFILE/ rel=nofollow target=_blank>https://packalyzer.kringlecastle.com/SSLKEYLOGFILE/</a> we will get</p><p><code>Error: ENOENT: no such file or directory, open '/opt/http2packalyzer_clientrandom_ssl.log/'</code></p><p>So <code>SSLKEYLOGFILE</code> environmental variable is <code>packalyzer_clientrandom_ssl.log</code>. Why? Well look at the rest of the file, it's nice and has different words separated by underscores. At the start you have two words mashed together unceremonially, the <code>http2</code> is part of the error message.</p><p>Actual file points to</p><p><code>const key_log_path = ( !dev_mode || __dirname + process.env.DEV + process.env.SSLKEYLOGFILE )</code></p><p>So it's in <code>https://packalyzer.kringlecastle.com/dev/packalyzer_clientrandom_ssl.log</code></p><p>Now, the trick is to sniff traffic and then quickly get the file. This way we are getting the latest keys and can decrypt traffic as shown in the talk.</p><p>To only show data use filter <code>http2.data.data</code>.</p><p>There does not seem to be a file there but there are username/passwords there. Let's see if we can login as other people and sniff their traffic?</p><p>I tried doing another capture and it was the same.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#268bd2>&#34;username&#34;</span>: <span style=color:#2aa198>&#34;pepper&#34;</span>, <span style=color:#268bd2>&#34;password&#34;</span>: <span style=color:#2aa198>&#34;Shiz-Bamer_wabl182&#34;</span>}
+}</code></pre></div><p>So if we navigate to <a href=https://packalyzer.kringlecastle.com/SSLKEYLOGFILE/ rel=nofollow target=_blank>https://packalyzer.kringlecastle.com/SSLKEYLOGFILE/</a> we will get</p><p><code>Error: ENOENT: no such file or directory, open '/opt/http2packalyzer_clientrandom_ssl.log/'</code></p><p>So <code>SSLKEYLOGFILE</code> environmental variable is <code>packalyzer_clientrandom_ssl.log</code>. Why? Well look at the rest of the file, it's nice and has different words separated by underscores. At the start you have two words mashed together unceremonially, the <code>http2</code> is part of the error message.</p><p>Actual file points to</p><p><code>const key_log_path = ( !dev_mode || __dirname + process.env.DEV + process.env.SSLKEYLOGFILE )</code></p><p>So it's in <code>https://packalyzer.kringlecastle.com/dev/packalyzer_clientrandom_ssl.log</code></p><p>Now, the trick is to sniff traffic and then quickly get the file. This way we are getting the latest keys and can decrypt traffic as shown in the talk.</p><p>To only show data use filter <code>http2.data.data</code>.</p><p>There does not seem to be a file there but there are username/passwords there. Let's see if we can login as other people and sniff their traffic?</p><p>I tried doing another capture and it was the same.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#268bd2>&#34;username&#34;</span>: <span style=color:#2aa198>&#34;pepper&#34;</span>, <span style=color:#268bd2>&#34;password&#34;</span>: <span style=color:#2aa198>&#34;Shiz-Bamer_wabl182&#34;</span>}
 
 {<span style=color:#268bd2>&#34;username&#34;</span>: <span style=color:#2aa198>&#34;bushy&#34;</span>, <span style=color:#268bd2>&#34;password&#34;</span>: <span style=color:#2aa198>&#34;Floppity_Floopy-flab19283&#34;</span>}
 
@@ -1412,7 +1409,7 @@ Signature test passed
 Enter new password for output file server.pfx:
 Enter new password:
 Confirm new password:
-CertUtil: -MergePFX command completed successfully.</code></pre><p>To convert unicode files to ascii (server cert and key are both UTF-16?), we can use powershell.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>Get-Content</span> .\server.key | <span style=color:#b58900>Out-File</span> -Encoding ASCII server-ascii.key</code></pre></div><p>Then convert both of them to PFX together</p><pre><code>openssl.exe pkcs12 -export -out server.pfx -inkey server-ascii.key -in server-ascii.crt
+CertUtil: -MergePFX command completed successfully.</code></pre><p>To convert unicode files to ascii (server cert and key are both UTF-16?), we can use powershell.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>Get-Content</span> .\server.key | <span style=color:#b58900>Out-File</span> -Encoding ASCII <span style=color:#b58900>server-ascii</span>.key</code></pre></div><p>Then convert both of them to PFX together</p><pre><code>openssl.exe pkcs12 -export -out server.pfx -inkey server-ascii.key -in server-ascii.crt
 WARNING: can&#39;t open config file: /usr/local/ssl/openssl.cnf
 Enter Export Password:
 Verifying - Enter Export Password:

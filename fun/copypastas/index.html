@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Copypastas</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.82.1"><meta name=twitter:card content="summary"><meta name=twitter:title content="Copypastas"><meta name=twitter:description content="Rust Copypasta Of course Rust is superior to [insert programming language]/You should use Rust for [insert project] because you get:
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Copypastas</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.83.1"><meta name=twitter:card content="summary"><meta name=twitter:title content="Copypastas"><meta name=twitter:description content="Rust Copypasta Of course Rust is superior to [insert programming language]/You should use Rust for [insert project] because you get:
  Zero-cost abstractions Move semantics Guaranteed memory safety Threads without data races Trait-based generics Pattern matching Type inference Minimal runtime Efficient C bindings  And last but not least: * Fearless concurrency
 Note: I am not joking about Fearless Concurrency see:
 https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html
@@ -24,16 +24,13 @@ _,,_,*^____      _____``*g*\&#34;*,
 has a snippet for it, type <code>iferr</code> and press enter):</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go>funcReturn, err <span style=color:#719e07>:=</span> <span style=color:#268bd2>func</span>()
 <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
 <span style=color:#719e07>return</span>  <span style=color:#586e75>// pro error handling
-</span><span style=color:#586e75></span>}
-</code></pre></div></li><li><p>The opening curly braces must be on the same line as the statement. Below is
+</span><span style=color:#586e75></span>}</code></pre></div></li><li><p>The opening curly braces must be on the same line as the statement. Below is
 correct:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#719e07>if</span> whatever &gt; <span style=color:#2aa198>10</span> {
 <span style=color:#586e75>// do whatever
-</span><span style=color:#586e75></span>}
-</code></pre></div></li></ul><p>But this is wrong:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#719e07>if</span> whatever &gt; <span style=color:#2aa198>10</span>
+</span><span style=color:#586e75></span>}</code></pre></div></li></ul><p>But this is wrong:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#719e07>if</span> whatever &gt; <span style=color:#2aa198>10</span>
 {
   <span style=color:#586e75>// do whatever
-</span><span style=color:#586e75></span>}
-</code></pre></div><p>They justify it <a href=https://golang.org/doc/faq#semicolons rel=nofollow target=_blank>in the FAQ</a>. They are
+</span><span style=color:#586e75></span>}</code></pre></div><p>They justify it <a href=https://golang.org/doc/faq#semicolons rel=nofollow target=_blank>in the FAQ</a>. They are
 Google, they are special.</p><h2 id=seinfeld-and-javascript-by-jamie>Seinfeld and JavaScript by Jamie</h2><p>What is the deal with JavaScript? Is it a java or is it a script?</p><p>And don't get me started on just how messy JavaScript is. It's not cleanly
 compiled like Java or C++ and it's not held in a walled garden and interpreted
 like PHP. It just goes everywhere. And when it does get somewhere it's not
