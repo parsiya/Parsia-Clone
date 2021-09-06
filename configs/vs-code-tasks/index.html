@@ -1,13 +1,84 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>VS Code Tasks - Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.83.1"><meta name=twitter:card content="summary"><meta name=twitter:title content="VS Code Tasks - Notes"><meta name=twitter:description content="VS Code tasks are a way to run external tools. I used VS Code tasks to preview my blogs. All of my blogs are based on Hugo so I use the local watch server to preview them.
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1">
+<link href=/css/fonts.css rel=stylesheet type=text/css>
+<title>VS Code Tasks - Notes</title>
+<link rel=stylesheet href=/css/hugo-octopress.css>
+<link rel=stylesheet href=http://parsiya.io/clone.css>
+<link rel=stylesheet href=/css/fork-awesome.min.css>
+<link href=http://parsiya.io/favicon.png rel=icon>
+<meta name=description content>
+<meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]">
+<meta name=author content="Parsia-Clone">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="VS Code Tasks - Notes">
+<meta name=twitter:description content="VS Code tasks are a way to run external tools. I used VS Code tasks to preview my blogs. All of my blogs are based on Hugo so I use the local watch server to preview them.
 Single Task - Hugo Server Initially I wrote a task to run the local Hugo watch server. Tasks are JSON files and you can read about them here:
- https://code.visualstudio.com/docs/editor/tasks  My default shell in VS Code is Windows Subsystem for Linux 2 (WSL2) so I have installed Hugo there but, it doesn't really matter."><meta name=twitter:domain content="parsiya.io"><meta name=twitter:creator content="@CryptoGangsta"></head><body><header role=banner><hgroup><h1><a href=http://parsiya.io/>Parsia-Clone</a></h1><h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select></fieldset><ul class=main-navigation><li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank>Parsia-Clone on Github</a></li><li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank>How did I make this?</a></li><li><a href=https://parsiya.net title="My Main Website" target=_blank>My Main Website</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
-<input type=hidden name=q value=site:http://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>4 minute read
-- <a class=label href=http://parsiya.io/categories/configs/>Configs</a></p><h1 class=entry-title>VS Code Tasks - Notes</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/main/configs/vs-code-tasks.md target=_blank>Github Link</a></header><div class=entry-content><nav id=TableOfContents><ul><li><a href=#single-task-hugo-server>Single Task - Hugo Server</a></li><li><a href=#wsl-vs-cmd-opening-the-preview-website>WSL vs. cmd - Opening the Preview Website</a></li><li><a href=#multiple-tasks>Multiple Tasks</a></li></ul></nav><p>VS Code tasks are a way to run external tools. I used VS Code tasks to preview
+ https://code.visualstudio.com/docs/editor/tasks  My default shell in VS Code is Windows Subsystem for Linux 2 (WSL2) so I have installed Hugo there but, it doesn't really matter.">
+<meta name=twitter:domain content="parsiya.io">
+<meta name=twitter:creator content="@CryptoGangsta">
+</head>
+<body>
+<header role=banner>
+<hgroup>
+<h1><a href=http://parsiya.io/>Parsia-Clone</a></h1>
+<h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2>
+</hgroup></header>
+<nav role=navigation>
+<fieldset class=mobile-nav>
+<select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select>
+</fieldset>
+<ul class=main-navigation>
+<li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank>Parsia-Clone on Github</a></li>
+<li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank>How did I make this?</a></li>
+<li><a href=https://parsiya.net title="My Main Website" target=_blank>My Main Website</a></li>
+</ul>
+<ul class=subscription>
+</ul>
+<form action=https://www.google.com/search method=get target=_blank>
+<fieldset role=search>
+<input class=search type=text name=q results=0 placeholder=Search>
+<input type=hidden name=q value=site:http://parsiya.io/>
+</fieldset>
+</form>
+</nav>
+<div id=main>
+<div id=content>
+<div>
+<article class=hentry role=article>
+<header>
+<p class=meta>
+4 minute read
+- <a class=label href=http://parsiya.io/categories/configs/>Configs </a>
+</p>
+<h1 class=entry-title>
+VS Code Tasks - Notes
+</h1>
+<a href=https://github.com/parsiya/Parsia-Clone/tree/main/configs/vs-code-tasks.md target=_blank>Github Link</a>
+</header>
+<div class=entry-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#single-task-hugo-server>Single Task - Hugo Server</a></li>
+<li><a href=#wsl-vs-cmd-opening-the-preview-website>WSL vs. cmd - Opening the Preview Website</a></li>
+<li><a href=#multiple-tasks>Multiple Tasks</a></li>
+</ul>
+</nav>
+<p>VS Code tasks are a way to run external tools. I used VS Code tasks to preview
 my blogs. All of my blogs are based on Hugo so I use the local watch server to
-preview them.</p><h1 id=single-task-hugo-server>Single Task - Hugo Server</h1><p>Initially I wrote a task to run the local Hugo watch server. Tasks are JSON
-files and you can read about them here:</p><ul><li><a href=https://code.visualstudio.com/docs/editor/tasks rel=nofollow target=_blank>https://code.visualstudio.com/docs/editor/tasks</a></li></ul><p>My default shell in VS Code is <a href=https://docs.microsoft.com/en-us/windows/wsl/install-win10 rel=nofollow target=_blank>Windows Subsystem for Linux 2 (WSL2)</a>
+preview them.</p>
+<h1 id=single-task-hugo-server>Single Task - Hugo Server</h1>
+<p>Initially I wrote a task to run the local Hugo watch server. Tasks are JSON
+files and you can read about them here:</p>
+<ul>
+<li><a href=https://code.visualstudio.com/docs/editor/tasks rel=nofollow target=_blank>https://code.visualstudio.com/docs/editor/tasks</a></li>
+</ul>
+<p>My default shell in VS Code is <a href=https://docs.microsoft.com/en-us/windows/wsl/install-win10 rel=nofollow target=_blank>Windows Subsystem for Linux 2 (WSL2)</a>
 so I have installed Hugo there but, it doesn't really matter. We want to run
-<code>hugo serve -vw</code> (<code>serve</code> and <code>server</code> are the same).</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+<code>hugo serve -vw</code> (<code>serve</code> and <code>server</code> are the same).</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     <span style=color:#268bd2>&#34;version&#34;</span>: <span style=color:#2aa198>&#34;2.0.0&#34;</span>,
@@ -23,20 +94,32 @@ so I have installed Hugo there but, it doesn't really matter. We want to run
             },
         }
     ]
-}</code></pre></div><p>The <code>group</code> object designates the default build task. I can run it with
-<code>ctrl+shift+b</code>. This makes my life a bit easier.</p><h1 id=wsl-vs-cmd-opening-the-preview-website>WSL vs. cmd - Opening the Preview Website</h1><p>A second step is also opening the browser and going to the local website's URL.
+}</code></pre></div>
+<p>The <code>group</code> object designates the default build task. I can run it with
+<code>ctrl+shift+b</code>. This makes my life a bit easier.</p>
+<h1 id=wsl-vs-cmd-opening-the-preview-website>WSL vs. cmd - Opening the Preview Website</h1>
+<p>A second step is also opening the browser and going to the local website's URL.
 The default address is <code>http://localhost:1313</code>. If the base URL has a directory
 in its path, then you need to use it. E.g., my Persian (or Farsi depending on
 who you ask) is a project site at <a href=https://parsiya.github.io/parsiya.fa/ rel=nofollow target=_blank>https://parsiya.github.io/parsiya.fa/</a> so the
-preview URL is <code>http://localhost:1313/parsiya.fa</code>.</p><p>So, it helps to automatically go to that URL instead of having to use a shortcut
+preview URL is <code>http://localhost:1313/parsiya.fa</code>.</p>
+<p>So, it helps to automatically go to that URL instead of having to use a shortcut
 or type it (<em>gasp</em>). You can have unlimited websites hosted on GitHub pages
-(with or without custom domains):</p><ul><li><a href=https://parsiya.net/blog/2021-02-17-automagically-deploying-websites-with-custom-domains-to-github-pages/ rel=nofollow target=_blank>https://parsiya.net/blog/2021-02-17-automagically-deploying-websites-with-custom-domains-to-github-pages/</a></li></ul><p>Adding a second task started simple but turned complex really fast. I am on
-Windows but my default VS Code shell is WSL2.</p><p>Inside the cmd we can use <code>start http://localhost:1313</code> but, it does not work in
+(with or without custom domains):</p>
+<ul>
+<li><a href=https://parsiya.net/blog/2021-02-17-automagically-deploying-websites-with-custom-domains-to-github-pages/ rel=nofollow target=_blank>https://parsiya.net/blog/2021-02-17-automagically-deploying-websites-with-custom-domains-to-github-pages/</a></li>
+</ul>
+<p>Adding a second task started simple but turned complex really fast. I am on
+Windows but my default VS Code shell is WSL2.</p>
+<p>Inside the cmd we can use <code>start http://localhost:1313</code> but, it does not work in
 WSL. In both WSL and cmd we can use <code>explorer.exe http://localhost:1234</code> to open
 the URL in the system's default browser. But using it as the command in the task
 does not work because it's run as <code>wsl.exe -e explorer.exe
-http://localhost:1234</code> and it silently fails.</p><p>So, we use the <code>options > shell > executable</code> object to designate the shell
-executable. Also, note the <code>/c</code> command line switch passed to the cmd.</p><p>The command to run the task can be <code>start http://localhost:1313</code></p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>// <span style=color:#2aa198>&#34;tasks&#34;</span>: [
+http://localhost:1234</code> and it silently fails.</p>
+<p>So, we use the <code>options > shell > executable</code> object to designate the shell
+executable. Also, note the <code>/c</code> command line switch passed to the cmd.</p>
+<p>The command to run the task can be <code>start http://localhost:1313</code></p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>// <span style=color:#2aa198>&#34;tasks&#34;</span>: [
 {
     // opens http://localhost:1313 in the system browser to preview the site.
     <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>,
@@ -48,11 +131,14 @@ executable. Also, note the <code>/c</code> command line switch passed to the cmd
         }
     }
 }
-// ]</code></pre></div><h1 id=multiple-tasks>Multiple Tasks</h1><p>Now, we have two different tasks that do what we want. The next step is to run
+// ]</code></pre></div>
+<h1 id=multiple-tasks>Multiple Tasks</h1>
+<p>Now, we have two different tasks that do what we want. The next step is to run
 them both at once. My initial thought was to use the <code>dependsOn</code> attribute. So I
 modified the <code>open-browser-1313</code> task to depend on the preview website task.
 This means if I run the <code>open-browser-1313</code> task, it will run the
-<code>start-hugo-server</code> task first and then execute after it has finished.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+<code>start-hugo-server</code> task first and then execute after it has finished.</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
     <span style=color:#268bd2>&#34;version&#34;</span>: <span style=color:#2aa198>&#34;2.0.0&#34;</span>,
     <span style=color:#268bd2>&#34;tasks&#34;</span>: [
         {
@@ -79,9 +165,12 @@ This means if I run the <code>open-browser-1313</code> task, it will run the
             }
         }
     ]
-}</code></pre></div><p>But this does not work. Running the <code>open-browser-1313</code> task will run the
+}</code></pre></div>
+<p>But this does not work. Running the <code>open-browser-1313</code> task will run the
 <code>start-hugo-server</code> task but it does not start itself until the previous task
-has finished even though the Hugo server task is a background task.</p><p>The solution is to <code>create a new task that runs both of them</code>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+has finished even though the Hugo server task is a background task.</p>
+<p>The solution is to <code>create a new task that runs both of them</code>.</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     <span style=color:#268bd2>&#34;version&#34;</span>: <span style=color:#2aa198>&#34;2.0.0&#34;</span>,
@@ -116,8 +205,40 @@ has finished even though the Hugo server task is a background task.</p><p>The so
             }
         }
     ]
-}</code></pre></div><p>Now, if I hit <code>ctrl+shift+b</code> the <code>preview-blog</code> runs the Hugo server and then
-opens the preview site is the system's default browser.</p><p><strong>Note on port:</strong> If you prefer a different port, you can run your server
-with <code>hugo serve -p 1234</code> and then open <code>http://localhost:1234</code>.</p></div><footer><p class=meta><span class=categories>Tags:
-<a class=category href=http://parsiya.io/tags/vs-code>VS Code</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#single-task-hugo-server>Single Task - Hugo Server</a></li><li><a href=#wsl-vs-cmd-opening-the-preview-website>WSL vs. cmd - Opening the Preview Website</a></li><li><a href=#multiple-tasks>Multiple Tasks</a></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
-<span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.</p></footer></body></html>
+}</code></pre></div>
+<p>Now, if I hit <code>ctrl+shift+b</code> the <code>preview-blog</code> runs the Hugo server and then
+opens the preview site is the system's default browser.</p>
+<p><strong>Note on port:</strong> If you prefer a different port, you can run your server
+with <code>hugo serve -p 1234</code> and then open <code>http://localhost:1234</code>.</p>
+</div>
+<footer>
+<p class=meta>
+<span class=categories>
+Tags:
+<a class=category href=http://parsiya.io/tags/vs-code>VS Code</a>
+</span>
+</p>
+</footer>
+</article>
+</div>
+<aside class="sidebar thirds">
+<section class="first odd">
+<h2>Table of Contents</h2>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#single-task-hugo-server>Single Task - Hugo Server</a></li>
+<li><a href=#wsl-vs-cmd-opening-the-preview-website>WSL vs. cmd - Opening the Preview Website</a></li>
+<li><a href=#multiple-tasks>Multiple Tasks</a></li>
+</ul>
+</nav>
+</section>
+</aside>
+</div>
+</div>
+<footer role=contentinfo>
+<p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.
+</p>
+</footer>
+</body>
+</html>

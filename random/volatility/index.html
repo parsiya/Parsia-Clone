@@ -1,22 +1,149 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Volatility on Windows Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.83.1"><meta name=twitter:card content="summary"><meta name=twitter:title content="Volatility on Windows Notes"><meta name=twitter:description content="rekal http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1">
+<link href=/css/fonts.css rel=stylesheet type=text/css>
+<title>Volatility on Windows Notes</title>
+<link rel=stylesheet href=/css/hugo-octopress.css>
+<link rel=stylesheet href=http://parsiya.io/clone.css>
+<link rel=stylesheet href=/css/fork-awesome.min.css>
+<link href=http://parsiya.io/favicon.png rel=icon>
+<meta name=description content>
+<meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]">
+<meta name=author content="Parsia-Clone">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Volatility on Windows Notes">
+<meta name=twitter:description content="rekal http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html
 rekal -v live vmscan Admin cmd will not work because virtualbox is running as normal user?
 $ VBoxManage.exe list runningvms $ VBoxManage debugvm &#34;Debian3 Clone&#34; dumpvmcore --filename e:\test1uname -r 3.16.0-4-amd64 cat /etc/*-release Debian GNU/Linux 8 (Jessie) Volatility Volatility Standalone Windows does not have Linux profiles, copy them all to a directory called profiles and load them with --plugins=profiles.
 Download profiles:
  https://github.com/volatilityfoundation/profiles https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile  Then run
- vol."><meta name=twitter:domain content="parsiya.io"><meta name=twitter:creator content="@CryptoGangsta"></head><body><header role=banner><hgroup><h1><a href=http://parsiya.io/>Parsia-Clone</a></h1><h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select></fieldset><ul class=main-navigation><li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank>Parsia-Clone on Github</a></li><li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank>How did I make this?</a></li><li><a href=https://parsiya.net title="My Main Website" target=_blank>My Main Website</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
-<input type=hidden name=q value=site:http://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>1 minute read
-- <a class=label href=http://parsiya.io/categories/random/>Random</a></p><h1 class=entry-title>Volatility on Windows Notes</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/main/random/volatility/index.md target=_blank>Github Link</a></header><div class=entry-content><h1 id=rekal>rekal</h1><p><a href=http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html rel=nofollow target=_blank>http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html</a></p><pre><code>rekal -v live</code></pre><h2 id=vmscan>vmscan</h2><p>Admin cmd will not work because virtualbox is running as normal user?</p><pre><code>$ VBoxManage.exe list runningvms
+ vol.">
+<meta name=twitter:domain content="parsiya.io">
+<meta name=twitter:creator content="@CryptoGangsta">
+</head>
+<body>
+<header role=banner>
+<hgroup>
+<h1><a href=http://parsiya.io/>Parsia-Clone</a></h1>
+<h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2>
+</hgroup></header>
+<nav role=navigation>
+<fieldset class=mobile-nav>
+<select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select>
+</fieldset>
+<ul class=main-navigation>
+<li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank>Parsia-Clone on Github</a></li>
+<li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank>How did I make this?</a></li>
+<li><a href=https://parsiya.net title="My Main Website" target=_blank>My Main Website</a></li>
+</ul>
+<ul class=subscription>
+</ul>
+<form action=https://www.google.com/search method=get target=_blank>
+<fieldset role=search>
+<input class=search type=text name=q results=0 placeholder=Search>
+<input type=hidden name=q value=site:http://parsiya.io/>
+</fieldset>
+</form>
+</nav>
+<div id=main>
+<div id=content>
+<div>
+<article class=hentry role=article>
+<header>
+<p class=meta>
+1 minute read
+- <a class=label href=http://parsiya.io/categories/random/>Random </a>
+</p>
+<h1 class=entry-title>
+Volatility on Windows Notes
+</h1>
+<a href=https://github.com/parsiya/Parsia-Clone/tree/main/random/volatility/index.md target=_blank>Github Link</a>
+</header>
+<div class=entry-content>
+<h1 id=rekal>rekal</h1>
+<p><a href=http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html rel=nofollow target=_blank>http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html</a></p>
+<pre tabindex=0><code>rekal -v live</code></pre>
+<h2 id=vmscan>vmscan</h2>
+<p>Admin cmd will not work because virtualbox is running as normal user?</p>
+<pre tabindex=0><code>$ VBoxManage.exe list runningvms
 
-$ VBoxManage debugvm &#34;Debian3 Clone&#34; dumpvmcore --filename e:\test1</code></pre><pre><code>uname -r
+$ VBoxManage debugvm &#34;Debian3 Clone&#34; dumpvmcore --filename e:\test1</code></pre><pre tabindex=0><code>uname -r
 3.16.0-4-amd64
 
 cat /etc/*-release
-Debian GNU/Linux 8 (Jessie)</code></pre><h1 id=volatility>Volatility</h1><p>Volatility Standalone Windows does not have Linux profiles, copy them all to a directory called <code>profiles</code> and load them with <code>--plugins=profiles</code>.</p><p>Download profiles:</p><ul><li><a href=https://github.com/volatilityfoundation/profiles rel=nofollow target=_blank>https://github.com/volatilityfoundation/profiles</a></li><li><a href=https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile rel=nofollow target=_blank>https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile</a></li></ul><p>Then run</p><ul><li><code>vol.exe --plugins=profiles --info | findstr Linux</code></li></ul><p>to get the profile name.</p><p>Then run the profile manually</p><ul><li><code>vol.exe --plugins=profiles --profile=LinuxDebian8x64 -f test1 imagecopy -O test2.raw</code></li></ul><p>Output file is around 4GBs.</p><pre><code>E:\volatility_2.6_win64_standalone&gt;vol.exe --plugins=profiles --profile=LinuxDebian8x64 -f test2.raw truecryptsummary
+Debian GNU/Linux 8 (Jessie)</code></pre>
+<h1 id=volatility>Volatility</h1>
+<p>Volatility Standalone Windows does not have Linux profiles, copy them all to a directory called <code>profiles</code> and load them with <code>--plugins=profiles</code>.</p>
+<p>Download profiles:</p>
+<ul>
+<li><a href=https://github.com/volatilityfoundation/profiles rel=nofollow target=_blank>https://github.com/volatilityfoundation/profiles</a></li>
+<li><a href=https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile rel=nofollow target=_blank>https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile</a></li>
+</ul>
+<p>Then run</p>
+<ul>
+<li><code>vol.exe --plugins=profiles --info | findstr Linux</code></li>
+</ul>
+<p>to get the profile name.</p>
+<p>Then run the profile manually</p>
+<ul>
+<li><code>vol.exe --plugins=profiles --profile=LinuxDebian8x64 -f test1 imagecopy -O test2.raw</code></li>
+</ul>
+<p>Output file is around 4GBs.</p>
+<pre tabindex=0><code>E:\volatility_2.6_win64_standalone&gt;vol.exe --plugins=profiles --profile=LinuxDebian8x64 -f test2.raw truecryptsummary
 Volatility Foundation Volatility Framework 2.6
 ERROR   : volatility.debug    : This command does not support the profile LinuxDebian8x64
 
 LinuxAMD64PagedMemory
 
-AMD64PagedMemory</code></pre><h2 id=plugins>Plugins?</h2><ul><li><code>truecryptmaster</code>: Recover TrueCrypt 7.1a Master Keys</li><li><code>truecryptpassphrase</code>: TrueCrypt Cached Passphrase Finder</li><li><code>truecryptsummary</code>: TrueCrypt Summary</li></ul><h1 id=swap-digger>Swap Digger</h1><p>Swap digger to get Linux password from swap file:</p><ul><li><a href=https://github.com/sevagas/swap_digger rel=nofollow target=_blank>https://github.com/sevagas/swap_digger</a></li></ul></div><footer><p class=meta><span class=categories>Tags:
-<a class=category href=http://parsiya.io/tags/volatility>Volatility</a> <a class=category href=http://parsiya.io/tags/forensics>Forensics</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#rekal>rekal</a><ul><li><a href=#vmscan>vmscan</a></li></ul></li><li><a href=#volatility>Volatility</a><ul><li><a href=#plugins>Plugins?</a></li></ul></li><li><a href=#swap-digger>Swap Digger</a></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
-<span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.</p></footer></body></html>
+AMD64PagedMemory</code></pre>
+<h2 id=plugins>Plugins?</h2>
+<ul>
+<li><code>truecryptmaster</code>: Recover TrueCrypt 7.1a Master Keys</li>
+<li><code>truecryptpassphrase</code>: TrueCrypt Cached Passphrase Finder</li>
+<li><code>truecryptsummary</code>: TrueCrypt Summary</li>
+</ul>
+<h1 id=swap-digger>Swap Digger</h1>
+<p>Swap digger to get Linux password from swap file:</p>
+<ul>
+<li><a href=https://github.com/sevagas/swap_digger rel=nofollow target=_blank>https://github.com/sevagas/swap_digger</a></li>
+</ul>
+</div>
+<footer>
+<p class=meta>
+<span class=categories>
+Tags:
+<a class=category href=http://parsiya.io/tags/volatility>Volatility</a> <a class=category href=http://parsiya.io/tags/forensics>Forensics</a>
+</span>
+</p>
+</footer>
+</article>
+</div>
+<aside class="sidebar thirds">
+<section class="first odd">
+<h2>Table of Contents</h2>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#rekal>rekal</a>
+<ul>
+<li><a href=#vmscan>vmscan</a></li>
+</ul></li>
+<li><a href=#volatility>Volatility</a>
+<ul>
+<li><a href=#plugins>Plugins?</a></li>
+</ul></li>
+<li><a href=#swap-digger>Swap Digger</a></li>
+</ul>
+</nav>
+</section>
+</aside>
+</div>
+</div>
+<footer role=contentinfo>
+<p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.
+</p>
+</footer>
+</body>
+</html>
