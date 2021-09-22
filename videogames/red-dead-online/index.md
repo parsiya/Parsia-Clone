@@ -55,7 +55,7 @@ Make sure to use the `bread` bait. The cheese bait did not work for me (26 Feb
 
 ### Catch Fish with Live Bait
 Live bait is either crickets or worms. However, there is a "catch" (lol). The
-first time when you use a bait, it's live. Sometimes, the bait is note removed
+first time when you use a bait, it's live. Sometimes, the bait is not removed
 after catching the fish. These subsequent catches with the original bait do not
 count.
 
@@ -74,12 +74,12 @@ Collector challenges are mostly straight forward and can be completed quickly by
 using the [collector's map][collectors-map].
 
 ### Yates Diamond Ring
-To force respawn, go to the location western edge of the map (not south west,
-just west). North of `Little Creek River` and north of `E` in West Elizabeth on
-the map is a group of houses. The ring is in a lock box on the top floor of the
-house. If it's not there, press escape to open the menu, select `Online` and
-then `Free Roam`. You will be back in the same area and the ring has respawned.
-You can do it once per reset.
+To force respawn, go to the location at the western edge of the map (not south
+west, just west). North of `Little Creek River` and north of `E` in West
+Elizabeth on the map is a group of houses. The ring is in a lock box on the top
+floor of the house. If it's not there, press escape to open the menu, select
+`Online` and then `Free Roam`. You will be back in the same area and the ring
+has respawned. You can do it once per reset.
 
 Source: https://www.youtube.com/watch?v=4Wqqoxtfttc
 
