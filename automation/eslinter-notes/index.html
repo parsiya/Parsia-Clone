@@ -14,7 +14,7 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESLinter Raw Notes">
-<meta name=twitter:description content="Static analysis of JavaScript through the ages:  Script to detect DOM XSS  http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code   In the following blog post (2012), Ryan Dewhurst mentions that it would be nice to have JavaScript taint analysis for DOM XSS in Burp.
+<meta name=twitter:description content="Static analysis of JavaScript through the ages:   Script to detect DOM XSS  http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code    In the following blog post (2012), Ryan Dewhurst mentions that it would be nice to have JavaScript taint analysis for DOM XSS in Burp.
  https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html  The link to the extension does not work anymore.
 Searching for ESLint + Burp on Twitter gets us a series of tweets by David Rook from 2015:">
 <meta name=twitter:domain content="parsiya.io">
@@ -67,80 +67,90 @@ ESLinter Raw Notes
 <li><a href=#how-to-detect-js-in-responses>How to detect JS in responses</a></li>
 <li><a href=#embedding-js-in-python>Embedding JS in Python?</a></li>
 <li><a href=#hurdles>Hurdles</a></li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </nav>
-<h2 id=static-analysis-of-javascript-through-the-ages>Static analysis of JavaScript through the ages:</h2>
-<ul>
+<h2 id=static-analysis-of-javascript-through-the-ages>Static analysis of JavaScript through the ages:
+<a class=header-link href=#static-analysis-of-javascript-through-the-ages><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><ul>
 <li>Script to detect DOM XSS
 <ul>
-<li><a href=http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code rel=nofollow target=_blank>http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code</a></li>
-</ul></li>
+<li><a href=http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code target=_blank rel="noreferrer noopener">http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code</a></li>
+</ul>
+</li>
 </ul>
 <p>In the following blog post (2012), Ryan Dewhurst mentions that it would be nice to have JavaScript taint analysis for DOM XSS in Burp.</p>
 <ul>
-<li><a href=https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html rel=nofollow target=_blank>https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html</a></li>
+<li><a href=https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html target=_blank rel="noreferrer noopener">https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html</a></li>
 </ul>
 <p>The link to the extension does not work anymore.</p>
 <p>Searching for ESLint + Burp on Twitter gets us a series of tweets by David Rook from 2015:</p>
 <ul>
-<li><a href=https://twitter.com/davidrook/status/643907041363410944 rel=nofollow target=_blank>https://twitter.com/davidrook/status/643907041363410944</a></li>
+<li><a href=https://twitter.com/davidrook/status/643907041363410944 target=_blank rel="noreferrer noopener">https://twitter.com/davidrook/status/643907041363410944</a></li>
 </ul>
 <p>Seems like he created an extension but never continued or released it.</p>
 <hr>
-<h2 id=how-to-detect-js-in-responses>How to detect JS in responses</h2>
-<p>Some ideas, including some from <a href=https://github.com/luh2/DetectDynamicJS rel=nofollow target=_blank>DetectDynamicJS</a></p>
+<h2 id=how-to-detect-js-in-responses>How to detect JS in responses
+<a class=header-link href=#how-to-detect-js-in-responses><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Some ideas, including some from <a href=https://github.com/luh2/DetectDynamicJS target=_blank rel="noreferrer noopener">DetectDynamicJS</a></p>
 <ul>
-<li><p><a href=https://github.com/luh2/DetectDynamicJS/blob/master/DetectDynamicJS.py#L229 rel=nofollow target=_blank>https://github.com/luh2/DetectDynamicJS/blob/master/DetectDynamicJS.py#L229</a></p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>def</span> <span style=color:#268bd2>isScript</span>(<span style=color:#268bd2>self</span>, requestResponse):
-<span style=color:#2aa198>&#34;&#34;&#34;Determine if the response is a script&#34;&#34;&#34;</span>
-<span style=color:#719e07>try</span>:
-    response <span style=color:#719e07>=</span> requestResponse<span style=color:#719e07>.</span>getResponse()
-<span style=color:#719e07>except</span>:
-    <span style=color:#719e07>return</span> <span style=color:#cb4b16>False</span>
-<span style=color:#719e07>if</span> <span style=color:#719e07>not</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasBody(response):
-    <span style=color:#719e07>return</span> <span style=color:#cb4b16>False</span>
-responseInfo <span style=color:#719e07>=</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>_helpers<span style=color:#719e07>.</span>analyzeResponse(response)
-body <span style=color:#719e07>=</span> response<span style=color:#719e07>.</span>tostring()[responseInfo<span style=color:#719e07>.</span>getBodyOffset():]
-first_char <span style=color:#719e07>=</span> body[<span style=color:#2aa198>0</span>:<span style=color:#2aa198>1</span>]
-mimeType <span style=color:#719e07>=</span> responseInfo<span style=color:#719e07>.</span>getStatedMimeType()<span style=color:#719e07>.</span>split(<span style=color:#2aa198>&#39;;&#39;</span>)[<span style=color:#2aa198>0</span>]
-inferredMimeType <span style=color:#719e07>=</span> responseInfo<span style=color:#719e07>.</span>getInferredMimeType()<span style=color:#719e07>.</span>split(<span style=color:#2aa198>&#39;;&#39;</span>)[<span style=color:#2aa198>0</span>]
-<span style=color:#719e07>return</span> (first_char <span style=color:#719e07>not</span> <span style=color:#719e07>in</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>ichars <span style=color:#719e07>and</span>
-        (<span style=color:#2aa198>&#34;script&#34;</span> <span style=color:#719e07>in</span> mimeType <span style=color:#719e07>or</span> <span style=color:#2aa198>&#34;script&#34;</span> <span style=color:#719e07>in</span> inferredMimeType <span style=color:#719e07>or</span>
-            <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasScriptFileEnding(requestResponse) <span style=color:#719e07>or</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasScriptContentType(response)))</code></pre></div></li>
+<li><a href=https://github.com/luh2/DetectDynamicJS/blob/master/DetectDynamicJS.py#L229 target=_blank rel="noreferrer noopener">https://github.com/luh2/DetectDynamicJS/blob/master/DetectDynamicJS.py#L229</a></li>
 </ul>
-<ol>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>def</span> <span style=color:#268bd2>isScript</span>(<span style=color:#268bd2>self</span>, requestResponse):
+    <span style=color:#2aa198>&#34;&#34;&#34;Determine if the response is a script&#34;&#34;&#34;</span>
+    <span style=color:#719e07>try</span>:
+        response <span style=color:#719e07>=</span> requestResponse<span style=color:#719e07>.</span>getResponse()
+    <span style=color:#719e07>except</span>:
+        <span style=color:#719e07>return</span> <span style=color:#cb4b16>False</span>
+    <span style=color:#719e07>if</span> <span style=color:#719e07>not</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasBody(response):
+        <span style=color:#719e07>return</span> <span style=color:#cb4b16>False</span>
+    responseInfo <span style=color:#719e07>=</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>_helpers<span style=color:#719e07>.</span>analyzeResponse(response)
+    body <span style=color:#719e07>=</span> response<span style=color:#719e07>.</span>tostring()[responseInfo<span style=color:#719e07>.</span>getBodyOffset():]
+    first_char <span style=color:#719e07>=</span> body[<span style=color:#2aa198>0</span>:<span style=color:#2aa198>1</span>]
+    mimeType <span style=color:#719e07>=</span> responseInfo<span style=color:#719e07>.</span>getStatedMimeType()<span style=color:#719e07>.</span>split(<span style=color:#2aa198>&#39;;&#39;</span>)[<span style=color:#2aa198>0</span>]
+    inferredMimeType <span style=color:#719e07>=</span> responseInfo<span style=color:#719e07>.</span>getInferredMimeType()<span style=color:#719e07>.</span>split(<span style=color:#2aa198>&#39;;&#39;</span>)[<span style=color:#2aa198>0</span>]
+    <span style=color:#719e07>return</span> (first_char <span style=color:#719e07>not</span> <span style=color:#719e07>in</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>ichars <span style=color:#719e07>and</span>
+            (<span style=color:#2aa198>&#34;script&#34;</span> <span style=color:#719e07>in</span> mimeType <span style=color:#719e07>or</span> <span style=color:#2aa198>&#34;script&#34;</span> <span style=color:#719e07>in</span> inferredMimeType <span style=color:#719e07>or</span>
+                <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasScriptFileEnding(requestResponse) <span style=color:#719e07>or</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasScriptContentType(response)))
+</code></pre></div><ol>
 <li>By extension, check for <code>js</code> and <code>json</code>.
 <ol>
 <li>Why JSON? for maps?</li>
 <li>What about jsmaps? What are their extensions?
 <ol>
 <li><code>.js.map</code> or <code>.map</code>?</li>
-</ol></li>
+</ol>
+</li>
 <li>Any other extensions? <code>pack</code>?</li>
 <li>Framework specific extension
 <ol>
 <li>Angular</li>
 <li>React</li>
 <li>Add more</li>
-</ol></li>
-</ol></li>
+</ol>
+</li>
+</ol>
+</li>
 <li>How can we extract jsmaps and get the JS files?
 <ol>
 <li>What are jsmaps?</li>
 <li>What is their structure?</li>
-</ol></li>
+</ol>
+</li>
 <li>By MIME Type.
 <ol>
-<li>IResponseInfo.getStatedMimeType: <a href=https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType( rel=nofollow target=_blank>https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType(</a>)</li>
-<li>IResponseInfo.getInferredMimeType: <a href=https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType( rel=nofollow target=_blank>https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType(</a>)</li>
+<li>IResponseInfo.getStatedMimeType: <a href=https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType%28%29 target=_blank rel="noreferrer noopener">https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType()</a></li>
+<li>IResponseInfo.getInferredMimeType: <a href=https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType%28%29 target=_blank rel="noreferrer noopener">https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType()</a></li>
 <li>Anything else?</li>
-</ol></li>
+</ol>
+</li>
 <li>What about scripts inside response (similar to what Burp does)
 <ol>
 <li>Regex for <code>&lt;script.*&lt;/script></code>?</li>
 <li>Where else can we have embedded scripts?</li>
-</ol></li>
+</ol>
+</li>
 <li>How to create Burp extension UI in Python.
 <ol>
 <li>Lots of examples for Burp extensions in Java</li>
@@ -148,17 +158,21 @@ inferredMimeType <span style=color:#719e07>=</span> responseInfo<span style=colo
 <ol>
 <li>Read those and learn.</li>
 <li>Make a blog post about it.</li>
-</ol></li>
-</ol></li>
 </ol>
-<h2 id=embedding-js-in-python>Embedding JS in Python?</h2>
-<ul>
-<li><a href=https://github.com/sqreen/PyMiniRacer rel=nofollow target=_blank>https://github.com/sqreen/PyMiniRacer</a></li>
-<li>Related blog: <a href=https://blog.sqreen.com/embedding-javascript-into-python/ rel=nofollow target=_blank>https://blog.sqreen.com/embedding-javascript-into-python/</a></li>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id=embedding-js-in-python>Embedding JS in Python?
+<a class=header-link href=#embedding-js-in-python><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><ul>
+<li><a href=https://github.com/sqreen/PyMiniRacer target=_blank rel="noreferrer noopener">https://github.com/sqreen/PyMiniRacer</a></li>
+<li>Related blog: <a href=https://blog.sqreen.com/embedding-javascript-into-python/ target=_blank rel="noreferrer noopener">https://blog.sqreen.com/embedding-javascript-into-python/</a></li>
 <li></li>
 </ul>
-<h2 id=hurdles>Hurdles</h2>
-<ol>
+<h2 id=hurdles>Hurdles
+<a class=header-link href=#hurdles><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><ol>
 <li>Handling large files?
 <ol>
 <li>Beautifying and linting them will consume a lot of RAM. Let's assume we will run node with 4GBs of RAM.</li>
@@ -169,14 +183,18 @@ inferredMimeType <span style=color:#719e07>=</span> responseInfo<span style=colo
 <li>For big files, use a parser and make chunks and the end of self-contained blocks?
 <ol>
 <li>How do we figure this out?</li>
-</ol></li>
+</ol>
+</li>
 <li>Drop standard stuff that we can recognize as 3rd party.</li>
-</ol></li>
-</ol></li>
+</ol>
+</li>
+</ol>
+</li>
 <li>Performance issues
 <ol>
 <li>Both ESLint and the beautifier are slow on large files and use a lot of RAM.</li>
-</ol></li>
+</ol>
+</li>
 </ol>
 </div>
 <footer>
@@ -197,7 +215,8 @@ inferredMimeType <span style=color:#719e07>=</span> responseInfo<span style=colo
 <li><a href=#how-to-detect-js-in-responses>How to detect JS in responses</a></li>
 <li><a href=#embedding-js-in-python>Embedding JS in Python?</a></li>
 <li><a href=#hurdles>Hurdles</a></li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </nav>
 </section>

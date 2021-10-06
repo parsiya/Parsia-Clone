@@ -14,11 +14,11 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="BMC Track It 11.2">
-<meta name=twitter:description content="BMC Track It 11.2 Download BMC Track It 11.2 from CNET. http://download.cnet.com/BMC-Track-It/3000-18482_4-10003961.html?tag=bc
+<meta name=twitter:description content="BMC Track It 11.2  Download BMC Track It 11.2 from CNET. http://download.cnet.com/BMC-Track-It/3000-18482_4-10003961.html?tag=bc
 Disconnect your VM from the internet because you don't want to be vulnerable.
 First we install it. After installation:
 Low and behold we have something listening on port 9010 (on all interfaces).
-PS C:\> netstat -an | findstr.exe &#34;9010&#34; TCP 0.0.0.0:9010 0.0.0.0:0 LISTENING PS C:\> pic01
+PS C:\> netstat -an | findstr.exe &#34;9010&#34;TCP 0.0.0.0:9010 0.0.0.0:0 LISTENINGPS C:\> pic01
 But now we have the problem of finding the module that is listening on port 9010.">
 <meta name=twitter:domain content="parsiya.io">
 <meta name=twitter:creator content="@CryptoGangsta">
@@ -62,18 +62,20 @@ BMC Track It 11.2
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/abandoned-research/BMC-Track-It-11.2.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<h1 id=bmc-track-it-11-2>BMC Track It 11.2</h1>
-<p>Download BMC Track It 11.2 from CNET. <a href="http://download.cnet.com/BMC-Track-It/3000-18482_4-10003961.html?tag=bc" rel=nofollow target=_blank>http://download.cnet.com/BMC-Track-It/3000-18482_4-10003961.html?tag=bc</a></p>
+<h1 id=bmc-track-it-112>BMC Track It 11.2
+<a class=header-link href=#bmc-track-it-112><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Download BMC Track It 11.2 from CNET. <a href="http://download.cnet.com/BMC-Track-It/3000-18482_4-10003961.html?tag=bc" target=_blank rel="noreferrer noopener">http://download.cnet.com/BMC-Track-It/3000-18482_4-10003961.html?tag=bc</a></p>
 <p>Disconnect your VM from the internet because you don't want to be vulnerable.</p>
 <p>First we install it. After installation:</p>
 <p>Low and behold we have something listening on port 9010 (on all interfaces).</p>
-<pre tabindex=0><code>PS C:\&gt; netstat -an | findstr.exe &#34;9010&#34;
+<pre><code>PS C:\&gt; netstat -an | findstr.exe &quot;9010&quot;
   TCP    0.0.0.0:9010           0.0.0.0:0              LISTENING
-PS C:\&gt;</code></pre>
+PS C:\&gt;
+</code></pre>
 <p><strong>pic01</strong></p>
 <p>But now we have the problem of finding the module that is listening on port 9010.</p>
 <p>For that we can use the <code>b</code> switch for <code>netstat</code> which needs an admin powershell window or command prompt.</p>
-<pre tabindex=0><code>PS C:\&gt; netstat -ab
+<pre><code>PS C:\&gt; netstat -ab
 
 Active Connections
   Proto  Local Address          Foreign Address        State
@@ -96,7 +98,8 @@ Active Connections
 
   TCP    127.0.0.1:49519        x64-PC:49176           ESTABLISHED
  [TIServiceManagement.exe]
-   ...</code></pre>
+   ...
+</code></pre>
 <p>So we have two open ports <code>6712</code> and <code>9010</code>.</p>
 <p>We can see that they are running as SYSTEM according to this screenshot from task manager.</p>
 <p><strong>pic02</strong></p>
@@ -117,17 +120,18 @@ Content-Length: 326
 &lt;<span style=color:#268bd2>hr</span>&gt;&lt;<span style=color:#268bd2>p</span>&gt;HTTP Error 400. The request verb is invalid.&lt;/<span style=color:#268bd2>p</span>&gt;
 &lt;/<span style=color:#268bd2>BODY</span>&gt;&lt;/<span style=color:#268bd2>HTML</span>&gt;
 
-Connection to host lost.</code></pre></div>
-<p>This is interesting, but not what we are looking for. Maybe we will come back to it later.</p>
+Connection to host lost.
+</code></pre></div><p>This is interesting, but not what we are looking for. Maybe we will come back to it later.</p>
 <p>Connect to <code>localhost:9010</code> with telnet or your browser and observe the error message which indicates that we are on the right track.</p>
-<pre tabindex=0><code>.NET..........System.Runtime.Remoting.RemotingException: Tcp channel protocol violation: expecting preamble.
+<pre><code>.NET..........System.Runtime.Remoting.RemotingException: Tcp channel protocol violation: expecting preamble.
    at System.Runtime.Remoting.Channels.Tcp.TcpSocketHandler.ReadAndMatchPreamble()
    at System.Runtime.Remoting.Channels.Tcp.TcpSocketHandler.ReadVersionAndOperation(UInt16&amp; operation)
    at System.Runtime.Remoting.Channels.Tcp.TcpServerSocketHandler.ReadHeaders()
    at System.Runtime.Remoting.Channels.Tcp.TcpServerTransportSink.ServiceRequest(Object state)
    at System.Runtime.Remoting.Channels.SocketHandler.ProcessRequestNow()
 
-Connection to host lost.</code></pre>
+Connection to host lost.
+</code></pre>
 <p>Navigate to <code>C:\Program Files (x86)\BMC Software\Track-It!\Track-It! Services</code> which contains the <code>TIServiceManagement.exe</code> executable and look inside the config file <code>TIServiceManagement.exe.config</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#268bd2>&lt;appSettings&gt;</span>
     <span style=color:#268bd2>&lt;add</span> key=<span style=color:#2aa198>&#34;ConfigurationRemotingChannel&#34;</span> value=<span style=color:#2aa198>&#34;tcp&#34;</span> <span style=color:#268bd2>/&gt;</span>
@@ -140,8 +144,8 @@ Connection to host lost.</code></pre>
     <span style=color:#268bd2>&lt;add</span> key=<span style=color:#2aa198>&#34;RemotingServiceDisplayName&#34;</span> value=<span style=color:#2aa198>&#34;Track-It! Service Management&#34;</span> <span style=color:#268bd2>/&gt;</span>
     <span style=color:#268bd2>&lt;add</span> key=<span style=color:#2aa198>&#34;RemotingServiceDescription&#34;</span> value=<span style=color:#2aa198>&#34;Manages services instances deployed on this host.&#34;</span> <span style=color:#268bd2>/&gt;</span>
     <span style=color:#268bd2>&lt;add</span> key=<span style=color:#2aa198>&#34;SystemHealth:SystemHealthConfiguration:TrackIt.Core.Configuration.MultisourceConfigurationImpl.DatabaseConfigurationSource&#34;</span> value=<span style=color:#2aa198>&#34;Database source&#34;</span> <span style=color:#268bd2>/&gt;</span>
-<span style=color:#268bd2>&lt;/appSettings&gt;</span></code></pre></div>
-<p>Look at <code>Properties > Details</code> for <code>TIServicemanagement.exe</code> and we will see that the file description is <code>RemotingServicesManager</code> as well as its original filename.</p>
+<span style=color:#268bd2>&lt;/appSettings&gt;</span>
+</code></pre></div><p>Look at <code>Properties > Details</code> for <code>TIServicemanagement.exe</code> and we will see that the file description is <code>RemotingServicesManager</code> as well as its original filename.</p>
 <p><strong>[pic04]</strong></p>
 <p>Here's the thing, we can open the file in dnSpy and poke around but let's cut the chase and look at the local traffic.</p>
 <p>To capture local traffic [link to the capturing local traffic blog post] we will use RawCap. Run RawCap, start capturing on the pseudo loopback interface. Now start the application and login. The demo user does not have a password.</p>
@@ -149,13 +153,16 @@ Connection to host lost.</code></pre>
 <p>And we can see the contents (well the printable parts) by using <code>Follow TCP Stream</code>.</p>
 <p><strong>[pic06]</strong></p>
 <p>We have seen the first request before (I have filtered out a lot of non-printable characters unless they are needed and we are going to talk about them).</p>
-<pre tabindex=0><code>.NET 3 tcp://x64-PC:9010/TrackIt.Core.ConfigurationService.</code></pre>
+<pre><code>.NET 3 tcp://x64-PC:9010/TrackIt.Core.ConfigurationService.
+</code></pre>
 <p>Second request</p>
-<pre tabindex=0><code>GetProductDeploymentValues TrackIt.Core.Configuration.IConfigurationSecureDelegator, TrackIt.Core.Configuration, Version=11.2.0.345, Culture=neutral, PublicKeyToken=null</code></pre>
+<pre><code>GetProductDeploymentValues TrackIt.Core.Configuration.IConfigurationSecureDelegator, TrackIt.Core.Configuration, Version=11.2.0.345, Culture=neutral, PublicKeyToken=null
+</code></pre>
 <p>As we have seen before [link to the first .NET remoting post] we can find the DLL and the object that is being called remotely.</p>
-<pre tabindex=0><code>Remote function: GetProductDeploymentValues
+<pre><code>Remote function: GetProductDeploymentValues
 Function class: TrackIt.Core.Configuration.IConfigurationSecureDelegator
-DLL: TrackIt.Core.Configuration</code></pre>
+DLL: TrackIt.Core.Configuration
+</code></pre>
 <p>The application that called the remote object is <code>C:\Program Files (x86)\BMC Software\Track-It!\Track-It! Server\Installers\TechnicianClient\en\TechnicianClient_11_2_0_345\TechnicianClient.exe</code>. The DLL is question is in the same address.</p>
 <p><strong>[pic07]</strong></p>
 <p>These look to be the list of all exposed functions. <code>GetFileContent</code> looks nice.</p>
@@ -187,7 +194,7 @@ Tags:
 <h2>Table of Contents</h2>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#bmc-track-it-11-2>BMC Track It 11.2</a></li>
+<li><a href=#bmc-track-it-112>BMC Track It 11.2</a></li>
 </ul>
 </nav>
 </section>

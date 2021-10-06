@@ -58,7 +58,7 @@ Windows SearchPath
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/random/search-path.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<p>A while ago I was playing with the Windows API <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365527(v=vs.85).aspx" rel=nofollow target=_blank>SearchPath</a>. It will search for a specific file in <code>PATH</code>.</p>
+<p>A while ago I was playing with the Windows API <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365527%28v=vs.85%29.aspx" target=_blank rel="noreferrer noopener">SearchPath</a>. It will search for a specific file in <code>PATH</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>DWORD WINAPI <span style=color:#268bd2>SearchPath</span>(
     _In_opt_  LPCTSTR lpPath,
     _In_      LPCTSTR lpFileName,
@@ -66,8 +66,8 @@ Windows SearchPath
     _In_      DWORD   nBufferLength,
     _Out_     LPTSTR  lpBuffer,
     _Out_opt_ LPTSTR  <span style=color:#719e07>*</span>lpFilePart
-);</code></pre></div>
-<p>Note this quirk from the "Remarks" section. When <code>lpPath</code> is NULL (which usually is). It looks up the following registry key. If the value is <code>1</code> it will first search in PATH then in current working directory and vice versa if <code>0</code>. Default is <code>0</code>.</p>
+);
+</code></pre></div><p>Note this quirk from the "Remarks" section. When <code>lpPath</code> is NULL (which usually is). It looks up the following registry key. If the value is <code>1</code> it will first search in PATH then in current working directory and vice versa if <code>0</code>. Default is <code>0</code>.</p>
 <ul>
 <li>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\SafeProcessSearchMode</li>
 </ul>
@@ -85,6 +85,7 @@ Tags:
 <aside class="sidebar thirds">
 <section class="first odd">
 <h2>Table of Contents</h2>
+<nav id=TableOfContents></nav>
 </section>
 </aside>
 </div>

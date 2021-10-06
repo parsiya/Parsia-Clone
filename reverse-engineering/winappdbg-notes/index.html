@@ -14,10 +14,9 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="WinAppDbg Notes">
-<meta name=twitter:description content="WinAppDbg Main guide is here: http://winappdbg.readthedocs.io/en/latest/ProgrammingGuide.html
-32-bit and 64-bit Python Generally you want to debug 32-bit applications in 32-bit Python. You can have both of them together on one machine. When installing the 2nd Python, uncheck register extensions in the installer. On a VM it does not really matter because you can install/uninstall Python 32 and 64 bit versions at will.
-Installation Pip installed version 1.5.
-To get 1.6, we use the github repo at https://github.">
+<meta name=twitter:description content="WinAppDbg  Main guide is here: http://winappdbg.readthedocs.io/en/latest/ProgrammingGuide.html
+32-bit and 64-bit Python  Generally you want to debug 32-bit applications in 32-bit Python. You can have both of them together on one machine. When installing the 2nd Python, uncheck register extensions in the installer. On a VM it does not really matter because you can install/uninstall Python 32 and 64 bit versions at will.
+Installation  Pip installed version 1.5.">
 <meta name=twitter:domain content="parsiya.io">
 <meta name=twitter:creator content="@CryptoGangsta">
 </head>
@@ -60,72 +59,88 @@ WinAppDbg Notes
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/reverse-engineering/winappdbg-notes/index.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<h1 id=winappdbg>WinAppDbg</h1>
-<p>Main guide is here: <a href=http://winappdbg.readthedocs.io/en/latest/ProgrammingGuide.html rel=nofollow target=_blank>http://winappdbg.readthedocs.io/en/latest/ProgrammingGuide.html</a></p>
-<h2 id=32-bit-and-64-bit-python>32-bit and 64-bit Python</h2>
-<p>Generally you want to debug 32-bit applications in 32-bit Python. You can have both of them together on one machine. When installing the 2nd Python, uncheck <code>register extensions</code> in the installer. On a VM it does not really matter because you can install/uninstall Python 32 and 64 bit versions at will.</p>
-<h2 id=installation>Installation</h2>
-<p>Pip installed version 1.5.</p>
-<p>To get 1.6, we use the github repo at <a href=https://github.com/MarioVilas/winappdbg rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg</a>. Clone and run <code>install.bat</code>.</p>
+<h1 id=winappdbg>WinAppDbg
+<a class=header-link href=#winappdbg><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Main guide is here: <a href=http://winappdbg.readthedocs.io/en/latest/ProgrammingGuide.html target=_blank rel="noreferrer noopener">http://winappdbg.readthedocs.io/en/latest/ProgrammingGuide.html</a></p>
+<h2 id=32-bit-and-64-bit-python>32-bit and 64-bit Python
+<a class=header-link href=#32-bit-and-64-bit-python><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Generally you want to debug 32-bit applications in 32-bit Python. You can have both of them together on one machine. When installing the 2nd Python, uncheck <code>register extensions</code> in the installer. On a VM it does not really matter because you can install/uninstall Python 32 and 64 bit versions at will.</p>
+<h2 id=installation>Installation
+<a class=header-link href=#installation><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Pip installed version 1.5.</p>
+<p>To get 1.6, we use the github repo at <a href=https://github.com/MarioVilas/winappdbg target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg</a>. Clone and run <code>install.bat</code>.</p>
 <p>According to the installation documentation we may benefit from additional software.</p>
 <ul>
 <li>Capstone: <code>python -m pip install capstone-windows</code></li>
-<li>distorm3: Download binaries from release page <a href=https://github.com/gdabah/distorm/releases rel=nofollow target=_blank>https://github.com/gdabah/distorm/releases</a></li>
+<li>distorm3: Download binaries from release page <a href=https://github.com/gdabah/distorm/releases target=_blank rel="noreferrer noopener">https://github.com/gdabah/distorm/releases</a></li>
 </ul>
-<p><a href=https://breakingcode.wordpress.com/2012/04/08/quickpost-installer-for-beaenginepython/ rel=nofollow target=_blank>https://breakingcode.wordpress.com/2012/04/08/quickpost-installer-for-beaenginepython/</a></p>
+<p><a href=https://breakingcode.wordpress.com/2012/04/08/quickpost-installer-for-beaenginepython/ target=_blank rel="noreferrer noopener">https://breakingcode.wordpress.com/2012/04/08/quickpost-installer-for-beaenginepython/</a></p>
 <p>Has installers for the rest.</p>
 <hr>
-<h2 id=debugging>Debugging</h2>
-<p>This is what I want:</p>
+<h2 id=debugging>Debugging
+<a class=header-link href=#debugging><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>This is what I want:</p>
 <ul>
-<li><p><a href=http://winappdbg.readthedocs.io/en/latest/Debugging.html#breakpoints-watches-and-hooks rel=nofollow target=_blank>http://winappdbg.readthedocs.io/en/latest/Debugging.html#breakpoints-watches-and-hooks</a></p>
+<li><a href=http://winappdbg.readthedocs.io/en/latest/Debugging.html#breakpoints-watches-and-hooks target=_blank rel="noreferrer noopener">http://winappdbg.readthedocs.io/en/latest/Debugging.html#breakpoints-watches-and-hooks</a></li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>from</span> winappdbg.win32 <span style=color:#719e07>import</span> <span style=color:#719e07>*</span>
 
 
 <span style=color:#586e75># Create a snapshot of the process, only take the heap list.</span>
-hSnapshot <span style=color:#719e07>=</span> CreateToolhelp32Snapshot( TH32CS_SNAPHEAPLIST, pid )</code></pre></div></li>
-<li><p>HexDump:</p>
+hSnapshot <span style=color:#719e07>=</span> CreateToolhelp32Snapshot( TH32CS_SNAPHEAPLIST, pid )
+</code></pre></div><ul>
+<li>HexDump:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L451 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L451</a></li>
-</ul></li>
-<li><p>take_memory_snapshot:</p>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L451 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L451</a></li>
+</ul>
+</li>
+<li>take_memory_snapshot:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3261 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3261</a></li>
-</ul></li>
-<li><p>restore_memory_snapshot:</p>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3261 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3261</a></li>
+</ul>
+</li>
+<li>restore_memory_snapshot:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3301 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3301</a></li>
-</ul></li>
-<li><p>bSkipMappedFiles:</p>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3301 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3301</a></li>
+</ul>
+</li>
+<li>bSkipMappedFiles:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3317 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3317</a></li>
-</ul></li>
-<li><p>break_at:</p>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3317 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L3317</a></li>
+</ul>
+</li>
+<li>break_at:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/breakpoint.py#L3905 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/breakpoint.py#L3905</a></li>
-<li><a href="http://winappdbg.readthedocs.io/en/latest/Debugging.html?highlight=break_at#example-11-setting-a-breakpoint" rel=nofollow target=_blank>http://winappdbg.readthedocs.io/en/latest/Debugging.html?highlight=break_at#example-11-setting-a-breakpoint</a></li>
-</ul></li>
-<li><p>get_context:</p>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/breakpoint.py#L3905 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/breakpoint.py#L3905</a></li>
+<li><a href="http://winappdbg.readthedocs.io/en/latest/Debugging.html?highlight=break_at#example-11-setting-a-breakpoint" target=_blank rel="noreferrer noopener">http://winappdbg.readthedocs.io/en/latest/Debugging.html?highlight=break_at#example-11-setting-a-breakpoint</a></li>
+</ul>
+</li>
+<li>get_context:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/thread.py#L469 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/thread.py#L469</a></li>
-</ul></li>
-<li><p>set_context:</p>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/thread.py#L469 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/thread.py#L469</a></li>
+</ul>
+</li>
+<li>set_context:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/thread.py#L570 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/thread.py#L570</a></li>
-</ul></li>
-<li><p>All memory read stuff are at:</p>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/thread.py#L570 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/thread.py#L570</a></li>
+</ul>
+</li>
+<li>All memory read stuff are at:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L125 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L125</a></li>
-</ul></li>
-<li><p>Use built-in Table:</p>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L125 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/process.py#L125</a></li>
+</ul>
+</li>
+<li>Use built-in Table:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L1094 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L1094</a></li>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L1094 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L1094</a></li>
 <li><code>table = Table("|")</code> we can add separator here.</li>
-</ul></li>
-<li><p>Logger class:</p>
+</ul>
+</li>
+<li>Logger class:
 <ul>
-<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L1766 rel=nofollow target=_blank>https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L1766</a></li>
-</ul></li>
+<li><a href=https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L1766 target=_blank rel="noreferrer noopener">https://github.com/MarioVilas/winappdbg/blob/master/winappdbg/textio.py#L1766</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <footer>
@@ -148,7 +163,8 @@ Tags:
 <li><a href=#32-bit-and-64-bit-python>32-bit and 64-bit Python</a></li>
 <li><a href=#installation>Installation</a></li>
 <li><a href=#debugging>Debugging</a></li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </nav>
 </section>

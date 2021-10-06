@@ -14,9 +14,9 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Converting Pygments Styles to Chroma">
-<meta name=twitter:description content="Converting Pygments Styles to Chroma Chroma is a syntax highlighter written in Go. Hugo uses it for internal highlighting. My theme Hugo-Octopress used the solarized dark theme built into the CSS (from Octopress). Chroma does not support this theme, so I had to generate the CSS myself.
+<meta name=twitter:description content="Converting Pygments Styles to Chroma  Chroma is a syntax highlighter written in Go. Hugo uses it for internal highlighting. My theme Hugo-Octopress used the solarized dark theme built into the CSS (from Octopress). Chroma does not support this theme, so I had to generate the CSS myself.
 Chroma has a built-in tool for converting styles _tools/style.py.
-Instructions These steps are for an Ubuntu 16 machine, but can be adapted for any OS.">
+Instructions  These steps are for an Ubuntu 16 machine, but can be adapted for any OS.">
 <meta name=twitter:domain content="parsiya.io">
 <meta name=twitter:creator content="@CryptoGangsta">
 </head>
@@ -59,11 +59,13 @@ Converting Pygments Styles to Chroma
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/random/chroma-pygments-convert/index.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<h1 id=converting-pygments-styles-to-chroma>Converting Pygments Styles to Chroma</h1>
-<p><a href=https://github.com/alecthomas/chroma rel=nofollow target=_blank>Chroma</a> is a syntax highlighter written in Go. <a href=https://gohugo.io/ rel=nofollow target=_blank>Hugo</a> uses it for internal highlighting. My theme <a href=https://github.com/parsiya/Hugo-Octopress rel=nofollow target=_blank>Hugo-Octopress</a> used the <a href=https://github.com/john2x/solarized-pygment/ rel=nofollow target=_blank>solarized dark</a> theme built into the CSS (from Octopress). Chroma does not support this theme, so I had to generate the CSS myself.</p>
-<p>Chroma has a <a href=https://github.com/alecthomas/chroma#styles rel=nofollow target=_blank>built-in tool for converting styles</a> <code>_tools/style.py</code>.</p>
-<h2 id=instructions>Instructions</h2>
-<p>These steps are for an Ubuntu 16 machine, but can be adapted for any OS.</p>
+<h1 id=converting-pygments-styles-to-chroma>Converting Pygments Styles to Chroma
+<a class=header-link href=#converting-pygments-styles-to-chroma><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p><a href=https://github.com/alecthomas/chroma target=_blank rel="noreferrer noopener">Chroma</a> is a syntax highlighter written in Go. <a href=https://gohugo.io/ target=_blank rel="noreferrer noopener">Hugo</a> uses it for internal highlighting. My theme <a href=https://github.com/parsiya/Hugo-Octopress target=_blank rel="noreferrer noopener">Hugo-Octopress</a> used the <a href=https://github.com/john2x/solarized-pygment/ target=_blank rel="noreferrer noopener">solarized dark</a> theme built into the CSS (from Octopress). Chroma does not support this theme, so I had to generate the CSS myself.</p>
+<p>Chroma has a <a href=https://github.com/alecthomas/chroma#styles target=_blank rel="noreferrer noopener">built-in tool for converting styles</a> <code>_tools/style.py</code>.</p>
+<h2 id=instructions>Instructions
+<a class=header-link href=#instructions><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>These steps are for an Ubuntu 16 machine, but can be adapted for any OS.</p>
 <ol>
 <li>Install Go, configure <code>GOPATH</code> and the rest.</li>
 <li>Install Chroma with <code>go get github.com/alecthomas/chroma</code>.</li>
@@ -76,7 +78,8 @@ Converting Pygments Styles to Chroma
 <li>Copy the files to the <code>pygments</code> installation path. On my machine it was:
 <ul>
 <li><code>/usr/local/lib/python3.5/dist-packages/Pygments-2.2.0-py3.5.egg/pygments/styles</code>.</li>
-</ul></li>
+</ul>
+</li>
 <li>Use the <code>_tools/style.py</code> to generate <code>go</code> files from styles:
 <ul>
 <li><code>python3 style.py [style-name] pygments.styles.[py-file-name].[style-class-name] > style-name.go</code>
@@ -84,19 +87,23 @@ Converting Pygments Styles to Chroma
 <li><code>style-name</code> is a string with new style's name. E.g. <code>solarized-dark</code>.</li>
 <li><code>py-file-name</code> is the name of the <code>py</code> file (w/o extension) that was copied to the Pygments directory. E.g. <code>dark</code>.</li>
 <li><code>style-class-name</code> is the name of the python class inside the style. E.g. <code>SolarizedDarkStyle</code>.</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>My example command was:
 <ul>
 <li><code>python3 style.py solarized-dark pygments.styles.dark.SolarizedDarkStyle > solarized-dark.go</code></li>
-</ul></li>
+</ul>
+</li>
 <li>Repeat for any other styles.</li>
 <li>Copy the resulting <code>go</code> files to <code>$GOPATH/Go/src/github.com/alecthomas/chroma/styles</code>.
 <ul>
 <li>You can open the file to double-check the style name passed to <code>chroma.MustNewStyle</code>:</li>
 <li><code>var SolarizedDark = Register(chroma.MustNewStyle("solarized-dark", chroma.StyleEntries{</code></li>
-</ul></li>
-<li><p>Now create the following Go application (or copy <code>createCSS.go</code>). Modify the file and style names as needed and execute it:</p>
+</ul>
+</li>
+<li>Now create the following Go application (or copy <code>createCSS.go</code>). Modify the file and style names as needed and execute it:
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#719e07>package</span> main
 
 <span style=color:#719e07>import</span> (
@@ -114,14 +121,16 @@ Converting Pygments Styles to Chroma
     <span style=color:#719e07>if</span> err <span style=color:#719e07>:=</span> formatter.<span style=color:#268bd2>WriteCSS</span>(f, styles.<span style=color:#268bd2>Get</span>(<span style=color:#2aa198>&#34;solarized-dark&#34;</span>)); err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
         <span style=color:#b58900>panic</span>(err)
     }
-}</code></pre></div></li>
-<li><p>Copy/paste the CSS files to your theme's CSS.</p></li>
-<li><p>Inside your site's config file:</p>
+}
+</code></pre></div></li>
+<li>Copy/paste the CSS files to your theme's CSS.</li>
+<li>Inside your site's config file:
 <ul>
 <li>Remove <code>pygmentsUseClassic</code>: This will tell Hugo to use Chroma.</li>
 <li><code>pygmentsuseclasses = true</code>: Use CSS for highlighting.</li>
 <li><code>pygmentscodefences = true</code>: This adds code highlight to code fences.</li>
-</ul></li>
+</ul>
+</li>
 </ol>
 </div>
 <footer>
@@ -142,7 +151,8 @@ Tags:
 <li><a href=#converting-pygments-styles-to-chroma>Converting Pygments Styles to Chroma</a>
 <ul>
 <li><a href=#instructions>Instructions</a></li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </nav>
 </section>

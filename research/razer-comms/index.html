@@ -15,7 +15,7 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Razer Comms">
 <meta name=twitter:description content="Blog post at: https://parsiya.net/blog/2017-09-21-razer-comms/
-Razer Comms Notes First we install the application. Downloaded Razer Comms 5.12.59 from their website. This is the current version at the time of writing. After the installation did not launch it by default.
+Razer Comms Notes  First we install the application. Downloaded Razer Comms 5.12.59 from their website. This is the current version at the time of writing. After the installation did not launch it by default.
 Took a look at task manager and saw this application running C:\Program Files (x86)\Razer\Razer Services\GSS\GameScannerService.exe. Hopefully we will play with this later. Seems like it's running as SYSTEM. Maybe we can get local priv escalation.">
 <meta name=twitter:domain content="parsiya.io">
 <meta name=twitter:creator content="@CryptoGangsta">
@@ -59,12 +59,14 @@ Razer Comms
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/research/razer-comms/index.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<p>Blog post at: <a href=https://parsiya.net/blog/2017-09-21-razer-comms/ rel=nofollow target=_blank>https://parsiya.net/blog/2017-09-21-razer-comms/</a></p>
-<h1 id=razer-comms-notes>Razer Comms Notes</h1>
-<p>First we install the application. Downloaded Razer Comms 5.12.59 from their website. This is the current version at the time of writing. After the installation did not launch it by default.</p>
+<p>Blog post at: <a href=https://parsiya.net/blog/2017-09-21-razer-comms/ target=_blank rel="noreferrer noopener">https://parsiya.net/blog/2017-09-21-razer-comms/</a></p>
+<h1 id=razer-comms-notes>Razer Comms Notes
+<a class=header-link href=#razer-comms-notes><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>First we install the application. Downloaded Razer Comms 5.12.59 from their website. This is the current version at the time of writing. After the installation did not launch it by default.</p>
 <p>Took a look at task manager and saw this application running <code>C:\Program Files (x86)\Razer\Razer Services\GSS\GameScannerService.exe</code>. Hopefully we will play with this later. Seems like it's running as SYSTEM. Maybe we can get local priv escalation.</p>
-<h2 id=proxying>Proxying</h2>
-<p>We can modify the Windows proxy settings. There are different ways to reach these settings, but the easiest for me is through Internet Explorer. <code>Tools (menu) > Internet Options (menu) > Connections (tab) > LAN Settings (button) > Use a proxy server for your LAN (checkbox)</code>. Enable the checkbox and now you can enter your own proxy settings. Enter Burp's proxy settings (or your own proxy tool) here. Burp's default proxy listener is <code>127.0.0.1:8080</code> or <code>localhost:8080</code>.</p>
+<h2 id=proxying>Proxying
+<a class=header-link href=#proxying><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>We can modify the Windows proxy settings. There are different ways to reach these settings, but the easiest for me is through Internet Explorer. <code>Tools (menu) > Internet Options (menu) > Connections (tab) > LAN Settings (button) > Use a proxy server for your LAN (checkbox)</code>. Enable the checkbox and now you can enter your own proxy settings. Enter Burp's proxy settings (or your own proxy tool) here. Burp's default proxy listener is <code>127.0.0.1:8080</code> or <code>localhost:8080</code>.</p>
 <p>Run Netmon and start capturing traffic. Then run Burp and finally Razer Comms. Make sure that the filter is set to show everything in Burp.</p>
 <p>In Razer Comms, click on <code>Create Account</code> and enter some random information. You can see that it tries to check the availability of <code>Comms ID</code> but there is nothing in Burp and Netmon is empty. Whatever you enter, the application will just say it is unavailable. It seems like the application is trying to send a request to check the availability but it fails and just returns not available.</p>
 <p><img src=images/01.png alt></p>
@@ -73,13 +75,14 @@ Razer Comms
 <p>First we see the TCP Handshake. Then we see a <code>CONNECT</code> request to <code>ec.razerzone.com:443</code> which means that the application has detected the Windows proxy settings and is proxy aware <em>(link to the section talking about proxy-aware clients in hipchat post)</em>. In short the application sends a <code>CONNECT</code> request before starting the TLS handshake to tell the proxy where to send the packets. Because a proxy is not able to see inside of TLS packets to determine the endpoint.</p>
 <p>Then we see the normal TLS handshake, but Razer Comms closes the connection. Burp tries to send another packet after that but the application resets the connection. So there must be something wrong. Either the application is cert pinning (which is unlikely for a desktop application) or it checks the validity of certificate presented by Burp (most likely). In order to make the Burp's certificate valid on the system, we need to install the Burp root Certificate Authority in the Windows certificate store. Use these instructions <em>(link to the installing burp's cA cert tutorial)</em>.</p>
 <p>Re-start the application and go back to <code>Create Account</code>. Now when we enter a CommdID, we can see a POST request in Burp.</p>
-<pre tabindex=0><code>POST /check?rzrid=commsID HTTP/1.1
+<pre><code>POST /check?rzrid=commsID HTTP/1.1
 Host: ec.razerzone.com
 Connection: close
-Content-Length: 0</code></pre>
+Content-Length: 0
+</code></pre>
 <p>The result is <code>0</code> if the ID is not available and <code>1</code> if not.</p>
-<pre tabindex=0><code>HTTP/1.1 200 OK
-Cache-control: no-cache=&#34;set-cookie&#34;
+<pre><code>HTTP/1.1 200 OK
+Cache-control: no-cache=&quot;set-cookie&quot;
 Content-Type: text/html
 Date: Sun, 21 Feb 2016 21:41:05 GMT
 Server: nginx/1.7.8
@@ -88,11 +91,12 @@ X-Powered-By: PHP/5.3.29
 Content-Length: 1
 Connection: Close
 
-0</code></pre>
+0
+</code></pre>
 <p><img src=images/03.png alt></p>
-<p>URL: <a href="https://ec.razerzone.com/check?rzrid=hello" rel=nofollow target=_blank>https://ec.razerzone.com/check?rzrid=hello</a></p>
+<p>URL: <a href="https://ec.razerzone.com/check?rzrid=hello" target=_blank rel="noreferrer noopener">https://ec.razerzone.com/check?rzrid=hello</a></p>
 <p>Also note the PHP and nginx versions in response. PHP <code>5.3.29</code> and nginx <code>1.7.8</code>.</p>
-<p>Note that you can modify this request to GET and it will still work. For example: <a href="https://ec.razerzone.com/check?rzrid=Hello" rel=nofollow target=_blank>https://ec.razerzone.com/check?rzrid=Hello</a>.</p>
+<p>Note that you can modify this request to GET and it will still work. For example: <a href="https://ec.razerzone.com/check?rzrid=Hello" target=_blank rel="noreferrer noopener">https://ec.razerzone.com/check?rzrid=Hello</a>.</p>
 <p><img src=images/04.png alt></p>
 <p>The client does not allow CommsIDs shorter than five characters but CheckAvailability works on them. For example CheckAvailability for <code>rzr</code> returns <code>1</code> meaning it is available. Can we intercept the request and create a CommsID shorter than 5 characters?</p>
 <p>Set Burp to Intercept (<code>Proxy > Intercept > Intercept is On/Off (button)</code>). Enter a valid CommsID and some random information. Click <code>Create</code> and see that Burp captures the request. Drop the request and send it to Repeater.</p>
@@ -113,8 +117,8 @@ Connection: close
     <span style=color:#268bd2>&lt;razer-id&gt;</span>randomcommsID<span style=color:#268bd2>&lt;/razer-id&gt;</span>
   <span style=color:#268bd2>&lt;/User&gt;</span>
   <span style=color:#268bd2>&lt;ServiceCode&gt;</span>0020<span style=color:#268bd2>&lt;/ServiceCode&gt;</span>
-<span style=color:#268bd2>&lt;/COP&gt;</span></code></pre></div>
-<p>In Repeater we can modify the value of <code>razer-id</code> and see if we can create a 3 letter CommsID. And we can't do it:</p>
+<span style=color:#268bd2>&lt;/COP&gt;</span>
+</code></pre></div><p>In Repeater we can modify the value of <code>razer-id</code> and see if we can create a 3 letter CommsID. And we can't do it:</p>
 <p><img src=images/05.png alt></p>
 <p>That's an internal IP address (check?). Some are as follows:</p>
 <ul>
@@ -126,18 +130,19 @@ Connection: close
 <p>After registering a new user, you have to confirm your email. After that you can login normally.</p>
 <p>No Username Enumeration on failed login attempts.</p>
 <hr>
-<h1 id=more-random-notes>More Random Notes</h1>
-<p>We got <code>RazerComms.pdb</code>, not that we need it anyways.</p>
+<h1 id=more-random-notes>More Random Notes
+<a class=header-link href=#more-random-notes><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>We got <code>RazerComms.pdb</code>, not that we need it anyways.</p>
 <p><code>xmppserver: comms-cxmpp.razersynapse.com:5222</code> doing netstat will show this.</p>
 <p>XMPP is through websockets, look at the tab in Burp. Chat channel seems to be a normal XMPP server, it uses the token that we get in the login response as token.</p>
 <p>uses <code>PUT</code> to send messages.</p>
 <p>Before sending a message, message ID in the PUT is sent to the server via websockets using XMPP. The server accepts the message ID. Then the message ID in the PUT can be used, otherwise the PUT will get a 500 RESPONSE.</p>
 <p>Sample message from client to server to post a message with ID <code>9cddf1b83bcabd8fbccf7f5487cb0c91cadb9ebe</code>.</p>
 <p>Don't need XMPP to inject JS. Just modify the <code>PUT</code>. However, when you inject you won't see it yourself, you have to go out and come back to the channel.</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#268bd2>&lt;iq</span> to=<span style=color:#2aa198>&#39;pubsub.razerzone.com&#39;</span> type=<span style=color:#2aa198>&#39;set&#39;</span> id=<span style=color:#2aa198>&#39;14&#39;</span> xmlns=<span style=color:#2aa198>&#39;jabber:client&#39;</span><span style=color:#268bd2>&gt;&lt;pubsub</span> xmlns=<span style=color:#2aa198>&#39;http://jabber.org/protocol/pubsub&#39;</span><span style=color:#268bd2>&gt;&lt;publish</span> node=<span style=color:#2aa198>&#39;channel.messages.47e679df381c454928cce4799ab983c8f5afa136&#39;</span><span style=color:#268bd2>&gt;&lt;item&gt;&lt;json</span> xmlns=<span style=color:#2aa198>&#39;urn:xmpp:json:0&#39;</span><span style=color:#268bd2>&gt;</span>{<span style=color:#cb4b16>&amp;quot;</span>message<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;&amp;lt;</span>span<span style=color:#cb4b16>&amp;gt;</span>test message 2<span style=color:#cb4b16>&amp;lt;</span>/span<span style=color:#cb4b16>&amp;gt;&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>sender_name<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>randomcommsID<span style=color:#cb4b16>&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>message_id<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>9cddf1b83bcabd8fbccf7f5487cb0c91cadb9ebe<span style=color:#cb4b16>&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>admin<span style=color:#cb4b16>&amp;quot;</span>:true,<span style=color:#cb4b16>&amp;quot;</span>sender<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>rzr_...@razerzone.com<span style=color:#cb4b16>&amp;quot;</span>}<span style=color:#268bd2>&lt;/json&gt;&lt;/item&gt;&lt;/publish&gt;&lt;/pubsub&gt;&lt;/iq&gt;</span></code></pre></div>
-<p>Response from server:</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#268bd2>&lt;message</span> xmlns=<span style=color:#2aa198>&#39;jabber:client&#39;</span> from=<span style=color:#2aa198>&#39;rzr_...@razerzone.com/generic_chat_LkNii429&#39;</span> to=<span style=color:#2aa198>&#39;rzr_...@razerzone.com/generic_chat_LkNii429&#39;</span> type=<span style=color:#2aa198>&#39;headline&#39;</span><span style=color:#268bd2>&gt;&lt;event</span> xmlns=<span style=color:#2aa198>&#39;http://jabber.org/protocol/pubsub#event&#39;</span><span style=color:#268bd2>&gt;&lt;items</span> xmlns=<span style=color:#2aa198>&#39;http://jabber.org/protocol/pubsub#event&#39;</span> node=<span style=color:#2aa198>&#39;channel.messages.47e679df381c454928cce4799ab983c8f5afa136&#39;</span><span style=color:#268bd2>&gt;&lt;item</span> xmlns=<span style=color:#2aa198>&#39;http://jabber.org/protocol/pubsub#event&#39;</span><span style=color:#268bd2>&gt;&lt;json</span> xmlns=<span style=color:#2aa198>&#39;urn:xmpp:json:0&#39;</span><span style=color:#268bd2>&gt;</span>{<span style=color:#cb4b16>&amp;quot;</span>message<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;&amp;lt;</span>span<span style=color:#cb4b16>&amp;gt;</span>test message 2<span style=color:#cb4b16>&amp;lt;</span>/span<span style=color:#cb4b16>&amp;gt;&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>sender_name<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>randomcommsID<span style=color:#cb4b16>&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>message_id<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>9cddf1b83bcabd8fbccf7f5487cb0c91cadb9ebe<span style=color:#cb4b16>&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>admin<span style=color:#cb4b16>&amp;quot;</span>:true,<span style=color:#cb4b16>&amp;quot;</span>sender<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>rzr_...@razerzone.com<span style=color:#cb4b16>&amp;quot;</span>}<span style=color:#268bd2>&lt;/json&gt;&lt;/item&gt;&lt;/items&gt;&lt;/event&gt;&lt;/message&gt;</span></code></pre></div>
-<p>To remove message boxes, press <code>Enter</code>.</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#268bd2>&lt;iq</span> to=<span style=color:#2aa198>&#39;pubsub.razerzone.com&#39;</span> type=<span style=color:#2aa198>&#39;set&#39;</span> id=<span style=color:#2aa198>&#39;14&#39;</span> xmlns=<span style=color:#2aa198>&#39;jabber:client&#39;</span><span style=color:#268bd2>&gt;&lt;pubsub</span> xmlns=<span style=color:#2aa198>&#39;http://jabber.org/protocol/pubsub&#39;</span><span style=color:#268bd2>&gt;&lt;publish</span> node=<span style=color:#2aa198>&#39;channel.messages.47e679df381c454928cce4799ab983c8f5afa136&#39;</span><span style=color:#268bd2>&gt;&lt;item&gt;&lt;json</span> xmlns=<span style=color:#2aa198>&#39;urn:xmpp:json:0&#39;</span><span style=color:#268bd2>&gt;</span>{<span style=color:#cb4b16>&amp;quot;</span>message<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;&amp;lt;</span>span<span style=color:#cb4b16>&amp;gt;</span>test message 2<span style=color:#cb4b16>&amp;lt;</span>/span<span style=color:#cb4b16>&amp;gt;&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>sender_name<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>randomcommsID<span style=color:#cb4b16>&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>message_id<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>9cddf1b83bcabd8fbccf7f5487cb0c91cadb9ebe<span style=color:#cb4b16>&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>admin<span style=color:#cb4b16>&amp;quot;</span>:true,<span style=color:#cb4b16>&amp;quot;</span>sender<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>rzr_...@razerzone.com<span style=color:#cb4b16>&amp;quot;</span>}<span style=color:#268bd2>&lt;/json&gt;&lt;/item&gt;&lt;/publish&gt;&lt;/pubsub&gt;&lt;/iq&gt;</span>
+</code></pre></div><p>Response from server:</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#268bd2>&lt;message</span> xmlns=<span style=color:#2aa198>&#39;jabber:client&#39;</span> from=<span style=color:#2aa198>&#39;rzr_...@razerzone.com/generic_chat_LkNii429&#39;</span> to=<span style=color:#2aa198>&#39;rzr_...@razerzone.com/generic_chat_LkNii429&#39;</span> type=<span style=color:#2aa198>&#39;headline&#39;</span><span style=color:#268bd2>&gt;&lt;event</span> xmlns=<span style=color:#2aa198>&#39;http://jabber.org/protocol/pubsub#event&#39;</span><span style=color:#268bd2>&gt;&lt;items</span> xmlns=<span style=color:#2aa198>&#39;http://jabber.org/protocol/pubsub#event&#39;</span> node=<span style=color:#2aa198>&#39;channel.messages.47e679df381c454928cce4799ab983c8f5afa136&#39;</span><span style=color:#268bd2>&gt;&lt;item</span> xmlns=<span style=color:#2aa198>&#39;http://jabber.org/protocol/pubsub#event&#39;</span><span style=color:#268bd2>&gt;&lt;json</span> xmlns=<span style=color:#2aa198>&#39;urn:xmpp:json:0&#39;</span><span style=color:#268bd2>&gt;</span>{<span style=color:#cb4b16>&amp;quot;</span>message<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;&amp;lt;</span>span<span style=color:#cb4b16>&amp;gt;</span>test message 2<span style=color:#cb4b16>&amp;lt;</span>/span<span style=color:#cb4b16>&amp;gt;&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>sender_name<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>randomcommsID<span style=color:#cb4b16>&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>message_id<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>9cddf1b83bcabd8fbccf7f5487cb0c91cadb9ebe<span style=color:#cb4b16>&amp;quot;</span>,<span style=color:#cb4b16>&amp;quot;</span>admin<span style=color:#cb4b16>&amp;quot;</span>:true,<span style=color:#cb4b16>&amp;quot;</span>sender<span style=color:#cb4b16>&amp;quot;</span>:<span style=color:#cb4b16>&amp;quot;</span>rzr_...@razerzone.com<span style=color:#cb4b16>&amp;quot;</span>}<span style=color:#268bd2>&lt;/json&gt;&lt;/item&gt;&lt;/items&gt;&lt;/event&gt;&lt;/message&gt;</span>
+</code></pre></div><p>To remove message boxes, press <code>Enter</code>.</p>
 <p><code>al0rt(document.cookie)</code> does nothing.</p>
 <p><strong>we need to find out what is this thing that the JS is running in</strong></p>
 <p>Announcement doesn't work. It seems like announcements are treated as text.</p>
@@ -152,13 +157,15 @@ Connection: close
 <p><code>libcef.dll</code></p>
 <p><strong>Chromium Embedded Framework</strong></p>
 <hr>
-<h2 id=community>Community</h2>
-<p><code>&lt;script>al0rt(1)&lt;/script></code> for community name.
+<h2 id=community>Community
+<a class=header-link href=#community><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p><code>&lt;script>al0rt(1)&lt;/script></code> for community name.
 Also pops up in Options page.</p>
 <p>Change the community name to <code>&lt;script>al0rt(1)&lt;/script></code> in options page, and the al0rt box keeps popping up.</p>
 <p>Description is output encoded.</p>
-<h3 id=community-chat-widget>Community Chat Widget</h3>
-<p>But this is worse than it seems. You can login to chat channels via web. Each channel has an address that the application displays to be embedded in an iframe. The JS gets executed.</p>
+<h3 id=community-chat-widget>Community Chat Widget
+<a class=header-link href=#community-chat-widget><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>But this is worse than it seems. You can login to chat channels via web. Each channel has an address that the application displays to be embedded in an iframe. The JS gets executed.</p>
 <p>e.g.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#268bd2>iframe</span>
     frameborder<span style=color:#719e07>=</span><span style=color:#2aa198>0</span>
@@ -166,8 +173,8 @@ Also pops up in Options page.</p>
     height<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;455px&#34;</span>
     width<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;915px&#34;</span>
     src<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;http://comms.razerzone.com/communities/chatpanel/?id=a21616c17b57afe73b99314753f8828a762795e3&#34;</span>&gt;
-&lt;/<span style=color:#268bd2>iframe</span>&gt;</code></pre></div>
-<p>Chat window is also over HTTP. So login creds can be sniffed.</p>
+&lt;/<span style=color:#268bd2>iframe</span>&gt;
+</code></pre></div><p>Chat window is also over HTTP. So login creds can be sniffed.</p>
 <p>You go to the page, login and injected JS runs.</p>
 <p>Web interface has the same problem. Everything is sent via <code>&lt;span>chatmessage&lt;/span></code> tags but you can just proxy it in Burp and add things normally.</p>
 <p>This is how messages are displayed in the web chat window.</p>
@@ -179,8 +186,8 @@ Also pops up in Options page.</p>
     &lt;<span style=color:#268bd2>span</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;message&#34;</span>&gt;
     &lt;<span style=color:#268bd2>script</span>&gt;al0rt(<span style=color:#2aa198>1</span>)&lt;/<span style=color:#268bd2>script</span>&gt;&lt;/<span style=color:#268bd2>span</span>&gt;
 &lt;/<span style=color:#268bd2>p</span>&gt;
-&lt;/<span style=color:#268bd2>div</span>&gt;</code></pre></div>
-<p><strong><code>123&lt;/span>&lt;/p>&lt;/div>HELLO</code> will make the chat unusable for everyone</strong></p>
+&lt;/<span style=color:#268bd2>div</span>&gt;
+</code></pre></div><p><strong><code>123&lt;/span>&lt;/p>&lt;/div>HELLO</code> will make the chat unusable for everyone</strong></p>
 <p>Seems like I cannot break out of this.</p>
 <p>In the web app, the authorization contains the token.</p>
 <p><code>window.open</code> works in the web app but not in the thick client.</p>
@@ -193,12 +200,13 @@ Also pops up in Options page.</p>
 <p>RazerComms.Model.GamesMgr.LaunchGameAction(Game):</p>
 <p>RazerComms.Model.CommunityMgr.OnCef_CopyToClipboard: This gets executed when we do copy to clipboard in community chat widget page.</p>
 <p><strong>Chrome app.sendMessage</strong></p>
-<p><a href=https://developer.chrome.com/extensions/runtime#method-sendMessage rel=nofollow target=_blank>https://developer.chrome.com/extensions/runtime#method-sendMessage</a></p>
+<p><a href=https://developer.chrome.com/extensions/runtime#method-sendMessage target=_blank rel="noreferrer noopener">https://developer.chrome.com/extensions/runtime#method-sendMessage</a></p>
 <p>Maybe we can use this to change a game and then launch it, or launch it directly?</p>
 <p><code>&lt;script>al0rt(1)&lt;/script></code> works</p>
 <p>Remember the payloads are sent in JSON format. Escape doublequotes with <code>\"</code>.</p>
-<h2 id=spoofing-chat-messages>Spoofing chat messages</h2>
-<p>It is not possible, anything after <code>&lt;div</code> gets filtered out.</p>
+<h2 id=spoofing-chat-messages>Spoofing chat messages
+<a class=header-link href=#spoofing-chat-messages><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>It is not possible, anything after <code>&lt;div</code> gets filtered out.</p>
 <p>Messages in both the application and the web interface are displayed using the following HTML structure:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#268bd2>div</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;chat-item-view&#34;</span>&gt;&lt;<span style=color:#268bd2>p</span>&gt;
     &lt;<span style=color:#268bd2>span</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;name my-message&#34;</span>&gt;
@@ -209,13 +217,14 @@ Also pops up in Options page.</p>
       &lt;<span style=color:#268bd2>span</span>&gt;test2&lt;/<span style=color:#268bd2>span</span>&gt;
     &lt;/<span style=color:#268bd2>span</span>&gt;
 &lt;/<span style=color:#268bd2>p</span>&gt;
-&lt;/<span style=color:#268bd2>div</span>&gt;</code></pre></div>
-<p>This can be easily viewed by right clicking in any chat message and selecting <code>Inspect Element</code> (or a similar name based on the browser) from the context menu.</p>
+&lt;/<span style=color:#268bd2>div</span>&gt;
+</code></pre></div><p>This can be easily viewed by right clicking in any chat message and selecting <code>Inspect Element</code> (or a similar name based on the browser) from the context menu.</p>
 <p>It is possible to inject HTML in the chat channel to spoof messages from another user. For example the following payload will inject a second message from <code>admin</code> to the channel. Note that payloads are sent in JSON format so double quotes are escaped with <code>\"</code>.</p>
-<pre tabindex=0><code>{&#34;message&#34;:&#34;&lt;span&gt;this is the original message&lt;/span&gt;endspan1&lt;/span&gt;&lt;span&gt;endspan2&lt;/p&gt;endp&lt;span&gt;&lt;/div&gt;endmaindiv&lt;div class=\&#34;chat-item-view\&#34;&gt;&lt;p&gt;&lt;span class=\&#34;name my-message\&#34;&gt;spoofedID&lt;/span&gt;&lt;span class=\&#34;timestamp\&#34;&gt;22:40 1/5/2016&lt;/span&gt;&lt;br&gt;&lt;span class=\&#34;message\&#34;&gt;&lt;span&gt;this is the injected message&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&#34;}
+<pre><code>{&quot;message&quot;:&quot;&lt;span&gt;this is the original message&lt;/span&gt;endspan1&lt;/span&gt;&lt;span&gt;endspan2&lt;/p&gt;endp&lt;span&gt;&lt;/div&gt;endmaindiv&lt;div class=\&quot;chat-item-view\&quot;&gt;&lt;p&gt;&lt;span class=\&quot;name my-message\&quot;&gt;spoofedID&lt;/span&gt;&lt;span class=\&quot;timestamp\&quot;&gt;22:40 1/5/2016&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;message\&quot;&gt;&lt;span&gt;this is the injected message&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&quot;}
 
 
-{&#34;message&#34;:&#34;&lt;span&gt;this is the original message&lt;/span&gt;endspan1&lt;/span&gt;&lt;span&gt;endspan2&lt;/p&gt;endp&lt;/div&gt;endmaindiv&lt;div class=\&#34;chat-item-view\&#34;&gt;&lt;p&gt;&lt;span class=\&#34;name my-message\&#34;&gt;spoofedID&lt;/span&gt;&lt;span class=\&#34;timestamp\&#34;&gt;22:40 1/5/2016&lt;/span&gt;&lt;br&gt;&lt;span class=\&#34;message\&#34;&gt;&lt;span&gt;this is the injected message&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&#34;}</code></pre>
+{&quot;message&quot;:&quot;&lt;span&gt;this is the original message&lt;/span&gt;endspan1&lt;/span&gt;&lt;span&gt;endspan2&lt;/p&gt;endp&lt;/div&gt;endmaindiv&lt;div class=\&quot;chat-item-view\&quot;&gt;&lt;p&gt;&lt;span class=\&quot;name my-message\&quot;&gt;spoofedID&lt;/span&gt;&lt;span class=\&quot;timestamp\&quot;&gt;22:40 1/5/2016&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;message\&quot;&gt;&lt;span&gt;this is the injected message&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;}
+</code></pre>
 <p>Anything after <code>&lt;/p></code> gets filtered out :(</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#268bd2>div</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;chat-item-view&#34;</span>&gt;&lt;<span style=color:#268bd2>p</span>&gt;
     &lt;<span style=color:#268bd2>span</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;name my-message&#34;</span>&gt;
@@ -225,16 +234,17 @@ Also pops up in Options page.</p>
     &lt;<span style=color:#268bd2>span</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;message&#34;</span>&gt;
     &lt;<span style=color:#268bd2>span</span>&gt;this is the original message&lt;/<span style=color:#268bd2>span</span>&gt;endspan1endspan2&lt;<span style=color:#268bd2>p</span>&gt;&lt;/<span style=color:#268bd2>p</span>&gt;&lt;/<span style=color:#268bd2>span</span>&gt;
 &lt;/<span style=color:#268bd2>p</span>&gt;
-&lt;/<span style=color:#268bd2>div</span>&gt;</code></pre></div>
-<p>When trying to invite friends, name can contain injected JS.</p>
-<h2 id=annoucement>Annoucement</h2>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#268bd2>div</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;announcement&#34;</span>&gt;
+&lt;/<span style=color:#268bd2>div</span>&gt;
+</code></pre></div><p>When trying to invite friends, name can contain injected JS.</p>
+<h2 id=annoucement>Annoucement
+<a class=header-link href=#annoucement><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#268bd2>div</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;announcement&#34;</span>&gt;
     &lt;<span style=color:#268bd2>span</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;title&#34;</span>&gt;
         ANNOUNCEMENT (Posted by &lt;<span style=color:#268bd2>span</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;sender&#34;</span>&gt;user1&lt;/<span style=color:#268bd2>span</span>&gt;)
     &lt;/<span style=color:#268bd2>span</span>&gt;
     &lt;<span style=color:#268bd2>div</span> class<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;message&#34;</span>&gt;&lt;<span style=color:#268bd2>p</span>&gt;announcement<span style=color:#cb4b16>&amp;lt;</span>123&#34;&lt;/<span style=color:#268bd2>p</span>&gt;&lt;/<span style=color:#268bd2>div</span>&gt;
-&lt;/<span style=color:#268bd2>div</span>&gt;</code></pre></div>
-<hr>
+&lt;/<span style=color:#268bd2>div</span>&gt;
+</code></pre></div><hr>
 <p>First two instances run before we go into the community and chat channel.</p>
 <p>Note the <code>--no-sandbox</code>.</p>
 <p>First instance</p>
@@ -266,16 +276,19 @@ Tags:
 <li><a href=#razer-comms-notes>Razer Comms Notes</a>
 <ul>
 <li><a href=#proxying>Proxying</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#more-random-notes>More Random Notes</a>
 <ul>
 <li><a href=#community>Community</a>
 <ul>
 <li><a href=#community-chat-widget>Community Chat Widget</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#spoofing-chat-messages>Spoofing chat messages</a></li>
 <li><a href=#annoucement>Annoucement</a></li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </nav>
 </section>

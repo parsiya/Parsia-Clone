@@ -14,8 +14,8 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Migration from Octopress to Hugo">
-<meta name=twitter:description content="Migration from Octopress to Hugo Read about it here: https://parsiya.net/blog/2016-02-02-from-octopress-to-hugo/
-For the original imgcap what it should have been
+<meta name=twitter:description content="Migration from Octopress to Hugo  Read about it here: https://parsiya.net/blog/2016-02-02-from-octopress-to-hugo/
+For the original imgcap  what it should have been
 sed -i -- 's/{% imgcap \([^ ]*\) \(.*\) %}/{{< imgcap src=&#34;\1&#34; caption=&#34;\2&#34; >}}/' *.markdown sed -i -- 's/{% imgpopup \([^ ]*\) [^ ]* \(.*\) >}}/{{< imgcap src=&#34;\1&#34; caption=&#34;\2&#34; >}}/' *.markdown sed -i -- 's/{% codeblock lang:\([^ ]*\) \(.*\) >}}/{{< codecaption lang=&#34;\1&#34; title=&#34;\2&#34; >}}/' *.markdown {% codeblock lang:bash creating our root CA >}} {{< codecaption lang=&#34;csharp&#34; title=&#34;RemotingLibrary.">
 <meta name=twitter:domain content="parsiya.io">
 <meta name=twitter:creator content="@CryptoGangsta">
@@ -59,10 +59,12 @@ Migration from Octopress to Hugo
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/random/octopress-migration.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<h1 id=migration-from-octopress-to-hugo>Migration from Octopress to Hugo</h1>
-<p>Read about it here: <a href=https://parsiya.net/blog/2016-02-02-from-octopress-to-hugo/ rel=nofollow target=_blank>https://parsiya.net/blog/2016-02-02-from-octopress-to-hugo/</a></p>
-<h2 id=for-the-original-imgcap>For the original imgcap</h2>
-<p>what it should have been</p>
+<h1 id=migration-from-octopress-to-hugo>Migration from Octopress to Hugo
+<a class=header-link href=#migration-from-octopress-to-hugo><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Read about it here: <a href=https://parsiya.net/blog/2016-02-02-from-octopress-to-hugo/ target=_blank rel="noreferrer noopener">https://parsiya.net/blog/2016-02-02-from-octopress-to-hugo/</a></p>
+<h2 id=for-the-original-imgcap>For the original imgcap
+<a class=header-link href=#for-the-original-imgcap><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>what it should have been</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sed -i -- <span style=color:#2aa198>&#39;s/{% imgcap \([^ ]*\) \(.*\) %}/{{&lt; imgcap src=&#34;\1&#34; caption=&#34;\2&#34; &gt;}}/&#39;</span> *.markdown
 
 sed -i -- <span style=color:#2aa198>&#39;s/{% imgpopup \([^ ]*\) [^ ]* \(.*\) &gt;}}/{{&lt; imgcap src=&#34;\1&#34; caption=&#34;\2&#34; &gt;}}/&#39;</span> *.markdown
@@ -92,7 +94,8 @@ rd /q public
 hugo
 python s3cmd sync --acl-public --delete-removed -MP --rr public/ s3://parsiya.net
 python s3cmd --acl-public --no-preserve --mime-type<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;text/css&#34;</span> put public/css/hugo-octopress.css s3://parsiya.net/css/hugo-octopress.css
-rd /q public</code></pre></div>
+rd /q public
+</code></pre></div>
 </div>
 <footer>
 <p class=meta>
@@ -112,7 +115,8 @@ Tags:
 <li><a href=#migration-from-octopress-to-hugo>Migration from Octopress to Hugo</a>
 <ul>
 <li><a href=#for-the-original-imgcap>For the original imgcap</a></li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </nav>
 </section>

@@ -14,9 +14,9 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Ubuntu Setup after Installation">
-<meta name=twitter:description content="Ubuntu Setup after Installation Every once in a while I setup a new Ubuntu VM and I have to redo all these steps. This will help me speed things up.
- VM Specifications Install Virtualization Plugins  VirtualBox VMWare  Set Keyboard Shortcuts Install Useful Packages Disable Screenlock and Screensaver Install Go 1.10 Edit .bashrc Install VS Code Install Docker - Optional  
-VM Specifications  RAM: 4GB. VGA memory: 128MB (max) in VirtualBox and 1GB in VMWare.">
+<meta name=twitter:description content="Ubuntu Setup after Installation  Every once in a while I setup a new Ubuntu VM and I have to redo all these steps. This will help me speed things up.
+ VM Specifications Install Virtualization Plugins  VirtualBox VMWare   Set Keyboard Shortcuts Install Useful Packages Disable Screenlock and Screensaver Install Go 1.10 Edit .bashrc Install VS Code Install Docker - Optional  
+VM Specifications   RAM: 4GB.">
 <meta name=twitter:domain content="parsiya.io">
 <meta name=twitter:creator content="@CryptoGangsta">
 </head>
@@ -59,15 +59,17 @@ Ubuntu Setup after Installation
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/configs/ubuntu-16-setup.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<h1 id=ubuntu-setup-after-installation>Ubuntu Setup after Installation</h1>
-<p>Every once in a while I setup a new Ubuntu VM and I have to redo all these steps. This will help me speed things up.</p>
+<h1 id=ubuntu-setup-after-installation>Ubuntu Setup after Installation
+<a class=header-link href=#ubuntu-setup-after-installation><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Every once in a while I setup a new Ubuntu VM and I have to redo all these steps. This will help me speed things up.</p>
 <ul>
 <li><a href=#vm-specifications>VM Specifications</a></li>
 <li><a href=#install-virtualization-plugins>Install Virtualization Plugins</a>
 <ul>
 <li><a href=#virtualbox>VirtualBox</a></li>
 <li><a href=#vmware>VMWare</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#set-keyboard-shortcuts>Set Keyboard Shortcuts</a></li>
 <li><a href=#install-useful-packages>Install Useful Packages</a></li>
 <li><a href=#disable-screenlock-and-screensaver>Disable Screenlock and Screensaver</a></li>
@@ -77,19 +79,22 @@ Ubuntu Setup after Installation
 <li><a href=#install-docker---optional>Install Docker - Optional</a></li>
 </ul>
 <p><a id=vm-specifications></a></p>
-<h1 id=vm-specifications>VM Specifications</h1>
-<ul>
+<h1 id=vm-specifications>VM Specifications
+<a class=header-link href=#vm-specifications><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><ul>
 <li>RAM: 4GB.</li>
 <li>VGA memory: 128MB (max) in VirtualBox and 1GB in VMWare.</li>
 <li>Enable 3D acceleration.</li>
 <li>Disk space: 30 or 40GB.</li>
 </ul>
 <p><a id=install-virtualization-plugins></a></p>
-<h1 id=install-virtualization-plugins>Install Virtualization Plugins</h1>
-<p>These allow clipboard copy/paste and sometimes even drag/drop.</p>
+<h1 id=install-virtualization-plugins>Install Virtualization Plugins
+<a class=header-link href=#install-virtualization-plugins><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>These allow clipboard copy/paste and sometimes even drag/drop.</p>
 <p><a id=virtualbox></a></p>
-<h2 id=virtualbox>VirtualBox</h2>
-<ol>
+<h2 id=virtualbox>VirtualBox
+<a class=header-link href=#virtualbox><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><ol>
 <li>If the VM does not have a CD-ROM, shut it down, add one and launch.</li>
 <li>Load the guest additions ISO: <code>Devices > Insert Guest Additions CD Image...</code>.</li>
 <li>Navigate to the mounted drive.</li>
@@ -100,56 +105,70 @@ Ubuntu Setup after Installation
 <li><code>Devices > Drag and Drop > Bidirectional</code>.
 <ul>
 <li>Dropped files will be in <code>/tmp/VirtualBox Dropped Files</code> and the directory is deleted on boot.</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Restart.</li>
 <li>Profit.</li>
 </ol>
 <p><a id=vmware></a></p>
-<h2 id=vmware>VMWare</h2>
-<ol>
+<h2 id=vmware>VMWare
+<a class=header-link href=#vmware><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><ol>
 <li><code>sudo open-vm-tools open-vm-tools-desktop</code>.</li>
 <li>Restart.</li>
 <li>Shared clipboard will work, not sure about files.</li>
 </ol>
 <p><a id=set-keyboard-shortcuts></a></p>
-<h1 id=set-keyboard-shortcuts>Set Keyboard Shortcuts</h1>
-<p>Set at <code>System Settings > Keyboard > Shortcuts</code>.</p>
+<h1 id=set-keyboard-shortcuts>Set Keyboard Shortcuts
+<a class=header-link href=#set-keyboard-shortcuts><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Set at <code>System Settings > Keyboard > Shortcuts</code>.</p>
 <ul>
 <li><code>Custom Shortcuts > New</code> - Name: <code>terminal</code> - Command: <code>gnome-terminal</code> - Key: <code>Super+R</code>.</li>
 <li><code>Navigation > Hide all normal windows</code> - change to <code>Super+D</code>. Works after logout.</li>
 </ul>
 <p><a id=install-useful-packages></a></p>
-<h1 id=install-useful-packages>Install Useful Packages</h1>
-<p>Some packages are not installed by default.</p>
+<h1 id=install-useful-packages>Install Useful Packages
+<a class=header-link href=#install-useful-packages><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Some packages are not installed by default.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get update
-sudo apt-get install curl git libltdl-dev </code></pre></div>
-<p><a id=disable-screenlock-and-screensaver></a></p>
-<h1 id=disable-screenlock-and-screensaver>Disable Screenlock and Screensaver</h1>
-<p>No reason to have them in a VM.</p>
-<p><code>Settings > Brightness & Lock</code>:
-- Set lock to off.
-- <code>Turn screen off when inactive for: Never</code>.</p>
+sudo apt-get install curl git libltdl-dev 
+</code></pre></div><p><a id=disable-screenlock-and-screensaver></a></p>
+<h1 id=disable-screenlock-and-screensaver>Disable Screenlock and Screensaver
+<a class=header-link href=#disable-screenlock-and-screensaver><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>No reason to have them in a VM.</p>
+<p><code>Settings > Brightness & Lock</code>:</p>
+<ul>
+<li>Set lock to off.</li>
+<li><code>Turn screen off when inactive for: Never</code>.</li>
+</ul>
 <p><a id=install-go-110></a></p>
-<h1 id=install-go-1-10>Install Go 1.10</h1>
-<p>Current <code>golang</code> package is not up to date.</p>
+<h1 id=install-go-110>Install Go 1.10
+<a class=header-link href=#install-go-110><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Current <code>golang</code> package is not up to date.</p>
 <ol>
 <li><code>sudo apt-get update</code>.</li>
 <li><code>sudo apt-get install golang-1.10</code>.
 <ul>
 <li>This will install go in <code>/usr/lib/go-1.10/</code>.</li>
-</ul></li>
+</ul>
+</li>
 <li>I don't like the default <code>GOPATH</code> (<code>/home/$USER/go</code>). I prefer files to be on desktop.
 <ul>
 <li><code>mkdir -p /home/$USER/Desktop/Go/{src,bin,pkg}</code>.</li>
-</ul></li>
+</ul>
+</li>
 </ol>
 <p><a id=edit-bashrc></a></p>
-<h1 id=edit-bashrc>Edit .bashrc</h1>
-<p>Inb4 that's not the correct way to do this.</p>
-<p>Set <code>GOROOT</code> and new <code>GOPATH</code> to PATH:
-- <code>export PATH="/usr/lib/go-1.10/bin:/home/$USER/Desktop/Go/bin:$PATH"</code>.
-- <code>export GOPATH="/home/$USER/Desktop/Go"</code>.</p>
+<h1 id=edit-bashrc>Edit .bashrc
+<a class=header-link href=#edit-bashrc><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Inb4 that's not the correct way to do this.</p>
+<p>Set <code>GOROOT</code> and new <code>GOPATH</code> to PATH:</p>
+<ul>
+<li><code>export PATH="/usr/lib/go-1.10/bin:/home/$USER/Desktop/Go/bin:$PATH"</code>.</li>
+<li><code>export GOPATH="/home/$USER/Desktop/Go"</code>.</li>
+</ul>
 <p>Navigate to <code>Desktop</code> in every new terminal (this will cause errors if terminals are opened in other paths):</p>
 <ul>
 <li><code>cd Desktop</code>.</li>
@@ -159,42 +178,44 @@ sudo apt-get install curl git libltdl-dev </code></pre></div>
 <li><code>source ~/.bashrc</code>.</li>
 </ul>
 <p><a id=install-vs-code></a></p>
-<h1 id=install-vs-code>Install VS Code</h1>
-<p>Electron app, so be sure to <del>download more RAM</del> assign lots of RAM to VM.</p>
-<p>Copied from <a href=https://code.visualstudio.com/docs/setup/linux#_installation rel=nofollow target=_blank>official instructions</a>:</p>
+<h1 id=install-vs-code>Install VS Code
+<a class=header-link href=#install-vs-code><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Electron app, so be sure to <del>download more RAM</del> assign lots of RAM to VM.</p>
+<p>Copied from <a href=https://code.visualstudio.com/docs/setup/linux#_installation target=_blank rel="noreferrer noopener">official instructions</a>:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c <span style=color:#2aa198>&#39;echo &#34;deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main&#34; &gt; /etc/apt/sources.list.d/vscode.list&#39;</span>
 sudo apt-get update
-sudo apt-get install code</code></pre></div>
-<p><a id=install-docker---optional></a></p>
-<h1 id=install-docker-optional>Install Docker - Optional</h1>
-<p>Instead of using the <code>docker.io</code> package through aptitude, use the official instructions at:</p>
+sudo apt-get install code
+</code></pre></div><p><a id=install-docker---optional></a></p>
+<h1 id=install-docker---optional>Install Docker - Optional
+<a class=header-link href=#install-docker---optional><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Instead of using the <code>docker.io</code> package through aptitude, use the official instructions at:</p>
 <ul>
-<li><p><a href=https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce rel=nofollow target=_blank>https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce</a></p>
+<li><a href=https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce target=_blank rel="noreferrer noopener">https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce</a></li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get install <span style=color:#cb4b16>\
-</span><span style=color:#cb4b16></span>apt-transport-https <span style=color:#cb4b16>\
-</span><span style=color:#cb4b16></span>ca-certificates <span style=color:#cb4b16>\
-</span><span style=color:#cb4b16></span>curl <span style=color:#cb4b16>\
-</span><span style=color:#cb4b16></span>software-properties-common
+</span><span style=color:#cb4b16></span>    apt-transport-https <span style=color:#cb4b16>\
+</span><span style=color:#cb4b16></span>    ca-certificates <span style=color:#cb4b16>\
+</span><span style=color:#cb4b16></span>    curl <span style=color:#cb4b16>\
+</span><span style=color:#cb4b16></span>    software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 sudo apt-key fingerprint 0EBFCD88 <span style=color:#586e75># This might change in the future</span>
 
 sudo add-apt-repository <span style=color:#cb4b16>\
-</span><span style=color:#cb4b16></span><span style=color:#2aa198>&#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-</span><span style=color:#2aa198></span><span style=color:#719e07>$(</span>lsb_release -cs<span style=color:#719e07>)</span><span style=color:#2aa198> \
-</span><span style=color:#2aa198>stable&#34;</span>
+</span><span style=color:#cb4b16></span>   <span style=color:#2aa198>&#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+</span><span style=color:#2aa198>   </span><span style=color:#719e07>$(</span>lsb_release -cs<span style=color:#719e07>)</span><span style=color:#2aa198> \
+</span><span style=color:#2aa198>   stable&#34;</span>
 
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-compose
 
 <span style=color:#586e75># Test</span>
-sudo docker run hello-world</code></pre></div></li>
-</ul>
-<p>If <code>docker-compose</code> does not work after installation and you get this error message <code>Couldn't connect to Docker daemon at http+unix://var/run/docker.sock</code> or <a href=https://github.com/docker/compose/issues/1214#issuecomment-102246925 rel=nofollow target=_blank>something similar</a>, add yourself to the <code>docker</code> group, logout and login:</p>
+sudo docker run hello-world
+</code></pre></div><p>If <code>docker-compose</code> does not work after installation and you get this error message <code>Couldn't connect to Docker daemon at http+unix://var/run/docker.sock</code> or <a href=https://github.com/docker/compose/issues/1214#issuecomment-102246925 target=_blank rel="noreferrer noopener">something similar</a>, add yourself to the <code>docker</code> group, logout and login:</p>
 <ul>
 <li><code>usermod -aG docker ${USER}</code></li>
 </ul>
@@ -220,14 +241,15 @@ Tags:
 <ul>
 <li><a href=#virtualbox>VirtualBox</a></li>
 <li><a href=#vmware>VMWare</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#set-keyboard-shortcuts>Set Keyboard Shortcuts</a></li>
 <li><a href=#install-useful-packages>Install Useful Packages</a></li>
 <li><a href=#disable-screenlock-and-screensaver>Disable Screenlock and Screensaver</a></li>
-<li><a href=#install-go-1-10>Install Go 1.10</a></li>
+<li><a href=#install-go-110>Install Go 1.10</a></li>
 <li><a href=#edit-bashrc>Edit .bashrc</a></li>
 <li><a href=#install-vs-code>Install VS Code</a></li>
-<li><a href=#install-docker-optional>Install Docker - Optional</a></li>
+<li><a href=#install-docker---optional>Install Docker - Optional</a></li>
 </ul>
 </nav>
 </section>

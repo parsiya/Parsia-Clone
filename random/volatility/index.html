@@ -14,12 +14,11 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Volatility on Windows Notes">
-<meta name=twitter:description content="rekal http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html
-rekal -v live vmscan Admin cmd will not work because virtualbox is running as normal user?
-$ VBoxManage.exe list runningvms $ VBoxManage debugvm &#34;Debian3 Clone&#34; dumpvmcore --filename e:\test1uname -r 3.16.0-4-amd64 cat /etc/*-release Debian GNU/Linux 8 (Jessie) Volatility Volatility Standalone Windows does not have Linux profiles, copy them all to a directory called profiles and load them with --plugins=profiles.
+<meta name=twitter:description content="rekal  http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html
+rekal -v live  vmscan  Admin cmd will not work because virtualbox is running as normal user?
+$ VBoxManage.exe list runningvms $ VBoxManage debugvm &#34;Debian3 Clone&#34; dumpvmcore --filename e:\test1 uname -r 3.16.0-4-amd64 cat /etc/*-release Debian GNU/Linux 8 (Jessie)  Volatility  Volatility Standalone Windows does not have Linux profiles, copy them all to a directory called profiles and load them with --plugins=profiles.
 Download profiles:
- https://github.com/volatilityfoundation/profiles https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile  Then run
- vol.">
+ https://github.">
 <meta name=twitter:domain content="parsiya.io">
 <meta name=twitter:creator content="@CryptoGangsta">
 </head>
@@ -62,24 +61,30 @@ Volatility on Windows Notes
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/random/volatility/index.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<h1 id=rekal>rekal</h1>
-<p><a href=http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html rel=nofollow target=_blank>http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html</a></p>
-<pre tabindex=0><code>rekal -v live</code></pre>
-<h2 id=vmscan>vmscan</h2>
-<p>Admin cmd will not work because virtualbox is running as normal user?</p>
+<h1 id=rekal>rekal
+<a class=header-link href=#rekal><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p><a href=http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html target=_blank rel="noreferrer noopener">http://blog.rekall-forensic.com/2014/10/vm-discovery-and-introspection-with.html</a></p>
+<pre tabindex=0><code>rekal -v live
+</code></pre>
+<h2 id=vmscan>vmscan
+<a class=header-link href=#vmscan><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Admin cmd will not work because virtualbox is running as normal user?</p>
 <pre tabindex=0><code>$ VBoxManage.exe list runningvms
 
-$ VBoxManage debugvm &#34;Debian3 Clone&#34; dumpvmcore --filename e:\test1</code></pre><pre tabindex=0><code>uname -r
+$ VBoxManage debugvm &quot;Debian3 Clone&quot; dumpvmcore --filename e:\test1
+</code></pre><pre tabindex=0><code>uname -r
 3.16.0-4-amd64
 
 cat /etc/*-release
-Debian GNU/Linux 8 (Jessie)</code></pre>
-<h1 id=volatility>Volatility</h1>
-<p>Volatility Standalone Windows does not have Linux profiles, copy them all to a directory called <code>profiles</code> and load them with <code>--plugins=profiles</code>.</p>
+Debian GNU/Linux 8 (Jessie)
+</code></pre>
+<h1 id=volatility>Volatility
+<a class=header-link href=#volatility><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Volatility Standalone Windows does not have Linux profiles, copy them all to a directory called <code>profiles</code> and load them with <code>--plugins=profiles</code>.</p>
 <p>Download profiles:</p>
 <ul>
-<li><a href=https://github.com/volatilityfoundation/profiles rel=nofollow target=_blank>https://github.com/volatilityfoundation/profiles</a></li>
-<li><a href=https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile rel=nofollow target=_blank>https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile</a></li>
+<li><a href=https://github.com/volatilityfoundation/profiles target=_blank rel="noreferrer noopener">https://github.com/volatilityfoundation/profiles</a></li>
+<li><a href=https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile target=_blank rel="noreferrer noopener">https://github.com/volatilityfoundation/volatility/wiki/Linux#making-the-profile</a></li>
 </ul>
 <p>Then run</p>
 <ul>
@@ -97,17 +102,20 @@ ERROR   : volatility.debug    : This command does not support the profile LinuxD
 
 LinuxAMD64PagedMemory
 
-AMD64PagedMemory</code></pre>
-<h2 id=plugins>Plugins?</h2>
-<ul>
+AMD64PagedMemory
+</code></pre>
+<h2 id=plugins>Plugins?
+<a class=header-link href=#plugins><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><ul>
 <li><code>truecryptmaster</code>: Recover TrueCrypt 7.1a Master Keys</li>
 <li><code>truecryptpassphrase</code>: TrueCrypt Cached Passphrase Finder</li>
 <li><code>truecryptsummary</code>: TrueCrypt Summary</li>
 </ul>
-<h1 id=swap-digger>Swap Digger</h1>
-<p>Swap digger to get Linux password from swap file:</p>
+<h1 id=swap-digger>Swap Digger
+<a class=header-link href=#swap-digger><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Swap digger to get Linux password from swap file:</p>
 <ul>
-<li><a href=https://github.com/sevagas/swap_digger rel=nofollow target=_blank>https://github.com/sevagas/swap_digger</a></li>
+<li><a href=https://github.com/sevagas/swap_digger target=_blank rel="noreferrer noopener">https://github.com/sevagas/swap_digger</a></li>
 </ul>
 </div>
 <footer>
@@ -128,11 +136,13 @@ Tags:
 <li><a href=#rekal>rekal</a>
 <ul>
 <li><a href=#vmscan>vmscan</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#volatility>Volatility</a>
 <ul>
 <li><a href=#plugins>Plugins?</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#swap-digger>Swap Digger</a></li>
 </ul>
 </nav>

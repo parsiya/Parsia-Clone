@@ -14,7 +14,7 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="CyberAces PowerShell Notes">
-<meta name=twitter:description content="SANS Cyberaces PowerShell Streaming Tutorial Notes SANS has some free streaming tutorials. You can see them here: https://tutorials.cyberaces.org/tutorials
+<meta name=twitter:description content="SANS Cyberaces PowerShell Streaming Tutorial Notes  SANS has some free streaming tutorials. You can see them here: https://tutorials.cyberaces.org/tutorials
 This is pretty basic but I think the notes will act as a good summary that people can read instead of watching the videos. These notes are now loosely based on the videos and have a lot of items that I have added. If you follow the videos and read the notes, the sequence of topics may not match.">
 <meta name=twitter:domain content="parsiya.io">
 <meta name=twitter:creator content="@CryptoGangsta">
@@ -65,53 +65,62 @@ CyberAces PowerShell Notes
 <li>
 <ul>
 <li><a href=#case-sensitivity>Case Sensitivity</a></li>
-</ul></li>
-<li><a href=#how-to-get-help-this-is-your-best-friend>How to Get Help - This is Your Best Friend</a>
+</ul>
+</li>
+<li><a href=#how-to-get-help---this-is-your-best-friend>How to Get Help - This is Your Best Friend</a>
 <ul>
 <li><a href=#get-help-or-help-or-man>Get-Help or help or man</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#aliases>Aliases</a>
 <ul>
 <li><a href=#get-alias-cmdlet>Get-Alias Cmdlet</a></li>
 <li><a href=#set-alias>Set-Alias</a></li>
 <li><a href=#common-aliases-between-powershell-and-bash>Common Aliases Between PowerShell and Bash</a></li>
-</ul></li>
-<li><a href=#session-1-introduction-to-powershell>Session 1 - Introduction to PowerShell</a>
+</ul>
+</li>
+<li><a href=#session-1---introduction-to-powershell>Session 1 - Introduction to PowerShell</a>
 <ul>
 <li><a href=#naming-convention>Naming Convention</a></li>
 <li><a href=#parameters>Parameters</a></li>
 <li><a href=#get-member>Get-Member</a></li>
 <li><a href=#piping>Piping</a></li>
-</ul></li>
-<li><a href=#session-2-cmdlets>Session 2 - Cmdlets</a>
+</ul>
+</li>
+<li><a href=#session-2---cmdlets>Session 2 - Cmdlets</a>
 <ul>
 <li><a href=#get-childitem>Get-ChildItem</a>
 <ul>
 <li><a href=#read-registry>Read Registry</a></li>
 <li><a href=#read-windows-certificate-store>Read Windows Certificate Store</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#cd-or-change-directory>cd or Change Directory</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#session-3-scripting-variables-and-syntax>Session 3: Scripting, Variables and Syntax</a>
 <ul>
 <li><a href=#executionpolicy>ExecutionPolicy</a></li>
 <li><a href=#variables>Variables</a>
 <ul>
 <li><a href=#variable-types>Variable Types</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#arrays>Arrays</a></li>
 <li><a href=#get-member-1>Get-Member</a>
 <ul>
 <li><a href=#get-childitem-variable>Get-ChildItem variable:</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#user-properties-of-cmdlet-output>User Properties of Cmdlet Output</a></li>
 <li><a href=#double-quotes-vs-single-quotes>Double Quotes vs. Single Quotes</a></li>
-</ul></li>
-<li><a href=#section-4-flow-control>Section 4 - Flow Control</a>
+</ul>
+</li>
+<li><a href=#section-4---flow-control>Section 4 - Flow Control</a>
 <ul>
-<li><a href=#whatif-confirm-verbose>WhatIf - Confirm - Verbose</a></li>
+<li><a href=#whatif---confirm---verbose>WhatIf - Confirm - Verbose</a></li>
 <li><a href=#operators>Operators</a></li>
-<li><a href=#if-then-else>If - Then - Else</a></li>
+<li><a href=#if---then---else>If - Then - Else</a></li>
 <li><a href=#where-object-filtering>Where-Object Filtering</a></li>
 <li><a href=#foreach-object>ForEach-Object</a></li>
 <li><a href=#select-object>Select-Object</a></li>
@@ -119,32 +128,38 @@ CyberAces PowerShell Notes
 <li><a href=#file-output>File Output</a></li>
 <li><a href=#export-csv-and-import-csv>Export-CSV and Import-CSV</a></li>
 <li><a href=#measure-object>Measure-Object</a></li>
-</ul></li>
-<li><a href=#section-5-practical-uses-conclusion>Section 5 - Practical Uses & Conclusion</a>
+</ul>
+</li>
+<li><a href=#section-5---practical-uses--conclusion>Section 5 - Practical Uses & Conclusion</a>
 <ul>
 <li><a href=#ping-all-ips-in-a-range>Ping All IPs in a Range</a></li>
 <li><a href=#process-manipulation>Process Manipulation</a></li>
-<li><a href=#verb>-Verb</a></li>
+<li><a href=#-verb>-Verb</a></li>
 <li><a href=#iterate-through-files-in-a-folder>Iterate Through Files in a Folder</a></li>
 <li><a href=#get-filehash>Get-FileHash</a></li>
 <li><a href=#select-string-almost-like-grep>Select-String (almost like grep)</a></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </nav>
-<h1 id=sans-cyberaces-powershell-streaming-tutorial-notes>SANS Cyberaces PowerShell Streaming Tutorial Notes</h1>
-<p>SANS has some free streaming tutorials. You can see them here:
-<a href=https://tutorials.cyberaces.org/tutorials rel=nofollow target=_blank>https://tutorials.cyberaces.org/tutorials</a></p>
+<h1 id=sans-cyberaces-powershell-streaming-tutorial-notes>SANS Cyberaces PowerShell Streaming Tutorial Notes
+<a class=header-link href=#sans-cyberaces-powershell-streaming-tutorial-notes><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>SANS has some free streaming tutorials. You can see them here:
+<a href=https://tutorials.cyberaces.org/tutorials target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials</a></p>
 <p>This is pretty basic but I think the notes will act as a good summary that
 people can read instead of watching the videos. These notes are now loosely
 based on the videos and have a lot of items that I have added. If you follow the
 videos and read the notes, the sequence of topics may not match.</p>
-<h3 id=case-sensitivity>Case Sensitivity</h3>
-<p>I usually write the cmdlets in camel case but you usually do not have to. E.g.,
+<h3 id=case-sensitivity>Case Sensitivity
+<a class=header-link href=#case-sensitivity><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>I usually write the cmdlets in camel case but you usually do not have to. E.g.,
 <code>man Get-ChildItem</code> and <code>man get-childitem</code> both work. Camel case helps with
 readability.</p>
-<h2 id=how-to-get-help-this-is-your-best-friend>How to Get Help - This is Your Best Friend</h2>
-<ul>
+<h2 id=how-to-get-help---this-is-your-best-friend>How to Get Help - This is Your Best Friend
+<a class=header-link href=#how-to-get-help---this-is-your-best-friend><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><ul>
 <li>Before you start, open an admin PowerShell prompt and run <code>Update-Help</code>. In a
 normal prompt, not all modules can be updated. This may take a few minutes.</li>
 <li>After that you can essentially do <code>help command</code> or <code>help command -Examples</code>
@@ -152,12 +167,14 @@ normal prompt, not all modules can be updated. This may take a few minutes.</li>
 <ul>
 <li>If the help page is longer than one screen you can do
 <code>help command -Examples | more</code> to paginate it.</li>
-</ul></li>
+</ul>
+</li>
 <li><code>Get-Help command -Full</code> shows everything so might want to paginate it all the
 time.</li>
 </ul>
-<h3 id=get-help-or-help-or-man>Get-Help or help or man</h3>
-<p>Displays help. For example: <code>Get-Help ls</code> or <code>help ls</code> or <code>man ls</code>.</p>
+<h3 id=get-help-or-help-or-man>Get-Help or help or man
+<a class=header-link href=#get-help-or-help-or-man><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Displays help. For example: <code>Get-Help ls</code> or <code>help ls</code> or <code>man ls</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>get-help</span> <span style=color:#b58900>ls
 </span><span style=color:#b58900></span>NAME
     <span style=color:#b58900>Get-ChildItem</span>
@@ -184,27 +201,30 @@ REMARKS
     <span style=color:#b58900>Get-Help</span> cannot find the Help files <span style=color:#719e07>for</span> this cmdlet on this computer. It is displaying only partial help.
         -- To download and install Help files <span style=color:#719e07>for</span> the module that includes this cmdlet, use <span style=color:#b58900>Update-Help</span>.
         -- To view the Help topic <span style=color:#719e07>for</span> this cmdlet online, type: <span style=color:#2aa198>&#34;Get-Help Get-ChildItem -Online&#34;</span> or
-           go to http://go.microsoft.com/fwlink/<span style=color:#719e07>?</span>LinkID=113308.</code></pre></div>
-<ul>
+           go to http://go.microsoft.com/fwlink/<span style=color:#719e07>?</span>LinkID=113308.
+</code></pre></div><ul>
 <li>In order to <code>Update-Help</code> run in it an admin PowerShell window. Otherwise, it
 cannot update all modules. It takes a while to update everything.</li>
-<li><p>By default it does not show all the help. We can use <code>-Full</code> or <code>-Examples</code> to
-show more. Warning <code>-Full</code> returns a ton of stuff.</p>
+<li>By default it does not show all the help. We can use <code>-Full</code> or <code>-Examples</code> to
+show more. Warning <code>-Full</code> returns a ton of stuff.</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt; <span style=color:#b58900>get-help</span> <span style=color:#b58900>ls </span>-examples
 NAME
-<span style=color:#b58900>Get-ChildItem</span>
+    <span style=color:#b58900>Get-ChildItem</span>
 
 SYNOPSIS
-Gets the items and child items <span style=color:#719e07>in</span> one or more specified locations.
+    Gets the items and child items <span style=color:#719e07>in</span> one or more specified locations.
 
-Example 1: Get child items <span style=color:#719e07>in</span> the current directory
+    Example 1: Get child items <span style=color:#719e07>in</span> the current directory
 
-<span style=color:#b58900>PS </span>C:\&gt;<span style=color:#b58900>Get-ChildItem</span>
+    <span style=color:#b58900>PS </span>C:\&gt;<span style=color:#b58900>Get-ChildItem</span>
 
-This command gets the child items <span style=color:#719e07>in</span> the current location. <span style=color:#719e07>If</span> the location is a file system directory, it gets the
-files and <span style=color:#b58900>sub-directories</span> <span style=color:#719e07>in</span> the current directory. <span style=color:#719e07>If</span> the item does not have child items, this command returns to
-the command prompt without displaying anything.</code></pre></div></li>
-<li><p>You can filter by Noun. For example <code>Get-Command -Noun Service</code>:</p>
+    This command gets the child items <span style=color:#719e07>in</span> the current location. <span style=color:#719e07>If</span> the location is a file system directory, it gets the
+    files and <span style=color:#b58900>sub-directories</span> <span style=color:#719e07>in</span> the current directory. <span style=color:#719e07>If</span> the item does not have child items, this command returns to
+    the command prompt without displaying anything.
+</code></pre></div><ul>
+<li>You can filter by Noun. For example <code>Get-Command -Noun Service</code>:</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Command</span> -Noun service
 
 CommandType     Name                                               Version    Source
@@ -216,9 +236,11 @@ Cmdlet          <span style=color:#b58900>Resume-Service</span>                 
 Cmdlet          <span style=color:#b58900>Set-Service</span>                                        3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          <span style=color:#b58900>Start-Service</span>                                      3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          <span style=color:#b58900>Stop-Service</span>                                       3.1.0.0    Microsoft.PowerShell.Management
-Cmdlet          <span style=color:#b58900>Suspend-Service</span>                                    3.1.0.0    Microsoft.PowerShell.Management</code></pre></div></li>
-<li><p>Or filter by Module. Useful for 3rd party modules. E.g.,
-<code>Get-Command -Module Microsoft.PowerShell.Core</code>:</p>
+Cmdlet          <span style=color:#b58900>Suspend-Service</span>                                    3.1.0.0    Microsoft.PowerShell.Management
+</code></pre></div><ul>
+<li>Or filter by Module. Useful for 3rd party modules. E.g.,
+<code>Get-Command -Module Microsoft.PowerShell.Core</code>:</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Command</span> -Module Microsoft.PowerShell.Core
 
 CommandType     Name                                               Version    Source
@@ -228,56 +250,66 @@ Cmdlet          <span style=color:#b58900>Add-PSSnapin</span>                   
 Cmdlet          <span style=color:#b58900>Clear-History</span>                                      3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          <span style=color:#b58900>Connect-PSSession</span>                                  3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          <span style=color:#b58900>Debug-Job</span>                                          3.0.0.0    Microsoft.PowerShell.Core
-Cmdlet          <span style=color:#b58900>Disable-PSRemoting</span>                                 3.0.0.0    Microsoft.PowerShell.Core</code></pre></div></li>
-<li><p>It also has this search feature. If you do not know what exactly you are
+Cmdlet          <span style=color:#b58900>Disable-PSRemoting</span>                                 3.0.0.0    Microsoft.PowerShell.Core
+</code></pre></div><ul>
+<li>It also has this search feature. If you do not know what exactly you are
 looking for, just do <code>man whatever</code> and it will find you the cmdlets that have
-<code>whatever</code> in them:</p>
+<code>whatever</code> in them:</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>man </span>executionpolicy
 
 Name                              Category  Module                    Synopsis
 ----                              --------  ------                    --------
 <span style=color:#b58900>Get-ExecutionPolicy</span>               Cmdlet    Microsoft.PowerShell.S... Gets the execution policies <span style=color:#719e07>for</span> the current se...
-<span style=color:#b58900>Set-ExecutionPolicy</span>               Cmdlet    Microsoft.PowerShell.S... Changes the user preference <span style=color:#719e07>for</span> the Windows Po...</code></pre></div></li>
-</ul>
-<h2 id=aliases>Aliases</h2>
-<p>Some commands have aliases.</p>
+<span style=color:#b58900>Set-ExecutionPolicy</span>               Cmdlet    Microsoft.PowerShell.S... Changes the user preference <span style=color:#719e07>for</span> the Windows Po...
+</code></pre></div>
+<h2 id=aliases>Aliases
+<a class=header-link href=#aliases><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Some commands have aliases.</p>
 <ul>
 <li>For example <code>dir</code> or <code>ls</code> both work because they are aliases of <code>Get-ChildItem</code>.</li>
 <li>You can create, delete and modify aliases.</li>
 </ul>
-<h3 id=get-alias-cmdlet>Get-Alias Cmdlet</h3>
-<ul>
-<li><a href=https://technet.microsoft.com/en-us/library/ee176839.aspx rel=nofollow target=_blank>https://technet.microsoft.com/en-us/library/ee176839.aspx</a></li>
+<h3 id=get-alias-cmdlet>Get-Alias Cmdlet
+<a class=header-link href=#get-alias-cmdlet><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><ul>
+<li><a href=https://technet.microsoft.com/en-us/library/ee176839.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/ee176839.aspx</a></li>
 <li>To see all aliases use the <code>Get-Alias</code> command.</li>
-<li><p>To see aliases for a certain command use <code>Get-Alias -name l*</code> which shows all
-aliases which start with <code>l</code>.</p>
+<li>To see aliases for a certain command use <code>Get-Alias -name l*</code> which shows all
+aliases which start with <code>l</code>.</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt; <span style=color:#b58900>Get-Alias</span> l*
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
 <span style=color:#719e07>Alias</span>           <span style=color:#b58900>lp </span>-&gt; <span style=color:#b58900>Out-Printer</span>
-<span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span></code></pre></div></li>
-<li><p>Or just search what an alias points to like <code>Get-Alias dir</code>:</p>
+<span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</code></pre></div><ul>
+<li>Or just search what an alias points to like <code>Get-Alias dir</code>:</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt; <span style=color:#b58900>Get-Alias</span> <span style=color:#b58900>dir
 </span><span style=color:#b58900></span>CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
-<span style=color:#719e07>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span></code></pre></div></li>
-<li><p>To search the aliases for a cmdlet use <code>Get-Alias -Definition Get-ChildItem</code>:</p>
+<span style=color:#719e07>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</code></pre></div><ul>
+<li>To search the aliases for a cmdlet use <code>Get-Alias -Definition Get-ChildItem</code>:</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt;<span style=color:#b58900>Get-Alias</span> -Definition <span style=color:#b58900>get-childitem</span>
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
 <span style=color:#719e07>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
 <span style=color:#719e07>Alias</span>           <span style=color:#b58900>gci </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
-<span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span></code></pre></div></li>
-</ul>
-<h3 id=set-alias>Set-Alias</h3>
-<p>To create our own alias use <code>Set-Alias -Name mydir -Value ls</code>:</p>
+<span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</code></pre></div>
+<h3 id=set-alias>Set-Alias
+<a class=header-link href=#set-alias><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>To create our own alias use <code>Set-Alias -Name mydir -Value ls</code>:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt; <span style=color:#b58900>Set-Alias</span> -Name mydir -Value <span style=color:#b58900>ls
 </span><span style=color:#b58900></span>PS&gt; <span style=color:#b58900>Get-Alias</span> -Definition <span style=color:#b58900>ls
 </span><span style=color:#b58900></span>
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
-<span style=color:#719e07>Alias</span>           mydir -&gt; <span style=color:#b58900>Get-ChildItem</span></code></pre></div>
-<p>Note that this is an alias for <code>ls</code> so it does not show up in the list of
+<span style=color:#719e07>Alias</span>           mydir -&gt; <span style=color:#b58900>Get-ChildItem</span>
+</code></pre></div><p>Note that this is an alias for <code>ls</code> so it does not show up in the list of
 aliases for <code>Get-ChildItem</code> (which <code>ls</code> is an alias of):</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Alias</span> -Definition <span style=color:#b58900>Get-ChildItem</span>
 
@@ -285,37 +317,45 @@ CommandType     Name                                               Version    So
 -----------     ----                                               -------    ------
 <span style=color:#719e07>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
 <span style=color:#719e07>Alias</span>           <span style=color:#b58900>gci </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
-<span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span></code></pre></div>
-<h3 id=common-aliases-between-powershell-and-bash>Common Aliases Between PowerShell and Bash</h3>
-<p>A lot of PowerShell aliases are the name of bash commands. For example <code>man</code> is
+<span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</code></pre></div>
+<h3 id=common-aliases-between-powershell-and-bash>Common Aliases Between PowerShell and Bash
+<a class=header-link href=#common-aliases-between-powershell-and-bash><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>A lot of PowerShell aliases are the name of bash commands. For example <code>man</code> is
 and alias for <code>help</code>:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Alias</span> -Definition Help
 
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
-<span style=color:#719e07>Alias</span>           <span style=color:#b58900>man </span>-&gt; help</code></pre></div>
-<p>A couple of cheat sheets:</p>
+<span style=color:#719e07>Alias</span>           <span style=color:#b58900>man </span>-&gt; help
+</code></pre></div><p>A couple of cheat sheets:</p>
 <ul>
-<li><a href=http://xahlee.info/powershell/PowerShell_for_unixer.html rel=nofollow target=_blank>http://xahlee.info/powershell/PowerShell_for_unixer.html</a></li>
-<li><a href=http://cecs.wright.edu/~pmateti/Courses/233/Labs/Scripting/bashVsPowerShellTable.html rel=nofollow target=_blank>http://cecs.wright.edu/~pmateti/Courses/233/Labs/Scripting/bashVsPowerShellTable.html</a></li>
-<li><a href=http://cecs.wright.edu/~pmateti/Courses/233/Top/233-CheatSheet.html rel=nofollow target=_blank>http://cecs.wright.edu/~pmateti/Courses/233/Top/233-CheatSheet.html</a></li>
+<li><a href=http://xahlee.info/powershell/PowerShell_for_unixer.html target=_blank rel="noreferrer noopener">http://xahlee.info/powershell/PowerShell_for_unixer.html</a></li>
+<li><a href=http://cecs.wright.edu/~pmateti/Courses/233/Labs/Scripting/bashVsPowerShellTable.html target=_blank rel="noreferrer noopener">http://cecs.wright.edu/~pmateti/Courses/233/Labs/Scripting/bashVsPowerShellTable.html</a></li>
+<li><a href=http://cecs.wright.edu/~pmateti/Courses/233/Top/233-CheatSheet.html target=_blank rel="noreferrer noopener">http://cecs.wright.edu/~pmateti/Courses/233/Top/233-CheatSheet.html</a></li>
 </ul>
 <hr>
-<h2 id=session-1-introduction-to-powershell>Session 1 - Introduction to PowerShell</h2>
-<p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-1 rel=nofollow target=_blank>https://tutorials.cyberaces.org/tutorials/view/3-3-1</a></p>
-<h3 id=naming-convention>Naming Convention</h3>
-<p><code>Verb-Noun</code>. Things like <code>Get-Service</code>.</p>
-<h3 id=parameters>Parameters</h3>
-<p>Can be positional or named. Personally I prefer named because it's more readable.</p>
+<h2 id=session-1---introduction-to-powershell>Session 1 - Introduction to PowerShell
+<a class=header-link href=#session-1---introduction-to-powershell><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-1 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-1</a></p>
+<h3 id=naming-convention>Naming Convention
+<a class=header-link href=#naming-convention><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p><code>Verb-Noun</code>. Things like <code>Get-Service</code>.</p>
+<h3 id=parameters>Parameters
+<a class=header-link href=#parameters><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Can be positional or named. Personally I prefer named because it's more readable.</p>
 <ul>
-<li><p>You can shorten parameter names to the extent that they are still unique.</p>
+<li>You can shorten parameter names to the extent that they are still unique.</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>Get-ChildItem</span> -Filter *.exe
 <span style=color:#b58900>Get-ChildItem</span> -Filt *.exe
-<span style=color:#b58900>Get-ChildItem</span> -Fi *.exe</code></pre></div></li>
-<li><p><code>-F</code> will not work because <code>Get-ChildItem</code> has a <code>-Force</code> option.</p></li>
+<span style=color:#b58900>Get-ChildItem</span> -Fi *.exe
+</code></pre></div><ul>
+<li><code>-F</code> will not work because <code>Get-ChildItem</code> has a <code>-Force</code> option.</li>
 </ul>
-<h3 id=get-member>Get-Member</h3>
-<p>In PowerShell everything is an object. We can use <code>Get-Member</code> to get properties
+<h3 id=get-member>Get-Member
+<a class=header-link href=#get-member><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>In PowerShell everything is an object. We can use <code>Get-Member</code> to get properties
 and methods of object(s).</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-ChildItem</span> | <span style=color:#b58900>Get-Member</span>
    TypeName: System.IO.DirectoryInfo
@@ -324,14 +364,15 @@ Name                      MemberType     Definition
 LinkType                  CodeProperty   System.String LinkType{get=GetLinkType;}
 Mode                      CodeProperty   System.String Mode{get=Mode;}
 Target                    CodeProperty   System.Collections.Generic.IEnumerable`1[[System.String, mscorlib, Version=...
-Create                    Method         void Create(), void Create(System.Security.AccessControl.DirectorySecurity ...</code></pre></div>
-<p>Also works for aliases like <code>ls | Get-Member</code>.</p>
-<h3 id=piping>Piping</h3>
-<p>We can pipe outputs of one command to the other. In PowerShell everything is an
+Create                    Method         void Create(), void Create(System.Security.AccessControl.DirectorySecurity ...
+</code></pre></div><p>Also works for aliases like <code>ls | Get-Member</code>.</p>
+<h3 id=piping>Piping
+<a class=header-link href=#piping><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>We can pipe outputs of one command to the other. In PowerShell everything is an
 object and not text like bash (take that plebs lol).</p>
 <p>For example we can see the output of the previous command is truncated. In order
 to format it properly we can use <code>Format</code> cmdlets.</p>
-<p>A good <a href=https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/using-format-commands-to-change-output-view rel=nofollow target=_blank>tutorial</a>. Usually I just use <code>Format-List</code> to prevent
+<p>A good <a href=https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/using-format-commands-to-change-output-view target=_blank rel="noreferrer noopener">tutorial</a>. Usually I just use <code>Format-List</code> to prevent
 truncation. It shows data in a list.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt; <span style=color:#b58900>Get-ChildItem</span> | <span style=color:#b58900>Get-Member</span> | <span style=color:#b58900>Format-List</span>
 TypeName   : System.IO.DirectoryInfo
@@ -348,48 +389,65 @@ TypeName   : System.IO.DirectoryInfo
 Name       : Target
 MemberType : CodeProperty
 Definition : System.Collections.Generic.IEnumerable`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-             PublicKeyToken=b77a5c561934e089]] Target{get=GetTarget;}</code></pre></div>
+             PublicKeyToken=b77a5c561934e089]] Target{get=GetTarget;}
+</code></pre></div>
 <hr>
-<h2 id=session-2-cmdlets>Session 2 - Cmdlets</h2>
-<p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-2 rel=nofollow target=_blank>https://tutorials.cyberaces.org/tutorials/view/3-3-2</a></p>
-<h3 id=get-childitem>Get-ChildItem</h3>
-<p>This is a good cmdlet. Aliases are <code>dir</code>, <code>ls</code> and <code>gci</code>.</p>
+<h2 id=session-2---cmdlets>Session 2 - Cmdlets
+<a class=header-link href=#session-2---cmdlets><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-2 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-2</a></p>
+<h3 id=get-childitem>Get-ChildItem
+<a class=header-link href=#get-childitem><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>This is a good cmdlet. Aliases are <code>dir</code>, <code>ls</code> and <code>gci</code>.</p>
 <ul>
 <li>Run <code>man Get-ChildItem -Examples</code> for examples.</li>
 </ul>
-<h4 id=read-registry>Read Registry</h4>
-<ul>
+<h4 id=read-registry>Read Registry
+<a class=header-link href=#read-registry><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><ul>
 <li>Read a registry hive <code>ls HKCU:</code></li>
-<li><p>To get a specific registry key <code>Get-ChildItem -Path "HKLM:\Software"</code>.</p>
+<li>To get a specific registry key <code>Get-ChildItem -Path "HKLM:\Software"</code>.</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt; <span style=color:#b58900>ls </span>HKCU:
 
-Hive: HKEY_CURRENT_USER
+    Hive: HKEY_CURRENT_USER
 
 Name                           Property
 ----                           --------
 AppEvents
 AppXBackupContentType
 Console                        ColorTable00             : 0
-                           ColorTable01             : 8388608
-                           ColorTable02             : 32768
-                           ColorTable03             : 8421376
-                           ColorTable04             : 128
-                           ColorTable05             : 8388736</code></pre></div></li>
+                               ColorTable01             : 8388608
+                               ColorTable02             : 32768
+                               ColorTable03             : 8421376
+                               ColorTable04             : 128
+                               ColorTable05             : 8388736
+</code></pre></div>
+<h4 id=read-windows-certificate-store>Read Windows Certificate Store
+<a class=header-link href=#read-windows-certificate-store><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><ul>
+<li>
+<p>Read the Windows certificate store <code>ls cert:</code></p>
+</li>
+<li>
+<p><a href=https://technet.microsoft.com/en-us/library/hh847761.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/hh847761.aspx</a></p>
+</li>
+<li>
+<p><code>cert:</code> is essentially a new drive similar to <code>HKCU:</code></p>
+</li>
+<li>
+<p><code>ls cert:</code> lists machine's certificate stores:</p>
+</li>
 </ul>
-<h4 id=read-windows-certificate-store>Read Windows Certificate Store</h4>
-<ul>
-<li>Read the Windows certificate store <code>ls cert:</code></li>
-<li><a href=https://technet.microsoft.com/en-us/library/hh847761.aspx rel=nofollow target=_blank>https://technet.microsoft.com/en-us/library/hh847761.aspx</a></li>
-<li><p><code>cert:</code> is essentially a new drive similar to <code>HKCU:</code></p></li>
-<li><p><code>ls cert:</code> lists machine's certificate stores:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt; <span style=color:#b58900>ls </span>cert:
 
 Location   : CurrentUser
 StoreNames : {TrustedPublisher, ClientAuthIssuer, Root, UserDS...}
 
 Location   : LocalMachine
-StoreNames : {TrustedPublisher, ClientAuthIssuer, Remote Desktop, Root...}</code></pre></div></li>
-<li><p>Now we can see what's inside the <code>LocalMachine</code> certificate store with <code>ls cert:LocalMachine</code>:</p>
+StoreNames : {TrustedPublisher, ClientAuthIssuer, Remote Desktop, Root...}
+</code></pre></div><ul>
+<li>Now we can see what's inside the <code>LocalMachine</code> certificate store with <code>ls cert:LocalMachine</code>:</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>ls </span>cert:LocalMachine
 
 Name : TrustedPublisher
@@ -398,8 +456,10 @@ Name : Remote Desktop
 Name : Root
 Name : TrustedDevices
 Name : CA
-Name : Windows Live ID Token Issuer</code></pre></div></li>
-<li><p>We can go deeper (note that we can use double quotes with paths with space):</p>
+Name : Windows Live ID Token Issuer
+</code></pre></div><ul>
+<li>We can go deeper (note that we can use double quotes with paths with space):</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>PS&gt; <span style=color:#b58900>ls </span><span style=color:#2aa198>&#34;cert:LocalMachine\Windows Live ID Token Issuer&#34;</span> | <span style=color:#b58900>Format-List</span>
 
 Subject      : CN=Token Signing Public Key
@@ -409,7 +469,7 @@ FriendlyName :
 NotBefore    : 5/9/2016 4:40:55 PM
 NotAfter     : 5/8/2021 4:40:55 PM
 Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid,
-           System.Security.Cryptography.Oid}
+               System.Security.Cryptography.Oid}
 
 Subject      : CN=Token Signing Public Key
 Issuer       : CN=Token Signing Public Key
@@ -418,7 +478,7 @@ FriendlyName :
 NotBefore    : 7/2/2013 5:10:37 PM
 NotAfter     : 7/1/2018 5:10:37 PM
 Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid,
-           System.Security.Cryptography.Oid}
+               System.Security.Cryptography.Oid}
 
 PS&gt; <span style=color:#b58900>ls </span><span style=color:#2aa198>&#34;cert:LocalMachine\CA&#34;</span> | <span style=color:#b58900>Format-List</span>
 
@@ -431,27 +491,29 @@ NotAfter     : 12/31/2039 6:59:59 PM
 Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
 
 Subject      : OU=www.verisign.com/CPS Incorp.by <span style=color:#719e07>Ref</span>. LIABILITY LTD.(c)97 VeriSign, OU=VeriSign International Server
-           CA - Class 3, OU=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, O=VeriSign Trust Network
+               CA - Class 3, OU=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, O=VeriSign Trust Network
 Issuer       : OU=Class 3 Public Primary Certification Authority, O=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, C=US
 Thumbprint   : D559A586669B08F46A30A133F8A9ED3D038E2EA8
 FriendlyName :
 NotBefore    : 4/16/1997 8:00:00 PM
 NotAfter     : 10/24/2016 7:59:59 PM
 Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid,
-           System.Security.Cryptography.Oid...}</code></pre></div></li>
-<li><p>Even deeper and see certificate info based on thumbprint:</p>
+               System.Security.Cryptography.Oid...}
+</code></pre></div><ul>
+<li>Even deeper and see certificate info based on thumbprint:</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>ls </span><span style=color:#2aa198>&#34;cert:LocalMachine\CA\D559A586669B08F46A30A133F8A9ED3D038E2EA8&#34;</span> | <span style=color:#b58900>Format-List</span> -Property *
 
 
 PSPath                   : Microsoft.PowerShell.Security\Certificate::LocalMachine\CA\D559A586669B08F46A30A133F8A9ED3D0
-                       38E2EA8
+                           38E2EA8
 PSParentPath             : Microsoft.PowerShell.Security\Certificate::LocalMachine\CA
 PSChildName              : D559A586669B08F46A30A133F8A9ED3D038E2EA8
 PSDrive                  : Cert
 PSProvider               : Microsoft.PowerShell.Security\Certificate
 PSIsContainer            : False
 EnhancedKeyUsageList     : {Server Authentication (1.3.6.1.5.5.7.3.1), Client Authentication (1.3.6.1.5.5.7.3.2),
-                       2.16.840.1.113730.4.1, 2.16.840.1.113733.1.8.1}
+                           2.16.840.1.113730.4.1, 2.16.840.1.113733.1.8.1}
 DnsNameList              :
 SendAsTrustedIssuer      : False
 EnrollmentPolicyEndPoint : Microsoft.CertificateServices.Commands.EnrollmentEndPointProperty
@@ -459,7 +521,7 @@ EnrollmentServerEndPoint : Microsoft.CertificateServices.Commands.EnrollmentEndP
 PolicyId                 :
 Archived                 : False
 Extensions               : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid,
-                       System.Security.Cryptography.Oid, System.Security.Cryptography.Oid...}
+                           System.Security.Cryptography.Oid, System.Security.Cryptography.Oid...}
 FriendlyName             :
 IssuerName               : System.Security.Cryptography.X509Certificates.X500DistinguishedName
 NotAfter                 : 10/24/2016 7:59:59 PM
@@ -476,10 +538,11 @@ Version                  : 3
 Handle                   : 2694988070352
 Issuer                   : OU=Class 3 Public Primary Certification Authority, O=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, C=US
 Subject                  : OU=www.verisign.com/CPS Incorp.by <span style=color:#719e07>Ref</span>. LIABILITY LTD.(c)97 VeriSign, OU=VeriSign
-                       International Server CA - Class 3, OU=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, O=VeriSign Trust Network</code></pre></div></li>
-</ul>
-<h3 id=cd-or-change-directory>cd or Change Directory</h3>
-<p>It's easier to treat registry and the certificate store as drives and cd into
+                           International Server CA - Class 3, OU=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, O=VeriSign Trust Network
+</code></pre></div>
+<h3 id=cd-or-change-directory>cd or Change Directory
+<a class=header-link href=#cd-or-change-directory><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>It's easier to treat registry and the certificate store as drives and cd into
 them.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>cd </span>cert:
 <span style=color:#b58900>PS </span>Cert:\&gt; <span style=color:#b58900>dir
@@ -499,27 +562,31 @@ Name : ClientAuthIssuer
 Name : Root
 Name : UserDS
 Name : CA
-Name : ACRS</code></pre></div>
-<hr>
-<h2 id=session-3-scripting-variables-and-syntax>Session 3: Scripting, Variables and Syntax</h2>
-<p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-3 rel=nofollow target=_blank>https://tutorials.cyberaces.org/tutorials/view/3-3-3</a></p>
+Name : ACRS
+</code></pre></div><hr>
+<h2 id=session-3-scripting-variables-and-syntax>Session 3: Scripting, Variables and Syntax
+<a class=header-link href=#session-3-scripting-variables-and-syntax><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-3 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-3</a></p>
 <p>Scripts are in <code>ps1</code> files. They do not run with double-click.</p>
-<h3 id=executionpolicy>ExecutionPolicy</h3>
-<p>In order to run them we need to change the execution policy. Default setting
+<h3 id=executionpolicy>ExecutionPolicy
+<a class=header-link href=#executionpolicy><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>In order to run them we need to change the execution policy. Default setting
 doesn't run scripts.</p>
 <ul>
-<li><p>You can view computer's execution policies with <code>Get-ExecutionPolicy -List</code>:</p>
+<li>You can view computer's execution policies with <code>Get-ExecutionPolicy -List</code>:</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-ExecutionPolicy</span> -List
 
-    Scope ExecutionPolicy
-    ----- ---------------
+        Scope ExecutionPolicy
+        ----- ---------------
 MachinePolicy       Undefined
-UserPolicy       Undefined
-  <span style=color:#719e07>Process</span>       Undefined
-CurrentUser       Undefined
-LocalMachine    RemoteSigned</code></pre></div></li>
-<li><p><code>Set-ExecutionPolicy</code> sets a policy (needs admin powershell window). There are
-four options (<a href=https://technet.microsoft.com/en-us/library/ee176961.aspx rel=nofollow target=_blank>technet source</a>):</p>
+   UserPolicy       Undefined
+      <span style=color:#719e07>Process</span>       Undefined
+  CurrentUser       Undefined
+ LocalMachine    RemoteSigned
+</code></pre></div><ul>
+<li><code>Set-ExecutionPolicy</code> sets a policy (needs admin powershell window). There are
+four options (<a href=https://technet.microsoft.com/en-us/library/ee176961.aspx target=_blank rel="noreferrer noopener">technet source</a>):
 <ul>
 <li>Restricted - No scripts can be run. Windows PowerShell can be used only in
 interactive mode.</li>
@@ -527,18 +594,21 @@ interactive mode.</li>
 <li>RemoteSigned - Downloaded scripts must be signed by a trusted publisher
 before they can be run.</li>
 <li>Unrestricted - No restrictions; all Windows PowerShell scripts can be run.</li>
-</ul></li>
 </ul>
-<h3 id=variables>Variables</h3>
-<ul>
+</li>
+</ul>
+<h3 id=variables>Variables
+<a class=header-link href=#variables><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><ul>
 <li>Prefixed with <code>$</code>.</li>
 <li>Set variable: <code>$a = 13</code>.</li>
 <li>Get variable: <code>$a</code>.</li>
 <li>Store the result of a command into a variable: <code>$output = dir cert:</code>.</li>
 </ul>
-<h4 id=variable-types>Variable Types</h4>
-<p>Create a typed variable: <code>[int]$thisIsAnInt = 11</code>.</p>
-<p>These are the different types (<a href=https://technet.microsoft.com/en-us/magazine/ff642464.aspx rel=nofollow target=_blank>source technet</a>):</p>
+<h4 id=variable-types>Variable Types
+<a class=header-link href=#variable-types><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><p>Create a typed variable: <code>[int]$thisIsAnInt = 11</code>.</p>
+<p>These are the different types (<a href=https://technet.microsoft.com/en-us/magazine/ff642464.aspx target=_blank rel="noreferrer noopener">source technet</a>):</p>
 <ul>
 <li>[int] 32-bit signed integer</li>
 <li>[long] 64-bit signed integer</li>
@@ -553,10 +623,12 @@ before they can be run.</li>
 <li>[xml] Xmldocument object</li>
 <li>[hashtable] Hashtable object (similar to a Dictionary object)</li>
 </ul>
-<h3 id=arrays>Arrays</h3>
-<p>Collection of objects. Use them like normal arrays in programming languages.</p>
+<h3 id=arrays>Arrays
+<a class=header-link href=#arrays><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Collection of objects. Use them like normal arrays in programming languages.</p>
 <ul>
-<li><p>Help on Technet: <a href=https://technet.microsoft.com/en-us/library/hh847882.aspx rel=nofollow target=_blank>https://technet.microsoft.com/en-us/library/hh847882.aspx</a></p>
+<li>Help on Technet: <a href=https://technet.microsoft.com/en-us/library/hh847882.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/hh847882.aspx</a></li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># Create an array</span>
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span> = 0, 1, 2, 3, 4
 
@@ -593,8 +665,8 @@ before they can be run.</li>
 At line:1 char:1
 + <span style=color:#268bd2>$someNumbers</span>.Count = 10
 + ~~~~~~~~~~~~~~~~~~~~~~~
-+ CategoryInfo          : InvalidOperation: (:) [], RuntimeException
-+ FullyQualifiedErrorId : PropertyAssignmentException
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
 
 <span style=color:#586e75># Get the type - this is because our array was not typed when we created it</span>
 <span style=color:#586e75># As a result the members can be of different types</span>
@@ -620,11 +692,11 @@ True     True     Int32[]                                  System.Array
 
 Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id  <span style=color:#b58900>SI </span>ProcessName
 -------  ------    -----      ----- -----   ------     --  -- -----------
-247      21    28388      54672   220    60.14   2472   2 atom
-244      23    22656      34136   288    40.33   4908   2 atom
-171      15     4364      10528   156     0.34   6800   2 atom
-547      37    52600      80496   332    55.59   8104   2 atom
-347      67   626812     647076  1006   361.66   8848   2 atom
+    247      21    28388      54672   220    60.14   2472   2 atom
+    244      23    22656      34136   288    40.33   4908   2 atom
+    171      15     4364      10528   156     0.34   6800   2 atom
+    547      37    52600      80496   332    55.59   8104   2 atom
+    347      67   626812     647076  1006   361.66   8848   2 atom
 
 <span style=color:#586e75># You can use ranges</span>
 <span style=color:#586e75># Here powershell doesn&#39;t care if your range is over the bounds, it just shows all of the array</span>
@@ -664,8 +736,8 @@ Method invocation failed because <span style=color:#cb4b16>[System.Object[]]</sp
 At line:1 char:1
 + <span style=color:#268bd2>$someNumbers</span>[2+1..3]
 + ~~~~~~~~~~~~~~~~~~~~
-+ CategoryInfo          : InvalidOperation: (op_Addition:String) [], RuntimeException
-+ FullyQualifiedErrorId : MethodNotFound
+    + CategoryInfo          : InvalidOperation: (op_Addition:String) [], RuntimeException
+    + FullyQualifiedErrorId : MethodNotFound
 
 <span style=color:#586e75># To add items to arrays use += (obviously respect the type of the array)</span>
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>
@@ -706,10 +778,11 @@ At line:1 char:1
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span> = <span style=color:#268bd2>$null</span>
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span>
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span>.Count
-0</code></pre></div></li>
-</ul>
-<h3 id=get-member-1>Get-Member</h3>
-<p>To get methods and properties of an object, pipe it to <code>Get-Member</code>.</p>
+0
+</code></pre></div>
+<h3 id=get-member-1>Get-Member
+<a class=header-link href=#get-member-1><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>To get methods and properties of an object, pipe it to <code>Get-Member</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># Like an int</span>
 <span style=color:#b58900>PS </span>C:\&gt; 1 | <span style=color:#b58900>Get-Member</span>
    TypeName: System.Int32
@@ -742,9 +815,11 @@ GetType     Method     <span style=color:#b58900>type </span>GetType()
 
 <span style=color:#586e75># If we want to see the type of members in an array</span>
 <span style=color:#586e75># $arrayName | Get-Member</span>
-<span style=color:#586e75># will send members of the array one by one</span></code></pre></div>
-<h4 id=get-childitem-variable>Get-ChildItem variable:</h4>
-<p>Returns all available variables.</p>
+<span style=color:#586e75># will send members of the array one by one</span>
+</code></pre></div>
+<h4 id=get-childitem-variable>Get-ChildItem variable:
+<a class=header-link href=#get-childitem-variable><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><p>Returns all available variables.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-ChildItem</span> variable:
 
 Name                           Value
@@ -755,9 +830,11 @@ $                              <span style=color:#b58900>clear
 </span><span style=color:#b58900></span>args                           {}
 mixedArray                     {1, hello, 2.3}
 moreNumbers                    {10, 11, 12, 13}
-someNumbers                    {0, 1, 2, 3...}</code></pre></div>
-<h3 id=user-properties-of-cmdlet-output>User Properties of Cmdlet Output</h3>
-<p>Cmdlets do not have properties by themselves, their output is an object which
+someNumbers                    {0, 1, 2, 3...}
+</code></pre></div>
+<h3 id=user-properties-of-cmdlet-output>User Properties of Cmdlet Output
+<a class=header-link href=#user-properties-of-cmdlet-output><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Cmdlets do not have properties by themselves, their output is an object which
 has properties.</p>
 <p>E.g., the output of <code>Get-Process</code> is an array with members of type
 <code>System.Diagnostics.Process</code>. We can get the first member and see its methods:</p>
@@ -776,19 +853,21 @@ System.Diagnostics.<span style=color:#719e07>Process</span> (chrome)
 
 <span style=color:#586e75># Or read a Property</span>
 <span style=color:#b58900>PS </span>C:\&gt; (<span style=color:#b58900>Get-Process</span>)[30].ProcessName
-chrome</code></pre></div>
-<h3 id=double-quotes-vs-single-quotes>Double Quotes vs. Single Quotes</h3>
-<p>Double quote expands the value inside while single quote doesn't.</p>
+chrome
+</code></pre></div>
+<h3 id=double-quotes-vs-single-quotes>Double Quotes vs. Single Quotes
+<a class=header-link href=#double-quotes-vs-single-quotes><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Double quote expands the value inside while single quote doesn't.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;This is the array $someNumbers&#34;</span>
 This is the array 0 1 2 3 4 5
 
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#39;This is the array $someNumbers&#39;</span>
-This is the array <span style=color:#268bd2>$someNumbers</span></code></pre></div>
-<p>You can escape stuff in double quotes to prevent them from being expanded with
+This is the array <span style=color:#268bd2>$someNumbers</span>
+</code></pre></div><p>You can escape stuff in double quotes to prevent them from being expanded with
 backtick (cannot do it here because it will mess with markdown highlighting):</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;This is the array </span><span style=color:#cb4b16>`$</span><span style=color:#2aa198>somenumbers`: $someNumbers&#34;</span>
-This is the array <span style=color:#268bd2>$somenumbers</span>: 0 1 2 3 4 5</code></pre></div>
-<p>To expand properties of objects, wrap them in <code>()</code>. Otherwise, it will just print
+This is the array <span style=color:#268bd2>$somenumbers</span>: 0 1 2 3 4 5
+</code></pre></div><p>To expand properties of objects, wrap them in <code>()</code>. Otherwise, it will just print
 the variable and then put the text of the method after it:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;Today is </span>$(<span style=color:#b58900>Get-Date</span>)<span style=color:#2aa198>&#34;</span>
 Today is 07/29/2016 17:49:01
@@ -797,12 +876,15 @@ Today is 07/29/2016 17:49:01
 Today is Friday
 
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;Today is </span>$(<span style=color:#b58900>Get-Date</span>)<span style=color:#2aa198>.DayOfWeek&#34;</span>
-Today is 07/29/2016 17:49:22.DayOfWeek</code></pre></div>
+Today is 07/29/2016 17:49:22.DayOfWeek
+</code></pre></div>
 <hr>
-<h2 id=section-4-flow-control>Section 4 - Flow Control</h2>
-<p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-4 rel=nofollow target=_blank>https://tutorials.cyberaces.org/tutorials/view/3-3-4</a></p>
-<h3 id=whatif-confirm-verbose>WhatIf - Confirm - Verbose</h3>
-<p>These are three switches that help with running commands. <code>WhatIf</code> is the most
+<h2 id=section-4---flow-control>Section 4 - Flow Control
+<a class=header-link href=#section-4---flow-control><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-4 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-4</a></p>
+<h3 id=whatif---confirm---verbose>WhatIf - Confirm - Verbose
+<a class=header-link href=#whatif---confirm---verbose><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>These are three switches that help with running commands. <code>WhatIf</code> is the most
 interesting (and probably useful).</p>
 <ul>
 <li><strong>-WhatIf</strong> does not run the command. Instead it says what it would do if it was executed.</li>
@@ -838,92 +920,94 @@ VERBOSE: Performing the operation <span style=color:#2aa198>&#34;Create Director
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
-d-----        7/31/2016   7:18 PM                <span style=color:#b58900>new-directory</span></code></pre></div>
-<p>Not all commands have these. Usually PowerShell core commands that
+d-----        7/31/2016   7:18 PM                <span style=color:#b58900>new-directory</span>
+</code></pre></div><p>Not all commands have these. Usually PowerShell core commands that
 <strong>change the state of the machine</strong> have this. E.g., <code>ls</code> does not have neither
 <code>-Confirm</code> nor <code>-WhatIf</code> and <code>-Verbose</code> does not change its behavior.</p>
 <p>To see what commands support <code>-WhatIF</code> we can run the following PowerShell
-command <a href=http://www.computerperformance.co.uk/powershell/powershell_whatif_confirm.htm rel=nofollow target=_blank>source at computerperformance.co.uk</a>
+command <a href=http://www.computerperformance.co.uk/powershell/powershell_whatif_confirm.htm target=_blank rel="noreferrer noopener">source at computerperformance.co.uk</a>
 (similar for <code>-Confirm</code> and <code>-Verbose</code>):</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>Get-Command</span> -commandType cmdlet | <span style=color:#b58900>where </span>{ <span style=color:#268bd2>$_</span>.parameters.keys <span style=color:#719e07>-Contains</span> <span style=color:#2aa198>&#34;Confirm&#34;</span>} | <span style=color:#b58900>Format-Table</span> Name</code></pre></div>
-<p>We can add support for these commands to our own scripts as shown here:<br>
-<a href=https://blogs.msdn.microsoft.com/powershell/2007/02/25/supporting-whatif-confirm-verbose-in-scripts/ rel=nofollow target=_blank>https://blogs.msdn.microsoft.com/powershell/2007/02/25/supporting-whatif-confirm-verbose-in-scripts/</a></p>
-<h3 id=operators>Operators</h3>
-<ul>
-<li>Operators are at: <a href=https://technet.microsoft.com/en-us/library/hh847732.aspx rel=nofollow target=_blank>https://technet.microsoft.com/en-us/library/hh847732.aspx</a>.</li>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>Get-Command</span> -commandType cmdlet | <span style=color:#b58900>where </span>{ <span style=color:#268bd2>$_</span>.parameters.keys <span style=color:#719e07>-Contains</span> <span style=color:#2aa198>&#34;Confirm&#34;</span>} | <span style=color:#b58900>Format-Table</span> Name
+</code></pre></div><p>We can add support for these commands to our own scripts as shown here:<br>
+<a href=https://blogs.msdn.microsoft.com/powershell/2007/02/25/supporting-whatif-confirm-verbose-in-scripts/ target=_blank rel="noreferrer noopener">https://blogs.msdn.microsoft.com/powershell/2007/02/25/supporting-whatif-confirm-verbose-in-scripts/</a></p>
+<h3 id=operators>Operators
+<a class=header-link href=#operators><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><ul>
+<li>Operators are at: <a href=https://technet.microsoft.com/en-us/library/hh847732.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/hh847732.aspx</a>.</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th align=left>Operator</th>
-<th align=left>Meaning</th>
+<th style=text-align:left>Operator</th>
+<th style=text-align:left>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align=left>-eq</td>
-<td align=left>Equal</td>
+<td style=text-align:left>-eq</td>
+<td style=text-align:left>Equal</td>
 </tr>
 <tr>
-<td align=left>-ne</td>
-<td align=left>Not equal</td>
+<td style=text-align:left>-ne</td>
+<td style=text-align:left>Not equal</td>
 </tr>
 <tr>
-<td align=left>-lt</td>
-<td align=left>Less than</td>
+<td style=text-align:left>-lt</td>
+<td style=text-align:left>Less than</td>
 </tr>
 <tr>
-<td align=left>-le</td>
-<td align=left>Less than or equal</td>
+<td style=text-align:left>-le</td>
+<td style=text-align:left>Less than or equal</td>
 </tr>
 <tr>
-<td align=left>-gt</td>
-<td align=left>Greater than</td>
+<td style=text-align:left>-gt</td>
+<td style=text-align:left>Greater than</td>
 </tr>
 <tr>
-<td align=left>-ge</td>
-<td align=left>Greater than or equal</td>
+<td style=text-align:left>-ge</td>
+<td style=text-align:left>Greater than or equal</td>
 </tr>
 <tr>
-<td align=left>-match</td>
-<td align=left>regex match</td>
+<td style=text-align:left>-match</td>
+<td style=text-align:left>regex match</td>
 </tr>
 <tr>
-<td align=left>-notmatch</td>
-<td align=left>negative regex match</td>
+<td style=text-align:left>-notmatch</td>
+<td style=text-align:left>negative regex match</td>
 </tr>
 <tr>
-<td align=left>-like</td>
-<td align=left>wildcard match</td>
+<td style=text-align:left>-like</td>
+<td style=text-align:left>wildcard match</td>
 </tr>
 <tr>
-<td align=left>-notlike</td>
-<td align=left>negative wildcard match</td>
+<td style=text-align:left>-notlike</td>
+<td style=text-align:left>negative wildcard match</td>
 </tr>
 <tr>
-<td align=left>-and</td>
-<td align=left>&&</td>
+<td style=text-align:left>-and</td>
+<td style=text-align:left>&&</td>
 </tr>
 <tr>
-<td align=left>-or</td>
-<td align=left>or</td>
+<td style=text-align:left>-or</td>
+<td style=text-align:left>or</td>
 </tr>
 <tr>
-<td align=left>-xor</td>
-<td align=left>XOR</td>
+<td style=text-align:left>-xor</td>
+<td style=text-align:left>XOR</td>
 </tr>
 <tr>
-<td align=left>-not</td>
-<td align=left>not</td>
+<td style=text-align:left>-not</td>
+<td style=text-align:left>not</td>
 </tr>
 <tr>
-<td align=left>%</td>
-<td align=left>mod</td>
+<td style=text-align:left>%</td>
+<td style=text-align:left>mod</td>
 </tr>
 </tbody>
 </table>
-<h3 id=if-then-else>If - Then - Else</h3>
-<p>Usage is similar to programming languages (there is no <code>then</code> either).</p>
+<h3 id=if---then---else>If - Then - Else
+<a class=header-link href=#if---then---else><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Usage is similar to programming languages (there is no <code>then</code> either).</p>
 <p>To create these scripts, it's easier to just use the <code>PowerShell_ise.exe</code>
 (PowerShell Integrated Scripting Environment).</p>
 <p>Create a new script and write it on top. Run the script using the button or
@@ -936,16 +1020,18 @@ press <code>F5</code> and the bottom panel will show the result.</p>
 <span style=color:#719e07>else</span>
     { <span style=color:#2aa198>&#34;Ten is ten.&#34;</span> }
 
-Ten is ten.</code></pre></div>
-<h3 id=where-object-filtering>Where-Object Filtering</h3>
-<p>Has two aliases</p>
+Ten is ten.
+</code></pre></div>
+<h3 id=where-object-filtering>Where-Object Filtering
+<a class=header-link href=#where-object-filtering><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Has two aliases</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>get-Alias</span> -Definition <span style=color:#b58900>where-object</span>
 
 CommandType     Name
 -----------     ----
 <span style=color:#719e07>Alias</span>           ? -&gt; <span style=color:#b58900>Where-Object</span>
-<span style=color:#719e07>Alias</span>           <span style=color:#b58900>where </span>-&gt; <span style=color:#b58900>Where-Object</span></code></pre></div>
-<p>Pipe the output of a command to <code>Where-Object</code> (or one of the aliases). Then
+<span style=color:#719e07>Alias</span>           <span style=color:#b58900>where </span>-&gt; <span style=color:#b58900>Where-Object</span>
+</code></pre></div><p>Pipe the output of a command to <code>Where-Object</code> (or one of the aliases). Then
 inside the block you can use <code>$_</code> to refer to it. Imagine it's like a for that
 goes through each member of the output and you can filter. To take action (as in
 run a new command use <code>ForEach-Object</code>).</p>
@@ -970,27 +1056,33 @@ Mode                LastWriteTime         Length Name
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a----        12/5/2015   8:41 PM          28160 python.exe
--a----        12/5/2015   8:41 PM          28160 pythonw.exe</code></pre></div>
-<h3 id=foreach-object>ForEach-Object</h3>
-<p>Similar to <code>Where-Object</code> but you can run a new command with each iterated item.</p>
+-a----        12/5/2015   8:41 PM          28160 pythonw.exe
+</code></pre></div>
+<h3 id=foreach-object>ForEach-Object
+<a class=header-link href=#foreach-object><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Similar to <code>Where-Object</code> but you can run a new command with each iterated item.</p>
 <ul>
-<li><p><a href=https://technet.microsoft.com/en-us/library/ee176828.aspx rel=nofollow target=_blank>https://technet.microsoft.com/en-us/library/ee176828.aspx</a></p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt;<span style=color:#b58900>Get-Process</span> | % { <span style=color:#b58900>Write </span>$(<span style=color:#268bd2>$_</span>.ProcessName + <span style=color:#2aa198>&#34;-&#34;</span> + <span style=color:#268bd2>$_</span>.Id) }</code></pre></div></li>
+<li><a href=https://technet.microsoft.com/en-us/library/ee176828.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/ee176828.aspx</a></li>
 </ul>
-<p>To concat two strings for printing like above do <code>$( $_.whatever + "something" )</code>.</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt;<span style=color:#b58900>Get-Process</span> | % { <span style=color:#b58900>Write </span>$(<span style=color:#268bd2>$_</span>.ProcessName + <span style=color:#2aa198>&#34;-&#34;</span> + <span style=color:#268bd2>$_</span>.Id) }
+</code></pre></div><p>To concat two strings for printing like above do <code>$( $_.whatever + "something" )</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># Rename jpeg files to jpeg</span>
-<span style=color:#b58900>ls </span>*.jpeg |  <span style=color:#b58900>ren </span>-NewName {<span style=color:#268bd2>$_</span>.BaseName +<span style=color:#2aa198>&#34;.jpg&#34;</span>}</code></pre></div>
-<h3 id=select-object>Select-Object</h3>
-<p>"Filter properties so only certain ones are passed through the pipeline."</p>
+<span style=color:#b58900>ls </span>*.jpeg |  <span style=color:#b58900>ren </span>-NewName {<span style=color:#268bd2>$_</span>.BaseName +<span style=color:#2aa198>&#34;.jpg&#34;</span>}
+</code></pre></div>
+<h3 id=select-object>Select-Object
+<a class=header-link href=#select-object><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>"Filter properties so only certain ones are passed through the pipeline."</p>
 <p>We can recreate the <code>$_.ProcessName</code> command because items passed through end of
 last pipe are printed on the screen.</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Select-Object</span> ProcessName, Id</code></pre></div>
-<p><strong>But how do we process the tuple in the next pipe line (e.g. Write)? do we do $_[0]? Is the output an array?</strong></p>
-<h3 id=output-and-the-format-verb>Output and the Format Verb</h3>
-<p>We can format output. We have seen them before.</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Select-Object</span> ProcessName, Id
+</code></pre></div><p><strong>But how do we process the tuple in the next pipe line (e.g. Write)? do we do $_[0]? Is the output an array?</strong></p>
+<h3 id=output-and-the-format-verb>Output and the Format Verb
+<a class=header-link href=#output-and-the-format-verb><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>We can format output. We have seen them before.</p>
 <ul>
 <li><code>Format-Table</code> or <code>ft</code>.</li>
-<li><p><code>Format-List</code> or <code>fl</code>.</p>
+<li><code>Format-List</code> or <code>fl</code>.</li>
+</ul>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\&gt;<span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>ft
 </span><span style=color:#b58900>PS </span>C:\&gt;<span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>fl
 </span><span style=color:#b58900></span>
@@ -1003,21 +1095,22 @@ last pipe are printed on the screen.</p>
 
 <span style=color:#586e75># You can do Groupbys</span>
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>ft </span>-GroupBy ProcessName
-ProcessName: atom
+   ProcessName: atom
 
 Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id  <span style=color:#b58900>SI </span>ProcessName
 -------  ------    -----      ----- -----   ------     --  -- -----------
-274      22    26852      39156   226    23.77   1136   5 atom
-546      36    51260      77708   332    11.77   6584   5 atom
-245      23    20852      32160   289     9.08   7524   5 atom
-346      47   294676     308828   665    65.30   7644   5 atom
-175      15     4508      10880   156     0.36   8420   5 atom
+    274      22    26852      39156   226    23.77   1136   5 atom
+    546      36    51260      77708   332    11.77   6584   5 atom
+    245      23    20852      32160   289     9.08   7524   5 atom
+    346      47   294676     308828   665    65.30   7644   5 atom
+    175      15     4508      10880   156     0.36   8420   5 atom
 
 <span style=color:#586e75># Usually it&#39;s a good idea to sort the output based on the GroupBy in the table before piping it to the table</span>
-<span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Sort-Object</span> ProcessName | <span style=color:#b58900>Format-Table</span> -GroupBy ProcessName</code></pre></div></li>
-</ul>
-<h3 id=file-output>File Output</h3>
-<p>Using the redirection <code>></code> it only uses Unicode. Instead we can use <code>Out-File</code> to
+<span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Sort-Object</span> ProcessName | <span style=color:#b58900>Format-Table</span> -GroupBy ProcessName
+</code></pre></div>
+<h3 id=file-output>File Output
+<a class=header-link href=#file-output><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Using the redirection <code>></code> it only uses Unicode. Instead we can use <code>Out-File</code> to
 get ASCII etc. <code>Out-File</code> also has more options.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># Write to a file</span>
 <span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Out-File</span> process1.txt
@@ -1043,21 +1136,34 @@ At line:1 char:15
 + <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Out-File</span> process1.txt -NoClobber
 +               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : ResourceExists: (C:\test\process1.txt:String) [<span style=color:#b58900>Out-File</span>], IOException
-    + FullyQualifiedErrorId : NoClobber,Microsoft.PowerShell.Commands.OutFileCommand</code></pre></div>
-<p>Send output in ASCII format (by default it is Unicode).</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Out-File</span> process1.txt -Encoding ASCII</code></pre></div>
-<p>You can also use the redirection <code>></code>.</p>
+    + FullyQualifiedErrorId : NoClobber,Microsoft.PowerShell.Commands.OutFileCommand
+</code></pre></div><p>Send output in ASCII format (by default it is Unicode).</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Out-File</span> process1.txt -Encoding ASCII
+</code></pre></div><p>You can also use the redirection <code>></code>.</p>
 <ul>
-<li><code>></code>: Overwrite</li>
-<li><p><code>>></code>: Append</p></li>
-<li><p><code>1></code>: Same as <code>></code></p></li>
-<li><p><code>2></code>: Redirect errors</p></li>
-<li><p><code>3></code>: Redirect warnings</p></li>
-<li><p><code>4></code>: Debug</p></li>
+<li>
+<p><code>></code>: Overwrite</p>
+</li>
+<li>
+<p><code>>></code>: Append</p>
+</li>
+<li>
+<p><code>1></code>: Same as <code>></code></p>
+</li>
+<li>
+<p><code>2></code>: Redirect errors</p>
+</li>
+<li>
+<p><code>3></code>: Redirect warnings</p>
+</li>
+<li>
+<p><code>4></code>: Debug</p>
+</li>
 </ul>
 <p>Combinations work too: <code>2>&1</code>.</p>
-<h3 id=export-csv-and-import-csv>Export-CSV and Import-CSV</h3>
-<p>We can export the files in CSV format. It will create the columns too. Then we
+<h3 id=export-csv-and-import-csv>Export-CSV and Import-CSV
+<a class=header-link href=#export-csv-and-import-csv><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>We can export the files in CSV format. It will create the columns too. Then we
 can open these CSV files in Excel.</p>
 <p>Later we can import them back into variables (for example).</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># Export running processes (and their other info) to a csv file</span>
@@ -1072,17 +1178,19 @@ can open these CSV files in Excel.</p>
 Name                     <span style=color:#b58900>SI </span>Handles VM            WS        PM        NPM    Path
 ----                     -- ------- --            --        --        ---    ----
 alg                      0  89      2199052992512 2244608   1642496   8480
-AMPAgent                 0  205     80158720      11603968  3735552   19048</code></pre></div>
-<p>We can <code>Import-CSV</code> without the header and choosing the delimiter</p>
+AMPAgent                 0  205     80158720      11603968  3735552   19048
+</code></pre></div><p>We can <code>Import-CSV</code> without the header and choosing the delimiter</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#268bd2>$csvfile</span> = <span style=color:#b58900>Import-CSV</span> -Delimiter <span style=color:#2aa198>&#34; &#34;</span> -Path whatever.txt -Header <span style=color:#2aa198>&#34;Column1&#34;</span>, <span style=color:#2aa198>&#34;Column2&#34;</span>, <span style=color:#2aa198>&#34;Column3&#34;</span>
 
 <span style=color:#586e75># Now we can do stuff for columns, like sort by a column.</span>
 <span style=color:#268bd2>$csvfile</span> | <span style=color:#b58900>sort </span>-Property Column3 -Descending
 
 <span style=color:#586e75># or do math stuff</span>
-<span style=color:#268bd2>$csvfile</span> | <span style=color:#b58900>Measure-Object</span> -Property Column3 -Ave -Min -Max</code></pre></div>
-<h3 id=measure-object>Measure-Object</h3>
-<p>"Calculates numeric properties of objects."</p>
+<span style=color:#268bd2>$csvfile</span> | <span style=color:#b58900>Measure-Object</span> -Property Column3 -Ave -Min -Max
+</code></pre></div>
+<h3 id=measure-object>Measure-Object
+<a class=header-link href=#measure-object><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>"Calculates numeric properties of objects."</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># Calculate the number of files and directories</span>
 <span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>ls </span>| <span style=color:#b58900>Measure-Object</span>
 Count    : 2
@@ -1113,13 +1221,17 @@ Property : Length
 
 Lines Words Characters Property
 ----- ----- ---------- --------
-  254  2160      30226</code></pre></div>
-<h2 id=section-5-practical-uses-conclusion>Section 5 - Practical Uses & Conclusion</h2>
-<p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-5 rel=nofollow target=_blank>https://tutorials.cyberaces.org/tutorials/view/3-3-5</a></p>
-<h3 id=ping-all-ips-in-a-range>Ping All IPs in a Range</h3>
-<p><code>PS C:\> 1..254 | % { ping "192.168.0.$_" }</code></p>
-<h3 id=process-manipulation>Process Manipulation</h3>
-<p>Things to do with processes.</p>
+  254  2160      30226
+</code></pre></div>
+<h2 id=section-5---practical-uses--conclusion>Section 5 - Practical Uses & Conclusion
+<a class=header-link href=#section-5---practical-uses--conclusion><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-5 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-5</a></p>
+<h3 id=ping-all-ips-in-a-range>Ping All IPs in a Range
+<a class=header-link href=#ping-all-ips-in-a-range><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p><code>PS C:\> 1..254 | % { ping "192.168.0.$_" }</code></p>
+<h3 id=process-manipulation>Process Manipulation
+<a class=header-link href=#process-manipulation><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Things to do with processes.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># Start a process</span>
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Start-Process</span> -FilePath <span style=color:#2aa198>&#34;notepad.exe&#34;</span>
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Start-Process</span> notepad
@@ -1139,8 +1251,8 @@ Lines Words Characters Property
 <span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Start-Process</span> -FilePath <span style=color:#2aa198>&#34;powershell&#34;</span> -Verb runAs
 
 <span style=color:#586e75>#  Starts a PowerShell process in a new console window.</span>
-<span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Start-Process</span> -FilePath <span style=color:#2aa198>&#34;powershell.exe&#34;</span> -Verb open</code></pre></div>
-<p>Kill process by ID, name or path</p>
+<span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Start-Process</span> -FilePath <span style=color:#2aa198>&#34;powershell.exe&#34;</span> -Verb open
+</code></pre></div><p>Kill process by ID, name or path</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># PID</span>
 <span style=color:#b58900>Stop-Process</span> 1234
 
@@ -1148,9 +1260,11 @@ Lines Words Characters Property
 <span style=color:#b58900>Stop-Process</span> notepad
 
 <span style=color:#586e75># Path</span>
-<span style=color:#b58900>ps </span>| ? { <span style=color:#268bd2>$_</span>.Path <span style=color:#719e07>-Like</span> <span style=color:#2aa198>&#34;C:\python27\*&#34;</span> } | kill</code></pre></div>
-<h3 id=verb>-Verb</h3>
-<p>What are these verbs? The verbs are determined by the file extension.</p>
+<span style=color:#b58900>ps </span>| ? { <span style=color:#268bd2>$_</span>.Path <span style=color:#719e07>-Like</span> <span style=color:#2aa198>&#34;C:\python27\*&#34;</span> } | <span style=color:#b58900>kill
+</span></code></pre></div>
+<h3 id=-verb>-Verb
+<a class=header-link href=#-verb><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>What are these verbs? The verbs are determined by the file extension.</p>
 <p>To find Verbs for each file use:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#268bd2>$txtFile</span> = <span style=color:#b58900>New-Object</span> System.Diagnostics.ProcessStartInfo -Args process1.txt
 <span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#268bd2>$txtFile</span>.Verbs
@@ -1162,17 +1276,21 @@ printto
 <span style=color:#586e75># This will open it in notepad (default program for txt files)</span>
 <span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>Start-Process</span> -FilePath .\process1.txt -Verb open
 
-<span style=color:#586e75># We can print it with the Print Verb</span></code></pre></div>
-<h3 id=iterate-through-files-in-a-folder>Iterate Through Files in a Folder</h3>
-<p>Folders (directories) are containers while files are not. We can check it with
+<span style=color:#586e75># We can print it with the Print Verb</span>
+</code></pre></div>
+<h3 id=iterate-through-files-in-a-folder>Iterate Through Files in a Folder
+<a class=header-link href=#iterate-through-files-in-a-folder><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Folders (directories) are containers while files are not. We can check it with
 <code>PsIsContainer</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>ls </span>| ? { !<span style=color:#268bd2>$_</span>.PsIsContainer } == <span style=color:#b58900>ls </span>| ? { <span style=color:#719e07>-not</span> <span style=color:#268bd2>$_</span>.PsIsContainer }
 
 <span style=color:#586e75># To view hidden and system files</span>
 <span style=color:#586e75># -Fo or -Force</span>
-<span style=color:#b58900>ls </span>-Force</code></pre></div>
-<h3 id=get-filehash>Get-FileHash</h3>
-<p>Calculate file hash using different hashing algorithms. PowerShell 4.0 and up.</p>
+<span style=color:#b58900>ls </span>-Force
+</code></pre></div>
+<h3 id=get-filehash>Get-FileHash
+<a class=header-link href=#get-filehash><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Calculate file hash using different hashing algorithms. PowerShell 4.0 and up.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># Default algorithm is SHA256 and as you can see the output is truncated (because it&#39;s too long).</span>
 <span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>Get-FileHash</span> .\process1.txt
 
@@ -1191,8 +1309,8 @@ Path      : C:\test\process1.txt
 Algorithm : SHA384
 Hash      : DAFC5DFEC5E52441EFD4453D226486CAF011C2BCECF857690F2BC09AC1A7354E2D7E4D1935AB2CB92A82
             F485699C0CCA
-Path      : C:\test\process1.txt</code></pre></div>
-<p>Different algorithms:</p>
+Path      : C:\test\process1.txt
+</code></pre></div><p>Different algorithms:</p>
 <ul>
 <li>SHA1</li>
 <li>SHA256</li>
@@ -1203,13 +1321,15 @@ Path      : C:\test\process1.txt</code></pre></div>
 <li>RIPEMD160</li>
 </ul>
 <p>It seems like it does not have one for strings.</p>
-<h3 id=select-string-almost-like-grep>Select-String (almost like grep)</h3>
-<p>Unfortunately it cannot do recursive searching. (<code>-r</code> for <code>grep</code>).</p>
+<h3 id=select-string-almost-like-grep>Select-String (almost like grep)
+<a class=header-link href=#select-string-almost-like-grep><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>Unfortunately it cannot do recursive searching. (<code>-r</code> for <code>grep</code>).</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>ls </span>-Force -Filter *.txt -Recursive | <span style=color:#b58900>Select-String</span> <span style=color:#2aa198>&#34;password&#34;</span>
 
 <span style=color:#586e75># -Force -fo: Show hidden and system files.</span>
 <span style=color:#586e75># -Filter -fi *.txt: Show only txt files.</span>
-* -Recursive: -r</code></pre></div>
+* -Recursive: -r
+</code></pre></div>
 </div>
 <footer>
 <p class=meta>
@@ -1228,53 +1348,62 @@ Path      : C:\test\process1.txt</code></pre></div>
 <li>
 <ul>
 <li><a href=#case-sensitivity>Case Sensitivity</a></li>
-</ul></li>
-<li><a href=#how-to-get-help-this-is-your-best-friend>How to Get Help - This is Your Best Friend</a>
+</ul>
+</li>
+<li><a href=#how-to-get-help---this-is-your-best-friend>How to Get Help - This is Your Best Friend</a>
 <ul>
 <li><a href=#get-help-or-help-or-man>Get-Help or help or man</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#aliases>Aliases</a>
 <ul>
 <li><a href=#get-alias-cmdlet>Get-Alias Cmdlet</a></li>
 <li><a href=#set-alias>Set-Alias</a></li>
 <li><a href=#common-aliases-between-powershell-and-bash>Common Aliases Between PowerShell and Bash</a></li>
-</ul></li>
-<li><a href=#session-1-introduction-to-powershell>Session 1 - Introduction to PowerShell</a>
+</ul>
+</li>
+<li><a href=#session-1---introduction-to-powershell>Session 1 - Introduction to PowerShell</a>
 <ul>
 <li><a href=#naming-convention>Naming Convention</a></li>
 <li><a href=#parameters>Parameters</a></li>
 <li><a href=#get-member>Get-Member</a></li>
 <li><a href=#piping>Piping</a></li>
-</ul></li>
-<li><a href=#session-2-cmdlets>Session 2 - Cmdlets</a>
+</ul>
+</li>
+<li><a href=#session-2---cmdlets>Session 2 - Cmdlets</a>
 <ul>
 <li><a href=#get-childitem>Get-ChildItem</a>
 <ul>
 <li><a href=#read-registry>Read Registry</a></li>
 <li><a href=#read-windows-certificate-store>Read Windows Certificate Store</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#cd-or-change-directory>cd or Change Directory</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#session-3-scripting-variables-and-syntax>Session 3: Scripting, Variables and Syntax</a>
 <ul>
 <li><a href=#executionpolicy>ExecutionPolicy</a></li>
 <li><a href=#variables>Variables</a>
 <ul>
 <li><a href=#variable-types>Variable Types</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#arrays>Arrays</a></li>
 <li><a href=#get-member-1>Get-Member</a>
 <ul>
 <li><a href=#get-childitem-variable>Get-ChildItem variable:</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#user-properties-of-cmdlet-output>User Properties of Cmdlet Output</a></li>
 <li><a href=#double-quotes-vs-single-quotes>Double Quotes vs. Single Quotes</a></li>
-</ul></li>
-<li><a href=#section-4-flow-control>Section 4 - Flow Control</a>
+</ul>
+</li>
+<li><a href=#section-4---flow-control>Section 4 - Flow Control</a>
 <ul>
-<li><a href=#whatif-confirm-verbose>WhatIf - Confirm - Verbose</a></li>
+<li><a href=#whatif---confirm---verbose>WhatIf - Confirm - Verbose</a></li>
 <li><a href=#operators>Operators</a></li>
-<li><a href=#if-then-else>If - Then - Else</a></li>
+<li><a href=#if---then---else>If - Then - Else</a></li>
 <li><a href=#where-object-filtering>Where-Object Filtering</a></li>
 <li><a href=#foreach-object>ForEach-Object</a></li>
 <li><a href=#select-object>Select-Object</a></li>
@@ -1282,17 +1411,20 @@ Path      : C:\test\process1.txt</code></pre></div>
 <li><a href=#file-output>File Output</a></li>
 <li><a href=#export-csv-and-import-csv>Export-CSV and Import-CSV</a></li>
 <li><a href=#measure-object>Measure-Object</a></li>
-</ul></li>
-<li><a href=#section-5-practical-uses-conclusion>Section 5 - Practical Uses & Conclusion</a>
+</ul>
+</li>
+<li><a href=#section-5---practical-uses--conclusion>Section 5 - Practical Uses & Conclusion</a>
 <ul>
 <li><a href=#ping-all-ips-in-a-range>Ping All IPs in a Range</a></li>
 <li><a href=#process-manipulation>Process Manipulation</a></li>
-<li><a href=#verb>-Verb</a></li>
+<li><a href=#-verb>-Verb</a></li>
 <li><a href=#iterate-through-files-in-a-folder>Iterate Through Files in a Folder</a></li>
 <li><a href=#get-filehash>Get-FileHash</a></li>
 <li><a href=#select-string-almost-like-grep>Select-String (almost like grep)</a></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </nav>
 </section>

