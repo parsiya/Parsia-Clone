@@ -96,23 +96,10 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     // Disable telemetry
-	"telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
 
     // **Markdown Notes**
     "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
-    // **VSNotes**
-    "vsnotes.defaultNoteTitle": "{title}.{ext}",
-    "vsnotes.templates": [
-        "bug",
-        "note",
-    ],
-    "vsnotes.defaultSnippet": {
-        "langId": "markdown",
-        "name": "vsnote_template_note"
-    },
-    // Spaces in title will be converted to this.
-    "vsnotes.noteTitleConvertSpaces": "-",
 
     // Misc
     // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
