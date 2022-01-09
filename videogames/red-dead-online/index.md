@@ -107,11 +107,11 @@ This is a stealth mission and is pretty easy to do. Obviously, use the bow.
 
 1. #3 is moving between where he is in the picture and #6. Along the red line.
 2. #5 is in a shack and cannot see #1.
-3. Kill #1 when #3 is not walking towards it. I do not think can see him anyways.
-4. Then move around the shack and kill #2. #2 is sitting on a chair on the docks.
-5. Then either wait for #3 to get to where he is in the picture or if he is moving back towards #6, you can kill #4.
-   1. #4 is fishing and looking towards the sea. The corpse will fall into the water. Even if it does not, #3 does not seem to see it/care.
-6. Kill #5 who is in a shack. #6 is looking down and does not see him.
+3. Kill #1 when #3 is not walking towards it. I do not think #3 can see #1 anyways.
+4. Move around the shack and kill #2. #2 is sitting on a chair on the docks.
+5. Either wait for #3 to get to where he is in the picture or if he is moving back towards #6, you can kill #4.
+   1. #4 is fishing and looking towards the sea. The corpse will fall into the water. Even if it does not, #3 does not seem to see/care.
+6. Kill #5 in a shack. #6 is looking down and does not see him.
 7. Go by the shack where #5 was killed and kill #6. He seems to be looking down and does not see you.
    1. This step and the next are interchangeable.
 8. Go slowly into the shack, #7 is sitting besides the still and does not notice you. You can kill him, no need to panic or be quick. Take your time.
@@ -224,8 +224,8 @@ every rank is the same (and does not exponentially go up). It's a quick thing.
 
 # Starting Out?
 Start with the Collector's track. Go to Madam Nazar and buy the bag. It costs 15
-gold bars. Then you can start collecting. Use this amazing map to figure
-out what is where and collect everything around you.
+gold bars. Then you can start collecting. Use the online collector's map to
+figure out what is where and collect everything around you.
 
 You can get 10 gold bars by enabling 2FA in your Rockstar account.
 
@@ -235,8 +235,9 @@ challenges for a few weeks.
 
 [https://jeanropke.github.io/RDR2CollectorsMap/][collectors-map]
 
-Then buy the shovel and then the metal detector. Be sure to **buy the shovel
-first**, because the metal detector is useless without the shovel.
+Then buy the shovel and then the metal detector. Be sure to
+**buy the shovel first**, because the metal detector is useless without the
+shovel.
 
 On consoles, the controller vibrates when you have the metal detector out and
 you are around special locations. On PC, sometimes you have to first person
@@ -257,3 +258,36 @@ Later, the moonshine shack was also discounted.
 These weekly discounts usually come with XP and payout bonuses. This means you
 can concentrate on that role to get to level 20 faster (especially with the
 boost from the Outlaw pass).
+
+# Bugs
+The game has a bunch of bugs. Here some screenshots and description about funny
+things I have encountered.
+
+## Sentient Clones of Myself
+I died and then something bizarre happened. The game started creating clones of
+me every few seconds. These clones started walking away. If I attacked one, it
+would return fire and kill me. I did not manage to kill any of them. Such a
+cyberpunk experience.
+
+![Clones](rdo-copies-of-myself.jpg)
+
+## Naked People and Ship
+Going around Bayou Nwa (I think), I started encountering some naked NPCs.
+
+![](rdo-naked-ship-1.jpg)
+
+There was also this big ship on the ground.
+
+![](rdo-naked-ship-2.jpg)
+
+## Matched with Someone who Looks Like Me
+Doing a mission and matched with someone who looks like me.
+
+![](rdo-thats-a-me.jpg)
+
+## Turned into a UFO
+Don't ask me how I did it ;)
+
+![](UFO-in-rdo-1.jpg)
+
+![](UFO-in-rdo-2.jpg)
