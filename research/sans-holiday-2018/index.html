@@ -11,7 +11,7 @@
 <meta name=description content>
 <meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]">
 <meta name=author content="Parsia-Clone">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="SANS Holiday Hack Challenge 2018 - Raw Notes">
 <meta name=twitter:description content="OSINT  Happy Trails
@@ -1042,10 +1042,10 @@ Error: ENOENT: no such file or directory, open '/opt/http2/uploads//nem,.rxr'
 <p><a href=https://packalyzer.kringlecastle.com/pub/app.js target=_blank rel="noreferrer noopener">https://packalyzer.kringlecastle.com/pub/app.js</a></p>
 <p>Inside <code>app.js</code> we can see paths to the keys?</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>const</span> dev_mode <span style=color:#719e07>=</span> <span style=color:#cb4b16>true</span>;
-<span style=color:#268bd2>const</span> key_log_path <span style=color:#719e07>=</span> ( <span style=color:#719e07>!</span>dev_mode <span style=color:#719e07>||</span> <span style=color:#2aa198>__</span>dirname <span style=color:#719e07>+</span> process.env.DEV <span style=color:#719e07>+</span> process.env.SSLKEYLOGFILE )
+<span style=color:#268bd2>const</span> key_log_path <span style=color:#719e07>=</span> ( <span style=color:#719e07>!</span>dev_mode <span style=color:#719e07>||</span> __dirname <span style=color:#719e07>+</span> process.env.DEV <span style=color:#719e07>+</span> process.env.SSLKEYLOGFILE )
 <span style=color:#268bd2>const</span> options <span style=color:#719e07>=</span> {
-  key<span style=color:#719e07>:</span> fs.readFileSync(<span style=color:#2aa198>__</span>dirname <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;/keys/server.key&#39;</span>),
-  cert<span style=color:#719e07>:</span> fs.readFileSync(<span style=color:#2aa198>__</span>dirname <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;/keys/server.crt&#39;</span>),
+  key<span style=color:#719e07>:</span> fs.readFileSync(__dirname <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;/keys/server.key&#39;</span>),
+  cert<span style=color:#719e07>:</span> fs.readFileSync(__dirname <span style=color:#719e07>+</span> <span style=color:#2aa198>&#39;/keys/server.crt&#39;</span>),
   http2<span style=color:#719e07>:</span> {
     protocol<span style=color:#719e07>:</span> <span style=color:#2aa198>&#39;h2&#39;</span>,         <span style=color:#586e75>// HTTP2 only. NOT HTTP1 or HTTP1.1
 </span><span style=color:#586e75></span>    protocols<span style=color:#719e07>:</span> [ <span style=color:#2aa198>&#39;h2&#39;</span> ],
@@ -1054,13 +1054,13 @@ Error: ENOENT: no such file or directory, open '/opt/http2/uploads//nem,.rxr'
 </span></code></pre></div><p><code>dev_mode</code> is on so it should be in those places?</p>
 <p><code>__dirname</code> is the current directory of the module.</p>
 <p>From <a href=https://nodejs.org/docs/latest/api/modules.html#modules_dirname target=_blank rel="noreferrer noopener">https://nodejs.org/docs/latest/api/modules.html#modules_dirname</a></p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>The directory name <span style=color:#719e07>of</span> the current module. This is the same as the path.dirname() <span style=color:#719e07>of</span> the <span style=color:#2aa198>__</span>filename.
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>The directory name <span style=color:#719e07>of</span> the current module. This is the same as the path.dirname() <span style=color:#719e07>of</span> the __filename.
 
 Example<span style=color:#719e07>:</span> running node example.js from <span style=color:#719e07>/</span>Users<span style=color:#719e07>/</span>mjr
 
-console.log(<span style=color:#2aa198>__</span>dirname);
+console.log(__dirname);
 <span style=color:#586e75>// Prints: /Users/mjr
-</span><span style=color:#586e75></span>console.log(path.dirname(<span style=color:#2aa198>__</span>filename));
+</span><span style=color:#586e75></span>console.log(path.dirname(__filename));
 <span style=color:#586e75>// Prints: /Users/mjr
 </span></code></pre></div><p>Look at <code>load_envs</code>, they are opening up directories based on names of environmental variables.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#268bd2>function</span> load_envs() {
@@ -2056,7 +2056,7 @@ Tags:
 </div>
 </div>
 <footer role=contentinfo>
-<p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<p>Copyright &copy; 2022 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
 <span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.
 </p>
 </footer>

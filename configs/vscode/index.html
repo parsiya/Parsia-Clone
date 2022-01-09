@@ -11,7 +11,7 @@
 <meta name=description content>
 <meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]">
 <meta name=author content="Parsia-Clone">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="VS Code Config">
 <meta name=twitter:description content="VS Code Config  This is how I setup my VS Code. I mostly use it for reading/writing markdown and Go.
@@ -124,9 +124,9 @@ always updated, regardless.</p>
 <a class=header-link href=#golangci-lint><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
 </h3><p>To enable <a href=https://github.com/golangci/golangci-lint target=_blank rel="noreferrer noopener">golangci-lint</a> set the following in config:</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    <span style=color:#2aa198>&#34;go.lintTool&#34;</span>: <span style=color:#2aa198>&#34;golangci-lint&#34;</span>,
-    // Lint all workspace, this is good for source code review
-    // Other options are <span style=color:#2aa198>&#34;off&#34;</span> or <span style=color:#2aa198>&#34;package&#34;</span>
-    <span style=color:#2aa198>&#34;go.lintOnSave&#34;</span>: <span style=color:#2aa198>&#34;workspace&#34;</span>,
+    <span style=color:#586e75>// Lint all workspace, this is good for source code review
+</span><span style=color:#586e75></span>    <span style=color:#586e75>// Other options are &#34;off&#34; or &#34;package&#34;
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;go.lintOnSave&#34;</span>: <span style=color:#2aa198>&#34;workspace&#34;</span>,
 </code></pre></div><p>Then run <code>go get -v github.com/golangci/golangci-lint/cmd/golangci-lint</code>.</p>
 <p>Next, open up any Go file and the extension will prompt you to install tools.
 Select all and tools will be installed.</p>
@@ -142,16 +142,16 @@ Select all and tools will be installed.</p>
 <ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" target=_blank rel="noreferrer noopener">https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one</a></li>
 </ul>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    // Generate Github compatible table of content
-    <span style=color:#2aa198>&#34;markdown.extension.toc.slugifyMode&#34;</span>: <span style=color:#2aa198>&#34;github&#34;</span>,
-    // Update the table of content on save
-    <span style=color:#2aa198>&#34;markdown.extension.toc.updateOnSave&#34;</span>: <span style=color:#cb4b16>true</span>,
-    // Set list indentation to inherit
-    <span style=color:#2aa198>&#34;markdown.extension.list.indentationSize&#34;</span>: <span style=color:#2aa198>&#34;inherit&#34;</span>,
-    // Convert toc to lowercase to work on Github and Hugo
-    <span style=color:#2aa198>&#34;markdown.extension.toc.downcaseLink&#34;</span>: <span style=color:#cb4b16>true</span>,
-    // Use &#39;*&#39; to indicate italic and not &#39;_&#39;
-    <span style=color:#2aa198>&#34;markdown.extension.italic.indicator&#34;</span>: <span style=color:#2aa198>&#34;*&#34;</span>,
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    <span style=color:#586e75>// Generate Github compatible table of content
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;markdown.extension.toc.slugifyMode&#34;</span>: <span style=color:#2aa198>&#34;github&#34;</span>,
+    <span style=color:#586e75>// Update the table of content on save
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;markdown.extension.toc.updateOnSave&#34;</span>: <span style=color:#cb4b16>true</span>,
+    <span style=color:#586e75>// Set list indentation to inherit
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;markdown.extension.list.indentationSize&#34;</span>: <span style=color:#2aa198>&#34;inherit&#34;</span>,
+    <span style=color:#586e75>// Convert toc to lowercase to work on Github and Hugo
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;markdown.extension.toc.downcaseLink&#34;</span>: <span style=color:#cb4b16>true</span>,
+    <span style=color:#586e75>// Use &#39;*&#39; to indicate italic and not &#39;_&#39;
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;markdown.extension.italic.indicator&#34;</span>: <span style=color:#2aa198>&#34;*&#34;</span>,
 </code></pre></div>
 <h3 id=table-of-content>Table of Content
 <a class=header-link href=#table-of-content><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
@@ -169,10 +169,10 @@ document I have ignored the top heading <code>VS Code Config</code>.</p>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint" target=_blank rel="noreferrer noopener">https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint</a></li>
 </ul>
 <p>You can disable specific rules in config:</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    // Markdown Lint settings
-    <span style=color:#2aa198>&#34;markdownlint.config&#34;</span>: {
-        // Disable some rules
-        <span style=color:#268bd2>&#34;MD022&#34;</span>: <span style=color:#cb4b16>false</span>,
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    <span style=color:#586e75>// Markdown Lint settings
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;markdownlint.config&#34;</span>: {
+        <span style=color:#586e75>// Disable some rules
+</span><span style=color:#586e75></span>        <span style=color:#268bd2>&#34;MD022&#34;</span>: <span style=color:#cb4b16>false</span>,
         <span style=color:#268bd2>&#34;MD032&#34;</span>: <span style=color:#cb4b16>false</span>,
         <span style=color:#268bd2>&#34;MD007&#34;</span>: <span style=color:#cb4b16>false</span>,
         <span style=color:#268bd2>&#34;MD010&#34;</span>: <span style=color:#cb4b16>false</span>,
@@ -223,16 +223,16 @@ settings file):</p>
 </h2><p>These settings only affect markdown files. VS Code has a recent bug where some
 universal settings (e.g. <code>quickSuggestions</code>) are not automatically applied to
 some languages such as Markdown. These are added here.</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    // Markdown language settings
-    <span style=color:#2aa198>&#34;[markdown]&#34;</span>: {
-        // Enable word based suggestions
-        <span style=color:#268bd2>&#34;editor.wordBasedSuggestions&#34;</span>: <span style=color:#cb4b16>true</span>,
-        // Disable drag and drop in markdown files
-        <span style=color:#268bd2>&#34;editor.dragAndDrop&#34;</span>: <span style=color:#cb4b16>false</span>,
-        // Enable quick suggestions
-        <span style=color:#268bd2>&#34;editor.quickSuggestions&#34;</span>: <span style=color:#cb4b16>true</span>,
-        // Send snippets to top in suggestion list
-        <span style=color:#268bd2>&#34;editor.snippetSuggestions&#34;</span>: <span style=color:#2aa198>&#34;top&#34;</span>,
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    <span style=color:#586e75>// Markdown language settings
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;[markdown]&#34;</span>: {
+        <span style=color:#586e75>// Enable word based suggestions
+</span><span style=color:#586e75></span>        <span style=color:#268bd2>&#34;editor.wordBasedSuggestions&#34;</span>: <span style=color:#cb4b16>true</span>,
+        <span style=color:#586e75>// Disable drag and drop in markdown files
+</span><span style=color:#586e75></span>        <span style=color:#268bd2>&#34;editor.dragAndDrop&#34;</span>: <span style=color:#cb4b16>false</span>,
+        <span style=color:#586e75>// Enable quick suggestions
+</span><span style=color:#586e75></span>        <span style=color:#268bd2>&#34;editor.quickSuggestions&#34;</span>: <span style=color:#cb4b16>true</span>,
+        <span style=color:#586e75>// Send snippets to top in suggestion list
+</span><span style=color:#586e75></span>        <span style=color:#268bd2>&#34;editor.snippetSuggestions&#34;</span>: <span style=color:#2aa198>&#34;top&#34;</span>,
     },
 </code></pre></div>
 <h3 id=word-separator-note>Word Separator Note
@@ -241,10 +241,10 @@ some languages such as Markdown. These are added here.</p>
 <code>word pattern</code>. This means you will not get suggestions for <code>this-long-word</code>.
 The <code>editor.wordSeparators</code> config setting does not have any effect on word
 patterns:</p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    // <span style=color:#2aa198>&#34;editor.wordSeparators&#34;</span> does not affect word pattern :(
-    // Note I have removed -
-    // <span style=color:#2aa198>&#34;editor.wordSeparators&#34;</span>: <span style=color:#2aa198>&#34;`~!@#$%^&amp;*()=+[{]}\\|;:&#39;\&#34;,.&lt;&gt;/?&#34;</span>,
-</code></pre></div>
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>    <span style=color:#586e75>// &#34;editor.wordSeparators&#34; does not affect word pattern :(
+</span><span style=color:#586e75></span>    <span style=color:#586e75>// Note I have removed -
+</span><span style=color:#586e75></span>    <span style=color:#586e75>// &#34;editor.wordSeparators&#34;: &#34;`~!@#$%^&amp;*()=+[{]}\\|;:&#39;\&#34;,.&lt;&gt;/?&#34;,
+</span></code></pre></div>
 <h1 id=creating-snippets>Creating Snippets
 <a class=header-link href=#creating-snippets><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
 </h1><p>Similar to other editors, you can create snippets in VS Code. Snippets are
@@ -281,12 +281,12 @@ snippet without having to manually placing the cursor.</p>
     <span style=color:#268bd2>&#34;codecaption&#34;</span>: {
 		<span style=color:#268bd2>&#34;prefix&#34;</span>: <span style=color:#2aa198>&#34;codecap&#34;</span>,
 		<span style=color:#268bd2>&#34;body&#34;</span>: [
-            // comment is a placeholder to prevent Hugo from generating the shortcode.
-			<span style=color:#2aa198>&#34;{{&lt; codecaption title=\&#34;${1:title}\&#34; lang=\&#34;${2:language}\&#34; &gt;}}&#34;</span>,
+            <span style=color:#586e75>// comment is a placeholder to prevent Hugo from generating the shortcode.
+</span><span style=color:#586e75></span>			<span style=color:#2aa198>&#34;{{&lt; codecaption title=\&#34;${1:title}\&#34; lang=\&#34;${2:language}\&#34; &gt;}}&#34;</span>,
 			<span style=color:#2aa198>&#34;${3:code}&#34;</span>,
 			<span style=color:#2aa198>&#34;{{&lt; /codecaption &gt;}}&#34;</span>,
-			<span style=color:#2aa198>&#34;&#34;</span>, // empty line after shortcode
-			<span style=color:#2aa198>&#34;$0&#34;</span>
+			<span style=color:#2aa198>&#34;&#34;</span>, <span style=color:#586e75>// empty line after shortcode
+</span><span style=color:#586e75></span>			<span style=color:#2aa198>&#34;$0&#34;</span>
 		],
 		<span style=color:#268bd2>&#34;description&#34;</span>: <span style=color:#2aa198>&#34;codecaption Hugo shortcode&#34;</span>
 	},
@@ -364,7 +364,7 @@ Tags:
 </div>
 </div>
 <footer role=contentinfo>
-<p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<p>Copyright &copy; 2022 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
 <span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.
 </p>
 </footer>

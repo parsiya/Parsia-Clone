@@ -11,7 +11,7 @@
 <meta name=description content>
 <meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]">
 <meta name=author content="Parsia-Clone">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="VS Code Tasks - Notes">
 <meta name=twitter:description content="VS Code tasks are a way to run external tools. I used VS Code tasks to preview my blogs. All of my blogs are based on Hugo so I use the local watch server to preview them.
@@ -80,15 +80,15 @@ files and you can read about them here:</p>
 so I have installed Hugo there but, it doesn't really matter. We want to run
 <code>hugo serve -vw</code> (<code>serve</code> and <code>server</code> are the same).</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    <span style=color:#268bd2>&#34;version&#34;</span>: <span style=color:#2aa198>&#34;2.0.0&#34;</span>,
+    <span style=color:#586e75>// See https://go.microsoft.com/fwlink/?LinkId=733558
+</span><span style=color:#586e75></span>    <span style=color:#586e75>// for the documentation about the tasks.json format
+</span><span style=color:#586e75></span>    <span style=color:#268bd2>&#34;version&#34;</span>: <span style=color:#2aa198>&#34;2.0.0&#34;</span>,
     <span style=color:#268bd2>&#34;tasks&#34;</span>: [
         {
             <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;start-hugo-server&#34;</span>,
             <span style=color:#268bd2>&#34;type&#34;</span>: <span style=color:#2aa198>&#34;shell&#34;</span>,
-            // if the default VS Code terminal on Windows is cmd, use `wsl.exe hugo serve -vw`
-            <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;hugo serve -vw&#34;</span>,
+            <span style=color:#586e75>// if the default VS Code terminal on Windows is cmd, use `wsl.exe hugo serve -vw`
+</span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;hugo serve -vw&#34;</span>,
             <span style=color:#268bd2>&#34;group&#34;</span>: {
                 <span style=color:#268bd2>&#34;kind&#34;</span>: <span style=color:#2aa198>&#34;build&#34;</span>,
                 <span style=color:#268bd2>&#34;isDefault&#34;</span>: <span style=color:#cb4b16>true</span>
@@ -120,10 +120,10 @@ does not work because it's run as <code>wsl.exe -e explorer.exe http://localhost
 <p>So, we use the <code>options > shell > executable</code> object to designate the shell
 executable. Also, note the <code>/c</code> command line switch passed to the cmd.</p>
 <p>The command to run the task can be <code>start http://localhost:1313</code></p>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>// <span style=color:#2aa198>&#34;tasks&#34;</span>: [
-{
-    // opens http://localhost:1313 in the system browser to preview the site.
-    <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>,
+<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#586e75>// &#34;tasks&#34;: [
+</span><span style=color:#586e75></span>{
+    <span style=color:#586e75>// opens http://localhost:1313 in the system browser to preview the site.
+</span><span style=color:#586e75></span>    <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>,
     <span style=color:#268bd2>&#34;type&#34;</span>: <span style=color:#2aa198>&#34;shell&#34;</span>,
     <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;/c start http://localhost:1313&#34;</span>,
     <span style=color:#268bd2>&#34;options&#34;</span>: {
@@ -132,8 +132,8 @@ executable. Also, note the <code>/c</code> command line switch passed to the cmd
         }
     }
 }
-// ]
-</code></pre></div>
+<span style=color:#586e75>// ]
+</span></code></pre></div>
 <h1 id=multiple-tasks>Multiple Tasks
 <a class=header-link href=#multiple-tasks><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
 </h1><p>Now, we have two different tasks that do what we want. The next step is to run
@@ -148,8 +148,8 @@ This means if I run the <code>open-browser-1313</code> task, it will run the
             <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;start-hugo-server&#34;</span>,
             <span style=color:#268bd2>&#34;type&#34;</span>: <span style=color:#2aa198>&#34;shell&#34;</span>,
             <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;hugo serve -vw&#34;</span>,
-            <span style=color:#268bd2>&#34;isBackground&#34;</span>: <span style=color:#cb4b16>true</span>    // this is a watch process that keeps running
-        },
+            <span style=color:#268bd2>&#34;isBackground&#34;</span>: <span style=color:#cb4b16>true</span>    <span style=color:#586e75>// this is a watch process that keeps running
+</span><span style=color:#586e75></span>        },
         {
             <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>,
             <span style=color:#268bd2>&#34;type&#34;</span>: <span style=color:#2aa198>&#34;shell&#34;</span>,
@@ -174,31 +174,31 @@ This means if I run the <code>open-browser-1313</code> task, it will run the
 has finished even though the Hugo server task is a background task.</p>
 <p>The solution is to <code>create a new task that runs both of them</code>.</p>
 <div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    <span style=color:#268bd2>&#34;version&#34;</span>: <span style=color:#2aa198>&#34;2.0.0&#34;</span>,
+    <span style=color:#586e75>// See https://go.microsoft.com/fwlink/?LinkId=733558
+</span><span style=color:#586e75></span>    <span style=color:#586e75>// for the documentation about the tasks.json format
+</span><span style=color:#586e75></span>    <span style=color:#268bd2>&#34;version&#34;</span>: <span style=color:#2aa198>&#34;2.0.0&#34;</span>,
     <span style=color:#268bd2>&#34;tasks&#34;</span>: [
         {
             <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;start-hugo-server&#34;</span>,
             <span style=color:#268bd2>&#34;type&#34;</span>: <span style=color:#2aa198>&#34;shell&#34;</span>,
-            <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;hugo serve -vw&#34;</span>, // if the default VS Code terminal on Windows is cmd, use `wsl.exe hugo serve -vw`
-            <span style=color:#268bd2>&#34;isBackground&#34;</span>: <span style=color:#cb4b16>true</span>    // this is a watch process that keeps running
-        },
+            <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;hugo serve -vw&#34;</span>, <span style=color:#586e75>// if the default VS Code terminal on Windows is cmd, use `wsl.exe hugo serve -vw`
+</span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;isBackground&#34;</span>: <span style=color:#cb4b16>true</span>    <span style=color:#586e75>// this is a watch process that keeps running
+</span><span style=color:#586e75></span>        },
         {
-            // opens http://localhost:1313 in the system browser to preview the site.
-            <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>,
+            <span style=color:#586e75>// opens http://localhost:1313 in the system browser to preview the site.
+</span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>,
             <span style=color:#268bd2>&#34;type&#34;</span>: <span style=color:#2aa198>&#34;shell&#34;</span>,
-            <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;/c start http://localhost:1313&#34;</span>, // Windows only thing.
-            <span style=color:#268bd2>&#34;options&#34;</span>: {
+            <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;/c start http://localhost:1313&#34;</span>, <span style=color:#586e75>// Windows only thing.
+</span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;options&#34;</span>: {
                 <span style=color:#268bd2>&#34;shell&#34;</span>: {
-                    <span style=color:#268bd2>&#34;executable&#34;</span>: <span style=color:#2aa198>&#34;cmd.exe&#34;</span>, // My VS Code&#39;s default shell is wsl so I have to change the shell to cmd.exe here.
-                }
+                    <span style=color:#268bd2>&#34;executable&#34;</span>: <span style=color:#2aa198>&#34;cmd.exe&#34;</span>, <span style=color:#586e75>// My VS Code&#39;s default shell is wsl so I have to change the shell to cmd.exe here.
+</span><span style=color:#586e75></span>                }
             }
         },
         {
             <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;preview-blog&#34;</span>,
-            // runs both of these together
-            <span style=color:#268bd2>&#34;dependsOn&#34;</span>: [
+            <span style=color:#586e75>// runs both of these together
+</span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;dependsOn&#34;</span>: [
                 <span style=color:#2aa198>&#34;start-hugo-server&#34;</span>,
                 <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>
             ],
@@ -239,7 +239,7 @@ Tags:
 </div>
 </div>
 <footer role=contentinfo>
-<p>Copyright &copy; 2021 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<p>Copyright &copy; 2022 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
 <span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.
 </p>
 </footer>
