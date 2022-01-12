@@ -307,3 +307,6 @@ snippet: "I used to keep track of books I had read and the time I finished them.
 * Drake, David - The Complete Hammers Slammers Vol 3		22 Dec 2010  2243
 * Williamson, Jack - Ultimate Earth			15 Jan 2011  2214
 * Banks, Iain - [Culture 01] - Consider Phlebas		19 Jan 2011  2217
+
+I moved to the US in February 2011 and stopped tracking my reading. Reading
+slowed down by a lot because I had access to fast internet.

@@ -12,12 +12,12 @@ wip: true
 
 # Leveling Alchemy and Farming Gold
 
-1. Get the [Thief Stone][thief-stone] blessing. Alchemy is stealth skill and
+1. Get the [Thief Stone][thief-stone] blessing. Alchemy is a stealth skill and
    will progress 20% faster.
 2. Create a house using the Hearthfire expansion. You will need to be Thane
    somewhere and have 5000 gold.
 3. The house has an outdoors plot of land for growing herbs. Very recommended to
-   also create a Greenhouse.
+   also create a Greenhouse, too.
 4. Grow Creep Cluster, Mora Tapinella, and Scaly Pholiota in equal amounts. Each
    harvest will give you three samples (not sure if Alchemy perks increase
    this).
@@ -25,7 +25,7 @@ wip: true
        to harvest.
     2. For easier harvesting you can also hold your cursor in the space above
        the herb. The mess with the planter option is closer to the ground.
-5. Go to the alchemist Whiterun (or the Dark Brotherhood one mentioned below).
+5. Go to the alchemist in Whiterun (or the Dark Brotherhood one mentioned below).
 6. Wear all items with alchemy bonuses. Check the vendors for these (and barter
    items) every time you visit them.
 7. Use all three herbs to make potions.
