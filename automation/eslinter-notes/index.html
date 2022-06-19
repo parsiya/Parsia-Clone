@@ -1,232 +1,27 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1">
-<link href=/css/fonts.css rel=stylesheet type=text/css>
-<title>ESLinter Raw Notes</title>
-<link rel=stylesheet href=/css/hugo-octopress.css>
-<link rel=stylesheet href=http://parsiya.io/clone.css>
-<link rel=stylesheet href=/css/fork-awesome.min.css>
-<link href=http://parsiya.io/favicon.png rel=icon>
-<meta name=description content>
-<meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]">
-<meta name=author content="Parsia-Clone">
-<meta name=generator content="Hugo 0.91.2">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="ESLinter Raw Notes">
-<meta name=twitter:description content="Static analysis of JavaScript through the ages:   Script to detect DOM XSS  http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code    In the following blog post (2012), Ryan Dewhurst mentions that it would be nice to have JavaScript taint analysis for DOM XSS in Burp.
- https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html  The link to the extension does not work anymore.
-Searching for ESLint + Burp on Twitter gets us a series of tweets by David Rook from 2015:">
-<meta name=twitter:domain content="parsiya.io">
-<meta name=twitter:creator content="@CryptoGangsta">
-</head>
-<body>
-<header role=banner>
-<hgroup>
-<h1><a href=http://parsiya.io/>Parsia-Clone</a></h1>
-<h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2>
-</hgroup></header>
-<nav role=navigation>
-<fieldset class=mobile-nav>
-<select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select>
-</fieldset>
-<ul class=main-navigation>
-<li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank>Parsia-Clone on Github</a></li>
-<li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank>How did I make this?</a></li>
-<li><a href=https://parsiya.net title="My Main Website" target=_blank>My Main Website</a></li>
-</ul>
-<ul class=subscription>
-</ul>
-<form action=https://www.google.com/search method=get target=_blank>
-<fieldset role=search>
-<input class=search type=text name=q results=0 placeholder=Search>
-<input type=hidden name=q value=site:http://parsiya.io/>
-</fieldset>
-</form>
-</nav>
-<div id=main>
-<div id=content>
-<div>
-<article class=hentry role=article>
-<header>
-<p class=meta>
-2 minute read
-- <a class=label href=http://parsiya.io/categories/automation/>Automation </a>
-</p>
-<h1 class=entry-title>
-ESLinter Raw Notes
-</h1>
-<a href=https://github.com/parsiya/Parsia-Clone/tree/main/automation/eslinter-notes.md target=_blank>Github Link</a>
-</header>
-<div class=entry-content>
-<nav id=TableOfContents>
-<ul>
-<li>
-<ul>
-<li><a href=#static-analysis-of-javascript-through-the-ages>Static analysis of JavaScript through the ages:</a></li>
-<li><a href=#how-to-detect-js-in-responses>How to detect JS in responses</a></li>
-<li><a href=#embedding-js-in-python>Embedding JS in Python?</a></li>
-<li><a href=#hurdles>Hurdles</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-<h2 id=static-analysis-of-javascript-through-the-ages>Static analysis of JavaScript through the ages:
-<a class=header-link href=#static-analysis-of-javascript-through-the-ages><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
-</h2><ul>
-<li>Script to detect DOM XSS
-<ul>
-<li><a href=http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code target=_blank rel="noreferrer noopener">http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code</a></li>
-</ul>
-</li>
-</ul>
-<p>In the following blog post (2012), Ryan Dewhurst mentions that it would be nice to have JavaScript taint analysis for DOM XSS in Burp.</p>
-<ul>
-<li><a href=https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html target=_blank rel="noreferrer noopener">https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html</a></li>
-</ul>
-<p>The link to the extension does not work anymore.</p>
-<p>Searching for ESLint + Burp on Twitter gets us a series of tweets by David Rook from 2015:</p>
-<ul>
-<li><a href=https://twitter.com/davidrook/status/643907041363410944 target=_blank rel="noreferrer noopener">https://twitter.com/davidrook/status/643907041363410944</a></li>
-</ul>
-<p>Seems like he created an extension but never continued or released it.</p>
-<hr>
-<h2 id=how-to-detect-js-in-responses>How to detect JS in responses
-<a class=header-link href=#how-to-detect-js-in-responses><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
-</h2><p>Some ideas, including some from <a href=https://github.com/luh2/DetectDynamicJS target=_blank rel="noreferrer noopener">DetectDynamicJS</a></p>
-<ul>
-<li><a href=https://github.com/luh2/DetectDynamicJS/blob/master/DetectDynamicJS.py#L229 target=_blank rel="noreferrer noopener">https://github.com/luh2/DetectDynamicJS/blob/master/DetectDynamicJS.py#L229</a></li>
-</ul>
-<div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#719e07>def</span> <span style=color:#268bd2>isScript</span>(<span style=color:#268bd2>self</span>, requestResponse):
-    <span style=color:#2aa198>&#34;&#34;&#34;Determine if the response is a script&#34;&#34;&#34;</span>
-    <span style=color:#719e07>try</span>:
-        response <span style=color:#719e07>=</span> requestResponse<span style=color:#719e07>.</span>getResponse()
-    <span style=color:#719e07>except</span>:
-        <span style=color:#719e07>return</span> <span style=color:#cb4b16>False</span>
-    <span style=color:#719e07>if</span> <span style=color:#719e07>not</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasBody(response):
-        <span style=color:#719e07>return</span> <span style=color:#cb4b16>False</span>
-    responseInfo <span style=color:#719e07>=</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>_helpers<span style=color:#719e07>.</span>analyzeResponse(response)
-    body <span style=color:#719e07>=</span> response<span style=color:#719e07>.</span>tostring()[responseInfo<span style=color:#719e07>.</span>getBodyOffset():]
-    first_char <span style=color:#719e07>=</span> body[<span style=color:#2aa198>0</span>:<span style=color:#2aa198>1</span>]
-    mimeType <span style=color:#719e07>=</span> responseInfo<span style=color:#719e07>.</span>getStatedMimeType()<span style=color:#719e07>.</span>split(<span style=color:#2aa198>&#39;;&#39;</span>)[<span style=color:#2aa198>0</span>]
-    inferredMimeType <span style=color:#719e07>=</span> responseInfo<span style=color:#719e07>.</span>getInferredMimeType()<span style=color:#719e07>.</span>split(<span style=color:#2aa198>&#39;;&#39;</span>)[<span style=color:#2aa198>0</span>]
-    <span style=color:#719e07>return</span> (first_char <span style=color:#719e07>not</span> <span style=color:#719e07>in</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>ichars <span style=color:#719e07>and</span>
-            (<span style=color:#2aa198>&#34;script&#34;</span> <span style=color:#719e07>in</span> mimeType <span style=color:#719e07>or</span> <span style=color:#2aa198>&#34;script&#34;</span> <span style=color:#719e07>in</span> inferredMimeType <span style=color:#719e07>or</span>
-                <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasScriptFileEnding(requestResponse) <span style=color:#719e07>or</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasScriptContentType(response)))
-</code></pre></div><ol>
-<li>By extension, check for <code>js</code> and <code>json</code>.
-<ol>
-<li>Why JSON? for maps?</li>
-<li>What about jsmaps? What are their extensions?
-<ol>
-<li><code>.js.map</code> or <code>.map</code>?</li>
-</ol>
-</li>
-<li>Any other extensions? <code>pack</code>?</li>
-<li>Framework specific extension
-<ol>
-<li>Angular</li>
-<li>React</li>
-<li>Add more</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>How can we extract jsmaps and get the JS files?
-<ol>
-<li>What are jsmaps?</li>
-<li>What is their structure?</li>
-</ol>
-</li>
-<li>By MIME Type.
-<ol>
-<li>IResponseInfo.getStatedMimeType: <a href=https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType%28%29 target=_blank rel="noreferrer noopener">https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType()</a></li>
-<li>IResponseInfo.getInferredMimeType: <a href=https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType%28%29 target=_blank rel="noreferrer noopener">https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType()</a></li>
-<li>Anything else?</li>
-</ol>
-</li>
-<li>What about scripts inside response (similar to what Burp does)
-<ol>
-<li>Regex for <code>&lt;script.*&lt;/script></code>?</li>
-<li>Where else can we have embedded scripts?</li>
-</ol>
-</li>
-<li>How to create Burp extension UI in Python.
-<ol>
-<li>Lots of examples for Burp extensions in Java</li>
-<li>Only a few in Python.
-<ol>
-<li>Read those and learn.</li>
-<li>Make a blog post about it.</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id=embedding-js-in-python>Embedding JS in Python?
-<a class=header-link href=#embedding-js-in-python><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
-</h2><ul>
-<li><a href=https://github.com/sqreen/PyMiniRacer target=_blank rel="noreferrer noopener">https://github.com/sqreen/PyMiniRacer</a></li>
-<li>Related blog: <a href=https://blog.sqreen.com/embedding-javascript-into-python/ target=_blank rel="noreferrer noopener">https://blog.sqreen.com/embedding-javascript-into-python/</a></li>
-<li></li>
-</ul>
-<h2 id=hurdles>Hurdles
-<a class=header-link href=#hurdles><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
-</h2><ol>
-<li>Handling large files?
-<ol>
-<li>Beautifying and linting them will consume a lot of RAM. Let's assume we will run node with 4GBs of RAM.</li>
-<li>Do we have a size limit? Works for the POC but not in action.</li>
-<li>Split the files into chunks?
-<ol>
-<li>Works if we are using a map that has separate JS files?</li>
-<li>For big files, use a parser and make chunks and the end of self-contained blocks?
-<ol>
-<li>How do we figure this out?</li>
-</ol>
-</li>
-<li>Drop standard stuff that we can recognize as 3rd party.</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Performance issues
-<ol>
-<li>Both ESLint and the beautifier are slow on large files and use a lot of RAM.</li>
-</ol>
-</li>
-</ol>
-</div>
-<footer>
-<p class=meta>
-</span>
-</p>
-</footer>
-</article>
-</div>
-<aside class="sidebar thirds">
-<section class="first odd">
-<h2>Table of Contents</h2>
-<nav id=TableOfContents>
-<ul>
-<li>
-<ul>
-<li><a href=#static-analysis-of-javascript-through-the-ages>Static analysis of JavaScript through the ages:</a></li>
-<li><a href=#how-to-detect-js-in-responses>How to detect JS in responses</a></li>
-<li><a href=#embedding-js-in-python>Embedding JS in Python?</a></li>
-<li><a href=#hurdles>Hurdles</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</section>
-</aside>
-</div>
-</div>
-<footer role=contentinfo>
-<p>Copyright &copy; 2022 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
-<span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.
-</p>
-</footer>
-</body>
-</html>
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>ESLinter Raw Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=http://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=http://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.101.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="ESLinter Raw Notes"><meta name=twitter:description content="Static analysis of JavaScript through the ages: Script to detect DOM XSS http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code In the following blog post (2012), Ryan Dewhurst mentions that it would be nice to have JavaScript taint analysis for DOM XSS in Burp.
+https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html The link to the extension does not work anymore.
+Searching for ESLint + Burp on Twitter gets us a series of tweets by David Rook from 2015:
+https://twitter.com/davidrook/status/643907041363410944 Seems like he created an extension but never continued or released it."><meta name=twitter:domain content="parsiya.io"><meta name=twitter:creator content="@CryptoGangsta"></head><body><header role=banner><hgroup><h1><a href=http://parsiya.io/>Parsia-Clone</a></h1><h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select></fieldset><ul class=main-navigation><li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank>Parsia-Clone on Github</a></li><li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank>How did I make this?</a></li><li><a href=https://parsiya.net title="My Main Website" target=_blank>My Main Website</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
+<input type=hidden name=q value=site:http://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>2 minute read
+- <a class=label href=http://parsiya.io/categories/automation/>Automation</a></p><h1 class=entry-title>ESLinter Raw Notes</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/main/automation/eslinter-notes.md target=_blank>Github Link</a></header><div class=entry-content><nav id=TableOfContents><ul><li><ul><li><a href=#static-analysis-of-javascript-through-the-ages>Static analysis of JavaScript through the ages:</a></li><li><a href=#how-to-detect-js-in-responses>How to detect JS in responses</a></li><li><a href=#embedding-js-in-python>Embedding JS in Python?</a></li><li><a href=#hurdles>Hurdles</a></li></ul></li></ul></nav><h2 id=static-analysis-of-javascript-through-the-ages>Static analysis of JavaScript through the ages:
+<a class=header-link href=#static-analysis-of-javascript-through-the-ages><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><ul><li>Script to detect DOM XSS<ul><li><a href=http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code target=_blank rel="noreferrer noopener">http://antisnatchor.com/Enumerate_potential_DOM-based_XSS_vulnerable_code</a></li></ul></li></ul><p>In the following blog post (2012), Ryan Dewhurst mentions that it would be nice to have JavaScript taint analysis for DOM XSS in Burp.</p><ul><li><a href=https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html target=_blank rel="noreferrer noopener">https://blog.dewhurstsecurity.com/2012/07/19/staticburp-burp-suite-potential-dom-xss-analysis.html</a></li></ul><p>The link to the extension does not work anymore.</p><p>Searching for ESLint + Burp on Twitter gets us a series of tweets by David Rook from 2015:</p><ul><li><a href=https://twitter.com/davidrook/status/643907041363410944 target=_blank rel="noreferrer noopener">https://twitter.com/davidrook/status/643907041363410944</a></li></ul><p>Seems like he created an extension but never continued or released it.</p><hr><h2 id=how-to-detect-js-in-responses>How to detect JS in responses
+<a class=header-link href=#how-to-detect-js-in-responses><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Some ideas, including some from <a href=https://github.com/luh2/DetectDynamicJS target=_blank rel="noreferrer noopener">DetectDynamicJS</a></p><ul><li><a href=https://github.com/luh2/DetectDynamicJS/blob/master/DetectDynamicJS.py#L229 target=_blank rel="noreferrer noopener">https://github.com/luh2/DetectDynamicJS/blob/master/DetectDynamicJS.py#L229</a></li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#719e07>def</span> <span style=color:#268bd2>isScript</span>(<span style=color:#268bd2>self</span>, requestResponse):
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;&#34;&#34;Determine if the response is a script&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#719e07>try</span>:
+</span></span><span style=display:flex><span>        response <span style=color:#719e07>=</span> requestResponse<span style=color:#719e07>.</span>getResponse()
+</span></span><span style=display:flex><span>    <span style=color:#719e07>except</span>:
+</span></span><span style=display:flex><span>        <span style=color:#719e07>return</span> <span style=color:#cb4b16>False</span>
+</span></span><span style=display:flex><span>    <span style=color:#719e07>if</span> <span style=color:#719e07>not</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasBody(response):
+</span></span><span style=display:flex><span>        <span style=color:#719e07>return</span> <span style=color:#cb4b16>False</span>
+</span></span><span style=display:flex><span>    responseInfo <span style=color:#719e07>=</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>_helpers<span style=color:#719e07>.</span>analyzeResponse(response)
+</span></span><span style=display:flex><span>    body <span style=color:#719e07>=</span> response<span style=color:#719e07>.</span>tostring()[responseInfo<span style=color:#719e07>.</span>getBodyOffset():]
+</span></span><span style=display:flex><span>    first_char <span style=color:#719e07>=</span> body[<span style=color:#2aa198>0</span>:<span style=color:#2aa198>1</span>]
+</span></span><span style=display:flex><span>    mimeType <span style=color:#719e07>=</span> responseInfo<span style=color:#719e07>.</span>getStatedMimeType()<span style=color:#719e07>.</span>split(<span style=color:#2aa198>&#39;;&#39;</span>)[<span style=color:#2aa198>0</span>]
+</span></span><span style=display:flex><span>    inferredMimeType <span style=color:#719e07>=</span> responseInfo<span style=color:#719e07>.</span>getInferredMimeType()<span style=color:#719e07>.</span>split(<span style=color:#2aa198>&#39;;&#39;</span>)[<span style=color:#2aa198>0</span>]
+</span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> (first_char <span style=color:#719e07>not</span> <span style=color:#719e07>in</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>ichars <span style=color:#719e07>and</span>
+</span></span><span style=display:flex><span>            (<span style=color:#2aa198>&#34;script&#34;</span> <span style=color:#719e07>in</span> mimeType <span style=color:#719e07>or</span> <span style=color:#2aa198>&#34;script&#34;</span> <span style=color:#719e07>in</span> inferredMimeType <span style=color:#719e07>or</span>
+</span></span><span style=display:flex><span>                <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasScriptFileEnding(requestResponse) <span style=color:#719e07>or</span> <span style=color:#268bd2>self</span><span style=color:#719e07>.</span>hasScriptContentType(response)))
+</span></span></code></pre></div><ol><li>By extension, check for <code>js</code> and <code>json</code>.<ol><li>Why JSON? for maps?</li><li>What about jsmaps? What are their extensions?<ol><li><code>.js.map</code> or <code>.map</code>?</li></ol></li><li>Any other extensions? <code>pack</code>?</li><li>Framework specific extension<ol><li>Angular</li><li>React</li><li>Add more</li></ol></li></ol></li><li>How can we extract jsmaps and get the JS files?<ol><li>What are jsmaps?</li><li>What is their structure?</li></ol></li><li>By MIME Type.<ol><li>IResponseInfo.getStatedMimeType: <a href=https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType%28%29 target=_blank rel="noreferrer noopener">https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType()</a></li><li>IResponseInfo.getInferredMimeType: <a href=https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType%28%29 target=_blank rel="noreferrer noopener">https://portswigger.net/burp/extender/api/burp/IResponseInfo.html#getStatedMimeType()</a></li><li>Anything else?</li></ol></li><li>What about scripts inside response (similar to what Burp does)<ol><li>Regex for <code>&lt;script.*&lt;/script></code>?</li><li>Where else can we have embedded scripts?</li></ol></li><li>How to create Burp extension UI in Python.<ol><li>Lots of examples for Burp extensions in Java</li><li>Only a few in Python.<ol><li>Read those and learn.</li><li>Make a blog post about it.</li></ol></li></ol></li></ol><h2 id=embedding-js-in-python>Embedding JS in Python?
+<a class=header-link href=#embedding-js-in-python><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><ul><li><a href=https://github.com/sqreen/PyMiniRacer target=_blank rel="noreferrer noopener">https://github.com/sqreen/PyMiniRacer</a></li><li>Related blog: <a href=https://blog.sqreen.com/embedding-javascript-into-python/ target=_blank rel="noreferrer noopener">https://blog.sqreen.com/embedding-javascript-into-python/</a></li><li></li></ul><h2 id=hurdles>Hurdles
+<a class=header-link href=#hurdles><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><ol><li>Handling large files?<ol><li>Beautifying and linting them will consume a lot of RAM. Let's assume we will run node with 4GBs of RAM.</li><li>Do we have a size limit? Works for the POC but not in action.</li><li>Split the files into chunks?<ol><li>Works if we are using a map that has separate JS files?</li><li>For big files, use a parser and make chunks and the end of self-contained blocks?<ol><li>How do we figure this out?</li></ol></li><li>Drop standard stuff that we can recognize as 3rd party.</li></ol></li></ol></li><li>Performance issues<ol><li>Both ESLint and the beautifier are slow on large files and use a lot of RAM.</li></ol></li></ol></div><footer><p class=meta></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><ul><li><a href=#static-analysis-of-javascript-through-the-ages>Static analysis of JavaScript through the ages:</a></li><li><a href=#how-to-detect-js-in-responses>How to detect JS in responses</a></li><li><a href=#embedding-js-in-python>Embedding JS in Python?</a></li><li><a href=#hurdles>Hurdles</a></li></ul></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2022 Parsia-Clone - <a href=http://parsiya.io/license/>License</a> -
+<span class=credit>Powered by <a target=_blank href=https://gohugo.io>Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/>Hugo-Octopress</a> theme.</p></footer></body></html>
