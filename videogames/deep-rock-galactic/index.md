@@ -5,7 +5,7 @@ comments: false
 categories:
 - Videogames
 title: "Deep Rock Galactic"
-wip: true
+wip: false
 ---
 
 ## Another save has more progress than your currently loaded save after creating a new save
@@ -37,7 +37,14 @@ Source: [/u/Mad_Mechanic_280/ on reddit][save-src].
 
 ## Griefer Kdoge
 Killed all of us before the pod launch. It does not accomplish anything other
-than a lower payout for everyone which is a few hundred credits and not really
-significant.
+than a lower payout for everyone (including them) which is a few hundred credits
+and not really significant.
 
 ![](kdoge.png)
+
+## Fun Error
+Everytime I wanted to join a game, I would get this error message `UNKNHJSC`
+(Unknown HJSC?). Every time I clicked, the new message would be appended to the
+old one.
+
+![](drg-error.png)

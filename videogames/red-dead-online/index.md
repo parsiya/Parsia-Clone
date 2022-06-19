@@ -7,7 +7,7 @@ categories:
 tags:
 - Red Dead Online
 title: "Red Dead Online"
-wip: true
+wip: false
 ---
 
 # Maps
@@ -16,7 +16,6 @@ wip: true
 * [https://jeanropke.github.io/RDR2CollectorsMap/][collectors-map]
 
 [collectors-map]: https://jeanropke.github.io/RDR2CollectorsMap/
-
 [rdo-map]: https://jeanropke.github.io/RDOMap/
 
 # Challenges
