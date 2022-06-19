@@ -35,6 +35,21 @@ exploration outside of the bubble (populated by humanity) is more exciting?
 4. Equip a decent Asp Explorer with decent jump range. This allows you to
    everywhere faster. Believe me, 15 to 25 LY jump range is a huge upgrade.
 5. Do [Road to Riches]({{< relref "#road-to-riches" >}}).
+6. Controls are a mess. Search here to see which control is under what section.
+   1. https://steamcommunity.com/sharedfiles/filedetails/?id=2302966662
+7. The Collector Limpet is super useful.
+   1. Go into the mission.
+   2. Open the hatch.
+   3. Release the limpet.
+   4. Picks up all items.
+   5. If you have something targetted, the collector limpet will just pick that
+      up and die. This is useful if you just want to pick up one item and GTFO
+      before the enemies arrive. But usually not the intended behavior.
+8. To scan the nav beacon (or data beacons in missions). You have to select the
+   nav beacon from `Contacts` and not from the navigation tab. The navigation
+   tab allows you to warp to it but you gotta select it yourself. Then you just
+   need to reorient your ship to look at the beacon and it will be automatically
+   scanned.
 
 # eddb
 Great website for this game: https://eddb.io/.
@@ -160,13 +175,13 @@ I am using these right now.
 
 1. [Rescue Multi Limpet Controller][rescue-link]: Does Repair, Fuel Transfer and
        Hatch Breaker. You can also use individual ones.
-    1. Repair limpet controller for distress calls.
-    2. Fuel limpet controller for distress calls.
+   1. Repair limpet controller for distress calls.2
+   2. Fuel limpet controller for distress calls.
 2. Collector limpet controller for picking up stuff.
 3. Fuel Scoop.
 4. Heat sinks for dumping the heat when scooping fuel. Ammo is cheap (25cr).
-    1. This is not needed for better ships and fuel scoops but still a good
-       module to have.
+   1. This is not needed for better ships and fuel scoops but still a good
+      module to have.
 5. Cargo racks for picking up stuff but it's mostly crafting materials.
 
 [rescue-link]: https://elite-dangerous.fandom.com/wiki/Rescue_Multi_Limpet_Controller
@@ -309,6 +324,12 @@ land.
 
 1. Press 3.
 2. Launch or Recall ship here.
+
+Pick up items:
+
+1. Open cargo scoop.
+2. Target the item you want to pick up.
+3. Slowly run over it.
 
 # Trading
 
