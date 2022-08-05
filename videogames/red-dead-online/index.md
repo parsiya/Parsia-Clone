@@ -99,7 +99,7 @@ one has a lockbox in it. Inside the lockbox there is always:
 
 Make sure to loot it.
 
-## Quaker's Cove Moonshine Mission
+### Quaker's Cove Moonshine Mission
 This is a stealth mission and is pretty easy to do. Obviously, use the bow.
 
 ![Quaker's Cove Moonshine Mission Guide](quakers-cove-moonshine-mission.jpg)
@@ -163,7 +163,7 @@ If you have put your Moonshine shack in the same area, the shack is super close
 to Manzanita Post.
 
 Be sure to go near the `Quaker's Cove`. There is usually a stealth moonshine
-operation (which is super easy, guide below) or a hideout.
+operation (which is super easy, guide above) or a hideout.
 
 # Random Tips
 
