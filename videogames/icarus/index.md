@@ -172,24 +172,25 @@ not the Exotic amount from the vein.
    ![More Yeast in Payday Extraction](03-payday2.png)
 8. I do most of my building in the start cave in K14.
     1. As you can see, there are multiple caves around if we need more mats (usually gold).
-9. If you need to run to the one at the edge of J14, it's a good idea to craft
+    ![payday extraction target cave](04-payday3.png)
+9.  If you need to run to the one at the edge of J14, it's a good idea to craft
    the shelter at the Masonry Bench and take it with you to drop it by the vein
    on the way.
     1. I usually make 8 stone walls, 4 stone floor (for use as roofs) and one door.
-10. Make 57 Electronics:
+11. Make 57 Electronics:
     1. Fabricator: 30
     2. Biofuel Generator: 12
     3. Three extractors: 15
-11. Make 12 Carbon Paste:
+12. Make 12 Carbon Paste:
     1. Fabricator: 8
     2. Electricity Tool: 4
-12. Make 21 Steel:
+13. Make 21 Steel:
     1. 100 Steel Screws: 1 Steel
     2. Biofuel Generator: 20 Steel 
-13. Make the Biofuel Radar in the Machining Bench. This is needed for the
+14. Make the Biofuel Radar in the Machining Bench. This is needed for the
     mission reward (if you want the Ren but you probably already have the
     materials for it). You can destroy it immediately after that.
-14. After making the following, grab these and go for the vein:
+15. After making the following, grab these and go for the vein:
     1. Fabricator
     2. Biofuel Generator
     3. Materials for Extractors
@@ -197,34 +198,34 @@ not the Exotic amount from the vein.
     5. Masonry Bench and Iron Nails/Leather for the stone structure.
     6. Bed Roll.
     7. Food.
-15. Drop a Thatch Building with Masonry Bench. Mine enough stone and wood to
+16. Drop a Thatch Building with Masonry Bench. Mine enough stone and wood to
     make 4 Stone floors and 8 Stone walls.
-16. Make 4 Wood floors. This will be the base of the building. Complete it with
+17. Make 4 Wood floors. This will be the base of the building. Complete it with
     the Stone walls and use the Stone floors as roof.
-17. I usually like to build right by the vein.
-18. Drop the Bioefuel Generator and Fabricator. I like to put it in the shelter
+18. I usually like to build right by the vein.
+19. Drop the Bioefuel Generator and Fabricator. I like to put it in the shelter
     closest to the vein.
-19. Put the Biofuel Workshop can in the generator.
-20. Put the workshop Radar in the Fabricator. You can only carry the Extractors in the carry slot.
-21. Create three Extractors and put them on the vein. This vein takes three
+20. Put the Biofuel Workshop can in the generator.
+21. Put the workshop Radar in the Fabricator. You can only carry the Extractors in the carry slot.
+22. Create three Extractors and put them on the vein. This vein takes three
     extractors (see icarusintel.com for info on other veins). Make sure you do
     not drop them outside of the carry slot after dragging them from the
     Fabricator inventory. They will get lost if it happens.
-22. Use the Electricity Tool to make a junction (click on the ground outside the wall by the generator.
+23. Use the Electricity Tool to make a junction (click on the ground outside the wall by the generator.
     1. Connect the junction to the generator.
     2. Click on the junction with Electricity Tool again and connect it to each
        of the extractors.
     3. Select the Biofuel Generator and `Activate` it.
-23. Grab the workshop Radar from the Fabricator.
-24. Deploy it on the ledge by the vein and activate it.
-25. Wildlife might attack both the Radar and the Extractors.
-26. This will scan the vein. If we made the Biofuel Radar before, this will
+24. Grab the workshop Radar from the Fabricator.
+25. Deploy it on the ledge by the vein and activate it.
+26. Wildlife might attack both the Radar and the Extractors.
+27. This will scan the vein. If we made the Biofuel Radar before, this will
     advance the mission objectives.
-27. Hang around while the extractors finish the job.
-28. **Grab the workshop Biofuel Can from the generator.**
-29. Grab the Exotics, if it's close to sundown (18:00), sleep.
-30. Run back to the pod.
-31. **Make sure to put the Exotics in the Dropship cargo slot in this mission.**
+28. Hang around while the extractors finish the job.
+29. **Grab the workshop Biofuel Can from the generator.**
+30. Grab the Exotics, if it's close to sundown (18:00), sleep.
+31. Run back to the pod.
+32. **Make sure to put the Exotics in the Dropship cargo slot in this mission.**
 
 ## Spirit Walk: Exploration
 This map is used for Exotics mining. There are three veins. I run it on Easy
