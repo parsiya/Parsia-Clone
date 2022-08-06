@@ -16,7 +16,7 @@ can buy and take with you (up to 15 items) that make the startup much faster.
 
 [icarus-steam]: https://store.steampowered.com/app/1149460/ICARUS/
 
-## Good Workshop items
+# Good Workshop items
 Note there are two costs associated with each workshop item. First we need to
 research the item and then pay another fee to craft it. You get the actual item
 after crafting. After the first research, you can just keep crafting.
@@ -56,14 +56,14 @@ station. **Don't throw away workshop items**.
 10. Biofuel Can: For mining Exotics, it's more than enough to run the
     `Biofuel Generator` for to extract three veins.
 
-## icarusintel.com
+# icarusintel.com
 Great website at https://icarusintel.com. Choose the `filter` icon (2nd from the
 top) and then select the map and mission to get the info including the location
 of caves (and their rank) along with possible location of veins.
 
 ![icarusintel.com](01-icarus-intel.png)
 
-## Routine for Tech Up Missions
+# Routine for Tech Up Missions
 These are missions where I usually need to tech up to a certain tier or I am
 just farming Exotics. I usually tech up in a star cave near the target location
 or the nearest star cave to the drop pod.
@@ -150,7 +150,7 @@ canister and speed modules.
     1. Fill up the O2 canister again.
     2. Grab as much food as you can.
 
-### Payday Extraction
+## Payday Extraction
 I can do this in 2 hours for 180-200 Exotics ([EIP Guide][eip-payday]). I
 usually run the mission on Easy because it only affects the payout (200 Ren) and
 not the Exotic amount from the vein.
@@ -226,7 +226,7 @@ not the Exotic amount from the vein.
 30. Run back to the pod.
 31. **Make sure to put the Exotics in the Dropship cargo slot in this mission.**
 
-### Spirit Walk: Exploration
+## Spirit Walk: Exploration
 This map is used for Exotics mining. There are three veins. I run it on Easy
 because there's no payout and difficulty does not affect the number of Exotics
 in a vein. You can usually figure the general location by the first scan after
@@ -296,7 +296,7 @@ landing.
     2. Grabbed all the Exotics from the Iron Crate and put them either in your
        own inventory or in the drop pod's cargo slots.
 
-### Homestead: Construction
+## Homestead: Construction
 I usually do it to farm Ren. At Hard with Hardcore it pays 400 Ren and usually
 takes me around 45-50 minutes. Bring the workshop Furnace, no need for the
 radar.
@@ -356,7 +356,7 @@ radar.
 16. Run back to the pod and check you have everything with you.
 17. Lift off.
 
-## Hotbar Slots
+# Hotbar Slots
 I usually have them in this order:
 
 1. Pickaxe
