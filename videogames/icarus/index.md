@@ -7,7 +7,7 @@ categories:
 tags:
 - Icarus
 title: "Icarus"
-wip: false
+wip: true
 ---
 
 Icarus ([Steam link][icarus-steam]) is a session-based survival game. You have
