@@ -41,6 +41,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/dropbox/goebpf
 * script - Making it easy to write shell-like scripts in Go
     * https://github.com/bitfield/script
+* llvm: Library for interacting with LLVM IR in pure Go
+    * https://github.com/llir/llvm
 
 # .NET
 
@@ -62,7 +64,7 @@ snippet: "This is my random list of (mostly security) links."
     * https://sensepost.com/blog/2018/mallet-a-framework-for-creating-proxies/
 * House: A Mobile Analysis Platform Built on Frida
     * https://github.com/nccgroup/house
-* Socks proxy server using powershell
+* Socks proxy server using PowerShell
     * https://github.com/p3nt4/Invoke-SocksProxy
 * BeRoot: Privilege Escalation Project - Windows / Linux / Mac
     * https://github.com/AlessandroZ/BeRoot
@@ -88,18 +90,32 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/pownjs/pown-cdb
 * VS Code x Frida
     * https://github.com/chichou/vscode-frida
-* burptime:- Burp Show Response Time.
+* burptime: Burp Show Response Time.
     * https://github.com/virusdefender/burptime
+* Example of using Turbo Intruder in a "listen and attack" mode.
+    * https://gist.github.com/defparam/840f7d9e31f77b3c5460c5921e0787ef
+* Dead code elimination with Triton
+    * https://github.com/JonathanSalwan/Triton/issues/1130
 
 # Static Analysis
 
 * Static Program Analysis book (updated regularly)
     * https://cs.au.dk/~amoeller/spa/spa.pdf
+* ShellCheck, a static analysis tool for shell scripts
+    * https://github.com/koalaman/shellcheck
+* Security Code Audit - For Fun and Fails
+    * https://frycos.github.io/vulns4free/2022/05/24/security-code-audit-fails.html
+* Horde Webmail - Remote Code Execution via Email - PHP Static Analysis guide
+    * https://blog.sonarsource.com/horde-webmail-rce-via-email/
+* Shells.Systems - static code analysis archive
+    * https://shells.systems/category/static-code-analysis/
 
 # Cloud
 
 * AWS Privilege Escalation – Methods and Mitigation
     * https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation/
+* Analysis of Netflix's Streaming Services Architecture
+    * https://medium.com/swlh/a-design-analysis-of-cloud-based-microservices-architecture-at-netflix-98836b2da45f
 
 # Mobile - IoT
 
@@ -135,6 +151,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://blog.ammaraskar.com/iclicker-reverse-engineering/
 * Calling iOS Native Functions from Python Using Frida and RPC
     * https://grepharder.github.io/blog/0x04_calling_ios_native_functions_from_python_using_frida_and_rpc.html
+* UCT - IMEI number disclosure through a text file
+    * https://bugs.chromium.org/p/apvi/issues/detail?id=89&q=&can=1
 
 # CTF
 
@@ -175,6 +193,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://www.n00py.io/2019/06/understanding-unc-paths-smb-and-webdav/
 * Video: nmap Service Detection Customization
     * https://isc.sans.edu/diary/24970
+* How masscan works
+    * https://rushter.com/blog/how-masscan-works/
 
 # Not Security
 
@@ -262,6 +282,24 @@ snippet: "This is my random list of (mostly security) links."
     * https://code.visualstudio.com/docs/cpp/config-wsl
 * CVE-2020-0668 - A Trivial Privilege Escalation Bug in Windows Service Tracing
     * https://itm4n.github.io/cve-2020-0668-windows-service-tracing-eop/
+* See the command line of processes in task manager
+    * https://twitter.com/flakpaket/status/1529839888471924738
+* A History of MS-RPC and open source equivalents
+    * https://kganugapati.wordpress.com/tag/msrpc/
+* Offensive Windows IPC Internals 1: Named Pipes
+    * https://csandker.io/2021/01/10/Offensive-Windows-IPC-1-NamedPipes.html
+* Offensive Windows IPC Internals 2: RPC
+    * https://csandker.io/2021/02/21/Offensive-Windows-IPC-2-RPC.html
+* Offensive Windows IPC Internals 3: ALPC
+    * https://csandker.io/2022/05/24/Offensive-Windows-IPC-3-ALPC.html
+* Debugging and Reversing ALPC
+    * https://csandker.io/2022/05/29/Debugging-And-Reversing-ALPC.html
+* Windows Defender Internals
+    * https://github.com/commial/experiments/tree/master/windows-defender
+* CVE-2022-26937: Microsoft Windows Network File System NLM Portmap Stack Buffer Overflow
+    * https://www.zerodayinitiative.com/blog/2022/6/7/cve-2022-26937-microsoft-windows-network-file-system-nlm-portmap-stack-buffer-overflow
+* Chromium: Web Share API allows to write in UNC paths and/or in C:/Users/<username>/AppData/Local/Temp/ on Windows
+    * https://bugs.chromium.org/p/chromium/issues/detail?id=1301920
 
 # Reverse Engineering
 
@@ -338,6 +376,12 @@ snippet: "This is my random list of (mostly security) links."
 * Extending LLVM for Code Obfuscation
     * Part 1: https://www.praetorian.com/blog/extending-llvm-for-code-obfuscation-part-1
     * Part 2: https://www.praetorian.com/blog/extending-llvm-for-code-obfuscation-part-2
+* Finding Bugs in Windows Drivers, Part 1 – WDM
+    * https://www.cyberark.com/resources/threat-research-blog/finding-bugs-in-windows-drivers-part-1-wdm
+* Hunting for Bugs in Windows Mini-Filter Drivers
+    * https://googleprojectzero.blogspot.com/2021/01/hunting-for-bugs-in-windows-mini-filter.html
+* Technical Dive: Reverse Engineering AOL 3.0
+    * https://g.livejournal.com/12127.html
 
 # Python
 
@@ -404,6 +448,20 @@ snippet: "This is my random list of (mostly security) links."
     * https://speakerdeck.com/leastprivilege/oauth-and-openid-connect-security-best-practices
 * Reverb: speculative debugging for web applications
     * https://blog.acolyer.org/2020/01/27/reverb-speculative-debugging/
+* Open redirect vulnerability and how to use it "correctly" in bug bounty
+    * https://medium.com/@byq/from-open-redirect-to-rce-in-one-week-66a7f73fd082
+* Arbitrary File Upload Tricks In Java
+    * https://pyn3rd.github.io/2022/05/07/Arbitrary-File-Upload-Tricks-In-Java/
+* Tag each request with the corresponding browser profile in Burp's embedded browser
+    * https://twitter.com/MasteringBurp/status/1435176162611896322
+* The Underrated Bugs, Clickjacking, CSS Injection, Drag-Drop XSS, Cookie Bomb, Login+Logout CSRF…
+    * https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa
+* Critical SSRF on Evernote
+    * https://blog.neolex.dev/13/
+* GitLab: Steal private objects of other projects via project import
+    * https://hackerone.com/reports/743953
+* Apache Pinot SQLi & RCE Cheat Sheet
+    * https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html
 
 # Misc
 
@@ -413,8 +471,6 @@ snippet: "This is my random list of (mostly security) links."
     * https://docs.google.com/presentation/d/19HfkIojyLE8L8X8aZT-lJont96JqIg4PqEhb2juIK2c/
 * Learning PowerShell
     * https://www.verboon.info/2018/03/its-never-too-late-to-start-learning-powershell/
-* ShellCheck, a static analysis tool for shell scripts
-    * https://github.com/koalaman/shellcheck
 * CrystalBall, Data Gathering and Machine Learning System for SAT Solvers
     * Blog: https://www.msoos.org/2019/06/crystalball-sat-solving-data-gathering-and-machine-learning/
     * Code: https://github.com/msoos/cryptominisat/tree/crystalball
@@ -428,6 +484,28 @@ snippet: "This is my random list of (mostly security) links."
     * https://forums.hak5.org/topic/43124-alfa-awus036ach-kali-configuration-guide/
 * Resistance Isn't Futile: A Practical Approach to Threat Modeling
     * https://www.slideshare.net/KatieNickels/resistance-isnt-futile-a-practical-approach-to-threat-modeling
+* Generate Railroad Diagrams from Regular Expressions
+    * https://regexper.com/
+* 10 useful websites
+    * https://flourish.studio
+    * https://mentimeter.com
+    * https://Webwhiteboard.com
+    * https://diagrams.net
+    * https://Untools.co - Tools for better thinking
+* Learning Machine Learning Part 1: Introduction and Revoke-Obfuscation
+    * https://posts.specterops.io/learning-machine-learning-part-1-introduction-and-revoke-obfuscation-c73033184f0
+* Learning Machine Learning Part 2: Attacking White Box Models
+    * https://posts.specterops.io/learning-machine-learning-part-2-attacking-white-box-models-1a10bbb4a2ae
+* Learning Machine Learning Part 3: Attacking Black Box Models
+    * https://posts.specterops.io/learning-machine-learning-part-3-attacking-black-box-models-3efffc256909
+* Formal Methods Only Solve Half My Problems
+    * https://brooker.co.za/blog/2022/06/02/formal.html
+* Installing a payphone in my house
+    * https://bert.org/2022/06/02/payphone/
+* Threat Modeling at Mercari
+    * https://engineering.mercari.com/en/blog/entry/20220426-threat-modeling-at-mercari/
+* Trail of Bits: CTF Field Guide
+    * https://github.com/trailofbits/ctf
 
 # Exploit Dev
 
@@ -443,11 +521,64 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/atxsinn3r/VulnCases
 * Finding and exploiting CVE-2018–7445 (unauthenticated RCE in MikroTik’s RouterOS SMB)
     * https://medium.com/@maxi./finding-and-exploiting-cve-2018-7445-f3103f163cc1
+* Weird Machines, Exploitability, and Provable Unexploitability
+    * https://ieeexplore.ieee.org/document/8226852
+* Before you ship a "security mitigation" ... (related to the above)
+    * http://addxorrol.blogspot.com/2020/03/before-you-ship-security-mitigation.html
+* Zoom: Remote Code Execution with XMPP Stanza Smuggling
+    * https://bugs.chromium.org/p/project-zero/issues/detail?id=2254
+* Heap Binary Exploitation video
+    * https://www.youtube.com/watch?v=Im1SqwOVsEQ
+* Exploit Development: No Code Execution? No Problem! Living The Age of VBS, HVCI, and Kernel CFG
+    * https://connormcgarr.github.io/hvci/
+* libxml2: heap-buffer-overflow in xmlBufAdd
+    * https://bugs.chromium.org/p/project-zero/issues/detail?id=2272
+* Is Exploiting a Null Pointer Deref for LPE just a Pipe Dream?
+    * CVE-2021-4198 and CVE-2021-4199 in Bit Defender via Named Pipes
+    * https://www.zerodayinitiative.com/blog/2022/6/1/is-exploiting-a-null-pointer-deref-for-lpe-just-a-pipe-dream
+* HEVD - UAF NONPAGEDNX Vulnerability
+    * https://github.com/vportal/HEVD
+* The AMD Branch (Mis)predictor: Just Set it and Forget it!
+    * https://grsecurity.net/amd_branch_mispredictor_just_set_it_and_forget_it
+* Introduction to VirtualBox security research
+    * https://blog.doyensec.com/2022/04/26/vbox-fuzzing.html
+* Linux kernel bug hunting/exploitation resources
+    * https://twitter.com/alexjplaskett/status/1535189987846668288
+    * Playing for K(H)eaps: Understanding and Improving Linux Kernel Exploit Reliability
+        * https://www.usenix.org/system/files/sec22fall_zeng.pdf
+    * Put an io_uring on it: Exploiting the Linux Kernel
+        * https://www.graplsecurity.com/post/iou-ring-exploiting-the-linux-kernel
+    * CVE-2022-0185 - Winning a $31337 Bounty after Pwning Ubuntu and Escaping Google's KCTF Containers
+        * https://www.willsroot.io/2022/01/cve-2022-0185.html
+    * syzkaller results
+        * https://syzkaller.appspot.com/upstream
+    * Exploitation Mitigations repo by NCC
+        * https://github.com/nccgroup/exploit_mitigations
+    * One day short of a full chain: Part 1 - Android Kernel arbitrary code execution - CodeQL
+        * https://securitylab.github.com/research/one_day_short_of_a_fullchain_android/
+    * Linux Kernel Exploitation
+        * https://github.com/xairy/linux-kernel-exploitation
+* PlayStation: bd-j exploit chain
+    * https://hackerone.com/reports/1379975
+* Exploration of the Dirty Pipe Vulnerability (CVE-2022-0847)
+    * https://lolcads.github.io/posts/2022/06/dirty_pipe_cve_2022_0847/
+* A Story of a Bug Found Fuzzing - Microsoft Edge
+    * https://microsoftedge.github.io/edgevr/posts/a-story-of-a-bug-found-fuzzing/
+* PS4/PS5 Blu-Ray attacks: TheFloW shares his presentation slides
+    * https://wololo.net/2022/06/13/ps4-ps5-blu-ray-attacks-theflow-shares-his-presentation-slides/
+* An Autopsy on a Zombie In-the-Wild 0-day
+    * https://googleprojectzero.blogspot.com/2022/06/an-autopsy-on-zombie-in-wild-0-day.html
+* Pwn2Own 2021 Canon ImageCLASS MF644Cdw writeup
+    * https://doar-e.github.io/blog/2022/06/11/pwn2own-2021-canon-imageclass-mf644cdw-writeup/
+* Reverse engineering x64 binaries with Radare2 - Bypasssing DEP with simple ROP Chains
+    * https://artik.blue/reversing-radare-21
 
-# C
+# C/C++
 
 * Project Based Tutorials in C
     * https://github.com/rby90/Project-Based-Tutorials-in-C/
+* C++ Russia 2021 - some talks are in English
+    * https://www.youtube.com/playlist?list=PLZN9ZGiWZoZqIsJqUgmMznD68NSsyaAhy
 
 # Blockchain
 
@@ -458,6 +589,12 @@ snippet: "This is my random list of (mostly security) links."
 * Fumblechain - A Purposefully Vulnerable Blockchain
     * https://research.kudelskisecurity.com/2019/07/25/introducing-fumblechain-a-purposefully-vulnerable-blockchain/
     * https://github.com/kudelskisecurity/fumblechain
+* Mirror Protocol vulnerability:
+    * https://twitter.com/FatManTerra/status/1529978941062139906
+* Proxy Libraries in Solidity
+    * https://blog.openzeppelin.com/proxy-libraries-in-solidity-79fbe4b970fd/
+* List of Smart Contract Security Vulnerabilities
+    * https://github.com/runtimeverification/verified-smart-contracts/wiki/List-of-Security-Vulnerabilities
 
 # Cryptography
 
@@ -465,6 +602,10 @@ snippet: "This is my random list of (mostly security) links."
     * https://arstechnica.com/information-technology/2013/10/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/
 * A Decade of Lattice Cryptography
     * http://web.eecs.umich.edu/~cpeikert/pubs/lattice-survey.pdf
+* Peter Gutmann's "godzilla crypto tutorial
+    * https://www.cs.auckland.ac.nz/~pgut001/tutorial/index.html
+* Estimating the Bit Security of Pairing-Friendly Curves
+    * https://research.nccgroup.com/2022/02/03/estimating-the-bit-security-of-pairing-friendly-curves/
 
 # CI/CD
 
@@ -479,10 +620,12 @@ snippet: "This is my random list of (mostly security) links."
     * https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/
 * Docker for Pentesters
     * https://blog.ropnop.com/docker-for-pentesters/
+* Why is Exposing the Docker Socket a Really Bad Idea?
+    * https://blog.quarkslab.com/why-is-exposing-the-docker-socket-a-really-bad-idea.html
 
-# AFL - Fuzzing
+# Fuzzing
 
-* Fuzzing projects with american fuzzy lop (AFL)
+* Fuzzing projects with American fuzzy lop (AFL)
     * https://0x00sec.org/t/fuzzing-projects-with-american-fuzzy-lop-afl/6498
 * AFL-unicorn: What is it and how to use it?
     * https://tthtlc.wordpress.com/2019/03/16/afl-unicorn-what-is-it-and-how-to-use-it/amp/
@@ -506,6 +649,30 @@ snippet: "This is my random list of (mostly security) links."
     * https://github.com/fgsect/unicorefuzz
 * Provoking Browser Quirks With Behavioural Fuzzing
     * https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing
+* Windows Kernel Fuzzing for Intermediate Learners by Ben Nagy
+    * https://github.com/bnagy/slides/blob/master/alpc_lowres.pdf
+* RAF - Ruby ALPC Fuzzer
+    * https://github.com/bnagy/raf
+* Go tools for basic ALPC hacking.
+    * https://github.com/bnagy/alpcgo
+* High-Throughput, Formal-Methods-Assisted Fuzzing for LLVM
+    * https://blog.regehr.org/archives/2148
+* Fuzzing USB with Raw Gadget
+    * Slides: https://docs.google.com/presentation/d/1sArf2cN5tAOaovlaL3KBPNDjYOk8P6tRrzfkclsbO_c/edit
+    * Video: https://www.youtube.com/watch?v=OVbzlN3evzo&t=13589s
+    * Tool: https://github.com/xairy/raw-gadget
+* Domain-specific Fuzzing With Waypoints Using Fuzzfactory
+    * https://www.c0d3xpl0it.com/2019/12/domain-specific-fuzzing-with-waypoints.html
+* sfuzz: coverage-guided, emulation-based greybox fuzzer
+    * https://seal9055.com/blog/fuzzing/sfuzz
+    * https://github.com/seal9055/sfuzz
+* A mini symbolic execution engine
+    * https://kqueue.org/blog/2015/05/26/mini-mc/
+* Introducing Fuzz Introspector, an OpenSSF Tool to Improve Fuzzing Coverage
+    * https://openssf.org/blog/2022/06/09/introducing-fuzz-introspector-an-openssf-tool-to-improve-fuzzing-coverage/
+* SnapFuzz: An Efficient Fuzzing Framework for Network Applications
+    * https://arxiv.org/abs/2201.04048
+    * https://github.com/srg-imperial/SnapFuzz-artefact
 
 # Game Hacking
 
@@ -513,6 +680,10 @@ snippet: "This is my random list of (mostly security) links."
     * https://www.youtube.com/watch?v=PZLhlWUmMs0
 * How to Reverse Engineer Save Game Files - Titan Quest Cheats
     * https://guidedhacking.com/threads/how-to-reverse-engineer-save-game-files-titan-quest-cheats.14469/
+* GTA III; Money & Health Hacked
+    * https://blog.th3-gr00t.tk/blog/notes/2022-05-30-GTA3-Money-Health-Hack/
+* Exploiting the Wii U's USB Descriptor parsing
+    * https://garyodernichts.blogspot.com/2022/06/exploiting-wii-us-usb-descriptor-parsing.html
 
 # Documentation/Automation/Efficiency
 
@@ -527,3 +698,14 @@ snippet: "This is my random list of (mostly security) links."
     * https://gist.github.com/rondy/af1dee1d28c02e9a225ae55da2674a6f
 * From Idiot to Imposter: how to get started in a new field
     * https://www.emfcamp.org/schedule/2018/76-from-idiot-to-imposter-how-to-get-started-in-a-new-field
+* GTD in 15 minutes – A Pragmatic Guide to Getting Things Done
+    * https://hamberg.no/gtd
+* How to write a BANGER blogpost! (Hacking the Google algorithm) - Fredrik "STÖK" Alexandersson
+    * https://www.youtube.com/watch?v=nSykVNZLeOc&t=26841s
+
+# Rust
+
+* Rocketing to the moon with Rocket and Rust - how to write a backend web application in Rust using Rocket
+    * https://geekmasher.dev/dev/rust/introduction-rust-rocket/
+* Rust playground
+    * https://typerust.dev/
