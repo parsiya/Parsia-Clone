@@ -300,6 +300,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://www.zerodayinitiative.com/blog/2022/6/7/cve-2022-26937-microsoft-windows-network-file-system-nlm-portmap-stack-buffer-overflow
 * Chromium: Web Share API allows to write in UNC paths and/or in C:/Users/<username>/AppData/Local/Temp/ on Windows
     * https://bugs.chromium.org/p/chromium/issues/detail?id=1301920
+* Remote Debugging
+    * https://www.timdbg.com/posts/remote-debugging/
 
 # Reverse Engineering
 
@@ -382,6 +384,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://googleprojectzero.blogspot.com/2021/01/hunting-for-bugs-in-windows-mini-filter.html
 * Technical Dive: Reverse Engineering AOL 3.0
     * https://g.livejournal.com/12127.html
+* Frida Hook generator for Ghidra
+    * https://github.com/CENSUS/ghidra-frida-hook-gen
 
 # Python
 
@@ -462,6 +466,10 @@ snippet: "This is my random list of (mostly security) links."
     * https://hackerone.com/reports/743953
 * Apache Pinot SQLi & RCE Cheat Sheet
     * https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html
+* Advanced sqlmap Case Study
+    * https://h1pmnh.github.io/post/advanced-sqlmap-case-study-1/
+* Stored XSS to Account Takeover : Going beyond document.cookie | Stealing Session Data from IndexedDB
+    * https://smhtahsin33.medium.com/stored-xss-to-account-takeover-going-beyond-document-cookie-970e42362f43
 
 # Misc
 
@@ -570,8 +578,12 @@ snippet: "This is my random list of (mostly security) links."
     * https://googleprojectzero.blogspot.com/2022/06/an-autopsy-on-zombie-in-wild-0-day.html
 * Pwn2Own 2021 Canon ImageCLASS MF644Cdw writeup
     * https://doar-e.github.io/blog/2022/06/11/pwn2own-2021-canon-imageclass-mf644cdw-writeup/
-* Reverse engineering x64 binaries with Radare2 - Bypasssing DEP with simple ROP Chains
+* Reverse engineering x64 binaries with Radare2 - Bypassing DEP with simple ROP Chains
     * https://artik.blue/reversing-radare-21
+* Binary Exploitation: An Oral History - Free course
+    * https://learn.taggart-tech.com/p/an-oral-history-of-binary-exploitation-defenses
+* Chrome: WebGL uniform integer overflows
+    * https://bugs.chromium.org/p/project-zero/issues/detail?id=2287
 
 # C/C++
 
@@ -595,6 +607,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://blog.openzeppelin.com/proxy-libraries-in-solidity-79fbe4b970fd/
 * List of Smart Contract Security Vulnerabilities
     * https://github.com/runtimeverification/verified-smart-contracts/wiki/List-of-Security-Vulnerabilities
+* Solana State History
+    * https://bpf.wtf/sol-state-history/
 
 # Cryptography
 
@@ -709,3 +723,8 @@ snippet: "This is my random list of (mostly security) links."
     * https://geekmasher.dev/dev/rust/introduction-rust-rocket/
 * Rust playground
     * https://typerust.dev/
+
+# CI/CD
+
+* Building AppSec Pipeline for Continuous Visibility
+    * https://medium.com/chargebee-engineering/building-appsec-pipeline-for-continuous-visibility-d430beb0a78f
