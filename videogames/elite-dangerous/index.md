@@ -369,13 +369,8 @@ You gotta keep your reticule on the blue target. If you think you cannot win:
 # Controls
 I have a `Thrustmaster T16000M FCS`. Here are the mappings for the extra keys:
 
-| Select Target Ahead | Cargo Hatch | Heatsink          | STICK | Target Next System in Route |                    | Enter Free Camera |
-|---------------------|-------------|-------------------|-------|-----------------------------|--------------------|-------------------|
-| Cycle Next Target   | Ship Lights | Deploy Hardpoints | STICK | 75% Throttle                | Ship Toggle Camera | SRV Toggle Camera |
-
-
 | Select Target Ahead | Cargo Hatch | Heatsink          | STICK | Target Next System<br>in Route |                    | Enter Free Camera |
-|---------------------|-------------|-------------------|-------|--------------------------------|--------------------|-------------------|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Cycle Next Target   | Ship Lights | Deploy Hardpoints | STICK | 75% Throttle                   | Ship Toggle Camera | SRV Toggle Camera |
 
 ## Other Items on my Paper Note
