@@ -26,8 +26,8 @@ exploration outside of the bubble (populated by humanity) is more exciting?
 1. Don't unlock Felicity in the beginning. You have to go to `Maia` and then
    `Deciat`. It's less painful with a ship with a decent jump range.
 2. Stay in the starter area for a while to make 2-3 million or enough to equip a
-   decent hauler (not specifically the ship but any ship with a decent cargo
-   space).
+   decent hauler (not specifically the ship named `hauler` but any ship with a
+   decent cargo space).
 3. Use the hauler to make 15-ish million with
    [Single Hop Trading]({{< relref "#single-hop-trading" >}}). It's relatively
    safe and decent money. Find two stations that give you a decent payout and
@@ -49,7 +49,7 @@ exploration outside of the bubble (populated by humanity) is more exciting?
    nav beacon from `Contacts` and not from the navigation tab. The navigation
    tab allows you to warp to it but you gotta select it yourself. Then you just
    need to reorient your ship to look at the beacon and it will be automatically
-   scanned.
+   scanned (the indicator in the bottom-left should show when it starts scanning).
 
 # eddb
 Great website for this game: https://eddb.io/.
@@ -355,7 +355,7 @@ Shield can be skipped because you can usually win the interdiction game.
 [market-link]: https://github.com/EDCD/EDMarketConnector/wiki
 
 ## Interdiction Game
-You gotta keep your reticule on the blue target. If you think you cannot win it:
+You gotta keep your reticule on the blue target. If you think you cannot win:
 
 1. Slow down to surrender. This will only give you a 5 second FSD cooldown
    cycle. If you lose, you get a 30 second.
@@ -365,3 +365,18 @@ You gotta keep your reticule on the blue target. If you think you cannot win it:
 4. Target some random system (because you cannot be masslocked for inter-system
    travel).
 5. Fly away.
+
+# Controls
+I have a `Thrustmaster T16000M FCS`. Here are the mappings for the extra keys:
+
+| Select Target Ahead | Cargo Hatch | Heatsink          | STICK | Target Next System in Route |                    | Enter Free Camera |
+|---------------------|-------------|-------------------|-------|-----------------------------|--------------------|-------------------|
+| Cycle Next Target   | Ship Lights | Deploy Hardpoints | STICK | 75% Throttle                | Ship Toggle Camera | SRV Toggle Camera |
+
+
+| Select Target Ahead | Cargo Hatch | Heatsink          | STICK | Target Next System<br>in Route |                    | Enter Free Camera |
+|---------------------|-------------|-------------------|-------|--------------------------------|--------------------|-------------------|
+| Cycle Next Target   | Ship Lights | Deploy Hardpoints | STICK | 75% Throttle                   | Ship Toggle Camera | SRV Toggle Camera |
+
+## Other Items on my Paper Note
+Starting system: `LHS 3447`.

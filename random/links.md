@@ -302,6 +302,9 @@ snippet: "This is my random list of (mostly security) links."
     * https://bugs.chromium.org/p/chromium/issues/detail?id=1301920
 * Remote Debugging
     * https://www.timdbg.com/posts/remote-debugging/
+* Abusing Arbitrary File Deletes to Escalate Privilege and Other Great Tricks
+    * https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks
+
 
 # Reverse Engineering
 
