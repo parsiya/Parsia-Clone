@@ -41,8 +41,8 @@ station. **Don't throw away workshop items**.
    you want to go for the `Neves` pickaxe.
 5. Envirosuit: `Duo` is a good start to open up but go for `Hark`.
 6. Armor: When you get some Exotics, open (but not craft) the line towards the
-   left and get one of the `Bihu` or `Dongtian` armors. Then craft the Naneo
-   armor which only need Ren. THIS WILL HELP ALOT.
+   left and get one of the `Bihu` or `Dongtian` envirosuits. Then craft the
+   Naneo armor which only need Ren. THIS WILL HELP ALOT.
     1. Later you want to go for the `CX-400` armor for the Ore yield.
 7. IC-001 Radar: It has its own power source and makes finding Exotic veins
    easy. You can also use it like a "wildlife attraction" module to get them to
@@ -52,9 +52,9 @@ station. **Don't throw away workshop items**.
    buy a few (they stack). They are very useful for Exotic farms because a lot
    of your time is spent running between veins and the dropship.
 9. Backpack: The initial `Survival Backpack` is super cheap and awesome. Later
-   you can specialize.
+   you can specialize. I use the 12 slot backpack now.
 10. Biofuel Can: For mining Exotics, it's more than enough to run the
-    `Biofuel Generator` for to extract three veins.
+    `Biofuel Generator` to extract three veins.
 
 # icarusintel.com
 Great website at https://icarusintel.com. Choose the `filter` icon (2nd from the
