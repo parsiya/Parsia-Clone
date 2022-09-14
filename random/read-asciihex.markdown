@@ -22,4 +22,4 @@ are things you can memorize to save you a few seconds. What I have learned:
 
 An ASCII table that I have to Google all the time:
 
-{{< imgcap title="ASCII-Hex from https://www.asciitable.com/index/asciifull.gif" src="https://www.asciitable.com/index/asciifull.gif" >}}
+{{< imgcap title="ASCII-Hex from https://www.asciitable.com/asciifull.gif" src="asciifull.gif" >}}
