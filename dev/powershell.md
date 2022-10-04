@@ -9,7 +9,6 @@ wip: false
 snippet: "CyberAces 'Introduction to PowerShell' notes."
 ---
 
-# SANS Cyberaces PowerShell Streaming Tutorial Notes
 SANS has some free streaming tutorials. You can see them here:
 https://tutorials.cyberaces.org/tutorials
 
@@ -18,7 +17,7 @@ people can read instead of watching the videos. These notes are now loosely
 based on the videos and have a lot of items that I have added. If you follow the
 videos and read the notes, the sequence of topics may not match.
 
-### Case Sensitivity
+## Case Sensitivity
 I usually write the cmdlets in camel case but you usually do not have to. E.g.,
 `man Get-ChildItem` and `man get-childitem` both work. Camel case helps with
 readability.

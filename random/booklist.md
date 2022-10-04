@@ -310,3 +310,7 @@ snippet: "I used to keep track of books I had read and the time I finished them.
 
 I moved to the US in February 2011 and stopped tracking my reading. Reading
 slowed down by a lot because I had access to fast internet.
+
+* Bunch, Chris & Cole, Allan - Sten 01 - Sten (3rd Time)	14 Sep 2022  2317
+* Bunch, Chris & Cole, Allan - Sten 02 - The Wolf Worlds (3rd Time)	19 Sep 2022  2053
+* Drake, David - Redliners (4th Time)   01 Oct 2022  0323
