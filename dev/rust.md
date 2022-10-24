@@ -3035,4 +3035,4 @@ let other = OtherType::new();
 let text = other.to_text();
 ```
 
-
+Source: https://rust-lang.github.io/rfcs/0445-extension-trait-conventions.html

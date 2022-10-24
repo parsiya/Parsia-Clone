@@ -121,6 +121,3 @@ minutes mainly because files must be copied from one file system to the other.
 ```
 wsl --set-version {DistroName} 2 # or 1
 ```
-
-
-When Hugo server is r
