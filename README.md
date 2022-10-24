@@ -1,26 +1,22 @@
 # Parsia Clone ![Deploy Clone](https://github.com/parsiya/parsia-clone/workflows/Deploy%20Blog/badge.svg)
 This is my clone. I have been maintaining one internally at my work
 (Cigital/Synopsys/Electronic Arts) since mid 2016. It has been decently
-successful and well received. I have decided to make a public one. There is
-going to be a lot of redundancy between here and [parsiya.net][parsiya-net] but
-that is expected. This repository will also contain code and random notes that
-do not get published there effectively removing the Random-Code and Random-Notes
-repositories I recently started.
+successful and well received. There is going to be some expected redundancy
+between here and [parsiya.net][parsiya-net]. This repository will also contain
+code and random notes that do not get published there, effectively removing the
+Random-Code and Random-Notes repositories.
 
 [parsiya-net]: https://parsiya.net
 
 As of February 2021, the site is built with GitHub actions and hosted on GitHub
 pages at [parsiya.io][parsiya-io].
 
-[parsiya-io]: http://parsiya.io
+[parsiya-io]: https://parsiya.io
 
 How this is deployed/created:
 
-* [Automagically Deploying Websites with Custom Domains to GitHub Pages][github-pages-custom-domain]
-* [Deploying my Knowledge Base at parsiya.io to S3 with Travis CI][deploying-with-travis]
-  * As of November 2020, I am using GitHub actions instead of Travis CI. See the
-    [.github/workflows/deploy.yml](.github/workflows/deploy.yml) file for
-    details. The old travis file is [.travis.yml](.travis.yml).
+* Current: [Automagically Deploying Websites with Custom Domains to GitHub Pages][github-pages-custom-domain]
+* Old: [Deploying my Knowledge Base at parsiya.io to S3 with Travis CI][deploying-with-travis]
 * [Semi-Automated Cloning: Pain-Free Knowledge Base Creation][semi-automated]
 
 [github-pages-custom-domain]: https://parsiya.net/blog/2021-02-17-automagically-deploying-websites-with-custom-domains-to-github-pages/
