@@ -20,14 +20,14 @@ This will download the YAML file with all the rules.
 # this will download the default ruleset in a file named `default`
 wget https://semgrep.dev/c/p/default
 
-# note it's capital O
+# note it's capital O (O as in Oscar, not zero)
 wget https://semgrep.dev/c/p/default -O default.yaml
 
-# use curl or whatever.
+# you can also use curl or even your browser
 curl https://semgrep.dev/c/p/default
 ```
 
-## Run ALL the Rules?
+## Run ALL the Rules
 
 * Throw the kitchen sink at your code: `--config r/all`.
 * Run the manually created "catch them all" scan: `--config p/default`.
