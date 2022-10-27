@@ -27,6 +27,8 @@ wget https://semgrep.dev/c/p/default -O default.yaml
 curl https://semgrep.dev/c/p/default
 ```
 
+**Note:** These URLs are for internal usage and are subject to change.
+
 ## Run ALL the Rules
 
 * Throw the kitchen sink at your code: `--config r/all`.
