@@ -9,6 +9,74 @@ wip: true
 snippet: "[Semgrep](https://semgrep.dev/) stuff that I always forget."
 ---
 
+# Semgrep on Windows
+As of today (November 2022), **you cannot run Semgrep directly on Windows**.
+Seriously, save your sanity and don't try. But you can run it in the
+[Windows Subsystem for Linux][wsl].
+
+[wsl]: https://learn.microsoft.com/en-us/windows/wsl/
+
+## Install WSL
+I won't go into the details. Use the
+[Install Linux on Windows with WSL][wsl-install] guide from Microsoft.
+
+[wsl-install]: https://learn.microsoft.com/en-us/windows/wsl/install
+
+## Which Distro Should I Choose?
+It's your call. My current daily WSL2 driver is Debian 11. I have used Semgrep
+in multiple versions of Ubuntu and Debian without issues.
+
+Make sure you're using a recent Linux version that supports installing Python
+3.7 or higher via its package manager (why install it manually when you can make
+your life easier?).
+
+Note you can [have multiple versions of the same distro][wsl-import-export].
+
+[wsl-import-export]: https://parsiya.net/cheatsheet/#import-and-export
+
+## WSL1 vs. WSL2
+See [Comparing WSL 1 and WSL 2][wsl-compare].
+
+[wsl-compare]: https://learn.microsoft.com/en-us/windows/wsl/compare-versions
+
+**Are most of your files on the Windows file system? Use WSL1.**
+
+WSL2 uses Hyper-V and so has good performance for files on its own file system
+(e.g., `~/...`). I use WSL2.
+
+**Are you behind a corporate proxy using VPN software (e.g., Cisco AnyConnect)?
+Use WSL1.**
+
+Hyper-V has issues connecting to VPN when you use certain VPN software. I have
+spent hundreds of hours trying to fix it. You might think you can fix it but
+just use WSL1 and save some time.
+
+[WSL2 also does not get inotify events for files on the Windows file system][wsl2-inotify].
+
+[wsl2-inotify]: https://parsiya.io/random/wsl2-hugo-watch/
+
+**Easily switch between WSL1 and WSL2**
+
+`wsl -l -v` to see all the distros.
+
+`wsl --set-version <distro name> 2` or `wsl --set-version <distro name> 1`.
+
+It might take a few minutes to copy the files but it generally works.
+
+## Install Semgrep on WSL
+`python3 -m pip install semgrep` or `python -m pip install semgrep` (depending
+on distro).
+
+### Semgrep Command not Found
+
+1. Look for Semgrep in `~/.local/bin`.
+2. Add it to your path by adding the following line to `~/.bashrc` or
+   `~/.profile` (my preference).
+   * `export PATH=$PATH:~/.local/bin`
+3. Run `source ~/.profile` or `source ~/.bashrc` to make the change.
+
+----------
+
 # Configs
 
 ## Download a Ruleset YAML File
@@ -33,6 +101,9 @@ curl https://semgrep.dev/c/p/default
 
 * Throw the kitchen sink at your code: `--config r/all`.
 * Run the manually created "catch them all" scan: `--config p/default`.
+
+Note: Semgrep is intelligent and detects a file's language by extension so it
+will not every rule on every file.
 
 # Writing Rules
 
@@ -81,6 +152,8 @@ One fix (credit: [Lewis Ardern, r2c][lewis-gh],
 [source][lewis-double-match-answer]) is to add it to `focus-metavariable`. Note,
 how we need to add `patterns` to have `focus-metavariable` as a tag.
 
+https://semgrep.dev/playground/s/parsiya:tips-double-match-fix
+
 ```yaml
 rules:
   - id: tips-double-match-fix
@@ -96,27 +169,23 @@ rules:
 [lewis-double-match-answer]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1666654970257119?thread_ts=1666654882.737839&cid=C018NJRRCJ0
 [lewis-gh]: https://github.com/LewisArdern
 
-https://semgrep.dev/playground/s/parsiya:tips-double-match-fix
-
 ### Explanation
-Credit: [Iago Abal][iago-gh], r2c.
+Credit: [Iago Abal][iago-gh], r2c, [source on r2c Slack][iago-double-match-answer].
 
 [iago-gh]: https://github.com/IagoAbal
-
-For Semgrep `MyType` is also equivalent to `org.foo.bar.MyType`, so when you ask
-Semgrep to match `$RETTYPE` against `MyType` it produces those two matches. And
-because `$RETTYPE` is part of the rule message, each match produces a different
-message, and **Semgrep doesn't deduplicate two findings if each finding has a
-different message**. I think `focus-metavariable` removes the duplicate because
-the "fake" `org.foo.bar.MyType` expression that we generate as equivalent to
-`MyType` uses tokens from the `import` and so the ranges of those tokens do not
-intersect with the method declaration... I see that more like a bug.
-
-Source: [r2c Slack][iago-double-match-answer].
-
 [iago-double-match-answer]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1666705798027529?thread_ts=1666654882.737839&cid=C018NJRRCJ0
 
-These double-matches you can observe them with other equivalences as in
+> For Semgrep `MyType` is also equivalent to `org.foo.bar.MyType`, so when you
+ask Semgrep to match `$RETTYPE` against `MyType` it produces those two matches.
+And because `$RETTYPE` is part of the rule message, each match produces a
+different message, and **Semgrep doesn't deduplicate two findings if each
+finding has a different message**. I think `focus-metavariable` removes the
+duplicate because the "fake" `org.foo.bar.MyType` expression that we generate as
+equivalent to `MyType` uses tokens from the `import` and so the ranges of those
+tokens do not intersect with the method declaration... I see that more like a
+bug.
+
+> These double-matches you can observe them with other equivalences as in
 https://semgrep.dev/s/QDdD, because `&` is commutative and Semgrep does some
 AC-matching, `$A` may be both `x` and `y`, so you get two matches.
 
@@ -148,7 +217,7 @@ pattern: |
 https://semgrep.dev/playground/s/parsiya:tips-java-annotations
 
 ### Fix
-Credit: [Cooper Pierce][cooper-gh], r2c. [Source on r2c slack][annotation-answer].
+Credit: [Cooper Pierce][cooper-gh], r2c, [source on r2c slack][annotation-answer].
 
 > annotations beyond those specified are ignored when matching so something like
 > [the following] would do what you describe
@@ -206,8 +275,7 @@ rules:
     severity: WARNING
 ```
 
-* Credit: [Cooper Pierce][cooper-gh], r2c.
-* [Source on r2c Slack][single-block-if].
+Credit: [Cooper Pierce][cooper-gh], r2c, [source on r2c Slack][single-block-if].
 
 [single-block-if]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1660943282982279?thread_ts=1660942419.479839&cid=C018NJRRCJ0
 
@@ -222,7 +290,7 @@ multi-dimensional arrays like `int nDim_init[10][10][10][10][10][10];`.
 > `...` is usually reserved to match a sequence of things (e.g., `foo(...)`), or
 > if something is optional (e.g., `return ...;`)
 
-Credit: [Padioleau Yoann][yoann-gh], r2c. [Source: r2c Slack][c-ellipsis].
+Credit: [Padioleau Yoann][yoann-gh], r2c, [source: r2c Slack][c-ellipsis].
 
 [yoann-gh]: https://github.com/aryx
 [c-ellipsis]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1648051884724009?thread_ts=1648001009.133229&cid=C018NJRRCJ0
@@ -251,4 +319,3 @@ to rename the test file `some-rule-NAME.cpp`.
 Credit: Yours Truly, Parsia.
 
 ![You Made This?](you-made-this.png)
-
