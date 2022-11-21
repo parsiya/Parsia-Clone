@@ -9,7 +9,7 @@ wip: true
 snippet: "[Semgrep](https://semgrep.dev/) stuff that I always forget."
 ---
 
-# Semgrep on Windows
+# Semgrep on Windows via WSL
 As of today (November 2022), **you cannot run Semgrep directly on Windows**.
 Seriously, save your sanity and don't try. But you can run it in the
 [Windows Subsystem for Linux][wsl].
