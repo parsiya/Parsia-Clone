@@ -26,9 +26,9 @@ I won't go into the details. Use the
 It's your call. My current daily WSL2 driver is Debian 11. I have used Semgrep
 in multiple versions of Ubuntu and Debian without issues.
 
-Make sure you're using a recent Linux version that supports installing Python
-3.7 or higher via its package manager (why install it manually when you can make
-your life easier?).
+Make sure you're using a recent distro that supports installing Python 3.7 or
+higher via its package manager (why install it manually when you can make your
+life easier?).
 
 Note you can [have multiple versions of the same distro][wsl-import-export].
 
@@ -44,12 +44,12 @@ See [Comparing WSL 1 and WSL 2][wsl-compare].
 WSL2 uses Hyper-V and so has good performance for files on its own file system
 (e.g., `~/...`). I use WSL2.
 
-**Are you behind a corporate proxy using VPN software (e.g., Cisco AnyConnect)?
+**Are you behind a corporate proxy or use VPN software (e.g., Cisco AnyConnect)?
 Use WSL1.**
 
-Hyper-V has issues connecting to VPN when you use certain VPN software. I have
-spent hundreds of hours trying to fix it. You might think you can fix it but
-just use WSL1 and save some time.
+WSL2 uses Hyper-V. Hyper-V has issues connecting to VPN when you use certain VPN
+software. I have spent hundreds of hours trying to fix it. You might think you
+can do to but just use WSL1 and save some of your time.
 
 [WSL2 also does not get inotify events for files on the Windows file system][wsl2-inotify].
 
