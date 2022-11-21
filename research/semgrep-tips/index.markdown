@@ -49,7 +49,7 @@ Use WSL1.**
 
 WSL2 uses Hyper-V. Hyper-V has issues connecting to VPN when you use certain VPN
 software. I have spent hundreds of hours trying to fix it. You might think you
-can do to but just use WSL1 and save some of your time.
+can do too but just use WSL1 and save some of your time.
 
 [WSL2 also does not get inotify events for files on the Windows file system][wsl2-inotify].
 
@@ -74,8 +74,6 @@ on distro).
    `~/.profile` (my preference).
    * `export PATH=$PATH:~/.local/bin`
 3. Run `source ~/.profile` or `source ~/.bashrc` to make the change.
-
-----------
 
 # Configs
 
