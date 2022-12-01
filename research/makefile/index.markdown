@@ -5,7 +5,7 @@ draft: false
 toc: true
 comments: false
 categories:
-- Research
+- Random
 tags:
 - Makefile
 wip: false
