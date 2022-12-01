@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>FlareOn 2017 CTF Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.106.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="FlareOn 2017 CTF Notes"><meta name=twitter:description content="Random notes from FlareOn-2017 Challenge 1 - login.html Look inside login.html. It's ROT-13.
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>FlareOn 2017 CTF Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.107.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="FlareOn 2017 CTF Notes"><meta name=twitter:description content="Random notes from FlareOn-2017 Challenge 1 - login.html Look inside login.html. It's ROT-13.
 2 - IgniteMe.exe Simple x86 binary, looks like a bunch of XOR-es done on byte_403000.
 Write the prompt and call sub_4010F0 (it's not waiting for input yet).
 F7: Step Into F8: Step Over
@@ -26,21 +26,21 @@ F8: Step Over</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgr
 </span></span><span style=display:flex><span><span style=color:#719e07>*</span>edx <span style=color:#719e07>=</span> NumberOfBytesRead <span style=color:#719e07>=</span> <span style=color:#2aa198>0x98</span> <span style=color:#719e07>=</span> <span style=color:#2aa198>152</span>  <span style=color:#586e75>// why is this not 0?
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>push <span style=color:#719e07>*</span>dex
 </span></span><span style=display:flex><span>push <span style=color:#2aa198>0x104</span> <span style=color:#719e07>=</span> <span style=color:#2aa198>206</span> <span style=color:#586e75>// nNumberOfBytesToRead
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>push Buffer (<span style=color:#2aa198>260</span> <span style=color:#dc322f>char</span> zero<span style=color:#719e07>-</span>ed out that we saw before)
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>push <span style=color:#268bd2>Buffer</span> (<span style=color:#2aa198>260</span> <span style=color:#dc322f>char</span> zero<span style=color:#719e07>-</span>ed out that we saw before)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>ds:ReadFile <span style=color:#719e07>=</span> read from input and put into Buffer.
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>counter <span style=color:#719e07>=</span> var8 <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span> <span style=color:#586e75>// var8 is reset
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span><span style=color:#719e07>while</span> (counter <span style=color:#719e07>&lt;</span> strlen(Buffer))
+</span></span><span style=display:flex><span><span style=color:#719e07>while</span> (counter <span style=color:#719e07>&lt;</span> <span style=color:#268bd2>strlen</span>(Buffer))
 </span></span><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  eax <span style=color:#719e07>=</span> Buffer
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  push eax <span style=color:#586e75>// push Buffer
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>  strlen(Buffer) <span style=color:#586e75>// sub_401020(Buffer) see below
+</span></span><span style=display:flex><span>  <span style=color:#268bd2>strlen</span>(Buffer) <span style=color:#586e75>// sub_401020(Buffer) see below
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>  <span style=color:#719e07>if</span> (strlen(Buffer) <span style=color:#719e07>&lt;</span> <span style=color:#2aa198>0</span>) <span style=color:#586e75>// function returns 0 if string is empty
+</span></span><span style=display:flex><span>  <span style=color:#719e07>if</span> (<span style=color:#268bd2>strlen</span>(Buffer) <span style=color:#719e07>&lt;</span> <span style=color:#2aa198>0</span>) <span style=color:#586e75>// function returns 0 if string is empty
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>  {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// mov eax, 1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// return
@@ -122,7 +122,7 @@ F8: Step Over</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgr
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>return</span> var4
 </span></span></code></pre></div><p>Now let's look at <code>sub_401050</code></p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>push byte_403078  <span style=color:#586e75>// cleaned string
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>varC <span style=color:#719e07>=</span> strlen(byte_403078)  <span style=color:#586e75>// strlen(cleaned_string)
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>varC <span style=color:#719e07>=</span> <span style=color:#268bd2>strlen</span>(byte_403078)  <span style=color:#586e75>// strlen(cleaned_string)
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>call sub_401000
 </span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> <span style=color:#2aa198>0x00700004</span>
@@ -349,7 +349,7 @@ D3 72 F5 16 CB 73 58 D3 78 AE 58 D3 79 F8 58 D3 76 FA 58 D3
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>ax <span style=color:#719e07>=</span> ax <span style=color:#719e07>+</span> di
 </span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> ax <span style=color:#586e75>// doesn&#39;t matter
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>var4 <span style=color:#719e07>=</span> eax <span style=color:#586e75>// this overwrites all of var4 (remember we only copied the first byte)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>eax <span style=color:#719e07>=</span> cl (only first byte of ecx from last <span style=color:#719e07>while</span> is saved)
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>eax <span style=color:#719e07>=</span> <span style=color:#268bd2>cl</span> (only first byte of ecx from last <span style=color:#719e07>while</span> is saved)
 </span></span><span style=display:flex><span>shr cx, <span style=color:#2aa198>8</span> (shift cx right one byte) <span style=color:#586e75>// cx = cx / 8
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>ax <span style=color:#719e07>=</span> ax <span style=color:#719e07>+</span> cx
 </span></span><span style=display:flex><span>ecx <span style=color:#719e07>=</span> ax
@@ -588,7 +588,7 @@ var4C = MapViewOfFile(var44)</p><h4 id=mapviewoffile>MapViewOfFile
 </span></span><span style=display:flex><span>.rsrc:01014<span style=color:#268bd2>D4D</span> <span style=color:#268bd2>mov</span>     [<span style=color:#b58900>ebp</span><span style=color:#719e07>+</span><span style=color:#268bd2>var_60</span>], <span style=color:#b58900>eax</span>
 </span></span><span style=display:flex><span>.rsrc:01014<span style=color:#268bd2>D50</span> <span style=color:#268bd2>cmp</span>     [<span style=color:#b58900>ebp</span><span style=color:#719e07>+</span><span style=color:#268bd2>var_60</span>], <span style=color:#2aa198>0FFFFFFFFh</span>
 </span></span><span style=display:flex><span>.rsrc:01014<span style=color:#268bd2>D54</span> <span style=color:#268bd2>jnz</span>     <span style=color:#268bd2>short</span> <span style=color:#268bd2>loc_1014D83</span>
-</span></span></code></pre></div><p>Looking back at the MSDN link for CreateFile we can see what is being pushed.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>CreateFile(hTemplateFile <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>,
+</span></span></code></pre></div><p>Looking back at the MSDN link for CreateFile we can see what is being pushed.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#268bd2>CreateFile</span>(hTemplateFile <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>,
 </span></span><span style=display:flex><span>    dwFlagsAndAttributes <span style=color:#719e07>=</span> <span style=color:#2aa198>0x80</span>, <span style=color:#586e75>// FILE_ATTRIBUTE_NORMAL - The file does not have other attributes set. This attribute is valid only if used alone.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    dwCreationDisposition<span style=color:#719e07>=</span> <span style=color:#2aa198>0x03</span>, <span style=color:#586e75>// OPEN_EXISTING
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    lpSecurityAttributes <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>,    <span style=color:#586e75>// The handle returned by CreateFile cannot be inherited by any child processes the application

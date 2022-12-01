@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>CyberAces PowerShell Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.106.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="CyberAces PowerShell Notes"><meta name=twitter:description content="SANS has some free streaming tutorials. You can see them here: https://tutorials.cyberaces.org/tutorials
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>CyberAces PowerShell Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.107.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="CyberAces PowerShell Notes"><meta name=twitter:description content="SANS has some free streaming tutorials. You can see them here: https://tutorials.cyberaces.org/tutorials
 This is pretty basic but I think the notes will act as a good summary that people can read instead of watching the videos. These notes are now loosely based on the videos and have a lot of items that I have added. If you follow the videos and read the notes, the sequence of topics may not match."><meta name=twitter:domain content="parsiya.io"><meta name=twitter:creator content="@CryptoGangsta"></head><body><header role=banner><hgroup><h1><a href=https://parsiya.io/>Parsia-Clone</a></h1><h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select></fieldset><ul class=main-navigation><li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank rel="noopener noreferrer">Parsia-Clone on Github</a></li><li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank rel="noopener noreferrer">How did I make this?</a></li><li><a href=https://parsiya.net title="My Main Website" target=_blank rel="noopener noreferrer">My Main Website</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank rel="noopener noreferrer"><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
 <input type=hidden name=q value=site:https://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>23 minute read
 - <a class=label href=https://parsiya.io/categories/development/>Development</a></p><h1 class=entry-title>CyberAces PowerShell Notes</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/main/dev/powershell.md target=_blank>Github Link</a></header><div class=entry-content><nav id=TableOfContents><ul><li><ul><li><a href=#case-sensitivity>Case Sensitivity</a></li><li><a href=#how-to-get-help---this-is-your-best-friend>How to Get Help - This is Your Best Friend</a><ul><li><a href=#get-help-or-help-or-man>Get-Help or help or man</a></li></ul></li><li><a href=#aliases>Aliases</a><ul><li><a href=#get-alias-cmdlet>Get-Alias Cmdlet</a></li><li><a href=#set-alias>Set-Alias</a></li><li><a href=#common-aliases-between-powershell-and-bash>Common Aliases Between PowerShell and Bash</a></li></ul></li><li><a href=#session-1---introduction-to-powershell>Session 1 - Introduction to PowerShell</a><ul><li><a href=#naming-convention>Naming Convention</a></li><li><a href=#parameters>Parameters</a></li><li><a href=#get-member>Get-Member</a></li><li><a href=#piping>Piping</a></li></ul></li><li><a href=#session-2---cmdlets>Session 2 - Cmdlets</a><ul><li><a href=#get-childitem>Get-ChildItem</a><ul><li><a href=#read-registry>Read Registry</a></li><li><a href=#read-windows-certificate-store>Read Windows Certificate Store</a></li></ul></li><li><a href=#cd-or-change-directory>cd or Change Directory</a></li></ul></li><li><a href=#session-3-scripting-variables-and-syntax>Session 3: Scripting, Variables and Syntax</a><ul><li><a href=#executionpolicy>ExecutionPolicy</a></li><li><a href=#variables>Variables</a><ul><li><a href=#variable-types>Variable Types</a></li></ul></li><li><a href=#arrays>Arrays</a></li><li><a href=#get-member-1>Get-Member</a><ul><li><a href=#get-childitem-variable>Get-ChildItem variable:</a></li></ul></li><li><a href=#user-properties-of-cmdlet-output>User Properties of Cmdlet Output</a></li><li><a href=#double-quotes-vs-single-quotes>Double Quotes vs. Single Quotes</a></li></ul></li><li><a href=#section-4---flow-control>Section 4 - Flow Control</a><ul><li><a href=#whatif---confirm---verbose>WhatIf - Confirm - Verbose</a></li><li><a href=#operators>Operators</a></li><li><a href=#if---then---else>If - Then - Else</a></li><li><a href=#where-object-filtering>Where-Object Filtering</a></li><li><a href=#foreach-object>ForEach-Object</a></li><li><a href=#select-object>Select-Object</a></li><li><a href=#output-and-the-format-verb>Output and the Format Verb</a></li><li><a href=#file-output>File Output</a></li><li><a href=#export-csv-and-import-csv>Export-CSV and Import-CSV</a></li><li><a href=#measure-object>Measure-Object</a></li></ul></li><li><a href=#section-5---practical-uses--conclusion>Section 5 - Practical Uses & Conclusion</a><ul><li><a href=#ping-all-ips-in-a-range>Ping All IPs in a Range</a></li><li><a href=#process-manipulation>Process Manipulation</a></li><li><a href=#-verb>-Verb</a></li><li><a href=#iterate-through-files-in-a-folder>Iterate Through Files in a Folder</a></li><li><a href=#get-filehash>Get-FileHash</a></li><li><a href=#select-string-almost-like-grep>Select-String (almost like grep)</a></li></ul></li></ul></li></ul></nav><p>SANS has some free streaming tutorials. You can see them here:
@@ -20,13 +20,13 @@ time.</li></ul><h3 id=get-help-or-help-or-man>Get-Help or help or man
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>SYNTAX
 </span></span><span style=display:flex><span>    <span style=color:#b58900>Get-ChildItem</span> [[-Path] &lt;string[]&gt;] [[-Filter] &lt;string&gt;] [-Include &lt;string[]&gt;] [-Exclude &lt;string[]&gt;] [-Recurse]
-</span></span><span style=display:flex><span>    [-Depth &lt;uint32&gt;] [-Force] [-Name] [-UseTransaction] [-Attributes &lt;FlagsExpression<span style=color:#cb4b16>[FileAttributes]</span>&gt; {ReadOnly |
+</span></span><span style=display:flex><span>    [-Depth &lt;uint32&gt;] [-Force] [-Name] [-UseTransaction] [-Attributes &lt;FlagsExpression[<span style=color:#cb4b16>FileAttributes</span>]&gt; {ReadOnly |
 </span></span><span style=display:flex><span>    Hidden | System | Directory | Archive | Device | Normal | Temporary | SparseFile | ReparsePoint | Compressed |
 </span></span><span style=display:flex><span>    Offline | NotContentIndexed | Encrypted | IntegrityStream | NoScrubData}] [-Directory] [<span style=color:#719e07>-File</span>] [-Hidden]
 </span></span><span style=display:flex><span>    [-ReadOnly] [-System]  [&lt;CommonParameters&gt;]
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#b58900>Get-ChildItem</span> [[-Filter] &lt;string&gt;] -LiteralPath &lt;string[]&gt; [-Include &lt;string[]&gt;] [-Exclude &lt;string[]&gt;] [-Recurse]
-</span></span><span style=display:flex><span>    [-Depth &lt;uint32&gt;] [-Force] [-Name] [-UseTransaction] [-Attributes &lt;FlagsExpression<span style=color:#cb4b16>[FileAttributes]</span>&gt; {ReadOnly |
+</span></span><span style=display:flex><span>    [-Depth &lt;uint32&gt;] [-Force] [-Name] [-UseTransaction] [-Attributes &lt;FlagsExpression[<span style=color:#cb4b16>FileAttributes</span>]&gt; {ReadOnly |
 </span></span><span style=display:flex><span>    Hidden | System | Directory | Archive | Device | Normal | Temporary | SparseFile | ReparsePoint | Compressed |
 </span></span><span style=display:flex><span>    Offline | NotContentIndexed | Encrypted | IntegrityStream | NoScrubData}] [-Directory] [<span style=color:#719e07>-File</span>] [-Hidden]
 </span></span><span style=display:flex><span>    [-ReadOnly] [-System]  [&lt;CommonParameters&gt;]
@@ -40,7 +40,7 @@ time.</li></ul><h3 id=get-help-or-help-or-man>Get-Help or help or man
 </span></span><span style=display:flex><span>    <span style=color:#b58900>Get-Help</span> cannot find the Help files <span style=color:#719e07>for</span> this cmdlet on this computer. It is displaying only partial help.
 </span></span><span style=display:flex><span>        -- To download and install Help files <span style=color:#719e07>for</span> the module that includes this cmdlet, use <span style=color:#b58900>Update-Help</span>.
 </span></span><span style=display:flex><span>        -- To view the Help topic <span style=color:#719e07>for</span> this cmdlet online, type: <span style=color:#2aa198>&#34;Get-Help Get-ChildItem -Online&#34;</span> or
-</span></span><span style=display:flex><span>           go to http://go.microsoft.com/fwlink/<span style=color:#719e07>?</span>LinkID=113308.
+</span></span><span style=display:flex><span>           go to http://go.microsoft.com/fwlink/<span style=color:#719e07>?</span>LinkID=<span style=color:#2aa198>113308</span>.
 </span></span></code></pre></div><ul><li>In order to <code>Update-Help</code> run in it an admin PowerShell window. Otherwise, it
 cannot update all modules. It takes a while to update everything.</li><li>By default it does not show all the help. We can use <code>-Full</code> or <code>-Examples</code> to
 show more. Warning <code>-Full</code> returns a ton of stuff.</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span>PS&gt; <span style=color:#b58900>get-help</span> <span style=color:#b58900>ls </span>-examples
@@ -50,7 +50,7 @@ show more. Warning <code>-Full</code> returns a ton of stuff.</li></ul><div clas
 </span></span><span style=display:flex><span>SYNOPSIS
 </span></span><span style=display:flex><span>    Gets the items and child items <span style=color:#719e07>in</span> one or more specified locations.
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    Example 1: Get child items <span style=color:#719e07>in</span> the current directory
+</span></span><span style=display:flex><span>    Example <span style=color:#2aa198>1</span>: Get child items <span style=color:#719e07>in</span> the current directory
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#b58900>PS </span>C:\&gt;<span style=color:#b58900>Get-ChildItem</span>
 </span></span><span style=display:flex><span>
@@ -61,25 +61,25 @@ show more. Warning <code>-Full</code> returns a ton of stuff.</li></ul><div clas
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>CommandType     Name                                               Version    Source
 </span></span><span style=display:flex><span>-----------     ----                                               -------    ------
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Get-Service</span>                                        3.1.0.0    Microsoft.PowerShell.Management
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>New-Service</span>                                        3.1.0.0    Microsoft.PowerShell.Management
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Restart-Service</span>                                    3.1.0.0    Microsoft.PowerShell.Management
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Resume-Service</span>                                     3.1.0.0    Microsoft.PowerShell.Management
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Set-Service</span>                                        3.1.0.0    Microsoft.PowerShell.Management
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Start-Service</span>                                      3.1.0.0    Microsoft.PowerShell.Management
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Stop-Service</span>                                       3.1.0.0    Microsoft.PowerShell.Management
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Suspend-Service</span>                                    3.1.0.0    Microsoft.PowerShell.Management
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Get-Service</span>                                        <span style=color:#2aa198>3.1</span>.0.0    Microsoft.PowerShell.Management
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>New-Service</span>                                        <span style=color:#2aa198>3.1</span>.0.0    Microsoft.PowerShell.Management
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Restart-Service</span>                                    <span style=color:#2aa198>3.1</span>.0.0    Microsoft.PowerShell.Management
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Resume-Service</span>                                     <span style=color:#2aa198>3.1</span>.0.0    Microsoft.PowerShell.Management
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Set-Service</span>                                        <span style=color:#2aa198>3.1</span>.0.0    Microsoft.PowerShell.Management
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Start-Service</span>                                      <span style=color:#2aa198>3.1</span>.0.0    Microsoft.PowerShell.Management
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Stop-Service</span>                                       <span style=color:#2aa198>3.1</span>.0.0    Microsoft.PowerShell.Management
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Suspend-Service</span>                                    <span style=color:#2aa198>3.1</span>.0.0    Microsoft.PowerShell.Management
 </span></span></code></pre></div><ul><li>Or filter by Module. Useful for 3rd party modules. E.g.,
 <code>Get-Command -Module Microsoft.PowerShell.Core</code>:</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Command</span> -Module Microsoft.PowerShell.Core
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>CommandType     Name                                               Version    Source
 </span></span><span style=display:flex><span>-----------     ----                                               -------    ------
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Add-History</span>                                        3.0.0.0    Microsoft.PowerShell.Core
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Add-PSSnapin</span>                                       3.0.0.0    Microsoft.PowerShell.Core
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Clear-History</span>                                      3.0.0.0    Microsoft.PowerShell.Core
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Connect-PSSession</span>                                  3.0.0.0    Microsoft.PowerShell.Core
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Debug-Job</span>                                          3.0.0.0    Microsoft.PowerShell.Core
-</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Disable-PSRemoting</span>                                 3.0.0.0    Microsoft.PowerShell.Core
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Add-History</span>                                        <span style=color:#2aa198>3.0</span>.0.0    Microsoft.PowerShell.Core
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Add-PSSnapin</span>                                       <span style=color:#2aa198>3.0</span>.0.0    Microsoft.PowerShell.Core
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Clear-History</span>                                      <span style=color:#2aa198>3.0</span>.0.0    Microsoft.PowerShell.Core
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Connect-PSSession</span>                                  <span style=color:#2aa198>3.0</span>.0.0    Microsoft.PowerShell.Core
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Debug-Job</span>                                          <span style=color:#2aa198>3.0</span>.0.0    Microsoft.PowerShell.Core
+</span></span><span style=display:flex><span>Cmdlet          <span style=color:#b58900>Disable-PSRemoting</span>                                 <span style=color:#2aa198>3.0</span>.0.0    Microsoft.PowerShell.Core
 </span></span></code></pre></div><ul><li>It also has this search feature. If you do not know what exactly you are
 looking for, just do <code>man whatever</code> and it will find you the cmdlets that have
 <code>whatever</code> in them:</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>man </span>executionpolicy
@@ -94,40 +94,40 @@ looking for, just do <code>man whatever</code> and it will find you the cmdlets 
 aliases which start with <code>l</code>.</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span>PS&gt; <span style=color:#b58900>Get-Alias</span> l*
 </span></span><span style=display:flex><span>CommandType     Name                                               Version    Source
 </span></span><span style=display:flex><span>-----------     ----                                               -------    ------
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>lp </span>-&gt; <span style=color:#b58900>Out-Printer</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>lp </span>-&gt; <span style=color:#b58900>Out-Printer</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
 </span></span></code></pre></div><ul><li>Or just search what an alias points to like <code>Get-Alias dir</code>:</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span>PS&gt; <span style=color:#b58900>Get-Alias</span> <span style=color:#b58900>dir
 </span></span></span><span style=display:flex><span><span style=color:#b58900></span>CommandType     Name                                               Version    Source
 </span></span><span style=display:flex><span>-----------     ----                                               -------    ------
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
 </span></span></code></pre></div><ul><li>To search the aliases for a cmdlet use <code>Get-Alias -Definition Get-ChildItem</code>:</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span>PS&gt;<span style=color:#b58900>Get-Alias</span> -Definition <span style=color:#b58900>get-childitem</span>
 </span></span><span style=display:flex><span>CommandType     Name                                               Version    Source
 </span></span><span style=display:flex><span>-----------     ----                                               -------    ------
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>gci </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>gci </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
 </span></span></code></pre></div><h3 id=set-alias>Set-Alias
 <a class=header-link href=#set-alias><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>To create our own alias use <code>Set-Alias -Name mydir -Value ls</code>:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span>PS&gt; <span style=color:#b58900>Set-Alias</span> -Name mydir -Value <span style=color:#b58900>ls
 </span></span></span><span style=display:flex><span><span style=color:#b58900></span>PS&gt; <span style=color:#b58900>Get-Alias</span> -Definition <span style=color:#b58900>ls
 </span></span></span><span style=display:flex><span><span style=color:#b58900></span>
 </span></span><span style=display:flex><span>CommandType     Name                                               Version    Source
 </span></span><span style=display:flex><span>-----------     ----                                               -------    ------
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           mydir -&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           mydir -&gt; <span style=color:#b58900>Get-ChildItem</span>
 </span></span></code></pre></div><p>Note that this is an alias for <code>ls</code> so it does not show up in the list of
 aliases for <code>Get-ChildItem</code> (which <code>ls</code> is an alias of):</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Alias</span> -Definition <span style=color:#b58900>Get-ChildItem</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>CommandType     Name                                               Version    Source
 </span></span><span style=display:flex><span>-----------     ----                                               -------    ------
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>gci </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>dir </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>gci </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>ls </span>-&gt; <span style=color:#b58900>Get-ChildItem</span>
 </span></span></code></pre></div><h3 id=common-aliases-between-powershell-and-bash>Common Aliases Between PowerShell and Bash
 <a class=header-link href=#common-aliases-between-powershell-and-bash><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>A lot of PowerShell aliases are the name of bash commands. For example <code>man</code> is
 and alias for <code>help</code>:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Alias</span> -Definition Help
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>CommandType     Name                                               Version    Source
 </span></span><span style=display:flex><span>-----------     ----                                               -------    ------
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>man </span>-&gt; help
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>man </span>-&gt; help
 </span></span></code></pre></div><p>A couple of cheat sheets:</p><ul><li><a href=http://xahlee.info/powershell/PowerShell_for_unixer.html target=_blank rel="noreferrer noopener">http://xahlee.info/powershell/PowerShell_for_unixer.html</a></li><li><a href=http://cecs.wright.edu/~pmateti/Courses/233/Labs/Scripting/bashVsPowerShellTable.html target=_blank rel="noreferrer noopener">http://cecs.wright.edu/~pmateti/Courses/233/Labs/Scripting/bashVsPowerShellTable.html</a></li><li><a href=http://cecs.wright.edu/~pmateti/Courses/233/Top/233-CheatSheet.html target=_blank rel="noreferrer noopener">http://cecs.wright.edu/~pmateti/Courses/233/Top/233-CheatSheet.html</a></li></ul><hr><h2 id=session-1---introduction-to-powershell>Session 1 - Introduction to PowerShell
 <a class=header-link href=#session-1---introduction-to-powershell><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-1 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-1</a></p><h3 id=naming-convention>Naming Convention
 <a class=header-link href=#naming-convention><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p><code>Verb-Noun</code>. Things like <code>Get-Service</code>.</p><h3 id=parameters>Parameters
@@ -142,7 +142,7 @@ and methods of object(s).</p><div class=highlight><pre tabindex=0 style=color:#9
 </span></span><span style=display:flex><span>----                      ----------     ----------
 </span></span><span style=display:flex><span>LinkType                  CodeProperty   System.String LinkType{get=GetLinkType;}
 </span></span><span style=display:flex><span>Mode                      CodeProperty   System.String Mode{get=Mode;}
-</span></span><span style=display:flex><span>Target                    CodeProperty   System.Collections.Generic.IEnumerable`1[[System.String, mscorlib, Version=...
+</span></span><span style=display:flex><span>Target                    CodeProperty   System.Collections.Generic.IEnumerable`<span style=color:#2aa198>1</span>[[System.String, mscorlib, Version=...
 </span></span><span style=display:flex><span>Create                    Method         void Create(), void Create(System.Security.AccessControl.DirectorySecurity ...
 </span></span></code></pre></div><p>Also works for aliases like <code>ls | Get-Member</code>.</p><h3 id=piping>Piping
 <a class=header-link href=#piping><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>We can pipe outputs of one command to the other. In PowerShell everything is an
@@ -162,7 +162,7 @@ truncation. It shows data in a list.</p><div class=highlight><pre tabindex=0 sty
 </span></span><span style=display:flex><span>TypeName   : System.IO.DirectoryInfo
 </span></span><span style=display:flex><span>Name       : Target
 </span></span><span style=display:flex><span>MemberType : CodeProperty
-</span></span><span style=display:flex><span>Definition : System.Collections.Generic.IEnumerable`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+</span></span><span style=display:flex><span>Definition : System.Collections.Generic.IEnumerable`<span style=color:#2aa198>1</span>[[System.String, mscorlib, Version=<span style=color:#2aa198>4.0</span>.0.<span style=color:#2aa198>0</span>, Culture=neutral,
 </span></span><span style=display:flex><span>             PublicKeyToken=b77a5c561934e089]] Target{get=GetTarget;}
 </span></span></code></pre></div><hr><h2 id=session-2---cmdlets>Session 2 - Cmdlets
 <a class=header-link href=#session-2---cmdlets><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-2 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-2</a></p><h3 id=get-childitem>Get-ChildItem
@@ -175,12 +175,12 @@ truncation. It shows data in a list.</p><div class=highlight><pre tabindex=0 sty
 </span></span><span style=display:flex><span>----                           --------
 </span></span><span style=display:flex><span>AppEvents
 </span></span><span style=display:flex><span>AppXBackupContentType
-</span></span><span style=display:flex><span>Console                        ColorTable00             : 0
-</span></span><span style=display:flex><span>                               ColorTable01             : 8388608
-</span></span><span style=display:flex><span>                               ColorTable02             : 32768
-</span></span><span style=display:flex><span>                               ColorTable03             : 8421376
-</span></span><span style=display:flex><span>                               ColorTable04             : 128
-</span></span><span style=display:flex><span>                               ColorTable05             : 8388736
+</span></span><span style=display:flex><span>Console                        ColorTable00             : <span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span>                               ColorTable01             : <span style=color:#2aa198>8388608</span>
+</span></span><span style=display:flex><span>                               ColorTable02             : <span style=color:#2aa198>32768</span>
+</span></span><span style=display:flex><span>                               ColorTable03             : <span style=color:#2aa198>8421376</span>
+</span></span><span style=display:flex><span>                               ColorTable04             : <span style=color:#2aa198>128</span>
+</span></span><span style=display:flex><span>                               ColorTable05             : <span style=color:#2aa198>8388736</span>
 </span></span></code></pre></div><h4 id=read-windows-certificate-store>Read Windows Certificate Store
 <a class=header-link href=#read-windows-certificate-store><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4><ul><li><p>Read the Windows certificate store <code>ls cert:</code></p></li><li><p><a href=https://technet.microsoft.com/en-us/library/hh847761.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/hh847761.aspx</a></p></li><li><p><code>cert:</code> is essentially a new drive similar to <code>HKCU:</code></p></li><li><p><code>ls cert:</code> lists machine's certificate stores:</p></li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span>PS&gt; <span style=color:#b58900>ls </span>cert:
 </span></span><span style=display:flex><span>
@@ -204,8 +204,8 @@ truncation. It shows data in a list.</p><div class=highlight><pre tabindex=0 sty
 </span></span><span style=display:flex><span>Issuer       : CN=Token Signing Public Key
 </span></span><span style=display:flex><span>Thumbprint   : 2C85006A1A028BCC349DF23C474724C055FDE8B6
 </span></span><span style=display:flex><span>FriendlyName :
-</span></span><span style=display:flex><span>NotBefore    : 5/9/2016 4:40:55 PM
-</span></span><span style=display:flex><span>NotAfter     : 5/8/2021 4:40:55 PM
+</span></span><span style=display:flex><span>NotBefore    : <span style=color:#2aa198>5</span>/<span style=color:#2aa198>9</span>/<span style=color:#2aa198>2016</span> <span style=color:#2aa198>4</span>:<span style=color:#2aa198>40</span>:<span style=color:#2aa198>55</span> PM
+</span></span><span style=display:flex><span>NotAfter     : <span style=color:#2aa198>5</span>/<span style=color:#2aa198>8</span>/<span style=color:#2aa198>2021</span> <span style=color:#2aa198>4</span>:<span style=color:#2aa198>40</span>:<span style=color:#2aa198>55</span> PM
 </span></span><span style=display:flex><span>Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid,
 </span></span><span style=display:flex><span>               System.Security.Cryptography.Oid}
 </span></span><span style=display:flex><span>
@@ -213,8 +213,8 @@ truncation. It shows data in a list.</p><div class=highlight><pre tabindex=0 sty
 </span></span><span style=display:flex><span>Issuer       : CN=Token Signing Public Key
 </span></span><span style=display:flex><span>Thumbprint   : 0217922CA1B6F0BD0F1D7FF6E7BDC29B2FAAA060
 </span></span><span style=display:flex><span>FriendlyName :
-</span></span><span style=display:flex><span>NotBefore    : 7/2/2013 5:10:37 PM
-</span></span><span style=display:flex><span>NotAfter     : 7/1/2018 5:10:37 PM
+</span></span><span style=display:flex><span>NotBefore    : <span style=color:#2aa198>7</span>/<span style=color:#2aa198>2</span>/<span style=color:#2aa198>2013</span> <span style=color:#2aa198>5</span>:<span style=color:#2aa198>10</span>:<span style=color:#2aa198>37</span> PM
+</span></span><span style=display:flex><span>NotAfter     : <span style=color:#2aa198>7</span>/<span style=color:#2aa198>1</span>/<span style=color:#2aa198>2018</span> <span style=color:#2aa198>5</span>:<span style=color:#2aa198>10</span>:<span style=color:#2aa198>37</span> PM
 </span></span><span style=display:flex><span>Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid,
 </span></span><span style=display:flex><span>               System.Security.Cryptography.Oid}
 </span></span><span style=display:flex><span>
@@ -224,17 +224,17 @@ truncation. It shows data in a list.</p><div class=highlight><pre tabindex=0 sty
 </span></span><span style=display:flex><span>Issuer       : CN=Root Agency
 </span></span><span style=display:flex><span>Thumbprint   : FEE449EE0E3965A5246F000E87FDE2A065FD89D4
 </span></span><span style=display:flex><span>FriendlyName :
-</span></span><span style=display:flex><span>NotBefore    : 5/28/1996 6:02:59 PM
-</span></span><span style=display:flex><span>NotAfter     : 12/31/2039 6:59:59 PM
+</span></span><span style=display:flex><span>NotBefore    : <span style=color:#2aa198>5</span>/<span style=color:#2aa198>28</span>/<span style=color:#2aa198>1996</span> <span style=color:#2aa198>6</span>:<span style=color:#2aa198>02</span>:<span style=color:#2aa198>59</span> PM
+</span></span><span style=display:flex><span>NotAfter     : <span style=color:#2aa198>12</span>/<span style=color:#2aa198>31</span>/<span style=color:#2aa198>2039</span> <span style=color:#2aa198>6</span>:<span style=color:#2aa198>59</span>:<span style=color:#2aa198>59</span> PM
 </span></span><span style=display:flex><span>Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>Subject      : OU=www.verisign.com/CPS Incorp.by <span style=color:#719e07>Ref</span>. LIABILITY LTD.(c)97 VeriSign, OU=VeriSign International Server
-</span></span><span style=display:flex><span>               CA - Class 3, OU=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, O=VeriSign Trust Network
-</span></span><span style=display:flex><span>Issuer       : OU=Class 3 Public Primary Certification Authority, O=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, C=US
+</span></span><span style=display:flex><span>Subject      : OU=www.verisign.com/CPS Incorp.by <span style=color:#719e07>Ref</span>. LIABILITY LTD.(c)<span style=color:#2aa198>97</span> VeriSign, OU=VeriSign International Server
+</span></span><span style=display:flex><span>               CA - <span style=color:#268bd2>Class</span> <span style=color:#b58900>3, </span>OU=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, O=VeriSign Trust Network
+</span></span><span style=display:flex><span>Issuer       : OU=Class <span style=color:#2aa198>3</span> Public Primary Certification Authority, O=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, C=US
 </span></span><span style=display:flex><span>Thumbprint   : D559A586669B08F46A30A133F8A9ED3D038E2EA8
 </span></span><span style=display:flex><span>FriendlyName :
-</span></span><span style=display:flex><span>NotBefore    : 4/16/1997 8:00:00 PM
-</span></span><span style=display:flex><span>NotAfter     : 10/24/2016 7:59:59 PM
+</span></span><span style=display:flex><span>NotBefore    : <span style=color:#2aa198>4</span>/<span style=color:#2aa198>16</span>/<span style=color:#2aa198>1997</span> <span style=color:#2aa198>8</span>:<span style=color:#2aa198>00</span>:<span style=color:#2aa198>00</span> PM
+</span></span><span style=display:flex><span>NotAfter     : <span style=color:#2aa198>10</span>/<span style=color:#2aa198>24</span>/<span style=color:#2aa198>2016</span> <span style=color:#2aa198>7</span>:<span style=color:#2aa198>59</span>:<span style=color:#2aa198>59</span> PM
 </span></span><span style=display:flex><span>Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid,
 </span></span><span style=display:flex><span>               System.Security.Cryptography.Oid...}
 </span></span></code></pre></div><ul><li>Even deeper and see certificate info based on thumbprint:</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>ls </span><span style=color:#2aa198>&#34;cert:LocalMachine\CA\D559A586669B08F46A30A133F8A9ED3D038E2EA8&#34;</span> | <span style=color:#b58900>Format-List</span> -Property *
@@ -247,8 +247,8 @@ truncation. It shows data in a list.</p><div class=highlight><pre tabindex=0 sty
 </span></span><span style=display:flex><span>PSDrive                  : Cert
 </span></span><span style=display:flex><span>PSProvider               : Microsoft.PowerShell.Security\Certificate
 </span></span><span style=display:flex><span>PSIsContainer            : False
-</span></span><span style=display:flex><span>EnhancedKeyUsageList     : {Server Authentication (1.3.6.1.5.5.7.3.1), Client Authentication (1.3.6.1.5.5.7.3.2),
-</span></span><span style=display:flex><span>                           2.16.840.1.113730.4.1, 2.16.840.1.113733.1.8.1}
+</span></span><span style=display:flex><span>EnhancedKeyUsageList     : {Server Authentication (<span style=color:#2aa198>1.3</span>.6.1.5.5.7.3.<span style=color:#2aa198>1</span>), Client Authentication (<span style=color:#2aa198>1.3</span>.6.1.5.5.7.3.<span style=color:#2aa198>2</span>),
+</span></span><span style=display:flex><span>                           <span style=color:#2aa198>2.16</span>.840.1.113730.4.<span style=color:#2aa198>1</span>, <span style=color:#2aa198>2.16</span>.840.1.113733.1.8.<span style=color:#2aa198>1</span>}
 </span></span><span style=display:flex><span>DnsNameList              :
 </span></span><span style=display:flex><span>SendAsTrustedIssuer      : False
 </span></span><span style=display:flex><span>EnrollmentPolicyEndPoint : Microsoft.CertificateServices.Commands.EnrollmentEndPointProperty
@@ -259,21 +259,21 @@ truncation. It shows data in a list.</p><div class=highlight><pre tabindex=0 sty
 </span></span><span style=display:flex><span>                           System.Security.Cryptography.Oid, System.Security.Cryptography.Oid...}
 </span></span><span style=display:flex><span>FriendlyName             :
 </span></span><span style=display:flex><span>IssuerName               : System.Security.Cryptography.X509Certificates.X500DistinguishedName
-</span></span><span style=display:flex><span>NotAfter                 : 10/24/2016 7:59:59 PM
-</span></span><span style=display:flex><span>NotBefore                : 4/16/1997 8:00:00 PM
+</span></span><span style=display:flex><span>NotAfter                 : <span style=color:#2aa198>10</span>/<span style=color:#2aa198>24</span>/<span style=color:#2aa198>2016</span> <span style=color:#2aa198>7</span>:<span style=color:#2aa198>59</span>:<span style=color:#2aa198>59</span> PM
+</span></span><span style=display:flex><span>NotBefore                : <span style=color:#2aa198>4</span>/<span style=color:#2aa198>16</span>/<span style=color:#2aa198>1997</span> <span style=color:#2aa198>8</span>:<span style=color:#2aa198>00</span>:<span style=color:#2aa198>00</span> PM
 </span></span><span style=display:flex><span>HasPrivateKey            : False
 </span></span><span style=display:flex><span>PrivateKey               :
 </span></span><span style=display:flex><span>PublicKey                : System.Security.Cryptography.X509Certificates.PublicKey
-</span></span><span style=display:flex><span>RawData                  : {48, 130, 3, 131...}
+</span></span><span style=display:flex><span>RawData                  : {<span style=color:#2aa198>48</span>, <span style=color:#2aa198>130</span>, <span style=color:#2aa198>3</span>, <span style=color:#2aa198>131</span>...}
 </span></span><span style=display:flex><span>SerialNumber             : 46FCEBBAB4D02F0F926098233F93078F
 </span></span><span style=display:flex><span>SubjectName              : System.Security.Cryptography.X509Certificates.X500DistinguishedName
 </span></span><span style=display:flex><span>SignatureAlgorithm       : System.Security.Cryptography.Oid
 </span></span><span style=display:flex><span>Thumbprint               : D559A586669B08F46A30A133F8A9ED3D038E2EA8
-</span></span><span style=display:flex><span>Version                  : 3
-</span></span><span style=display:flex><span>Handle                   : 2694988070352
-</span></span><span style=display:flex><span>Issuer                   : OU=Class 3 Public Primary Certification Authority, O=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, C=US
-</span></span><span style=display:flex><span>Subject                  : OU=www.verisign.com/CPS Incorp.by <span style=color:#719e07>Ref</span>. LIABILITY LTD.(c)97 VeriSign, OU=VeriSign
-</span></span><span style=display:flex><span>                           International Server CA - Class 3, OU=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, O=VeriSign Trust Network
+</span></span><span style=display:flex><span>Version                  : <span style=color:#2aa198>3</span>
+</span></span><span style=display:flex><span>Handle                   : <span style=color:#2aa198>2694988070352</span>
+</span></span><span style=display:flex><span>Issuer                   : OU=Class <span style=color:#2aa198>3</span> Public Primary Certification Authority, O=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, C=US
+</span></span><span style=display:flex><span>Subject                  : OU=www.verisign.com/CPS Incorp.by <span style=color:#719e07>Ref</span>. LIABILITY LTD.(c)<span style=color:#2aa198>97</span> VeriSign, OU=VeriSign
+</span></span><span style=display:flex><span>                           International Server CA - <span style=color:#268bd2>Class</span> <span style=color:#b58900>3, </span>OU=<span style=color:#2aa198>&#34;VeriSign, Inc.&#34;</span>, O=VeriSign Trust Network
 </span></span></code></pre></div><h3 id=cd-or-change-directory>cd or Change Directory
 <a class=header-link href=#cd-or-change-directory><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>It's easier to treat registry and the certificate store as drives and cd into
 them.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>cd </span>cert:
@@ -314,40 +314,40 @@ before they can be run.</li><li>Unrestricted - No restrictions; all Windows Powe
 <a class=header-link href=#variables><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><ul><li>Prefixed with <code>$</code>.</li><li>Set variable: <code>$a = 13</code>.</li><li>Get variable: <code>$a</code>.</li><li>Store the result of a command into a variable: <code>$output = dir cert:</code>.</li></ul><h4 id=variable-types>Variable Types
 <a class=header-link href=#variable-types><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4><p>Create a typed variable: <code>[int]$thisIsAnInt = 11</code>.</p><p>These are the different types (<a href=https://technet.microsoft.com/en-us/magazine/ff642464.aspx target=_blank rel="noreferrer noopener">source technet</a>):</p><ul><li>[int] 32-bit signed integer</li><li>[long] 64-bit signed integer</li><li>[string] Fixed-length string of Unicode characters</li><li>[char] Unicode 16-bit character</li><li>[bool] True/false value</li><li>[byte] 8-bit unsigned integer</li><li>[double] Double-precision 64-bit floating point number</li><li>[decimal] 128-bit decimal value</li><li>[single] Single-precision 32-bit floating point number</li><li>[array] Array of values</li><li>[xml] Xmldocument object</li><li>[hashtable] Hashtable object (similar to a Dictionary object)</li></ul><h3 id=arrays>Arrays
 <a class=header-link href=#arrays><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Collection of objects. Use them like normal arrays in programming languages.</p><ul><li>Help on Technet: <a href=https://technet.microsoft.com/en-us/library/hh847882.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/hh847882.aspx</a></li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#586e75># Create an array</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span> = 0, 1, 2, 3, 4
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span> = <span style=color:#2aa198>0</span>, <span style=color:#2aa198>1</span>, <span style=color:#2aa198>2</span>, <span style=color:#2aa198>3</span>, <span style=color:#2aa198>4</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Access all of it - echo $someNumbers does the same thing</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>1</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>4</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Access a specific index - indexing starts from 0 like almost every programming language</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[3]
-</span></span><span style=display:flex><span>3
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>3</span>]
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Negative indexing also works</span>
 </span></span><span style=display:flex><span><span style=color:#586e75># -1 is the last item</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[-1]
-</span></span><span style=display:flex><span>4
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>-1</span>]
+</span></span><span style=display:flex><span><span style=color:#2aa198>4</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># -2 works as intended</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[-2]
-</span></span><span style=display:flex><span>3
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>-2</span>]
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Get length of array - either use Length or Count properties</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>.Count
-</span></span><span style=display:flex><span>5
+</span></span><span style=display:flex><span><span style=color:#2aa198>5</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>.Length
-</span></span><span style=display:flex><span>5
+</span></span><span style=display:flex><span><span style=color:#2aa198>5</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># But remember that they are ReadOnly</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>.Count = 10
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>.Count = <span style=color:#2aa198>10</span>
 </span></span><span style=display:flex><span><span style=color:#2aa198>&#39;Count&#39;</span> is a ReadOnly property.
-</span></span><span style=display:flex><span>At line:1 char:1
-</span></span><span style=display:flex><span>+ <span style=color:#268bd2>$someNumbers</span>.Count = 10
+</span></span><span style=display:flex><span>At line:<span style=color:#2aa198>1</span> char:<span style=color:#2aa198>1</span>
+</span></span><span style=display:flex><span>+ <span style=color:#268bd2>$someNumbers</span>.Count = <span style=color:#2aa198>10</span>
 </span></span><span style=display:flex><span>+ ~~~~~~~~~~~~~~~~~~~~~~~
 </span></span><span style=display:flex><span>    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
 </span></span><span style=display:flex><span>    + FullyQualifiedErrorId : PropertyAssignmentException
@@ -361,7 +361,7 @@ before they can be run.</li><li>Unrestricted - No restrictions; all Windows Powe
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Create a typed array - note inside the brackets</span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Type of a typed array is something like int[] or int32[]</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#cb4b16>[int[]]</span><span style=color:#268bd2>$intArray</span> = 0, 1, 2, 3
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; [<span style=color:#cb4b16>int[]</span>]<span style=color:#268bd2>$intArray</span> = <span style=color:#2aa198>0</span>, <span style=color:#2aa198>1</span>, <span style=color:#2aa198>2</span>, <span style=color:#2aa198>3</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Now we can see the correct type</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$intArray</span>.GetType()
@@ -370,114 +370,114 @@ before they can be run.</li><li>Unrestricted - No restrictions; all Windows Powe
 </span></span><span style=display:flex><span>True     True     Int32[]                                  System.Array
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Type can be any .NET framework object</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#cb4b16>[Diagnostics.Process[]]</span><span style=color:#268bd2>$processes</span> = <span style=color:#b58900>Get-Process</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; [<span style=color:#cb4b16>Diagnostics.Process[]</span>]<span style=color:#268bd2>$processes</span> = <span style=color:#b58900>Get-Process</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$processes</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id  <span style=color:#b58900>SI </span>ProcessName
 </span></span><span style=display:flex><span>-------  ------    -----      ----- -----   ------     --  -- -----------
-</span></span><span style=display:flex><span>    247      21    28388      54672   220    60.14   2472   2 atom
-</span></span><span style=display:flex><span>    244      23    22656      34136   288    40.33   4908   2 atom
-</span></span><span style=display:flex><span>    171      15     4364      10528   156     0.34   6800   2 atom
-</span></span><span style=display:flex><span>    547      37    52600      80496   332    55.59   8104   2 atom
-</span></span><span style=display:flex><span>    347      67   626812     647076  1006   361.66   8848   2 atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>247</span>      <span style=color:#2aa198>21</span>    <span style=color:#2aa198>28388</span>      <span style=color:#2aa198>54672</span>   <span style=color:#2aa198>220</span>    <span style=color:#2aa198>60.14</span>   <span style=color:#2aa198>2472</span>   <span style=color:#2aa198>2</span> atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>244</span>      <span style=color:#2aa198>23</span>    <span style=color:#2aa198>22656</span>      <span style=color:#2aa198>34136</span>   <span style=color:#2aa198>288</span>    <span style=color:#2aa198>40.33</span>   <span style=color:#2aa198>4908</span>   <span style=color:#2aa198>2</span> atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>171</span>      <span style=color:#2aa198>15</span>     <span style=color:#2aa198>4364</span>      <span style=color:#2aa198>10528</span>   <span style=color:#2aa198>156</span>     <span style=color:#2aa198>0.34</span>   <span style=color:#2aa198>6800</span>   <span style=color:#2aa198>2</span> atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>547</span>      <span style=color:#2aa198>37</span>    <span style=color:#2aa198>52600</span>      <span style=color:#2aa198>80496</span>   <span style=color:#2aa198>332</span>    <span style=color:#2aa198>55.59</span>   <span style=color:#2aa198>8104</span>   <span style=color:#2aa198>2</span> atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>347</span>      <span style=color:#2aa198>67</span>   <span style=color:#2aa198>626812</span>     <span style=color:#2aa198>647076</span>  <span style=color:#2aa198>1006</span>   <span style=color:#2aa198>361.66</span>   <span style=color:#2aa198>8848</span>   <span style=color:#2aa198>2</span> atom
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># You can use ranges</span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Here powershell doesn&#39;t care if your range is over the bounds, it just shows all of the array</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[0..10]
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>0</span>.<span style=color:#2aa198>.10</span>]
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>1</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>4</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># You can use negative index in range - you can see it is reading backwards</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[0..-3]
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>2
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>0</span>..<span style=color:#2aa198>-3</span>]
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>4</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Or use the range like this to view specific members</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[0,2,4]
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>4
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>0</span>,<span style=color:#2aa198>2</span>,<span style=color:#2aa198>4</span>]
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>4</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Combine a range and specific indices with +</span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Seems like when you use the + it cannot be used for the first item (otherwise the parser thinks it&#39;s a mathematical operation to calculate an index)</span>
 </span></span><span style=display:flex><span><span style=color:#586e75># You can do this</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[2,0+1..3]
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>2</span>,<span style=color:#2aa198>0</span>+<span style=color:#2aa198>1</span>.<span style=color:#2aa198>.3</span>]
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>1</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># But cannot do this</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[2+1..3]
-</span></span><span style=display:flex><span>Method invocation failed because <span style=color:#cb4b16>[System.Object[]]</span> does not contain a method named <span style=color:#2aa198>&#39;op_Addition&#39;</span>.
-</span></span><span style=display:flex><span>At line:1 char:1
-</span></span><span style=display:flex><span>+ <span style=color:#268bd2>$someNumbers</span>[2+1..3]
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>2</span>+<span style=color:#2aa198>1</span>.<span style=color:#2aa198>.3</span>]
+</span></span><span style=display:flex><span>Method invocation failed because [<span style=color:#cb4b16>System.Object[]</span>] does not contain a method named <span style=color:#2aa198>&#39;op_Addition&#39;</span>.
+</span></span><span style=display:flex><span>At line:<span style=color:#2aa198>1</span> char:<span style=color:#2aa198>1</span>
+</span></span><span style=display:flex><span>+ <span style=color:#268bd2>$someNumbers</span>[<span style=color:#2aa198>2</span>+<span style=color:#2aa198>1</span>.<span style=color:#2aa198>.3</span>]
 </span></span><span style=display:flex><span>+ ~~~~~~~~~~~~~~~~~~~~
 </span></span><span style=display:flex><span>    + CategoryInfo          : InvalidOperation: (op_Addition:String) [], RuntimeException
 </span></span><span style=display:flex><span>    + FullyQualifiedErrorId : MethodNotFound
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># To add items to arrays use += (obviously respect the type of the array)</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>1</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>4</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span> += 5
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span> += <span style=color:#2aa198>5</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$someNumbers</span>
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>1</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>4</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>5</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Combine arrays with +</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$moreNumbers</span> = 10,11,12,13
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$moreNumbers</span> = <span style=color:#2aa198>10</span>,<span style=color:#2aa198>11</span>,<span style=color:#2aa198>12</span>,<span style=color:#2aa198>13</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span> = <span style=color:#268bd2>$someNumbers</span> + <span style=color:#268bd2>$moreNumbers</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span>
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>10
-</span></span><span style=display:flex><span>11
-</span></span><span style=display:flex><span>12
-</span></span><span style=display:flex><span>13
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>1</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>3</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>4</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>5</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>10</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>11</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>12</span>
+</span></span><span style=display:flex><span><span style=color:#2aa198>13</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># To delete an array set it to $null</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span> = <span style=color:#268bd2>$null</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span> = $null
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$combined</span>.Count
-</span></span><span style=display:flex><span>0
+</span></span><span style=display:flex><span><span style=color:#2aa198>0</span>
 </span></span></code></pre></div><h3 id=get-member-1>Get-Member
 <a class=header-link href=#get-member-1><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>To get methods and properties of an object, pipe it to <code>Get-Member</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#586e75># Like an int</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; 1 | <span style=color:#b58900>Get-Member</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#2aa198>1</span> | <span style=color:#b58900>Get-Member</span>
 </span></span><span style=display:flex><span>   TypeName: System.Int32
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Name        MemberType Definition
 </span></span><span style=display:flex><span>----        ---------- ----------
 </span></span><span style=display:flex><span>CompareTo   Method     int CompareTo(System.Object value), int CompareTo(int value), int IComparab...
-</span></span><span style=display:flex><span>Equals      Method     bool Equals(System.Object obj), bool Equals(int obj), bool IEquatable<span style=color:#cb4b16>[int]</span>....
+</span></span><span style=display:flex><span>Equals      Method     bool Equals(System.Object obj), bool Equals(int obj), bool IEquatable[<span style=color:#cb4b16>int</span>]....
 </span></span><span style=display:flex><span>GetHashCode Method     int GetHashCode()
 </span></span><span style=display:flex><span>GetType     Method     <span style=color:#b58900>type </span>GetType()
 </span></span><span style=display:flex><span>...
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Same thing can be done with an array</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#cb4b16>[int[]]</span><span style=color:#268bd2>$intArray</span> = 10, 9, 8, 7, 6
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; [<span style=color:#cb4b16>int[]</span>]<span style=color:#268bd2>$intArray</span> = <span style=color:#2aa198>10</span>, <span style=color:#2aa198>9</span>, <span style=color:#2aa198>8</span>, <span style=color:#2aa198>7</span>, <span style=color:#2aa198>6</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$intArray</span>.GetType()
 </span></span><span style=display:flex><span>IsPublic IsSerial Name                                     BaseType
@@ -490,7 +490,7 @@ before they can be run.</li><li>Unrestricted - No restrictions; all Windows Powe
 </span></span><span style=display:flex><span>Name        MemberType Definition
 </span></span><span style=display:flex><span>----        ---------- ----------
 </span></span><span style=display:flex><span>CompareTo   Method     int CompareTo(System.Object value), int CompareTo(int value), int IComparab...
-</span></span><span style=display:flex><span>Equals      Method     bool Equals(System.Object obj), bool Equals(int obj), bool IEquatable<span style=color:#cb4b16>[int]</span>....
+</span></span><span style=display:flex><span>Equals      Method     bool Equals(System.Object obj), bool Equals(int obj), bool IEquatable[<span style=color:#cb4b16>int</span>]....
 </span></span><span style=display:flex><span>GetHashCode Method     int GetHashCode()
 </span></span><span style=display:flex><span>GetType     Method     <span style=color:#b58900>type </span>GetType()
 </span></span><span style=display:flex><span>
@@ -506,13 +506,13 @@ before they can be run.</li><li>Unrestricted - No restrictions; all Windows Powe
 </span></span></span><span style=display:flex><span><span style=color:#b58900></span>?                              True
 </span></span><span style=display:flex><span>^                              <span style=color:#b58900>clear
 </span></span></span><span style=display:flex><span><span style=color:#b58900></span>args                           {}
-</span></span><span style=display:flex><span>mixedArray                     {1, hello, 2.3}
-</span></span><span style=display:flex><span>moreNumbers                    {10, 11, 12, 13}
-</span></span><span style=display:flex><span>someNumbers                    {0, 1, 2, 3...}
+</span></span><span style=display:flex><span>mixedArray                     {<span style=color:#2aa198>1</span>, hello, <span style=color:#2aa198>2.3</span>}
+</span></span><span style=display:flex><span>moreNumbers                    {<span style=color:#2aa198>10</span>, <span style=color:#2aa198>11</span>, <span style=color:#2aa198>12</span>, <span style=color:#2aa198>13</span>}
+</span></span><span style=display:flex><span>someNumbers                    {<span style=color:#2aa198>0</span>, <span style=color:#2aa198>1</span>, <span style=color:#2aa198>2</span>, <span style=color:#2aa198>3</span>...}
 </span></span></code></pre></div><h3 id=user-properties-of-cmdlet-output>User Properties of Cmdlet Output
 <a class=header-link href=#user-properties-of-cmdlet-output><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Cmdlets do not have properties by themselves, their output is an object which
 has properties.</p><p>E.g., the output of <code>Get-Process</code> is an array with members of type
-<code>System.Diagnostics.Process</code>. We can get the first member and see its methods:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; (<span style=color:#b58900>Get-Process</span>)[0] | <span style=color:#b58900>Get-Member</span>
+<code>System.Diagnostics.Process</code>. We can get the first member and see its methods:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; (<span style=color:#b58900>Get-Process</span>)[<span style=color:#2aa198>0</span>] | <span style=color:#b58900>Get-Member</span>
 </span></span><span style=display:flex><span>   TypeName: System.Diagnostics.<span style=color:#719e07>Process</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Name                       MemberType     Definition
@@ -522,30 +522,30 @@ has properties.</p><p>E.g., the output of <code>Get-Process</code> is an array w
 </span></span><span style=display:flex><span>...
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Executing one of the methods is also simple</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; (<span style=color:#b58900>Get-Process</span>)[30].ToString()
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; (<span style=color:#b58900>Get-Process</span>)[<span style=color:#2aa198>30</span>].ToString()
 </span></span><span style=display:flex><span>System.Diagnostics.<span style=color:#719e07>Process</span> (chrome)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Or read a Property</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; (<span style=color:#b58900>Get-Process</span>)[30].ProcessName
+</span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; (<span style=color:#b58900>Get-Process</span>)[<span style=color:#2aa198>30</span>].ProcessName
 </span></span><span style=display:flex><span>chrome
 </span></span></code></pre></div><h3 id=double-quotes-vs-single-quotes>Double Quotes vs. Single Quotes
-<a class=header-link href=#double-quotes-vs-single-quotes><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Double quote expands the value inside while single quote doesn't.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;This is the array $someNumbers&#34;</span>
-</span></span><span style=display:flex><span>This is the array 0 1 2 3 4 5
+<a class=header-link href=#double-quotes-vs-single-quotes><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Double quote expands the value inside while single quote doesn't.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;This is the array </span><span style=color:#268bd2>$someNumbers</span><span style=color:#2aa198>&#34;</span>
+</span></span><span style=display:flex><span>This is the array <span style=color:#2aa198>0</span> <span style=color:#2aa198>1</span> <span style=color:#2aa198>2</span> <span style=color:#2aa198>3</span> <span style=color:#2aa198>4</span> <span style=color:#2aa198>5</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#39;This is the array $someNumbers&#39;</span>
 </span></span><span style=display:flex><span>This is the array <span style=color:#268bd2>$someNumbers</span>
 </span></span></code></pre></div><p>You can escape stuff in double quotes to prevent them from being expanded with
-backtick (cannot do it here because it will mess with markdown highlighting):</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;This is the array </span><span style=color:#cb4b16>`$</span><span style=color:#2aa198>somenumbers`: $someNumbers&#34;</span>
-</span></span><span style=display:flex><span>This is the array <span style=color:#268bd2>$somenumbers</span>: 0 1 2 3 4 5
+backtick (cannot do it here because it will mess with markdown highlighting):</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;This is the array </span><span style=color:#cb4b16>`$</span><span style=color:#2aa198>somenumbers`: </span><span style=color:#268bd2>$someNumbers</span><span style=color:#2aa198>&#34;</span>
+</span></span><span style=display:flex><span>This is the array <span style=color:#268bd2>$somenumbers</span>: <span style=color:#2aa198>0</span> <span style=color:#2aa198>1</span> <span style=color:#2aa198>2</span> <span style=color:#2aa198>3</span> <span style=color:#2aa198>4</span> <span style=color:#2aa198>5</span>
 </span></span></code></pre></div><p>To expand properties of objects, wrap them in <code>()</code>. Otherwise, it will just print
 the variable and then put the text of the method after it:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;Today is </span>$(<span style=color:#b58900>Get-Date</span>)<span style=color:#2aa198>&#34;</span>
-</span></span><span style=display:flex><span>Today is 07/29/2016 17:49:01
+</span></span><span style=display:flex><span>Today is <span style=color:#2aa198>07</span>/<span style=color:#2aa198>29</span>/<span style=color:#2aa198>2016</span> <span style=color:#2aa198>17</span>:<span style=color:#2aa198>49</span>:<span style=color:#2aa198>01</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;Today is </span>$((<span style=color:#b58900>Get-Date</span>).DayOfWeek)<span style=color:#2aa198>&#34;</span>
 </span></span><span style=display:flex><span>Today is Friday
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>echo </span><span style=color:#2aa198>&#34;Today is </span>$(<span style=color:#b58900>Get-Date</span>)<span style=color:#2aa198>.DayOfWeek&#34;</span>
-</span></span><span style=display:flex><span>Today is 07/29/2016 17:49:22.DayOfWeek
+</span></span><span style=display:flex><span>Today is <span style=color:#2aa198>07</span>/<span style=color:#2aa198>29</span>/<span style=color:#2aa198>2016</span> <span style=color:#2aa198>17</span>:<span style=color:#2aa198>49</span>:<span style=color:#2aa198>22</span>.DayOfWeek
 </span></span></code></pre></div><hr><h2 id=section-4---flow-control>Section 4 - Flow Control
 <a class=header-link href=#section-4---flow-control><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-4 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-4</a></p><h3 id=whatif---confirm---verbose>WhatIf - Confirm - Verbose
 <a class=header-link href=#whatif---confirm---verbose><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>These are three switches that help with running commands. <code>WhatIf</code> is the most
@@ -565,7 +565,7 @@ an alias for <code>New-Item</code> although if you run <code>help mkdir</code> w
 </span></span><span style=display:flex><span>Confirm
 </span></span><span style=display:flex><span>Are you sure you want to perform this action?
 </span></span><span style=display:flex><span>Performing the operation <span style=color:#2aa198>&#34;Create Directory&#34;</span> on target <span style=color:#2aa198>&#34;Destination: C:\test\new-directory&#34;</span>.
-</span></span><span style=display:flex><span><span style=color:#cb4b16>[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S]</span> Suspend  [?] Help (<span style=color:#719e07>default</span> is <span style=color:#2aa198>&#34;Y&#34;</span>): L
+</span></span><span style=display:flex><span>[<span style=color:#cb4b16>Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S</span>] Suspend  [?] Help (<span style=color:#719e07>default</span> is <span style=color:#2aa198>&#34;Y&#34;</span>): L
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\test&gt;
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Testing -Verbose</span>
@@ -577,7 +577,7 @@ an alias for <code>New-Item</code> although if you run <code>help mkdir</code> w
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Mode                LastWriteTime         Length Name
 </span></span><span style=display:flex><span>----                -------------         ------ ----
-</span></span><span style=display:flex><span>d-----        7/31/2016   7:18 PM                <span style=color:#b58900>new-directory</span>
+</span></span><span style=display:flex><span>d-----        <span style=color:#2aa198>7</span>/<span style=color:#2aa198>31</span>/<span style=color:#2aa198>2016</span>   <span style=color:#2aa198>7</span>:<span style=color:#2aa198>18</span> PM                <span style=color:#b58900>new-directory</span>
 </span></span></code></pre></div><p>Not all commands have these. Usually PowerShell core commands that
 <strong>change the state of the machine</strong> have this. E.g., <code>ls</code> does not have neither
 <code>-Confirm</code> nor <code>-WhatIf</code> and <code>-Verbose</code> does not change its behavior.</p><p>To see what commands support <code>-WhatIF</code> we can run the following PowerShell
@@ -587,10 +587,10 @@ command <a href=http://www.computerperformance.co.uk/powershell/powershell_whati
 <a class=header-link href=#operators><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><ul><li>Operators are at: <a href=https://technet.microsoft.com/en-us/library/hh847732.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/hh847732.aspx</a>.</li></ul><table><thead><tr><th style=text-align:left>Operator</th><th style=text-align:left>Meaning</th></tr></thead><tbody><tr><td style=text-align:left>-eq</td><td style=text-align:left>Equal</td></tr><tr><td style=text-align:left>-ne</td><td style=text-align:left>Not equal</td></tr><tr><td style=text-align:left>-lt</td><td style=text-align:left>Less than</td></tr><tr><td style=text-align:left>-le</td><td style=text-align:left>Less than or equal</td></tr><tr><td style=text-align:left>-gt</td><td style=text-align:left>Greater than</td></tr><tr><td style=text-align:left>-ge</td><td style=text-align:left>Greater than or equal</td></tr><tr><td style=text-align:left>-match</td><td style=text-align:left>regex match</td></tr><tr><td style=text-align:left>-notmatch</td><td style=text-align:left>negative regex match</td></tr><tr><td style=text-align:left>-like</td><td style=text-align:left>wildcard match</td></tr><tr><td style=text-align:left>-notlike</td><td style=text-align:left>negative wildcard match</td></tr><tr><td style=text-align:left>-and</td><td style=text-align:left>&&</td></tr><tr><td style=text-align:left>-or</td><td style=text-align:left>or</td></tr><tr><td style=text-align:left>-xor</td><td style=text-align:left>XOR</td></tr><tr><td style=text-align:left>-not</td><td style=text-align:left>not</td></tr><tr><td style=text-align:left>%</td><td style=text-align:left>mod</td></tr></tbody></table><h3 id=if---then---else>If - Then - Else
 <a class=header-link href=#if---then---else><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Usage is similar to programming languages (there is no <code>then</code> either).</p><p>To create these scripts, it's easier to just use the <code>PowerShell_ise.exe</code>
 (PowerShell Integrated Scripting Environment).</p><p>Create a new script and write it on top. Run the script using the button or
-press <code>F5</code> and the bottom panel will show the result.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$ten</span> = 10
-</span></span><span style=display:flex><span><span style=color:#719e07>if</span> (<span style=color:#268bd2>$ten</span> <span style=color:#719e07>-eq</span> 0)
+press <code>F5</code> and the bottom panel will show the result.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#268bd2>$ten</span> = <span style=color:#2aa198>10</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>if</span> (<span style=color:#268bd2>$ten</span> <span style=color:#719e07>-eq</span> <span style=color:#2aa198>0</span>)
 </span></span><span style=display:flex><span>    { <span style=color:#2aa198>&#34;Ten does not equal zero.&#34;</span> }
-</span></span><span style=display:flex><span><span style=color:#719e07>elseif</span> (<span style=color:#268bd2>$ten</span> <span style=color:#719e07>-lt</span> 5)
+</span></span><span style=display:flex><span><span style=color:#719e07>elseif</span> (<span style=color:#268bd2>$ten</span> <span style=color:#719e07>-lt</span> <span style=color:#2aa198>5</span>)
 </span></span><span style=display:flex><span>    { <span style=color:#2aa198>&#34;Ten is not less than 5.&#34;</span> }
 </span></span><span style=display:flex><span><span style=color:#719e07>else</span>
 </span></span><span style=display:flex><span>    { <span style=color:#2aa198>&#34;Ten is ten.&#34;</span> }
@@ -601,8 +601,8 @@ press <code>F5</code> and the bottom panel will show the result.</p><div class=h
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>CommandType     Name
 </span></span><span style=display:flex><span>-----------     ----
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           ? -&gt; <span style=color:#b58900>Where-Object</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>Alias</span>           <span style=color:#b58900>where </span>-&gt; <span style=color:#b58900>Where-Object</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           ? -&gt; <span style=color:#b58900>Where-Object</span>
+</span></span><span style=display:flex><span><span style=color:#b58900>Alias</span>           <span style=color:#b58900>where </span>-&gt; <span style=color:#b58900>Where-Object</span>
 </span></span></code></pre></div><p>Pipe the output of a command to <code>Where-Object</code> (or one of the aliases). Then
 inside the block you can use <code>$_</code> to refer to it. Imagine it's like a for that
 goes through each member of the output and you can filter. To take action (as in
@@ -610,24 +610,24 @@ run a new command use <code>ForEach-Object</code>).</p><div class=highlight><pre
 </span></span><span style=display:flex><span>    Directory: C:\Python27
 </span></span><span style=display:flex><span>Mode                LastWriteTime         Length Name
 </span></span><span style=display:flex><span>----                -------------         ------ ----
-</span></span><span style=display:flex><span>-a----        12/5/2015   8:41 PM          28160 python.exe
-</span></span><span style=display:flex><span>-a----        12/5/2015   8:41 PM          28160 pythonw.exe
+</span></span><span style=display:flex><span>-a----        <span style=color:#2aa198>12</span>/<span style=color:#2aa198>5</span>/<span style=color:#2aa198>2015</span>   <span style=color:#2aa198>8</span>:<span style=color:#2aa198>41</span> PM          <span style=color:#2aa198>28160</span> python.exe
+</span></span><span style=display:flex><span>-a----        <span style=color:#2aa198>12</span>/<span style=color:#2aa198>5</span>/<span style=color:#2aa198>2015</span>   <span style=color:#2aa198>8</span>:<span style=color:#2aa198>41</span> PM          <span style=color:#2aa198>28160</span> pythonw.exe
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># We can use different format (perhaps more readable) too (this will work for all three)</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\Python27&gt; <span style=color:#b58900>ls </span>| <span style=color:#b58900>Where </span>Name <span style=color:#719e07>-Like</span> <span style=color:#2aa198>&#34;*py*&#34;</span>
 </span></span><span style=display:flex><span>    Directory: C:\Python27
 </span></span><span style=display:flex><span>Mode                LastWriteTime         Length Name
 </span></span><span style=display:flex><span>----                -------------         ------ ----
-</span></span><span style=display:flex><span>-a----        12/5/2015   8:41 PM          28160 python.exe
-</span></span><span style=display:flex><span>-a----        12/5/2015   8:41 PM          28160 pythonw.exe
+</span></span><span style=display:flex><span>-a----        <span style=color:#2aa198>12</span>/<span style=color:#2aa198>5</span>/<span style=color:#2aa198>2015</span>   <span style=color:#2aa198>8</span>:<span style=color:#2aa198>41</span> PM          <span style=color:#2aa198>28160</span> python.exe
+</span></span><span style=display:flex><span>-a----        <span style=color:#2aa198>12</span>/<span style=color:#2aa198>5</span>/<span style=color:#2aa198>2015</span>   <span style=color:#2aa198>8</span>:<span style=color:#2aa198>41</span> PM          <span style=color:#2aa198>28160</span> pythonw.exe
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># We can practice a little regex with -Match</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\Python27&gt; <span style=color:#b58900>ls </span>| ? Name <span style=color:#719e07>-Match</span> <span style=color:#2aa198>&#34;.*py&#34;</span>
 </span></span><span style=display:flex><span>    Directory: C:\Python27
 </span></span><span style=display:flex><span>Mode                LastWriteTime         Length Name
 </span></span><span style=display:flex><span>----                -------------         ------ ----
-</span></span><span style=display:flex><span>-a----        12/5/2015   8:41 PM          28160 python.exe
-</span></span><span style=display:flex><span>-a----        12/5/2015   8:41 PM          28160 pythonw.exe
+</span></span><span style=display:flex><span>-a----        <span style=color:#2aa198>12</span>/<span style=color:#2aa198>5</span>/<span style=color:#2aa198>2015</span>   <span style=color:#2aa198>8</span>:<span style=color:#2aa198>41</span> PM          <span style=color:#2aa198>28160</span> python.exe
+</span></span><span style=display:flex><span>-a----        <span style=color:#2aa198>12</span>/<span style=color:#2aa198>5</span>/<span style=color:#2aa198>2015</span>   <span style=color:#2aa198>8</span>:<span style=color:#2aa198>41</span> PM          <span style=color:#2aa198>28160</span> pythonw.exe
 </span></span></code></pre></div><h3 id=foreach-object>ForEach-Object
 <a class=header-link href=#foreach-object><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Similar to <code>Where-Object</code> but you can run a new command with each iterated item.</p><ul><li><a href=https://technet.microsoft.com/en-us/library/ee176828.aspx target=_blank rel="noreferrer noopener">https://technet.microsoft.com/en-us/library/ee176828.aspx</a></li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt;<span style=color:#b58900>Get-Process</span> | % { <span style=color:#b58900>Write </span>$(<span style=color:#268bd2>$_</span>.ProcessName + <span style=color:#2aa198>&#34;-&#34;</span> + <span style=color:#268bd2>$_</span>.Id) }
 </span></span></code></pre></div><p>To concat two strings for printing like above do <code>$( $_.whatever + "something" )</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#586e75># Rename jpeg files to jpeg</span>
@@ -652,11 +652,11 @@ last pipe are printed on the screen.</p><div class=highlight><pre tabindex=0 sty
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id  <span style=color:#b58900>SI </span>ProcessName
 </span></span><span style=display:flex><span>-------  ------    -----      ----- -----   ------     --  -- -----------
-</span></span><span style=display:flex><span>    274      22    26852      39156   226    23.77   1136   5 atom
-</span></span><span style=display:flex><span>    546      36    51260      77708   332    11.77   6584   5 atom
-</span></span><span style=display:flex><span>    245      23    20852      32160   289     9.08   7524   5 atom
-</span></span><span style=display:flex><span>    346      47   294676     308828   665    65.30   7644   5 atom
-</span></span><span style=display:flex><span>    175      15     4508      10880   156     0.36   8420   5 atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>274</span>      <span style=color:#2aa198>22</span>    <span style=color:#2aa198>26852</span>      <span style=color:#2aa198>39156</span>   <span style=color:#2aa198>226</span>    <span style=color:#2aa198>23.77</span>   <span style=color:#2aa198>1136</span>   <span style=color:#2aa198>5</span> atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>546</span>      <span style=color:#2aa198>36</span>    <span style=color:#2aa198>51260</span>      <span style=color:#2aa198>77708</span>   <span style=color:#2aa198>332</span>    <span style=color:#2aa198>11.77</span>   <span style=color:#2aa198>6584</span>   <span style=color:#2aa198>5</span> atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>245</span>      <span style=color:#2aa198>23</span>    <span style=color:#2aa198>20852</span>      <span style=color:#2aa198>32160</span>   <span style=color:#2aa198>289</span>     <span style=color:#2aa198>9.08</span>   <span style=color:#2aa198>7524</span>   <span style=color:#2aa198>5</span> atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>346</span>      <span style=color:#2aa198>47</span>   <span style=color:#2aa198>294676</span>     <span style=color:#2aa198>308828</span>   <span style=color:#2aa198>665</span>    <span style=color:#2aa198>65.30</span>   <span style=color:#2aa198>7644</span>   <span style=color:#2aa198>5</span> atom
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>175</span>      <span style=color:#2aa198>15</span>     <span style=color:#2aa198>4508</span>      <span style=color:#2aa198>10880</span>   <span style=color:#2aa198>156</span>     <span style=color:#2aa198>0.36</span>   <span style=color:#2aa198>8420</span>   <span style=color:#2aa198>5</span> atom
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Usually it&#39;s a good idea to sort the output based on the GroupBy in the table before piping it to the table</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Sort-Object</span> ProcessName | <span style=color:#b58900>Format-Table</span> -GroupBy ProcessName
@@ -668,7 +668,7 @@ get ASCII etc. <code>Out-File</code> also has more options.</p><div class=highli
 </span></span></span><span style=display:flex><span><span style=color:#b58900></span>    Directory: C:\test
 </span></span><span style=display:flex><span>Mode                LastWriteTime         Length Name
 </span></span><span style=display:flex><span>----                -------------         ------ ----
-</span></span><span style=display:flex><span>-a----         8/1/2016   4:19 PM          30506 process1.txt
+</span></span><span style=display:flex><span>-a----         <span style=color:#2aa198>8</span>/<span style=color:#2aa198>1</span>/<span style=color:#2aa198>2016</span>   <span style=color:#2aa198>4</span>:<span style=color:#2aa198>19</span> PM          <span style=color:#2aa198>30506</span> process1.txt
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># By default Out-File will overwrite any existing files.</span>
 </span></span><span style=display:flex><span><span style=color:#586e75># -Append does what it says</span>
@@ -677,12 +677,12 @@ get ASCII etc. <code>Out-File</code> also has more options.</p><div class=highli
 </span></span></span><span style=display:flex><span><span style=color:#b58900></span>    Directory: C:\test
 </span></span><span style=display:flex><span>Mode                LastWriteTime         Length Name
 </span></span><span style=display:flex><span>----                -------------         ------ ----
-</span></span><span style=display:flex><span>-a----         8/1/2016   4:22 PM          61494 process1.txt
+</span></span><span style=display:flex><span>-a----         <span style=color:#2aa198>8</span>/<span style=color:#2aa198>1</span>/<span style=color:#2aa198>2016</span>   <span style=color:#2aa198>4</span>:<span style=color:#2aa198>22</span> PM          <span style=color:#2aa198>61494</span> process1.txt
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># -NoClobber will prevent over-writing, PowerShell will give you an error if the file already exists</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Out-File</span> process1.txt -NoClobber
 </span></span><span style=display:flex><span><span style=color:#b58900>Out-File</span> : The file <span style=color:#2aa198>&#39;C:\test\process1.txt&#39;</span> already exists.
-</span></span><span style=display:flex><span>At line:1 char:15
+</span></span><span style=display:flex><span>At line:<span style=color:#2aa198>1</span> char:<span style=color:#2aa198>15</span>
 </span></span><span style=display:flex><span>+ <span style=color:#b58900>Get-Process</span> | <span style=color:#b58900>Out-File</span> process1.txt -NoClobber
 </span></span><span style=display:flex><span>+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 </span></span><span style=display:flex><span>    + CategoryInfo          : ResourceExists: (C:\test\process1.txt:String) [<span style=color:#b58900>Out-File</span>], IOException
@@ -701,8 +701,8 @@ can open these CSV files in Excel.</p><p>Later we can import them back into vari
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Name                     <span style=color:#b58900>SI </span>Handles VM            WS        PM        NPM    Path
 </span></span><span style=display:flex><span>----                     -- ------- --            --        --        ---    ----
-</span></span><span style=display:flex><span>alg                      0  89      2199052992512 2244608   1642496   8480
-</span></span><span style=display:flex><span>AMPAgent                 0  205     80158720      11603968  3735552   19048
+</span></span><span style=display:flex><span>alg                      <span style=color:#2aa198>0</span>  <span style=color:#2aa198>89</span>      <span style=color:#2aa198>2199052992512</span> <span style=color:#2aa198>2244608</span>   <span style=color:#2aa198>1642496</span>   <span style=color:#2aa198>8480</span>
+</span></span><span style=display:flex><span>AMPAgent                 <span style=color:#2aa198>0</span>  <span style=color:#2aa198>205</span>     <span style=color:#2aa198>80158720</span>      <span style=color:#2aa198>11603968</span>  <span style=color:#2aa198>3735552</span>   <span style=color:#2aa198>19048</span>
 </span></span></code></pre></div><p>We can <code>Import-CSV</code> without the header and choosing the delimiter</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#268bd2>$csvfile</span> = <span style=color:#b58900>Import-CSV</span> -Delimiter <span style=color:#2aa198>&#34; &#34;</span> -Path whatever.txt -Header <span style=color:#2aa198>&#34;Column1&#34;</span>, <span style=color:#2aa198>&#34;Column2&#34;</span>, <span style=color:#2aa198>&#34;Column3&#34;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Now we can do stuff for columns, like sort by a column.</span>
@@ -713,7 +713,7 @@ can open these CSV files in Excel.</p><p>Later we can import them back into vari
 </span></span></code></pre></div><h3 id=measure-object>Measure-Object
 <a class=header-link href=#measure-object><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>"Calculates numeric properties of objects."</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#586e75># Calculate the number of files and directories</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>ls </span>| <span style=color:#b58900>Measure-Object</span>
-</span></span><span style=display:flex><span>Count    : 2
+</span></span><span style=display:flex><span>Count    : <span style=color:#2aa198>2</span>
 </span></span><span style=display:flex><span>Average  :
 </span></span><span style=display:flex><span>Sum      :
 </span></span><span style=display:flex><span>Maximum  :
@@ -724,16 +724,16 @@ can open these CSV files in Excel.</p><p>Later we can import them back into vari
 </span></span></span><span style=display:flex><span><span style=color:#b58900></span>    Directory: C:\test
 </span></span><span style=display:flex><span>Mode                LastWriteTime         Length Name
 </span></span><span style=display:flex><span>----                -------------         ------ ----
-</span></span><span style=display:flex><span>-a----         8/1/2016   5:07 PM          82290 process1.csv
-</span></span><span style=display:flex><span>-a----         8/1/2016   4:22 PM          61494 process1.txt
+</span></span><span style=display:flex><span>-a----         <span style=color:#2aa198>8</span>/<span style=color:#2aa198>1</span>/<span style=color:#2aa198>2016</span>   <span style=color:#2aa198>5</span>:<span style=color:#2aa198>07</span> PM          <span style=color:#2aa198>82290</span> process1.csv
+</span></span><span style=display:flex><span>-a----         <span style=color:#2aa198>8</span>/<span style=color:#2aa198>1</span>/<span style=color:#2aa198>2016</span>   <span style=color:#2aa198>4</span>:<span style=color:#2aa198>22</span> PM          <span style=color:#2aa198>61494</span> process1.txt
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Do stuff with file length</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\test&gt; <span style=color:#b58900>Get-ChildItem</span> | <span style=color:#b58900>Measure-Object</span> -Property length -Minimum -Maximum -Average
-</span></span><span style=display:flex><span>Count    : 2
-</span></span><span style=display:flex><span>Average  : 71892
+</span></span><span style=display:flex><span>Count    : <span style=color:#2aa198>2</span>
+</span></span><span style=display:flex><span>Average  : <span style=color:#2aa198>71892</span>
 </span></span><span style=display:flex><span>Sum      :
-</span></span><span style=display:flex><span>Maximum  : 82290
-</span></span><span style=display:flex><span>Minimum  : 61494
+</span></span><span style=display:flex><span>Maximum  : <span style=color:#2aa198>82290</span>
+</span></span><span style=display:flex><span>Minimum  : <span style=color:#2aa198>61494</span>
 </span></span><span style=display:flex><span>Property : Length
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Measure characters, words and lines in a text file</span>
@@ -741,7 +741,7 @@ can open these CSV files in Excel.</p><p>Later we can import them back into vari
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Lines Words Characters Property
 </span></span><span style=display:flex><span>----- ----- ---------- --------
-</span></span><span style=display:flex><span>  254  2160      30226
+</span></span><span style=display:flex><span>  <span style=color:#2aa198>254</span>  <span style=color:#2aa198>2160</span>      <span style=color:#2aa198>30226</span>
 </span></span></code></pre></div><h2 id=section-5---practical-uses--conclusion>Section 5 - Practical Uses & Conclusion
 <a class=header-link href=#section-5---practical-uses--conclusion><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><a href=https://tutorials.cyberaces.org/tutorials/view/3-3-5 target=_blank rel="noreferrer noopener">https://tutorials.cyberaces.org/tutorials/view/3-3-5</a></p><h3 id=ping-all-ips-in-a-range>Ping All IPs in a Range
 <a class=header-link href=#ping-all-ips-in-a-range><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p><code>PS C:\> 1..254 | % { ping "192.168.0.$_" }</code></p><h3 id=process-manipulation>Process Manipulation
@@ -766,7 +766,7 @@ can open these CSV files in Excel.</p><p>Later we can import them back into vari
 </span></span><span style=display:flex><span><span style=color:#586e75>#  Starts a PowerShell process in a new console window.</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>PS </span>C:\&gt; <span style=color:#b58900>Start-Process</span> -FilePath <span style=color:#2aa198>&#34;powershell.exe&#34;</span> -Verb open
 </span></span></code></pre></div><p>Kill process by ID, name or path</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#586e75># PID</span>
-</span></span><span style=display:flex><span><span style=color:#b58900>Stop-Process</span> 1234
+</span></span><span style=display:flex><span><span style=color:#b58900>Stop-Process</span> <span style=color:#2aa198>1234</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75># Name</span>
 </span></span><span style=display:flex><span><span style=color:#b58900>Stop-Process</span> notepad
