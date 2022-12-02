@@ -42,6 +42,10 @@ tab with another character.
 .RECIPEPREFIX := > # use `>` instead of `\t`
 ```
 
+**Note:** Macs come with GNU Make version 3.81 from 2006 that does not support
+this. Either replace `^> ` with `\t` after debugging and figuring out what it
+does or just not support Macs :).
+
 Now, your file looks like this:
 
 ```makefile
