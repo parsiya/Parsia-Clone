@@ -293,6 +293,37 @@ Credit: [Padioleau Yoann][yoann-gh], r2c, [source: r2c Slack][c-ellipsis].
 [yoann-gh]: https://github.com/aryx
 [c-ellipsis]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1648051884724009?thread_ts=1648001009.133229&cid=C018NJRRCJ0
 
+## Alert if a Specific File or Path Exists
+Unconventional but we can write a rule like this:
+
+```yaml
+rules:
+- id: detect-file
+  patterns:
+    - pattern-regex: .*
+  message: Semgrep found the file
+  languages:
+    - generic
+  severity: WARNING
+  paths:
+    include:
+      - /path/to/badfile*
+    exclude:
+      - /paths/to/exclude/*
+```
+
+https://semgrep.dev/playground/s/parsiya:detect-file
+
+The path is relative to where you run Semgrep. The file doesn't need to have
+any content. [paths > include/exclude][paths] should give us a lot of power to
+detect different paths.
+
+[paths]: https://semgrep.dev/docs/writing-rules/rule-syntax/#paths
+
+Credit: Yours Truly, Parsia, [source: r2c slack][file-detect].
+
+[file-detect]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1670547075635089?thread_ts=1670540633.760339&cid=C018NJRRCJ0
+
 # Rule Tests
 
 ## Test File Names for Rules with the paths Tag

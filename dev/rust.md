@@ -3036,3 +3036,22 @@ let text = other.to_text();
 ```
 
 Source: https://rust-lang.github.io/rfcs/0445-extension-trait-conventions.html
+
+## Import an Adjacent Module
+We have defined a custom error in `error.rs`.
+
+```
+parent-rs/
+├── README.md
+├── src
+│   ├── error.rs
+│   ├── lib.rs
+│   └── utils.rs
+```
+
+To use this error in `utils.rs`: `use crate::error`.
+
+## Crate Level Pub
+Only want to make something public for the current crate?
+
+`pub(crate) fn whatever() {}`
