@@ -5,7 +5,7 @@ comments: false
 categories:
 - Development
 title: "Rust"
-wip: false
+wip: true
 snippet: "Rust notes - Code is at [https://github.com/parsiya/fearless-concurrency](https://github.com/parsiya/fearless-concurrency)"
 ---
 
@@ -1530,8 +1530,8 @@ The result:
 
 ## Methods
 We can convert `print_game` into a method that we can call on `Game` objects.
-They are defined similar to normal functions, but their first param is always
-`self`.
+They are defined similar to normal functions, but their first parameter is
+always `self`.
 
 ```rs
 // ch05/method1.rs
@@ -1587,7 +1587,7 @@ Functions inside an `impl` block are called `associated functions` because they
 are associated with a struct.
 
 We can define non-method associated functions (they do not have the `&self`
-param). Let's add a function that creates a game object for calc.
+parameter). Let's add a function that creates a game object for calc.
 
 ```rs
 // ch05/associated_method_calc.rs
@@ -1638,7 +1638,7 @@ enum AppType {
 let util = AppType::Utility;
 ```
 
-We can define functions that take a param of type `AppType`. Revamping the
+We can define functions that take a parameter of type `AppType`. Revamping the
 game example from before:
 
 ```rs
@@ -2045,7 +2045,7 @@ Parent modules cannot see items in their child modules, but child
 modules can use items in their parent modules.
 
 If we just make the `games` module public (`pub mod games`) we still get an
-error becuse `start` is still private. It must be public, too.
+error because `start` is still private. It must be public, too.
 
 ```rs
 mod applications {
@@ -2529,7 +2529,7 @@ fn main() {
 }
 ```
 
-Because we are iterating over references we need to derefence `s`. However, we
+Because we are iterating over references we need to dereference `s`. However, we
 are calling a method on it to modify it so automatic dereferencing means we can
 just do `s.push_str(...)` and it will work.
 
@@ -3055,3 +3055,31 @@ To use this error in `utils.rs`: `use crate::error`.
 Only want to make something public for the current crate?
 
 `pub(crate) fn whatever() {}`
+
+## Embed Files in the Binary
+Similar to Go's [embed][go-embed] package, we can read files during the build
+and use them as variables in the program.
+
+[go-embed]: https://pkg.go.dev/embed
+[include_bytes]: https://doc.rust-lang.org/std/macro.include_bytes.html
+[include_str]: https://doc.rust-lang.org/std/macro.include_str.html
+
+We can use the [include_bytes][include_bytes] and [include_str][include_str]
+macros. File paths must be relative to the file. E.g., if we're inside
+`src/main.rs` then `include_str!("whatever");` will try to read `src/whatever`.
+
+```rust
+fn main() {
+    // read a file as text.
+    let string_txt = include_str!("string.txt");
+    // do whatever with string_txt.
+    println!({string_txt});
+
+    // read a file as binary.
+    let binary_file = include_bytes!("binary.file");
+    print!("{}", String::from_utf8_lossy(bytes));
+}
+```
+
+These macros read single files and do not allow embedding a directory like a
+file system :(.
