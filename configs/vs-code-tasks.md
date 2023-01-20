@@ -72,12 +72,7 @@ Windows but my default VS Code shell is WSL2.
 
 Inside the cmd we can use `start http://localhost:1313` but, it does not work in
 WSL. In both WSL and cmd we can use `explorer.exe http://localhost:1234` to open
-the URL in the system's default browser. But using it as the command in the task
-does not work because it's run as `wsl.exe -e explorer.exe
-http://localhost:1234` and it silently fails.
-
-So, we use the `options > shell > executable` object to designate the shell
-executable. Also, note the `/c` command line switch passed to the cmd.
+the URL in the system's default browser.
 
 The command to run the task can be `start http://localhost:1313`
 
@@ -87,12 +82,7 @@ The command to run the task can be `start http://localhost:1313`
     // opens http://localhost:1313 in the system browser to preview the site.
     "label": "open-browser-1313",
     "type": "shell",
-    "command": "/c start http://localhost:1313",
-    "options": {
-        "shell": {
-            "executable": "cmd.exe",
-        }
-    }
+    "command": "explorer.exe http://localhost:1313",
 }
 // ]
 ```
@@ -117,12 +107,7 @@ This means if I run the `open-browser-1313` task, it will run the
         {
             "label": "open-browser-1313",
             "type": "shell",
-            "command": "/c start http://localhost:1313",
-            "options": {
-                "shell": {
-                    "executable": "cmd.exe",
-                }
-            },
+            "command": "explorer.exe http://localhost:1313",
             "dependsOn": [
                 "start-hugo-server"
             ],
@@ -157,12 +142,7 @@ The solution is to `create a new task that runs both of them`.
             // opens http://localhost:1313 in the system browser to preview the site.
             "label": "open-browser-1313",
             "type": "shell",
-            "command": "/c start http://localhost:1313", // Windows only thing.
-            "options": {
-                "shell": {
-                    "executable": "cmd.exe", // My VS Code's default shell is wsl so I have to change the shell to cmd.exe here.
-                }
-            }
+            "command": "explorer.exe http://localhost:1313", // Windows only thing.
         },
         {
             "label": "preview-blog",
