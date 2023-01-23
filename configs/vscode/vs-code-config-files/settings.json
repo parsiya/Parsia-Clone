@@ -1,26 +1,7 @@
 {
     "editor.fontSize": 15,
+    "editor.fontFamily": "Cascadia Code, Vazir", // Remove to change the font back to default
     "markdown.preview.fontSize": 16,
-    "cSpell.userWords": [
-        "Comms",
-        "Gitlab",
-        "allowlist",
-        "blockchain",
-        "cheatsheet",
-        "codecaption",
-        "executables",
-        "hakimian",
-        "imgcap",
-        "markdownify",
-        "octopress",
-        "parsia",
-        "parsiya",
-        "procmon",
-        "relref",
-        "skyrim",
-        "symlink",
-        "videogames"
-    ],
 
     // Open a new file when an empty instance is started
     "workbench.startupEditor": "newUntitledFile",
@@ -49,6 +30,7 @@
         "strings": true
     },
     "editor.suggestSelection": "first",
+    "editor.maxTokenizationLineLength": 200000000,
 
     // **Go lint**
     "go.lintTool": "golangci-lint",
@@ -69,7 +51,11 @@
         // Disable drag and drop in markdown files
         "editor.dragAndDrop": false,
         // Enable quick suggestions
-        "editor.quickSuggestions": true,
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },
         // Send snippets to top in suggestion list
         "editor.snippetSuggestions": "top",
     },
@@ -101,9 +87,41 @@
     // **Markdown Notes**
     "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
 
-    // Misc
-    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-    // Use bash instead of cmd
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-    "window.zoomLevel": 0,
+    "go.toolsManagement.autoUpdate": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "remote.WSL.debug": false,
+    "remote.WSL.fileWatcher.polling": true,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "window.zoomLevel": 1,
+    "git.ignoreMissingGitWarning": true,
+    "redhat.telemetry.enabled": false,
+
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+    "debug.allowBreakpointsEverywhere": true,
+    "[yaml]": {
+        "editor.stablePeek": true
+    },
+    "antlr4.generation": {
+        "mode": "internal",
+        "language": "Java",
+        "listeners": true,
+        "visitors": true,
+    },
+
+    // "remote.WSL.fileWatcher.pollingInterval": 50000,
 }
