@@ -4,6 +4,8 @@ toc: false
 comments: false
 categories:
 - Development
+tags:
+- Go
 title: "Go"
 wip: false
 snippet: "Go notes - copied from my website at [https://parsiya.net/go/](https://parsiya.net/go/)"

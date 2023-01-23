@@ -4,6 +4,8 @@ toc: true
 comments: false
 categories:
 - Development
+tags:
+- Rust
 title: "Rust"
 wip: true
 snippet: "Rust notes - Code is at [https://github.com/parsiya/fearless-concurrency](https://github.com/parsiya/fearless-concurrency)"

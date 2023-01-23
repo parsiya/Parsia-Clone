@@ -4,10 +4,10 @@ toc: false
 comments: false
 categories:
 - Talks
-- Go
 tags:
 - Go-Fuzz
 - Fuzzing
+- Go
 title: "Coverage Guided Fuzzing with Go-Fuzz @ NoVA Hackers"
 wip: false
 ---
