@@ -3084,4 +3084,12 @@ fn main() {
 ```
 
 These macros read single files and do not allow embedding a directory like a
-file system :(.
+file system unlike Golang :(.
+
+## Convert Vec<String> to Vec<&str>
+
+```rust
+// string_vec: Vec<String>
+// str_vec: Vec<&str>
+let str_vec = string_vec.iter().map(|s| s.as_str()).collect();
+```
