@@ -168,7 +168,7 @@ rules:
 [lewis-gh]: https://github.com/LewisArdern
 
 ### Explanation
-Credit: [Iago Abal][iago-gh], r2c, [source on r2c Slack][iago-double-match-answer].
+Credit: [Iago Abal][iago-gh], r2c, [source on Semgrep slack][iago-double-match-answer].
 
 [iago-gh]: https://github.com/IagoAbal
 [iago-double-match-answer]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1666705798027529?thread_ts=1666654882.737839&cid=C018NJRRCJ0
@@ -215,7 +215,7 @@ pattern: |
 https://semgrep.dev/playground/s/parsiya:tips-java-annotations
 
 ### Fix
-Credit: [Cooper Pierce][cooper-gh], r2c, [source on r2c slack][annotation-answer].
+Credit: [Cooper Pierce][cooper-gh], r2c, [source on Semgrep slack][annotation-answer].
 
 > annotations beyond those specified are ignored when matching so something like
 > [the following] would do what you describe
@@ -273,7 +273,7 @@ rules:
     severity: WARNING
 ```
 
-Credit: [Cooper Pierce][cooper-gh], r2c, [source on r2c Slack][single-block-if].
+Credit: [Cooper Pierce][cooper-gh], r2c, [source on Semgrep slack][single-block-if].
 
 [single-block-if]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1660943282982279?thread_ts=1660942419.479839&cid=C018NJRRCJ0
 
@@ -288,7 +288,7 @@ multi-dimensional arrays like `int nDim_init[10][10][10][10][10][10];`.
 > `...` is usually reserved to match a sequence of things (e.g., `foo(...)`), or
 > if something is optional (e.g., `return ...;`)
 
-Credit: [Padioleau Yoann][yoann-gh], r2c, [source: r2c Slack][c-ellipsis].
+Credit: [Padioleau Yoann][yoann-gh], r2c, [source: Semgrep slack][c-ellipsis].
 
 [yoann-gh]: https://github.com/aryx
 [c-ellipsis]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1648051884724009?thread_ts=1648001009.133229&cid=C018NJRRCJ0
@@ -320,9 +320,103 @@ detect different paths.
 
 [paths]: https://semgrep.dev/docs/writing-rules/rule-syntax/#paths
 
-Credit: Yours Truly, Parsia, [source: r2c slack][file-detect].
+Credit: Yours Truly, Parsia, [source: Semgrep slack][file-detect].
 
 [file-detect]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1670547075635089?thread_ts=1670540633.760339&cid=C018NJRRCJ0
+
+## Alert if JavaScript Imports Exist and are Used
+This was asked in the Semgrep slack and I came up with this answer that I liked.
+We want to get a match if there are a few specific JavaScript imports in a file
+and if they are _all_ used. The order of imports and usage shouldn't matter.
+Here's an example:
+
+```js
+var os = require("os");
+var http = require("http");
+var dns = require("dns");
+os.exec("ls");
+http.get("something");
+dns.something("whatever");
+let a = 1;
+```
+
+The rule takes advantage of having creating a union of six different
+`pattern-inside` clauses (three for imports and three for usages). It will match
+everything after all six patterns are met.
+
+Semgrep playground link:
+https://semgrep.dev/playground/s/parsiya:three-imports-used.
+
+```yaml
+rules:
+- id: three-imports-used
+  patterns:
+    - pattern-inside: |
+        $OS = require('os')
+        ...
+    - pattern-inside: |
+        $HTTP = require('http')
+        ...
+    - pattern-inside: |
+        $DNS = require('dns')
+        ...
+    - pattern-inside: |
+        $OS.$METHOD1(...)
+        ...
+    - pattern-inside: |
+        $HTTP.$METHOD2(...)
+        ...
+    - pattern-inside: |
+        $DNS.$METHOD3(...)
+        ...
+  message: Semgrep found a match
+  languages:
+    - js
+  severity: WARNING
+```
+
+## Using pattern-metavariable with Language Generic
+This is a neat trick from my good friend [Lewis Ardern][lewis-gh]. The question
+on the Semgrep Slack wanted to match text in a bash file like this:
+`openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:1024`.
+The extracted info was supposed to be the `1024` number. Then the rule had to
+check if the number was less than `2048`.
+
+I faced a problem here. It's not possible to create a Semgrep pattern like this
+for bash.
+
+```yaml
+pattern: openssl ... -pkeyopt rsa_keygen_bits:$BITS ...
+```
+
+I guess it's because of the way tree-sitter creates tokens in bash. But I could
+create a pattern like this and get `rsa_keygen_bits:1024` completely:
+
+```yaml
+pattern: openssl ... -pkeyopt $RSA ...
+```
+
+We can use a `pattern-metavariable` with the `generic` language to do text
+processing here which allows us to extract the number in a metavariable and also
+use `metavariable-comparison`.
+
+```yaml
+patterns:
+  - pattern: |
+      openssl ... -pkeyopt $KEY ...
+  - metavariable-pattern:
+      metavariable: $KEY
+      language: generic
+      patterns:
+        - pattern: rsa_keygen_bits:$BITS ...
+        - metavariable-comparison:
+            comparison: $BITS < 2048
+  - focus-metavariable:
+      - $BITS
+```
+
+Complete rule: https://semgrep.dev/playground/s/6YQ1
+
 
 # Rule Tests
 
