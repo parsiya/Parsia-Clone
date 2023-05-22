@@ -314,3 +314,5 @@ slowed down by a lot because I had access to fast internet.
 * Bunch, Chris & Cole, Allan - Sten 01 - Sten (3rd Time)	14 Sep 2022  2317
 * Bunch, Chris & Cole, Allan - Sten 02 - The Wolf Worlds (3rd Time)	19 Sep 2022  2053
 * Drake, David - Redliners (4th Time)   01 Oct 2022  0323
+* Egan, Greg - Zendegi - Jan 2023
+* Clarke, Neil - Galactic Empires - 16 May 2023

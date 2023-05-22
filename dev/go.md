@@ -1673,3 +1673,26 @@ func emptyMap[T1 comparable, T2 any]() map[T1]T2 {
 	return map[T1]T2{}
 }
 ```
+
+## Deep Copy
+`clone := oldvar` is OK if the fields are basic primitives. For anything passed
+as a reference (e.g., maps, pointers), it doesn't work. To make a copy, we have
+to manually copy things like this. For example, the map fields of a struct can
+be copied like:
+
+```go
+type Person struct {
+	Name string
+	MM   map[string]string
+}
+
+func (p Person) clone() Person {
+	tmpPerson := p
+	tmpMap.MM = make(MyMap)
+	for k, v := range p.MM {
+		tmpMap.MM[k] = v
+	}
+	return tmpPerson
+}
+```
+
