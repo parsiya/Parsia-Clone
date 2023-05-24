@@ -1,7 +1,7 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Rust</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.110.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="Rust"><meta name=twitter:description content="Learning Rust &#34;The book&#34;: https://doc.rust-lang.org/stable/book/ Playground: https://play.rust-lang.org/ Install Rust in WSL (from https://www.rust-lang.org/tools/install):
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Rust</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.112.2"><meta name=twitter:card content="summary"><meta name=twitter:title content="Rust"><meta name=twitter:description content="Learning Rust &#34;The book&#34;: https://doc.rust-lang.org/stable/book/ Playground: https://play.rust-lang.org/ Install Rust in WSL (from https://www.rust-lang.org/tools/install):
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh Chapter 1 cargo whatever # create a package in `whatever` directory under the current path. `whatever/src/main.rs` will have `hello world`. cd whatever cargo check # check if it compiles without building cargo building # build the package cargo run # run Chapter 2 Every variable is immutable, have to make it mutable with mut: let mut something = 1;"><meta name=twitter:domain content="parsiya.io"><meta name=twitter:creator content="@CryptoGangsta"></head><body><header role=banner><hgroup><h1><a href=https://parsiya.io/>Parsia-Clone</a></h1><h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select></fieldset><ul class=main-navigation><li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank rel="noopener noreferrer">Parsia-Clone on Github</a></li><li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank rel="noopener noreferrer">How did I make this?</a></li><li><a href=https://parsiya.net title="My Main Website" target=_blank rel="noopener noreferrer">My Main Website</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank rel="noopener noreferrer"><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
 <input type=hidden name=q value=site:https://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>52 minute read
-- <a class=label href=https://parsiya.io/categories/development/>Development</a></p><h1 class=entry-title>Rust</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/main/dev/rust.md target=_blank>Github Link</a></header><div class=entry-content><nav id=TableOfContents><ul><li><a href=#learning-rust>Learning Rust</a></li><li><a href=#chapter-1>Chapter 1</a></li><li><a href=#chapter-2>Chapter 2</a><ul><li><a href=#dependencies>Dependencies</a></li><li><a href=#adding-a-loop>Adding a Loop</a></li><li><a href=#handling-invalid-input>Handling Invalid Input</a></li></ul></li><li><a href=#chapter-3>Chapter 3</a><ul><li><a href=#mutability>Mutability</a></li><li><a href=#constants>Constants</a></li><li><a href=#shadowing>Shadowing</a></li><li><a href=#integers>Integers</a></li><li><a href=#floating-point>Floating Point</a></li><li><a href=#numeric-operations>Numeric Operations</a></li><li><a href=#boolean>Boolean</a></li><li><a href=#character-type>Character Type</a></li><li><a href=#tuple>Tuple</a></li><li><a href=#array>Array</a></li><li><a href=#string-literals>String Literals</a></li><li><a href=#functions>Functions</a></li><li><a href=#if-else>if-else</a></li><li><a href=#loop>loop</a></li><li><a href=#while>while</a></li><li><a href=#loop-through-collections-with-for>Loop Through Collections with for</a></li></ul></li><li><a href=#chapter-4>Chapter 4</a><ul><li><a href=#ownership-rules>Ownership Rules</a></li><li><a href=#the-string-type>The String Type</a></li><li><a href=#move>Move</a></li><li><a href=#clone>Clone</a></li><li><a href=#copy>Copy</a></li><li><a href=#ownership-and-functions>Ownership and Functions</a></li><li><a href=#references>References</a></li><li><a href=#mutable-references>Mutable References</a></li><li><a href=#reference-scope>Reference Scope</a></li><li><a href=#dangling-reference>Dangling Reference</a></li><li><a href=#the-slice-type>The Slice Type</a></li><li><a href=#string-slice>String Slice</a></li><li><a href=#other-slices>Other Slices</a></li></ul></li><li><a href=#chapter-5>Chapter 5</a><ul><li><a href=#structs>Structs</a></li><li><a href=#field-init-shorthand>Field Init Shorthand</a></li><li><a href=#struct-update-syntax>Struct Update Syntax</a></li><li><a href=#tuple-structs>Tuple Structs</a></li><li><a href=#unit-like-structs>Unit-Like Structs</a></li><li><a href=#derived-traits>Derived Traits</a></li><li><a href=#the-dbg-macro>The dbg Macro</a></li><li><a href=#methods>Methods</a></li><li><a href=#automatic-referencing-and-dereferencing>Automatic Referencing and Dereferencing</a></li><li><a href=#associated-functions>Associated Functions</a></li></ul></li><li><a href=#chapter-6>Chapter 6</a><ul><li><a href=#define-an-enum>Define an Enum</a></li><li><a href=#enum-methods-and-match>Enum Methods and match</a></li><li><a href=#option-enum>Option Enum</a></li><li><a href=#matching-with-optiont>Matching with Option<t></a></li><li><a href=#if-let>if let</a></li></ul></li><li><a href=#chapter-7>Chapter 7</a><ul><li><a href=#packages--crates>Packages & Crates</a></li><li><a href=#modules>Modules</a></li><li><a href=#paths>Paths</a></li><li><a href=#rusts-privacy-boundary>Rust's Privacy Boundary</a></li><li><a href=#super>Super</a></li><li><a href=#public-structs>Public Structs</a></li><li><a href=#public-enums>Public Enums</a></li><li><a href=#the-use-keyword>The use Keyword</a></li><li><a href=#pub-use>pub use</a></li><li><a href=#nested-paths-in-use>Nested Paths in use</a></li><li><a href=#modules-in-different-files>Modules in Different Files</a></li></ul></li><li><a href=#chapter-8>Chapter 8</a><ul><li><a href=#vectors>Vectors</a></li><li><a href=#read-vector-values>Read Vector Values</a></li><li><a href=#iterate-over-vector-elements>Iterate over Vector Elements</a></li><li><a href=#using-an-enum-to-store-multiple-types>Using an Enum to Store Multiple Types</a></li><li><a href=#remove-vector-values>Remove Vector Values</a></li><li><a href=#strings>Strings</a></li><li><a href=#hashmaps>HashMaps</a></li><li><a href=#hashmaps-and-ownership>HashMaps and Ownership</a></li><li><a href=#reading-hashmaps>Reading HashMaps</a></li><li><a href=#iterating-over-the-hashmap>Iterating over the HashMap</a></li><li><a href=#updating-a-hash-map>Updating a Hash Map</a></li></ul></li><li><a href=#chapter-9>Chapter 9</a><ul><li><a href=#panic>panic!</a></li><li><a href=#recoverable-errors>Recoverable Errors</a></li><li><a href=#matching-on-different-errors>Matching on Different Errors</a></li><li><a href=#unwrap-and-expect>unwrap and expect</a></li><li><a href=#propagating-errors>Propagating Errors</a></li><li><a href=#shortcut-for-propagating-errors>Shortcut for Propagating Errors</a></li></ul></li><li><a href=#misc>Misc</a><ul><li><a href=#type-alias>Type Alias</a></li><li><a href=#extension-trait>Extension Trait</a></li><li><a href=#import-an-adjacent-module>Import an Adjacent Module</a></li><li><a href=#crate-level-pub>Crate Level Pub</a></li><li><a href=#embed-files-in-the-binary>Embed Files in the Binary</a></li><li><a href=#convert-vecstring-to-vecstr>Convert Vec<string> to Vec&lt;&str></a></li></ul></li></ul></nav><h1 id=learning-rust>Learning Rust
+- <a class=label href=https://parsiya.io/categories/development/>Development</a></p><h1 class=entry-title>Rust</h1><a href=https://github.com/parsiya/Parsia-Clone/tree/main/dev/rust.md target=_blank>Github Link</a></header><div class=entry-content><nav id=TableOfContents><ul><li><a href=#learning-rust>Learning Rust</a></li><li><a href=#chapter-1>Chapter 1</a></li><li><a href=#chapter-2>Chapter 2</a><ul><li><a href=#dependencies>Dependencies</a></li><li><a href=#adding-a-loop>Adding a Loop</a></li><li><a href=#handling-invalid-input>Handling Invalid Input</a></li></ul></li><li><a href=#chapter-3>Chapter 3</a><ul><li><a href=#mutability>Mutability</a></li><li><a href=#constants>Constants</a></li><li><a href=#shadowing>Shadowing</a></li><li><a href=#integers>Integers</a></li><li><a href=#floating-point>Floating Point</a></li><li><a href=#numeric-operations>Numeric Operations</a></li><li><a href=#boolean>Boolean</a></li><li><a href=#character-type>Character Type</a></li><li><a href=#tuple>Tuple</a></li><li><a href=#array>Array</a></li><li><a href=#string-literals>String Literals</a></li><li><a href=#functions>Functions</a></li><li><a href=#if-else>if-else</a></li><li><a href=#loop>loop</a></li><li><a href=#while>while</a></li><li><a href=#loop-through-collections-with-for>Loop Through Collections with for</a></li></ul></li><li><a href=#chapter-4>Chapter 4</a><ul><li><a href=#ownership-rules>Ownership Rules</a></li><li><a href=#the-string-type>The String Type</a></li><li><a href=#move>Move</a></li><li><a href=#clone>Clone</a></li><li><a href=#copy>Copy</a></li><li><a href=#ownership-and-functions>Ownership and Functions</a></li><li><a href=#references>References</a></li><li><a href=#mutable-references>Mutable References</a></li><li><a href=#reference-scope>Reference Scope</a></li><li><a href=#dangling-reference>Dangling Reference</a></li><li><a href=#the-slice-type>The Slice Type</a></li><li><a href=#string-slice>String Slice</a></li><li><a href=#other-slices>Other Slices</a></li></ul></li><li><a href=#chapter-5>Chapter 5</a><ul><li><a href=#structs>Structs</a></li><li><a href=#field-init-shorthand>Field Init Shorthand</a></li><li><a href=#struct-update-syntax>Struct Update Syntax</a></li><li><a href=#tuple-structs>Tuple Structs</a></li><li><a href=#unit-like-structs>Unit-Like Structs</a></li><li><a href=#derived-traits>Derived Traits</a></li><li><a href=#the-dbg-macro>The dbg Macro</a></li><li><a href=#methods>Methods</a></li><li><a href=#automatic-referencing-and-dereferencing>Automatic Referencing and Dereferencing</a></li><li><a href=#associated-functions>Associated Functions</a></li></ul></li><li><a href=#chapter-6>Chapter 6</a><ul><li><a href=#define-an-enum>Define an Enum</a></li><li><a href=#enum-methods-and-match>Enum Methods and match</a></li><li><a href=#option-enum>Option Enum</a></li><li><a href=#matching-with-optiont>Matching with Option<t></a></li><li><a href=#if-let>if let</a></li></ul></li><li><a href=#chapter-7>Chapter 7</a><ul><li><a href=#packages--crates>Packages & Crates</a></li><li><a href=#modules>Modules</a></li><li><a href=#paths>Paths</a></li><li><a href=#rusts-privacy-boundary>Rust's Privacy Boundary</a></li><li><a href=#super>Super</a></li><li><a href=#public-structs>Public Structs</a></li><li><a href=#public-enums>Public Enums</a></li><li><a href=#the-use-keyword>The use Keyword</a></li><li><a href=#pub-use>pub use</a></li><li><a href=#nested-paths-in-use>Nested Paths in use</a></li><li><a href=#modules-in-different-files>Modules in Different Files</a></li></ul></li><li><a href=#chapter-8>Chapter 8</a><ul><li><a href=#vectors>Vectors</a></li><li><a href=#read-vector-values>Read Vector Values</a></li><li><a href=#iterate-over-vector-elements>Iterate over Vector Elements</a></li><li><a href=#using-an-enum-to-store-multiple-types>Using an Enum to Store Multiple Types</a></li><li><a href=#remove-vector-values>Remove Vector Values</a></li><li><a href=#strings>Strings</a></li><li><a href=#hashmaps>HashMaps</a></li><li><a href=#hashmaps-and-ownership>HashMaps and Ownership</a></li><li><a href=#reading-hashmaps>Reading HashMaps</a></li><li><a href=#iterating-over-the-hashmap>Iterating over the HashMap</a></li><li><a href=#updating-a-hash-map>Updating a Hash Map</a></li></ul></li><li><a href=#chapter-9>Chapter 9</a><ul><li><a href=#panic>panic!</a></li><li><a href=#recoverable-errors>Recoverable Errors</a></li><li><a href=#matching-on-different-errors>Matching on Different Errors</a></li><li><a href=#unwrap-and-expect>unwrap and expect</a></li><li><a href=#propagating-errors>Propagating Errors</a></li><li><a href=#shortcut-for-propagating-errors>Shortcut for Propagating Errors</a></li></ul></li><li><a href=#misc>Misc</a><ul><li><a href=#type-alias>Type Alias</a></li><li><a href=#extension-trait>Extension Trait</a></li><li><a href=#import-an-adjacent-module>Import an Adjacent Module</a></li><li><a href=#crate-level-pub>Crate Level Pub</a></li><li><a href=#embed-files-in-the-binary>Embed Files in the Binary</a></li><li><a href=#convert-vecstring-to-vecstr>Convert Vec<string> to Vec&lt;&amp;str></a></li></ul></li></ul></nav><h1 id=learning-rust>Learning Rust
 <a class=header-link href=#learning-rust><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><ul><li>"The book": <a href=https://doc.rust-lang.org/stable/book/ target=_blank rel="noreferrer noopener">https://doc.rust-lang.org/stable/book/</a></li><li>Playground: <a href=https://play.rust-lang.org/ target=_blank rel="noreferrer noopener">https://play.rust-lang.org/</a></li></ul><p>Install Rust in WSL (from <a href=https://www.rust-lang.org/tools/install%29 target=_blank rel="noreferrer noopener">https://www.rust-lang.org/tools/install)</a>:</p><ul><li><code>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</code></li></ul><h1 id=chapter-1>Chapter 1
 <a class=header-link href=#chapter-1><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><pre tabindex=0><code>cargo whatever
 # create a package in `whatever` directory under the current path.
@@ -19,7 +19,7 @@ cargo run       # run
 <code>let mut something = 1;</code></p><p>References passed to functions can also be mutable or not regardless of the
 underlying variable. E.g., we can create an immutable reference to a mutable
 variable. In the code below <code>read_line</code> needs a <code>mut string</code>, so we pass
-<code>&mut guess</code> instead of just <code>&guess</code>.</p><p><code>read_line</code> appends whatever is read from the command line to the argument. It
+<code>&amp;mut guess</code> instead of just <code>&amp;guess</code>.</p><p><code>read_line</code> appends whatever is read from the command line to the argument. It
 does not overwrite anything. Here, it doesn't matter because <code>guess</code> is empty.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>use</span> std::io;
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
@@ -29,7 +29,7 @@ does not overwrite anything. Here, it doesn't matter because <code>guess</code> 
 </span></span><span style=display:flex><span>        .read_line(<span style=color:#719e07>&amp;</span><span style=color:#719e07>mut</span> guess)
 </span></span><span style=display:flex><span>        .expect(<span style=color:#2aa198>&#34;Failed to read line&#34;</span>);
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;You guessed: {}&#34;</span>, guess);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;You guessed: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, guess);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p><code>expect</code>: The result of <code>read_line</code> is an enum of type <code>io::Result</code>. It can be
 <code>Ok</code> or <code>Err</code>. If the value is <code>Err</code> then <code>expect</code> is called that crashes the
@@ -40,7 +40,7 @@ here. We can use it like this:</p><div class=highlight><pre tabindex=0 style=col
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    .read_line(<span style=color:#719e07>&amp;</span><span style=color:#719e07>mut</span> guess)
 </span></span><span style=display:flex><span>    .expect(<span style=color:#2aa198>&#34;Failed to read line&#34;</span>);
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;Read {} bytes&#34;</span>, bytes);
+</span></span><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;Read </span><span style=color:#2aa198>{}</span><span style=color:#2aa198> bytes&#34;</span>, bytes);
 </span></span></code></pre></div><p>Finally, we have the placeholder similar to <code>printf(%v)</code> in Go.</p><h2 id=dependencies>Dependencies
 <a class=header-link href=#dependencies><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Edit <code>Cargo.toml</code> and add dependencies like <code>rand = "0.8.3"</code>. Then <code>cargo build</code>.</p><p><code>cargo update</code> ignores <code>Cargo.lock</code> and grabs the latest versions of libraries
 (that fit the versions specified in <code>Cargo.toml</code>).</p><p>Now, we can use <code>rand</code> here like this:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>use</span> rand::Rng;
@@ -96,7 +96,7 @@ if the return value is <code>Ok</code>.</p><h2 id=adding-a-loop>Adding a Loop
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// removed
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;You guessed: {}&#34;</span>, guess);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;You guessed: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, guess);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We can break out of it with <code>break</code>. We want to leave the loop when we guess the
 number correctly so we add to the actions for the <code>Ordering::Equal</code> arm.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>match</span> guess.cmp(<span style=color:#719e07>&amp;</span>secret_number) {
@@ -122,8 +122,8 @@ want to modify an immutable variable, the compiler warns us and does not compile
 the program. See <a href=ch03/variables/src/main.rs>ch03/variables/src/main.rs</a>.</p><h2 id=constants>Constants
 <a class=header-link href=#constants><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Created with <code>const</code> keyword. We cannot use <code>mut</code> with them because they are
 always immutable. Can only be set to a constant expression not something that is
-calculated at runtime.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>const</span> FIRST_NAME <span style=color:#719e07>=</span> <span style=color:#2aa198>&#34;Parsia&#34;</span>;
-</span></span><span style=display:flex><span><span style=color:#719e07>const</span> TIME: <span style=color:#dc322f>u32</span> <span style=color:#719e07>=</span> <span style=color:#2aa198>10</span> <span style=color:#719e07>*</span> <span style=color:#2aa198>20</span> <span style=color:#719e07>*</span> <span style=color:#2aa198>30</span>;
+calculated at runtime.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>const</span> <span style=color:#cb4b16>FIRST_NAME</span> <span style=color:#719e07>=</span> <span style=color:#2aa198>&#34;Parsia&#34;</span>;
+</span></span><span style=display:flex><span><span style=color:#719e07>const</span> <span style=color:#cb4b16>TIME</span>: <span style=color:#dc322f>u32</span> <span style=color:#719e07>=</span> <span style=color:#2aa198>10</span> <span style=color:#719e07>*</span> <span style=color:#2aa198>20</span> <span style=color:#719e07>*</span> <span style=color:#2aa198>30</span>;
 </span></span></code></pre></div><p>Naming convention: All uppercase with underscore between words.</p><h2 id=shadowing>Shadowing
 <a class=header-link href=#shadowing><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Declare a variable with the same name. Interestingly, this can be done in
 specific scopes. E.g., we can shadow a variable inside a block but it will not
@@ -136,10 +136,10 @@ be modified outside.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    {
 </span></span><span style=display:flex><span>        <span style=color:#268bd2>let</span> x <span style=color:#719e07>=</span> x <span style=color:#719e07>*</span> <span style=color:#2aa198>2</span>;  <span style=color:#586e75>// x = 12
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#586e75>// x is only shadowed in this scope.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        println!(<span style=color:#2aa198>&#34;The value of x in the inner scope is: {}&#34;</span>, x);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        println!(<span style=color:#2aa198>&#34;The value of x in the inner scope is: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, x);
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// x = 6 because this one is not touched.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;The value of x is: {}&#34;</span>, x);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;The value of x is: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, x);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Seems like we can just make blocks with <code>{ }</code>.</p><p>Differences with <code>mut</code>:</p><ol><li>We can shadow an immutable variable and create an immutable variable with the
 same name.</li><li>We can change the type and reuse the name. We cannot change the type of a
@@ -151,11 +151,11 @@ int.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-colo
 </span></span></code></pre></div><p>We can also make the new <code>spaces</code> mutable:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// ch03/shadowing2/src/main.rs
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> spaces <span style=color:#719e07>=</span> <span style=color:#2aa198>&#34;   &#34;</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: {}&#34;</span>, spaces);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, spaces);
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> <span style=color:#719e07>mut</span> spaces <span style=color:#719e07>=</span> spaces.len();
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: {}&#34;</span>, spaces);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, spaces);
 </span></span><span style=display:flex><span>    spaces <span style=color:#719e07>=</span> <span style=color:#2aa198>1234</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: {}&#34;</span>, spaces);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, spaces);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>returns:</p><pre tabindex=0><code>spaces: [prints three spaces]
 spaces: 3
@@ -163,9 +163,9 @@ spaces: 1234
 </code></pre><p>If we make a variable mutable but do not modify it, the compiler will give us a
 warning saying it should not be mutable.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> spaces <span style=color:#719e07>=</span> <span style=color:#2aa198>&#34;   &#34;</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: {}&#34;</span>, spaces);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, spaces);
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> <span style=color:#719e07>mut</span> spaces <span style=color:#719e07>=</span> spaces.len();
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: {}&#34;</span>, spaces);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;spaces: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, spaces);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>The shadowing <code>spaces</code> (2nd one) is mutable but not modified so we get:</p><pre tabindex=0><code>Compiling playground v0.0.1 (/playground)
 warning: variable does not need to be mutable
@@ -198,25 +198,25 @@ machine. E.g., i64 for 64-bit machines.</p><p>When writing integer literals we c
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// addition
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> sum <span style=color:#719e07>=</span> <span style=color:#2aa198>5</span> <span style=color:#719e07>+</span> <span style=color:#2aa198>10</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;5 + 10 = {}&#34;</span>, sum); <span style=color:#586e75>// 5 + 10 = 15
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;5 + 10 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, sum); <span style=color:#586e75>// 5 + 10 = 15
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// subtraction
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> difference <span style=color:#719e07>=</span> <span style=color:#2aa198>95.5</span> <span style=color:#719e07>-</span> <span style=color:#2aa198>4.3</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;95.5 - 4.3 = {}&#34;</span>, difference); <span style=color:#586e75>// 95.5 - 4.3 = 91.2
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;95.5 - 4.3 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, difference); <span style=color:#586e75>// 95.5 - 4.3 = 91.2
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// multiplication
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> product <span style=color:#719e07>=</span> <span style=color:#2aa198>4</span> <span style=color:#719e07>*</span> <span style=color:#2aa198>30</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;4 * 30 = {}&#34;</span>, product); <span style=color:#586e75>// 4 * 30 = 120
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;4 * 30 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, product); <span style=color:#586e75>// 4 * 30 = 120
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// division
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> quotient <span style=color:#719e07>=</span> <span style=color:#2aa198>56.7</span> <span style=color:#719e07>/</span> <span style=color:#2aa198>32.2</span>;
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> floored <span style=color:#719e07>=</span> <span style=color:#2aa198>2</span> <span style=color:#719e07>/</span> <span style=color:#2aa198>3</span>; <span style=color:#586e75>// Results in 0
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;56.7 / 32.2 = {}&#34;</span>, quotient); <span style=color:#586e75>// 56.7 / 32.2 = 1.7608695652173911
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;2 / 3 = {}&#34;</span>, floored); <span style=color:#586e75>// 2 / 3 = 0
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;56.7 / 32.2 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, quotient); <span style=color:#586e75>// 56.7 / 32.2 = 1.7608695652173911
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;2 / 3 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, floored); <span style=color:#586e75>// 2 / 3 = 0
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// remainder
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> remainder <span style=color:#719e07>=</span> <span style=color:#2aa198>43</span> <span style=color:#719e07>%</span> <span style=color:#2aa198>5</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;43 % 5 = {}&#34;</span>, remainder); <span style=color:#586e75>// 43 % 5 = 3
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;43 % 5 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, remainder); <span style=color:#586e75>// 43 % 5 = 3
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><h2 id=boolean>Boolean
 <a class=header-link href=#boolean><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><code>true</code> and <code>false</code>.</p><h2 id=character-type>Character Type
@@ -228,24 +228,24 @@ machine. E.g., i64 for 64-bit machines.</p><p>When writing integer literals we c
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// destructure it to get the values.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> (x, y, z) <span style=color:#719e07>=</span> tup;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;x = {}, y = {}, z = {}&#34;</span>, x, y, z);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;x = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, y = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, z = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, x, y, z);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// x = 500, y = 6.4, z = 1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// can also get the value by `var.index`.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;tup.0 = {}, tup.1 = {}, tup.2 = {}&#34;</span>, tup.<span style=color:#2aa198>0</span>, tup.<span style=color:#2aa198>1</span>, tup.<span style=color:#2aa198>2</span>); 
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;tup.0 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, tup.1 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, tup.2 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, tup.<span style=color:#2aa198>0</span>, tup.<span style=color:#2aa198>1</span>, tup.<span style=color:#2aa198>2</span>); 
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// tup.0 = 500, tup.1 = 6.4, tup.2 = 1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><h2 id=array>Array
 <a class=header-link href=#array><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Fixed-size array of values with the same type. Goes on stack instead of heap.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// ch03/arrays.rs
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> arr <span style=color:#719e07>=</span> [<span style=color:#2aa198>1</span>, <span style=color:#2aa198>2</span>, <span style=color:#2aa198>3</span>];
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr = {:?}&#34;</span>, arr);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr = </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, arr);
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> strings <span style=color:#719e07>=</span> [<span style=color:#2aa198>&#34;one&#34;</span>, <span style=color:#2aa198>&#34;two&#34;</span>, <span style=color:#2aa198>&#34;three&#34;</span>];
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;strings = {:?}&#34;</span>, strings);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;strings = </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, strings);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// we can also specify the type and size. See below why we are using &amp;str here.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> arr2: [<span style=color:#719e07>&amp;</span><span style=color:#dc322f>str</span>; <span style=color:#2aa198>3</span>] <span style=color:#719e07>=</span> [<span style=color:#2aa198>&#34;one&#34;</span>, <span style=color:#2aa198>&#34;two&#34;</span>, <span style=color:#2aa198>&#34;three&#34;</span>];
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr2 = {:?}&#34;</span>, arr2);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr2 = </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, arr2);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Specify one initial value for all elements:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// these are the same
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>let</span> a <span style=color:#719e07>=</span> [<span style=color:#2aa198>3</span>; <span style=color:#2aa198>5</span>];
@@ -256,32 +256,32 @@ machine. E.g., i64 for 64-bit machines.</p><p>When writing integer literals we c
 compiling, the Rust compiler will give us an error:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> arr2: [<span style=color:#719e07>&amp;</span><span style=color:#dc322f>str</span>; <span style=color:#2aa198>3</span>] <span style=color:#719e07>=</span> [<span style=color:#2aa198>&#34;one&#34;</span>, <span style=color:#2aa198>&#34;two&#34;</span>, <span style=color:#2aa198>&#34;three&#34;</span>];
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr2 = {:?}&#34;</span>, arr2);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr2 = </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, arr2);
 </span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr2[3] = {}&#34;</span>, arr2[<span style=color:#2aa198>3</span>]);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr2[3] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, arr2[<span style=color:#2aa198>3</span>]);
 </span></span><span style=display:flex><span>                         <span style=color:#586e75>//  ^^^^^^^ index out of bounds: the length is 3 but the index is 3
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> c <span style=color:#719e07>=</span> <span style=color:#2aa198>1</span> <span style=color:#719e07>+</span> <span style=color:#2aa198>2</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr2[c] = {}&#34;</span>, arr2[c]);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;arr2[c] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, arr2[c]);
 </span></span><span style=display:flex><span>                         <span style=color:#586e75>//  ^^^^^^^ index out of bounds: the length is 3 but the index is 3
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>However, we can provide a dynamic variable (e.g., get it from the user) and the
 program will panic with an out of bounds access.</p><h2 id=string-literals>String Literals
 <a class=header-link href=#string-literals><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>So I had this problem above, when you create something like this
-<code>let a = "whatever";</code> you are creating a <code>string literal</code> or <code>&str</code> which is a
+<code>let a = "whatever";</code> you are creating a <code>string literal</code> or <code>&amp;str</code> which is a
 read-only string and not the same as the type <code>String</code>.</p><p>So when I wanted to annotate the type for the same array like this, I got an
 error:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#268bd2>let</span> arr2: [<span style=color:#dc322f>str</span>, <span style=color:#2aa198>3</span>] <span style=color:#719e07>=</span> [<span style=color:#2aa198>&#34;one&#34;</span>, <span style=color:#2aa198>&#34;two&#34;</span>, <span style=color:#2aa198>&#34;three&#34;</span>];
 </span></span><span style=display:flex><span>                      <span style=color:#719e07>^^^^^</span> expected `<span style=color:#dc322f>str</span>`, found `<span style=color:#719e07>&amp;</span><span style=color:#dc322f>str</span>`
-</span></span></code></pre></div><p>So we have to annotate it like this with <code>&str</code> but I had another problem
+</span></span></code></pre></div><p>So we have to annotate it like this with <code>&amp;str</code> but I had another problem
 printing it:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#268bd2>let</span> arr2: [<span style=color:#719e07>&amp;</span><span style=color:#dc322f>str</span>, <span style=color:#2aa198>3</span>] <span style=color:#719e07>=</span> [<span style=color:#2aa198>&#34;one&#34;</span>, <span style=color:#2aa198>&#34;two&#34;</span>, <span style=color:#2aa198>&#34;three&#34;</span>];
-</span></span><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;arr2 = {}&#34;</span>, arr2);
+</span></span><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;arr2 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, arr2);
 </span></span><span style=display:flex><span>                      <span style=color:#719e07>^^^^</span> `[<span style=color:#719e07>&amp;</span><span style=color:#dc322f>str</span>; <span style=color:#2aa198>3</span>]` cannot be formatted with the default formatter
 </span></span><span style=display:flex><span>  <span style=color:#719e07>=</span> help: <span style=color:#268bd2>the</span> <span style=color:#719e07>trait</span> `std::fmt::Display` is not implemented <span style=color:#719e07>for</span> `[<span style=color:#719e07>&amp;</span><span style=color:#dc322f>str</span>; <span style=color:#2aa198>3</span>]`
 </span></span><span style=display:flex><span>  <span style=color:#719e07>=</span> note: <span style=color:#268bd2>in</span> format strings you may be able to <span style=color:#719e07>use</span> `{:<span style=color:#719e07>?</span>}` (or {:#<span style=color:#719e07>?</span>} <span style=color:#719e07>for</span> pretty<span style=color:#719e07>-</span>print) instead
-</span></span></code></pre></div><p>We can use the note to pretty print:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;arr2 = {:?}&#34;</span>, arr2);
+</span></span></code></pre></div><p>We can use the note to pretty print:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;arr2 = </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, arr2);
 </span></span><span style=display:flex><span><span style=color:#586e75>// arr2 = [&#34;one&#34;, &#34;two&#34;, &#34;three&#34;]
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;arr2 = {:#?}&#34;</span>, arr2);
+</span></span><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;arr2 = </span><span style=color:#2aa198>{:#?}</span><span style=color:#2aa198>&#34;</span>, arr2);
 </span></span><span style=display:flex><span><span style=color:#586e75>// arr2 = [
 </span></span></span><span style=display:flex><span><span style=color:#586e75>//     &#34;one&#34;,
 </span></span></span><span style=display:flex><span><span style=color:#586e75>//     &#34;two&#34;,
@@ -294,12 +294,12 @@ printing it:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgro
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// we can define parameters.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>fn</span> <span style=color:#268bd2>my_func</span>(param1: <span style=color:#dc322f>i32</span>, param2: <span style=color:#dc322f>char</span>) {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;param1 = {}, param2 = {}&#34;</span>, param1, param2);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;param1 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, param2 = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, param1, param2);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// param1 = 10, param2 = a
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>The last expression in the function can act as the return value.</p><blockquote><p>blocks of code evaluate to the last expression in them, and numbers by
 themselves are also expressions</p></blockquote><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;double_me(1) = {}&#34;</span>, double_me(<span style=color:#2aa198>1</span>)); <span style=color:#586e75>// double_me(1) = 2
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;double_me(1) = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, double_me(<span style=color:#2aa198>1</span>)); <span style=color:#586e75>// double_me(1) = 2
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// return values
@@ -315,7 +315,7 @@ error.</p><pre tabindex=0><code>  |
 7 |     x + 1;
   |          - help: consider removing this semicolon
 </code></pre><p>Instead, we can use the <code>return</code> keyword.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;double_me(1) = {}&#34;</span>, double_me(<span style=color:#2aa198>1</span>));
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;double_me(1) = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, double_me(<span style=color:#2aa198>1</span>));
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// return values
@@ -349,18 +349,18 @@ error.</p><pre tabindex=0><code>  |
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> condition <span style=color:#719e07>=</span> <span style=color:#cb4b16>true</span>;
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> number <span style=color:#719e07>=</span> <span style=color:#719e07>if</span> condition { <span style=color:#2aa198>5</span> } <span style=color:#719e07>else</span> { <span style=color:#2aa198>6</span> };
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;The value of number is: {}&#34;</span>, number);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;The value of number is: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, number);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=loop>loop
 <a class=header-link href=#loop><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>We've already seen it. <code>loop</code> can use <code>break</code> and <code>continue</code> to leave to go back
 to the start. When loops are nested, these only apply only to their parent loop.</p><p>We can also have <code>labeled loops</code> so we can interact with outer loops</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// ch03/labeled_loop.rs
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> <span style=color:#719e07>mut</span> count <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>;
-</span></span><span style=display:flex><span>    <span style=color:#719e07>&#39;</span>parent_loop: <span style=color:#268bd2>loop</span> {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;count = {} in &#39;parent_loop&#34;</span>, count);
+</span></span><span style=display:flex><span>    &#39;parent_loop: <span style=color:#268bd2>loop</span> {
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;count = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198> in &#39;parent_loop&#34;</span>, count);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>        <span style=color:#719e07>loop</span> {
-</span></span><span style=display:flex><span>            println!(<span style=color:#2aa198>&#34;count = {} in inside loop&#34;</span>, count);
+</span></span><span style=display:flex><span>            println!(<span style=color:#2aa198>&#34;count = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198> in inside loop&#34;</span>, count);
 </span></span><span style=display:flex><span>            <span style=color:#719e07>if</span> count <span style=color:#719e07>==</span> <span style=color:#2aa198>2</span> {
 </span></span><span style=display:flex><span>                <span style=color:#586e75>// break out of the &#39;parent_loop
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>                <span style=color:#719e07>break</span> &#39;parent_loop;
@@ -368,7 +368,7 @@ to the start. When loops are nested, these only apply only to their parent loop.
 </span></span><span style=display:flex><span>            count <span style=color:#719e07>+=</span> <span style=color:#2aa198>1</span>;
 </span></span><span style=display:flex><span>        }
 </span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;End count = {}&#34;</span>, count);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;End count = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, count);
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// count = 0 in &#39;parent_loop
@@ -388,7 +388,7 @@ variable and then return <code>break value;</code>.</p><div class=highlight><pre
 </span></span><span style=display:flex><span>        }
 </span></span><span style=display:flex><span>    };
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;counted = {}&#34;</span>, counted); <span style=color:#586e75>// counted = 5
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;counted = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, counted); <span style=color:#586e75>// counted = 5
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><h2 id=while>while
 <a class=header-link href=#while><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><code>loop</code>s don't have conditions. We can use <code>while</code> instead.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// ch03/while.rs
@@ -399,7 +399,7 @@ variable and then return <code>break value;</code>.</p><div class=highlight><pre
 </span></span><span style=display:flex><span>        count <span style=color:#719e07>+=</span> <span style=color:#2aa198>1</span>;
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;count = {}&#34;</span>, count); <span style=color:#586e75>// count = 5
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;count = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, count); <span style=color:#586e75>// count = 5
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><h2 id=loop-through-collections-with-for>Loop Through Collections with for
 <a class=header-link href=#loop-through-collections-with-for><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>We can iterate through a collection (e.g., array but not tuple) with <code>for</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// ch03/while.rs
@@ -407,13 +407,13 @@ variable and then return <code>break value;</code>.</p><div class=highlight><pre
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> strings <span style=color:#719e07>=</span> [<span style=color:#2aa198>&#34;one&#34;</span>, <span style=color:#2aa198>&#34;two&#34;</span>, <span style=color:#2aa198>&#34;three&#34;</span>];
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>for</span> s <span style=color:#719e07>in</span> strings {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s);
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s);
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Trying to use <code>for</code> with a tuple returns this error.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#268bd2>let</span> tup: (<span style=color:#dc322f>i32</span>, <span style=color:#dc322f>f64</span>, <span style=color:#dc322f>u8</span>) <span style=color:#719e07>=</span> (<span style=color:#2aa198>500</span>, <span style=color:#2aa198>6.4</span>, <span style=color:#2aa198>1</span>);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>for</span> t <span style=color:#719e07>in</span> tup {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, t);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, t);
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>|</span>
@@ -427,7 +427,7 @@ variable and then return <code>break value;</code>.</p><div class=highlight><pre
 things a certain number of times by using it over a range.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// rev is reversing the range.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#719e07>for</span> number <span style=color:#719e07>in</span> (<span style=color:#2aa198>1</span><span style=color:#719e07>..</span><span style=color:#2aa198>4</span>).rev() {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}!&#34;</span>, number);
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>!&#34;</span>, number);
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;LIFTOFF!!!&#34;</span>);
 </span></span><span style=display:flex><span>}
@@ -441,7 +441,7 @@ things a certain number of times by using it over a range.</p><div class=highlig
 ask for a certain amount of space on heap, the memory allocator locates some
 free space and returns a pointer to it (and sets it in-use). Slower.</p><h2 id=ownership-rules>Ownership Rules
 <a class=header-link href=#ownership-rules><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><ul><li>Each value in Rust has a variable that’s called its <em>owner</em>.</li><li>There can only be one owner at a time.</li><li>When the owner goes out of scope, the value will be dropped.</li></ul><h2 id=the-string-type>The String Type
-<a class=header-link href=#the-string-type><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>String literals are immutable (type <code>&str</code>). See the section <code>String Literals</code>
+<a class=header-link href=#the-string-type><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>String literals are immutable (type <code>&amp;str</code>). See the section <code>String Literals</code>
 above for more info.</p><p>We can use <code>String</code> which exists on the heap. We can create them from a string
 literal and modify it.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> <span style=color:#719e07>mut</span> s <span style=color:#719e07>=</span> <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;hello&#34;</span>);
@@ -453,7 +453,7 @@ literal and modify it.</p><div class=highlight><pre tabindex=0 style=color:#93a1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// println!(s); // Compiler error
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// print it
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s); <span style=color:#586e75>// hello, world!
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s); <span style=color:#586e75>// hello, world!
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><h2 id=move>Move
 <a class=header-link href=#move><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>When the value leaves the scope, Rust automatically calls <code>drop</code> at the closing
@@ -469,9 +469,9 @@ after that.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgrou
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// assign it to s2
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> s2 <span style=color:#719e07>=</span> s1;
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// try to use s1.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s1);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s1);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// use s2 so we don&#39;t get an &#34;unused variable warning&#34;
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s2);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s2);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>And we get an error because s1 was moved.</p><pre tabindex=0><code>error[E0382]: borrow of moved value: `s1`
  --&gt; src/main.rs:7:20
@@ -491,9 +491,9 @@ after that.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgrou
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// clone it
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> s2 <span style=color:#719e07>=</span> s1.clone();
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// try to use s1
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s1); <span style=color:#586e75>// hello
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s1); <span style=color:#586e75>// hello
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// use s2 so we don&#39;t get an &#34;unused variable warning&#34;
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s2); <span style=color:#586e75>// hello
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s2); <span style=color:#586e75>// hello
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><h2 id=copy>Copy
 <a class=header-link href=#copy><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>But we have seen assignments in other types and both work.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
@@ -501,7 +501,7 @@ after that.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgrou
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> y <span style=color:#719e07>=</span> x;
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// we can use both x and y.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;x = {}, y = {}&#34;</span>, x, y); <span style=color:#586e75>// x = 5, y = 5
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;x = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, y = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, x, y); <span style=color:#586e75>// x = 5, y = 5
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>These types have a known size at compile time and are stored on the stack. So
 assignment here creates a new copy of the entire object on the stack.</p><p>If a type has the <code>Copy</code> trait, this behavior occurs: Integers, floats, chars,
@@ -516,11 +516,11 @@ bools, and Tuples if the types in it have all implemented the <code>Copy</code> 
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// we cannot use s here anymore because it was moved to `some_string` and
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// it went out of scope when `use_string` returned.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s);
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>use_string</span>(some_string: <span style=color:#b58900>String</span>) {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, some_string);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, some_string);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// some_string goes out of scope. drop is called. Memory is freed.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>We get an error because <code>s</code> was moved when passed to the function.</p><pre tabindex=0><code>error[E0382]: borrow of moved value: `s`
@@ -543,11 +543,11 @@ bools, and Tuples if the types in it have all implemented the <code>Copy</code> 
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    use_int(x); <span style=color:#586e75>// 5
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>                
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// we can still use x here.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, x);  <span style=color:#586e75>// 5
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, x);  <span style=color:#586e75>// 5
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>use_int</span>(some_integer: <span style=color:#dc322f>i32</span>) {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, some_integer);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, some_integer);
 </span></span><span style=display:flex><span>} <span style=color:#586e75>// some_integer goes out of scope. Nothing special happens.
 </span></span></span></code></pre></div><p>Same thing happens with returns. If we pass a String to a function, we need to
 return it from the function to be able to use it later.</p><h2 id=references>References
@@ -559,7 +559,7 @@ pass a reference to the function there will be no moves.</p><p><code>We call the
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// pass it as a reference to calculate_length
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> len <span style=color:#719e07>=</span> calculate_length(<span style=color:#719e07>&amp;</span>s1);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// we can still use s1 here.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;The length of &#39;{}&#39; is {}.&#34;</span>, s1, len);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;The length of &#39;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#39; is </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>.&#34;</span>, s1, len);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// The length of &#39;hello&#39; is 5.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span><span style=display:flex><span>
@@ -610,7 +610,7 @@ dropped because <code>s</code> does not own it.</p><p>We cannot modify <code>s</
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// pass it as a mutable reference
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    modify_mut_s(<span style=color:#719e07>&amp;</span><span style=color:#719e07>mut</span> s1);
 </span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s1); <span style=color:#586e75>// hello yolo!
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s1); <span style=color:#586e75>// hello yolo!
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>modify_mut_s</span>(s: <span style=color:#719e07>&amp;</span><span style=color:#268bd2>mut</span> <span style=color:#b58900>String</span>) {
@@ -626,7 +626,7 @@ work:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-col
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> r1 <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span><span style=color:#719e07>mut</span> s1;
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> r2 <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span><span style=color:#719e07>mut</span> s1;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}, {}&#34;</span>, r1, r2);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, r1, r2);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We get this error:</p><pre tabindex=0><code>error[E0499]: cannot borrow `s1` as mutable more than once at a time
  --&gt; src/main.rs:6:14
@@ -645,7 +645,7 @@ work:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-col
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> r2 <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>s; <span style=color:#586e75>// no problem
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> r3 <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span><span style=color:#719e07>mut</span> s; <span style=color:#586e75>// BIG PROBLEM
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}, {}, and {}&#34;</span>, r1, r2, r3);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, and </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, r1, r2, r3);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Because we have an immutable reference in the same scope. Multiple immutable
 references are allowed.</p><pre tabindex=0><code>error[E0502]: cannot borrow `s` as mutable because it is also borrowed as immutable
@@ -668,11 +668,11 @@ r3 is created.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backg
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> r1 <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>s; <span style=color:#586e75>// no problem
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> r2 <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>s; <span style=color:#586e75>// no problem
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{} and {}&#34;</span>, r1, r2);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198> and </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, r1, r2);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// variables r1 and r2 will not be used after this point
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> r3 <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span><span style=color:#719e07>mut</span> s; <span style=color:#586e75>// no problem
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, r3);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, r3);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=dangling-reference>Dangling Reference
 <a class=header-link href=#dangling-reference><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>The compiler does not allow us to create dangling references. This won't work:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
@@ -698,7 +698,7 @@ ownership.</p><p>Small function to find the index of the first word in a string.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// here we are destructuring the tuple
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#719e07>for</span> (i, <span style=color:#719e07>&amp;</span>item) <span style=color:#719e07>in</span> bytes.iter().enumerate() {
 </span></span><span style=display:flex><span>        <span style=color:#586e75>// compare the character with space
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#719e07>if</span> item <span style=color:#719e07>==</span> <span style=color:#2aa198>b&#39; &#39;</span> {
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#719e07>if</span> item <span style=color:#719e07>==</span> <span style=color:#2aa198>b</span><span style=color:#2aa198>&#39; &#39;</span> {
 </span></span><span style=display:flex><span>            <span style=color:#719e07>return</span> i;
 </span></span><span style=display:flex><span>        }
 </span></span><span style=display:flex><span>    }
@@ -715,16 +715,16 @@ from index 0 and ends at 4.</p><div class=highlight><pre tabindex=0 style=color:
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> hello <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>s[<span style=color:#2aa198>0</span><span style=color:#719e07>..</span><span style=color:#2aa198>5</span>];
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> world <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>s[<span style=color:#2aa198>6</span><span style=color:#719e07>..</span><span style=color:#2aa198>11</span>];
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{} - {}&#34;</span>, hello, world);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198> - </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, hello, world);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We can drop the lower range if we want to start from the beginning. So <code>[0..5]</code>
 and <code>[..5]</code> are the same.</p><p>If the higher range is the end we can drop it. E.g., <code>[4..]</code> goes from index 4
-to the end.</p><p><code>[..]</code> creates a slice from the whole string. <code>let slice = &s[..]</code>. Now, we can
+to the end.</p><p><code>[..]</code> creates a slice from the whole string. <code>let slice = &amp;s[..]</code>. Now, we can
 rewrite the function to return a slice.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>first_word</span>(s: <span style=color:#719e07>&amp;</span><span style=color:#b58900>String</span>) -&gt; <span style=color:#719e07>&amp;</span><span style=color:#dc322f>str</span> {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> bytes <span style=color:#719e07>=</span> s.as_bytes();
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>for</span> (i, <span style=color:#719e07>&amp;</span>item) <span style=color:#719e07>in</span> bytes.iter().enumerate() {
-</span></span><span style=display:flex><span>        <span style=color:#719e07>if</span> item <span style=color:#719e07>==</span> <span style=color:#2aa198>b&#39; &#39;</span> {
+</span></span><span style=display:flex><span>        <span style=color:#719e07>if</span> item <span style=color:#719e07>==</span> <span style=color:#2aa198>b</span><span style=color:#2aa198>&#39; &#39;</span> {
 </span></span><span style=display:flex><span>            <span style=color:#719e07>return</span> <span style=color:#719e07>&amp;</span>s[<span style=color:#2aa198>0</span><span style=color:#719e07>..</span>i];
 </span></span><span style=display:flex><span>        }
 </span></span><span style=display:flex><span>    }
@@ -732,13 +732,13 @@ rewrite the function to return a slice.</p><div class=highlight><pre tabindex=0 
 </span></span><span style=display:flex><span>    <span style=color:#719e07>&amp;</span>s[<span style=color:#719e07>..</span>]
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p><strong>String literals are slices.</strong> Remember what we saw in the string literal
-section? Their type is <code>&str</code>.</p><h2 id=other-slices>Other Slices
+section? Their type is <code>&amp;str</code>.</p><h2 id=other-slices>Other Slices
 <a class=header-link href=#other-slices><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>We can create slices of other types.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> a <span style=color:#719e07>=</span> [<span style=color:#2aa198>1</span>, <span style=color:#2aa198>2</span>, <span style=color:#2aa198>3</span>, <span style=color:#2aa198>4</span>, <span style=color:#2aa198>5</span>];
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> slice <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>a[<span style=color:#2aa198>1</span><span style=color:#719e07>..</span><span style=color:#2aa198>3</span>];
 </span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, slice);    <span style=color:#586e75>// [2, 3]
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, slice);    <span style=color:#586e75>// [2, 3]
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><h1 id=chapter-5>Chapter 5
 <a class=header-link href=#chapter-5><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><h2 id=structs>Structs
@@ -760,13 +760,13 @@ section? Their type is <code>&str</code>.</p><h2 id=other-slices>Other Slices
 </span></span><span style=display:flex><span>    };
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// access fields
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}, {}, {}&#34;</span>, game1.name, game1.hours_played, game1.path);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, game1.name, game1.hours_played, game1.path);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// Windows Calculator, 123, C:/Windows/System32/calc.exe
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// change fields
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    game1.path <span style=color:#719e07>=</span> <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;C:\\Windows\\System32\\calc.exe&#34;</span>);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    game1.path <span style=color:#719e07>=</span> <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;C:</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>Windows</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>System32</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>calc.exe&#34;</span>);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// print the modified field
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, game1.path);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, game1.path);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// C:\Windows\System32\calc.exe
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>We cannot set specific fields to mutable. Whole object needs to be mutable or
@@ -804,12 +804,12 @@ modify some.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgro
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// create game2 based on game1 with a new path
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> game2 <span style=color:#719e07>=</span> Game {
-</span></span><span style=display:flex><span>        path: <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;C:\\Windows\\System32\\calc.exe&#34;</span>),
+</span></span><span style=display:flex><span>        path: <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;C:</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>Windows</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>System32</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>calc.exe&#34;</span>),
 </span></span><span style=display:flex><span>        <span style=color:#719e07>..</span>game1
 </span></span><span style=display:flex><span>    };
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// access fields
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}, {}, {}&#34;</span>, game2.name, game2.hours_played, game2.path);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, game2.name, game2.hours_played, game2.path);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// Windows Calculator, 123, C:\Windows\System32\calc.exe
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p><strong>However, we moved game1 so we cannot use it anymore.</strong> Because we used the
@@ -826,7 +826,7 @@ not have used it anymore.</p><div class=highlight><pre tabindex=0 style=color:#9
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>print_game</span>(game: <span style=color:#719e07>&amp;</span><span style=color:#268bd2>Game</span>) {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}, {}, {}&#34;</span>, game.name, game.hours_played, game.path);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, game.name, game.hours_played, game.path);
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
@@ -864,7 +864,7 @@ not have used it anymore.</p><div class=highlight><pre tabindex=0 style=color:#9
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    print_game(<span style=color:#719e07>&amp;</span>game1);  <span style=color:#586e75>// &lt;-- error here
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    print_game(<span style=color:#719e07>&amp;</span>game1_new_new);
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>We get an error in the last <code>print_game(&game1)</code> because <code>game1</code> was partially
+</span></span></code></pre></div><p>We get an error in the last <code>print_game(&amp;game1)</code> because <code>game1</code> was partially
 moved when creating <code>game1_new_new</code>.</p><pre tabindex=0><code>error[E0382]: borrow of partially moved value: `game1`
   --&gt; src/main.rs:44:16
    |
@@ -889,7 +889,7 @@ index (see in <code>print_game</code>).</p><div class=highlight><pre tabindex=0 
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>print_game</span>(game: <span style=color:#719e07>&amp;</span><span style=color:#268bd2>Game</span>) {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// we can access the tuple struct&#39;s fields with the index
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}, {}, {}&#34;</span>, game.<span style=color:#2aa198>0</span>, game.<span style=color:#2aa198>1</span>, game.<span style=color:#2aa198>2</span>);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, game.<span style=color:#2aa198>0</span>, game.<span style=color:#2aa198>1</span>, game.<span style=color:#2aa198>2</span>);
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
@@ -932,7 +932,7 @@ index (see in <code>print_game</code>).</p><div class=highlight><pre tabindex=0 
 </span></span><span style=display:flex><span>        path: <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;C:/Guild Wars/gw.exe&#34;</span>)
 </span></span><span style=display:flex><span>    };
 </span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, game1);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, game1);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We get an error in <code>println!</code> because it does not implement the
 <code>std::fmt::Display</code> trait.</p><pre tabindex=0><code>error[E0277]: `Game` doesn&#39;t implement `std::fmt::Display`
@@ -968,7 +968,7 @@ another error:</p><pre tabindex=0><code>error[E0277]: `Game` doesn&#39;t impleme
 </span></span><span style=display:flex><span>        path: <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;C:/Guild Wars/gw.exe&#34;</span>)
 </span></span><span style=display:flex><span>    };
 </span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, game1);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, game1);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Finally:
 <code>Game { name: "Guild Wars", hours_played: 5000, path: "C:/Guild Wars/gw.exe" }</code>.</p><h2 id=the-dbg-macro>The dbg Macro
@@ -1010,7 +1010,7 @@ always <code>self</code>.</p><div class=highlight><pre tabindex=0 style=color:#9
 </span></span><span style=display:flex><span><span style=color:#719e07>impl</span> Game {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// implement print for Game
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#719e07>fn</span> <span style=color:#268bd2>print</span>(<span style=color:#719e07>&amp;</span><span style=color:#268bd2>self</span>) {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}, {}, {}&#34;</span>, <span style=color:#268bd2>self</span>.name, <span style=color:#268bd2>self</span>.hours_played, <span style=color:#268bd2>self</span>.path);
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, <span style=color:#268bd2>self</span>.name, <span style=color:#268bd2>self</span>.hours_played, <span style=color:#268bd2>self</span>.path);
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
@@ -1025,7 +1025,7 @@ always <code>self</code>.</p><div class=highlight><pre tabindex=0 style=color:#9
 </span></span><span style=display:flex><span>    game1.print();
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// Guild Wars, 5000, C:/Guild Wars/gw.exe
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
-</span></span></code></pre></div><p>Note how we are passing <code>&self</code> to <code>print</code>. Methods can also take ownership of
+</span></span></code></pre></div><p>Note how we are passing <code>&amp;self</code> to <code>print</code>. Methods can also take ownership of
 <code>self</code> and other parameters.</p><p>We can name a method the same as a field. Usually, these are getters and return
 the value of the field.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>impl</span> Game {
 </span></span><span style=display:flex><span>    <span style=color:#719e07>fn</span> <span style=color:#268bd2>name</span>(<span style=color:#719e07>&amp;</span><span style=color:#268bd2>self</span>) -&gt; <span style=color:#b58900>String</span> {
@@ -1033,11 +1033,11 @@ the value of the field.</p><div class=highlight><pre tabindex=0 style=color:#93a
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Now, we can call <code>game1.name()</code> to get the value of <code>name</code>.</p><h2 id=automatic-referencing-and-dereferencing>Automatic Referencing and Dereferencing
-<a class=header-link href=#automatic-referencing-and-dereferencing><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>When calling methods, Rust automatically add <code>&</code>, <code>&mut</code>, or <code>*</code> to the object
-to match the method signature. Hence, why we did not do <code>(&game1).print()</code>
-although the receiver was <code>&self</code>.</p><h2 id=associated-functions>Associated Functions
+<a class=header-link href=#automatic-referencing-and-dereferencing><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>When calling methods, Rust automatically add <code>&</code>, <code>&amp;mut</code>, or <code>*</code> to the object
+to match the method signature. Hence, why we did not do <code>(&amp;game1).print()</code>
+although the receiver was <code>&amp;self</code>.</p><h2 id=associated-functions>Associated Functions
 <a class=header-link href=#associated-functions><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Functions inside an <code>impl</code> block are called <code>associated functions</code> because they
-are associated with a struct.</p><p>We can define non-method associated functions (they do not have the <code>&self</code>
+are associated with a struct.</p><p>We can define non-method associated functions (they do not have the <code>&amp;self</code>
 parameter). Let's add a function that creates a game object for calc.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// ch05/associated_method_calc.rs
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>struct</span> <span style=color:#268bd2>Game</span> {
 </span></span><span style=display:flex><span>    name: <span style=color:#b58900>String</span>,
@@ -1048,7 +1048,7 @@ parameter). Let's add a function that creates a game object for calc.</p><div cl
 </span></span><span style=display:flex><span><span style=color:#719e07>impl</span> Game {
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>fn</span> <span style=color:#268bd2>print</span>(<span style=color:#719e07>&amp;</span><span style=color:#268bd2>self</span>) {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}, {}, {}&#34;</span>, <span style=color:#268bd2>self</span>.name, <span style=color:#268bd2>self</span>.hours_played, <span style=color:#268bd2>self</span>.path);
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, <span style=color:#268bd2>self</span>.name, <span style=color:#268bd2>self</span>.hours_played, <span style=color:#268bd2>self</span>.path);
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>fn</span> <span style=color:#268bd2>calc</span>() -&gt; <span style=color:#268bd2>Game</span> {
@@ -1095,7 +1095,7 @@ game example from before:</p><div class=highlight><pre tabindex=0 style=color:#9
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>fn</span> <span style=color:#268bd2>print</span>(<span style=color:#719e07>&amp;</span><span style=color:#268bd2>self</span>) {
 </span></span><span style=display:flex><span>        println!(
-</span></span><span style=display:flex><span>            <span style=color:#2aa198>&#34;Name: {}, Hours played: {}, Path: {}, Type: {:?}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#2aa198>&#34;Name: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, Hours played: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, Path: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, Type: </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>,
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>self</span>.name,
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>self</span>.hours_played,
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>self</span>.path,
@@ -1138,10 +1138,10 @@ game example from before:</p><div class=highlight><pre tabindex=0 style=color:#9
 </span></span><span style=display:flex><span>        <span style=color:#2aa198>5000</span>,
 </span></span><span style=display:flex><span>    );
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, calc);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, calc);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// Utility(&#34;Windows Calculator&#34;, &#34;C:/Windows/System32/calc.exe&#34;)
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, gw);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, gw);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// Game(&#34;Guild Wars&#34;, &#34;C:/Guild Wars/gw.exe&#34;, 5000)
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>We can also define structs and pass them as a parameter to the enum function.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#586e75>// ch06/enum3.rs
@@ -1170,7 +1170,7 @@ game example from before:</p><div class=highlight><pre tabindex=0 style=color:#9
 </span></span><span style=display:flex><span>        path: <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;C:/Windows/System32/calc.exe&#34;</span>),
 </span></span><span style=display:flex><span>    });
 </span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, calc);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, calc);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// Utility(UtilStruct { name: &#34;Windows Calculator&#34;, path: &#34;C:/Windows/System32/calc.exe&#34; })
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>We can have different things in the enum like the example from the book:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>enum</span> <span style=color:#268bd2>Message</span> {
@@ -1193,10 +1193,10 @@ a String that represents each enum.</p><div class=highlight><pre tabindex=0 styl
 </span></span><span style=display:flex><span>    <span style=color:#719e07>fn</span> <span style=color:#268bd2>stringer</span>(<span style=color:#719e07>&amp;</span><span style=color:#268bd2>self</span>) -&gt; <span style=color:#b58900>String</span> {
 </span></span><span style=display:flex><span>        <span style=color:#719e07>match</span> <span style=color:#268bd2>self</span> {
 </span></span><span style=display:flex><span>            AppType::Game(g) <span style=color:#719e07>=&gt;</span> format!(
-</span></span><span style=display:flex><span>                <span style=color:#2aa198>&#34;Name: {}, Path: {}, Hours Played: {}&#34;</span>,
+</span></span><span style=display:flex><span>                <span style=color:#2aa198>&#34;Name: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, Path: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, Hours Played: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>,
 </span></span><span style=display:flex><span>                g.name, g.path, g.hours_played
 </span></span><span style=display:flex><span>            ),
-</span></span><span style=display:flex><span>            AppType::Utility(u) <span style=color:#719e07>=&gt;</span> format!(<span style=color:#2aa198>&#34;Name: {}, Path: {}&#34;</span>, u.name, u.path),
+</span></span><span style=display:flex><span>            AppType::Utility(u) <span style=color:#719e07>=&gt;</span> format!(<span style=color:#2aa198>&#34;Name: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>, Path: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, u.name, u.path),
 </span></span><span style=display:flex><span>        }
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
@@ -1241,8 +1241,8 @@ absence of values here. A very naive way would be returning 0. But that means
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> s1 <span style=color:#719e07>=</span> <span style=color:#b58900>Some</span>(<span style=color:#2aa198>0</span>);
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> n1: <span style=color:#b58900>Option</span><span style=color:#719e07>&lt;</span><span style=color:#dc322f>u32</span><span style=color:#719e07>&gt;</span> <span style=color:#719e07>=</span> <span style=color:#b58900>None</span>;
 </span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, extract_option(s1)); <span style=color:#586e75>// 0
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, extract_option(n1)); <span style=color:#586e75>// 0
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, extract_option(s1)); <span style=color:#586e75>// 0
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, extract_option(n1)); <span style=color:#586e75>// 0
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>I still don't know how to use <code>None</code>, but let's move on.</p><p>Writing exhaustive matches will be boring if we only want to take action for a
 few values. This is why we have <code>other</code>. So, we can write matches like this.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>match</span> user_input {
@@ -1272,32 +1272,32 @@ few values. This is why we have <code>other</code>. So, we can write matches lik
 </span></span></code></pre></div><h2 id=if-let>if let
 <a class=header-link href=#if-let><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Well, this is very confusing!</p><p>Similar to a <code>match</code> but not exhaustive. These two are supposedly the same.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#268bd2>let</span> config_max <span style=color:#719e07>=</span> <span style=color:#b58900>Some</span>(<span style=color:#2aa198>3</span>);
 </span></span><span style=display:flex><span><span style=color:#719e07>match</span> config_max {
-</span></span><span style=display:flex><span>    <span style=color:#b58900>Some</span>(max) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;The maximum is configured to be {}&#34;</span>, max),
+</span></span><span style=display:flex><span>    <span style=color:#b58900>Some</span>(max) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;The maximum is configured to be </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, max),
 </span></span><span style=display:flex><span>    _ <span style=color:#719e07>=&gt;</span> (),
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Because of the <code>let</code>, the value of <code>max</code> will be <code>3u8</code> after the <code>if</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#268bd2>let</span> config_max <span style=color:#719e07>=</span> <span style=color:#b58900>Some</span>(<span style=color:#2aa198>3</span>);
 </span></span><span style=display:flex><span><span style=color:#719e07>if</span> <span style=color:#268bd2>let</span> <span style=color:#b58900>Some</span>(max) <span style=color:#719e07>=</span> config_max {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;The maximum is configured to be {}&#34;</span>, max);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;The maximum is configured to be </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, max);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>This gets more confusing because if we already have a <code>max</code> variable, it will be
 shadowed here.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> config_max <span style=color:#719e07>=</span> <span style=color:#b58900>Some</span>(<span style=color:#2aa198>3</span>);
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> max <span style=color:#719e07>=</span> <span style=color:#2aa198>10</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, max); <span style=color:#586e75>// prints &#34;10&#34;
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, max); <span style=color:#586e75>// prints &#34;10&#34;
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>if</span> <span style=color:#268bd2>let</span> <span style=color:#b58900>Some</span>(max) <span style=color:#719e07>=</span> config_max {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}&#34;</span>, max); <span style=color:#586e75>// prints &#34;3&#34;
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, max); <span style=color:#586e75>// prints &#34;3&#34;
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    }
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, max); <span style=color:#586e75>// prints &#34;10&#34;
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, max); <span style=color:#586e75>// prints &#34;10&#34;
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>I should stop thinking of this as an <code>if</code>. Not sure how I can handle using it
 later when writing Rust. We can also have <code>else</code> here which is like the <code>_</code> in
 match and matches everything else.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> config_max <span style=color:#719e07>=</span> <span style=color:#b58900>Some</span>(<span style=color:#2aa198>3</span>);
 </span></span><span style=display:flex><span>    <span style=color:#719e07>if</span> <span style=color:#268bd2>let</span> <span style=color:#b58900>Some</span>(max) <span style=color:#719e07>=</span> config_max {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}&#34;</span>, max); <span style=color:#586e75>// prints &#34;3&#34;
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, max); <span style=color:#586e75>// prints &#34;3&#34;
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    } <span style=color:#719e07>else</span> {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}&#34;</span>, <span style=color:#2aa198>&#34;not 3&#34;</span>);
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, <span style=color:#2aa198>&#34;not 3&#34;</span>);
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h1 id=chapter-7>Chapter 7
@@ -1558,10 +1558,10 @@ vector elements are destroyed when vector goes out of scope.</p><div class=highl
 </span></span><span style=display:flex><span>    v.push(<span style=color:#2aa198>1</span>);
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> nem <span style=color:#719e07>=</span> v[<span style=color:#2aa198>1</span>];
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;nem = {}&#34;</span>, nem);      <span style=color:#586e75>// 1
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;v[1] = {}&#34;</span>, v[<span style=color:#2aa198>1</span>]);    <span style=color:#586e75>// 1
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;nem = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, nem);      <span style=color:#586e75>// 1
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;v[1] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, v[<span style=color:#2aa198>1</span>]);    <span style=color:#586e75>// 1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> bem <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>v[<span style=color:#2aa198>1</span>];
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;^v[1] = {}&#34;</span>, nem);    <span style=color:#586e75>// 1
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;^v[1] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, nem);    <span style=color:#586e75>// 1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>Using <code>let nem = v[1];</code> is not really a good thing. We are looking at u32 which
 is a fixed-length type and hence it's not moved. Let's try with strings.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
@@ -1571,10 +1571,10 @@ is a fixed-length type and hence it's not moved. Let's try with strings.</p><div
 </span></span><span style=display:flex><span>    v.push(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;1&#34;</span>));
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> nem <span style=color:#719e07>=</span> v[<span style=color:#2aa198>1</span>];             <span style=color:#586e75>// error here
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;nem = {}&#34;</span>, nem);
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;v[1] = {}&#34;</span>, v[<span style=color:#2aa198>1</span>]);
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;nem = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, nem);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;v[1] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, v[<span style=color:#2aa198>1</span>]);
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> bem <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>v[<span style=color:#2aa198>1</span>];
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;^v[1] = {}&#34;</span>, nem);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;^v[1] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, nem);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We get an error because we cannot move and index of a vector (<code>v[1]</code> in this
 case).</p><pre tabindex=0><code>error[E0507]: cannot move out of index of `Vec&lt;String&gt;`
@@ -1592,10 +1592,10 @@ case).</p><pre tabindex=0><code>error[E0507]: cannot move out of index of `Vec&l
 </span></span><span style=display:flex><span>    v.push(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;1&#34;</span>));
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> nem <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>v[<span style=color:#2aa198>1</span>];    <span style=color:#586e75>// borrow instead of move
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;nem = {}&#34;</span>, nem);      <span style=color:#586e75>// nem = 1
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;v[1] = {}&#34;</span>, v[<span style=color:#2aa198>1</span>]);    <span style=color:#586e75>// v[1] = 1
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;nem = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, nem);      <span style=color:#586e75>// nem = 1
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;v[1] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, v[<span style=color:#2aa198>1</span>]);    <span style=color:#586e75>// v[1] = 1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> bem <span style=color:#719e07>=</span> <span style=color:#719e07>&amp;</span>v[<span style=color:#2aa198>1</span>];
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;^v[1] = {}&#34;</span>, nem);    <span style=color:#586e75>// ^v[1] = 1
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;^v[1] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, nem);    <span style=color:#586e75>// ^v[1] = 1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p>With the <code>get</code> method we receive an <code>Option&lt;T></code> (<code>Option&lt;String></code> here).</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> <span style=color:#719e07>mut</span> v: <span style=color:#b58900>Vec</span><span style=color:#719e07>&lt;</span><span style=color:#b58900>String</span><span style=color:#719e07>&gt;</span> <span style=color:#719e07>=</span> <span style=color:#b58900>Vec</span>::new();
@@ -1606,8 +1606,8 @@ case).</p><pre tabindex=0><code>error[E0507]: cannot move out of index of `Vec&l
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> index <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>;
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> v0 <span style=color:#719e07>=</span> v.get(index);
 </span></span><span style=display:flex><span>    <span style=color:#719e07>match</span> v0 {
-</span></span><span style=display:flex><span>        <span style=color:#b58900>Some</span>(value) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;v[{}] = {}&#34;</span>, index, value),    <span style=color:#586e75>// v[0] = 0
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#b58900>None</span> <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;v[{}] = None&#34;</span>, index),
+</span></span><span style=display:flex><span>        <span style=color:#b58900>Some</span>(value) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;v[</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, index, value),    <span style=color:#586e75>// v[0] = 0
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#b58900>None</span> <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;v[</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>] = None&#34;</span>, index),
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>This method is usually better because it returns <code>None</code> if the index is out of
@@ -1620,8 +1620,8 @@ range. We can catch it. E.g., changing <code>index</code> to 10 gives us:</p><di
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> index <span style=color:#719e07>=</span> <span style=color:#2aa198>10</span>;
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> v0 <span style=color:#719e07>=</span> v.get(index);
 </span></span><span style=display:flex><span>    <span style=color:#719e07>match</span> v0 {
-</span></span><span style=display:flex><span>        <span style=color:#b58900>Some</span>(value) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;v[{}] = {}&#34;</span>, index, value),
-</span></span><span style=display:flex><span>        <span style=color:#b58900>None</span> <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;v[{}] = None&#34;</span>, index),    <span style=color:#586e75>// v[10] = None
+</span></span><span style=display:flex><span>        <span style=color:#b58900>Some</span>(value) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;v[</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, index, value),
+</span></span><span style=display:flex><span>        <span style=color:#b58900>None</span> <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;v[</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>] = None&#34;</span>, index),    <span style=color:#586e75>// v[10] = None
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>However, <code>v[10]</code> using the index will panic.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
@@ -1631,7 +1631,7 @@ range. We can catch it. E.g., changing <code>index</code> to 10 gives us:</p><di
 </span></span><span style=display:flex><span>    v.push(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;1&#34;</span>));
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> index <span style=color:#719e07>=</span> <span style=color:#2aa198>10</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;v[{}] = {}&#34;</span>, index, v[index]);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;v[</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>] = </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, index, v[index]);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// thread &#39;main&#39; panicked at &#39;index out of bounds: the len is 2 but the
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// index is 10&#39;, src/main.rs:8:35
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
@@ -1649,7 +1649,7 @@ elements of the vector</strong>.</p><div class=highlight><pre tabindex=0 style=c
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// use the immutable reference &lt;-- error
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#719e07>match</span> immutable_ref {
-</span></span><span style=display:flex><span>        <span style=color:#b58900>Some</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;{}&#34;</span>, val),
+</span></span><span style=display:flex><span>        <span style=color:#b58900>Some</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, val),
 </span></span><span style=display:flex><span>        <span style=color:#b58900>None</span> <span style=color:#719e07>=&gt;</span> (),
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
@@ -1685,7 +1685,7 @@ element is not valid anymore.</p><pre tabindex=0><code>error[E0502]: cannot borr
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// print all elements
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#719e07>for</span> s <span style=color:#719e07>in</span> <span style=color:#719e07>&amp;</span>v {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s);  <span style=color:#586e75>// 00 10
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s);  <span style=color:#586e75>// 00 10
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Because we are iterating over references we need to dereference <code>s</code>. However, we
@@ -1709,8 +1709,8 @@ vector is empty.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;bac
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> <span style=color:#719e07>mut</span> v: <span style=color:#b58900>Vec</span><span style=color:#719e07>&lt;</span><span style=color:#b58900>String</span><span style=color:#719e07>&gt;</span> <span style=color:#719e07>=</span> <span style=color:#b58900>Vec</span>::new();
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    v.push(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;0&#34;</span>));
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, extract_vector_value(v.pop()));  <span style=color:#586e75>// &#34;0&#34;
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, extract_vector_value(v.pop()));  <span style=color:#586e75>// &#34;None&#34;
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, extract_vector_value(v.pop()));  <span style=color:#586e75>// &#34;0&#34;
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, extract_vector_value(v.pop()));  <span style=color:#586e75>// &#34;None&#34;
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>extract_vector_value</span>(s: <span style=color:#b58900>Option</span><span style=color:#719e07>&lt;</span><span style=color:#b58900>String</span><span style=color:#719e07>&gt;</span>) -&gt; <span style=color:#b58900>String</span> {
@@ -1737,21 +1737,21 @@ vector is empty.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;bac
 </span></span></span><span style=display:flex><span><span style=color:#586e75>// append a single character to a String
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>s4.push(<span style=color:#2aa198>&#39;!&#39;</span>);       <span style=color:#586e75>// &#34;Guild Wars 2!&#34;
 </span></span></span></code></pre></div><p>We can also concat String with <code>+</code>. The caveat is that first operand must be a
-<code>String</code> and second must be <code>&str</code> and the result is another <code>String</code>. The first
+<code>String</code> and second must be <code>&amp;str</code> and the result is another <code>String</code>. The first
 operand will be moved, too.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> first <span style=color:#719e07>=</span> <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;Guild Wars&#34;</span>);
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> second <span style=color:#719e07>=</span> <span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34; Rocks!&#34;</span>);
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, first <span style=color:#719e07>+</span> <span style=color:#719e07>&amp;</span>second);    <span style=color:#586e75>// &#34;Guild Wars Rocks!&#34;
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, first <span style=color:#719e07>+</span> <span style=color:#719e07>&amp;</span>second);    <span style=color:#586e75>// &#34;Guild Wars Rocks!&#34;
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// first has been moved and we cannot use it anymore
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
-</span></span></code></pre></div><p>We can also use <code>&String</code> because the compiler can coerce it to <code>&str</code>. Rust
-uses a deref coercion to convert <code>&second</code> to <code>&second[..]</code>. <code>second</code> is not
+</span></span></code></pre></div><p>We can also use <code>&amp;String</code> because the compiler can coerce it to <code>&amp;str</code>. Rust
+uses a deref coercion to convert <code>&amp;second</code> to <code>&amp;second[..]</code>. <code>second</code> is not
 moved.</p><blockquote><p>Rust Strings do not support indexing. We cannot do <code>st[1]</code>.</p></blockquote><blockquote><p><strong>Don't slice Strings</strong>. Depending on how the String is sliced, the return
 value could be different.</p></blockquote><p>We can iterate over String bytes, but each byte might not be a valid char
 depending on the length of each char encoded in UTF-8. E.g., it could be encoded
 in 2 bytes and grabbing the first byte does not give us the actual character.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>for</span> c <span style=color:#719e07>in</span> <span style=color:#2aa198>&#34;whatever&#34;</span>.bytes() {
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{}&#34;</span>, c);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, c);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>It works here because each char in the string above is encoded as one byte in
 UTF-8.</p><h2 id=hashmaps>HashMaps
@@ -1773,7 +1773,7 @@ will be the values.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;
 <a class=header-link href=#hashmaps-and-ownership><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Variable length values will be moved when they are stored in the HashMap.
 HashMaps are also stored on the heap because their size is unknown at compile
 time.</p><h2 id=reading-hashmaps>Reading HashMaps
-<a class=header-link href=#reading-hashmaps><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>We can read the values with <code>.get(&key)</code>. Result is <code>Option&lt;V></code>. <code>Some(value)</code>
+<a class=header-link href=#reading-hashmaps><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>We can read the values with <code>.get(&amp;key)</code>. Result is <code>Option&lt;V></code>. <code>Some(value)</code>
 if the key exists and <code>None</code> if it doesn't.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#719e07>use</span> std::collections::HashMap;
 </span></span><span style=display:flex><span>
@@ -1789,7 +1789,7 @@ if the key exists and <code>None</code> if it doesn't.</p><div class=highlight><
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>print_option</span>(o: <span style=color:#b58900>Option</span><span style=color:#719e07>&lt;&amp;</span><span style=color:#dc322f>i32</span><span style=color:#719e07>&gt;</span>) {
 </span></span><span style=display:flex><span>    <span style=color:#719e07>match</span> o {
-</span></span><span style=display:flex><span>        <span style=color:#b58900>Some</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;{}&#34;</span>, val),
+</span></span><span style=display:flex><span>        <span style=color:#b58900>Some</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, val),
 </span></span><span style=display:flex><span>        <span style=color:#b58900>None</span> <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;None&#34;</span>),
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
@@ -1805,7 +1805,7 @@ to <code>for</code></p><div class=highlight><pre tabindex=0 style=color:#93a1a1;
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> val <span style=color:#719e07>=</span> hm.get(<span style=color:#719e07>&amp;</span><span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key0&#34;</span>));
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>for</span> (k, v) <span style=color:#719e07>in</span> <span style=color:#719e07>&amp;</span>hm {
-</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;{}: {}&#34;</span>, k, v);
+</span></span><span style=display:flex><span>        println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>: </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, k, v);
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=updating-a-hash-map>Updating a Hash Map
@@ -1819,14 +1819,14 @@ Otherwise, it will add the key-value pair.</p><p>Check if a key exists and only 
 </span></span><span style=display:flex><span>    hm.entry(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key0&#34;</span>)).or_insert(<span style=color:#719e07>-</span><span style=color:#2aa198>1</span>);
 </span></span><span style=display:flex><span>    hm.entry(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key1&#34;</span>)).or_insert(<span style=color:#2aa198>1</span>);
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, hm);   <span style=color:#586e75>// {&#34;key0&#34;: 0, &#34;key1&#34;: 1}
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, hm);   <span style=color:#586e75>// {&#34;key0&#34;: 0, &#34;key1&#34;: 1}
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><p><code>entry</code> returns an enum called <code>Entry</code>. For an existing key it looks like this:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#268bd2>let</span> nem <span style=color:#719e07>=</span> hm.entry(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key0&#34;</span>));
 </span></span><span style=display:flex><span>println!({<span style=color:#2aa198>&#34;:?}&#34;</span>, nem);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// Entry(OccupiedEntry { key: &#34;key0&#34;, value: 0, .. })
 </span></span></span></code></pre></div><p>For a non-existing key:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rs data-lang=rs><span style=display:flex><span><span style=color:#268bd2>let</span> bem <span style=color:#719e07>=</span>  hm.entry(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key1&#34;</span>));
-</span></span><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, bem);
+</span></span><span style=display:flex><span>println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, bem);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// Entry(VacantEntry(&#34;key1&#34;))
 </span></span></span></code></pre></div><p><code>or_insert</code> uses the return value of <code>entry</code> to only add the key/value to the
@@ -1842,8 +1842,8 @@ two mutable references to (although different) values in the hashmap.</p><div cl
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> key0 <span style=color:#719e07>=</span> hm.entry(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key0&#34;</span>)).or_insert(<span style=color:#719e07>-</span><span style=color:#2aa198>1</span>);
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> key1 <span style=color:#719e07>=</span> hm.entry(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key1&#34;</span>)).or_insert(<span style=color:#2aa198>1</span>); <span style=color:#586e75>// error!
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, key0);
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, key1);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, key0);
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, key1);
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We will get this error:</p><pre tabindex=0><code>error[E0499]: cannot borrow `hm` as mutable more than once at a time
   --&gt; src/main.rs:8:16
@@ -1862,10 +1862,10 @@ two mutable references to (although different) values in the hashmap.</p><div cl
 </span></span><span style=display:flex><span>    hm.insert(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key0&#34;</span>), <span style=color:#2aa198>0</span>);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> key0 <span style=color:#719e07>=</span> hm.entry(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;key0&#34;</span>)).or_insert(<span style=color:#719e07>-</span><span style=color:#2aa198>1</span>);
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, key0);     <span style=color:#586e75>// 0
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, key0);     <span style=color:#586e75>// 0
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>*</span>key0 <span style=color:#719e07>+=</span> <span style=color:#2aa198>1</span>;
-</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;{:?}&#34;</span>, key0);     <span style=color:#586e75>// 1
+</span></span><span style=display:flex><span>    println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, key0);     <span style=color:#586e75>// 1
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
 </span></span></code></pre></div><h1 id=chapter-9>Chapter 9
 <a class=header-link href=#chapter-9><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><h2 id=panic>panic!
@@ -1892,7 +1892,7 @@ errors.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-c
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>let</span> f <span style=color:#719e07>=</span> <span style=color:#719e07>match</span> f {
 </span></span><span style=display:flex><span>        <span style=color:#b58900>Ok</span>(file) <span style=color:#719e07>=&gt;</span> file,
-</span></span><span style=display:flex><span>        <span style=color:#b58900>Err</span>(error) <span style=color:#719e07>=&gt;</span> panic!(<span style=color:#2aa198>&#34;Problem opening the file: {:?}&#34;</span>, error),
+</span></span><span style=display:flex><span>        <span style=color:#b58900>Err</span>(error) <span style=color:#719e07>=&gt;</span> panic!(<span style=color:#2aa198>&#34;Problem opening the file: </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, error),
 </span></span><span style=display:flex><span>    };
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>The code will attempt to open a file. With success, a handle to the file is
@@ -1912,11 +1912,11 @@ error. For other errors we will just panic.</p><div class=highlight><pre tabinde
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>            <span style=color:#586e75>// if file doesn&#39;t exist, create it
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>            ErrorKind::NotFound <span style=color:#719e07>=&gt;</span> <span style=color:#719e07>match</span> File::create(<span style=color:#2aa198>&#34;hello.txt&#34;</span>) {
 </span></span><span style=display:flex><span>                <span style=color:#b58900>Ok</span>(fc) <span style=color:#719e07>=&gt;</span> fc,   <span style=color:#586e75>// new file was created successfully
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>                <span style=color:#b58900>Err</span>(e) <span style=color:#719e07>=&gt;</span> panic!(<span style=color:#2aa198>&#34;Problem creating the file: {:?}&#34;</span>, e), <span style=color:#586e75>// creating a new file failed
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>                <span style=color:#b58900>Err</span>(e) <span style=color:#719e07>=&gt;</span> panic!(<span style=color:#2aa198>&#34;Problem creating the file: </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, e), <span style=color:#586e75>// creating a new file failed
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>            },
 </span></span><span style=display:flex><span>            <span style=color:#586e75>// all other errors
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>            other_error <span style=color:#719e07>=&gt;</span> {
-</span></span><span style=display:flex><span>                panic!(<span style=color:#2aa198>&#34;Problem opening the file: {:?}&#34;</span>, other_error)
+</span></span><span style=display:flex><span>                panic!(<span style=color:#2aa198>&#34;Problem opening the file: </span><span style=color:#2aa198>{:?}</span><span style=color:#2aa198>&#34;</span>, other_error)
 </span></span><span style=display:flex><span>            }
 </span></span><span style=display:flex><span>        },
 </span></span><span style=display:flex><span>    };
@@ -1947,18 +1947,18 @@ default one.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgro
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>fn</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    <span style=color:#719e07>match</span> string_to_boolean(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;true&#34;</span>)) { <span style=color:#586e75>// &#34;it&#39;s true&#34;
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#b58900>Ok</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;it&#39;s {}&#34;</span>, val),
-</span></span><span style=display:flex><span>        <span style=color:#b58900>Err</span>(s) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s),
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#b58900>Ok</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;it&#39;s </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, val),
+</span></span><span style=display:flex><span>        <span style=color:#b58900>Err</span>(s) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s),
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>match</span> string_to_boolean(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;FALse&#34;</span>)) { <span style=color:#586e75>// &#34;it&#39;s false&#34;
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#b58900>Ok</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;it&#39;s {}&#34;</span>, val),
-</span></span><span style=display:flex><span>        <span style=color:#b58900>Err</span>(s) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s),
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#b58900>Ok</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;it&#39;s </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, val),
+</span></span><span style=display:flex><span>        <span style=color:#b58900>Err</span>(s) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s),
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>match</span> string_to_boolean(<span style=color:#b58900>String</span>::from(<span style=color:#2aa198>&#34;trueee&#34;</span>)) { <span style=color:#586e75>// &#34;not boolean&#34;
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#b58900>Ok</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;it&#39;s {}&#34;</span>, val),
-</span></span><span style=display:flex><span>        <span style=color:#b58900>Err</span>(s) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;{}&#34;</span>, s),
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#b58900>Ok</span>(val) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;it&#39;s </span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, val),
+</span></span><span style=display:flex><span>        <span style=color:#b58900>Err</span>(s) <span style=color:#719e07>=&gt;</span> println!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, s),
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
@@ -2031,13 +2031,13 @@ macros. File paths must be relative to the file. E.g., if we're inside
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// read a file as binary.
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#268bd2>let</span> binary_file <span style=color:#719e07>=</span> include_bytes!(<span style=color:#2aa198>&#34;binary.file&#34;</span>);
-</span></span><span style=display:flex><span>    print!(<span style=color:#2aa198>&#34;{}&#34;</span>, <span style=color:#b58900>String</span>::from_utf8_lossy(bytes));
+</span></span><span style=display:flex><span>    print!(<span style=color:#2aa198>&#34;</span><span style=color:#2aa198>{}</span><span style=color:#2aa198>&#34;</span>, <span style=color:#b58900>String</span>::from_utf8_lossy(bytes));
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>These macros read single files and do not allow embedding a directory like a
-file system unlike Golang :(.</p><h2 id=convert-vecstring-to-vecstr>Convert Vec<string> to Vec&lt;&str>
+file system unlike Golang :(.</p><h2 id=convert-vecstring-to-vecstr>Convert Vec<string> to Vec&lt;&amp;str>
 <a class=header-link href=#convert-vecstring-to-vecstr><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust><span style=display:flex><span><span style=color:#586e75>// string_vec: Vec&lt;String&gt;
 </span></span></span><span style=display:flex><span><span style=color:#586e75>// str_vec: Vec&lt;&amp;str&gt;
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>let</span> str_vec <span style=color:#719e07>=</span> string_vec.iter().map(<span style=color:#719e07>|</span>s<span style=color:#719e07>|</span> s.as_str()).collect();
 </span></span></code></pre></div></div><footer><p class=meta><span class=categories>Tags:
-<a class=category href=https://parsiya.io/tags/rust>Rust</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#learning-rust>Learning Rust</a></li><li><a href=#chapter-1>Chapter 1</a></li><li><a href=#chapter-2>Chapter 2</a><ul><li><a href=#dependencies>Dependencies</a></li><li><a href=#adding-a-loop>Adding a Loop</a></li><li><a href=#handling-invalid-input>Handling Invalid Input</a></li></ul></li><li><a href=#chapter-3>Chapter 3</a><ul><li><a href=#mutability>Mutability</a></li><li><a href=#constants>Constants</a></li><li><a href=#shadowing>Shadowing</a></li><li><a href=#integers>Integers</a></li><li><a href=#floating-point>Floating Point</a></li><li><a href=#numeric-operations>Numeric Operations</a></li><li><a href=#boolean>Boolean</a></li><li><a href=#character-type>Character Type</a></li><li><a href=#tuple>Tuple</a></li><li><a href=#array>Array</a></li><li><a href=#string-literals>String Literals</a></li><li><a href=#functions>Functions</a></li><li><a href=#if-else>if-else</a></li><li><a href=#loop>loop</a></li><li><a href=#while>while</a></li><li><a href=#loop-through-collections-with-for>Loop Through Collections with for</a></li></ul></li><li><a href=#chapter-4>Chapter 4</a><ul><li><a href=#ownership-rules>Ownership Rules</a></li><li><a href=#the-string-type>The String Type</a></li><li><a href=#move>Move</a></li><li><a href=#clone>Clone</a></li><li><a href=#copy>Copy</a></li><li><a href=#ownership-and-functions>Ownership and Functions</a></li><li><a href=#references>References</a></li><li><a href=#mutable-references>Mutable References</a></li><li><a href=#reference-scope>Reference Scope</a></li><li><a href=#dangling-reference>Dangling Reference</a></li><li><a href=#the-slice-type>The Slice Type</a></li><li><a href=#string-slice>String Slice</a></li><li><a href=#other-slices>Other Slices</a></li></ul></li><li><a href=#chapter-5>Chapter 5</a><ul><li><a href=#structs>Structs</a></li><li><a href=#field-init-shorthand>Field Init Shorthand</a></li><li><a href=#struct-update-syntax>Struct Update Syntax</a></li><li><a href=#tuple-structs>Tuple Structs</a></li><li><a href=#unit-like-structs>Unit-Like Structs</a></li><li><a href=#derived-traits>Derived Traits</a></li><li><a href=#the-dbg-macro>The dbg Macro</a></li><li><a href=#methods>Methods</a></li><li><a href=#automatic-referencing-and-dereferencing>Automatic Referencing and Dereferencing</a></li><li><a href=#associated-functions>Associated Functions</a></li></ul></li><li><a href=#chapter-6>Chapter 6</a><ul><li><a href=#define-an-enum>Define an Enum</a></li><li><a href=#enum-methods-and-match>Enum Methods and match</a></li><li><a href=#option-enum>Option Enum</a></li><li><a href=#matching-with-optiont>Matching with Option<t></a></li><li><a href=#if-let>if let</a></li></ul></li><li><a href=#chapter-7>Chapter 7</a><ul><li><a href=#packages--crates>Packages & Crates</a></li><li><a href=#modules>Modules</a></li><li><a href=#paths>Paths</a></li><li><a href=#rusts-privacy-boundary>Rust's Privacy Boundary</a></li><li><a href=#super>Super</a></li><li><a href=#public-structs>Public Structs</a></li><li><a href=#public-enums>Public Enums</a></li><li><a href=#the-use-keyword>The use Keyword</a></li><li><a href=#pub-use>pub use</a></li><li><a href=#nested-paths-in-use>Nested Paths in use</a></li><li><a href=#modules-in-different-files>Modules in Different Files</a></li></ul></li><li><a href=#chapter-8>Chapter 8</a><ul><li><a href=#vectors>Vectors</a></li><li><a href=#read-vector-values>Read Vector Values</a></li><li><a href=#iterate-over-vector-elements>Iterate over Vector Elements</a></li><li><a href=#using-an-enum-to-store-multiple-types>Using an Enum to Store Multiple Types</a></li><li><a href=#remove-vector-values>Remove Vector Values</a></li><li><a href=#strings>Strings</a></li><li><a href=#hashmaps>HashMaps</a></li><li><a href=#hashmaps-and-ownership>HashMaps and Ownership</a></li><li><a href=#reading-hashmaps>Reading HashMaps</a></li><li><a href=#iterating-over-the-hashmap>Iterating over the HashMap</a></li><li><a href=#updating-a-hash-map>Updating a Hash Map</a></li></ul></li><li><a href=#chapter-9>Chapter 9</a><ul><li><a href=#panic>panic!</a></li><li><a href=#recoverable-errors>Recoverable Errors</a></li><li><a href=#matching-on-different-errors>Matching on Different Errors</a></li><li><a href=#unwrap-and-expect>unwrap and expect</a></li><li><a href=#propagating-errors>Propagating Errors</a></li><li><a href=#shortcut-for-propagating-errors>Shortcut for Propagating Errors</a></li></ul></li><li><a href=#misc>Misc</a><ul><li><a href=#type-alias>Type Alias</a></li><li><a href=#extension-trait>Extension Trait</a></li><li><a href=#import-an-adjacent-module>Import an Adjacent Module</a></li><li><a href=#crate-level-pub>Crate Level Pub</a></li><li><a href=#embed-files-in-the-binary>Embed Files in the Binary</a></li><li><a href=#convert-vecstring-to-vecstr>Convert Vec<string> to Vec&lt;&str></a></li></ul></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2023 Parsia-Clone - <a href=https://parsiya.io/license/>License</a> -
+<a class=category href=https://parsiya.io/tags/rust>Rust</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#learning-rust>Learning Rust</a></li><li><a href=#chapter-1>Chapter 1</a></li><li><a href=#chapter-2>Chapter 2</a><ul><li><a href=#dependencies>Dependencies</a></li><li><a href=#adding-a-loop>Adding a Loop</a></li><li><a href=#handling-invalid-input>Handling Invalid Input</a></li></ul></li><li><a href=#chapter-3>Chapter 3</a><ul><li><a href=#mutability>Mutability</a></li><li><a href=#constants>Constants</a></li><li><a href=#shadowing>Shadowing</a></li><li><a href=#integers>Integers</a></li><li><a href=#floating-point>Floating Point</a></li><li><a href=#numeric-operations>Numeric Operations</a></li><li><a href=#boolean>Boolean</a></li><li><a href=#character-type>Character Type</a></li><li><a href=#tuple>Tuple</a></li><li><a href=#array>Array</a></li><li><a href=#string-literals>String Literals</a></li><li><a href=#functions>Functions</a></li><li><a href=#if-else>if-else</a></li><li><a href=#loop>loop</a></li><li><a href=#while>while</a></li><li><a href=#loop-through-collections-with-for>Loop Through Collections with for</a></li></ul></li><li><a href=#chapter-4>Chapter 4</a><ul><li><a href=#ownership-rules>Ownership Rules</a></li><li><a href=#the-string-type>The String Type</a></li><li><a href=#move>Move</a></li><li><a href=#clone>Clone</a></li><li><a href=#copy>Copy</a></li><li><a href=#ownership-and-functions>Ownership and Functions</a></li><li><a href=#references>References</a></li><li><a href=#mutable-references>Mutable References</a></li><li><a href=#reference-scope>Reference Scope</a></li><li><a href=#dangling-reference>Dangling Reference</a></li><li><a href=#the-slice-type>The Slice Type</a></li><li><a href=#string-slice>String Slice</a></li><li><a href=#other-slices>Other Slices</a></li></ul></li><li><a href=#chapter-5>Chapter 5</a><ul><li><a href=#structs>Structs</a></li><li><a href=#field-init-shorthand>Field Init Shorthand</a></li><li><a href=#struct-update-syntax>Struct Update Syntax</a></li><li><a href=#tuple-structs>Tuple Structs</a></li><li><a href=#unit-like-structs>Unit-Like Structs</a></li><li><a href=#derived-traits>Derived Traits</a></li><li><a href=#the-dbg-macro>The dbg Macro</a></li><li><a href=#methods>Methods</a></li><li><a href=#automatic-referencing-and-dereferencing>Automatic Referencing and Dereferencing</a></li><li><a href=#associated-functions>Associated Functions</a></li></ul></li><li><a href=#chapter-6>Chapter 6</a><ul><li><a href=#define-an-enum>Define an Enum</a></li><li><a href=#enum-methods-and-match>Enum Methods and match</a></li><li><a href=#option-enum>Option Enum</a></li><li><a href=#matching-with-optiont>Matching with Option<t></a></li><li><a href=#if-let>if let</a></li></ul></li><li><a href=#chapter-7>Chapter 7</a><ul><li><a href=#packages--crates>Packages & Crates</a></li><li><a href=#modules>Modules</a></li><li><a href=#paths>Paths</a></li><li><a href=#rusts-privacy-boundary>Rust's Privacy Boundary</a></li><li><a href=#super>Super</a></li><li><a href=#public-structs>Public Structs</a></li><li><a href=#public-enums>Public Enums</a></li><li><a href=#the-use-keyword>The use Keyword</a></li><li><a href=#pub-use>pub use</a></li><li><a href=#nested-paths-in-use>Nested Paths in use</a></li><li><a href=#modules-in-different-files>Modules in Different Files</a></li></ul></li><li><a href=#chapter-8>Chapter 8</a><ul><li><a href=#vectors>Vectors</a></li><li><a href=#read-vector-values>Read Vector Values</a></li><li><a href=#iterate-over-vector-elements>Iterate over Vector Elements</a></li><li><a href=#using-an-enum-to-store-multiple-types>Using an Enum to Store Multiple Types</a></li><li><a href=#remove-vector-values>Remove Vector Values</a></li><li><a href=#strings>Strings</a></li><li><a href=#hashmaps>HashMaps</a></li><li><a href=#hashmaps-and-ownership>HashMaps and Ownership</a></li><li><a href=#reading-hashmaps>Reading HashMaps</a></li><li><a href=#iterating-over-the-hashmap>Iterating over the HashMap</a></li><li><a href=#updating-a-hash-map>Updating a Hash Map</a></li></ul></li><li><a href=#chapter-9>Chapter 9</a><ul><li><a href=#panic>panic!</a></li><li><a href=#recoverable-errors>Recoverable Errors</a></li><li><a href=#matching-on-different-errors>Matching on Different Errors</a></li><li><a href=#unwrap-and-expect>unwrap and expect</a></li><li><a href=#propagating-errors>Propagating Errors</a></li><li><a href=#shortcut-for-propagating-errors>Shortcut for Propagating Errors</a></li></ul></li><li><a href=#misc>Misc</a><ul><li><a href=#type-alias>Type Alias</a></li><li><a href=#extension-trait>Extension Trait</a></li><li><a href=#import-an-adjacent-module>Import an Adjacent Module</a></li><li><a href=#crate-level-pub>Crate Level Pub</a></li><li><a href=#embed-files-in-the-binary>Embed Files in the Binary</a></li><li><a href=#convert-vecstring-to-vecstr>Convert Vec<string> to Vec&lt;&amp;str></a></li></ul></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2023 Parsia-Clone - <a href=https://parsiya.io/license/>License</a> -
 <span class=credit>Powered by <a target=_blank href=https://gohugo.io rel="noopener noreferrer">Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/ rel="noopener noreferrer">Hugo-Octopress</a> theme.</p></footer></body></html>
