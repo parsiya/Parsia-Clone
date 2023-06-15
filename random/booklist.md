@@ -314,5 +314,16 @@ slowed down by a lot because I had access to fast internet.
 * Bunch, Chris & Cole, Allan - Sten 01 - Sten (3rd Time)	14 Sep 2022  2317
 * Bunch, Chris & Cole, Allan - Sten 02 - The Wolf Worlds (3rd Time)	19 Sep 2022  2053
 * Drake, David - Redliners (4th Time)   01 Oct 2022  0323
+
+Got a membership card from the local public library and started borrowing books.
+Surprisingly, they had a ton of SciFi books.
+
 * Egan, Greg - Zendegi - Jan 2023
-* Clarke, Neil - Galactic Empires - 16 May 2023
+* Clarke, Neil - Galactic Empires (Anthology) - 16 May 2023
+* Ruocchio, Christopher - Sword and Planet (Anthology) - 24 May 2023  1500
+* Leckie, Ann - Imperial Radch 01 - Ancillary Justice - 30 May 2023  0047
+* Anderson, Kevin - Saga of the Seven Suns 01 - Hidden Empire - 04 June 2023  1801
+* Cline, Ernest - Ready Player Two - 07 June 2023  2100
+* Scalzi, John - The Dispatcher - 08 June 2023  0845
+* Scalzi, John - The Dispatcher, Murder by Other Means - 10 June 2023  2130
+* Cordova, Jason - Chicks in Tank Tops (Anthology) - 14 June 2023  0919
