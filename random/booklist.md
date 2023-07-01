@@ -315,8 +315,8 @@ slowed down by a lot because I had access to fast internet.
 * Bunch, Chris & Cole, Allan - Sten 02 - The Wolf Worlds (3rd Time)	19 Sep 2022  2053
 * Drake, David - Redliners (4th Time)   01 Oct 2022  0323
 
-Got a membership card from the local public library and started borrowing books.
-Surprisingly, they had a ton of SciFi books.
+Started borrowing books from the local public library. Surprisingly, they have a
+ton of SciFi books.
 
 * Egan, Greg - Zendegi - Jan 2023
 * Clarke, Neil - Galactic Empires (Anthology) - 16 May 2023
@@ -327,3 +327,7 @@ Surprisingly, they had a ton of SciFi books.
 * Scalzi, John - The Dispatcher - 08 June 2023  0845
 * Scalzi, John - The Dispatcher, Murder by Other Means - 10 June 2023  2130
 * Cordova, Jason - Chicks in Tank Tops (Anthology) - 14 June 2023  0919
+* Ruocchio, Christopher & Korsgaard, Sean CW - Worlds Long Lost (Anthology) - 16 June 2023  2245
+* Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 19 June 2023  0002
+* Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF (Anthology) - 01 July 2023  1405
+* 
