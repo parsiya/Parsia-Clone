@@ -330,4 +330,5 @@ ton of SciFi books.
 * Ruocchio, Christopher & Korsgaard, Sean CW - Worlds Long Lost (Anthology) - 16 June 2023  2245
 * Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 19 June 2023  0002
 * Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF (Anthology) - 01 July 2023  1405
-* 
+* Williamson, Michael Z. - Freehold 07 - Angleeyes - 05 July 2023  0125
+* Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 15 July 2023  1220
