@@ -332,3 +332,4 @@ ton of SciFi books.
 * Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF (Anthology) - 01 July 2023  1405
 * Williamson, Michael Z. - Freehold 07 - Angleeyes - 05 July 2023  0125
 * Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 15 July 2023  1220
+* Rusch, Kristin K. - Women of Futures Past: Classic Stories - 16 July 2023  1301
