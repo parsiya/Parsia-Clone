@@ -333,3 +333,4 @@ ton of SciFi books.
 * Williamson, Michael Z. - Freehold 07 - Angleeyes - 05 July 2023  0125
 * Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 15 July 2023  1220
 * Rusch, Kristin K. - Women of Futures Past: Classic Stories - 16 July 2023  1301
+* Gannon, Charles E., Barber, Griffin, Kennedy, Chris, & Massa, Mike - Tales of the Terran Republic - Mission Critical - 21 July 2023  0928
