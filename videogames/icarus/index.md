@@ -12,9 +12,14 @@ wip: true
 
 Icarus ([Steam link][icarus-steam]) is a session-based survival game. You have
 to start from scratch in every session. There are some workshop items that you
-can buy and take with you (up to 15 items) that make the startup much faster.
+can buy and take with you that make the startup much faster.
 
 [icarus-steam]: https://store.steampowered.com/app/1149460/ICARUS/
+
+**Note:** Some of these are outdated since I wrote them. I returned to the game
+in 2023 and a lot of things have changed. For example, you need to use an
+`Orbital Exchange Interface` to return exotics to orbit. If you try to take them
+with you the old fashioned way, they will disappear.
 
 # Good Workshop items
 Note there are two costs associated with each workshop item. First we need to
@@ -61,7 +66,7 @@ Great website at https://icarusintel.com. Choose the `filter` icon (2nd from the
 top) and then select the map and mission to get the info including the location
 of caves (and their rank) along with possible location of veins.
 
-![icarusintel.com](01-icarus-intel.png)
+![icarusintel.com](01-icarus-intel.jpg)
 
 # Routine for Tech Up Missions
 These are missions where I usually need to tech up to a certain tier or I am
@@ -160,7 +165,7 @@ not the Exotic amount from the vein.
 1. Drop the workshop Radar on a ledge. This way the animals cannot reach the
    radar. They will stop aggroing when the scans complete and you can pick them
    off one-by-one.
-   ![Yeast and Radar location for PayDay Extraction](02-payday1.png)
+   ![Yeast and Radar location for PayDay Extraction](02-payday1.jpg)
 2. Scan the area to see if the vein is in J14.
 3. If the scan results contain both the veins in J11 and J14, it's almost always J14.
     1. If the result is J11 or I10, it's almost always very obvious.
@@ -169,10 +174,10 @@ not the Exotic amount from the vein.
    Yeast near the entry into the ledge (see the image above).
 6. If J14, run to the star cave at K14. Mine Silica, Sulfur and Oxite on the way.
 7. If you did not harvest Yeast, there's some by the South the lake in L11.
-   ![More Yeast in Payday Extraction](03-payday2.png)
+   ![More Yeast in Payday Extraction](03-payday2.jpg)
 8. I do most of my building in the start cave in K14.
     1. As you can see, there are multiple caves around if we need more mats (usually gold).
-    ![payday extraction target cave](04-payday3.png)
+    ![payday extraction target cave](04-payday3.jpg)
 9.  If you need to run to the one at the edge of J14, it's a good idea to craft
    the shelter at the Masonry Bench and take it with you to drop it by the vein
    on the way.
@@ -241,7 +246,7 @@ landing.
 4. Go to the star cave in C3 to build up. The star cave in C2 is a backup for
    bad RNG (e.g., not enough of a certain node like Gold).
    1. Another option is the star cave in E3 with three move backup caves.
-   ![Spirit Walk tech up options](05-spirit-walk1.png)
+   ![Spirit Walk tech up options](05-spirit-walk1.jpg)
 5. Build up to these:
     1. Fabricator
     2. Biofuel Generator
@@ -302,9 +307,17 @@ I usually do it to farm Ren. At Hard with Hardcore it pays 400 Ren and usually
 takes me around 45-50 minutes. Bring the workshop Furnace, no need for the
 radar.
 
+I started using the [wzg-icarus-balance-overhaul][mod] mod to reduce the grind.
+Note sure if it's the mod or things have changed, but the workshop furnace can
+melt gold so we don't have to build the tier 3 table, cement mixer and concrete
+furnace.
+
+[mod]: https://github.com/WZG-Mods/wzg-icarus-balance-overhaul
+
+
 1. If near the lake, drink.
 2. Go up towards the cave in N10 and parallel to the cliffs. Make bow and arrows.
-   ![Homestead map](06-homestead.png)
+   ![Homestead map](06-homestead.jpg)
 3. If the cave at the edge of O11 is open, take a peak and mine 20 Gold ores if you see a node.
     1. This is to make sure you have enough ore for the two statues.
 4. Kill some wildlife, enough to make two `Rustic Beds`.
@@ -357,6 +370,11 @@ radar.
 16. Run back to the pod and check you have everything with you.
 17. Lift off.
 
+## Strange Harvest Map
+I had a lot of trouble finding the flower (the top area) so here it is.
+
+![strange harvest map](07-strange-harvest.jpg)
+
 # Hotbar Slots
 I usually have them in this order:
 
@@ -371,3 +389,30 @@ Everything else after this is fluid. Sometimes I make a stone pickaxe to open en
 Ctrl+clicking an item in the inventory while not interacting with an appliance
 (e.g., crafting bench) will put it into the hotbar. This is useful for placing
 items. Ctrl+clicking the hotbar item to put it in your inventory.
+
+# Repair Workshop Items in Orbit
+They do not get repaired automatically anymore. Right-click on them in the
+loadout screen in orbit and repair them for 10 ren each. Pretty cheap.
+
+# Editing Credits and Exotics
+Save file is in `%appdata%\Local\Icarus\Saved\PlayerData\[id]\Profile.json`. See
+the `MetaResources` key.
+
+```json
+"MetaResources": [
+    {
+        "MetaRow": "Refund",
+        "Count": 30
+    },
+    {
+        "MetaRow": "Exotic1",
+        "Count": 1
+    },
+    {
+        "MetaRow": "Credits",
+        "Count": 50
+    }
+],
+```
+
+If a key doesn't exist (e.g., you don't have any exotics), just create it.

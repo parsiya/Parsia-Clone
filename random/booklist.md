@@ -334,3 +334,5 @@ ton of SciFi books.
 * Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 15 July 2023  1220
 * Rusch, Kristin K. - Women of Futures Past: Classic Stories - 16 July 2023  1301
 * Gannon, Charles E., Barber, Griffin, Kennedy, Chris, & Massa, Mike - Tales of the Terran Republic - Mission Critical - 21 July 2023  0928
+* Cambias, James L. - Billion Worlds 01 - The Godel Operation - 05 Aug 2023  1019
+* Cambias, James L. - Billion Worlds 02 - The Scarab Mission - 06 Aug 2023  2234
