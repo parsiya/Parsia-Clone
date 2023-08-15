@@ -16,7 +16,8 @@ The local public library uses the bibliocommons platform. I've started adding
 short reviews for each of the books I've read. You can see most of them them at
 the bottom of the [book list](booklist.md).
 
-The titles are "[author last, first] - [book name] - [finished timestamp] - [score/5]".
+The titles are
+"[author last, first] - [series (if any)] - [book name] - [finished timestamp] - [score/5]".
 
 ## Egan, Greg - Zendegi - Jan 2023 - 5/5
 Disclosure: I was born and raised in Iran. I liked the book and especially the
