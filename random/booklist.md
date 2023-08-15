@@ -6,9 +6,9 @@ categories:
 - Random
 tags:
 - books
-title: "Old Book List"
+title: "Book List"
 wip: false
-snippet: "I used to keep track of books I had read and the time I finished them."
+snippet: "I keep track of (most) books I read and the time I finish them."
 
 ---
 
@@ -320,6 +320,7 @@ ton of SciFi books.
 
 * Egan, Greg - Zendegi - Jan 2023
 * Clarke, Neil - Galactic Empires (Anthology) - 16 May 2023
+* Drake, David & Stirling, S. M. - The General 01-02 - Warlord - 20 May 2023  2215
 * Ruocchio, Christopher - Sword and Planet (Anthology) - 24 May 2023  1500
 * Leckie, Ann - Imperial Radch 01 - Ancillary Justice - 30 May 2023  0047
 * Anderson, Kevin - Saga of the Seven Suns 01 - Hidden Empire - 04 June 2023  1801
@@ -331,8 +332,10 @@ ton of SciFi books.
 * Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 19 June 2023  0002
 * Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF (Anthology) - 01 July 2023  1405
 * Williamson, Michael Z. - Freehold 07 - Angleeyes - 05 July 2023  0125
+* Monae, Janelle - The Memory Librarian: And Other Stories of Dirty Computer - 08 July 2023  0130
 * Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 15 July 2023  1220
 * Rusch, Kristin K. - Women of Futures Past: Classic Stories - 16 July 2023  1301
 * Gannon, Charles E., Barber, Griffin, Kennedy, Chris, & Massa, Mike - Tales of the Terran Republic - Mission Critical - 21 July 2023  0928
 * Cambias, James L. - Billion Worlds 01 - The Godel Operation - 05 Aug 2023  1019
 * Cambias, James L. - Billion Worlds 02 - The Scarab Mission - 06 Aug 2023  2234
+* Cambias, James L. - Arkad's World - 14 Aug 2023  1114
