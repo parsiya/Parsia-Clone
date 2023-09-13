@@ -339,3 +339,5 @@ ton of SciFi books.
 * Cambias, James L. - Billion Worlds 01 - The Godel Operation - 05 Aug 2023  1019
 * Cambias, James L. - Billion Worlds 02 - The Scarab Mission - 06 Aug 2023  2234
 * Cambias, James L. - Arkad's World - 14 Aug 2023  1114
+* Scalzi, John - The Kaiju Preservation Society - 26 Aug 2023  1844
+* Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 01 Sep 2023  1527
