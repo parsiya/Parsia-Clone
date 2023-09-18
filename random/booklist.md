@@ -341,3 +341,4 @@ ton of SciFi books.
 * Cambias, James L. - Arkad's World - 14 Aug 2023  1114
 * Scalzi, John - The Kaiju Preservation Society - 26 Aug 2023  1844
 * Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 01 Sep 2023  1527
+* Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 16 Sep 2023  1726

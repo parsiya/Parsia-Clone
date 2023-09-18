@@ -279,7 +279,32 @@ I especially liked how the author had devised a sort of distinctive grammar and
 sentence structure in English for the each species' usage of the planet's
 "common tongue" language. My favorite is the Itooti's usage of adjectives based
 on the tone of the conversation. E.g., "Curious [Name] wants to know why flimsy
-looking aliens [refering to humans] are in civilized [city name]."
+looking aliens [referring to humans] are in civilized [city name]."
 
 Some cons: 2 of the 4 main humans are stock characters and they did not have a
 lot of development. A couple of loose ends are not tied.
+
+## Scalzi, John - The Kaiju Preservation Society - 26 Aug 2023  1844 - 3/5
+It's an entertaining read. Scalzi is honest about writing science fiction that
+sells. I cannot really argue with that, as artists need to eat, too.
+
+## Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 01 Sep 2023  1527 - 4/5
+Book 3 of the "Saga of the Seven Suns." In the honored tradition of such a big
+space saga, we will be keeping up with dozens of "main" characters. I like how
+some of the characters are being developed (e.g., the king) and how the Ildiran
+society is challenged.
+
+## Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 16 Sep 2023  1726 - 4/5
+I liked most of the stories.
+
+I didn't like "Temporary Embarrassment in Spacetime", "Infinite Love Engine",
+"Dragon That Flew Out of the Sun", and "Diamond and the World Breaker."
+
+My favorites:
+
+- "The Deckhand, the Nova Blade, and the Thrice-Sung Texts": Story of a reluctant hero told through diary logs.
+- "Frost Giant's Data": Cyberpunk infiltration of a security planetoid.
+- "Chameleon's Gloves": What makes us human?
+- "The Sighted Watchmaker": Why has our creator left?
+- "Zen and the Art of Starship Maintenance" and "Unfamiliar Gods": Variations of "Monkey's Paw."
+- "Seven Wonders of a Once and Future World": Time is a flat circle.
