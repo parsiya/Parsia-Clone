@@ -19,7 +19,7 @@ the bottom of the [book list](booklist.md).
 The titles are
 "[author last, first] - [series (if any)] - [book name] - [finished timestamp] - [score/5]".
 
-## Egan, Greg - Zendegi - Jan 2023 - 5/5
+## Egan, Greg - Zendegi - 5/5
 Disclosure: I was born and raised in Iran. I liked the book and especially the
 parts related to Shahnameh. Not all the Farsi/Persian words used in the book
 (mostly in conversations) were translated. I think non-native speakers would
@@ -29,13 +29,13 @@ elements.
 
 [galactic-empires]: https://www.goodreads.com/book/show/32333734-galactic-empires
 
-## Clarke, Neil - Galactic Empires (Anthology) - 16 May 2023 - 4/5
+## Clarke, Neil - Galactic Empires (Anthology) - 4/5
 Nice collection of stories. I love anthologies because if I cannot connect with
 a story after a few pages, I can move to the next story. Fortunately, this only
 happened twice with this book (doesn't mean those stories are bad, I just didn't
 like them).
 
-## Drake, David & Stirling, S. M. - The General 01-02 - Warlord - 20 May 2023  2215 - 2/5
+## Drake, David & Stirling, S. M. - The General 01-02 - Warlord - 2/5
 The first two books of the Raj Whitehall or General series. I only finished the
 book because I love [David Drake][david-drake]. I didn't like the very
 monotonous battles. I guess I am more of a [Hammer's Slammers][slammers] fan
@@ -49,19 +49,19 @@ Not enough action in the collection of short stories.
 
 [freehold]: https://en.wikipedia.org/wiki/Freehold_(novel)
 
-## Ruocchio, Christopher - Sword and Planet (Anthology) - 24 May 2023  1500 - 5/5
+## Ruocchio, Christopher - Sword and Planet (Anthology) - 5/5
 Good collection of short stories at the intersection of Sci-Fi and Fantasy. I
 enjoyed reading all of them. This is a sub-genre that I need to explore more.
 Cyborgs in a fantasy setting? Sign me up.
 
-## Leckie, Ann - Imperial Radch 01 - Ancillary Justice - 30 May 2023  0047 - 3/5
+## Leckie, Ann - Imperial Radch 01 - Ancillary Justice - 3/5
 I enjoyed the book. It has won a laundry list of prestigious awards. While I
 loved the main character, the world building took most of the book. It's as-if
 the book was written with the intention of being the first in a series. I did
-not excite me for the second book (as of August 2023 I've not continued the
+not excite me for the second book (as of September 2023 I've not continued the
 series, yet).
 
-## Anderson, Kevin - Saga of the Seven Suns 01 - Hidden Empire - 04 June 2023  1801 - 4/5
+## Anderson, Kevin - Saga of the Seven Suns 01 - Hidden Empire - 4/5
 Book first in the [Saga of the Seven Suns][seven-suns] series. Most of this book
 is world building. This might get boring There are a ton of characters,
 factions, and plots. If you like vast space operas, this is the series for you.
@@ -73,7 +73,7 @@ Think of this as the Sci-Fi equivalent of [Wheel of Time][wot] series.
 [seven-suns]: https://en.wikipedia.org/wiki/The_Saga_of_Seven_Suns
 [wot]: https://en.wikipedia.org/wiki/The_Wheel_of_Time
 
-## Cline, Ernest - Ready Player Two - 07 June 2023  2100 - 0/5
+## Cline, Ernest - Ready Player Two - 0/5
 Oh God, where do I start? Even being a fan of "main character transported to
 virtual/parallel/fantasy worlds" (or Isekai if you're an anime fan), I did not
 like the first book (Ready Player One).
@@ -89,8 +89,8 @@ are very simple. Most of them are handwaved with "I have already done a series
 of activities on this planet and have this thingamajig that solves it." At least
 3 of them where unnecessary.
 
-## Scalzi, John - The Dispatcher - 08 June 2023  0845 - 4/5
-## Scalzi, John - The Dispatcher, Murder by Other Means - 10 June 2023  2130 - 4/5
+## Scalzi, John - The Dispatcher - 4/5
+## Scalzi, John - The Dispatcher, Murder by Other Means - 4/5
 Scalzi writes "Sci-Fi that sells" and I guess I respect that. You gotta earn a
 living. Not every book can be [Old Man's War][old-war].
 
@@ -101,7 +101,7 @@ is interesting. 999/1000 you return to life after you're killed. The dispatcher
 is a state regulated killer. They kill people who are dying so they return to
 life.
 
-## Cordova, Jason - Chicks in Tank Tops (Anthology) - 14 June 2023  0919 - 5/5
+## Cordova, Jason - Chicks in Tank Tops (Anthology) - 5/5
 Nice collection of SFF short stories with female protagonists and, well, tanks!
 The tanks are not always conventional. They're balloons, spring-wired
 contraptions, and at least in one occasion, a beloved classic literary
@@ -114,7 +114,7 @@ they are not. The tank in the stories is a surprise.
 [david-drake]: https://en.wikipedia.org/wiki/David_Drake
 [slammers]: https://en.wikipedia.org/wiki/Hammer%27s_Slammers
 
-## Ruocchio, Christopher & Korsgaard, Sean CW - Worlds Long Lost (Anthology) - 16 June 2023  2245 - 4/5
+## Ruocchio, Christopher & Korsgaard, Sean CW - Worlds Long Lost (Anthology) - 4/5
 I've quickly become a fan of Baen's anthologies (mostly by Chris Ruocchio).
 
 Collection of short stories involving alien archaeologies. It has quite a few
@@ -128,7 +128,7 @@ place in this anthology. It really didn't have anything to do with ancient
 aliens remains or artifacts. I think they just wanted to include a story by a
 famous writer.
 
-## Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 19 June 2023  0002 - 3.5/5
+## Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 3.5/5
 I gave this book 3.5/5 because not all of the stories were really revolving around "ships."
 
 My favorites:
@@ -143,7 +143,7 @@ My favorites:
 
 What I didn't like:
 
-"Boomers" (ironically, also mirrors the generation midnset) and "Icebreaker"
+"Boomers" (ironically, also mirrors the generation mindset) and "Icebreaker"
 were a copy of the typical "non-US country bad" online discourse. "Magnolia
 Incident" was "don't complain about the military taking away your civil rights
 because they're the only thing between you and scary aliens and also there are
@@ -155,10 +155,10 @@ protecting us from aliens/brown people/bad things" I can re-read
 
 ## Bear, Greg - War Dogs - 0/5
 I stopped on page 130/291. For a military sci-fi book, there was not a lot of
-action. It take skill to make a book in this genre boring.Maybe I am more used
+action. It take skill to make a book in this genre boring. Maybe I am more used
 to the writing style of Drake, Weber, and Dietz.
 
-## Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF (Anthology) - 01 July 2023  1405 - 4.5/5
+## Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF (Anthology) - 4.5/5
 Great collection of "Space Opera" short stories by some of my favorite writers.
 Most are side stories (or in between books) in the authors' established series.
 E.g., David Weber's story happens before the Honorverse series. David Drake's
@@ -169,7 +169,7 @@ If you like this book, read the second volume, "Infinite Stars: Dark Frontiers."
 
 The only stories that I skipped were "Imperium Imposter" and "A Taste of Ashes."
 
-## Williamson, Michael Z. - Freehold 07 - Angleeyes - 05 July 2023  0125 - 0.5/5
+## Williamson, Michael Z. - Freehold 07 - Angleeyes - 0.5/5
 Born and raised in an authoritarian Middle-Eastern country, I have a healthy
 distaste for government. Williamson is a libertarian and [Freehold][freehold]
 was a libertarian utopia. I loved it and appreciated his worldview of "small
@@ -185,7 +185,7 @@ they were unnecessary, but hey, "sex sells."
 
 I am not sure what has happened to the author since the original Freehold book
 because he has turned into the online libertarian warrior caricature and a
-walking Facebook memes complaining about the new generation.
+walking Facebook meme page complaining about the new generation.
 
 I laughed out loud halfway through the book when in the middle of the
 interrogation, the torturer said "my preferred pronouns are xir." I didn't
@@ -197,26 +197,26 @@ There were discussions about how minimum wage, employee benefits (Freehold
 businesses went bankrupt because they had to provide benefits, lol), work hour
 regulations (the torturers couldn't work more than 10 hours, lol), government
 mandated contracts and even warnings on tools/appliances. What makes this more
-hilarious is the author served 25 years with the US military which has all of
+hilarious is the author served 25 years in the US military which has all of
 this and more. It's the biggest socialist jobs program in the country.
 
-## Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 15 July 2023  1220 - 5/5
+## Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 5/5
 Book two the [Saga of the Seven Suns][seven-suns]. I liked this one more than
 the first because the world building was done and the characters are becoming
 more interesting (to me).
 
-## Rusch, Kristin K. - Women of Futures Past: Classic Stories - 16 July 2023  1301 - 5/5
+## Rusch, Kristin K. - Women of Futures Past: Classic Stories - 5/5
 I loved this book. There were so many different stories from different
 perspectives. I also liked the author introductions before each story. Those
 give the reader an idea of what else the author has written. I added so many
 books to my "to read" list.
 
-## Monae, Janelle - The Memory Librarian: And Other Stories of Dirty Computer - 08 July 2023  0130 - 3.5/5
+## Monae, Janelle - The Memory Librarian: And Other Stories of Dirty Computer - 3.5/5
 I loved the settings and some of the stories, especially the main story "The
 Memory Librarian." "Timebox" was great."Save Changes" was more fantasy than
 cyberpunk. I skipped "Nevermind" and "Timebox Altar(ed)" halfway through.
 
-## Gannon, Charles E., Barber, Griffin, Kennedy, Chris, & Massa, Mike - Tales of the Terran Republic - Mission Critical - 21 July 2023  0928 - 4/5
+## Gannon, Charles E., Barber, Griffin, Kennedy, Chris, & Massa, Mike - Tales of the Terran Republic - Mission Critical - 4/5
 This is a book in the "Tales of The Terran Republic Universe" and part of the
 "Murphy's Lawless" series. This book is a compilation of three novellas
 "Infiltration" (Griffin Barber), "Insertion" (Chris Kennedy), and "Assault"
@@ -244,7 +244,7 @@ The only positive thing about this book is the famous
 
 [ringo-no]: https://hradzka.livejournal.com/194753.html
 
-## Cambias, James L. - Billion Worlds 01 - The Godel Operation - 05 Aug 2023  1019 - 5/5
+## Cambias, James L. - Billion Worlds 01 - The Godel Operation - 5/5
 The "Billion Worlds" universe is set 10,000 years into the future. The billion
 worlds refer to the almost innumerable habitats, terraformed planets/moons, and
 modified asteroids in the solar system (and a few nearby stars) housing
@@ -261,14 +261,14 @@ of ships being sent at around half of the speed of light).
 The story follows a group of characters (mainly a "robot AI" and a human) in
 search of a superweapon. I like the universe and Cambias' writing style.
 
-## Cambias, James L. - Billion Worlds 02 - The Scarab Mission - 06 Aug 2023  2234 - 5/5
+## Cambias, James L. - Billion Worlds 02 - The Scarab Mission - 5/5
 Another quick read in the "Billion Worlds" universe. I will not repeat the
 description from my last review (see "The Godel Operation" review above). The
 stories are not related. There's a recurring character, but that's about it.
 This one is centered around an empty habitat and a group of salvagers who are
 looking for valuables.
 
-## Cambias, James L. - Arkad's World - 14 Aug 2023  1114 - 4.5/5
+## Cambias, James L. - Arkad's World - 4.5/5
 This is my 3rd consecutive James Cambias book in 2 weeks.
 
 Exciting journey of a group of humans through a strange planet inhabited by
@@ -284,17 +284,17 @@ looking aliens [referring to humans] are in civilized [city name]."
 Some cons: 2 of the 4 main humans are stock characters and they did not have a
 lot of development. A couple of loose ends are not tied.
 
-## Scalzi, John - The Kaiju Preservation Society - 26 Aug 2023  1844 - 3/5
+## Scalzi, John - The Kaiju Preservation Society - 3/5
 It's an entertaining read. Scalzi is honest about writing science fiction that
 sells. I cannot really argue with that, as artists need to eat, too.
 
-## Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 01 Sep 2023  1527 - 4/5
+## Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 4/5
 Book 3 of the "Saga of the Seven Suns." In the honored tradition of such a big
 space saga, we will be keeping up with dozens of "main" characters. I like how
 some of the characters are being developed (e.g., the king) and how the Ildiran
 society is challenged.
 
-## Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 16 Sep 2023  1726 - 4/5
+## Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 4/5
 I liked most of the stories.
 
 I didn't like "Temporary Embarrassment in Spacetime", "Infinite Love Engine",

@@ -12,6 +12,13 @@ snippet: "I keep track of (most) books I read and the time I finish them."
 
 ---
 
+I was not tracking the timestamps for a while. You can see those books at the
+beginning of the list.
+
+The list format is:
+
+"[author last, first] - [series (if any)] - [book name] - [finished timestamp (if any)]".
+
 * Anderson, Poul - Shield
 * Anderson, Poul - Sky People
 * Asimov, Isaac - Dreaming Is a Private Thing
@@ -309,7 +316,7 @@ snippet: "I keep track of (most) books I read and the time I finish them."
 * Banks, Iain - [Culture 01] - Consider Phlebas		19 Jan 2011  2217
 
 I moved to the US in February 2011 and stopped tracking my reading. Reading
-slowed down by a lot because I had access to fast internet.
+slowed down by a lot because I had access to fast internet (and videogames).
 
 * Bunch, Chris & Cole, Allan - Sten 01 - Sten (3rd Time)	14 Sep 2022  2317
 * Bunch, Chris & Cole, Allan - Sten 02 - The Wolf Worlds (3rd Time)	19 Sep 2022  2053
