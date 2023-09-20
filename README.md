@@ -1,4 +1,4 @@
-# Parsia Clone ![Deploy Clone](https://github.com/parsiya/parsia-clone/workflows/Deploy%20Blog/badge.svg)
+# Parsia Clone ![Deploy Clone](https://github.com/parsiya/parsia-clone/actions/workflows/gh-pages.yml/badge.svg)
 This is my clone. I have been maintaining one internally at my work
 (Cigital/Synopsys/Electronic Arts) since mid 2016. It has been decently
 successful and well received. There is going to be some expected redundancy
