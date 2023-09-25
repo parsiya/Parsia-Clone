@@ -349,3 +349,4 @@ ton of SciFi books.
 * Scalzi, John - The Kaiju Preservation Society - 26 Aug 2023  1844
 * Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 01 Sep 2023  1527
 * Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 16 Sep 2023  1726
+* Lamb, Alex - Roboteer 01 - Roboteer - 20 Sep 2023 - Incomplete

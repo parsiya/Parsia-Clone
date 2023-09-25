@@ -308,3 +308,15 @@ My favorites:
 - "The Sighted Watchmaker": Why has our creator left?
 - "Zen and the Art of Starship Maintenance" and "Unfamiliar Gods": Variations of "Monkey's Paw."
 - "Seven Wonders of a Once and Future World": Time is a flat circle.
+
+## Lamb, Alex - Roboteer 01 - Roboteer - 0.5/5
+I stopped halfway through after I saw it's going in circles.
+
+There are two major groups of humanity: The eugenic, augmented and advanced rich
+spacers (similar to Asimov spacers) who fled the Earth after the environment was
+destroyed. The misogynistic religious earthlings who are waging war against
+them. We're supposed to like the spacers. If this was reddit, I would say ESH
+(Everyone Sucks Here).
+
+There's even a "they hate us because they ain't us" conversation between two
+spacers. This was giving me post 9/11 vibes.
