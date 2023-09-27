@@ -332,8 +332,8 @@ ton of SciFi books.
 * Leckie, Ann - Imperial Radch 01 - Ancillary Justice - 30 May 2023  0047
 * Anderson, Kevin - Saga of the Seven Suns 01 - Hidden Empire - 04 June 2023  1801
 * Cline, Ernest - Ready Player Two - 07 June 2023  2100
-* Scalzi, John - The Dispatcher - 08 June 2023  0845
-* Scalzi, John - The Dispatcher, Murder by Other Means - 10 June 2023  2130
+* Scalzi, John - The Dispatcher 01 - The Dispatcher - 08 June 2023  0845
+* Scalzi, John - The Dispatcher 02 - Murder by Other Means - 10 June 2023  2130
 * Cordova, Jason - Chicks in Tank Tops (Anthology) - 14 June 2023  0919
 * Ruocchio, Christopher & Korsgaard, Sean CW - Worlds Long Lost (Anthology) - 16 June 2023  2245
 * Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 19 June 2023  0002
@@ -350,3 +350,4 @@ ton of SciFi books.
 * Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 01 Sep 2023  1527
 * Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 16 Sep 2023  1726
 * Lamb, Alex - Roboteer 01 - Roboteer - 20 Sep 2023 - Incomplete
+* Scalzi, John - The Dispatcher 03 - Travel by Bullet - 27 Sep 2023  1406

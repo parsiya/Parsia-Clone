@@ -89,8 +89,8 @@ are very simple. Most of them are handwaved with "I have already done a series
 of activities on this planet and have this thingamajig that solves it." At least
 3 of them where unnecessary.
 
-## Scalzi, John - The Dispatcher - 4/5
-## Scalzi, John - The Dispatcher, Murder by Other Means - 4/5
+## Scalzi, John - The Dispatcher 01 - The Dispatcher - 4/5
+## Scalzi, John - The Dispatcher 02 - Murder by Other Means - 4/5
 Scalzi writes "Sci-Fi that sells" and I guess I respect that. You gotta earn a
 living. Not every book can be [Old Man's War][old-war].
 
@@ -320,3 +320,8 @@ them. We're supposed to like the spacers. If this was reddit, I would say ESH
 
 There's even a "they hate us because they ain't us" conversation between two
 spacers. This was giving me post 9/11 vibes.
+
+## Scalzi, John - The Dispatcher 03 - Travel by Bullet - 4/5
+Another quick and fun read in the Dispatcher universe. Tons of recurring
+characters and some new ones. Some cryptocurrency and techbros mixed into the
+story.
