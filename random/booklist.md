@@ -337,7 +337,7 @@ ton of SciFi books.
 * Cordova, Jason - Chicks in Tank Tops (Anthology) - 14 June 2023  0919
 * Ruocchio, Christopher & Korsgaard, Sean CW - Worlds Long Lost (Anthology) - 16 June 2023  2245
 * Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 19 June 2023  0002
-* Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF (Anthology) - 01 July 2023  1405
+* Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF - 01 July 2023  1405
 * Williamson, Michael Z. - Freehold 07 - Angleeyes - 05 July 2023  0125
 * Monae, Janelle - The Memory Librarian: And Other Stories of Dirty Computer - 08 July 2023  0130
 * Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 15 July 2023  1220
@@ -351,3 +351,4 @@ ton of SciFi books.
 * Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 16 Sep 2023  1726
 * Lamb, Alex - Roboteer 01 - Roboteer - 20 Sep 2023 - Incomplete
 * Scalzi, John - The Dispatcher 03 - Travel by Bullet - 27 Sep 2023  1406
+* Schmidt, Bryan Thomas - Infinite Stars: Dark Frontiers (Anthology) - 28 Sep 2023  1707

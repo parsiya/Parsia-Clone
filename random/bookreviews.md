@@ -158,7 +158,7 @@ I stopped on page 130/291. For a military sci-fi book, there was not a lot of
 action. It take skill to make a book in this genre boring. Maybe I am more used
 to the writing style of Drake, Weber, and Dietz.
 
-## Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF (Anthology) - 4.5/5
+## Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF - 4.5/5
 Great collection of "Space Opera" short stories by some of my favorite writers.
 Most are side stories (or in between books) in the authors' established series.
 E.g., David Weber's story happens before the Honorverse series. David Drake's
@@ -325,3 +325,17 @@ spacers. This was giving me post 9/11 vibes.
 Another quick and fun read in the Dispatcher universe. Tons of recurring
 characters and some new ones. Some cryptocurrency and techbros mixed into the
 story.
+
+## Schmidt, Bryan Thomas - Infinite Stars: Dark Frontiers (Anthology) - 5/5
+Second anthology in the "Infinite Stars" series (see the previous one above). I
+don't think I skipped any stories in this one. [List of stories][l1].
+
+Some of my favorites:
+
+* "The Traitor": Set in the Bolo universe by David Weber.
+* "Shambleau": I skipped it because I had read it recently in a different anthology, but it's a great story.
+* "Earthman, Come Home": We're here to kill your fake masters.
+* "Cold Sleep": I woke up in this ship and have no idea what's happening.
+* "Rescue Party": The last sentence gave me goosebumps.
+
+[l1]: https://bryanthomasschmidt.net/writings/anthologies-edited/infinite-stars-dark-frontiers/
