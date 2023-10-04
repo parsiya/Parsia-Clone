@@ -13,7 +13,7 @@ snippet: "I keep track of (most) books I read and the time I finish them."
 ---
 
 I was not tracking the timestamps for a while. You can see those books at the
-beginning of the list.
+beginning of the list. DNF == Did Not Finish.
 
 The list format is:
 
@@ -45,9 +45,9 @@ The list format is:
 * Niven, Larry - Wrong Way Street
 * Heinlein, Robert - Orphans Of The Sky
 * Heinlein, Robert - The Sixth Column
-* Weber, David & Ringo, John - Stars 01 - March Upcountry
-* Weber, David & Ringo, John - Stars 02 - March To The Sea
-* Weber, David & Ringo, John - Stars 03 - March To The Stars
+* Weber, David & Ringo, John - Empire of Man 01 - March Upcountry
+* Weber, David & Ringo, John - Empire of Man 02 - March To The Sea
+* Weber, David & Ringo, John - Empire of Man 03 - March To The Stars
 * Adams, Douglas - HH 01 - Hitchhiker's Guide to the Galaxy
 * Adams, Douglas - HH 02 - The Restaurant at the End of the Universe
 * Adams, Douglas - HH 03 - Life, the Universe, and Everything
@@ -69,7 +69,7 @@ The list format is:
 * Brown, Fredrick - Martians Go Home   2-3 March 2005
 * Charles Stross - A Boy And His God   12 March 2005 - 0030
 * Drake, David - Hammer's Slammers 03 - At Any Price -  26-27 March 2005
-* David Weber & John Ringo - [Prince Roger 04] - We Few - 01-03 April 2005 0404
+* David Weber & John Ringo - Empire of Man 04 - We Few - 01-03 April 2005 0404
 * Zelazny, Roger - My Lady of the Diodes - 03 April 2005 1016
 * Zelazny, Roger - Come Back to the Killing Ground, Alice, My Love - 03-04 April 2005 2338
 * Lester Del Rey - Return Engagement - 05 April 0103
@@ -270,10 +270,10 @@ The list format is:
 * Williams, Walter Jon - Flatline		03 May 2010  1027
 * Asprin, Robert L - Phule 1 - Phule's Company (2nd Time)	04 May 2010  1453
 * Asprin, Robert L - Phule 2 - Phule's Paradise	05 May 2010  0147
-* Weber, David & Ringo, John - Stars 01 - March Upcountry (2ndTime)	09 May 2010  0732
-* Weber, David & Ringo, John - Stars 02 - March To The Sea (2ndTime)	12 May 2010  1826
-* Weber, David & Ringo, John - Stars 03 - March To The Stars (2ndTime)	15 May 2010  0330
-* Weber, David & Ringo, John - Stars 04 - We Few (2ndTime)		17 May 2010  1723
+* Weber, David & Ringo, John - Empire of Man 01 - March Upcountry (2ndTime)	09 May 2010  0732
+* Weber, David & Ringo, John - Empire of Man 02 - March To The Sea (2ndTime)	12 May 2010  1826
+* Weber, David & Ringo, John - Empire of Man 03 - March To The Stars (2ndTime)	15 May 2010  0330
+* Weber, David & Ringo, John - Empire of Man 04 - We Few (2ndTime)		17 May 2010  1723
 * Grubb, Jeff - StarCraft 01 - Liberty's Crusade		19 May 2010  2346
 * Mesta, Gabriel - StarCraft 02 - Shadow of the Xel'Naga	03 June 2010  2329
 * Hickman, Tracy - StarCraft 03 - The Speed of Darkness	05 June 2010  1259
@@ -352,3 +352,5 @@ ton of SciFi books.
 * Lamb, Alex - Roboteer 01 - Roboteer - 20 Sep 2023 - Incomplete
 * Scalzi, John - The Dispatcher 03 - Travel by Bullet - 27 Sep 2023  1406
 * Schmidt, Bryan Thomas - Infinite Stars: Dark Frontiers (Anthology) - 28 Sep 2023  1707
+* Drake, David - RCN 01 - With The Lightnings (2nd time)	02 Oct 2023  1850
+* Weber, David & Holo, Jacob - Gordian Protocol 01 - The Gordian Protocol - DNF

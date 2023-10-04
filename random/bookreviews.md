@@ -169,7 +169,7 @@ If you like this book, read the second volume, "Infinite Stars: Dark Frontiers."
 
 The only stories that I skipped were "Imperium Imposter" and "A Taste of Ashes."
 
-## Williamson, Michael Z. - Freehold 07 - Angleeyes - 0.5/5
+## Williamson, Michael Z. - Freehold 07 - Angeleyes - 0.5/5
 Born and raised in an authoritarian Middle-Eastern country, I have a healthy
 distaste for government. Williamson is a libertarian and [Freehold][freehold]
 was a libertarian utopia. I loved it and appreciated his worldview of "small
@@ -339,3 +339,39 @@ Some of my favorites:
 * "Rescue Party": The last sentence gave me goosebumps.
 
 [l1]: https://bryanthomasschmidt.net/writings/anthologies-edited/infinite-stars-dark-frontiers/
+
+## Weber, David & Holo, Jacob - Gordian Protocol 01 - The Gordian Protocol - 0/5
+Oh God, what did I just read?
+
+If you're a Weber fan, don't read this book. If you don't know Weber, read
+another book. He has good series like [Empire of Man][emp-wiki] or his
+[Bolo][web-bolo] book.
+
+[emp-wiki]: https://en.wikipedia.org/wiki/Empire_of_Man
+[web-bolo]: https://www.goodreads.com/en/book/show/470053
+
+If you're still inclined to read this book, read the prologue (chapter 0).
+**SKIP CHAPTERS 1 AND 2**.
+
+Chapter 1 is basically non-stop whining about how the American college is woke.
+It's how high schoolers who've never been to college or old folks who were in
+college decades ago, think it is. The professor is being silenced!
+
+Chapter 2 is about shooting and how the professor is not a bigot because he has
+a gay brother.
+
+As another reviewer on Goodreads mentioned, you would expect chapter 3 to be
+about quartering soldiers in homes or the 3rd amendment because that's how the
+other two were.
+
+I am not sure **WHY** I actually read these two chapters. I mean I expect
+military science fiction is to be full of people on the right side of the aisle,
+but this sort of nonsense was just too much. What made it worse was it had
+almost nothing to do with the rest of the book. The book got better, but that
+was mainly because this part was soooo bad.
+
+Is it something that has started happening in the last few years? This book is
+from 2019 and `Angeleyes` (which had similar issues, read my review above) was
+written in 2017. David Drake is my favorite Sci-Fi author and he is pretty
+conservative, but he's not like that. Maybe he stopped writing before he turned
+into this.
