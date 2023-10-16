@@ -369,9 +369,3 @@ military science fiction is to be full of people on the right side of the aisle,
 but this sort of nonsense was just too much. What made it worse was it had
 almost nothing to do with the rest of the book. The book got better, but that
 was mainly because this part was soooo bad.
-
-Is it something that has started happening in the last few years? This book is
-from 2019 and `Angeleyes` (which had similar issues, read my review above) was
-written in 2017. David Drake is my favorite Sci-Fi author and he is pretty
-conservative, but he's not like that. Maybe he stopped writing before he turned
-into this.

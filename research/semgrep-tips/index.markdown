@@ -146,7 +146,7 @@ org.foo.bar.MyType
 ```
 
 ### Fix
-One fix (credit: [Lewis Ardern, r2c][lewis-gh],
+One fix (credit: [Lewis Ardern, Semgrep][lewis-gh],
 [source][lewis-double-match-answer]) is to add it to `focus-metavariable`. Note,
 how we need to add `patterns` to have `focus-metavariable` as a tag.
 
@@ -168,7 +168,7 @@ rules:
 [lewis-gh]: https://github.com/LewisArdern
 
 ### Explanation
-Credit: [Iago Abal][iago-gh], r2c, [source on Semgrep slack][iago-double-match-answer].
+Credit: [Iago Abal][iago-gh], Semgrep, [source on Semgrep slack][iago-double-match-answer].
 
 [iago-gh]: https://github.com/IagoAbal
 [iago-double-match-answer]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1666705798027529?thread_ts=1666654882.737839&cid=C018NJRRCJ0
@@ -215,7 +215,7 @@ pattern: |
 https://semgrep.dev/playground/s/parsiya:tips-java-annotations
 
 ### Fix
-Credit: [Cooper Pierce][cooper-gh], r2c, [source on Semgrep slack][annotation-answer].
+Credit: [Cooper Pierce][cooper-gh], Semgrep, [source on Semgrep slack][annotation-answer].
 
 > annotations beyond those specified are ignored when matching so something like
 > [the following] would do what you describe
@@ -273,7 +273,7 @@ rules:
     severity: WARNING
 ```
 
-Credit: [Cooper Pierce][cooper-gh], r2c, [source on Semgrep slack][single-block-if].
+Credit: [Cooper Pierce][cooper-gh], Semgrep, [source on Semgrep slack][single-block-if].
 
 [single-block-if]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1660943282982279?thread_ts=1660942419.479839&cid=C018NJRRCJ0
 
@@ -288,7 +288,7 @@ multi-dimensional arrays like `int nDim_init[10][10][10][10][10][10];`.
 > `...` is usually reserved to match a sequence of things (e.g., `foo(...)`), or
 > if something is optional (e.g., `return ...;`)
 
-Credit: [Padioleau Yoann][yoann-gh], r2c, [source: Semgrep slack][c-ellipsis].
+Credit: [Padioleau Yoann][yoann-gh], Semgrep, [source: Semgrep slack][c-ellipsis].
 
 [yoann-gh]: https://github.com/aryx
 [c-ellipsis]: https://r2c-community.slack.com/archives/C018NJRRCJ0/p1648051884724009?thread_ts=1648001009.133229&cid=C018NJRRCJ0
