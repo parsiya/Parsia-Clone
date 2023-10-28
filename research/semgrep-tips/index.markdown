@@ -103,7 +103,8 @@ curl https://semgrep.dev/c/p/default
 Note: Semgrep is intelligent and detects a file's language by extension so it
 will not every rule on every file.
 
-# Writing Rules
+# Sample Rules
+Some fun things to do with Semgrep.
 
 ## Double Matches with Different Semgrep Messages
 I was printing the type of a metavariable.
@@ -439,6 +440,6 @@ to rename the test file `some-rule-NAME.cpp`.
 # Memes
 
 ## You Made This?
-Credit: Yours Truly, Parsia.
+Edits to the famous comic: Yours Truly, Parsia.
 
 ![You Made This?](you-made-this.png)

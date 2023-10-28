@@ -352,5 +352,6 @@ ton of SciFi books.
 * Lamb, Alex - Roboteer 01 - Roboteer - 20 Sep 2023 - Incomplete
 * Scalzi, John - The Dispatcher 03 - Travel by Bullet - 27 Sep 2023  1406
 * Schmidt, Bryan Thomas - Infinite Stars: Dark Frontiers (Anthology) - 28 Sep 2023  1707
-* Drake, David - RCN 01 - With The Lightnings (2nd time)	02 Oct 2023  1850
+* Drake, David - RCN 01 - With The Lightnings (2nd time) - 02 Oct 2023  1850
 * Weber, David & Holo, Jacob - Gordian Protocol 01 - The Gordian Protocol - DNF
+* Hartwell, David G. & Weisman, Jacob - The Sword & Sorcery Anthology - 27 Oct 2023  1431

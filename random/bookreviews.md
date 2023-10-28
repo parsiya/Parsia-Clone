@@ -365,7 +365,41 @@ about quartering soldiers in homes or the 3rd amendment because that's how the
 other two were.
 
 I am not sure **WHY** I actually read these two chapters. I mean I expect
-military science fiction is to be full of people on the right side of the aisle,
-but this sort of nonsense was just too much. What made it worse was it had
-almost nothing to do with the rest of the book. The book got better, but that
-was mainly because this part was soooo bad.
+military science fiction is to be full of people on the conservative side of the
+aisle, but this sort of nonsense was just too much. What made it worse was it
+had almost nothing to do with the rest of the book. The book got better, but
+that was mainly because this part was soooo bad.
+
+## Hartwell, David G. & Weisman, Jacob - The Sword & Sorcery Anthology - 4/5
+It had been a while since I had read actual fantasy. This was a breath of fresh
+air between all the Sci-Fi and Mil-Sci-Fi.
+
+Loved:
+
+* Tower of the Elephant: Of course, no fantasy anthology is complete w/o Conan.
+* Black God's Kiss: Holy shit the depiction of hell gave me goosebumps. I mean,
+  what else do you expect from the author of a masterpiece like "Shambleau."
+* Undertow: What a surprise ending!
+* Barrow Troll: David Drake, yeah! The burden of guarding a treasure.
+* Soldier of An Empire Unacquainted With Defeat: Not like other soldier
+  rehabilitation stories.
+* Sea Troll's Daughter: A troll's revenge after death.
+
+Good:
+
+* Unholy Grail: The beginning was frustrating, but it got much better as the
+  story progressed.
+* Tale of Hauk: Helping a disturbed ghost pass into the afterlife.
+* Adventuress: I was a confused by the ending.
+* Gimmile's Songs: A magical figurine with a curse.
+* Red Guild: Another "curse prevents happiness" story.
+* Path of the Dragon: I am not a Game of Thrones fan, but I liked this story.
+
+Didn't like/skipped:
+
+* Stages of God: No, not really interesting.
+* Epistle From Lebanoi: Skipped after a few pages.
+* Become a Warrior: A cliche tale of revenge.
+* Six From Atlantis: I really didn't get the point of the story.
+* Coral Heart: Skipped after a few pages.
+* Year of the Three Monarchs: Interesting story, but too rushed IMO.
