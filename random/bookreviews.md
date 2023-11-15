@@ -403,3 +403,77 @@ Didn't like/skipped:
 * Six From Atlantis: I really didn't get the point of the story.
 * Coral Heart: Skipped after a few pages.
 * Year of the Three Monarchs: Interesting story, but too rushed IMO.
+
+## Scalzi, John - Fuzzy Nation - 3/5
+A somewhat reboot of H. Beam Piper's Little Fuzzy. The original work is out of
+copy right so you can read it for free in places like
+[Project Gutenberg (text)][lf-gu], [Internet Archive (audio book)][lf-aa-audio],
+or [standard ebooks (text)][lf-se-text].
+
+[lf-gu]: https://gutenberg.org/ebooks/18137
+[lf-aa-audio]: https://archive.org/details/LittleFuzzy
+[lf-se-text]: https://standardebooks.org/ebooks/h-beam-piper/little-fuzzy
+
+If was a quick read. The first third of the book was boring, the second third
+was amusing, and the last part of the book (and the entire ending) was very very
+cheesy and written like a fan fiction.
+
+## Boop, David - Gunfight on Europa Station (Anthology) - 4/5
+[Western stories in space][gunfight]. Some were low effort and just a western adventure on a
+different planet with laser and rockets.
+[List of stories on bibliocommons][gunfight-list].
+
+These were really creative and blended the genres:
+
+* "Greenhorn" by Elizabeth Moon: A new farmer with a hidden agenda arrives in a space colony imitating the old west.
+* "Hydration" by Alan Dean Foster: A lost prospector does an unusual trade.
+* "Winner Takes All" by Alex Shvartsman: A commando team is extracting the head of the resistance (an AI) from a low-technology zone (great setting).
+* "Doc Holliday 2.0" by Will McCarthy: Probably my favorite story in the book. A company creates a clone of an old western Gunslinger to deal with robbers. The clone is coming to terms with his existence.
+
+Western stories in space. Fun to read but nothing to write home about:
+
+* "Penultimate Stand of Pina Gracchi": A classic "law enforcers break up the tyranny in a company town" western tale but in space and aliens.
+* "Seeds": Old man sees new technology. This was a bit of a mix for me. I liked the setting. People live/farm with low technology like the old western frontier in other planets. But the story was a classic tale of "old farmer encounters new technology."
+* "Riding the Storm Out": Recapture a fugitive in the middle of a storm.
+* "Claim Jumped": Detective murder mystery in a mining asteroid. I liked how the sci-fi elements are mixed with the mystery, but the ending was meh.
+
+I did not like these:
+
+* "Showdown on Big Rock 27": An unfunny version of "a bunch of kids thwart bad pirates."
+* "Last Stand at Europa Station A.": Are these aliens bad or what?
+* "Riders of the Endless Void": Heroes arrive and save people. This story didn't even pretend to be a western in space. Nothing western here.
+* "Incident at Raven's Rift": Standoff with robbers, but on another planet.
+
+[gunfight]: https://www.baen.com/gunfight-on-europa-station.html
+[gunfight-list]: https://fvrl.bibliocommons.com/v2/record/S21C1884137
+
+## Mersault, Michael - The Deep Man - 4.5/5
+This book reminds me of the [Republic Of Cinnabar][rcn] (RCN) series by
+[David Drake][david-drake] which is basically "the old British navy in space."
+I liked the book and the setting because I am a fan of RCN (and David Drake).
+The author has published a sequel, [The Silent Hand][silent-hand]. I will update
+the booklist and this title when the series gets a name.
+
+The setting is an honor-bound society (people duel when their "honor is taken")
+ruled by an emperor. There are of course big families juggling for influence.
+There are two types of citizens, demi-cits who are provided by the state and
+vested citizens who can do what they want. There are ways to become a vested
+citizen, but you face an uphill battle because influential families have the
+backing of centuries and influence. There's an example of a new vested citizen
+almost losing his life. Every military person is a vested citizen.
+Officers can purchase their commissions (kinda). There are aliens (Shapers) who
+visit every decade and exchange resources for tech. Ship-to-ship action is
+mostly close range.
+
+Saef, the main character is a male vested citizen from an old but poor
+traditional family. Very similar to Daniel Leary in RCN who comes from a famous
+family but is poor because he's estranged from his rich and famous father.
+
+Inga Maru is a copy of Adele Mundy from RCN. The loyal but badass female
+companion with exceptional abilities. The author has a short story named `Flops`
+that deal with Inga's background. You can read it for free in
+[Baen's 2022 Free Stories][baen-free-2022] (first story).
+
+[rcn]: https://en.wikipedia.org/wiki/RCN_Series
+[baen-free-2022]: https://www.baen.com/free-stories-2022.html
+[silent-hand]: https://www.baen.com/the-silent-hand.html

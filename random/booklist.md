@@ -355,3 +355,6 @@ ton of SciFi books.
 * Drake, David - RCN 01 - With The Lightnings (2nd time) - 02 Oct 2023  1850
 * Weber, David & Holo, Jacob - Gordian Protocol 01 - The Gordian Protocol - DNF
 * Hartwell, David G. & Weisman, Jacob - The Sword & Sorcery Anthology - 27 Oct 2023  1431
+* Scalzi, John - Fuzzy Nation - 29 Oct 2023  1714
+* Boop, David - Gunfight on Europa Station (Anthology) - 07 Nov 2023  0020
+* Mersault, Michael - The Deep Man - 13 Nov 2023  2354
