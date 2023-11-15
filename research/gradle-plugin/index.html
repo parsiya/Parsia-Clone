@@ -1,4 +1,5 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Gradle Plugin Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.119.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="Gradle Plugin Notes"><meta name=twitter:description content="To add a plugin to an existing Java project we can add it under buildSrc. This way we can use it in the project build.gradle without hassle.
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Gradle Plugin Notes</title>
+<link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io/clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.120.4"><meta name=twitter:card content="summary"><meta name=twitter:title content="Gradle Plugin Notes"><meta name=twitter:description content="To add a plugin to an existing Java project we can add it under buildSrc. This way we can use it in the project build.gradle without hassle.
 https://www.vogella.com/tutorials/Gradle/article.html#apply-the-java-gradle-plugin-plug-in Inside the buildSrc directory, we will need to create a separate Java project with all the bells and whistles. This means we have to create another build.gradle inside.
 buildSrc/build.gradle 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 plugins { id 'java-gradle-plugin' } gradlePlugin { plugins { thisDoesntMatter { id = 'mypluginid' implementationClass = 'myplugin."><meta name=twitter:domain content="parsiya.io"><meta name=twitter:creator content="@CryptoGangsta"></head><body><header role=banner><hgroup><h1><a href=https://parsiya.io/>Parsia-Clone</a></h1><h2>'Documentation is a love letter that you write to your future self.' - Damian Conway</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value"><option value>Navigate…</option><option value=https://github.com/parsiya/Parsia-Clone>» Parsia-Clone on Github</option><option value=https://parsiya.net/categories/clone/>» How did I make this?</option><option value=https://parsiya.net>» My Main Website</option></select></fieldset><ul class=main-navigation><li><a href=https://github.com/parsiya/Parsia-Clone title="Parsia-Clone on Github" target=_blank rel="noopener noreferrer">Parsia-Clone on Github</a></li><li><a href=https://parsiya.net/categories/clone/ title="How did I make this?" target=_blank rel="noopener noreferrer">How did I make this?</a></li><li><a href=https://parsiya.net title="My Main Website" target=_blank rel="noopener noreferrer">My Main Website</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank rel="noopener noreferrer"><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
 <input type=hidden name=q value=site:https://parsiya.io/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>Jan 29, 2020 -
@@ -38,38 +39,38 @@ with all the bells and whistles. This means we have to create another
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">30
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">31
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">32
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>plugins <span style=color:#719e07>{</span>
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>plugins {
 </span></span><span style=display:flex><span>    id &#39;java<span style=color:#719e07>-</span>gradle<span style=color:#719e07>-</span>plugin&#39;
-</span></span><span style=display:flex><span><span style=color:#719e07>}</span>
+</span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>gradlePlugin <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>    plugins <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>        thisDoesntMatter <span style=color:#719e07>{</span>
+</span></span><span style=display:flex><span>gradlePlugin {
+</span></span><span style=display:flex><span>    plugins {
+</span></span><span style=display:flex><span>        thisDoesntMatter {
 </span></span><span style=display:flex><span>            id <span style=color:#719e07>=</span> &#39;mypluginid&#39;
-</span></span><span style=display:flex><span>            implementationClass <span style=color:#719e07>=</span> &#39;myplugin<span style=color:#719e07>.</span>MyPlugin&#39;
-</span></span><span style=display:flex><span>        <span style=color:#719e07>}</span>
-</span></span><span style=display:flex><span>    <span style=color:#719e07>}</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>}</span>
+</span></span><span style=display:flex><span>            implementationClass <span style=color:#719e07>=</span> &#39;myplugin.MyPlugin&#39;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>sourceSets <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>    main <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>        java <span style=color:#719e07>{</span>
+</span></span><span style=display:flex><span>sourceSets {
+</span></span><span style=display:flex><span>    main {
+</span></span><span style=display:flex><span>        java {
 </span></span><span style=display:flex><span>            srcDir <span style=color:#2aa198>&#39;.&#39;</span>
-</span></span><span style=display:flex><span>        <span style=color:#719e07>}</span>
-</span></span><span style=display:flex><span>    <span style=color:#719e07>}</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>}</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>repositories <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>    mavenCentral<span style=color:#719e07>()</span>
-</span></span><span style=display:flex><span>    <span style=color:#586e75>// In case we want to use 3rd party packages in the plugin.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>}</span>
+</span></span><span style=display:flex><span>repositories {
+</span></span><span style=display:flex><span>    mavenCentral()
+</span></span><span style=display:flex><span>    <span style=color:#586e75>// In case we want to use 3rd party packages in the plugin.</span>
+</span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>dependencies <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>    <span style=color:#586e75>// No need to add gradleApi() here, because it is applied by the
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// &#39;java-gradle-plugin&#39; plug-in
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>    <span style=color:#586e75>// Add your dependencies here.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>}</span></span></span></code></pre></td></tr></table></div></div></div></figure><p>We have pointed <code>srcDir</code> to <code>buildSrc</code> so we have to create our files here.
+</span></span><span style=display:flex><span>dependencies {
+</span></span><span style=display:flex><span>    <span style=color:#586e75>// No need to add gradleApi() here, because it is applied by the</span>
+</span></span><span style=display:flex><span>    <span style=color:#586e75>// &#39;java-gradle-plugin&#39; plug-in</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#586e75>// Add your dependencies here.</span>
+</span></span><span style=display:flex><span>}</span></span></code></pre></td></tr></table></div></div></div></figure><p>We have pointed <code>srcDir</code> to <code>buildSrc</code> so we have to create our files here.
 <code>implementationClass</code> is set to <code>myplugin.MyPlugin</code> meaning that we have to
 create a package named <code>myplugin</code> here and a class <code>MyPlugin</code>.</p><figure class=code><figcaption><span>buildSrc/MyPlugin.java</span></figcaption><div class=codewrapper><div class=highlight><div style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050"> 1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050"> 2
@@ -84,19 +85,19 @@ create a package named <code>myplugin</code> here and a class <code>MyPlugin</co
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">11
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">12
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">13
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#719e07>package</span> myplugin<span style=color:#719e07>;</span>
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#719e07>package</span> myplugin;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.Plugin<span style=color:#719e07>;</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.Project<span style=color:#719e07>;</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.Plugin;
+</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.Project;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#268bd2>public</span> <span style=color:#268bd2>class</span> <span style=color:#268bd2>MyPlugin</span> <span style=color:#268bd2>implements</span> Plugin<span style=color:#719e07>&lt;</span>Project<span style=color:#719e07>&gt;</span> <span style=color:#719e07>{</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>public</span> <span style=color:#268bd2>class</span> <span style=color:#268bd2>MyPlugin</span> <span style=color:#268bd2>implements</span> Plugin<span style=color:#719e07>&lt;</span>Project<span style=color:#719e07>&gt;</span> {
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>@Override</span>
-</span></span><span style=display:flex><span>    <span style=color:#268bd2>public</span> <span style=color:#dc322f>void</span> <span style=color:#268bd2>apply</span><span style=color:#719e07>(</span>Project project<span style=color:#719e07>)</span> <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>        <span style=color:#586e75>// Create a task named &#34;install&#34;
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        project<span style=color:#719e07>.</span>getTasks<span style=color:#719e07>().</span>create<span style=color:#719e07>(</span><span style=color:#2aa198>&#34;install&#34;</span><span style=color:#719e07>,</span> Installation<span style=color:#719e07>.</span>class<span style=color:#719e07>);</span>
-</span></span><span style=display:flex><span>    <span style=color:#719e07>}</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>}</span></span></span></code></pre></td></tr></table></div></div></div></figure><p>Here we create a task named <code>install</code> which runs another class called
+</span></span><span style=display:flex><span>    <span style=color:#268bd2>public</span> <span style=color:#dc322f>void</span> <span style=color:#268bd2>apply</span>(Project project) {
+</span></span><span style=display:flex><span>        <span style=color:#586e75>// Create a task named &#34;install&#34;</span>
+</span></span><span style=display:flex><span>        project.getTasks().create(<span style=color:#2aa198>&#34;install&#34;</span>, Installation.class);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}</span></span></code></pre></td></tr></table></div></div></div></figure><p>Here we create a task named <code>install</code> which runs another class called
 <code>Installation</code>. <code>Installation</code> is part of the same package in this
 implementation. This means we need to create a file <code>Installation.java</code> to have
 the task.</p><figure class=code><figcaption><span>buildSrc/Installation.java</span></figcaption><div class=codewrapper><div class=highlight><div style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050"> 1
@@ -119,31 +120,31 @@ the task.</p><figure class=code><figcaption><span>buildSrc/Installation.java</sp
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">18
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">19
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#495050">20
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#719e07>package</span> myplugin<span style=color:#719e07>;</span>
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#719e07>package</span> myplugin;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.DefaultTask<span style=color:#719e07>;</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.tasks.TaskAction<span style=color:#719e07>;</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.tasks.options.Option<span style=color:#719e07>;</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.DefaultTask;
+</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.tasks.TaskAction;
+</span></span><span style=display:flex><span><span style=color:#719e07>import</span> org.gradle.api.tasks.options.Option;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#268bd2>public</span> <span style=color:#268bd2>class</span> <span style=color:#268bd2>Installation</span> <span style=color:#268bd2>extends</span> DefaultTask <span style=color:#719e07>{</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>public</span> <span style=color:#268bd2>class</span> <span style=color:#268bd2>Installation</span> <span style=color:#268bd2>extends</span> DefaultTask {
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    String projectPath<span style=color:#719e07>;</span>
+</span></span><span style=display:flex><span>    String projectPath;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#268bd2>@Option</span><span style=color:#719e07>(</span>option<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;project&#34;</span><span style=color:#719e07>,</span> description<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;path to the project&#34;</span><span style=color:#719e07>)</span>
-</span></span><span style=display:flex><span>    <span style=color:#268bd2>public</span> <span style=color:#dc322f>void</span> <span style=color:#268bd2>setPath</span><span style=color:#719e07>(</span>String path<span style=color:#719e07>)</span> <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>        projectPath <span style=color:#719e07>=</span> path<span style=color:#719e07>;</span>
-</span></span><span style=display:flex><span>    <span style=color:#719e07>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#268bd2>@Option</span>(option<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;project&#34;</span>, description<span style=color:#719e07>=</span><span style=color:#2aa198>&#34;path to the project&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#268bd2>public</span> <span style=color:#dc322f>void</span> <span style=color:#268bd2>setPath</span>(String path) {
+</span></span><span style=display:flex><span>        projectPath <span style=color:#719e07>=</span> path;
+</span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>@TaskAction</span>
-</span></span><span style=display:flex><span>    <span style=color:#268bd2>public</span> <span style=color:#dc322f>void</span> <span style=color:#268bd2>myTask</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
-</span></span><span style=display:flex><span>        System<span style=color:#719e07>.</span>out<span style=color:#719e07>.</span>printf<span style=color:#719e07>(</span><span style=color:#2aa198>&#34;Option value: %s&#34;</span><span style=color:#719e07>,</span> projectPath<span style=color:#719e07>);</span>
-</span></span><span style=display:flex><span>    <span style=color:#719e07>}</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>}</span></span></span></code></pre></td></tr></table></div></div></div></figure><p>The interesting part of the code is the <code>Option</code>. We can use this to get
+</span></span><span style=display:flex><span>    <span style=color:#268bd2>public</span> <span style=color:#dc322f>void</span> <span style=color:#268bd2>myTask</span>() {
+</span></span><span style=display:flex><span>        System.out.printf(<span style=color:#2aa198>&#34;Option value: %s&#34;</span>, projectPath);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}</span></span></code></pre></td></tr></table></div></div></div></figure><p>The interesting part of the code is the <code>Option</code>. We can use this to get
 parameters/switch from the command line. In this case, we are creating an option
 named <code>project</code> and we will store it in <code>projectPath</code>. Now we can do what we
 want with <code>projectPath</code>.</p><ul><li><a href=https://docs.gradle.org/current/userguide/custom_tasks.html#sec:declaring_and_using_command_line_options target=_blank rel="noreferrer noopener">https://docs.gradle.org/current/userguide/custom_tasks.html#sec:declaring_and_using_command_line_options</a></li></ul><p>Our plugin is now ready. Now we need to add it to the project <code>build.gradle</code>
-which is inside the root directory of the project. Add this line to it:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#586e75>// The id here is the same as
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>apply plugin<span style=color:#719e07>:</span> &#39;mypluginid&#39; in `buildSrc<span style=color:#719e07>/</span>build<span style=color:#719e07>.</span>gradle`<span style=color:#719e07>.</span>
+which is inside the root directory of the project. Add this line to it:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#586e75>// The id here is the same as</span>
+</span></span><span style=display:flex><span>apply plugin: &#39;mypluginid&#39; in `buildSrc<span style=color:#719e07>/</span>build.gradle`.
 </span></span></code></pre></div><p>Now we can call this task with a command line parameter from the project
 directory. The command line parameter is passed a <code>--project=value</code> or
 <code>--project value</code>.</p><pre tabindex=0><code>gradlew install --project=cli-value
