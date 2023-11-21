@@ -334,7 +334,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Bruce Sterling | | [Pirate Utopia]({{<relref "bookreviews.md#pirateutopia">}}) | DNF |
 | Christopher Ruocchio | Anthology | [Sword and Planet]({{<relref "bookreviews.md#swordplanet">}}) | 1500 - 24 May 2023 |
 | Ann Leckie | Imperial Radch 01 | [Ancillary Justice]({{<relref "bookreviews.md#ancillaryjustice">}}) | 0047 - 30 May 2023 |
-| Kevin Anderson | Saga of the Seven Suns 01 | [Hidden Empire]{{<relref "bookreview.md#saga01">}} | 1801 - 04 June 2023 |
+| Kevin Anderson | Saga of the Seven Suns 01 | [Hidden Empire]{{<relref "bookreviews.md#saga01">}} | 1801 - 04 June 2023 |
 | Ernest Cline | Ready Player One 02 | [Ready Player Two]({{<relref "bookreviews.md#player2">}}) | 2100 - 07 June 2023 - Almost DNF |
 | John Scalzi | The Dispatcher 01 | [The Dispatcher]({{<relref "bookreviews.md#dispatcher01">}}) | 0845 - 08 June 2023 |
 | John Scalzi | The Dispatcher 02 | [Murder by Other Means]({{<relref "bookreviews.md#dispatcher02">}}) | 2130 - 10 June 2023 |
