@@ -358,3 +358,4 @@ ton of SciFi books.
 * Scalzi, John - Fuzzy Nation - 29 Oct 2023  1714
 * Boop, David - Gunfight on Europa Station (Anthology) - 07 Nov 2023  0020
 * Mersault, Michael - The Deep Man - 13 Nov 2023  2354
+* Wells, Martha - Murderbot Diaries 01 - All Systems Red - 15 Nov 2023  0215

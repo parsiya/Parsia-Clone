@@ -245,18 +245,17 @@ The only positive thing about this book is the famous
 [ringo-no]: https://hradzka.livejournal.com/194753.html
 
 ## Cambias, James L. - Billion Worlds 01 - The Godel Operation - 5/5
-The "Billion Worlds" universe is set 10,000 years into the future. The billion
-worlds refer to the almost innumerable habitats, terraformed planets/moons, and
-modified asteroids in the solar system (and a few nearby stars) housing
-trillions of biological and digital beings. There are genetically modified
-humans, dolphins, Martians, and other species mixed with AIs of different
-intelligence levels.
+The universe is set 10,000 years into the future. The billion worlds refer to
+the almost innumerable habitats, terraformed planets/moons, and modified
+asteroids in the solar system (and a few nearby stars) housing trillions of
+biological and digital beings. There are genetically modified humans, dolphins,
+Martians, and other species mixed with AIs of different intelligence levels.
 
 The universe offers digital existence, genetic modification, matter printers
 (e.g., create almost any matter like food or clothes). Travel is still bound by
-physical laws so going around the solar system is slow (and required
+physical laws so going around the solar system is slow (and requires
 hibernation). There are a few nearby stars that are populated (there's a mention
-of ships being sent at around half of the speed of light).
+of ships at half the speed of light).
 
 The story follows a group of characters (mainly a "robot AI" and a human) in
 search of a superweapon. I like the universe and Cambias' writing style.
@@ -273,7 +272,8 @@ This is my 3rd consecutive James Cambias book in 2 weeks.
 
 Exciting journey of a group of humans through a strange planet inhabited by
 countless species of aliens. I give the world building 6/5 and main character
-development 3/5.
+development 3/5. The extensive world building makes sense when I realized he is
+a fantasy tabletop game designer.
 
 I especially liked how the author had devised a sort of distinctive grammar and
 sentence structure in English for the each species' usage of the planet's
@@ -302,12 +302,12 @@ I didn't like "Temporary Embarrassment in Spacetime", "Infinite Love Engine",
 
 My favorites:
 
-- "The Deckhand, the Nova Blade, and the Thrice-Sung Texts": Story of a reluctant hero told through diary logs.
-- "Frost Giant's Data": Cyberpunk infiltration of a security planetoid.
-- "Chameleon's Gloves": What makes us human?
-- "The Sighted Watchmaker": Why has our creator left?
-- "Zen and the Art of Starship Maintenance" and "Unfamiliar Gods": Variations of "Monkey's Paw."
-- "Seven Wonders of a Once and Future World": Time is a flat circle.
+* "The Deckhand, the Nova Blade, and the Thrice-Sung Texts": Story of a reluctant hero told through diary logs.
+* "Frost Giant's Data": Cyberpunk infiltration of a security planetoid.
+* "Chameleon's Gloves": What makes us human?
+* "The Sighted Watchmaker": Why did our creator leave?
+* "Zen and the Art of Starship Maintenance" and "Unfamiliar Gods": Variations of "Monkey's Paw."
+* "Seven Wonders of a Once and Future World": Time is a flat circle.
 
 ## Lamb, Alex - Roboteer 01 - Roboteer - 0.5/5
 I stopped halfway through after I saw it's going in circles.
@@ -477,3 +477,8 @@ that deal with Inga's background. You can read it for free in
 [rcn]: https://en.wikipedia.org/wiki/RCN_Series
 [baen-free-2022]: https://www.baen.com/free-stories-2022.html
 [silent-hand]: https://www.baen.com/the-silent-hand.html
+
+## Wells, Martha - Murderbot Diaries 01 - All Systems Red - 3/5
+This was a quick read and entertaining to pass the time. An "AI coming to terms
+with its own existence" tale. If you like Scalzi books, you're gonna like this.
+
