@@ -198,9 +198,9 @@ patterns:
 
 # Creating Snippets
 Similar to other editors, you can create snippets in VS Code. Snippets are
-stored in JSON files. To create a snippet for a specific language use `File
-(menu) > Preferences > User Snippets`. Then select the language. In this case, I
-will create some Markdown snippets, so I will select `markdown.json`.
+stored in JSON files. To create a snippet for a specific language use
+`File (menu) > Preferences > Configure User Snippets`. Then select the language.
+In this case, I will create some Markdown snippets, so I will select `markdown.json`.
 
 The JSON object is easy to read. The important parts are `prefix` (which is the
 trigger) and `body`. Note that you do not need to enter new lines with `\n`.
@@ -252,7 +252,9 @@ As another example, I have created two snippets for my
 	"imgcap": {
 		"prefix": "imgcap",
 		"body": [
-			"{{< imgcap title=\"${1:title}\" src=\"${2:filename}.png\" >}}",
+            // comment is a placeholder to prevent Hugo from generating the shortcode.
+			"{{</* imgcap title=\"${1:title}\" src=\"${2:filename}.png\" */>}}",
+            "", // empty line after shortcode
 			"$0"
 		],
 		"description": "image caption Hugo shortcode"
