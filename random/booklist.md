@@ -328,37 +328,39 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Chris Bunch & Allan Cole | Sten 01 | Sten | 2317 - 14 Sep 2022 - 3rd time |
 | Chris Bunch & Allan Cole | Sten 02 | The Wolf Worlds | 2053 - 19 Sep 2022 - 3rd time |
 | David Drake | | Redliners | 0323 - 01 Oct 2022 - 4th time |
-| Greg Egan | | Zendegi | Jan 2023 |
-| Neil Clarke | Anthology | Galactic Empires | 16 May 2023 |
-| David Drake & S.M. Stirling | The General 01-02 | Warlord | 2215 - 20 May 2023 |
-| Christopher Ruocchio | Anthology | Sword and Planet | 1500 - 24 May 2023 |
-| Ann Leckie | Imperial Radch 01 | Ancillary Justice | 0047 - 30 May 2023 |
-| Kevin Anderson | Saga of the Seven Suns 01 | Hidden Empire | 1801 - 04 June 2023 |
-| Ernest Cline | Ready Player One 02 | Ready Player Two | 2100 - 07 June 2023 - Almost DNF |
-| John Scalzi | The Dispatcher 01 | The Dispatcher | 0845 - 08 June 2023 |
-| John Scalzi | The Dispatcher 02 | Murder by Other Means | 2130 - 10 June 2023 |
-| Jason Cordova | Anthology | Chicks in Tank Tops | 0919 - 14 June 2023 |
-| Christopher Ruocchio & Sean CW Korsgaard | Anthology | Worlds Long Lost | 2245 - 16 June 2023 |
-| Christopher Ruocchio & Tony Daniel | Anthology | Star Destroyers | 0002 - 19 June 2023 |
-| Bryan Thomas Schmidt | Infitite Stars Anthology 01 | Infinite Stars: the definitive anthology of space opera and military SF | 1405 - 01 July 2023 |
-| Michael Z. Williamson | Freehold 07 | Angleeyes | 0125 - 05 July 2023 |
+| Greg Egan | | [Zendegi]({{<relref "bookreviews.md#zendegi">}}) | Jan 2023 |
+| Neil Clarke | Anthology | [Galactic Empires]({{<relref "bookreviews.md#galacticempires">}}) | 16 May 2023 |
+| David Drake & S.M. Stirling | The General 01-02 | [Warlord]({{<relref "bookreviews.md#warlord">}}) | 2215 - 20 May 2023 |
+| Bruce Sterling | | [Pirate Utopia]({{<relref "bookreviews.md#pirateutopia">}}) | DNF |
+| Christopher Ruocchio | Anthology | [Sword and Planet]({{<relref "bookreviews.md#swordplanet">}}) | 1500 - 24 May 2023 |
+| Ann Leckie | Imperial Radch 01 | [Ancillary Justice]({{<relref "bookreviews.md#ancillaryjustice">}}) | 0047 - 30 May 2023 |
+| Kevin Anderson | Saga of the Seven Suns 01 | [Hidden Empire]{{<relref "bookreview.md#saga01">}} | 1801 - 04 June 2023 |
+| Ernest Cline | Ready Player One 02 | [Ready Player Two]({{<relref "bookreviews.md#player2">}}) | 2100 - 07 June 2023 - Almost DNF |
+| John Scalzi | The Dispatcher 01 | [The Dispatcher]({{<relref "bookreviews.md#dispatcher01">}}) | 0845 - 08 June 2023 |
+| John Scalzi | The Dispatcher 02 | [Murder by Other Means]({{<relref "bookreviews.md#dispatcher02">}}) | 2130 - 10 June 2023 |
+| Jason Cordova | Anthology | [Chicks in Tank Tops]({{<relref "bookreviews.md#chickstanks">}}) | 0919 - 14 June 2023 |
+| Christopher Ruocchio & Sean CW Korsgaard | Anthology | [Worlds Long Lost]({{<relref "bookreviews.md#worldslost">}}) | 2245 - 16 June 2023 |
+| Christopher Ruocchio & Tony Daniel | Anthology | [Star Destroyers]({{<relref "bookreviews.md#stardestroyers">}}) | 0002 - 19 June 2023 |
+| Greg Bear | War Dogs 01 | [War Dogs]({{<relref "bookreviews.md#wardogs01">}}) | DNF |
+| Bryan Thomas Schmidt | Infitite Stars Anthology 01 | [Infinite Stars: the definitive anthology of space opera and military SF]({{<relref "bookreviews.md#infinite01">}}) | 1405 - 01 July 2023 |
+| Michael Z. Williamson | Freehold 07 | [Angleeyes]({{<relref "bookreviews.md#freehold07">}}) | 0125 - 05 July 2023 |
 | Janelle Monae | Anthology | The Memory Librarian: And Other Stories of Dirty Computer | 0130 - 08 July 2023 |
-| Kevin Anderson | Saga of the Seven Suns 02 | Forest of Stars | 1220 - 15 July 2023 |
-| Kristin K. Rusch | Anthology | Women of Futures Past: Classic Stories | 1301 - 16 July 2023 |
-| Charles E. Gannon & Griffin Barber & Chris Kennedy & Mike Massa | Tales of the Terran Republic | Mission Critical | 0928 - 21 July 2023 |
-| James L. Cambias | Billion Worlds 01 | 1019 - The Godel Operation | 05 Aug 2023 |
-| James L. Cambias | Billion Worlds 02 | 2234 - The Scarab Mission | 06 Aug 2023 |
-| James L. Cambias | Arkad's World | 1114 - 14 Aug 2023 |
-| John Scalzi | The Kaiju Preservation Society | 1844 - 26 Aug 2023 |
-| Kevin Anderson | Saga of the Seven Suns 03 | 1527 - Horizon Storms | 01 Sep 2023 |
-| John J.Adams | Anthology | Cosmic Powers: The Saga Anthology of Far-Away Galaxies | 1726 - 16 Sep 2023 |
-| Alex Lamb | Roboteer 01 | Roboteer | 20 Sep 2023 - DNF |
-| John Scalzi | The Dispatcher 03 | Travel by Bullet | 1406 - 27 Sep 2023 |
-| Bryan Thomas Schmidt | Infitite Stars Anthology 01 | Infinite Stars: Dark Frontiers | 1707 - 28 Sep 2023 |
+| Kevin Anderson | Saga of the Seven Suns 02 | [Forest of Stars]({{<relref "bookreviews.md#saga02">}}) | 1220 - 15 July 2023 |
+| Kristin K. Rusch | Anthology | [Women of Futures Past: Classic Stories]({{<relref "bookreviews.md#womenfuture">}}) | 1301 - 16 July 2023 |
+| Charles E. Gannon & Griffin Barber & Chris Kennedy & Mike Massa | Tales of the Terran Republic | [Mission Critical]({{<relref "bookreviews.md#missioncritical">}}) | 0928 - 21 July 2023 |
+| James L. Cambias | Billion Worlds 01 | [The Godel Operation]({{<relref "bookreviews.md#billion01">}}) | 1019 - 05 Aug 2023 |
+| James L. Cambias | Billion Worlds 02 | [The Scarab Mission]({{<relref "bookreviews.md#billion02">}}) | 2234 - 06 Aug 2023 |
+| James L. Cambias | | [Arkad's World]({{<relref "bookreviews.md#arkad">}}) | 1114 - 14 Aug 2023 |
+| John Scalzi | | [The Kaiju Preservation Society]({{<relref "bookreviews.md#kaiju">}}) | 1844 - 26 Aug 2023 |
+| Kevin Anderson | Saga of the Seven Suns 03 | [Horizon Storms]({{<relref "bookreviews.md#saga03">}}) | 1527 - 01 Sep 2023 |
+| John J.Adams | Anthology | [Cosmic Powers: The Saga Anthology of Far-Away Galaxies]({{<relref "bookreviews.md#cosmic">}}) | 1726 - 16 Sep 2023 |
+| Alex Lamb | Roboteer 01 | [Roboteer]({{<relref "bookreviews.md#roboteer01">}}) | 20 Sep 2023 - DNF |
+| John Scalzi | The Dispatcher 03 | [Travel by Bullet]({{<relref "bookreviews.md#dispatcher03">}}) | 1406 - 27 Sep 2023 |
+| Bryan Thomas Schmidt | Infitite Stars Anthology 02 | [Infinite Stars: Dark Frontiers]({{<relref "bookreviews.md#infinite02">}}) | 1707 - 28 Sep 2023 |
 | David Drake | RCN 01 | With The Lightnings | 1850 - 02 Oct 2023 - 2nd time |
-| David Weber & Jacob Holo | Gordian Protocol 01 | The Gordian Protocol | DNF |
-| David G. Hartwell & Jacob Weisman | Anthology | The Sword & Sorcery Anthology | 1431 - 27 Oct 2023 |
-| John Scalzi | Fuzzy Sapiens 07 | Fuzzy Nation | 1714 - 29 Oct 2023 |
-| David Boop | Anthology | Gunfight on Europa Station | 0020 - 07 Nov 2023 |
-| Michael Mersault | | The Deep Man | 2354 - 13 Nov 2023 |
-| Martha Wells | Murderbot Diaries 01 | All Systems Red | 0215 - 15 Nov 2023 |
+| David Weber & Jacob Holo | Gordian Protocol 01 | [The Gordian Protocol]({{<relref "bookreviews.md#gordian01">}}) | DNF |
+| David G. Hartwell & Jacob Weisman | Anthology | [The Sword & Sorcery Anthology]({{<relref "bookreviews.md#swordant">}}) | 1431 - 27 Oct 2023 |
+| John Scalzi | Fuzzy Sapiens 07 | [Fuzzy Nation]({{<relref "bookreviews.md#fuzzy07">}}) | 1714 - 29 Oct 2023 |
+| David Boop | Anthology | [Gunfight on Europa Station]({{<relref "bookreviews.md#guneuropa">}}) | 0020 - 07 Nov 2023 |
+| Michael Mersault | | [The Deep Man]({{<relref "bookreviews.md#deepman">}}) | 2354 - 13 Nov 2023 |
+| Martha Wells | Murderbot Diaries 01 | [All Systems Red]({{<relref "bookreviews.md#murderbot01">}}) | 0215 - 15 Nov 2023 |
