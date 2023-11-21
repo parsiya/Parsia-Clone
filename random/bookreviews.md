@@ -17,9 +17,10 @@ short reviews for each of the books I've read. You can see most of them them at
 the bottom of the [book list](booklist.md).
 
 The titles are
-"[author last, first] - [series (if any)] - [book name] - [finished timestamp] - [score/5]".
+"[author(s)] - [series (if any)] - [book name] - [finished timestamp] - [score/5]".
+DNF == Did Not Finish.
 
-## Egan, Greg - Zendegi - 5/5
+## Greg Egan - Zendegi - 5/5
 Disclosure: I was born and raised in Iran. I liked the book and especially the
 parts related to Shahnameh. Not all the Farsi/Persian words used in the book
 (mostly in conversations) were translated. I think non-native speakers would
@@ -29,19 +30,19 @@ elements.
 
 [galactic-empires]: https://www.goodreads.com/book/show/32333734-galactic-empires
 
-## Clarke, Neil - Galactic Empires (Anthology) - 4/5
+## Neil Clarke - Galactic Empires (Anthology) - 4/5
 Nice collection of stories. I love anthologies because if I cannot connect with
 a story after a few pages, I can move to the next story. Fortunately, this only
 happened twice with this book (doesn't mean those stories are bad, I just didn't
 like them).
 
-## Drake, David & Stirling, S. M. - The General 01-02 - Warlord - 2/5
+## David Drake & S.M. Stirling - The General 01-02 - Warlord - 2/5
 The first two books of the Raj Whitehall or General series. I only finished the
 book because I love [David Drake][david-drake]. I didn't like the very
 monotonous battles. I guess I am more of a [Hammer's Slammers][slammers] fan
 than low tech war.
 
-## Sterling, Bruce - Pirate Utopia - 1/5
+## Bruce Sterling - Pirate Utopia - 1/5 - DNF
 Stopped two short stories in. While I liked the settings, it was more of an
 anarcho-sth equivalent of the [Freehold][freehold] series by Michael Williamson
 (oh, boy do I have the spicy review for what he has become since he wrote it).
@@ -49,19 +50,19 @@ Not enough action in the collection of short stories.
 
 [freehold]: https://en.wikipedia.org/wiki/Freehold_(novel)
 
-## Ruocchio, Christopher - Sword and Planet (Anthology) - 5/5
+## Christopher Ruocchio - Sword and Planet (Anthology) - 5/5
 Good collection of short stories at the intersection of Sci-Fi and Fantasy. I
 enjoyed reading all of them. This is a sub-genre that I need to explore more.
 Cyborgs in a fantasy setting? Sign me up.
 
-## Leckie, Ann - Imperial Radch 01 - Ancillary Justice - 3/5
+## Ann Leckie - Imperial Radch 01 - Ancillary Justice - 3/5
 I enjoyed the book. It has won a laundry list of prestigious awards. While I
 loved the main character, the world building took most of the book. It's as-if
 the book was written with the intention of being the first in a series. I did
 not excite me for the second book (as of September 2023 I've not continued the
 series, yet).
 
-## Anderson, Kevin - Saga of the Seven Suns 01 - Hidden Empire - 4/5
+## Kevin Anderson - Saga of the Seven Suns 01 - Hidden Empire - 4/5
 Book first in the [Saga of the Seven Suns][seven-suns] series. Most of this book
 is world building. This might get boring There are a ton of characters,
 factions, and plots. If you like vast space operas, this is the series for you.
@@ -73,7 +74,7 @@ Think of this as the Sci-Fi equivalent of [Wheel of Time][wot] series.
 [seven-suns]: https://en.wikipedia.org/wiki/The_Saga_of_Seven_Suns
 [wot]: https://en.wikipedia.org/wiki/The_Wheel_of_Time
 
-## Cline, Ernest - Ready Player Two - 0/5
+## Ernest Cline - Ready Player Two - 0/5
 Oh God, where do I start? Even being a fan of "main character transported to
 virtual/parallel/fantasy worlds" (or Isekai if you're an anime fan), I did not
 like the first book (Ready Player One).
@@ -89,8 +90,8 @@ are very simple. Most of them are handwaved with "I have already done a series
 of activities on this planet and have this thingamajig that solves it." At least
 3 of them where unnecessary.
 
-## Scalzi, John - The Dispatcher 01 - The Dispatcher - 4/5
-## Scalzi, John - The Dispatcher 02 - Murder by Other Means - 4/5
+## John Scalzi - The Dispatcher 01 - The Dispatcher - 4/5
+## John Scalzi - The Dispatcher 02 - Murder by Other Means - 4/5
 Scalzi writes "Sci-Fi that sells" and I guess I respect that. You gotta earn a
 living. Not every book can be [Old Man's War][old-war].
 
@@ -101,7 +102,7 @@ is interesting. 999/1000 you return to life after you're killed. The dispatcher
 is a state regulated killer. They kill people who are dying so they return to
 life.
 
-## Cordova, Jason - Chicks in Tank Tops (Anthology) - 5/5
+## Jason Cordova - Chicks in Tank Tops (Anthology) - 5/5
 Nice collection of SFF short stories with female protagonists and, well, tanks!
 The tanks are not always conventional. They're balloons, spring-wired
 contraptions, and at least in one occasion, a beloved classic literary
@@ -114,7 +115,7 @@ they are not. The tank in the stories is a surprise.
 [david-drake]: https://en.wikipedia.org/wiki/David_Drake
 [slammers]: https://en.wikipedia.org/wiki/Hammer%27s_Slammers
 
-## Ruocchio, Christopher & Korsgaard, Sean CW - Worlds Long Lost (Anthology) - 4/5
+## Christopher Ruocchio & Sean CW Korsgaard - Worlds Long Lost (Anthology) - 4/5
 I've quickly become a fan of Baen's anthologies (mostly by Chris Ruocchio).
 
 Collection of short stories involving alien archaeologies. It has quite a few
@@ -128,7 +129,7 @@ place in this anthology. It really didn't have anything to do with ancient
 aliens remains or artifacts. I think they just wanted to include a story by a
 famous writer.
 
-## Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 3.5/5
+## Christopher Ruocchio & Tony Daniel - Star Destroyers (Anthology) - 3.5/5
 I gave this book 3.5/5 because not all of the stories were really revolving around "ships."
 
 My favorites:
@@ -153,12 +154,12 @@ protecting us from aliens/brown people/bad things" I can re-read
 
 [starship-troopers-novel]: https://en.wikipedia.org/wiki/Starship_Troopers
 
-## Bear, Greg - War Dogs - 0/5
+## Greg Bear - War Dogs - 0/5 - DNF
 I stopped on page 130/291. For a military sci-fi book, there was not a lot of
 action. It take skill to make a book in this genre boring. Maybe I am more used
 to the writing style of Drake, Weber, and Dietz.
 
-## Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF - 4.5/5
+## Bryan Thomas Schmidt - Infinite Stars: the definitive anthology of space opera and military SF - 4.5/5
 Great collection of "Space Opera" short stories by some of my favorite writers.
 Most are side stories (or in between books) in the authors' established series.
 E.g., David Weber's story happens before the Honorverse series. David Drake's
@@ -169,7 +170,7 @@ If you like this book, read the second volume, "Infinite Stars: Dark Frontiers."
 
 The only stories that I skipped were "Imperium Imposter" and "A Taste of Ashes."
 
-## Williamson, Michael Z. - Freehold 07 - Angeleyes - 0.5/5
+## Michael Z. Williamson - Freehold 07 - Angeleyes - 0.5/5
 Born and raised in an authoritarian Middle-Eastern country, I have a healthy
 distaste for government. Williamson is a libertarian and [Freehold][freehold]
 was a libertarian utopia. I loved it and appreciated his worldview of "small
@@ -200,23 +201,23 @@ mandated contracts and even warnings on tools/appliances. What makes this more
 hilarious is the author served 25 years in the US military which has all of
 this and more. It's the biggest socialist jobs program in the country.
 
-## Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 5/5
+## Kevin Anderson - Saga of the Seven Suns 02 - Forest of Stars - 5/5
 Book two the [Saga of the Seven Suns][seven-suns]. I liked this one more than
 the first because the world building was done and the characters are becoming
 more interesting (to me).
 
-## Rusch, Kristin K. - Women of Futures Past: Classic Stories - 5/5
+## Kristin K. Rusch - Women of Futures Past: Classic Stories - 5/5
 I loved this book. There were so many different stories from different
 perspectives. I also liked the author introductions before each story. Those
 give the reader an idea of what else the author has written. I added so many
 books to my "to read" list.
 
-## Monae, Janelle - The Memory Librarian: And Other Stories of Dirty Computer - 3.5/5
+## Janelle Monae - The Memory Librarian: And Other Stories of Dirty Computer - 3.5/5
 I loved the settings and some of the stories, especially the main story "The
 Memory Librarian." "Timebox" was great."Save Changes" was more fantasy than
 cyberpunk. I skipped "Nevermind" and "Timebox Altar(ed)" halfway through.
 
-## Gannon, Charles E., Barber, Griffin, Kennedy, Chris, & Massa, Mike - Tales of the Terran Republic - Mission Critical - 4/5
+## Charles E. Gannon & Griffin Barber & Chris Kennedy & Mike Massa - Tales of the Terran Republic - Mission Critical - 4/5
 This is a book in the "Tales of The Terran Republic Universe" and part of the
 "Murphy's Lawless" series. This book is a compilation of three novellas
 "Infiltration" (Griffin Barber), "Insertion" (Chris Kennedy), and "Assault"
@@ -234,7 +235,7 @@ they're the subject of previous books in the series.
 Other than that, the action is fluid and I liked the how book jumped between
 the different locations and how everything came together for the final showdown.
 
-## Ringo, John - Ghost - 0/5
+## John Ringo - Ghost - 0/5 - DNF
 Oh God, where do I start with this. I stopped a few chapters in. Ringo was the
 guy whose stories made me realize a not so insignificant portion of Military
 Sci-Fi aliens are in fact "bad brown people" (from the Middle-East).
@@ -244,7 +245,7 @@ The only positive thing about this book is the famous
 
 [ringo-no]: https://hradzka.livejournal.com/194753.html
 
-## Cambias, James L. - Billion Worlds 01 - The Godel Operation - 5/5
+## James L. Cambias - Billion Worlds 01 - The Godel Operation - 5/5
 The universe is set 10,000 years into the future. The billion worlds refer to
 the almost innumerable habitats, terraformed planets/moons, and modified
 asteroids in the solar system (and a few nearby stars) housing trillions of
@@ -260,14 +261,14 @@ of ships at half the speed of light).
 The story follows a group of characters (mainly a "robot AI" and a human) in
 search of a superweapon. I like the universe and Cambias' writing style.
 
-## Cambias, James L. - Billion Worlds 02 - The Scarab Mission - 5/5
+## James L. Cambias - Billion Worlds 02 - The Scarab Mission - 5/5
 Another quick read in the "Billion Worlds" universe. I will not repeat the
 description from my last review (see "The Godel Operation" review above). The
 stories are not related. There's a recurring character, but that's about it.
 This one is centered around an empty habitat and a group of salvagers who are
 looking for valuables.
 
-## Cambias, James L. - Arkad's World - 4.5/5
+## James L. Cambias - Arkad's World - 4.5/5
 This is my 3rd consecutive James Cambias book in 2 weeks.
 
 Exciting journey of a group of humans through a strange planet inhabited by
@@ -284,17 +285,17 @@ looking aliens [referring to humans] are in civilized [city name]."
 Some cons: 2 of the 4 main humans are stock characters and they did not have a
 lot of development. A couple of loose ends are not tied.
 
-## Scalzi, John - The Kaiju Preservation Society - 3/5
+## John Scalzi - The Kaiju Preservation Society - 3/5
 It's an entertaining read. Scalzi is honest about writing science fiction that
 sells. I cannot really argue with that, as artists need to eat, too.
 
-## Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 4/5
+## Kevin Anderson - Saga of the Seven Suns 03 - Horizon Storms - 4/5
 Book 3 of the "Saga of the Seven Suns." In the honored tradition of such a big
 space saga, we will be keeping up with dozens of "main" characters. I like how
 some of the characters are being developed (e.g., the king) and how the Ildiran
 society is challenged.
 
-## Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 4/5
+## John J. Adams - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 4/5
 I liked most of the stories.
 
 I didn't like "Temporary Embarrassment in Spacetime", "Infinite Love Engine",
@@ -309,7 +310,7 @@ My favorites:
 * "Zen and the Art of Starship Maintenance" and "Unfamiliar Gods": Variations of "Monkey's Paw."
 * "Seven Wonders of a Once and Future World": Time is a flat circle.
 
-## Lamb, Alex - Roboteer 01 - Roboteer - 0.5/5
+## Alex Lamb - Roboteer 01 - Roboteer - 0.5/5 - DNF
 I stopped halfway through after I saw it's going in circles.
 
 There are two major groups of humanity: The eugenic, augmented and advanced rich
@@ -321,12 +322,12 @@ them. We're supposed to like the spacers. If this was reddit, I would say ESH
 There's even a "they hate us because they ain't us" conversation between two
 spacers. This was giving me post 9/11 vibes.
 
-## Scalzi, John - The Dispatcher 03 - Travel by Bullet - 4/5
+## John Scalzi - The Dispatcher 03 - Travel by Bullet - 4/5
 Another quick and fun read in the Dispatcher universe. Tons of recurring
 characters and some new ones. Some cryptocurrency and techbros mixed into the
 story.
 
-## Schmidt, Bryan Thomas - Infinite Stars: Dark Frontiers (Anthology) - 5/5
+## Bryan Thomas Schmidt - Infinite Stars: Dark Frontiers (Anthology) - 5/5
 Second anthology in the "Infinite Stars" series (see the previous one above). I
 don't think I skipped any stories in this one. [List of stories][l1].
 
@@ -340,7 +341,7 @@ Some of my favorites:
 
 [l1]: https://bryanthomasschmidt.net/writings/anthologies-edited/infinite-stars-dark-frontiers/
 
-## Weber, David & Holo, Jacob - Gordian Protocol 01 - The Gordian Protocol - 0/5
+## David Weber & Jacob Holo - Gordian Protocol 01 - The Gordian Protocol - 0/5 - DNF
 Oh God, what did I just read?
 
 If you're a Weber fan, don't read this book. If you don't know Weber, read
@@ -365,12 +366,12 @@ about quartering soldiers in homes or the 3rd amendment because that's how the
 other two were.
 
 I am not sure **WHY** I actually read these two chapters. I mean I expect
-military science fiction is to be full of people on the conservative side of the
-aisle, but this sort of nonsense was just too much. What made it worse was it
-had almost nothing to do with the rest of the book. The book got better, but
-that was mainly because this part was soooo bad.
+military science fiction is to be full of conservatives, but this sort of
+nonsense was just too much. What made it worse was it had almost nothing to do
+with the rest of the book. The book got better, but when it has hit rock bottom,
+the only way is up.
 
-## Hartwell, David G. & Weisman, Jacob - The Sword & Sorcery Anthology - 4/5
+## David G. Hartwell & Jacob Weisman - The Sword & Sorcery Anthology - 4/5
 It had been a while since I had read actual fantasy. This was a breath of fresh
 air between all the Sci-Fi and Mil-Sci-Fi.
 
@@ -404,7 +405,7 @@ Didn't like/skipped:
 * Coral Heart: Skipped after a few pages.
 * Year of the Three Monarchs: Interesting story, but too rushed IMO.
 
-## Scalzi, John - Fuzzy Nation - 3/5
+## John Scalzi - Fuzzy Nation - 3/5
 A somewhat reboot of H. Beam Piper's Little Fuzzy. The original work is out of
 copy right so you can read it for free in places like
 [Project Gutenberg (text)][lf-gu], [Internet Archive (audio book)][lf-aa-audio],
@@ -418,36 +419,46 @@ If was a quick read. The first third of the book was boring, the second third
 was amusing, and the last part of the book (and the entire ending) was very very
 cheesy and written like a fan fiction.
 
-## Boop, David - Gunfight on Europa Station (Anthology) - 4/5
+## David Boop - Gunfight on Europa Station (Anthology) - 4/5
 [Western stories in space][gunfight]. Some were low effort and just a western adventure on a
 different planet with laser and rockets.
 [List of stories on bibliocommons][gunfight-list].
 
 These were really creative and blended the genres:
 
-* "Greenhorn" by Elizabeth Moon: A new farmer with a hidden agenda arrives in a space colony imitating the old west.
+* "Greenhorn" by Elizabeth Moon: A new farmer with a hidden agenda arrives in a
+  space colony imitating the old west.
 * "Hydration" by Alan Dean Foster: A lost prospector does an unusual trade.
-* "Winner Takes All" by Alex Shvartsman: A commando team is extracting the head of the resistance (an AI) from a low-technology zone (great setting).
-* "Doc Holliday 2.0" by Will McCarthy: Probably my favorite story in the book. A company creates a clone of an old western Gunslinger to deal with robbers. The clone is coming to terms with his existence.
+* "Winner Takes All" by Alex Shvartsman: A commando team is extracting the head
+  of the resistance (an AI) from a low-technology zone (great setting).
+* "Doc Holliday 2.0" by Will McCarthy: Probably my favorite story in the book. A
+  company creates a clone of an old western Gunslinger to deal with robbers. The
+  clone is coming to terms with his existence.
 
 Western stories in space. Fun to read but nothing to write home about:
 
-* "Penultimate Stand of Pina Gracchi": A classic "law enforcers break up the tyranny in a company town" western tale but in space and aliens.
-* "Seeds": Old man sees new technology. This was a bit of a mix for me. I liked the setting. People live/farm with low technology like the old western frontier in other planets. But the story was a classic tale of "old farmer encounters new technology."
+* "Penultimate Stand of Pina Gracchi": A classic "law enforcers break up the
+  tyranny in a company town" western tale but in space and aliens.
+* "Seeds": Old man sees new technology. This was a bit of a mix for me. I liked
+  the setting. People live/farm with low technology like the old western
+  frontier in other planets. But the story was a classic tale of "old farmer
+  encounters new technology."
 * "Riding the Storm Out": Recapture a fugitive in the middle of a storm.
-* "Claim Jumped": Detective murder mystery in a mining asteroid. I liked how the sci-fi elements are mixed with the mystery, but the ending was meh.
+* "Claim Jumped": Detective murder mystery in a mining asteroid. I liked how the
+  sci-fi elements are mixed with the mystery, but the ending was meh.
 
 I did not like these:
 
 * "Showdown on Big Rock 27": An unfunny version of "a bunch of kids thwart bad pirates."
 * "Last Stand at Europa Station A.": Are these aliens bad or what?
-* "Riders of the Endless Void": Heroes arrive and save people. This story didn't even pretend to be a western in space. Nothing western here.
+* "Riders of the Endless Void": Heroes arrive and save people. This story didn't
+  even pretend to be a western in space. Nothing western here.
 * "Incident at Raven's Rift": Standoff with robbers, but on another planet.
 
 [gunfight]: https://www.baen.com/gunfight-on-europa-station.html
 [gunfight-list]: https://fvrl.bibliocommons.com/v2/record/S21C1884137
 
-## Mersault, Michael - The Deep Man - 4.5/5
+## Michael Mersault - The Deep Man - 4.5/5
 This book reminds me of the [Republic Of Cinnabar][rcn] (RCN) series by
 [David Drake][david-drake] which is basically "the old British navy in space."
 I liked the book and the setting because I am a fan of RCN (and David Drake).
@@ -478,7 +489,7 @@ that deal with Inga's background. You can read it for free in
 [baen-free-2022]: https://www.baen.com/free-stories-2022.html
 [silent-hand]: https://www.baen.com/the-silent-hand.html
 
-## Wells, Martha - Murderbot Diaries 01 - All Systems Red - 3/5
+## Martha Wells - Murderbot Diaries 01 - All Systems Red - 3/5
 This was a quick read and entertaining to pass the time. An "AI coming to terms
-with its own existence" tale. If you like Scalzi books, you're gonna like this.
-
+with its own existence" tale. This reminded me of Scalzi books. So if you love
+Scalzi, you're gonna like this series.

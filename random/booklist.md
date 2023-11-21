@@ -12,350 +12,353 @@ snippet: "I keep track of (most) books I read and the time I finish them."
 
 ---
 
-I was not tracking the timestamps for a while. You can see those books at the
-beginning of the list. DNF == Did Not Finish.
+I was not tracking the timestamps at first. Most of the books at the beginning
+of the list don't have any. I simply went through my ebooks/books and added the
+ones I had read.
 
-The list format is:
+* DNF in the timestamp == Did Not Finish.
+* Some books (they're all at the bottom) have reviews.
 
-"[author last, first] - [series (if any)] - [book name] - [finished timestamp (if any)]".
-
-* Anderson, Poul - Shield
-* Anderson, Poul - Sky People
-* Asimov, Isaac - Dreaming Is a Private Thing
-* Asimov, Isaac - Foundation 1 - Prelude to Foundation
-* Asimov, Isaac - Foundation 2 - Foundation
-* Asimov, Isaac - Foundation 3 - Foundation and Empire
-* Asimov, Isaac - Foundation 4 - Forward the Foundation
-* Asimov, Isaac - Foundation 5 - Foundation's Edge
-* Asimov, Isaac - Foundation 6 - Foundation and Earth
-* Asimov, Isaac - Hell-Fire
-* Asimov, Isaac - Lucky Starr 02 - Pirates Of The Asteroids
-* Asimov, Isaac - Pebble In The Sky
-* Asprin, Robert - The Cold Cash War
-* Aldiss, Brian - Super-Toys Last All Summer Long
-* Clarke, Arthur C - Inheritance
-* Haldeman, Joe - The Forever War
-* Haldeman, Joe - The Forever War 02 - A Separate War
-* Haldeman, Joe - The Forever War 03 - Forever Free
-* Pournelle, Jerry - The Mercenary
-* Pournelle, Jerry & Stirling, S. M. - The Prince of Sparta
-* Pournelle, Jerry - Falkenberg's Legion
-* Piper, H. Beam - The Cosmic Computer
-* Niven, Larry - Wishing Game
-* Niven, Larry - Wrong Way Street
-* Heinlein, Robert - Orphans Of The Sky
-* Heinlein, Robert - The Sixth Column
-* Weber, David & Ringo, John - Empire of Man 01 - March Upcountry
-* Weber, David & Ringo, John - Empire of Man 02 - March To The Sea
-* Weber, David & Ringo, John - Empire of Man 03 - March To The Stars
-* Adams, Douglas - HH 01 - Hitchhiker's Guide to the Galaxy
-* Adams, Douglas - HH 02 - The Restaurant at the End of the Universe
-* Adams, Douglas - HH 03 - Life, the Universe, and Everything
-* Adams, Douglas - HH 04 - So long, and thanks for all the fish
-* Adams, Douglas - HH 05 - Mostly Harmless
-* Lester, Jim - Fallout
-* Sawyer, Robert J. - Calculating God
-* Moon, Elizabeth - Planet Pirates Trilogy
-* Bunch, Chris - Mirror
-* Ringo, John - Aldenata 01 - A Hymn Before Battle
-* Ringo, John - Aldenata 02 - Gust Front
-* Ringo, John - Aldenata 03 - When The Devil Dances
-* Ringo, John - Aldenata 04 - Hell's Faire
-* Ringo, John & Julie Cochrane - Cally's War
-* Heinlein, Robert - All You Zombies
-* Heinlein, Robert - Bulletin Board
-* Heinlein, Robert - Citizen Of The Galaxy
-* Steakley, John - Armor
-* Brown, Fredrick - Martians Go Home   2-3 March 2005
-* Charles Stross - A Boy And His God   12 March 2005 - 0030
-* Drake, David - Hammer's Slammers 03 - At Any Price -  26-27 March 2005
-* David Weber & John Ringo - Empire of Man 04 - We Few - 01-03 April 2005 0404
-* Zelazny, Roger - My Lady of the Diodes - 03 April 2005 1016
-* Zelazny, Roger - Come Back to the Killing Ground, Alice, My Love - 03-04 April 2005 2338
-* Lester Del Rey - Return Engagement - 05 April 0103
-* Haldeman, Jack ii - We The People - 09 April 0249
-* Bunch, Chris And Cole, Allan - Sten 1 - Sten   23 April 2005 - 1753
-* Bunch, Chris And Cole, Allan - Sten 2 - The Wolf Worlds  29 April 2005 - 1000
-* Haldeman, Joe - The Gift  	30 April 2005 - 1635
-* Haldeman, Joe - The Pilot 	30 April 2005 - 1640
-* Haldeman, Joe - Saul's Death 	30 April 2005 - 1644
-* Haldeman, Joe - Seasons	  	30 April 2005 - 1705
-* Moriarty, Chris - Spin State May 02-06 2005 1548
-* Mieville, China - Details	 10 May 2005 0916
-* Egan, Greg - The Demon's Passage 10 May 2005 2229
-* Laumer, Keith - Bolos 1 - Honor of the Regiment 25-27 May 2005 1355
-* Laumer, Keith - Bolos 2 - Bolo Strike  27 May 2005 2132
-* Laumer, Keith - Bolos 3 - The Triumphant 29 May 2005 2254
-* Ringo, John - Into The Looking Glass 01 June 2005 2112
-* Williamson, Jack - Afterlife  02 June 2005 1129
-* Williamson, Michael Z. - Freehold (2nd Time)  06 June 2005 0336 .am
-* Laumer, Keith - Bolos 5 - Old Guard   08 June 2005 1740
-* Anderson, Kevin J. - Resurrection, Inc	12 June 2005 0132 .am
-* Michael Shaara - All The Way Back	14 June 2005 1727
-* David Drake Eric Flint Jim Baen - The World Turned Upside Down	14 June 2005 2344
-* Anvil, Christopher - Pandora's Box (2nd Time)	15 June 2005 1334
-* Weber, David - BOLO!	15 June 2005 2120
-* Foster, Alan Dean - The Damned 1 - A Call to Arms   15-16 June 2005  1621
-* Leinster, Murray - The Pirates of Zan	16 June 2005 2135
-* Anderson, Poul - Corridors of Time	18 June 2005  0240
-* Foster, Alan Dean - The Damned 2 - The False Mirror   20 June 2005  0146
-* Foster, Alan Dean - Humanx - Nor Crystal Tears	07 July 2005 0420
-* Sherman, David & Cragg, Dan - Starfist 01 - First To Fight 10 July 2005 2359
-* Sherman, David & Cragg, Dan - Starfist 02 - School of Fire 12 July 2005 0418
-* Sherman, David & Cragg, Dan - Starfist 03 - Steel Gauntlet 13 July 2005 0012
-* Sherman, David & Cragg, Dan - Starfist 04 - Blood Contact  14 July 2005 0501
-* Sherman, David & Cragg, Dan - Starfist 05 - Technokill	   16 July 2005 0409
-* Baxter, Stephen - Huddle	23 July 2005 0122
-* Sherman, David & Cragg, Dan - Starfist 06 - Hangfire	   27 July 2005 0307
-* Sherman, David & Cragg, Dan - Starfist 07 - Kingdom's Swords 29 July 2005 2156
-* Sherman, David & Cragg, Dan - Starfist 08 - Kingdom's Fury   30 July 2005 1631
-* Sherman, David & Cragg, Dan - Starfist 09 - Lazarus Rising   31 July 2005 0121
-* Sherman, David & Cragg, Dan - Starfist 10 - A World of Hurt  01 August 2005 1542
-* Moore, C. L. & Henry Kuttner (As Lewis Padgett) - Clash By Night 26 August 2005 2309
-* Campbell, John W. - Solarite 1 - The Black Star Passes 28 August 2005 0158
-* Campbell, John W. - Solarite 2 - Islands of Space      28 August 2005 1907
-* Justine Davis - Coalition 1 - Lord of the Storm	   29 August 2005 1638
-* Anvil, Christopher - Pandora's Legions	   31 August 2005 0302 - On imp
-* Huff, Tanya - Confederation 1 - Valor's Choice   08 September 2005  0305
-* Huff, Tanya - Confederation 2 - The Better Part of Valor  12 September 2005 0144
-* Hill, Douglas - The Last Legionary 01 - Galactic Warlord   30 September 2005 1241
-* Bunch, Chris - The Stars Too Near	30 September 2005 1852
-* Pournelle, Jerry - King David's Spaceship   03 October 2005 1635
-* Sadler, Barry - Casca 01 - The Eternal Mercenary	04 October 2005 1952
-* Sadler, Barry - Casca 02 - God Of Death	   06 October 2005  0312
-* Sadler, Barry - Casca 03 - The War Lord    06 October 2005  2000
-* Sadler, Barry - Casca 05 - The Barbarian   10 October 2005  0131
-* Sadler, Barry - Casca 06 - The Persian     17 October 2005 2039
-* Drake, David - The Butchers Bill	25 November 2005  0218
-* Dietz, William C. - Prison Planet (2nd Time)	26 November 2005  0144
-* Drake, David - Igniting The Reaches	30 November 2005  0322
-* Shelley, Rick - Dirigent Mercenary Corp 01 - Officer Cadet	02 December 2005  1558
-* Shelley, Rick - Dirigent Mercenary Corp 02 - Lieutenant		03 December 2005  0211
-* Shelley, Rick - Dirigent Mercenary Corp 03 - Captain		07 December 2005  1529	
-* Shelley, Rick - Dirigent Mercenary Corp 04 - Major		10 December 2005  0351
-* Shelley, Rick - Dirigent Mercenary Corp 05 - Lieutenant Colonel 12 December 2005  2147
-* Shelley, Rick - Dirigent Mercenary Corp 06 - Colonel		15 December 2005  0012
-* White, Steve - The Disinherited 01 - The Disinherited	18 December 2005   0117
-* Outlanders Comic Series		20 January 2006   0605
-* Saw Wild Geese ( Daniel Carney )  23 January 2006	0331
-* Bunch, Chris And Cole, Allan - Sten 3 - The Court Of A Thousand Suns  21-23 March 2006
-* Jordan, Rober - Wheel Of Time 00 - New Spring - 22 May 2006  1528
-* Jordan, Robert - The Wheel of Time 01 - The Eye of The World - Second Time  04 June 2006   0010
-* Drake, David - Lambs To The Slaughter - 1847 22 June 2006
-* Noon, Jeff - Vurt  23 June 2006 - 0530
-* Boyd, John - Andromeda Gun     27 June 2006  0031
-* Godwin, Tom - Ragnarok 1 - The Survivors    01 July 2006  0148
-* Godwin, Tom - Ragnarok 2 - The Space barbarians   01 July 2006   1337
-* Drake, David - The Tank Lords (3rd time?)  08 Aug 2006  1701
-* Drake, David - Fireships	09 Aug 2006 - 0502
-* Drake, David - Grimmer Than Hell	10 Aug 2006 -1930
-* Drake, David - Paying The Piper	12 Aug 2006 - 1840
-* Dietz, William C - For More Than Glory		15 Aug 2006  1320
-* Pournelle, Jerry & Stirling, S.M. - Go Tell the Spartans 	18 Aug 2006  1631
-* Anderson, Poul & Dickson, Gordon - Hoka shorts		19 Aug 2006  0222
-* Drake, David - Redliners (Again!)	20 Aug 2006  1506
-* Drake, David - RCN 01 - With The Lightnings	22 Aug 2006  1903
-* Drake, David - RCN 02 - Lt Leary Commanding	25 Aug 2006  0150
-* Drake, David - RCN 03 - The Far Side of the Stars	26 Aug 2006  2350
-* Drake, David - RCN 04 - The Way to Glory	29  Aug 2006  0104
-* Vance, Jack - The Last Castle	16 Oct 2006  0329
-* Vance, Jack - To Live Forever	18 Oct 2006  0157
-* Cherryh, C.J. - Alliance-Union 01 - Heavy Time	26 Oct 2006  0409
-* Cherryh, C.J. - Alliance-Union 02 - Hellburner	02 Nov 2006  0158
-* Anderson, Kevin J. & Herbert, Brian - Whipping Mek	24 Jan 2007  0154
-* Asimov, Isaac - Cleon the Emperor	24 Jan 2007   1515
-* Bunch, Chris - Last Legion 01 - The Last Legion	01 Feb 2007  0153
-* Bunch, Chris - Last Legion 02 - Firemask 	07 Feb 2007  0020
-* Budrys, Algis - The Skirmisher	07 Feb 2007  0034
-* Bunch, Chris - Last Legion 03 - Storm Force		12 Feb 2007  0006
-* Drake, David - The Butcher's Bill		15 Feb 2007  0325
-* Bunch, Chris - Star Risk 01 - Star Risk	18 Feb 2007  0636
-* Bunch, Chris - Star Risk 2 - The Scoundrel Worlds		20 Feb 2007  0600
-* Bunch, Chris - Mirror				20 Feb 2007  0857
-* Bunch, Chris - Star Risk 3 - The Doublecross Program	22 Feb 2007  0359
-* Bunch, Chris - Star Risk 4 - The Dog From Hell		23 Feb 2007  1840
-* Bunch, Chris - Shadow Warrior 1 - The Wind After Time	25 Feb 2007  1340
-* Abnett, Dan - Warhammer 40K - Tyranids - The Fall Of Malvolion	12 March 2007  0323
-* Bunch, Chris - Corsair	15 March 2007  0046
-* Fawcett, Bill - Masters of Fantasy	15 June 2007  2052
-* Le Guin, Ursula K - Day Before the Revolution	14 July 2007  1839
-* Bunch, Chris & Cole, Allan - Sten 01 - Sten (2nd Time)	16 July 2007  0524
-* Bunch, Chris & Cole, Allan - Sten 02 - The Wolf Worlds (2nd Time)	18 July 2007  0328
-* Bunch, Chris & Cole, Allan - Sten 03 - The Court of a Thousand Suns (2nd Time)		19 July 2008  0512
-* Bunch, Chris & Cole, Allan - Sten 04 - Fleet of the Damned		21 July 2007  0640
-* Bunch, Chris & Cole, Allan - Sten 05 - Revenge of the Damned	22 July 2007  1928
-* Bunch, Chris & Cole, Allan - Sten 06 - The Return of the Emperor	23 July 2007  2240
-* Bunch, Chris & Cole, Allan - Sten 07 - Vortex	25 July 2007  0013
-* Bunch, Chris & Cole, Allan - Sten 08 - Empires End	26 July 2007  1912
-* Dick, Philip K. - We Can Remember it for You Wholesale	28 July 2007  1857
-* Drew Karpyshyn - Mass Effect 01 - Revelation	22 May 2008 1915
-* David Sherman & Dan Cragg - [Starfist 11] - Flashfire	25 Sep 2008  0150
-* Drake, David - Northworld Trilogy - Complete	12 Oct 2008  1503
-* Alan Dean Foster - [The Damned 03] - The Spoils of War	16 Oct 2008  2359
-* Drake, David - RCN 05 - Some Golden Harbor	20 Oct 2008  0332
-* Foster, Alan Dean - The Man Who Used the Universe	21 Oct 2008  0358
-* Fallen Angels - 		28 Oct 2008  1834
-* Aldiss, Brian - A Rude Awakening	12 Nov 2008  0208
-* Asimov, Isaac - Foundation 4 - Forward the Foundation	14 Nov 2008  0613
-* Williams, Walter Jon - Dread Empire's Fall 01 - The Praxis	15 Nov 2008  0155
-* Williams, Walter Jon - Dread Empire's Fall 02 - The Sundering	16 Nov 2008  0317
-* Williams, Walter Jon - Dread Empire's Fall 03 - Conventions of War	17 Nov 2008  1123
-* Williams, Walter Jon - Voice of the Whirlwind	18 Nov 2008  0352
-* Williams, Walter Jon - Videostar	18 Nov 2008  1811
-* Drake, David - The Tank Lords (4th time)	04 Dec 2008  0057
-* Drake, David - Hammer's Slammer 01 - Hammer's Slammers		04 Dec 2008  1355
-* Drake, David - Paying the Piper	06 Dec 2008  1850
-* Drake, David - The Sharp End		08 Dec 2008  1300
-* Asprin, Robert L - Phule 1 - Phule's Company	09 Dec 2008  1558
-* Asprin, Robert L - Phule 2 - Phule's Paradise	15 Dec 2008  1237
-* Asprin, Robert L - Phule 3 - A Phule and His Money	20 Dec 2008  1930
-* Asprin, Robert L - Phule 4 - Phule Me Twice		21 Dec 2008  2326
-* Heinlein, Robert - Double Star		28 Dec 2008  1747
-* Heinlein, Robert - Citizen of the Galaxy		29 Dec 2008  0040
-* Heinlein, Robert - Starship Troopers		30 Dec 2008  0044
-* Heinlein, Robert - Space Cadet	30 Dec 2008  1614
-* Heinlein, Robert - Tunnel In the Sky	30 Dec 2008  1922
-* Heinlein, Robert - If This Goes On	03 Jan 2009  0446
-* Huff, Tanya - Confederation 03 - The Heart of Valor		07 Jan 2009  0127
-* Huff, Tanya - Confederation 04 - Valor's Trial		07 Jan 2009  1621
-* Bunch, Chris - Last Legion 04 - Homefall		09 Jan 2009  0106
-* Williams, Walter Jon - Woundhealer		12 Jan 2009  0140
-* Williams, Walter Jon - Wolf Time		12 Jan 2009  1107
-* Williams, Walter Jon - Witness		12 Jan 2009  1224
-* Williams, Walter Jon - Daddy's World		13 Jan 2009  0257
-* Williams, Walter Jon - Prayers On the Wind	13 Jan 2009  0349
-* Williamson, Michael Z. - Better to Beg Forgiveness		15 Jan 2009  2351
-* Wismer, Don - Warrior Planet		16 Jan 2009  2107
-* Buettner, Robert - [Jason Wander 01] - Orphanage	11 March 2009  1356
-* Buettner, Robert - [Jason Wander 02] - Orphan's Destiny		12 March 2009  2040
-* Pohl, Frederik - The Space Merchants		16 March 2009  0300
-* Bunch, Chris - Star Risk 1 - Star Risk (2nd time)		24 June 2009  0043
-* Bunch, Chris - Star Risk 2 - The Scoundrel Worlds (2nd Time)	24 June 2009  2023
-* Bunch, Chris - Star Risk 4 - The Dog From Hell (2nd Time)		25 June 2009  1249
-* Drake, David - Grimmer Than Hell (2nd Time)		26 June 2009  1602
-* Smith, Kristine - Kilian 01 - Code of Conduct		27 June 2009  1618
-* Baldwin, Bill - Helmsman 01 - The Helmsman		28 June 2009  0332
-* Shelley, Rick - Dirigent Mercenary Corp 01 - Officer Cadet	(2nd Time) 30 Oct 2009  0333
-* Shelley, Rick - Dirigent Mercenary Corp 02 - Lieutenant	(2nd Time) 01 Nov 2009  2003
-* Shelley, Rick - Dirigent Mercenary Corp 03 - Captain	(2nd Time) 03 Nov 2009  2233
-* Shelley, Rick - Dirigent Mercenary Corp 04 - Major		(2nd Time) 04 Nov 2009  1840
-* Shelley, Rick - Dirigent Mercenary Corp 05 - Lieutenant Colonel	(2nd Time) 07 Nov 2009  0352
-* Shelley, Rick - Dirigent Mercenary Corp 06 - Colonel	(2nd Time) 07 Nov 2009  2314
-* Graham Sharp, Paul - [Helfort's War 01] - The Battle at the Moons of Hell	05 Dec 2009  0232
-* Graham Sharp Paul - [Helfort's War 02] - Battle of the Hammer Worlds		08 Dec 2009  0217
-* Laumer, Keith - Bolos 01 - Honor of the Regiment (2nd Time)	18 Dec 2009  0432
-* Moon, Elizabeth - [Vatta's War 01] - Trading in Danger		26 Dec 2009  0358
-* Moon, Elizabeth - [Vatta's War 02] - Marque and Reprisal		28 Dec 2009  1725
-* Moon, Elizabeth - [Vatta's War 03] - Engaging the Enemy		29 Dec 2009  0302
-* Moon, Elizabeth - [Vatta's War 04] - Command Decision		30 Dec 2009  0519
-* Moon, Elizabeth - [Vatta's War 05] - Victory Conditions		04 Jan 2010  0358
-* Drake, David - The Complete Hammers Slammers Vol 1		12 Feb 2010  0318
-* Drake, David - The Complete Hammers Slammers Vol 2		13 Feb 2010  2332
-* Ringo, John & Kratman, Tome - The Tuloriad			17 Feb 2010  1117
-* Graham Sharp Paul - [Helfort's War 03] - The Battle of Devastation Reef	22 Feb 2010  1729
-* Dietz, William C - Prison Planet (3rd Time)	23 Feb 2010  1908
-* Asimov, Isaac - The Last Trump		24 Feb 2010  2142
-* Asimov, Isaac - The Machine That Won the War	24 Feb 2010  2200
-* McDonald, Sandra - The Hero of Ward 6		22 Mar 2010  2125
-* Morgan, Richard - [Takeshi Kovacs 01] - Altered Carbon	27 Mar 2010  1723
-* Morgan, Richard - [Takeshi Kovacs 02] - Broken Angels	29 Mar 2010  1352
-* Morgan, Richard - [Takeshi Kovacs 03] - Woken Furies	31 Mar 2010  1529
-* Dalmas, John - Regiment 01 - Regiment			02 Apr 2010
-* Kent, Steven L. - [Clone 01] - The Clone Republic		06 Apr 2010  0146
-* Kent, Steven L. - [Clone 02] - Rogue Clone		07 Apr 2010  0127
-* Kent, Steven L. - [Clone 03] - The Clone Alliance		07 Apr 2010  2020
-* Kent, Steven L. - [Clone 04] - The Clone Elite		08 Apr 2010  2342
-* Card, Orson Scott - Ender 01 - Ender's Game (2nd Time)	27 Apr 2010  1405
-* Card, Orson Scott - Ender 05 - Ender's Shadow		28 Apr 2010  2005
-* Williams, Walter Jon - Flatline		03 May 2010  1027
-* Asprin, Robert L - Phule 1 - Phule's Company (2nd Time)	04 May 2010  1453
-* Asprin, Robert L - Phule 2 - Phule's Paradise	05 May 2010  0147
-* Weber, David & Ringo, John - Empire of Man 01 - March Upcountry (2ndTime)	09 May 2010  0732
-* Weber, David & Ringo, John - Empire of Man 02 - March To The Sea (2ndTime)	12 May 2010  1826
-* Weber, David & Ringo, John - Empire of Man 03 - March To The Stars (2ndTime)	15 May 2010  0330
-* Weber, David & Ringo, John - Empire of Man 04 - We Few (2ndTime)		17 May 2010  1723
-* Grubb, Jeff - StarCraft 01 - Liberty's Crusade		19 May 2010  2346
-* Mesta, Gabriel - StarCraft 02 - Shadow of the Xel'Naga	03 June 2010  2329
-* Hickman, Tracy - StarCraft 03 - The Speed of Darkness	05 June 2010  1259
-* Kagan, Janet - The Nutcracker Coup		06 June 2010  0137
-* Drake, David - The Military Dimension-Mark II	19 June 2010  0332
-* Scalzi, John - [Old Man's War 01] - Old Man's War		20 June 2010  0344
-* Scalzi, John - [Old Man's War 02] - The Ghost Brigades	21 June 2010  2114
-* Scalzi, John - [Old Man's War 03] - The Last Colony	23 June 2010  0337
-* Dietz, William C. - [Sam McCade 03] - Alien Bounty	27 June 2010  1738
-* Dietz, William C. - [Sam McCade Omnibus 03-04] - McCade on the Run		1 July 2010  1920
-* Dietz, William C. - [Sam McCade 04] - McCade's Bounty	1 July 2010  1920
-* Williams, Walter Jon - This Is Not a Game	05 July 2010  2052
-* Pournelle, Jerry & Stirling, S. M. - The Prince	24 July 2010  1435
-* Isaac Asimov, Isaac - Foundation 01 - Prelude to Foundation (3rd Time)	28 July 2010
-* Isaac Asimov, Isaac - Foundation 02 - Forward the Foundation (3rd Time)	01 Aug 2010
-* Isaac Asimov, Isaac - Foundation 06 - Foundation's Edge (2nd Time)		03 Aug 2010  0100
-* Isaac Asimov, Isaac - Foundation 06 - Foundation and Earth (2nd Time)	03 Aug 2010  2320
-* Greenberg, Martin H.  (Editor) - Foundation's Friends		05 Aug 2010  0337
-* Zelazny, Roger - Damnation Alley	19 Aug 2010  0547
-* Bester, Alfred - Tiger! Tiger!		20 Aug 2010  0247
-* Bethke, Bruce - Cyberpunk		26 Aug 2010  0843
-* Gibson, William - Sprawl 01 - Neuromancer	26 Aug 2010  1750
-* Gibson, William - Sprawl 02 - Count Zero	30 Aug 2010  0416
-* Reynolds,  Alastair - Terminal World		10 Oct 2010  0457
-* Spencer, Wen - Tinker		18 Oct 2010  1728
-* Sherman, David & Cragg, Dan - Starfist 12 - Firestorm	25 Oct 2010  1830
-* Drake, David - Reaches 01 - Igniting The Reaches		26 Oct 2010  0404
-* Drake, David - Reaches 02 - Through The Breach		27 Oct 2010  0259
-* Drake, David - Reaches 03 - Fireships			28 Oct 2010  1921
-* Drake, David - Redliners (3rd Time)			04 Nov 2010  0152
-* Dietz, William C.  - For Those Who Fell			05 Nov 2010  0425
-* Kent, Steven L. - [Clone 05] - The Clone Betrayal		08 Nov 2010  0045
-* Kent, Steven L. - [Clone 06] - The Clone Empire		11 Nov 2010  0133
-* Goldin, Stephen - The Eternity Brigade			12 Nov 2010  0323
-* Pournelle, Jerry - [Janissaries 01] - Janissaries		01 Dec 2010  2211
-* Pournelle, Jerry - [Janissaries 02] - Clan and Crown		02 Dec 2010  0216
-* Pournelle, Jerry - [Janissaries 03] - Storms of Victory		08 Dec 2010  0206
-* Drake, David - The Complete Hammers Slammers Vol 3		22 Dec 2010  2243
-* Williamson, Jack - Ultimate Earth			15 Jan 2011  2214
-* Banks, Iain - [Culture 01] - Consider Phlebas		19 Jan 2011  2217
+| Author(s) | Series | Name | Timestamp |
+|-----------|--------|------|-----------|
+| Poul Anderson | | Shield |
+| Poul Anderson | | Sky People |
+| Isaac Asimov | | Dreaming Is a Private Thing |
+| Isaac Asimov | Foundation 01 | Prelude to Foundation |
+| Isaac Asimov | Foundation 02 | Foundation |
+| Isaac Asimov | Foundation 03 | Foundation and Empire |
+| Isaac Asimov | Foundation 04 | Forward the Foundation |
+| Isaac Asimov | Foundation 05 | Foundation's Edge |
+| Isaac Asimov | Foundation 06 | Foundation and Earth |
+| Isaac Asimov | | Hell-Fire |
+| Isaac Asimov | Lucky Starr 02 | Pirates Of The Asteroids |
+| Isaac Asimov | Galactic Empire 03 | Pebble In The Sky |
+| Robert L. Asprin | | The Cold Cash War |
+| Brian Aldiss | | Super-Toys Last All Summer Long |
+| Arthur C. Clarke | | Inheritance |
+| Joe Haldeman | The Forever War 01 | The Forever War |
+| Joe Haldeman | The Forever War 02 | A Separate War |
+| Joe Haldeman | The Forever War 03 | Forever Free |
+| Jerry Pournelle | Falkenberg's Legion A | The Mercenary |
+| Jerry Pournelle & S.M. Stirling | Falkenberg's Legion 04 | Prince of Sparta |
+| Jerry Pournelle | Falkenberg's Legion 01 | Falkenberg's Legion |
+| H. Beam Piper | | The Cosmic Computer |
+| Larry Niven | | Wishing Game |
+| Larry Niven | | Wrong Way Street |
+| Robert Heinlein | | Orphans Of The Sky |
+| Robert Heinlein | | The Sixth Column |
+| David Weber & John Ringo | Empire of Man 01 | March Upcountry |
+| David Weber & John Ringo | Empire of Man 02 | March To The Sea |
+| David Weber & John Ringo | Empire of Man 03 | March To The Stars |
+| Douglas Adams | Hitchhiker's Guide to the Galaxy 01 | Hitchhiker's Guide to the Galaxy |
+| Douglas Adams | Hitchhiker's Guide to the Galaxy 02 | The Restaurant at the End of the Universe |
+| Douglas Adams | Hitchhiker's Guide to the Galaxy 03 | Life, the Universe, and Everything |
+| Douglas Adams | Hitchhiker's Guide to the Galaxy 04 | So Long, and Thanks for all the Fish |
+| Douglas Adams | Hitchhiker's Guide to the Galaxy 05 | Mostly Harmless |
+| Jim Lester | | Fallout |
+| Robert J. Sawyer | | Calculating God |
+| Anne McCaffrey & Elizabeth Moon & Jody L. Nye | Planet Pirates 01-03 | The Planet Pirates |
+| Chris Bunch | | Mirror |
+| John Ringo | Aldenata 01 | A Hymn Before Battle | |
+| John Ringo | Aldenata 02 | Gust Front | |
+| John Ringo | Aldenata 03 | When The Devil Dances |
+| John Ringo | Aldenata 04 | Hell's Faire | |
+| John Ringo & Cochrane Julie | Aldenata 06 | Cally's War | |
+| Robert Heinlein | | All You Zombies |
+| Robert Heinlein | | Bulletin Board |
+| Robert Heinlein | | Citizen Of The Galaxy |
+| John Steakley | | Armor |
+| Walter Jon Williams | Hardwired 01 | Hardwired | |
+| Fredrick Brown | | Martians Go Home | 2005 - 2-3 March |
+| Charles Stross | | A Boy And His God | 0030 - 12 March 2005 |
+| David Drake | Hammer's Slammers 03 | At Any Price | 26-27 March 2005 |
+| David Weber & John Ringo | Empire of Man 04 | We Few | 0404 - 03 April 2005 |
+| Roger Zelazny | | My Lady of the Diodes | 1016 - 03 April 2005 |
+| Roger Zelazny | | Come Back to the Killing Ground, Alice, My Love | 2338 - 03-04 April 2005 |
+| Lester Del Rey | | Return Engagement | 0103 - 05 April 2005 |
+| Jack C. Haldeman II | | We The People | 0249 - 09 April 2005 |
+| Chris Bunch & Allan Cole | Sten 01 | Sten | 1753 - 23 April 2005 |
+| Chris Bunch & Allan Cole | Sten 02 | The Wolf Worlds | 1000 - 29 April 2005 |
+| Joe Haldeman | | The Gift | 1635 - 30 April 2005 |
+| Joe Haldeman | | The Pilot | 1640 - 30 April 2005 |
+| Joe Haldeman | | Saul's Death | 1644 - 30 April 2005 |
+| Joe Haldeman | | Seasons | 1705 - 30 April 2005 |
+| Chris Moriarty | | Spin State | 1548 - May 02-06 2005 |
+| China Mieville | | Details | 0916 - 10 May 2005 |
+| Greg Egan | | The Demon's Passage | 2229 - 10 May 2005 |
+| Keith Laumer | Bolos 01 | Honor of the Regiment | 1355 - 25-27 May 2005 |
+| Keith Laumer | Bolos 06 | Bolo Strike | 2132 - 27 May 2005 |
+| Keith Laumer | Bolos Anthology 03 | The Triumphant | 2254 - 29 May 2005 |
+| John Ringo | Looking Glass 01 | Into The Looking Glass | 2112 - 01 June 2005 |
+| Jack Williamson | Afterlife | 1129 - 02 June 2005 |
+| Michael Z. Williamson | Freehold 01 | Freehold | 0336 - 06 June 2005 - 2nd Time |
+| Keith Laumer | Bolos Anthology 05 | Old Guard | 1740 - 08 June 2005 |
+| Kevin Anderson | | Resurrection, Inc | 0132 - 12 June 2005 |
+| Michael Shaara | | All The Way Back | 1727 - 14 June 2005 |
+| David Drake & Eric Flint & Jim Baen | | The World Turned Upside Down (Anthology) | 2344 - 14 June 2005 |
+| Christopher Anvil | | Pandora's Box | 1334 - 15 June 2005 - 2nd time |
+| David Weber | Bolos 08 | BOLO! | 2120 - 15 June 2005 |
+| Alan Dean Foster | The Damned 01 | A Call to Arms | 1621 - 15-16 June 2005 |
+| Murray Leinster | | The Pirates of Zan | 2135 - 16 June 2005 |
+| Poul Anderson | | Corridors of Time | 0240 - 18 June 2005 |
+| Alan Dean Foster | The Damned 02 | The False Mirror | 0146 - 20 June 2005 |
+| Alan Dean Foster | Humanx Commonwealth 09 | Nor Crystal Tears | 0420 - 07 July 2005 |
+| David Sherman & Dan Cragg | Starfist 01 | First To Fight | 2359 - 10 July 2005 |
+| David Sherman & Dan Cragg | Starfist 02 | School of Fire | 0418 - 12 July 2005 |
+| David Sherman & Dan Cragg | Starfist 03 | Steel Gauntlet | 0012 - 13 July 2005 |
+| David Sherman & Dan Cragg | Starfist 04 | Blood Contact | 0501 - 14 July 2005 |
+| David Sherman & Dan Cragg | Starfist 05 | Technokill | 0409 - 16 July 2005 |
+| Stephen Baxter | | Huddle | 0122 - 23 July 2005 |
+| David Sherman & Dan Cragg | Starfist 06 | Hangfire | 0307 - 27 July 2005 |
+| David Sherman & Dan Cragg | Starfist 07 | Kingdom's Swords | 2156 - 29 July 2005 |
+| David Sherman & Dan Cragg | Starfist 08 | Kingdom's Fury | 1631 - 30 July 2005 |
+| David Sherman & Dan Cragg | Starfist 09 | Lazarus Rising | 0121 - 31 July 2005 |
+| David Sherman & Dan Cragg | Starfist 10 | A World of Hurt | 1542 - 01 August 2005 |
+| C.L. Moore & Henry Kuttner (as Lewis Padgett) | | Clash By Night | 2309 - 26 August 2005 |
+| John W. Campbell | Arcot, Morey, and Wade 01 | The Black Star Passes | 0158 - 28 August 2005 |
+| John W. Campbell | Arcot, Morey, and Wade 02 | Islands of Space | 1907 - 28 August 2005 |
+| Justine Davis | Coalition Rebellion 01 | Lord of the Storm | 1638 - 29 August 2005 |
+| Christopher Anvil | | Pandora's Legions | 0302 - 31 August 2005 |
+| Tanya Huff | Confederation 01 | Valor's Choice | 0305 - 08 September 2005 |
+| Tanya Huff | Confederation 02 | The Better Part of Valor | 0144 - 12 September 2005 |
+| Douglas Hill | The Last Legionary 01 | Galactic Warlord | 1241 - 30 September 2005 |
+| Chris Bunch | | The Stars Too Near | 1852 - 30 September 2005 |
+| Jerry Pournelle | | King David's Spaceship | 1635 - 03 October 2005 |
+| Barry Sadler | Casca 01 | The Eternal Mercenary | 1952 - 04 October 2005 |
+| Barry Sadler | Casca 02 | God Of Death | 0312 - 06 October 2005 |
+| Barry Sadler | Casca 03 | The War Lord | 2000 - 06 October 2005 |
+| Barry Sadler | Casca 05 | The Barbarian | 0131 - 10 October 2005 |
+| Barry Sadler | Casca 06 | The Persian | 2039 - 17 October 2005 |
+| David Drake | Hammer's Slammers | The Butcher's Bill | 0218 - 25 November 2005 |
+| William C. Dietz | | Prison Planet | 0144 - 26 November 2005 - 2nd time |
+| David Drake | Reaches 01 | Igniting The Reaches | 0322 - 30 November 2005 |
+| Rick Shelley | Dirigent Mercenary Corps 01 | Officer Cadet | 1558 - 02 December 2005 |
+| Rick Shelley | Dirigent Mercenary Corps 02 | Lieutenant | 0211 - 03 December 2005 |
+| Rick Shelley | Dirigent Mercenary Corps 03 | Captain | 1529 - 07 December 2005 |
+| Rick Shelley | Dirigent Mercenary Corps 04 | Major | 0351 - 10 December 2005 |
+| Rick Shelley | Dirigent Mercenary Corps 05 | Lieutenant Colonel | 2147 - 12 December 2005 |
+| Rick Shelley | Dirigent Mercenary Corps 06 | Colonel | 0012 - 15 December 2005 |
+| Steve White | The Disinherited 01 | The Disinherited | 0117 - 18 December 2005 |
+| | | Outlanders Comics | 0605 - 20 January 2006 |
+| Daniel Carney | | Wild Geese | 0331 - 23 January 2006 |
+| Chris Bunch & Allan Cole | Sten 03 | The Court Of A Thousand Suns | 21-23 March 2006 |
+| Robert Jordan | Wheel Of Time 00 | New Spring | 1528 - 22 May 2006 |
+| Robert Jordan | The Wheel of Time 01 | The Eye of The World | 0010 - 04 June 2006 - 2nd time |
+| David Drake | | Lambs To The Slaughter | 1847 - 22 June 2006 |
+| Jeff Noon | Vurt 01 | Vurt | 0530 - 23 June 2006 |
+| John Boyd | | Andromeda Gun | 0031 - 27 June 2006 |
+| Tom Godwin | Ragnarok 01 | The Survivors | 0148 - 01 July 2006 |
+| Tom Godwin | Ragnarok 02 | The Space barbarians | 1337 - 01 July 2006 |
+| David Drake | Hammer's Slammers 09 | The Tank Lords | 1701 - 08 Aug 2006 - 3rd time |
+| David Drake | Reaches 03 | Fireships | 0502 - 09 Aug 2006 |
+| David Drake | | Grimmer Than Hell | 1930 - 10 Aug 2006 |
+| David Drake | Hammer's Slammers 10 | Paying The Piper | 1840 - 12 Aug 2006 |
+| William C. Dietz | Legion 05 | For More Than Glory | 1320 - 15 Aug 2006 |
+| Jerry Pournelle & S.M. Stirling | Falkenberg's Legion 03 -  Go Tell the Spartans | 1631 - 18 Aug 2006 |
+| Poul Anderson & Gordon Dickson | | Hoka shorts | 0222 - 19 Aug 2006 |
+| David Drake | | Redliners | 1506 - 20 Aug 2006 - 2nd time? |
+| David Drake | RCN 01 | With The Lightnings | 1903 - 22 Aug 2006 |
+| David Drake | RCN 02 | Lt Leary Commanding | 0150 - 25 Aug 2006 |
+| David Drake | RCN 03 | The Far Side of the Stars | 2350 - 26 Aug 2006 |
+| David Drake | RCN 04 | The Way to Glory | 0104 - 29 Aug 2006 |
+| Jack Vance | | The Last Castle | 0329 - 16 Oct 2006 |
+| Jack Vance | | To Live Forever | 0157 - 18 Oct 2006 |
+| C.J. Cherryh | The Company Wars 01 | Heavy Time | 0409 - 26 Oct 2006 |
+| C.J. Cherryh | The Company Wars 02 | Hellburner | 0158 - 02 Nov 2006 |
+| Kevin Anderson & Brian Herbert | Legends of Dune 1.5 | Whipping Mek | 0154 - 24 Jan 2007 |
+| Isaac Asimov | | Cleon the Emperor | 1515 - 24 Jan 2007 |
+| Chris Bunch | Last Legion 01 | The Last Legion | 0153 - 01 Feb 2007 |
+| Chris Bunch | Last Legion 02 | Firemask | 0020 - 07 Feb 2007 |
+| Algis Budrys | | The Skirmisher | 0034 - 07 Feb 2007 |
+| Chris Bunch | Last Legion 03 | Storm Force | 0006 - 12 Feb 2007 |
+| David Drake | Hammer's Slammers | The Butcher's Bill | 0325 - 15 Feb 2007 - 2nd time |
+| Chris Bunch | Star Risk 01 | Star Risk | 0636 - 18 Feb 2007 |
+| Chris Bunch | Star Risk 02 | The Scoundrel Worlds | 0600 - 20 Feb 2007 |
+| Chris Bunch | | Mirror | 0857 - 20 Feb 2007 |
+| Chris Bunch | Star Risk 03 | The Doublecross Program | 0359 - 22 Feb 2007 |
+| Chris Bunch | Star Risk 04 | The Dog From Hell | 1840 - 23 Feb 2007 |
+| Chris Bunch | Shadow Warrior 01 | The Wind After Time | 1340 - 25 Feb 2007 |
+| Dan Abnett | Warhammer 40K | The Fall Of Malvolion | 0323 - 12 March 2007 |
+| Chris Bunch | | Corsair | 0046 - 15 March 2007 |
+| Bill Fawcett | | Masters of Fantasy (Anthology) | 2052 - 15 June 2007 |
+| Ursula K. Le Guin | Hainish Cycle 6.5 | Day Before the Revolution | 1839 - 14 July 2007 |
+| Chris Bunch & Allan Cole | Sten 01 | Sten | 0524 - 16 July 2007 - 2nd time |
+| Chris Bunch & Allan Cole | Sten 02 | The Wolf Worlds | 0328 - 18 July 2007 - 2nd time |
+| Chris Bunch & Allan Cole | Sten 03 | The Court of a Thousand Suns | 0512 - 19 July 2008 - 2nd time|
+| Chris Bunch & Allan Cole | Sten 04 | Fleet of the Damned | 0640 - 21 July 2007 |
+| Chris Bunch & Allan Cole | Sten 05 | Revenge of the Damned | 1928 -  22 July 2007 |
+| Chris Bunch & Allan Cole | Sten 06 | The Return of the Emperor | 2240 - 23 July 2007 |
+| Chris Bunch & Allan Cole | Sten 07 | Vortex | 0013 - 25 July 2007 |
+| Chris Bunch & Allan Cole | Sten 08 | Empires End | 1912 - 26 July 2007 |
+| Philip K. Dick | | We Can Remember it for You Wholesale | 1857 - 28 July 2007 |
+| Drew Karpyshyn | Mass Effect 01 | Revelation | 1915 - 22 May 2008 |
+| David Sherman & Dan Cragg | Starfist 11 | Flashfire | 0150 - 25 Sep 2008 |
+| David Drake | Northworld 01-03 | Northworld Trilogy | 1503 - 12 Oct 2008 |
+| Alan Dean Foster | The Damned 03 | The Spoils of War | 2359 - 16 Oct 2008 |
+| David Drake | RCN 05 | Some Golden Harbor | 0332 - 20 Oct 2008 |
+| Alan Dean Foster | | The Man Who Used the Universe | 21 Oct 2008  0358 |
+| Larry Niven | | Fallen Angels | 1834 - 28 Oct 2008 |
+| Brian Aldiss | Horatio Stubbs 03 | A Rude Awakening | 0208 - 12 Nov 2008 |
+| Isaac Asimov | Foundation 04 | Forward the Foundation | 0613 - 14 Nov 2008 - 2nd time |
+| Walter Jon Williams | Dread Empire's Fall 01 | The Praxis | 0155 - 15 Nov 2008 |
+| Walter Jon Williams | Dread Empire's Fall 02 | The Sundering | 0317 - 16 Nov 2008 |
+| Walter Jon Williams | Dread Empire's Fall 03 | Conventions of War | 1123 - 17 Nov 2008 |
+| Walter Jon Williams | Hardwired 02 | Voice of the Whirlwind | 0352 - 18 Nov 2008 |
+| Walter Jon Williams | | Videostar | 1811 - 18 Nov 2008 |
+| David Drake | Hammer's Slammers 09 - | 0057 04 Dec 2008 - 4th time |
+| David Drake | Hammer's Slammers 01 | Hammer's Slammers | 1355 - 04 Dec 2008 |
+| David Drake | Hammer's Slammers 10 | Paying The Piper | 1850 - 06 Dec 2008 |
+| David Drake | Hammer's Slammers 07 | The Sharp End | 1300 - 08 Dec 2008 |
+| Robert L. Asprin | Phule's Company 01 | Phule's Company | 1558 - 09 Dec 2008 |
+| Robert L. Asprin | Phule's Company 02 | Phule's Paradise | 1237 - 15 Dec 2008 |
+| Robert L. Asprin | Phule's Company 03 | A Phule and His Money | 1930 - 20 Dec 2008 |
+| Robert L. Asprin | Phule's Company 04 | Phule Me Twice | 2326 - 21 Dec 2008 |
+| Robert Heinlein | | Double Star | 1747 - 28 Dec 2008 |
+| Robert Heinlein | | Citizen of the Galaxy | 0040 - 29 Dec 2008 |
+| Robert Heinlein | | Starship Troopers | 0044 - 30 Dec 2008 |
+| Robert Heinlein | | Space Cadet | 1614 - 30 Dec 2008 |
+| Robert Heinlein | | Tunnel In the Sky | 1922 - 30 Dec 2008 |
+| Robert Heinlein | | If This Goes On | 0446 - 03 Jan 2009 |
+| Tanya Huff | Confederation 03 | The Heart of Valor | 0127 - 07 Jan 2009 |
+| Tanya Huff | Confederation 04 | Valor's Trial | 1621 - 07 Jan 2009 |
+| Chris Bunch | Last Legion 04 | Homefall | 0106 - 09 Jan 2009 |
+| Walter Jon Williams | Lost Swords 01 | Woundhealer's Story | 0140 - 12 Jan 2009 |
+| Walter Jon Williams | Hardwired | Wolf Time | 1107 - 12 Jan 2009 |
+| Walter Jon Williams | | Witness | 1224 - 12 Jan 2009 |
+| Walter Jon Williams | | Daddy's World | 0257 - 13 Jan 2009 |
+| Walter Jon Williams | | Prayers On the Wind | 0349 - 13 Jan 2009 |
+| Michael Z. Williamson | Freehold 03 | Better to Beg Forgiveness | 2351 - 15 Jan 2009 |
+| Don Wismer | Warrior Planet | 2107 - 16 Jan 2009 |
+| Robert Buettner | Jason Wander 01 | Orphanage | 1356 - 11 March 2009 |
+| Robert Buettner | Jason Wander 02 | Orphan's Destiny | 2040 - 12 March 2009 |
+| Frederik Pohl | The Space Merchants 01 | The Space Merchants | 0300 - 16 March 2009 |
+| Chris Bunch | Star Risk 01 | Star Risk | 0043 - 24 June 2009 - 2nd time |
+| Chris Bunch | Star Risk 02 | The Scoundrel Worlds | 2023 - 24 June 2009 - 2nd time |
+| Chris Bunch | Star Risk 04 | The Dog From Hell | 1249 - 25 June 2009 - 2nd time |
+| David Drake | | Grimmer Than Hell | 1602 - 26 June 2009 |
+| Kristine Smith | Jani Kilian Chronicles 01 | Code of Conduct | 1618 - 27 June 2009 |
+| Bill Baldwin | Helmsman 01 | The Helmsman | 0332 - 28 June 2009 |
+| Rick Shelley | Dirigent Mercenary Corps 01 | Officer Cadet | 0333 30 Oct 2009 - 2nd time|
+| Rick Shelley | Dirigent Mercenary Corps 02 | Lieutenant | 2003 - 01 Nov 2009 - 2nd time|
+| Rick Shelley | Dirigent Mercenary Corps 03 | Captain | 2233 - 03 Nov 2009 - 2nd time |
+| Rick Shelley | Dirigent Mercenary Corps 04 | Major | 1840 -  04 Nov 2009 - 2nd time|
+| Rick Shelley | Dirigent Mercenary Corps 05 | Lieutenant Colonel | 0352 - 07 Nov 2009 - 2nd time |
+| Rick Shelley | Dirigent Mercenary Corps 06 | Colonel | 2314 - 07 Nov 2009 - 2nd time |
+| Graham Sharp Paul | Helfort's War 01 | The Battle at the Moons of Hell | 0232 - 05 Dec 2009 |
+| Graham Sharp Paul | Helfort's War 02 | Battle of the Hammer Worlds | 0217 - 08 Dec 2009 |
+| Keith Laumer | Bolos 01 | Honor of the Regiment | 0432 - 18 Dec 2009 - 2nd time |
+| Elizabeth Moon | Vatta's War 01 | Trading in Danger | 0358 - 26 Dec 2009 |
+| Elizabeth Moon | Vatta's War 02 | Marque and Reprisal | 1725 - 28 Dec 2009 |
+| Elizabeth Moon | Vatta's War 03 | Engaging the Enemy | 0302 - 29 Dec 2009 |
+| Elizabeth Moon | Vatta's War 04 | Command Decision | 0519 - 30 Dec 2009 |
+| Elizabeth Moon | Vatta's War 05 | Victory Conditions | 0358 - 04 Jan 2010 |
+| David Drake | Hammer's Slammers | The Complete Hammer's Slammers Vol 1 | 0318 - 12 Feb 2010 |
+| David Drake | Hammer's Slammers | The Complete Hammer's Slammers Vol 2 | 2332 - 13 Feb 2010 |
+| John Ringo & Tom Kratman | Aldenata 12 | The Tuloriad | 1117 - 17 Feb 2010 |
+| Graham Sharp Paul | Helfort's War 03 | The Battle of Devastation Reef | 1729 - 22 Feb 2010 |
+| William C. Dietz | | Prison Planet | 1908 - 23 Feb 2010 - 3rd Time |
+| Isaac Asimov | | The Last Trump |2142 -  24 Feb 2010 |
+| Isaac Asimov | | The Machine That Won the War | 2200 - 24 Feb 2010 |
+| Sandra McDonald | | The Hero of Ward 6 | 2125 - 22 Mar 2010 |
+| Richard Morgan | Takeshi Kovacs 01 | Altered Carbon | 1723 - 27 Mar 2010 |
+| Richard Morgan | Takeshi Kovacs 02 | Broken Angels | 1352 - 29 Mar 2010 |
+| Richard Morgan | Takeshi Kovacs 03 | Woken Furies | 1529 - 31 Mar 2010 |
+| John Dalmas | Regiment 01 | Regiment | 02 Apr 2010 |
+| Steven L. Kent | Rogue Clone 01 | The Clone Republic | 0146 - 06 Apr 2010 |
+| Steven L. Kent | Rogue Clone 02 | Rogue Clone | 0127 - 07 Apr 2010 |
+| Steven L. Kent | Rogue Clone 03 | The Clone Alliance | 2020 - 07 Apr 2010 |
+| Steven L. Kent | Rogue Clone 04 | The Clone Elite | 2342 - 08 Apr 2010 |
+| Orson Scott Card | Ender 01 | Ender's Game | 1405 - 27 Apr 2010 - 2nd time |
+| Orson Scott Card | Ender 05 | Ender's Shadow | 2005 - 28 Apr 2010 |
+| Walter Jon Williams | | Flatline | 1027 - 03 May 2010 |
+| Robert L. Asprin | Phule's Company 01 | Phule's Company | 1453 - 04 May 2010 - 2nd time |
+| Robert L. Asprin | Phule's Company 02 | Phule's Paradise | 0147 - 05 May 2010 - 2nd time |
+| David Weber & John Ringo | Empire of Man 01 | March Upcountry | 0732 - 09 May 2010 - 2nd time |
+| David Weber & John Ringo | Empire of Man 02 | March To The Sea | 1826 - 12 May 2010 - 2nd time |
+| David Weber & John Ringo | Empire of Man 03 | March To The Stars | 0330 - 15 May 2010 - 2nd time |
+| David Weber & John Ringo | Empire of Man 04 | We Few | 1723 - 17 May 2010 - 2nd time|
+| Jeff Grubb | StarCraft 01 | Liberty's Crusade | 2346 - 19 May 2010 |
+| Gabriel Mesta | StarCraft 02 | Shadow of the Xel'Naga | 2329 - 03 June 2010 |
+| Tracy Hickman | StarCraft 03 | The Speed of Darkness | 1259 - 05 June 2010 |
+| Janet Kagan | | The Nutcracker Coup | 0137 - 06 June 2010 |
+| David Drake | | The Military Dimension: Mark II | 0332 - 19 June 2010 |
+| John Scalzi | Old Man's War 01 | Old Man's War | 0344 - 20 June 2010 |
+| John Scalzi | Old Man's War 02 | The Ghost Brigades | 2114 - 21 June 2010 |
+| John Scalzi | Old Man's War 03 | The Last Colony | 0337 - 23 June 2010 |
+| William C. Dietz | Sam McCade 03 | Alien Bounty | 1738 - 27 June 2010 |
+| William C. Dietz | Sam McCade 04 | McCade's Bounty | 1920 - 1 July 2010 |
+| Walter Jon Williams | Dagmar Shaw 01 | This Is Not a Game | 2052 - 05 July 2010 |
+| Jerry Pournelle & S.M. Stirling | Falkenberg's Legion 01-04 | The Prince | 1435 - 24 July 2010 |
+| Isaac Asimov | Foundation 01 | Prelude to Foundation | 28 July 2010 - 3rd time |
+| Isaac Asimov | Foundation 02 | Forward the Foundation | 01 Aug 2010 - 3rd time |
+| Isaac Asimov | Foundation 06 | Foundation's Edge | 0100 - 03 Aug 2010 - 2nd time |
+| Isaac Asimov | Foundation 07 | Foundation and Earth | 2320 - 03 Aug 2010 - 2nd time |
+| Martin H. Greenberg | Foundation (Anthology) | Foundation's Friends | 0337 - 05 Aug 2010 |
+| Roger Zelazny | | Damnation Alley | 0547 - 19 Aug 2010 |
+| Alfred Bester | | Tiger! Tiger! | 0247 - 20 Aug 2010 |
+| Bruce Bethke | | Cyberpunk | 0843 - 26 Aug 2010 |
+| William Gibson| Sprawl 01 | Neuromancer | 1750 - 26 Aug 2010 |
+| William Gibson| Sprawl 02 | Count Zero | 0416 - 30 Aug 2010 |
+| Alastair Reynolds | Terminal World | 0457 - 10 Oct 2010 |
+| Wen Spencer | | Tinker | 1728 - 18 Oct 2010 |
+| David Sherman & Dan Cragg | Starfist 12 | Firestorm | 1830 - 25 Oct 2010 |
+| David Drake | Reaches 01 | Igniting The Reaches | 0404 - 26 Oct 2010 - 2nd time |
+| David Drake | Reaches 02 | Through The Breach | 0259 - 27 Oct 2010 |
+| David Drake | Reaches 03 | Fireships | 1921 - 28 Oct 2010 - 2nd time|
+| David Drake | | Redliners | 0152 - 04 Nov 2010 - 3rd time |
+| William C. Dietz | Legion 06 | For Those Who Fell | 0425 - 05 Nov 2010 |
+| Steven L. Kent | Clone 05 | The Clone Betrayal | 0045 - 08 Nov 2010 |
+| Steven L. Kent | Clone 06 | The Clone Empire | 0133 - 11 Nov 2010 |
+| Stephen Goldin | The Eternity Brigade | 0323 - 12 Nov 2010 |
+| Jerry Pournelle | Janissaries 01 | Janissaries | 2211 - 01 Dec 2010 |
+| Jerry Pournelle | Janissaries 02 | Clan and Crown | 0216 - 02 Dec 2010 |
+| Jerry Pournelle | Janissaries 03 | Storms of Victory | 0206 - 08 Dec 2010 |
+| David Drake | Hammer's Slammers | The Complete Hammer's Slammers Vol 3 | 2243 - 22 Dec 2010 |
+| Jack Williamson| | Ultimate Earth | 15 Jan 2011  2214 |
+| Iain Banks | Culture 01 | Consider Phlebas | 2217 - 19 Jan 2011 |
 
 I moved to the US in February 2011 and stopped tracking my reading. Reading
-slowed down by a lot because I had access to fast internet (and videogames).
+fiction grinded to a halt because I played a lot of videogames.
 
-* Bunch, Chris & Cole, Allan - Sten 01 - Sten (3rd Time)	14 Sep 2022  2317
-* Bunch, Chris & Cole, Allan - Sten 02 - The Wolf Worlds (3rd Time)	19 Sep 2022  2053
-* Drake, David - Redliners (4th Time)   01 Oct 2022  0323
+In 2023, I started borrowing books from the local public library, mainly
+anthologies. Surprinsingly, they have a great collection of SF books. 
 
-Started borrowing books from the local public library. Surprisingly, they have a
-ton of SciFi books.
-
-* Egan, Greg - Zendegi - Jan 2023
-* Clarke, Neil - Galactic Empires (Anthology) - 16 May 2023
-* Drake, David & Stirling, S. M. - The General 01-02 - Warlord - 20 May 2023  2215
-* Ruocchio, Christopher - Sword and Planet (Anthology) - 24 May 2023  1500
-* Leckie, Ann - Imperial Radch 01 - Ancillary Justice - 30 May 2023  0047
-* Anderson, Kevin - Saga of the Seven Suns 01 - Hidden Empire - 04 June 2023  1801
-* Cline, Ernest - Ready Player Two - 07 June 2023  2100
-* Scalzi, John - The Dispatcher 01 - The Dispatcher - 08 June 2023  0845
-* Scalzi, John - The Dispatcher 02 - Murder by Other Means - 10 June 2023  2130
-* Cordova, Jason - Chicks in Tank Tops (Anthology) - 14 June 2023  0919
-* Ruocchio, Christopher & Korsgaard, Sean CW - Worlds Long Lost (Anthology) - 16 June 2023  2245
-* Ruocchio, Christopher & Daniel, Tony - Star Destroyers (Anthology) - 19 June 2023  0002
-* Schmidt, Bryan Thomas - Infinite Stars: the definitive anthology of space opera and military SF - 01 July 2023  1405
-* Williamson, Michael Z. - Freehold 07 - Angleeyes - 05 July 2023  0125
-* Monae, Janelle - The Memory Librarian: And Other Stories of Dirty Computer - 08 July 2023  0130
-* Anderson, Kevin - Saga of the Seven Suns 02 - Forest of Stars - 15 July 2023  1220
-* Rusch, Kristin K. - Women of Futures Past: Classic Stories - 16 July 2023  1301
-* Gannon, Charles E., Barber, Griffin, Kennedy, Chris, & Massa, Mike - Tales of the Terran Republic - Mission Critical - 21 July 2023  0928
-* Cambias, James L. - Billion Worlds 01 - The Godel Operation - 05 Aug 2023  1019
-* Cambias, James L. - Billion Worlds 02 - The Scarab Mission - 06 Aug 2023  2234
-* Cambias, James L. - Arkad's World - 14 Aug 2023  1114
-* Scalzi, John - The Kaiju Preservation Society - 26 Aug 2023  1844
-* Anderson, Kevin - Saga of the Seven Suns 03 - Horizon Storms - 01 Sep 2023  1527
-* Adams, John J. - Cosmic Powers: The Saga Anthology of Far-Away Galaxies - 16 Sep 2023  1726
-* Lamb, Alex - Roboteer 01 - Roboteer - 20 Sep 2023 - Incomplete
-* Scalzi, John - The Dispatcher 03 - Travel by Bullet - 27 Sep 2023  1406
-* Schmidt, Bryan Thomas - Infinite Stars: Dark Frontiers (Anthology) - 28 Sep 2023  1707
-* Drake, David - RCN 01 - With The Lightnings (2nd time) - 02 Oct 2023  1850
-* Weber, David & Holo, Jacob - Gordian Protocol 01 - The Gordian Protocol - DNF
-* Hartwell, David G. & Weisman, Jacob - The Sword & Sorcery Anthology - 27 Oct 2023  1431
-* Scalzi, John - Fuzzy Nation - 29 Oct 2023  1714
-* Boop, David - Gunfight on Europa Station (Anthology) - 07 Nov 2023  0020
-* Mersault, Michael - The Deep Man - 13 Nov 2023  2354
-* Wells, Martha - Murderbot Diaries 01 - All Systems Red - 15 Nov 2023  0215
+| Author(s) | Series | Name | Timestamp |
+|-----------|--------|------|-----------|
+| Chris Bunch & Allan Cole | Sten 01 | Sten | 2317 - 14 Sep 2022 - 3rd time |
+| Chris Bunch & Allan Cole | Sten 02 | The Wolf Worlds | 2053 - 19 Sep 2022 - 3rd time |
+| David Drake | | Redliners | 0323 - 01 Oct 2022 - 4th time |
+| Greg Egan | | Zendegi | Jan 2023 |
+| Neil Clarke | Anthology | Galactic Empires | 16 May 2023 |
+| David Drake & S.M. Stirling | The General 01-02 | Warlord | 2215 - 20 May 2023 |
+| Christopher Ruocchio | Anthology | Sword and Planet | 1500 - 24 May 2023 |
+| Ann Leckie | Imperial Radch 01 | Ancillary Justice | 0047 - 30 May 2023 |
+| Kevin Anderson | Saga of the Seven Suns 01 | Hidden Empire | 1801 - 04 June 2023 |
+| Ernest Cline | Ready Player One 02 | Ready Player Two | 2100 - 07 June 2023 - Almost DNF |
+| John Scalzi | The Dispatcher 01 | The Dispatcher | 0845 - 08 June 2023 |
+| John Scalzi | The Dispatcher 02 | Murder by Other Means | 2130 - 10 June 2023 |
+| Jason Cordova | Anthology | Chicks in Tank Tops | 0919 - 14 June 2023 |
+| Christopher Ruocchio & Sean CW Korsgaard | Anthology | Worlds Long Lost | 2245 - 16 June 2023 |
+| Christopher Ruocchio & Tony Daniel | Anthology | Star Destroyers | 0002 - 19 June 2023 |
+| Bryan Thomas Schmidt | Infitite Stars Anthology 01 | Infinite Stars: the definitive anthology of space opera and military SF | 1405 - 01 July 2023 |
+| Michael Z. Williamson | Freehold 07 | Angleeyes | 0125 - 05 July 2023 |
+| Janelle Monae | Anthology | The Memory Librarian: And Other Stories of Dirty Computer | 0130 - 08 July 2023 |
+| Kevin Anderson | Saga of the Seven Suns 02 | Forest of Stars | 1220 - 15 July 2023 |
+| Kristin K. Rusch | Anthology | Women of Futures Past: Classic Stories | 1301 - 16 July 2023 |
+| Charles E. Gannon & Griffin Barber & Chris Kennedy & Mike Massa | Tales of the Terran Republic | Mission Critical | 0928 - 21 July 2023 |
+| James L. Cambias | Billion Worlds 01 | 1019 - The Godel Operation | 05 Aug 2023 |
+| James L. Cambias | Billion Worlds 02 | 2234 - The Scarab Mission | 06 Aug 2023 |
+| James L. Cambias | Arkad's World | 1114 - 14 Aug 2023 |
+| John Scalzi | The Kaiju Preservation Society | 1844 - 26 Aug 2023 |
+| Kevin Anderson | Saga of the Seven Suns 03 | 1527 - Horizon Storms | 01 Sep 2023 |
+| John J.Adams | Anthology | Cosmic Powers: The Saga Anthology of Far-Away Galaxies | 1726 - 16 Sep 2023 |
+| Alex Lamb | Roboteer 01 | Roboteer | 20 Sep 2023 - DNF |
+| John Scalzi | The Dispatcher 03 | Travel by Bullet | 1406 - 27 Sep 2023 |
+| Bryan Thomas Schmidt | Infitite Stars Anthology 01 | Infinite Stars: Dark Frontiers | 1707 - 28 Sep 2023 |
+| David Drake | RCN 01 | With The Lightnings | 1850 - 02 Oct 2023 - 2nd time |
+| David Weber & Jacob Holo | Gordian Protocol 01 | The Gordian Protocol | DNF |
+| David G. Hartwell & Jacob Weisman | Anthology | The Sword & Sorcery Anthology | 1431 - 27 Oct 2023 |
+| John Scalzi | Fuzzy Sapiens 07 | Fuzzy Nation | 1714 - 29 Oct 2023 |
+| David Boop | Anthology | Gunfight on Europa Station | 0020 - 07 Nov 2023 |
+| Michael Mersault | | The Deep Man | 2354 - 13 Nov 2023 |
+| Martha Wells | Murderbot Diaries 01 | All Systems Red | 0215 - 15 Nov 2023 |
