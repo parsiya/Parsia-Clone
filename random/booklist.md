@@ -95,7 +95,7 @@ ones I had read.
 | Keith Laumer | Bolos Anthology 05 | Old Guard | 1740 - 08 June 2005 |
 | Kevin Anderson | | Resurrection, Inc | 0132 - 12 June 2005 |
 | Michael Shaara | | All The Way Back | 1727 - 14 June 2005 |
-| David Drake & Eric Flint & Jim Baen | | The World Turned Upside Down (Anthology) | 2344 - 14 June 2005 |
+| David Drake & Eric Flint & Jim Baen | Anthology | The World Turned Upside Down | 2344 - 14 June 2005 |
 | Christopher Anvil | | Pandora's Box | 1334 - 15 June 2005 - 2nd time |
 | David Weber | Bolos 08 | BOLO! | 2120 - 15 June 2005 |
 | Alan Dean Foster | The Damned 01 | A Call to Arms | 1621 - 15-16 June 2005 |
@@ -309,7 +309,7 @@ ones I had read.
 | William C. Dietz | Legion 06 | For Those Who Fell | 0425 - 05 Nov 2010 |
 | Steven L. Kent | Clone 05 | The Clone Betrayal | 0045 - 08 Nov 2010 |
 | Steven L. Kent | Clone 06 | The Clone Empire | 0133 - 11 Nov 2010 |
-| Stephen Goldin | The Eternity Brigade | 0323 - 12 Nov 2010 |
+| Stephen Goldin | | The Eternity Brigade | 0323 - 12 Nov 2010 |
 | Jerry Pournelle | Janissaries 01 | Janissaries | 2211 - 01 Dec 2010 |
 | Jerry Pournelle | Janissaries 02 | Clan and Crown | 0216 - 02 Dec 2010 |
 | Jerry Pournelle | Janissaries 03 | Storms of Victory | 0206 - 08 Dec 2010 |
@@ -321,7 +321,7 @@ I moved to the US in February 2011 and stopped tracking my reading. Reading
 fiction grinded to a halt because I played a lot of videogames.
 
 In 2023, I started borrowing books from the local public library, mainly
-anthologies. Surprinsingly, they have a great collection of SF books. 
+anthologies. Surprisingly, they have a great collection of SF books.
 
 | Author(s) | Series | Name | Timestamp |
 |-----------|--------|------|-----------|

@@ -20,7 +20,7 @@ The titles are
 "[author(s)] - [series (if any)] - [book name] - [finished timestamp] - [score/5]".
 DNF == Did Not Finish.
 
-## Greg Egan - Zendegi - 5/5
+## Greg Egan - Zendegi - 5/5 {#zendegi}
 Disclosure: I was born and raised in Iran. I liked the book and especially the
 parts related to Shahnameh. Not all the Farsi/Persian words used in the book
 (mostly in conversations) were translated. I think non-native speakers would
