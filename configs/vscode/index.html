@@ -80,8 +80,9 @@ patterns:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background
 </span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// &#34;editor.wordSeparators&#34;: &#34;`~!@#$%^&amp;*()=+[{]}\\|;:&#39;\&#34;,.&lt;&gt;/?&#34;,
 </span></span></span></code></pre></div><h1 id=creating-snippets>Creating Snippets
 <a class=header-link href=#creating-snippets><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>Similar to other editors, you can create snippets in VS Code. Snippets are
-stored in JSON files. To create a snippet for a specific language use <code>File (menu) > Preferences > User Snippets</code>. Then select the language. In this case, I
-will create some Markdown snippets, so I will select <code>markdown.json</code>.</p><p>The JSON object is easy to read. The important parts are <code>prefix</code> (which is the
+stored in JSON files. To create a snippet for a specific language use
+<code>File (menu) > Preferences > Configure User Snippets</code>. Then select the language.
+In this case, I will create some Markdown snippets, so I will select <code>markdown.json</code>.</p><p>The JSON object is easy to read. The important parts are <code>prefix</code> (which is the
 trigger) and <code>body</code>. Note that you do not need to enter new lines with <code>\n</code>.
 Simply create a new cell in the body array and it will be printed in a new line.
 The following snippet will create a codefence.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>{
@@ -116,17 +117,10 @@ snippet without having to manually placing the cursor.</p><p>As another example,
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>&#34;imgcap&#34;</span>: {
 </span></span><span style=display:flex><span>		<span style=color:#268bd2>&#34;prefix&#34;</span>: <span style=color:#2aa198>&#34;imgcap&#34;</span>,
 </span></span><span style=display:flex><span>		<span style=color:#268bd2>&#34;body&#34;</span>: [
-</span></span><span style=display:flex><span>			<span style=color:#2aa198>&#34;
-
-
-
-
-<span class=caption-wrapper>
-  <img class=caption src=#ZgotmplZ title=${1:title} alt=${1:title}>
-  <span class=caption-text>${1:title}</span>
-</span>
-&#34;</span>,
-</span></span><span style=display:flex><span>			<span style=color:#2aa198>&#34;$0&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#586e75>// comment is a placeholder to prevent Hugo from generating the shortcode.
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>			<span style=color:#2aa198>&#34;{{&lt; imgcap title=\&#34;${1:title}\&#34; src=\&#34;${2:filename}.png\&#34; &gt;}}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#2aa198>&#34;&#34;</span>, <span style=color:#586e75>// empty line after shortcode
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>			<span style=color:#2aa198>&#34;$0&#34;</span>
 </span></span><span style=display:flex><span>		],
 </span></span><span style=display:flex><span>		<span style=color:#268bd2>&#34;description&#34;</span>: <span style=color:#2aa198>&#34;image caption Hugo shortcode&#34;</span>
 </span></span><span style=display:flex><span>	},
