@@ -415,9 +415,9 @@ or [standard ebooks (text)][lf-se-text].
 [lf-aa-audio]: https://archive.org/details/LittleFuzzy
 [lf-se-text]: https://standardebooks.org/ebooks/h-beam-piper/little-fuzzy
 
-If was a quick read. The first third of the book was boring, the second third
+It was a quick read. The first third of the book was boring, the second third
 was amusing, and the last part of the book (and the entire ending) was very very
-cheesy and written like a fan fiction.
+cheesy and written like fan fiction.
 
 ## David Boop - Gunfight on Europa Station (Anthology) - 4/5 {#guneuropa}
 [Western stories in space][gunfight]. Some were low effort and just a western adventure on a
@@ -490,6 +490,45 @@ that deal with Inga's background. You can read it for free in
 [silent-hand]: https://www.baen.com/the-silent-hand.html
 
 ## Martha Wells - Murderbot Diaries 01 - All Systems Red - 3/5 {#murderbot01}
-This was a quick read and entertaining to pass the time. An "AI coming to terms
-with its own existence" tale. This reminded me of Scalzi books. So if you love
-Scalzi, you're gonna like this series.
+This was a quick and entertaining read. An "AI coming to terms with its own
+existence" tale. This reminded me of Scalzi's books. If you love him you're
+gonna like this series.
+
+## Christopher Ruocchio - Sun Eater 01 - Empire of Silence 3/5 {#suneater01}
+I don't know what to think about this book. I picked up the book because I had
+recently enjoyed several anthologies edited by the author. I powered through the
+first part, loved the second, and got bored and skimmed the last.
+
+The setting is interesting and reminded me of Europe during the crusades. It's
+yet another feudalism in space, space opera. Religious organization with an
+inquisition branch (with its own weapons) that limits what technology is
+available to the masses. An emperor that rules through hereditary feudal lords
+living in luxury with manipulated genes to live for half a century. Serfs
+generally live in poverty. Slavery is legal.
+
+Faster than light travel is possible, but travel time is still measured in years
+between systems so people go into stasis. And of course, a war with an alien
+enemy that has been going on for a few hundred years. Allegedly, the settings
+was pulled from the [Book of the New Sun][botns] (people refer to the beginning
+paragraphs which are tbh very similar among other things).
+
+The author is wordy (maybe because he's an editor?). Almost every other page has
+a quote from a real or fictional writer/philosopher. There are a lot of things
+that could have been skipped. The same events keep reoccurring.
+
+Mild spoilers ahead. The book can be divided into four parts:
+
+* Main character is still on his home planet. I did not like this part and
+  powered through it. How many different examples of sibling rivalry and "my
+  parents don't love me" incidents should we read to get the picture?
+* Moves to a 2nd planet and survives in the streets and the arena. I loved this
+  part and couldn't put it down.
+* His identity is discovered and he moves to the palace. Not great.
+* Encounter with the aliens. Multiple similar encounters with the same group. I
+  just skimmed through this just to finish the book.
+
+The ending was anti-climactic. I am still going to give the 2nd book a try
+(public libraries FTW) and see if it picks up speed. Looks like it's as big as
+the first.
+
+[botns]: https://en.wikipedia.org/wiki/The_Book_of_the_New_Sun

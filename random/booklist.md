@@ -364,3 +364,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | David Boop | Anthology | [Gunfight on Europa Station]({{<relref "bookreviews.md#guneuropa">}}) | 0020 - 07 Nov 2023 |
 | Michael Mersault | | [The Deep Man]({{<relref "bookreviews.md#deepman">}}) | 2354 - 13 Nov 2023 |
 | Martha Wells | Murderbot Diaries 01 | [All Systems Red]({{<relref "bookreviews.md#murderbot01">}}) | 0215 - 15 Nov 2023 |
+| Christopher Ruocchio | Sun Eater 01 | [Empire of Silence]({{<relref "bookreviews.md#suneater01">}}) | 1926 - 21 Nov 2023 |
