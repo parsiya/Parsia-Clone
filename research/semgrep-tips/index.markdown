@@ -10,7 +10,7 @@ snippet: "[Semgrep](https://semgrep.dev/) stuff that I always forget."
 ---
 
 # Semgrep on Windows via WSL
-As of today (November 2022), **you cannot run Semgrep directly on Windows**.
+As of today (November 2023), **you cannot run Semgrep directly on Windows**.
 Seriously, save your sanity and don't try. But you can run it in the
 [Windows Subsystem for Linux][wsl].
 
@@ -101,14 +101,17 @@ curl https://semgrep.dev/c/p/default
 * Run the manually created "catch them all" scan: `--config p/default`.
 
 Note: Semgrep is intelligent and detects a file's language by extension so it
-will not every rule on every file.
+will not run every rule on every file. See
+[Language extensions and languages key values][lang].
+
+[lang]: https://semgrep.dev/docs/writing-rules/rule-syntax/#language-extensions-and-languages-key-values
 
 # Sample Rules
 Some fun things to do with Semgrep.
 
 ## Double Matches with Different Semgrep Messages
 I was printing the type of a metavariable.
-https://semgrep.dev/playground/s/parsiya:tips-double-match
+https://semgrep.dev/playground/r/L1UB80/parsiya.tips-double-match
 
 ```yaml
 rules:
@@ -151,7 +154,7 @@ One fix (credit: [Lewis Ardern, Semgrep][lewis-gh],
 [source][lewis-double-match-answer]) is to add it to `focus-metavariable`. Note,
 how we need to add `patterns` to have `focus-metavariable` as a tag.
 
-https://semgrep.dev/playground/s/parsiya:tips-double-match-fix
+https://semgrep.dev/playground/r/8GUn82/parsiya.tips-double-match-fix
 
 ```yaml
 rules:
@@ -213,7 +216,7 @@ pattern: |
   public $RETURNTYPE $METHOD(...) { ... }
 ```
 
-https://semgrep.dev/playground/s/parsiya:tips-java-annotations
+https://semgrep.dev/playground/r/gxU0Q9/parsiya.tips-java-annotations
 
 ### Fix
 Credit: [Cooper Pierce][cooper-gh], Semgrep, [source on Semgrep slack][annotation-answer].
@@ -237,7 +240,7 @@ rules:
       - java
 ```
 
-https://semgrep.dev/playground/s/parsiya:tips-java-annotations-fix
+https://semgrep.dev/playground/r/3qUbAk/parsiya.tips-java-annotations-fix
 
 ## pattern-inside AND & OR
 This is `AND`. The match must satisfy both.
@@ -260,7 +263,7 @@ Capture Conditions of `if` Statements in C/C++: `if ($X)`.
 
 Capture `if` conditions with one line blocks.
 
-https://semgrep.dev/playground/s/parsiya:tips-detect-single-line-if-block
+https://semgrep.dev/playground/r/5rUED4/parsiya.tips-detect-single-line-if-block
 
 ```yaml
 rules:
@@ -313,7 +316,7 @@ rules:
       - /paths/to/exclude/*
 ```
 
-https://semgrep.dev/playground/s/parsiya:detect-file
+https://semgrep.dev/playground/r/eqUAk3/parsiya.detect-file
 
 The path is relative to where you run Semgrep. The file doesn't need to have
 any content. [paths > include/exclude][paths] should give us a lot of power to
@@ -346,7 +349,7 @@ The rule takes advantage of having creating a union of six different
 everything after all six patterns are met.
 
 Semgrep playground link:
-https://semgrep.dev/playground/s/parsiya:three-imports-used.
+https://semgrep.dev/playground/r/2ZUkgL/parsiya.three-imports-used.
 
 ```yaml
 rules:
