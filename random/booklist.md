@@ -365,3 +365,5 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Michael Mersault | | [The Deep Man]({{<relref "bookreviews.md#deepman">}}) | 2354 - 13 Nov 2023 |
 | Martha Wells | Murderbot Diaries 01 | [All Systems Red]({{<relref "bookreviews.md#murderbot01">}}) | 0215 - 15 Nov 2023 |
 | Christopher Ruocchio | Sun Eater 01 | [Empire of Silence]({{<relref "bookreviews.md#suneater01">}}) | 1926 - 21 Nov 2023 |
+| Gene Wolf | Book of the New Sun 01 | [The Shadow of the Torturer]({{<relref "bookreviews.md#newsun01">}}) | 0309 - 01 Dec 2023 |
+| Gene Wolf | Book of the New Sun 02 | [The Claw of the Conciliator]({{<relref "bookreviews.md#newsun02">}}) | 0241 - 04 Dec 2023 |

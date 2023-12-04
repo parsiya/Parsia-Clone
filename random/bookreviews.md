@@ -334,10 +334,11 @@ don't think I skipped any stories in this one. [List of stories][l1].
 Some of my favorites:
 
 * "The Traitor": Set in the Bolo universe by David Weber.
-* "Shambleau": I skipped it because I had read it recently in a different anthology, but it's a great story.
-* "Earthman, Come Home": We're here to kill your fake masters.
+* "Shambleau": Great story. I only skipped it because I had recently read it in
+  [Women of Futures Past]({{<relref "bookreviews.md#womenfuture">}}).
+* "Earthman, Come Home": Man goes back in time to kill humanity's fake masters.
 * "Cold Sleep": I woke up in this ship and have no idea what's happening.
-* "Rescue Party": The last sentence gave me goosebumps.
+* "Rescue Party": Aliens go to rescue a doomed civilization. The last sentence gave me goosebumps.
 
 [l1]: https://bryanthomasschmidt.net/writings/anthologies-edited/infinite-stars-dark-frontiers/
 
@@ -361,15 +362,15 @@ college decades ago, think it is. The professor is being silenced!
 Chapter 2 is about shooting and how the professor is not a bigot because he has
 a gay brother.
 
-As another reviewer on Goodreads mentioned, you would expect chapter 3 to be
-about quartering soldiers in homes or the 3rd amendment because that's how the
-other two were.
+As another reviewer on Goodreads had a fun note. You would expect chapter 3 to
+be about quartering soldiers in homes or the 3rd amendment because that's how
+the other two were, lol.
 
 I am not sure **WHY** I actually read these two chapters. I mean I expect
 military science fiction is to be full of conservatives, but this sort of
-nonsense was just too much. What made it worse was it had almost nothing to do
-with the rest of the book. The book got better, but when it has hit rock bottom,
-the only way is up.
+nonsense was just too much. It didn't even have to do much with the rest of the
+book. It looked like the authors wanted to rant. The book got better, but when it
+has hit rock bottom, the only way is up.
 
 ## David G. Hartwell & Jacob Weisman - The Sword & Sorcery Anthology - 4/5 {#swordant}
 It had been a while since I had read actual fantasy. This was a breath of fresh
@@ -378,32 +379,38 @@ air between all the Sci-Fi and Mil-Sci-Fi.
 Loved:
 
 * Tower of the Elephant: Of course, no fantasy anthology is complete w/o Conan.
-* Black God's Kiss: Holy shit the depiction of hell gave me goosebumps. I mean,
-  what else do you expect from the author of a masterpiece like "Shambleau."
+* Black God's Kiss: Woman goes to hell to get a weapon. Holy shit, the depiction
+  of hell gave me goosebumps. I mean, what else do you expect from the author of
+  a masterpiece like "Shambleau."
 * Undertow: What a surprise ending!
 * Barrow Troll: David Drake, yeah! The burden of guarding a treasure.
-* Soldier of An Empire Unacquainted With Defeat: Not like other soldier
-  rehabilitation stories.
-* Sea Troll's Daughter: A troll's revenge after death.
+* Soldier of An Empire Unacquainted With Defeat: Very fun! Not like other
+  soldier rehabilitation stories.
+* Sea Troll's Daughter: A troll gets revenge after death.
 
 Good:
 
-* Unholy Grail: The beginning was frustrating, but it got much better as the
-  story progressed.
+* Unholy Grail: Grey Mouser gets revenge. The beginning was frustrating, but it
+  got much better as the story progressed.
 * Tale of Hauk: Helping a disturbed ghost pass into the afterlife.
-* Adventuress: I was a confused by the ending.
+* Adventuress: Two women go on an adventure. I was very confused by the ending.
+  They saw two men from afar and immediately wanted to marry them before even
+  meeting them?
 * Gimmile's Songs: A magical figurine with a curse.
-* Red Guild: Another "curse prevents happiness" story.
+* Red Guild: An assassing can never be happy because of a curse.
 * Path of the Dragon: I am not a Game of Thrones fan, but I liked this story.
+  The lady who owns dragons (I don't even remember her name) find an army.
 
 Didn't like/skipped:
 
 * Stages of God: No, not really interesting.
 * Epistle From Lebanoi: Skipped after a few pages.
 * Become a Warrior: A cliche tale of revenge.
-* Six From Atlantis: I really didn't get the point of the story.
-* Coral Heart: Skipped after a few pages.
-* Year of the Three Monarchs: Interesting story, but too rushed IMO.
+* Six From Atlantis: A stranger went to a royal court and killed a bunch of
+  people. I really didn't get the point of the story.
+* Coral Heart: Skipped after a few pages. There was a sword or something. Boring!
+* Year of the Three Monarchs: Tale of three people who become king by killing
+  the previous one. Interesting story, and a great setting but too rushed IMO.
 
 ## John Scalzi - Fuzzy Nation - 3/5 {#fuzzy07}
 A somewhat reboot of H. Beam Piper's Little Fuzzy. The original work is out of
@@ -420,11 +427,10 @@ was amusing, and the last part of the book (and the entire ending) was very very
 cheesy and written like fan fiction.
 
 ## David Boop - Gunfight on Europa Station (Anthology) - 4/5 {#guneuropa}
-[Western stories in space][gunfight]. Some were low effort and just a western adventure on a
-different planet with laser and rockets.
+[Western stories in space][gunfight]. 
 [List of stories on bibliocommons][gunfight-list].
 
-These were really creative and blended the genres:
+These stories were really creative and blended the genres:
 
 * "Greenhorn" by Elizabeth Moon: A new farmer with a hidden agenda arrives in a
   space colony imitating the old west.
@@ -449,10 +455,10 @@ Western stories in space. Fun to read but nothing to write home about:
 
 I did not like these:
 
-* "Showdown on Big Rock 27": An unfunny version of "a bunch of kids thwart bad pirates."
+* "Showdown on Big Rock 27": An unfunny version of "kids bamboozle bad people."
 * "Last Stand at Europa Station A.": Are these aliens bad or what?
-* "Riders of the Endless Void": Heroes arrive and save people. This story didn't
-  even pretend to be a western in space. Nothing western here.
+* "Riders of the Endless Void": Heroes arrive and save people. Despite the very
+  cool title, this story didn't even pretend to be a western in space.
 * "Incident at Raven's Rift": Standoff with robbers, but on another planet.
 
 [gunfight]: https://www.baen.com/gunfight-on-europa-station.html
@@ -497,7 +503,8 @@ gonna like this series.
 ## Christopher Ruocchio - Sun Eater 01 - Empire of Silence 3/5 {#suneater01}
 I don't know what to think about this book. I picked up the book because I had
 recently enjoyed several anthologies edited by the author. I powered through the
-first part, loved the second, and got bored and skimmed the last.
+first part of the book, loved the second, and got bored and skimmed the last
+parts.
 
 The setting is interesting and reminded me of Europe during the crusades. It's
 yet another feudalism in space, space opera. Religious organization with an
@@ -514,21 +521,66 @@ paragraphs which are tbh very similar among other things).
 
 The author is wordy (maybe because he's an editor?). Almost every other page has
 a quote from a real or fictional writer/philosopher. There are a lot of things
-that could have been skipped. The same events keep reoccurring.
+that could have been skipped.
+
+My biggest gripe with the book is that same events keep repeating. Does the
+author think the readers are stupid and need half a dozen examples of sibling
+rivalry and "my parents don't love me" (in the first part) to get the picture?
+Or how many scenes of "the chantry are evil" in the last part? Come on :).
 
 Mild spoilers ahead. The book can be divided into four parts:
 
-* Main character is still on his home planet. I did not like this part and
-  powered through it. How many different examples of sibling rivalry and "my
-  parents don't love me" incidents should we read to get the picture?
+* Main character is still on his home planet. Bad father, absent mother, violent
+  sibling. I did not like this part and powered through it. 
 * Moves to a 2nd planet and survives in the streets and the arena. I loved this
   part and couldn't put it down.
-* His identity is discovered and he moves to the palace. Not great.
-* Encounter with the aliens. Multiple similar encounters with the same group. I
-  just skimmed through this just to finish the book.
+* His identity is discovered and he moves to the palace. Love triangle. Not great.
+* Encounter with the aliens. Chantry messes it up. I just skimmed through this
+  just to finish the book.
 
 The ending was anti-climactic. I am still going to give the 2nd book a try
 (public libraries FTW) and see if it picks up speed. Looks like it's as big as
 the first.
 
 [botns]: https://en.wikipedia.org/wiki/The_Book_of_the_New_Sun
+
+## Gene Wolf - Book of the New Sun 01 - The Shadow of the Torturer 3/5 {#newsun01}
+I picked this up because of `Empire of Silence` (the review above).
+
+I am gonna be honest, people praise Gene's writing style. I hated it in this
+book. OK, I get it, you wanna put all those religious fables and latine words in
+the book. What are all these D&D-like "random encounters" that do not add
+anything to the story (e.g., the gardens)?
+
+I liked the setting. The sun is dying. It's feudal Europe with some existing
+advanced technology from the past like portals, flyers, and robots. No one knows
+how these things work anymore.
+
+Anyways, I just finished the book and moved to the 2nd.
+
+## Gene Wolf - Book of the New Sun 02 - The Claw of the Conciliator 4/5 {#newsun02}
+I am glad I read the first book. The second book is much better. The pace is
+faster and seems like the author actually figured out what they want to do with
+the main character.
+
+My only issue with the book is the missing gap between the books. At the end of
+book one, the main character is with his group. At the beginning of the second
+book all of them are gone except one. I thought some pages had been removed from
+the "Shadow & Claw" edition of the book that I was reading (combines the first
+two books), but no. There are some cryptic explanations of the events through
+the book, and I was expecting some extraordinary event, but it was very mundane.
+
+But I like the writing style of this book better. The inclusion of stories and
+the play reminds me of the [Kalila wa-Dimna][kalila] or کلیله و دمنه, one of my
+favorite books in Farsi. The stories in that book are like the movie Inception
+or Russian dolls. E.g., the main characters start a story and in the middle one
+says, this is like the story of X. Then the X story starts and in the middle,
+one of new the characters says, this is just like Y story, and so on. The
+stories go a few layers deep.
+
+In this book, there's only one layer they're not like "random encounters" from
+the first book and actually advance the plot.
+
+I am gonna take a break before reading the 3rd book.
+
+[kalila]: https://en.wikipedia.org/wiki/Kal%C4%ABla_wa-Dimna
