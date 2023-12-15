@@ -144,20 +144,20 @@ My favorites:
 
 What I didn't like:
 
-"Boomers" (ironically, also mirrors the generation mindset) and "Icebreaker"
-were a copy of the typical "non-US country bad" online discourse. "Magnolia
-Incident" was "don't complain about the military taking away your civil rights
-because they're the only thing between you and scary aliens and also there are
-ships in this story." If I want a sermon of how "military is the only thing
-protecting us from aliens/brown people/bad things" I can re-read
+* "Boomers" (ironically, also mirrors the generation mindset) and "Icebreaker"
+were a copy of the typical "non-US country bad" online discourse. 
+* "Magnolia Incident" was "don't complain about the military taking away your
+civil rights because they're the only thing between you and scary aliens and
+also there are ships in this story." If I want a sermon of how "military is the
+only thing protecting us from aliens/brown people/bad things," I can re-read
 [Starship Troopers][starship-troopers-novel].
 
 [starship-troopers-novel]: https://en.wikipedia.org/wiki/Starship_Troopers
 
 ## Greg Bear - War Dogs 01 - War Dogs - 0/5 - DNF {#wardogs01}
-I stopped on page 130/291. For a military sci-fi book, there was not a lot of
-action. It takes skill to make a book in this genre boring. Maybe I am more used
-to the writing style of Drake, Weber, and Dietz.
+I stopped on page 130/291. It did not have a lot of action. It takes skill to
+make a military sci-fi book boring. Maybe I am more used to the writing style of
+Drake, and Dietz.
 
 ## Bryan Thomas Schmidt - Infinite Stars: the definitive anthology of space opera and military SF - 4.5/5 {#infinite01}
 Great collection of "Space Opera" short stories by some of my favorite writers.
@@ -548,7 +548,7 @@ the first.
 I picked this up because of `Empire of Silence` (the review above).
 
 I am gonna be honest, people praise Gene's writing style. I hated it in this
-book. OK, I get it, you wanna put all those religious fables and latine words in
+book. OK, I get it, you wanna put all those religious fables and Latin words in
 the book. What are all these D&D-like "random encounters" that do not add
 anything to the story (e.g., the gardens)?
 
@@ -558,10 +558,9 @@ how these things work anymore.
 
 Anyways, I just finished the book and moved to the 2nd.
 
-## Gene Wolf - Book of the New Sun 02 - The Claw of the Conciliator 4/5 {#newsun02}
-I am glad I read the first book. The second book is much better. The pace is
-faster and seems like the author actually figured out what they want to do with
-the main character.
+## Gene Wolf - Book of the New Sun 02 - The Claw of the Conciliator 4.5/5 {#newsun02}
+I am glad I read the first book. This is much better. The pace is faster and the
+author actually figured out what they want to do with the main character.
 
 My only issue with the book is the missing gap between the books. At the end of
 book one, the main character is with his group. At the beginning of the second
@@ -573,14 +572,59 @@ the book, and I was expecting some extraordinary event, but it was very mundane.
 But I like the writing style of this book better. The inclusion of stories and
 the play reminds me of the [Kalila wa-Dimna][kalila] or کلیله و دمنه, one of my
 favorite books in Farsi. The stories in that book are like the movie Inception
-or Russian dolls. E.g., the main characters start a story and in the middle one
+or Russian dolls. E.g., the main characters start a story and in the middle, one
 says, this is like the story of X. Then the X story starts and in the middle,
 one of new the characters says, this is just like Y story, and so on. The
 stories go a few layers deep.
 
-In this book, there's only one layer they're not like "random encounters" from
-the first book and actually advance the plot.
+In this book, there's only one layer and they're not like "random encounters"
+from the first book and actually advance the plot.
 
 I am gonna take a break before reading the 3rd book.
 
 [kalila]: https://en.wikipedia.org/wiki/Kal%C4%ABla_wa-Dimna
+
+## Gardner Dozois - Book of Swords (Anthology) - 4/5 {#bookofswords}
+Fantasy anthology. https://en.wikipedia.org/wiki/The_Book_of_Swords_(anthology).
+
+Starting from this story I am going to copy my favorite quotes from the books.
+
+My favorites:
+
+* "A Long, Cold Trail": Three members of the Council of the Treaty for Safety of the World (AKA fight unnatural evil) try to kill an unruly demigod. I look forward to reading more of [Sir Hereward and Mister Fitz][fitz].
+* "The Smoke of Gold is Glory": **My absolute favorite story in this book.** Four adventurers storm a mountain to kill a dragon and take its treasure. Amazing setting and five very interesting characters including the dragon. My only regret is not finding the concept art of characters before reading the story. Check the middle of this page: https://scottlynch.substack.com/p/blame-of-thrones. See my favorite quotes from this story at the bottom of this section.
+* "The Colgrid Conundrum": Two thieves do a drug heist in an industrial (almost steampunk) city. I loved the city and was disappointed to see [the author][rich] has not written anything else there, fortunately he has a few short stories with the same characters that like [The Delusive Cartographer][carto] and [The Mermaid Caper][merm].
+* "Waterfalling": The setting has guns, magic, and Gods living among mortals. Very nice. I will read more of [Gorel oF Goliris][gorel].
+
+[fitz]: https://www.goodreads.com/series/144869-sir-hereward-and-mister-fitz
+[rich]: https://www.beneath-ceaseless-skies.com/authors/rich-larson/
+[carto]: https://www.beneath-ceaseless-skies.com/stories/the-delusive-cartographer/
+[merm]: https://www.beneath-ceaseless-skies.com/stories/the-mermaid-caper/
+[gorel]: https://www.goodreads.com/series/272116-gorel-of-goliris
+
+OK:
+
+* "The Best Man Wins": Stranger contracts a blacksmith to forge a sword. Twist ending.
+* ""I Am a Handsome Man," said Apollo Crow": Cursed crow(s) tracks down a revolutionary in ancient Rome.
+* "The Triumph of Virtue": Detective-ish Quillifer story. Assassination attempt at court.
+* "The Mocking Tower": Heir to a deceased king tries to steal a sword from a magical tower. I didn't like the story, but the changing descriptions of the tower were exotic.
+* "The King's Evil": Three adventurers go to a cursed island to recover an ancient treasure. The main character has an existential crisis (don't we all?). I did not like the story, but the writing was excellent.
+* "The Sons of the Dragon": History of the two sons of an emperor set in the "Game of Thrones" setting. Reads like a history book. It was full of action, but meaningless to me because I have neither read the books nor watched the TV series.
+
+I didn't like:
+
+* "Her Father's Sword": Kidnapped villagers return as selfish drones. Girl struggles to connect with the soulless husk of her father. I didn't really like it.
+* "The Hidden Girl": 10 year old girl is kidnapped by assassins and trained. Develops a consicous.
+  * "We're all thieves in this world of suffering," the nun says, "Honor and faith are not virtues, only excuses for stealing more."
+* "The Sword of Destiny": Wizard's apprentice is sent to steal a magic sword. Runs away instead and takes a detour.
+* "Hrunting": Man tries to recover his grandfather's ancient sword that was thrown away by Beowulf.
+* "When I was a Highway Man": Dueling youth tries to make a living in big city. The city of Riverside sounds interesting and is part of the author's other books. But I didn't like this story, but I am gonna try some of the other books.
+* "The Sword Tyraste": Man tries to avenge his family with the help of a magic sword. It was an easy read, but very bland.
+
+Quotes from "The Smoke of Gold is Glory"
+
+* "Anyway, I am famous among my friends for having never in my life behaved with any particular wisdom." - Tarkaster Crale, thief and storyteller.
+* "O King," the dragon murmured, wheezing, and with every breath spilling more fiery ichor on the ground, "in all our ten thousand years, we have had but four friends, and we have only met them this night."
+* [Glimraug the dragon]: "[...] The long-awaited wonder comes! True death-friend, let our pyre be shared, let us build it now! **To take is not to keep**."
+* [Brandgar, the King-on-the-Waves]: "[...] But there is no true glory in holding. All that must come in the taking ... and letting go."
+* "The point is that it has never been done before," said Glimraug. Another treasure pavillion was swalled by fire nearby. "And it shall never be done again. All things in this world are made to go into the fire, Tarkaster Crale. All things raise smoke. The smoke of incense is sweet. The smoke of wood is dull haze. But don't you see? **The smoke of gold ... is glory**."

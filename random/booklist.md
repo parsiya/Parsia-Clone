@@ -367,3 +367,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Christopher Ruocchio | Sun Eater 01 | [Empire of Silence]({{<relref "bookreviews.md#suneater01">}}) | 1926 - 21 Nov 2023 |
 | Gene Wolf | Book of the New Sun 01 | [The Shadow of the Torturer]({{<relref "bookreviews.md#newsun01">}}) | 0309 - 01 Dec 2023 |
 | Gene Wolf | Book of the New Sun 02 | [The Claw of the Conciliator]({{<relref "bookreviews.md#newsun02">}}) | 0241 - 04 Dec 2023 |
+| Gardner Dozois| Anthology | [Book of Swords]({{<relref "bookreviews.md#bookofswords">}}) | 1421 - 14 Dec 2023 |
