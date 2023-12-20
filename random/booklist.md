@@ -368,3 +368,6 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Gene Wolf | Book of the New Sun 01 | [The Shadow of the Torturer]({{<relref "bookreviews.md#newsun01">}}) | 0309 - 01 Dec 2023 |
 | Gene Wolf | Book of the New Sun 02 | [The Claw of the Conciliator]({{<relref "bookreviews.md#newsun02">}}) | 0241 - 04 Dec 2023 |
 | Gardner Dozois| Anthology | [Book of Swords]({{<relref "bookreviews.md#bookofswords">}}) | 1421 - 14 Dec 2023 |
+| Martha Wells | Murderbot Diaries 02 | [Artificial Condition]({{<relref "bookreviews.md#murderbot02">}}) | 2002 - 17 Dec 2023 |
+| Martha Wells | Murderbot Diaries 03 | [Rogue Protocol]({{<relref "bookreviews.md#murderbot03">}}) | 0223 - 19 Dec 2023 |
+| Martha Wells | Murderbot Diaries 04 | [Exit Strategy]({{<relref "bookreviews.md#murderbot04">}}) | 0150 - 120 Dec 2023 |

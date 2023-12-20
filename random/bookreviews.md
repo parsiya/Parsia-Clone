@@ -594,7 +594,7 @@ My favorites:
 * "A Long, Cold Trail": Three members of the Council of the Treaty for Safety of the World (AKA fight unnatural evil) try to kill an unruly demigod. I look forward to reading more of [Sir Hereward and Mister Fitz][fitz].
 * "The Smoke of Gold is Glory": **My absolute favorite story in this book.** Four adventurers storm a mountain to kill a dragon and take its treasure. Amazing setting and five very interesting characters including the dragon. My only regret is not finding the concept art of characters before reading the story. Check the middle of this page: https://scottlynch.substack.com/p/blame-of-thrones. See my favorite quotes from this story at the bottom of this section.
 * "The Colgrid Conundrum": Two thieves do a drug heist in an industrial (almost steampunk) city. I loved the city and was disappointed to see [the author][rich] has not written anything else there, fortunately he has a few short stories with the same characters that like [The Delusive Cartographer][carto] and [The Mermaid Caper][merm].
-* "Waterfalling": The setting has guns, magic, and Gods living among mortals. Very nice. I will read more of [Gorel oF Goliris][gorel].
+* "Waterfalling": The setting has guns, magic, and Gods living among mortals. Very nice. I will read more of [Gorel of Goliris][gorel].
 
 [fitz]: https://www.goodreads.com/series/144869-sir-hereward-and-mister-fitz
 [rich]: https://www.beneath-ceaseless-skies.com/authors/rich-larson/
@@ -628,3 +628,25 @@ Quotes from "The Smoke of Gold is Glory"
 * [Glimraug the dragon]: "[...] The long-awaited wonder comes! True death-friend, let our pyre be shared, let us build it now! **To take is not to keep**."
 * [Brandgar, the King-on-the-Waves]: "[...] But there is no true glory in holding. All that must come in the taking ... and letting go."
 * "The point is that it has never been done before," said Glimraug. Another treasure pavillion was swalled by fire nearby. "And it shall never be done again. All things in this world are made to go into the fire, Tarkaster Crale. All things raise smoke. The smoke of incense is sweet. The smoke of wood is dull haze. But don't you see? **The smoke of gold ... is glory**."
+
+## Martha Wells - Murderbot Diaries 02 - All Systems Red - 2/5 {#murderbot02}
+## Martha Wells - Murderbot Diaries 03 - All Systems Red - 2/5 {#murderbot03}
+## Martha Wells - Murderbot Diaries 04 - All Systems Red - 2/5 {#murderbot04}
+The series is popular, but I think it's mid. It's not my cup of tea. The only
+reason I am reading them is because they're small books.
+
+The [first book]({{<relref "bookreviews.md#murderbot01">}}) was better. I guess
+the whole idea of the a bot that wants to be independent and wathes TV series was
+fun, but the other three books quickly got boring and repetitive.
+
+A whole lot of dialoge is dedicated to the murderbot covering its tracks. A good
+20% of the books are "I hacked something, I wiped off my movements from logs,
+and so on" I think we get the idea that for some reason this bot can hack
+anything and everything. Stations are full of security scanners, cameras, and
+bots, but they are hackable at a snap.
+
+Another question is other bots like the transport ship bot. Don't they have
+governor modules to prevent them from doing illegal activities?
+
+Maybe I will continue with the series later, but this has become very boring and
+repetitive.
