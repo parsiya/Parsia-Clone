@@ -3,7 +3,7 @@ draft: false
 toc: false
 comments: false
 categories:
-- Random
+- Literature
 tags:
 - story
 title: "God Was Just This Guy (Y'Know?)"

@@ -3,7 +3,7 @@ draft: false
 toc: false
 comments: false
 categories:
-- Random
+- Literature
 tags:
 - books
 title: "Book Reviews"
@@ -630,8 +630,8 @@ Quotes from "The Smoke of Gold is Glory"
 * "The point is that it has never been done before," said Glimraug. Another treasure pavillion was swalled by fire nearby. "And it shall never be done again. All things in this world are made to go into the fire, Tarkaster Crale. All things raise smoke. The smoke of incense is sweet. The smoke of wood is dull haze. But don't you see? **The smoke of gold ... is glory**."
 
 ## Martha Wells - Murderbot Diaries 02 - All Systems Red - 2/5 {#murderbot02}
-## Martha Wells - Murderbot Diaries 03 - All Systems Red - 2/5 {#murderbot03}
-## Martha Wells - Murderbot Diaries 04 - All Systems Red - 2/5 {#murderbot04}
+## Martha Wells - Murderbot Diaries 03 - Rogue Protocol - 2/5 {#murderbot03}
+## Martha Wells - Murderbot Diaries 04 - Exit Strategy - 2/5 {#murderbot04}
 The series is popular, but I think it's mid. It's not my cup of tea. The only
 reason I am reading them is because they're small books.
 
@@ -641,12 +641,92 @@ fun, but the other three books quickly got boring and repetitive.
 
 A whole lot of dialoge is dedicated to the murderbot covering its tracks. A good
 20% of the books are "I hacked something, I wiped off my movements from logs,
-and so on" I think we get the idea that for some reason this bot can hack
+and so on." I think we get the idea that for some reason this bot can hack
 anything and everything. Stations are full of security scanners, cameras, and
 bots, but they are hackable at a snap.
 
-Another question is other bots like the transport ship bot. Don't they have
-governor modules to prevent them from doing illegal activities?
+Another question is other bots like the transport ship bot don't have governor
+modules and can do pretty much any illegal activity they want. People don't like
+SecUnits (which have governor modules), but are not afraid of bots or constructs
+that do not.
 
-Maybe I will continue with the series later, but this has become very boring and
-repetitive.
+## Martha Wells - Murderbot Diaries 06 - Fugitive Telemetry - 3/5 {#murderbot05}
+I read this one before "Network Effect" (which is marked as the 5th in the
+series) because chronologically the story here happens after the 4th book (Exit
+Strategy).
+
+It's a whodunnit murder mystery. A murder has happened in the station and
+murderbot must find the murderer and gain the loyalty of residents. I actually,
+liked this book better than the rest mostly because there was not a lot of
+words dedicated to "hacking" (see review above).
+
+Better, but still not my cup of tea.
+
+## Timothy Zahn - Icarus Saga 01 - The Icarus Plot - 4/5 {#icarus01}
+Pretty good book. There are many references and recurring characters to book 0,
+[The Icarus Hunt][ica0] (not sure why Goodreads has numbered it 0 instead of 1).
+I suggest you read it first. I didn't and I still enjoyed the book. The
+references are explained later.
+
+[ica0]: https://www.goodreads.com/book/show/192528.The_Icarus_Hunt
+
+Two former bounty hunters turned surveyors are tasked with surveying a planet,
+but of course the plot makes them go back to doing what they're good at, finding
+people. The book's universe is huge with multiple alien species. An alien race
+dominate faster than light travel and an alliance of others including humands
+are competing for domination through economic and cladestine warfare.
+
+I really appreciated how the author didn't have extensive world building
+chapters and instead kept the action going on. The last third of the book is a
+bit repetitive especially the part were the good people outsmart the bad folks,
+and the ending is somewhat cheesy. But I guess it's not space opera if the good
+people don't win.
+
+I will probably read "The Icarus Hunt" before moving to the next book in this
+series.
+
+## David Drake - Times of Heroes 01 - The Spark - 5/5 {#heroes01}
+Unfortunately, [David Drake][drake] passed away recently. I had mostly read
+short stories by him in the last few years. I mostly reread
+[Redliners][redliners] (DRM-free digital format is free on Baen's website), or
+Hammer's Slammers. For the last few years, I used to send him actual snail mail
+for his birthday and he would reply to my email. This year he didn't and it
+turns out he wasn't feeling that great.
+
+[drake]: https://david-drake.com/
+[redliners]: https://www.baen.com/redliners.html
+
+I had not read them before, so I picked up the three books in the "Times of
+Heroes" series from the local public library for holiday reading. I gobbled the
+book in less than a day.
+
+![2023 holiday reading list](holiday2023.jpeg)
+
+I really love the world. There's "the road" that people can use to travel
+between nodes. I think it's like a long portal because it's mentioned while it
+has light, you cannot see the sun there. I don't think everything is on one
+planet.
+
+Nodes are (usually isolated) parcels of land where people can live and is part
+of "Here." Monsters and magic items are in "Not-Here" (obviously). In between
+these we have "The Waste" which humans can traverse for a bit with the help of
+their animal companions with a mental link. Most people appear to have one. This
+mental link allows them to see through their eyes (e.g., our champion has a dog
+and fights thgouth his eyes).
+
+The series is an Arthurian fantasy in a far future world. Champions fight with
+energy swords and shields. The ancients have left "magical" items that people
+can reshape or reuse. Is it magic or advanced technology? Doesn't matter, you
+know the quote:
+
+> Any sufficiently advanced technology is indistinguishable from magic.
+> Arthur C. Clarke
+
+The people who can modify these magical items and reshape them are called
+"Makers." They go into a trance and can see and modigy the molecular structure
+of an artifact to change it. This usually needs external elements (e.g., Iron or
+Silicon). Our champion is both a maker and a fighter. We even see some boats
+with limited sentience and they can be used to travel between nodes. The boats
+are enclosed and I think they're vessles or spaceships that can travel between
+dimensions.
+

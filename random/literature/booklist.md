@@ -3,7 +3,7 @@ draft: false
 toc: false
 comments: false
 categories:
-- Random
+- Literature
 tags:
 - books
 title: "Book List"
@@ -370,4 +370,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Gardner Dozois| Anthology | [Book of Swords]({{<relref "bookreviews.md#bookofswords">}}) | 1421 - 14 Dec 2023 |
 | Martha Wells | Murderbot Diaries 02 | [Artificial Condition]({{<relref "bookreviews.md#murderbot02">}}) | 2002 - 17 Dec 2023 |
 | Martha Wells | Murderbot Diaries 03 | [Rogue Protocol]({{<relref "bookreviews.md#murderbot03">}}) | 0223 - 19 Dec 2023 |
-| Martha Wells | Murderbot Diaries 04 | [Exit Strategy]({{<relref "bookreviews.md#murderbot04">}}) | 0150 - 120 Dec 2023 |
+| Martha Wells | Murderbot Diaries 04 | [Exit Strategy]({{<relref "bookreviews.md#murderbot04">}}) | 0150 - 20 Dec 2023 |
+| Martha Wells | Murderbot Diaries 06 | [Fugitive Telemetry]({{<relref "bookreviews.md#murderbot06">}}) | 1931 - 21 Dec 2023 |
+| Timothy Zahn | Icarus Saga 01 | [The Icarus Plot]({{<relref "bookreviews.md#icarus01">}}) | 0410 - 25 Dec 2023 |
+| David Drake | Times of Heroes 01 | [The Spark]({{<relref "bookreviews.md#heroes01">}}) | 1852 - 26 Dec 2023 |
