@@ -9,7 +9,9 @@ tags:
 title: "Risk of Rain - Coalescence"
 wip: false
 snippet: "Fan story in the comments of [Risk of Rain - Coalescence YouTube video](https://www.youtube.com/watch?v=ysPtBjY8o_A)"
-
+url: /literature/risk-of-rain-coalescence/
+aliases:
+- /random/stories/risk-of-rain-coalescence/
 ---
 
 Original author: [@Faceplates330 or Angry Spider][ch].

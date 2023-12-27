@@ -9,6 +9,9 @@ tags:
 title: "God Was Just This Guy (Y'Know?)"
 wip: false
 snippet: "Copy of an old story from disenchanted.com."
+url: /literature/god-was-this-guy/
+aliases:
+- /random/stories/god-was-this-guy/
 
 ---
 

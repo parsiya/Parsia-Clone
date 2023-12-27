@@ -9,6 +9,8 @@ tags:
 title: "Book List"
 wip: false
 snippet: "I keep track of (most) books I read and the time I finish them."
+aliases:
+- /random/booklist/
 
 ---
 

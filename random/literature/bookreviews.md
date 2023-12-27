@@ -9,6 +9,8 @@ tags:
 title: "Book Reviews"
 wip: false
 snippet: "Short reviews for some of the books I've read."
+aliases:
+- /random/bookreviews/
 
 ---
 
