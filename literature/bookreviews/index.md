@@ -712,16 +712,16 @@ planet.
 Nodes are (usually isolated) parcels of land where people can live and is part
 of "Here." Monsters and magic items are in "Not-Here" (obviously). In between
 these we have "The Waste" which humans can traverse for a bit with the help of
-their animal companions with a mental link. Most people appear to have one. This
-mental link allows them to see through their eyes (e.g., our champion has a dog
-and fights thgouth his eyes).
+their animal companions with a mental link. Most main characters have one. This
+mental link allows them to see through their senses. Our champion has a dog
+and fights through his eyes with added agility and reaction time.
 
 The series is an Arthurian fantasy in a far future world. Champions fight with
 energy swords and shields. The ancients have left "magical" items that people
-can reshape or reuse. Is it magic or advanced technology? Doesn't matter, you
-know the quote:
+can reshape or reuse. It's advanced technology? You know the quote:
 
 > Any sufficiently advanced technology is indistinguishable from magic.
+> 
 > Arthur C. Clarke
 
 The people who can modify these magical items and reshape them are called
