@@ -665,7 +665,10 @@ words dedicated to "hacking" (see review above).
 Better, but still not my cup of tea.
 
 ## Timothy Zahn - Icarus Saga 01 - The Icarus Plot - 4/5 {#icarus01}
-Pretty good book. There are many references and recurring characters to book 0,
+Pretty good book. Space Opera with a lot of action, extensive universe without a
+lot of boring world building.
+
+There are many references and recurring characters to book 0,
 [The Icarus Hunt][ica0] (not sure why Goodreads has numbered it 0 instead of 1).
 I suggest you read it first. I didn't and I still enjoyed the book. The
 references are explained later.
@@ -687,7 +690,7 @@ people don't win.
 I will probably read "The Icarus Hunt" before moving to the next book in this
 series.
 
-## David Drake - Times of Heroes 01 - The Spark - 5/5 {#heroes01}
+## David Drake - Time of Heroes 01 - The Spark - 5/5 {#heroes01}
 Unfortunately, [David Drake][drake] passed away recently. I had mostly read
 short stories by him in the last few years. I mostly reread
 [Redliners][redliners] (DRM-free digital format is free on Baen's website), or
@@ -702,12 +705,13 @@ I had not read them before, so I picked up the three books in the "Times of
 Heroes" series from the local public library for holiday reading. I gobbled the
 book in less than a day.
 
+2023-2024 holiday reading list courtesy of the local public library:
+
 ![2023 holiday reading list](holiday2023.jpeg)
 
 I really love the world. There's "the road" that people can use to travel
 between nodes. I think it's like a long portal because it's mentioned while it
-has light, you cannot see the sun there. I don't think everything is on one
-planet.
+has light, you cannot see the sun there.
 
 Nodes are (usually isolated) parcels of land where people can live and is part
 of "Here." Monsters and magic items are in "Not-Here" (obviously). In between
@@ -718,17 +722,77 @@ and fights through his eyes with added agility and reaction time.
 
 The series is an Arthurian fantasy in a far future world. Champions fight with
 energy swords and shields. The ancients have left "magical" items that people
-can reshape or reuse. It's advanced technology? You know the quote:
+can reshape or reuse. Is it advanced technology or magic? Doesn't matter, you
+know the famous quote:
 
 > Any sufficiently advanced technology is indistinguishable from magic.
 > 
 > Arthur C. Clarke
 
 The people who can modify these magical items and reshape them are called
-"Makers." They go into a trance and can see and modigy the molecular structure
-of an artifact to change it. This usually needs external elements (e.g., Iron or
-Silicon). Our champion is both a maker and a fighter. We even see some boats
+"Makers." They go into a trance and can see and modify the molecular structure
+of an artifact to change it. This usually needs extra trace elements (e.g., Iron
+or Silicon). Our champion is both a maker and a fighter. We even see some boats
 with limited sentience and they can be used to travel between nodes. The boats
-are enclosed and I think they're vessles or spaceships that can travel between
-dimensions.
+are self powered, look like an enclosed cigar, and are airships (I figured this
+out after looking at the cover for the 3rd book.)
 
+The story has a huge gaping hole. I am going to try and not spoil it. Pal
+acquires his first kingdom and castle. In the kingdom there's an ancient
+artifact that acts like an all-seeing eye. You think of anyone and it will give
+you a live feed of them and their immediate surrounding. The artifact is never
+used. In the last part of this book Pal nearly dies because a certain person is
+missing. No one, including Pal thinks of using this artifact to locate that
+person.
+
+## David Drake - Time of Heroes 02 - The Storm - 4/5 {#heroes02}
+I was disappointed with this book which was a first for me as a huge David Drake
+fan.
+
+Although most series repeat some background information from previous books,
+this ones has too much. Pal (the main character) keeps repeating how he was a
+peasant, how he created his original crap equipment, how his current sword and
+shield are great, how makers work to restore/reuse artifacts, and how the road
+works.
+
+The major plot in this book is also another missing person. Again, no one thinks
+of using the all-seeing eye artifact from the previous book to look for them.
+What was the reason for even including the artifact originally?
+
+The main quest in this book is also abandoned for quite a while. Pal goes around
+and does side quests while there's no progress on the main quest. I mean, this
+is the typical open world RPG tabletop or videogame, but still.
+
+It's shorter than the previous book. I borrowed the hardcover versions from the
+library. The first book is 340 pages and this one is 280. The next book is
+considerably shorter.
+
+## David Drake - Time of Heroes 03 - The Serpent - 3/5 {#heroes03}
+This is my least favorite Drake book. The disappointment continues. The length
+of the book is again, smaller. From 340 pages in the first book, to 280 in the
+second, and finally 180 pages here (these are all hardcover editions I borrowed
+from the public library).
+
+Of course, the redundancy continues. Yes, Pal was born a peasant, doesn't like
+the court, his past equipment was crap, his current equipment is great, he can
+predict attacks with his dog, he has a boat, and so on. There was no need to
+mention these multiple times during the book.
+
+This book doesn't have a main quest or major plot. It's easier to think of this
+book as a series of short stories in the Commonwealth of Mankind setting. I
+guess that's why there's excessive repeating. Each story needs to mention some
+of the background info. Unfortunately, the plots of stories are kind of similar.
+Pal goes to some node to solve a conflict, ends up killing the ruler (through no
+fault of his own, lol) and takes over the node for the commonwealth (and
+reluctantly pockets half of the taxes).
+
+One of the stories introduced an interesting concept. A female maker.
+Unfortunately, the character appears in only one story and very briefly.
+
+Another disappointing point for me were the artifacts. By the end of the third
+book so many amazing artifacts are introduced, but most of them (like the
+all-seeing eye) are never used or mentioned.
+
+There are a lot of loose ends in this book. I think Mr. Drake (whom I admire a
+lot) cut the book short in half due to health reasons. Anyways, his passing a
+big loss and I wish he had been able to complete this book properly.
