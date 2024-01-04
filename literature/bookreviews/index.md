@@ -150,7 +150,7 @@ What I didn't like:
 were a copy of the typical "non-US country bad" online discourse. 
 * "Magnolia Incident" was "don't complain about the military taking away your
 civil rights because they're the only thing between you and scary aliens and
-also there are ships in this story." If I want a sermon of how "military is the
+there are also ships in this story." If I want a sermon of how "military is the
 only thing protecting us from aliens/brown people/bad things," I can re-read
 [Starship Troopers][starship-troopers-novel].
 
@@ -168,9 +168,10 @@ E.g., David Weber's story happens before the Honorverse series. David Drake's
 story is about Lt. Leary (RCN series). Lost Fleet story by Jack Campbell and so
 on.
 
-If you like this book, read the second volume, "Infinite Stars: Dark Frontiers."
+If you like this book, read the second volume,
+[Infinite Stars: Dark Frontiers]({{<relref "#infinite02">}}) (review below).
 
-The only stories that I skipped were "Imperium Imposter" and "A Taste of Ashes."
+I skipped "Imperium Imposter" and "A Taste of Ashes."
 
 ## Michael Z. Williamson - Freehold 07 - Angeleyes - 0.5/5 {#freehold07}
 Born and raised in an authoritarian Middle-Eastern country, I have a healthy
@@ -593,12 +594,27 @@ Starting from this story I am going to copy my favorite quotes from the books.
 
 My favorites:
 
-* "A Long, Cold Trail": Three members of the Council of the Treaty for Safety of the World (AKA fight unnatural evil) try to kill an unruly demigod. I look forward to reading more of [Sir Hereward and Mister Fitz][fitz].
-* "The Smoke of Gold is Glory": **My absolute favorite story in this book.** Four adventurers storm a mountain to kill a dragon and take its treasure. Amazing setting and five very interesting characters including the dragon. My only regret is not finding the concept art of characters before reading the story. Check the middle of this page: https://scottlynch.substack.com/p/blame-of-thrones. See my favorite quotes from this story at the bottom of this section.
-* "The Colgrid Conundrum": Two thieves do a drug heist in an industrial (almost steampunk) city. I loved the city and was disappointed to see [the author][rich] has not written anything else there, fortunately he has a few short stories with the same characters that like [The Delusive Cartographer][carto] and [The Mermaid Caper][merm].
-* "Waterfalling": The setting has guns, magic, and Gods living among mortals. Very nice. I will read more of [Gorel of Goliris][gorel].
+* "A Long, Cold Trail": Two members of the Council of the Treaty for Safety of
+  the World (AKA fight unnatural evil) + an ally try to kill an unruly demigod.
+  I loved these characters and wanted more. Fortunately, there is a collection
+  of short stories named [Sir Hereward and Mister Fitz]({{<relref "#fitz">}})
+  (review below).
+* "The Smoke of Gold is Glory": **My absolute favorite story in this book.**
+  Four adventurers storm a mountain to kill a dragon and take its treasure.
+  Amazing setting and five very interesting characters including the dragon. My
+  only regret is not finding the concept art of characters before reading the
+  story. Check the middle of this page:
+  https://scottlynch.substack.com/p/blame-of-thrones. See my favorite quotes
+  from this story at the bottom of this section.
+* "The Colgrid Conundrum": Two thieves do a drug heist in an industrial (almost
+  steampunk) city. I loved the city and was disappointed to see 
+  [the author][rich] has not written anything else there, fortunately he has two
+  free short stories with the same characters:
+  * [The Delusive Cartographer][carto]
+  * [The Mermaid Caper][merm].
+* "Waterfalling": The setting has guns, magic, and Gods living among mortals.
+  Very nice. I will read more of [Gorel of Goliris][gorel].
 
-[fitz]: https://www.goodreads.com/series/144869-sir-hereward-and-mister-fitz
 [rich]: https://www.beneath-ceaseless-skies.com/authors/rich-larson/
 [carto]: https://www.beneath-ceaseless-skies.com/stories/the-delusive-cartographer/
 [merm]: https://www.beneath-ceaseless-skies.com/stories/the-mermaid-caper/
@@ -796,3 +812,39 @@ all-seeing eye) are never used or mentioned.
 There are a lot of loose ends in this book. I think Mr. Drake (whom I admire a
 lot) cut the book short in half due to health reasons. Anyways, his passing a
 big loss and I wish he had been able to complete this book properly.
+
+## Garth Nix - Sir Hereward and Mister Fitz - 5/5 {#fitz}
+Sir Hereward is an artillerist, swordsman, and pistol wielder. He reminds me of
+the famous Alexandre Dumas' musketeer, d'Artagnan. He is dashing, gallant,
+easy going, and a womanizer.
+
+Mister Fitz is a sorcerer puppet and the logical part of the duo. He comes up
+with the plans, and uses magical needles to perform his sorcery.
+
+They both work for the the Council of the Treaty for Safety of the World. This
+council was created to dispatch evil godlets (extra dimensional creatures) and
+keep the world safe.
+
+I loved this dynamic duo in the [Book Of Swords]({{<relref "#bookofswords">}})
+story "A Long, Cold Trail" (review above). Iwas delighted to see that all of
+their short stories (and a new one).
+
+The book also has a map of the world. It's not essential to the stories, but a
+nice thing to be able to see the cities mentioned in the stories.
+
+* "Sir Hereward and Mister Fitz Go to War Again": Taking down a godlet that is
+  siphoning the wealth and energy of nearby cities.
+* "Beyond the Sea Gate of the Scholar-Pirates of Sarskoe": The duo join a band
+  of pirates to take down an evil being.
+* "A Suitable Present for a Sorcerous Puppet": Sir Hereward tries to find a
+  birthday present for Mister Fitz and gets involved with yet another evil
+  godlet.
+* "Losing Her Divinity": This story is narrated by a writer being interrogated
+  by Hereward and Fitz. He had encountered a godlet who wanted to be human.
+* "A Cargo of Ivories": The duo tries to steal a bunch of ivories from a wealthy merchant.
+* "Home is the Haunter": The duo reaches a castle that is getting ready to
+  welcome an evil godlet for a night of festivities.
+* "A Long, Cold Trail": Hereward, Fitz, and an ally take down a godlet in the snow.
+* "Cut Me Another Quill, Mister Fitz": The duo are looking for an elusive dragon.
+* "The Field of Fallen Foe": Mister Fitz sticks to his moral compass when he is
+  tasked to take down a benign godlet.

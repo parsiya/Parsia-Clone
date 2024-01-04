@@ -378,3 +378,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | David Drake | Time of Heroes 01 | [The Spark]({{<relref "bookreviews.md#heroes01">}}) | 1852 - 26 Dec 2023 |
 | David Drake | Time of Heroes 02 | [The Storm]({{<relref "bookreviews.md#heroes02">}}) | 1149 - 28 Dec 2023 |
 | David Drake | Time of Heroes 03 | [The Serpent]({{<relref "bookreviews.md#heroes03">}}) | 1311 - 29 Dec 2023 |
+| Garth Nix | Collection | [Sir Hereward and Mister Fitz]({{<relref "bookreviews.md#fitz">}}) | 1746 - 03 Jan 2024 |
