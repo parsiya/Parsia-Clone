@@ -379,3 +379,6 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | David Drake | Time of Heroes 02 | [The Storm]({{<relref "bookreviews.md#heroes02">}}) | 1149 - 28 Dec 2023 |
 | David Drake | Time of Heroes 03 | [The Serpent]({{<relref "bookreviews.md#heroes03">}}) | 1311 - 29 Dec 2023 |
 | Garth Nix | Collection | [Sir Hereward and Mister Fitz]({{<relref "bookreviews.md#fitz">}}) | 1746 - 03 Jan 2024 |
+| David Afsharirad | Anthology | The Year's Best Military SF & Space Opera | 2332 - 10 Jan 2024 |
+| David Afsharirad | Anthology | The Year's Best Military & Adventure SF Volume 3 | 2016 - 19 Jan 2024 |
+| Preston Grassmann | Anthology | [Out of the Ruins]({{<relref "bookreviews.md#outofruins">}}) | 2349 - 24 Jan 2024 |

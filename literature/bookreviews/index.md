@@ -262,7 +262,7 @@ hibernation). There are a few nearby stars that are populated (there's a mention
 of ships at half the speed of light).
 
 The story follows a group of characters (mainly a "robot AI" and a human) in
-search of a superweapon. I like the universe and Cambias' writing style.
+search of a super weapon. I like the universe and Cambias' writing style.
 
 ## James L. Cambias - Billion Worlds 02 - The Scarab Mission - 5/5 {#billion02}
 Another quick read in the "Billion Worlds" universe. I will not repeat the
@@ -625,27 +625,51 @@ OK:
 * "The Best Man Wins": Stranger contracts a blacksmith to forge a sword. Twist ending.
 * ""I Am a Handsome Man," said Apollo Crow": Cursed crow(s) tracks down a revolutionary in ancient Rome.
 * "The Triumph of Virtue": Detective-ish Quillifer story. Assassination attempt at court.
-* "The Mocking Tower": Heir to a deceased king tries to steal a sword from a magical tower. I didn't like the story, but the changing descriptions of the tower were exotic.
-* "The King's Evil": Three adventurers go to a cursed island to recover an ancient treasure. The main character has an existential crisis (don't we all?). I did not like the story, but the writing was excellent.
-* "The Sons of the Dragon": History of the two sons of an emperor set in the "Game of Thrones" setting. Reads like a history book. It was full of action, but meaningless to me because I have neither read the books nor watched the TV series.
+* "The Mocking Tower": Heir to a deceased king tries to steal a sword from a
+  magical tower. I didn't like the story, but the changing descriptions of the
+  tower were exotic.
+* "The King's Evil": Three adventurers go to a cursed island to recover an
+  ancient treasure. The main character has an existential crisis (don't we
+  all?). I did not like the story, but the writing was excellent.
+* "The Sons of the Dragon": History of the two sons of an emperor set in the
+  "Game of Thrones" setting. Reads like a history book. It was full of action,
+  but meaningless to me because I have neither read the books nor watched the TV
+  series.
 
 I didn't like:
 
-* "Her Father's Sword": Kidnapped villagers return as selfish drones. Girl struggles to connect with the soulless husk of her father. I didn't really like it.
-* "The Hidden Girl": 10 year old girl is kidnapped by assassins and trained. Develops a consicous.
-  * "We're all thieves in this world of suffering," the nun says, "Honor and faith are not virtues, only excuses for stealing more."
+* "Her Father's Sword": Kidnapped villagers return as selfish drones. Girl
+  struggles to connect with the soulless husk of her father. I didn't really
+  like it.
+* "The Hidden Girl": 10 year old girl is kidnapped by assassins and trained.
+  Develops a consicous.
+  * "We're all thieves in this world of suffering," the nun says, "Honor and
+    faith are not virtues, only excuses for stealing more."
 * "The Sword of Destiny": Wizard's apprentice is sent to steal a magic sword. Runs away instead and takes a detour.
 * "Hrunting": Man tries to recover his grandfather's ancient sword that was thrown away by Beowulf.
-* "When I was a Highway Man": Dueling youth tries to make a living in big city. The city of Riverside sounds interesting and is part of the author's other books. But I didn't like this story, but I am gonna try some of the other books.
-* "The Sword Tyraste": Man tries to avenge his family with the help of a magic sword. It was an easy read, but very bland.
+* "When I was a Highway Man": Dueling youth tries to make a living in big city.
+  The city of Riverside sounds interesting and is part of the author's other
+  books. But I didn't like this story, but I am gonna try some of the other
+  books.
+* "The Sword Tyraste": Man tries to avenge his family with the help of a magic
+  sword. It was an easy read, but very bland.
 
 Quotes from "The Smoke of Gold is Glory"
 
-* "Anyway, I am famous among my friends for having never in my life behaved with any particular wisdom." - Tarkaster Crale, thief and storyteller.
-* "O King," the dragon murmured, wheezing, and with every breath spilling more fiery ichor on the ground, "in all our ten thousand years, we have had but four friends, and we have only met them this night."
-* [Glimraug the dragon]: "[...] The long-awaited wonder comes! True death-friend, let our pyre be shared, let us build it now! **To take is not to keep**."
-* [Brandgar, the King-on-the-Waves]: "[...] But there is no true glory in holding. All that must come in the taking ... and letting go."
-* "The point is that it has never been done before," said Glimraug. Another treasure pavillion was swalled by fire nearby. "And it shall never be done again. All things in this world are made to go into the fire, Tarkaster Crale. All things raise smoke. The smoke of incense is sweet. The smoke of wood is dull haze. But don't you see? **The smoke of gold ... is glory**."
+* "Anyway, I am famous among my friends for having never in my life behaved with
+  any particular wisdom." - Tarkaster Crale, thief and storyteller.
+* "O King," the dragon murmured, wheezing, and with every breath spilling more
+  fiery ichor on the ground, "in all our ten thousand years, we have had but
+  four friends, and we have only met them this night."
+* [Glimraug the dragon]: "[...] The long-awaited wonder comes! True
+  death-friend, let our pyre be shared, let us build it now! **To take is not to keep**."
+* [Brandgar, the King-on-the-Waves]: "[...] But there is no true glory in
+  holding. All that must come in the taking ... and letting go."
+* "The point is that it has never been done before," said Glimraug. Another
+  treasure pavillion was swalled by fire nearby. "And it shall never be done
+  again. All things in this world are made to go into the fire, Tarkaster Crale.
+  All things raise smoke. The smoke of incense is sweet. The smoke of wood is
+  dull haze. But don't you see? **The smoke of gold ... is glory**."
 
 ## Martha Wells - Murderbot Diaries 02 - All Systems Red - 2/5 {#murderbot02}
 ## Martha Wells - Murderbot Diaries 03 - Rogue Protocol - 2/5 {#murderbot03}
@@ -795,19 +819,19 @@ predict attacks with his dog, he has a boat, and so on. There was no need to
 mention these multiple times during the book.
 
 This book doesn't have a main quest or major plot. It's easier to think of this
-book as a series of short stories in the Commonwealth of Mankind setting. I
-guess that's why there's excessive repeating. Each story needs to mention some
-of the background info. Unfortunately, the plots of stories are kind of similar.
-Pal goes to some node to solve a conflict, ends up killing the ruler (through no
-fault of his own, lol) and takes over the node for the commonwealth (and
-reluctantly pockets half of the taxes).
+book as a series of short stories in that setting. I guess that's why there's
+excessive repeating. Each story needs to mention some of the background info.
+Unfortunately, the plots of stories are kind of similar. Pal goes to some node
+to solve a conflict, ends up killing the ruler (through no fault of his own,
+lol) and takes over the node for the commonwealth (and reluctantly pockets half
+of the taxes).
 
 One of the stories introduced an interesting concept. A female maker.
 Unfortunately, the character appears in only one story and very briefly.
 
-Another disappointing point for me were the artifacts. By the end of the third
-book so many amazing artifacts are introduced, but most of them (like the
-all-seeing eye) are never used or mentioned.
+Another disappointing point for me were the artifacts. So many amazing artifacts
+were introduced by the end of the third book, but most of them (like the
+all-seeing eye) were never used or mentioned.
 
 There are a lot of loose ends in this book. I think Mr. Drake (whom I admire a
 lot) cut the book short in half due to health reasons. Anyways, his passing a
@@ -848,3 +872,31 @@ nice thing to be able to see the cities mentioned in the stories.
 * "Cut Me Another Quill, Mister Fitz": The duo are looking for an elusive dragon.
 * "The Field of Fallen Foe": Mister Fitz sticks to his moral compass when he is
   tasked to take down a benign godlet.
+
+## Preston Grassmann - Out of the Ruins (Anthology) - 3/5 {#outofruins}
+I loved:
+
+* The Green Caravanserai: Post-apocalypse desert. People scavenge for weapons and technology.
+* Watching God: Really interesting setting. People stuck in the Iron Age living on a secluded island. Ships come from over the horizon and stay offshore. Open-ended story.
+* Mr Thursday: A time agent tries to keep a girl from getting killed. I liked the story, but it's in the wrong collection.
+* Endless Fall: My favorite story of the collection. The title is very clever. Astronaut wakes up in the forest with no memory. Tries to survive. It might be an alien experiment. The author has a book "The Endless Fall and Other Weird Fictions" and I will definitely read.
+* How the Monsters Found God: Excellent story. A group of sentient machines and weapons rediscover their humanity.
+
+I liked:
+
+* Exurbia: Interesting concept. Someone falling through different levels of a city remembering memories.
+* Rise and Fall of Whistle-Pig City: A group of posthumans rediscover the concept of cities and create one, populated by anthropomorphized whistle pigs.
+* Like the Petals of Broken Flowers: People defeat usurper Gods.
+* Dwindling: A person keeps dying and gets reincarnated as others. Keeps and revisits their memories. While a decent story, it's in the wrong collection.
+* Maeda, the Body Optic: A plague is turning men into machines.
+
+I didn't like or skipped:
+
+* Age of Fish, Post-flowers: A bunch of people trying to survive the apocalypse in a building.
+* Storm in Kingstown: A lady goes missing, and there's mention of ancient technology (e.g., radio).
+* As Good as New: Halfway through the story I realized I had read it before (maybe on Tumbler?). Girl meets a genie in a post-apocalyptic world and tries to come up with perfect wishes that avoid a Monkey's Paw situation.
+* Reminded: I liked the concept, but the story was boring. A plague has erased the memories of people. A couple keep reminding each other.
+* Splendor and Misery of Bodies, of Cities: I honestly didn't get what the story was about.
+* Man You Flee at Parties: DNF. What even was that?
+* Malware Park: I was excited to read a cyberpunk story, but DNF. The writing style is not for me.
+* Inventory: In the wrong collection. Diary-like memory snippets of someone's interactions with different people, mainly lovers.
