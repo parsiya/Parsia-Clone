@@ -471,8 +471,9 @@ I did not like these:
 This book reminds me of the [Republic Of Cinnabar][rcn] (RCN) series by
 [David Drake][david-drake] which is basically "the old British navy in space."
 I liked the book and the setting because I am a fan of RCN (and David Drake).
-The author has published a sequel, [The Silent Hand][silent-hand]. I will update
-the booklist and this title when the series gets a name.
+The author has published a sequel, [The Silent Hand][silent-hand].
+~~I will update the booklist and this title when the series gets a name.~~ Seems
+like the series names is "Myriad Worlds."
 
 The setting is an honor-bound society (people duel when their "honor is taken")
 ruled by an emperor. There are of course big families juggling for influence.

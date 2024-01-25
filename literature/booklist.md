@@ -364,7 +364,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | David G. Hartwell & Jacob Weisman | Anthology | [The Sword & Sorcery Anthology]({{<relref "bookreviews.md#swordant">}}) | 1431 - 27 Oct 2023 |
 | John Scalzi | Fuzzy Sapiens 07 | [Fuzzy Nation]({{<relref "bookreviews.md#fuzzy07">}}) | 1714 - 29 Oct 2023 |
 | David Boop | Anthology | [Gunfight on Europa Station]({{<relref "bookreviews.md#guneuropa">}}) | 0020 - 07 Nov 2023 |
-| Michael Mersault | | [The Deep Man]({{<relref "bookreviews.md#deepman">}}) | 2354 - 13 Nov 2023 |
+| Michael Mersault | Myriad Worlds 01 | [The Deep Man]({{<relref "bookreviews.md#deepman">}}) | 2354 - 13 Nov 2023 |
 | Martha Wells | Murderbot Diaries 01 | [All Systems Red]({{<relref "bookreviews.md#murderbot01">}}) | 0215 - 15 Nov 2023 |
 | Christopher Ruocchio | Sun Eater 01 | [Empire of Silence]({{<relref "bookreviews.md#suneater01">}}) | 1926 - 21 Nov 2023 |
 | Gene Wolf | Book of the New Sun 01 | [The Shadow of the Torturer]({{<relref "bookreviews.md#newsun01">}}) | 0309 - 01 Dec 2023 |
