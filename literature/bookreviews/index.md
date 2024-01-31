@@ -902,7 +902,7 @@ I didn't like or skipped:
 * Malware Park: I was excited to read a cyberpunk story, but DNF. The writing style is not for me.
 * Inventory: In the wrong collection. Diary-like memory snippets of someone's interactions with different people, mainly lovers.
 
-## Gordon Van Gelder - Welcome to Dystopia (Anthology) {{#welcomedystopia}} - 3/5
+## Gordon Van Gelder - Welcome to Dystopia (Anthology) - 3/5 {#welcomedystopia}
 Collection of very short stories about future dystopias. The idea of the book
 was decent and having very short stories was a new experience. Unfortunately, I
 was turned off by the book and at some point stopped reading.
