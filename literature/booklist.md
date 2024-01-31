@@ -382,3 +382,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | David Afsharirad | Anthology | The Year's Best Military SF & Space Opera | 2332 - 10 Jan 2024 |
 | David Afsharirad | Anthology | The Year's Best Military & Adventure SF Volume 3 | 2016 - 19 Jan 2024 |
 | Preston Grassmann | Anthology | [Out of the Ruins]({{<relref "bookreviews.md#outofruins">}}) | 2349 - 24 Jan 2024 |
+| Gordon Van Gelder | Anthology | [Welcome to Dystopia]({{<relref "bookreviews.md#welcomedystopia">}}) | 2031 - 30 Jan 2024 |

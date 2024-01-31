@@ -901,3 +901,21 @@ I didn't like or skipped:
 * Man You Flee at Parties: DNF. What even was that?
 * Malware Park: I was excited to read a cyberpunk story, but DNF. The writing style is not for me.
 * Inventory: In the wrong collection. Diary-like memory snippets of someone's interactions with different people, mainly lovers.
+
+## Gordon Van Gelder - Welcome to Dystopia (Anthology) {{#welcomedystopia}} - 3/5
+Collection of very short stories about future dystopias. The idea of the book
+was decent and having very short stories was a new experience. Unfortunately, I
+was turned off by the book and at some point stopped reading.
+
+The stories hit too close to home.
+
+William Gibson has a quote "The future is already here, it's just not evenly
+distributed." If I could paraphrase, "The dystopia is already here, it's just
+not evenly distributed." 
+
+If you know me and my background, you know why I've lived some of the stories.
+Why I moved to Canada (and I am Canadian as of a few weeks ago) almost exactly
+one year after naturalizing as a US citizen.
+
+Some of the stories I really didn't like, but maybe that was again because they
+were too depressing.
