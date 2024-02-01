@@ -1469,11 +1469,18 @@ If godoc doesn't run locally because not all of your packages can be built
 godoc -html cmd/github.com/user/package > package-godoc.html
 ```
 
+## Override a Dependency with Local Files
+Add this to `go.mod`
+
+```
+replace github.com/foo/bar => ./local-directory
+```
+
 -----
 
-# Stuff learned from Cryptopals
-I learned a bunch after I returned to go after a while and tried to do the
-Cryptopals challenge.
+# What I Learned from Cryptopals
+I learned a bunch after I returned to Go after a while and tried to do the
+[Cryptopals](https://cryptopals.com/) challenge.
 
 ## Long string on multiple lines
 
