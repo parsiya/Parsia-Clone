@@ -467,13 +467,14 @@ I did not like these:
 [gunfight]: https://www.baen.com/gunfight-on-europa-station.html
 [gunfight-list]: https://fvrl.bibliocommons.com/v2/record/S21C1884137
 
-## Michael Mersault - The Deep Man - 4.5/5 {#deepman}
+## Michael Mersault - The Deep Man 01 - The Deep Man - 4.5/5 {#deepman}
 This book reminds me of the [Republic Of Cinnabar][rcn] (RCN) series by
 [David Drake][david-drake] which is basically "the old British navy in space."
 I liked the book and the setting because I am a fan of RCN (and David Drake).
 The author has published a sequel, [The Silent Hand][silent-hand].
 ~~I will update the booklist and this title when the series gets a name.~~ Seems
-like the series names is "Myriad Worlds."
+like the series names is ~~"Myriad Worlds"~~ "The Deep Man Trilogy" (according
+to The Silent Hand book).
 
 The setting is an honor-bound society (people duel when their "honor is taken")
 ruled by an emperor. There are of course big families juggling for influence.
