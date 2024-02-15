@@ -921,7 +921,7 @@ one year after naturalizing as a US citizen.
 Some of the stories I really didn't like, but maybe that was again because they
 were too depressing.
 
-## Michael Mersault - The Deep Man 02 - The Silent Hand - 4/5 {deepman02}
+## Michael Mersault - The Deep Man 02 - The Silent Hand - 4/5 {#deepman02}
 This is the second book in the "Deep Man" series. The first one was, well, "The
 Deep Man" (review is further above). I like both characters. This book was
 mostly about Inga's character development. I liked the flashbacks that showed
