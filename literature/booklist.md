@@ -364,7 +364,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | David G. Hartwell & Jacob Weisman | Anthology | [The Sword & Sorcery Anthology]({{<relref "bookreviews.md#swordant">}}) | 1431 - 27 Oct 2023 |
 | John Scalzi | Fuzzy Sapiens 07 | [Fuzzy Nation]({{<relref "bookreviews.md#fuzzy07">}}) | 1714 - 29 Oct 2023 |
 | David Boop | Anthology | [Gunfight on Europa Station]({{<relref "bookreviews.md#guneuropa">}}) | 0020 - 07 Nov 2023 |
-| Michael Mersault | The Deep Man 01 | [The Deep Man]({{<relref "bookreviews.md#deepman">}}) | 2354 - 13 Nov 2023 |
+| Michael Mersault | The Deep Man 01 | [The Deep Man]({{<relref "bookreviews.md#deepman01">}}) | 2354 - 13 Nov 2023 |
 | Martha Wells | Murderbot Diaries 01 | [All Systems Red]({{<relref "bookreviews.md#murderbot01">}}) | 0215 - 15 Nov 2023 |
 | Christopher Ruocchio | Sun Eater 01 | [Empire of Silence]({{<relref "bookreviews.md#suneater01">}}) | 1926 - 21 Nov 2023 |
 | Gene Wolf | Book of the New Sun 01 | [The Shadow of the Torturer]({{<relref "bookreviews.md#newsun01">}}) | 0309 - 01 Dec 2023 |
@@ -383,3 +383,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | David Afsharirad | Anthology | The Year's Best Military & Adventure SF Volume 3 | 2016 - 19 Jan 2024 |
 | Preston Grassmann | Anthology | [Out of the Ruins]({{<relref "bookreviews.md#outofruins">}}) | 2349 - 24 Jan 2024 |
 | Gordon Van Gelder | Anthology | [Welcome to Dystopia]({{<relref "bookreviews.md#welcomedystopia">}}) | 2031 - 30 Jan 2024 |
+| Michael Mersault | The Deep Man 02 | [The Silent Hand]({{<relref "bookreviews.md#deepman02">}}) | 0045 - 12 Feb 2024 |

@@ -467,14 +467,14 @@ I did not like these:
 [gunfight]: https://www.baen.com/gunfight-on-europa-station.html
 [gunfight-list]: https://fvrl.bibliocommons.com/v2/record/S21C1884137
 
-## Michael Mersault - The Deep Man 01 - The Deep Man - 4.5/5 {#deepman}
+## Michael Mersault - The Deep Man 01 - The Deep Man - 4.5/5 {#deepman01}
 This book reminds me of the [Republic Of Cinnabar][rcn] (RCN) series by
 [David Drake][david-drake] which is basically "the old British navy in space."
 I liked the book and the setting because I am a fan of RCN (and David Drake).
 The author has published a sequel, [The Silent Hand][silent-hand].
 ~~I will update the booklist and this title when the series gets a name.~~ Seems
 like the series names is ~~"Myriad Worlds"~~ "The Deep Man Trilogy" (according
-to The Silent Hand book).
+to "The" Silent "Hand" book).
 
 The setting is an honor-bound society (people duel when their "honor is taken")
 ruled by an emperor. There are of course big families juggling for influence.
@@ -920,3 +920,21 @@ one year after naturalizing as a US citizen.
 
 Some of the stories I really didn't like, but maybe that was again because they
 were too depressing.
+
+## Michael Mersault - The Deep Man 02 - The Silent Hand - 4/5 {deepman02}
+This is the second book in the "Deep Man" series. The first one was, well, "The
+Deep Man" (review is further above). I like both characters. This book was
+mostly about Inga's character development. I liked the flashbacks that showed
+Inga's training and backstory. Some is repeated from the short story `flops` in
+[Baen's 2022 Free Stories][baen-free-2022].
+
+The first 2/3rds of the book were OK, but not great. I liked the parts about the
+ground combat on the planet. But my absolute favorite was the all out combat in
+the last quarter of the book.
+
+Both Saef and Inga are on both books' covers. In this book, suddenly both have
+become "hawt." Saef is now more attractive and Inga has supermodel proprotions.
+Nothing wrong with attractive characters, but it's a huge contrast compared to
+the first book. You can see them side by side here:
+
+![Coverts for The Deep Man and The Silent Hand](deepman-covers.jpg)
