@@ -1,4 +1,6 @@
 # thumbs.db
 Thumbs.db
 thumbs.db
-.vscode
+
+# Store the VS Code workspace settings which has the spell checker exceptions.
+# .vscode

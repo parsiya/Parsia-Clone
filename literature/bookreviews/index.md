@@ -852,7 +852,7 @@ council was created to dispatch evil godlets (extra dimensional creatures) and
 keep the world safe.
 
 I loved this dynamic duo in the [Book Of Swords]({{<relref "#bookofswords">}})
-story "A Long, Cold Trail" (review above). Iwas delighted to see that all of
+story "A Long, Cold Trail" (review above). I was delighted to see that all of
 their short stories (and a new one).
 
 The book also has a map of the world. It's not essential to the stories, but a
@@ -949,12 +949,11 @@ My favorites:
 * "In the Stacks": **This is my favorite story of the book**. A group of
   magicians fight their way through a magical library to retrieve/return books.
   Awesome setting. Scott Lynch also wrote my favorite story from
-  [Book of Swords]({{< relref "#bookofswords >}} "Book of Swords") named
-  "The Smoke of Gold is Glory."
+  [Book of Swords]({{<relref "#bookofswords">}}) named "The Smoke of Gold is Glory."
 * "In Libres": Two students have to venture into a dangerous library (it's a
-  labyrinth) to retrieve books. Similar to "In the Stacks" above (by Scott
-  Lynch), but not as much action. I didn't know that Elizabeth Bear, the writer
-  of this story, and Scott are married.
+  labyrinth) to retrieve books. Similar to "In the Stacks" (by Scott Lynch), but
+  not as much action. I didn't know that, Elizabeth Bear, the writer of this
+  story, and Scott are married.
 * "Exchange": Soldier relives his childhood memories revisiting his hometown's
   library on his way back from the war.
 * "Summer Reading": Very nice short story. A robot maintains an abandoned
@@ -1006,11 +1005,11 @@ I didn't like or skipped:
   inheritance was just a ruse.
 * "Midbury Lake Incident": A witch librarian is running away from magical
   adversaries who want to get the secrets to the old library of Alexandria. Her
-  secret identity in this story is a librarian.
+  current secret identity in this story is also a librarian.
 * "With Tales in Their Teeth, From the Mountain They Came": Soldiers want to
   destroy a library. The librarians become the books (as in the books are
   written on them) to save them.
-* "Green Book": Thought crime of a librarian in an authoritarian theocracy.
+* "Green Book": Thoughtcrime of a librarian in an authoritarian theocracy.
 * "Woman's Best Friend": Only nominal connection to a library. A women
   encounters a man sent to her  world. The premise is infinite parallel worlds.
 * "Fort Moxie Branch": Aliens preserve the unpublished works of authors. They
