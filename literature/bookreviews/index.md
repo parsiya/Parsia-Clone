@@ -973,8 +973,8 @@ I liked:
   to Vegas and kinda end up in the same show? Maybe the show and his friends
   were all part of his imagination?
 * "What Books Survive": Alien invaders have arrived. People live in barricaded
-  town. Teenage girl sneaks out to get books from the local library. Turns out
-  the aliens were after knowledge and didn't want to kill humans.
+  town. Teenage girl sneaks out to get books from the school. Turns out the
+  aliens were after knowledge and didn't want to kill humans.
 * "Librarian's Dilemma": Should we destroy overly racist/evil books?
 * "If on a Winter's Night a Traveler": A secret society dedicated to keeping the
   identity of a poet anonymous. They admire and publish her work (one poetry
@@ -1014,4 +1014,4 @@ I didn't like or skipped:
   encounters a man sent to her  world. The premise is infinite parallel worlds.
 * "Fort Moxie Branch": Aliens preserve the unpublished works of authors. They
   think we do not deserve them until we've reached a certain level of
-  enlightenment.                             
+  enlightenment.
