@@ -88,7 +88,7 @@ background music. Every page has at least 2-3 song references played at these
 points.
 
 Following the tradition, the new book also has a series of quests. The quests
-are very simple. Most of them are handwaved with "I have already done a series
+are very simple. Most of them are hand$$waved with "I have already done a series
 of activities on this planet and have this thingamajig that solves it." At least
 3 of them where unnecessary.
 
@@ -932,9 +932,87 @@ The first 2/3rds of the book were OK, but not great. I liked the parts about the
 ground combat on the planet. But my absolute favorite was the all out combat in
 the last quarter of the book.
 
-Both Saef and Inga are on both books' covers. In this book, suddenly both have
-become "hawt." Saef is now more attractive and Inga has supermodel proprotions.
+Both Saef and Inga are on both books' covers. In this book, both have suddenly
+become "hawt." Saef is now more attractive and Inga has supermodel proportions.
 Nothing wrong with attractive characters, but it's a huge contrast compared to
 the first book. You can see them side by side here:
 
-![Coverts for The Deep Man and The Silent Hand](deepman-covers.jpg)
+![Covers for The Deep Man and The Silent Hand](deepman-covers.jpg)
+
+## Paula Guran - Ex Libris (Anthology) - 3/5 {#exlibris}
+Collection of short stories about libraries. I'd never read a book like this so
+the concept was intriguing. The introduction lists some related books that I am
+going to try, too.
+
+My favorites:
+
+* "In the Stacks": **This is my favorite story of the book**. A group of
+  magicians fight their way through a magical library to retrieve/return books.
+  Awesome setting. Scott Lynch also wrote my favorite story from
+  [Book of Swords]({{< relref "#bookofswords >}} "Book of Swords") named
+  "The Smoke of Gold is Glory."
+* "In Libres": Two students have to venture into a dangerous library (it's a
+  labyrinth) to retrieve books. Similar to "In the Stacks" above (by Scott
+  Lynch), but not as much action. I didn't know that Elizabeth Bear, the writer
+  of this story, and Scott are married.
+* "Exchange": Soldier relives his childhood memories revisiting his hometown's
+  library on his way back from the war.
+* "Summer Reading": Very nice short story. A robot maintains an abandoned
+  library on Earth. Gives away a physical book to a visiting child.
+
+
+I liked:
+
+* "Books": Post-apocalyptic setting. Kids encounter a library and steal some
+  books.
+* "Paper Cuts Scissors": Librarian's girlfriend has put herself in a book. He
+  goes to a mansion where the book characters come alive at midnight to save
+  her.
+* "Magic for Beginners": I loved the setting and the story, but didn't
+  understand the ending (read it twice). A kid and his friends are fascinated by
+  a pirate TV show "The Library." He and his mother go on a cross-country trip
+  to Vegas and kinda end up in the same show? Maybe the show and his friends
+  were all part of his imagination?
+* "What Books Survive": Alien invaders have arrived. People live in barricaded
+  town. Teenage girl sneaks out to get books from the local library. Turns out
+  the aliens were after knowledge and didn't want to kill humans.
+* "Librarian's Dilemma": Should we destroy overly racist/evil books?
+* "If on a Winter's Night a Traveler": A secret society dedicated to keeping the
+  identity of a poet anonymous. They admire and publish her work (one poetry
+  book), but destroy all mentions of her name.
+* "Sigma Structure Symphony": Interesting concept. A librarian is studying the
+  transmissions of faraway galactic civilizations and it turns out some of them
+  are actually sentient AIs. She designs a way to convert mathematical theorems
+  to music, but the alien AI wants more.
+* "Last Librarian": Nice premise. A librarian thinks humanity doesn't deserve
+  books because it's not civilized anymore. They destroy technology (think like
+  an EMP bomb) and go away with the books. Kinda similar to "Fort Moxie Branch."
+
+I didn't like or skipped:
+
+* "In the House of the Seven Librarians": Infant grows up in a magic library.
+  It's nice a story, just not my cup of tea. I was expecting the library to turn
+  out to be a simulation in the end.
+* "Death and the Librarian": I couldn't really connect with the story after 2-3 pages and didn't finish.
+* "King of the Big Night Hours": I read this (and some pages twice), but I
+  didn't get it. A few students commit suicide at the library and things became
+  weird.
+* "Those Who Watch": DNF after a few pages.
+* "Special Collections": DNF after a few pages.
+* "Inheritance of Barnabas Wilcox": This story didn't have a real connection to
+  a library. The main character is hired by his former highschool bully to
+  catalog the books in his new inheritance. It turns out the whole premise was a
+  spell for the recently diseased to live through the body of the bully and the
+  inheritance was just a ruse.
+* "Midbury Lake Incident": A witch librarian is running away from magical
+  adversaries who want to get the secrets to the old library of Alexandria. Her
+  secret identity in this story is a librarian.
+* "With Tales in Their Teeth, From the Mountain They Came": Soldiers want to
+  destroy a library. The librarians become the books (as in the books are
+  written on them) to save them.
+* "Green Book": Thought crime of a librarian in an authoritarian theocracy.
+* "Woman's Best Friend": Only nominal connection to a library. A women
+  encounters a man sent to her  world. The premise is infinite parallel worlds.
+* "Fort Moxie Branch": Aliens preserve the unpublished works of authors. They
+  think we do not deserve them until we've reached a certain level of
+  enlightenment.                             

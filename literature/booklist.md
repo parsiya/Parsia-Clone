@@ -320,7 +320,7 @@ ones I had read.
 | Iain Banks | Culture 01 | Consider Phlebas | 2217 - 19 Jan 2011 |
 
 I moved to the US in February 2011 and stopped tracking my reading. Reading
-fiction grinded to a halt because I played a lot of videogames.
+fiction grinded to a halt because I played a lot of video games.
 
 In 2023, I started borrowing books from the local public library, mainly
 anthologies. Surprisingly, they have a great collection of SF books.
@@ -344,7 +344,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Christopher Ruocchio & Sean CW Korsgaard | Anthology | [Worlds Long Lost]({{<relref "bookreviews.md#worldslost">}}) | 2245 - 16 June 2023 |
 | Christopher Ruocchio & Tony Daniel | Anthology | [Star Destroyers]({{<relref "bookreviews.md#stardestroyers">}}) | 0002 - 19 June 2023 |
 | Greg Bear | War Dogs 01 | [War Dogs]({{<relref "bookreviews.md#wardogs01">}}) | DNF |
-| Bryan Thomas Schmidt | Infitite Stars Anthology 01 | [Infinite Stars: the definitive anthology of space opera and military SF]({{<relref "bookreviews.md#infinite01">}}) | 1405 - 01 July 2023 |
+| Bryan Thomas Schmidt | Infinite Stars Anthology 01 | [Infinite Stars: the definitive anthology of space opera and military SF]({{<relref "bookreviews.md#infinite01">}}) | 1405 - 01 July 2023 |
 | Michael Z. Williamson | Freehold 07 | [Angleeyes]({{<relref "bookreviews.md#freehold07">}}) | 0125 - 05 July 2023 |
 | Janelle Monae | Anthology | The Memory Librarian: And Other Stories of Dirty Computer | 0130 - 08 July 2023 |
 | Kevin Anderson | Saga of the Seven Suns 02 | [Forest of Stars]({{<relref "bookreviews.md#saga02">}}) | 1220 - 15 July 2023 |
@@ -358,7 +358,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | John J.Adams | Anthology | [Cosmic Powers: The Saga Anthology of Far-Away Galaxies]({{<relref "bookreviews.md#cosmic">}}) | 1726 - 16 Sep 2023 |
 | Alex Lamb | Roboteer 01 | [Roboteer]({{<relref "bookreviews.md#roboteer01">}}) | 20 Sep 2023 - DNF |
 | John Scalzi | The Dispatcher 03 | [Travel by Bullet]({{<relref "bookreviews.md#dispatcher03">}}) | 1406 - 27 Sep 2023 |
-| Bryan Thomas Schmidt | Infitite Stars Anthology 02 | [Infinite Stars: Dark Frontiers]({{<relref "bookreviews.md#infinite02">}}) | 1707 - 28 Sep 2023 |
+| Bryan Thomas Schmidt | Infinite Stars Anthology 02 | [Infinite Stars: Dark Frontiers]({{<relref "bookreviews.md#infinite02">}}) | 1707 - 28 Sep 2023 |
 | David Drake | RCN 01 | With The Lightnings | 1850 - 02 Oct 2023 - 2nd time |
 | David Weber & Jacob Holo | Gordian Protocol 01 | [The Gordian Protocol]({{<relref "bookreviews.md#gordian01">}}) | DNF |
 | David G. Hartwell & Jacob Weisman | Anthology | [The Sword & Sorcery Anthology]({{<relref "bookreviews.md#swordant">}}) | 1431 - 27 Oct 2023 |
@@ -369,7 +369,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Christopher Ruocchio | Sun Eater 01 | [Empire of Silence]({{<relref "bookreviews.md#suneater01">}}) | 1926 - 21 Nov 2023 |
 | Gene Wolf | Book of the New Sun 01 | [The Shadow of the Torturer]({{<relref "bookreviews.md#newsun01">}}) | 0309 - 01 Dec 2023 |
 | Gene Wolf | Book of the New Sun 02 | [The Claw of the Conciliator]({{<relref "bookreviews.md#newsun02">}}) | 0241 - 04 Dec 2023 |
-| Gardner Dozois| Anthology | [Book of Swords]({{<relref "bookreviews.md#bookofswords">}}) | 1421 - 14 Dec 2023 |
+| Gardner Dozois | Anthology | [Book of Swords]({{<relref "bookreviews.md#bookofswords">}}) | 1421 - 14 Dec 2023 |
 | Martha Wells | Murderbot Diaries 02 | [Artificial Condition]({{<relref "bookreviews.md#murderbot02">}}) | 2002 - 17 Dec 2023 |
 | Martha Wells | Murderbot Diaries 03 | [Rogue Protocol]({{<relref "bookreviews.md#murderbot03">}}) | 0223 - 19 Dec 2023 |
 | Martha Wells | Murderbot Diaries 04 | [Exit Strategy]({{<relref "bookreviews.md#murderbot04">}}) | 0150 - 20 Dec 2023 |
@@ -384,3 +384,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Preston Grassmann | Anthology | [Out of the Ruins]({{<relref "bookreviews.md#outofruins">}}) | 2349 - 24 Jan 2024 |
 | Gordon Van Gelder | Anthology | [Welcome to Dystopia]({{<relref "bookreviews.md#welcomedystopia">}}) | 2031 - 30 Jan 2024 |
 | Michael Mersault | The Deep Man 02 | [The Silent Hand]({{<relref "bookreviews.md#deepman02">}}) | 0045 - 12 Feb 2024 |
+| Paula Guran | Anthology | [Ex Libris]({{<relref "bookreviews.md#exlibris">}}) | 0517 - 17 Feb 2024 |
