@@ -959,7 +959,6 @@ My favorites:
 * "Summer Reading": Very nice short story. A robot maintains an abandoned
   library on Earth. Gives away a physical book to a visiting child.
 
-
 I liked:
 
 * "Books": Post-apocalyptic setting. Kids encounter a library and steal some
@@ -1015,3 +1014,66 @@ I didn't like or skipped:
 * "Fort Moxie Branch": Aliens preserve the unpublished works of authors. They
   think we do not deserve them until we've reached a certain level of
   enlightenment.
+
+## Sean Patrick Hazlett - Weird World War IV (Anthology) - 4/5 {#www4}
+World War 3 has happened. In some cases, the nukes flew and the civilization has
+been destroyed, and in other cases some nukes were used, and in the last, no
+nukes. These short stories are about World War 4.
+
+My favorites:
+
+* "Deep Trouble": The US is losing the war and some people decide to wake up
+  something ancient. I did not expect the ending. Nicely done.
+* "Reflections in Lizard-time": Two groups of aliens have arrived from a
+  parallel Earth. Humans were absolutely rekt in WW3. But it looks like WW4 will
+  be worse.
+* "Chaos Redeemed": An artificial soldier construct is sent to kill some
+  indigenous rebels. She realizes the truth about her creation.
+* "Mea Kaua": Almost all humans died in WW3. Four sentient AI have created their
+  own creations. A mercenary is hired to move a floating city.
+* "Eureka Alternative": China has nuked the US. A secret US program is sending
+  soldiers into alternate timelines to find a weapon to win the war. A soldier
+  and herself from a different timeline find a possible solution.
+* "Future and Once": Written in the form of a play. Merlin (from the Arthurian
+  legends) and a soldier traverse the aftermath of WW3.
+
+I liked:
+
+* "Big Whimper (the Further Adventures of Rex, Two Million CE)": Aliens
+  destroyed humans in WW3, a robot dog is out for revenge after two million
+  years.
+* "We Are Not Monsters": Interesting concept. Person discovers corporations have
+  become sentient.
+* "Twilight of the God Makers": Humanity created monsters to win WW3, but is losing its grip on them.
+* "Door of Return": A group of Africans try to reclaim their magic to change the future.
+* "Offering the King Makes": A group of soldiers go into the Egyptian after-life
+  looking for weapons to win WW4 and meet some ancient mythological figures.
+* "Astral Soldier": As a result of a new weapon used in WW3, some people's can
+  do astral projection. A group of American soldiers is trying to pacify Panama
+  from rebels. The concept was interesting, I wish the story had more action.
+* "Wave Forms": Everyone got some sort of magic and the world changed (that's
+  supposedly WW3). Powerful magic users rule city states. A person whose magical
+  ability is living in a different body every day, is recruited into the
+  resistance.
+* "Ancient-enemy": Neanderthals have returned from beneath the surface to take
+  their revenge. A group of human prisoners put up some resistance.
+* "Day in the Life of a Suicide Geomancer": WW3 has destroyed most technology,
+  but magic has resurfaced. Necromancers threaten the world. A native American
+  ritual destroys the undead and revitalizes the Earth.
+
+I didn't like or skipped:
+
+* "Transformation Problem": A group of people have fled Earth in a spaceship.
+  Space anomalies start to pop-up along their route.
+* "Triplicate": Williamson is whining about the "woke" again. DNF. I had learned
+  my lesson so I stopped at the end of the first page instead of wasting my time
+  like I had with [The Gordian Protocol]({{<relref "#gordian01">}}) and
+  [Angeleyes]({{<relref "#freehold07">}}).
+* "Portals of the Past": Time travel, young Hitler, and changing the past.
+* "Line in the Stars": WW3 resulted in two major groups. Advanced orbitals and
+  people on Earth. A group of soldiers infiltrate an orbitals to prevent WW4.
+* "Lupus Belli": Some people have become werewolves in WW3. They are 2nd class
+  citizens. Convicted werewolves are sent to the moon for their sentence. A
+  group of aliens arrive to conquer the Earth.
+* "Blue Kachina": A group of soldiers visit a derelict Chinese spaceship on an
+  asteroid. Something horrific is inside.

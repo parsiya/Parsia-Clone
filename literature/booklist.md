@@ -385,3 +385,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Gordon Van Gelder | Anthology | [Welcome to Dystopia]({{<relref "bookreviews.md#welcomedystopia">}}) | 2031 - 30 Jan 2024 |
 | Michael Mersault | The Deep Man 02 | [The Silent Hand]({{<relref "bookreviews.md#deepman02">}}) | 0045 - 12 Feb 2024 |
 | Paula Guran | Anthology | [Ex Libris]({{<relref "bookreviews.md#exlibris">}}) | 0517 - 17 Feb 2024 |
+| Sean Patrick Hazlett | Anthology | [Weird World War IV]({{<relref "bookreviews.md#www4">}}) | 1824 - 27 Feb 2024 |
