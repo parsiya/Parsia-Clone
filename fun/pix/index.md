@@ -34,14 +34,6 @@ No one knows what "coding in the application security" means.
 
 ![](img/dhiraj-job.png)
 
-### Glenn by Dustin Rogers
-> Any resemblance to actual persons, living or dead, or actual events is purely
-> coincidental.
-
-![](img/glenn.jpg)
-
-{{< tweet 1013789028200706048 >}}
-
 ### Programmer Beats Mathematician with Facts and Logic
 > Is the Fields Medal going to still be relevant in 10 years?
 
