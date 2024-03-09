@@ -46,5 +46,6 @@
         "worldslost",
         "Zahn",
         "Zendegi"
-    ]
+    ],
+    "codeQL.githubDatabase.download": "never"
 }

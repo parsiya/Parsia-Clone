@@ -1077,3 +1077,23 @@ I didn't like or skipped:
   group of aliens arrive to conquer the Earth.
 * "Blue Kachina": A group of soldiers visit a derelict Chinese spaceship on an
   asteroid. Something horrific is inside.
+
+## Jeff Somers - Avery Cates 01 - The Electric Church - 3.5/5 {#electricchurch}
+It's a western book in a cyberpunk setting. The main character doesn't use any
+augmentations and they augmented are usually easily defeated by the
+protagonists. There's a fair amount of gunslinger action in the book.
+
+The Earth is under the rule of the "Joint Council" who rules with an iron first.
+The "System Cops" are the ultimate authority. Most people live a desperate life
+of poverty and die young. The main character mentions many times that at 27
+years old, he has lived too long.
+
+There's a new religion, the electric church. The converts are turned into cyborg
+monks. Rumor has it that most of them were converted unwillingly and inside each
+monk is a screaming human brain unable to get out.
+
+The main character, Avery Cates is a gunner (AKA gun for hire). He is hired to
+kill the head of the electric church.
+
+This is the first of a series of 5 books and many short stories. I liked the
+book enough that I will try the next book named "The Digital Plague."
