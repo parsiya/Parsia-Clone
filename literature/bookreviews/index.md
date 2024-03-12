@@ -1089,8 +1089,8 @@ of poverty and die young. The main character mentions many times that at 27
 years old, he has lived too long.
 
 There's a new religion, the electric church. The converts are turned into cyborg
-monks. Rumor has it that most of them were converted unwillingly and inside each
-monk is a screaming human brain unable to get out.
+monks. Rumor has it most of them were converted unwillingly and inside each monk
+is a screaming human brain unable to get out.
 
 The main character, Avery Cates is a gunner (AKA gun for hire). He is hired to
 kill the head of the electric church.
