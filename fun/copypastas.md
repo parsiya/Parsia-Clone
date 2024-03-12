@@ -11,7 +11,7 @@ snippet: "Computer copypastas."
 ---
 
 ## Rust Copypasta
-Of course Rust is superior to `[insert programming language]`/You should use
+Of course Rust is superior to `[insert programming language]`. You should use
 Rust for `[insert project]` because you get:
 
 * Zero-cost abstractions
