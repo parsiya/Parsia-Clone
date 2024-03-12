@@ -114,21 +114,21 @@ This is a stealth mission and is pretty easy to do. Obviously, use the bow.
 7. Go by the shack where #5 was killed and kill #6. He seems to be looking down and does not see you.
    1. This step and the next are interchangeable.
 8. Go slowly into the shack, #7 is sitting besides the still and does not notice you. You can kill him, no need to panic or be quick. Take your time.
-9. Poison the still
+9. Poison the still.
 10. When leaving, go where #6 is. There is a table with Apple (and other things on it) and a box on its right side (East).
-11. Leave
+11. Leave.
 
 ## Trader
 When doing delivery missions, use the railroad tracks to get there if you can.
-Usually. the drop off location is a train station and near the railroad tracks.
+Usually, the drop off location is a train station and near the railroad tracks.
 
 # Good Camp Locations
 
 ## Bayou Nwa
 I put my camp in Bayou Nwa. I go around the Lagras lake and kill the large
-alligators. There are usually a few spawn around the camp. So I can quickly kill
-them. The alligators are not that valuable but they are easy to kill and do not
-run away unless you shoot them directly.
+alligators. There are usually a few spawn around the camp. The alligators are
+not that valuable but they are easy to kill and do not run away unless you shoot
+them directly.
 
 Shoot them with the bolt action rifle in the head so the pelt quality does not
 go down. The smaller alligators that you can pick up are more valuable.
@@ -147,13 +147,12 @@ big game meat at the butcher because you will be getting a tone of them.
 Skin the birds and sell the feathers. Do not donate them to Cripps. Kill them
 with the Varmint rifle.
 
-One annoying issue with carcasses, corpses and items is them disappearing when
-they go off screen. Even if I am only 30 seconds of running away.
+One annoying issue with carcasses, corpses and items in them disappearing when
+they go off screen. Even if I ran moved past them 30 seconds ago.
 
 ## Great Plains
-Great plains is another good camp location. The camp will be around Blackwater.
-Usually, you can get to Blackwater quickly. Sometimes, the camp is close to
-Manzanita Post.
+Great plains is another good camp location. The camp will be around Blackwater,
+so you can get there quickly. Sometimes, the camp is close to Manzanita Post.
 
 The area is mostly flat and you can use the hunting wagon easily. There are
 deer, elks, coyotes, and bison around. Unfortunately, none of them have "big
@@ -169,26 +168,28 @@ operation (which is super easy, guide above) or a hideout.
 
 ## Selling Items to Gus vs. Donating
 It's better to donate items but you can also sell items to Gus so he can craft
-items and trinkets for you. Especially, you should go for the `Buck Antler
-Trinket` which somewhat helps and preserves pelt quality. If you shoot a 3 star
-animal the pelt quality might not drop. I managed to buy all trinkets during a
-30% off at Gus store weekly bonus week.
+items and trinkets for you. Especially, you should go for the `Buck Antler Trinket`
+which somewhat helps and preserves pelt quality. If you shoot a 3 star animal
+the pelt quality might not drop.
 
 To make the trinket, you need a `Dane Topaz Necklace`, two buck antlers and some
 cash. Different trinket bonuses stack, so ideally, you want to have all of them.
-Although, you can buy each one only once.
+You can buy each one only once.
+
+Look out for a 30% discount at the Gus store weekly bonus event. I bought all
+trinkets during one for cheap.
 
 More info about all the trinkets you can buy:
 https://www.reddit.com/r/RedDeadOnline/comments/ia92c4/before_you_buy_trinkets_gus_trapper_store/
 
 ## The Hunting Wagon
-I would say it's not really a necessity. It is of course convenient if I find a
-bunch of animals in the wild and I kill them.
+I would say it's not really a necessity. It is convenient if I find a bunch of
+animals in the wild and I kill them.
 
-It also spawns only on major roads so be sure to do it there. The reddit
+It also spawns only on major roads so call it near there there. The reddit
 comments mentioned looking at the ground in first person when summoning. Because
-it gets summoned out of sight looking down might help? I have not been able to
-prove this.
+it gets summoned out of sight so looking down might help? I have not been able
+to prove this.
 
 One good thing about the wagon is that you can put stuff in it and then dismiss
 it. Later in camp or at the shop you can summon it. The stuff on the wagon
@@ -218,8 +219,8 @@ bonus which helped me make more gold and money. It also gave me back 30 gold
 bars along with a 10 gold bar discount on the bounty hunter license. So it
 pretty much paid itself back.
 
-Getting to rank 100 in the pass was not that hard. Considering the XP needed for
-every rank is the same (and does not exponentially go up). It's a quick thing.
+Getting to rank 100 in the pass was not that hard. It's quick because the XP
+needed for each rank is the same.
 
 # Starting Out?
 Start with the Collector's track. Go to Madam Nazar and buy the bag. It costs 15
@@ -227,10 +228,6 @@ gold bars. Then you can start collecting. Use the online collector's map to
 figure out what is where and collect everything around you.
 
 You can get 10 gold bars by enabling 2FA in your Rockstar account.
-
-When starting out you probably do not have the gold bars to buy anything. I
-bought gold with cash which was worth it for me because I did not want to grind
-challenges for a few weeks.
 
 [https://jeanropke.github.io/RDR2CollectorsMap/][collectors-map]
 
@@ -285,7 +282,7 @@ Doing a mission and matched with someone who looks like me.
 ![](rdo-thats-a-me.jpg)
 
 ## Turned into a UFO
-Don't ask me how I did it ;)
+Don't ask me how it happened.
 
 ![](UFO-in-rdo-1.jpg)
 

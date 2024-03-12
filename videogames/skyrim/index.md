@@ -29,9 +29,9 @@ wip: true
 6. Wear all items with alchemy bonuses. Check the vendors for these (and barter
    items) every time you visit them.
 7. Use all three herbs to make potions.
-8. Wear any barter items.
+8. Wear all items with barter bonus.
 9. Talk to the trainer, train any levels you can first. This will add to their
-   gold. Remember if you leave the store the gold will go away.
+   gold. Remember if you leave the store, the gold will go away.
 10. Sell everything you can.
 11. Rinse and repeat. Do the max training every possible level.
 
@@ -71,13 +71,12 @@ five minutes to use up all 200 ingredients. Babette can train you up to level
 90, and Arcadia to level 75.
 
 If you run out of ingredients and aren't at level 100 yet, then you should be
-close enough that [a skill book or
-two](http://www.uesp.net/wiki/Skyrim:Skill_Books) will take you the rest of the
-way. All told, you should be able to get from 15 Alchemy to 100 in little over
-an hour -- faster if you've already got your house built and a bit of cash, and
-even faster still if you're already in the Brotherhood.
+close enough that [a skill book or two](http://www.uesp.net/wiki/Skyrim:Skill_Books)
+will take you the rest of the way. All told, you should be able to get from 15
+Alchemy to 100 in little over an hour -- faster if you've already got your house
+built and a bit of cash, and even faster still if you're already in the Brotherhood.
 
-=====
+----------
 
 If you don't have Hearthfire, then you can still use the method of selling
 custom potions to pay for training at each level-up. Babette is still the better

@@ -1079,14 +1079,14 @@ I didn't like or skipped:
   asteroid. Something horrific is inside.
 
 ## Jeff Somers - Avery Cates 01 - The Electric Church - 3.5/5 {#electricchurch}
-It's a western book in a cyberpunk setting. The main character doesn't use any
-augmentations and they augmented are usually easily defeated by the
-protagonists. There's a fair amount of gunslinger action in the book.
+It's a western book in a cyberpunk setting. There's a fair amount of gunslinger
+action in the book. The main character doesn't use any augmentations and the
+augmented are usually easily defeated by the protagonists. 
 
-The Earth is under the rule of the "Joint Council" who rules with an iron first.
-The "System Cops" are the ultimate authority. Most people live a desperate life
-of poverty and die young. The main character mentions many times that at 27
-years old, he has lived too long.
+The "Joint Council" rules the Earth with an iron first. The "System Cops" are
+the ultimate authority. Most people live a desperate life of poverty and die
+young. The main character mentions many times that at 27 years old, he has lived
+too long.
 
 There's a new religion, the electric church. The converts are turned into cyborg
 monks. Rumor has it most of them were converted unwillingly and inside each monk
