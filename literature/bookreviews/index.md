@@ -1097,3 +1097,75 @@ kill the head of the electric church.
 
 This is the first of a series of 5 books and many short stories. I liked the
 book enough that I will try the next book named "The Digital Plague."
+
+## Sean Patrick Hazlett - Anthology - Weird World War III - 3/5 {#www3}
+Collection of stories about how a World War 3 could happen. A lot of stories
+revolve around the US and USSR fighting either in alternate history or using
+magic/supernatural weapons. A lot of decent stories, but nothing to write home
+about.
+
+My favorites:
+
+* "Shadow Rook Red": The US and the USSR are fighting on both Earth and a shadow
+  realm. People can go from one to the other quite easily with a "toggle
+  device." An expert in the other world is kidnapped.
+* "Ouroboros Arrangement": What if Earth had a guardian angel that prevented catastrophes?
+
+
+I liked:
+
+* "Price": Decent David Drake story. The US and the USSR are fighting. Both
+  sides are using shamans.
+* "Where You Lead, I Will Follow: An Oral History of the Denver Incident":
+  Interesting concept. People are addicted to an app that gives them rewards for
+  performing tasks. The app causes a catastrophe by telling a large group of
+  people to performing small independent tasks.
+* "All Quiet on the Phantom Front": The NATO and the USSR are fighting. The
+  soviets are winning by using magic. A group of NATO officers try to locate
+  missing soldiers.
+* "Anastasia's Egg": I liked the story but it had nothing to do with WW3. It
+  turns out a few historical figures are magic users and Earth wars/revolutions
+  are proxy wars between them.
+* "Tap, Tap, Tapping in the Deep": Two US deep divers are trying to tap a soviet
+  undersea cable. They encounter a hostile creature made of magic and tech.
+* "No Plan Survives First Contact": The soviets have advanced alien tech. Two
+  American soldiers try to steal some.
+* "Thing Worth a Damn": California is now a socialist republic dependent on the
+  USSR (lol). A soviet soldier is tasked with extracting a scientist with a big
+  secret.
+* "Deniability": The US and the soviets kill assassinate the other side's heads
+  of state via supernatural means. Things get out of hand.
+
+I didn't like or skipped:
+
+* "Third World War": It was a joke story, but it was not funny.
+* "Last Chance": You don't like capitalism because the soviets are mind-controlling you.
+* "Oderzhimost'": A soviet AI is created based on a girl. An American soldier cheated on her.
+* "Scholomance": An ancient secret Russian institute is experimenting with the supernatural.
+* "It's a Mud, Mud World": Two AIs are launching nukes. Some people try to show
+  them the movie "War Games" to make them reconsider their decision.
+* "Evangeline": The US government is trying to use and recruit people who can sense others, with bad results.
+* "Bleak Night at Bad Rock": DNF. Turks and Cypriot Communists, and Nationalists are fighting. There's also a big wolf.
+* "Zip Ghost": DNF. The US and USSR are fighting. A group of Soldiers are
+  injected with Syphilis and drugs to go to the other side and fight.
+* "Second Front": The US and soviets have nuked each other on Earth. Both have
+  colonies are on the moon. A group of aliens arrive and clash with the
+  colonists.
+
+## Gene Wolf - The Sorcerer's House - 4.5/5 {#srchouse}
+I was hesitant to pick up another Gene Wolf book after stopping in the middle of
+the 3rd book of the new sun (The Sword of the Lictor).
+
+The book is written in the form of letters. I didn't know before, but this type
+is called [Epistolary novel][epis-wiki].
+
+Baxter inherits a haunted magical house. The house is connected to a different
+world. New characters arrive into the story with accelerated frequency. There
+are wizards, sorcerers, werewolves, foxes, vampires, and more.
+
+It was a fun and quick read. Baxter is no Severian (main character of the book
+of the new sun series). Although, he is a womanizer and in great Gene Wolf
+tradition, an unreliable narrator (you will notice missing or wrongly described
+events).
+
+[epis-wiki]: https://en.wikipedia.org/wiki/Epistolary_novel

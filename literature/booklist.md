@@ -387,3 +387,5 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Paula Guran | Anthology | [Ex Libris]({{<relref "bookreviews.md#exlibris">}}) | 0517 - 17 Feb 2024 |
 | Sean Patrick Hazlett | Anthology | [Weird World War IV]({{<relref "bookreviews.md#www4">}}) | 1824 - 27 Feb 2024 |
 | Jeff Somers | Avery Cates 01 | [The Electric Church]({{<relref "bookreviews.md#electricchurch">}}) | 2157 - 06 Mar 2024 |
+| Sean Patrick Hazlett | Anthology | [Weird World War III]({{<relref "bookreviews.md#www3">}}) | 1153 - 14 Mar 2024 |
+| Gene Wolf | | [The Sorcerer's House]({{<relref "bookreviews.md#srchouse">}}) | 1240 - 15 Mar 2024 |
