@@ -215,7 +215,7 @@ perspectives. I also liked the author introductions before each story. Those
 give the reader an idea of what else the author has written. I added so many
 books to my "to read" list.
 
-## Janelle Monae - The Memory Librarian: And Other Stories of Dirty Computer - 3.5/5
+## Janelle Monae - The Memory Librarian: And Other Stories of Dirty Computer - 3.5/5 {#memorylibrarian}
 I loved the settings and some of the stories, especially the main story "The
 Memory Librarian." "Timebox" was great."Save Changes" was more fantasy than
 cyberpunk. I skipped "Nevermind" and "Timebox Altar(ed)" halfway through.

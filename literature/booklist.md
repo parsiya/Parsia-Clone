@@ -322,6 +322,7 @@ ones I had read.
 I moved to the US in February 2011 and stopped tracking my reading. Reading
 fiction grinded to a halt because I played a lot of video games.
 
+## 2023 Revival
 In 2023, I started borrowing books from the local public library, mainly
 anthologies. Surprisingly, they have a great collection of SF books.
 
@@ -346,7 +347,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Greg Bear | War Dogs 01 | [War Dogs]({{<relref "bookreviews.md#wardogs01">}}) | DNF |
 | Bryan Thomas Schmidt | Infinite Stars Anthology 01 | [Infinite Stars: the definitive anthology of space opera and military SF]({{<relref "bookreviews.md#infinite01">}}) | 1405 - 01 July 2023 |
 | Michael Z. Williamson | Freehold 07 | [Angleeyes]({{<relref "bookreviews.md#freehold07">}}) | 0125 - 05 July 2023 |
-| Janelle Monae | Anthology | The Memory Librarian: And Other Stories of Dirty Computer | 0130 - 08 July 2023 |
+| Janelle Monae | Anthology | [The Memory Librarian: And Other Stories of Dirty Computer]({{<relref "bookreviews.md#memorylibrarian">}}) | 0130 - 08 July 2023 |
 | Kevin Anderson | Saga of the Seven Suns 02 | [Forest of Stars]({{<relref "bookreviews.md#saga02">}}) | 1220 - 15 July 2023 |
 | Kristin K. Rusch | Anthology | [Women of Futures Past: Classic Stories]({{<relref "bookreviews.md#womenfuture">}}) | 1301 - 16 July 2023 |
 | Charles E. Gannon & Griffin Barber & Chris Kennedy & Mike Massa | Tales of the Terran Republic | [Mission Critical]({{<relref "bookreviews.md#missioncritical">}}) | 0928 - 21 July 2023 |
