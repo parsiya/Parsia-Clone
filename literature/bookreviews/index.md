@@ -1010,7 +1010,7 @@ I didn't like or skipped:
   written on them) to save them.
 * "Green Book": Thoughtcrime of a librarian in an authoritarian theocracy.
 * "Woman's Best Friend": Only nominal connection to a library. A women
-  encounters a man sent to her  world. The premise is infinite parallel worlds.
+  encounters a man sent to her world. The premise is infinite parallel worlds.
 * "Fort Moxie Branch": Aliens preserve the unpublished works of authors. They
   think we do not deserve them until we've reached a certain level of
   enlightenment.
@@ -1020,13 +1020,15 @@ World War 3 has happened. In some cases, the nukes flew and the civilization has
 been destroyed, and in other cases some nukes were used, and in the last, no
 nukes. These short stories are about World War 4.
 
+Most stories assumed WW4 is happening soon after WW3 and is fought by humans.
+"Chaos Redeemed," "Mea Kaua," and "Lupus Belli" created new species.
+
 My favorites:
 
 * "Deep Trouble": The US is losing the war and some people decide to wake up
   something ancient. I did not expect the ending. Nicely done.
 * "Reflections in Lizard-time": Two groups of aliens have arrived from a
-  parallel Earth. Humans were absolutely rekt in WW3. But it looks like WW4 will
-  be worse.
+  parallel Earth and rekt humans in WW3. But it looks like WW4 will be worse.
 * "Chaos Redeemed": An artificial soldier construct is sent to kill some
   indigenous rebels. She realizes the truth about her creation.
 * "Mea Kaua": Almost all humans died in WW3. Four sentient AI have created their
@@ -1048,7 +1050,7 @@ I liked:
 * "Door of Return": A group of Africans try to reclaim their magic to change the future.
 * "Offering the King Makes": A group of soldiers go into the Egyptian after-life
   looking for weapons to win WW4 and meet some ancient mythological figures.
-* "Astral Soldier": As a result of a new weapon used in WW3, some people's can
+* "Astral Soldier": As a result of a new weapon used in WW3, some people can
   do astral projection. A group of American soldiers is trying to pacify Panama
   from rebels. The concept was interesting, I wish the story had more action.
 * "Wave Forms": Everyone got some sort of magic and the world changed (that's
@@ -1071,7 +1073,7 @@ I didn't like or skipped:
   [Angeleyes]({{<relref "#freehold07">}}).
 * "Portals of the Past": Time travel, young Hitler, and changing the past.
 * "Line in the Stars": WW3 resulted in two major groups. Advanced orbitals and
-  people on Earth. A group of soldiers infiltrate an orbitals to prevent WW4.
+  people on Earth. A group of soldiers infiltrate an orbital to prevent WW4.
 * "Lupus Belli": Some people have become werewolves in WW3. They are 2nd class
   citizens. Convicted werewolves are sent to the moon for their sentence. A
   group of aliens arrive to conquer the Earth.
@@ -1110,7 +1112,6 @@ My favorites:
   realm. People can go from one to the other quite easily with a "toggle
   device." An expert in the other world is kidnapped.
 * "Ouroboros Arrangement": What if Earth had a guardian angel that prevented catastrophes?
-
 
 I liked:
 
