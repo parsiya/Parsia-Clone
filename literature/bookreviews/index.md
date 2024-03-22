@@ -200,9 +200,10 @@ is a torturer because xir is trans" was hilarious.
 There were discussions about how minimum wage, employee benefits (Freehold
 businesses went bankrupt because they had to provide benefits, lol), work hour
 regulations (the torturers couldn't work more than 10 hours, lol), government
-mandated contracts and even warnings on tools/appliances. What makes this more
-hilarious is the author served 25 years in the US military which has all of
-this and more. It's the biggest socialist jobs program in the country.
+mandated contracts, and even warnings on tools/appliances are bad. This is
+exactly what grandpa on Facebook says. What makes this more hilarious is the
+author served 25 years in the US military which has all of this and more. It's
+the biggest socialist jobs program in the country.
 
 ## Kevin Anderson - Saga of the Seven Suns 02 - Forest of Stars - 5/5 {#saga02}
 Book two the [Saga of the Seven Suns][seven-suns]. I liked this one more than
@@ -370,7 +371,7 @@ be about quartering soldiers in homes or the 3rd amendment because that's how
 the other two were, lol.
 
 I am not sure **WHY** I actually read these two chapters. I mean I expect
-military science fiction is to be full of conservatives, but this sort of
+military science fiction to be full of conservatives, but this sort of
 nonsense was just too much. It didn't even have to do much with the rest of the
 book. It looked like the authors wanted to rant. The book got better, but when it
 has hit rock bottom, the only way is up.
@@ -436,22 +437,21 @@ cheesy and written like fan fiction.
 These stories were really creative and blended the genres:
 
 * "Greenhorn" by Elizabeth Moon: A new farmer with a hidden agenda arrives in a
-  space colony imitating the old west.
+  space colony imitating the old wild west.
 * "Hydration" by Alan Dean Foster: A lost prospector does an unusual trade.
 * "Winner Takes All" by Alex Shvartsman: A commando team is extracting the head
   of the resistance (an AI) from a low-technology zone (great setting).
-* "Doc Holliday 2.0" by Will McCarthy: Probably my favorite story in the book. A
+* "Doc Holliday 2.0" by Will McCarthy: **My favorite story in the book**. A
   company creates a clone of an old western Gunslinger to deal with robbers. The
   clone is coming to terms with his existence.
 
 Western stories in space. Fun to read but nothing to write home about:
 
 * "Penultimate Stand of Pina Gracchi": A classic "law enforcers break up the
-  tyranny in a company town" western tale but in space and aliens.
-* "Seeds": Old man sees new technology. This was a bit of a mix for me. I liked
+  tyranny in a company town" western tale but in space and with aliens.
+* "Seeds": Old farmer sees new technology. This was a bit of a mix for me. I liked
   the setting. People live/farm with low technology like the old western
-  frontier in other planets. But the story was a classic tale of "old farmer
-  encounters new technology."
+  frontier in other planets. But the story was cliche.
 * "Riding the Storm Out": Recapture a fugitive in the middle of a storm.
 * "Claim Jumped": Detective murder mystery in a mining asteroid. I liked how the
   sci-fi elements are mixed with the mystery, but the ending was meh.
@@ -536,12 +536,11 @@ Or how many scenes of "the chantry are evil" in the last part? Come on :).
 Mild spoilers ahead. The book can be divided into four parts:
 
 * Main character is still on his home planet. Bad father, absent mother, violent
-  sibling. I did not like this part and powered through it. 
+  sibling. I did not like this part and just read.
 * Moves to a 2nd planet and survives in the streets and the arena. I loved this
   part and couldn't put it down.
 * His identity is discovered and he moves to the palace. Love triangle. Not great.
-* Encounter with the aliens. Chantry messes it up. I just skimmed through this
-  just to finish the book.
+* Encounter with the aliens. Chantry messes it up. I skimmed just to finish the book.
 
 The ending was anti-climactic. I am still going to give the 2nd book a try
 (public libraries FTW) and see if it picks up speed. Looks like it's as big as
@@ -568,11 +567,11 @@ I am glad I read the first book. This is much better. The pace is faster and the
 author actually figured out what they want to do with the main character.
 
 My only issue with the book is the missing gap between the books. At the end of
-book one, the main character is with his group. At the beginning of the second
-book all of them are gone except one. I thought some pages had been removed from
-the "Shadow & Claw" edition of the book that I was reading (combines the first
-two books), but no. There are some cryptic explanations of the events through
-the book, and I was expecting some extraordinary event, but it was very mundane.
+book one, the main character is with his group. All are gone when the second
+book starts. I thought some pages had been removed from the "Shadow & Claw"
+edition of the book that I was reading (combines the first two books), but no.
+There are some cryptic explanations of the events through the book, and I was
+expecting some extraordinary event, but it was very mundane.
 
 But I like the writing style of this book better. The inclusion of stories and
 the play reminds me of the [Kalila wa-Dimna][kalila] or کلیله و دمنه, one of my
@@ -626,10 +625,11 @@ OK:
 
 * "The Best Man Wins": Stranger contracts a blacksmith to forge a sword. Twist ending.
 * ""I Am a Handsome Man," said Apollo Crow": Cursed crow(s) tracks down a revolutionary in ancient Rome.
-* "The Triumph of Virtue": Detective-ish Quillifer story. Assassination attempt at court.
+* "The Triumph of Virtue": Detective-ish [Quillifer][quil] story. Assassination attempt at court.
 * "The Mocking Tower": Heir to a deceased king tries to steal a sword from a
-  magical tower. I didn't like the story, but the changing descriptions of the
-  tower were exotic.
+  magical tower. I didn't like the story, but there's an everchanging tower in
+  the story and every page talks about its new shape in the background. These
+  descriptions were exotic.
 * "The King's Evil": Three adventurers go to a cursed island to recover an
   ancient treasure. The main character has an existential crisis (don't we
   all?). I did not like the story, but the writing was excellent.
@@ -638,21 +638,21 @@ OK:
   but meaningless to me because I have neither read the books nor watched the TV
   series.
 
+[quil]: https://www.goodreads.com/series/267729-quillifer
+
 I didn't like:
 
 * "Her Father's Sword": Kidnapped villagers return as selfish drones. Girl
-  struggles to connect with the soulless husk of her father. I didn't really
-  like it.
-* "The Hidden Girl": 10 year old girl is kidnapped by assassins and trained.
-  Develops a consicous.
+  struggles to connect with the soulless husk of her father.
+* "The Hidden Girl": 10 year old girl is kidnapped and trained as an assassin.
+  She develops a conscious.
   * "We're all thieves in this world of suffering," the nun says, "Honor and
     faith are not virtues, only excuses for stealing more."
 * "The Sword of Destiny": Wizard's apprentice is sent to steal a magic sword. Runs away instead and takes a detour.
 * "Hrunting": Man tries to recover his grandfather's ancient sword that was thrown away by Beowulf.
 * "When I was a Highway Man": Dueling youth tries to make a living in big city.
   The city of Riverside sounds interesting and is part of the author's other
-  books. But I didn't like this story, but I am gonna try some of the other
-  books.
+  books. I didn't like this story, but I am gonna try some of the other books.
 * "The Sword Tyraste": Man tries to avenge his family with the help of a magic
   sword. It was an easy read, but very bland.
 
@@ -663,12 +663,13 @@ Quotes from "The Smoke of Gold is Glory"
 * "O King," the dragon murmured, wheezing, and with every breath spilling more
   fiery ichor on the ground, "in all our ten thousand years, we have had but
   four friends, and we have only met them this night."
+  * The four friends are the main characters who have arrived to kill the dragon and take its hoard.
 * [Glimraug the dragon]: "[...] The long-awaited wonder comes! True
   death-friend, let our pyre be shared, let us build it now! **To take is not to keep**."
 * [Brandgar, the King-on-the-Waves]: "[...] But there is no true glory in
   holding. All that must come in the taking ... and letting go."
 * "The point is that it has never been done before," said Glimraug. Another
-  treasure pavillion was swalled by fire nearby. "And it shall never be done
+  treasure pavilion was swallowed by fire nearby. "And it shall never be done
   again. All things in this world are made to go into the fire, Tarkaster Crale.
   All things raise smoke. The smoke of incense is sweet. The smoke of wood is
   dull haze. But don't you see? **The smoke of gold ... is glory**."
@@ -680,16 +681,16 @@ The series is popular, but I think it's mid. It's not my cup of tea. The only
 reason I am reading them is because they're small books.
 
 The [first book]({{<relref "bookreviews.md#murderbot01">}}) was better. I guess
-the whole idea of the a bot that wants to be independent and wathes TV series was
+the idea of the a bot that wants to be independent and watches TV series was
 fun, but the other three books quickly got boring and repetitive.
 
-A whole lot of dialoge is dedicated to the murderbot covering its tracks. A good
+A whole lot of dialog is dedicated to the murderbot covering its tracks. A good
 20% of the books are "I hacked something, I wiped off my movements from logs,
 and so on." I think we get the idea that for some reason this bot can hack
 anything and everything. Stations are full of security scanners, cameras, and
-bots, but they are hackable at a snap.
+bots, but they are hackable with a snap.
 
-Another question is other bots like the transport ship bot don't have governor
+Another question is other bots (like the transport ship) don't have governor
 modules and can do pretty much any illegal activity they want. People don't like
 SecUnits (which have governor modules), but are not afraid of bots or constructs
 that do not.
@@ -720,8 +721,8 @@ references are explained later.
 Two former bounty hunters turned surveyors are tasked with surveying a planet,
 but of course the plot makes them go back to doing what they're good at, finding
 people. The book's universe is huge with multiple alien species. An alien race
-dominate faster than light travel and an alliance of others including humands
-are competing for domination through economic and cladestine warfare.
+dominate faster than light travel and an alliance of others including humans
+are competing for domination through economic and clandestine warfare.
 
 I really appreciated how the author didn't have extensive world building
 chapters and instead kept the action going on. The last third of the book is a
@@ -737,8 +738,8 @@ Unfortunately, [David Drake][drake] passed away recently. I had mostly read
 short stories by him in the last few years. I mostly reread
 [Redliners][redliners] (DRM-free digital format is free on Baen's website), or
 Hammer's Slammers. For the last few years, I used to send him actual snail mail
-for his birthday and he would reply to my email. This year he didn't and it
-turns out he wasn't feeling that great.
+for his birthday and he would reply via email. This year he didn't and it
+turns out he wasn't feeling well.
 
 [drake]: https://david-drake.com/
 [redliners]: https://www.baen.com/redliners.html
@@ -1021,7 +1022,7 @@ been destroyed, and in other cases some nukes were used, and in the last, no
 nukes. These short stories are about World War 4.
 
 Most stories assumed WW4 is happening soon after WW3 and is fought by humans.
-"Chaos Redeemed," "Mea Kaua," and "Lupus Belli" created new species.
+"Chaos Redeemed," "Mea Kaua," and "Lupus Belli" had new species.
 
 My favorites:
 
