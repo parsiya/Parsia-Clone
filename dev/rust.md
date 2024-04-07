@@ -3093,3 +3093,43 @@ file system unlike Golang :(.
 // str_vec: Vec<&str>
 let str_vec = string_vec.iter().map(|s| s.as_str()).collect();
 ```
+
+## Extend a Struct in Another
+Rust cannot do this. We cannot even embed as easily as it happens in Go, but
+here's a form of embedding.
+
+Apparently, "implementing [Deref][deref] and [DerefMut][derefmut]
+traits allow the compiler to implicitly cast pointers to `StructB`s to pointers
+to `StructA`s."
+
+Source: https://stackoverflow.com/a/32552688
+
+[deref]: https://doc.rust-lang.org/std/ops/trait.Deref.html
+[derefmut]: https://doc.rust-lang.org/std/ops/trait.DerefMut.html
+
+```rs
+struct StructA;
+
+impl StructA {
+    fn name(&self) -> &'static str {
+        "Anna"
+    }
+}
+
+struct StructB {
+    a: StructA, 
+    // other fields...
+}
+
+impl std::ops::Deref for StructB {
+    type Target = StructA;
+    fn deref(&self) -> &Self::Target {
+        &self.a
+    }
+}
+
+fn main() {
+    let b = StructB { a: StructA };
+    println!("{}", b.name());
+}
+```
