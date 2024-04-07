@@ -1165,9 +1165,161 @@ Baxter inherits a haunted magical house. The house is connected to a different
 world. New characters arrive into the story with accelerated frequency. There
 are wizards, sorcerers, werewolves, foxes, vampires, and more.
 
-It was a fun and quick read. Baxter is no Severian (main character of the book
-of the new sun series). Although, he is a womanizer and in great Gene Wolf
+It was a fun and quick read. Baxter is no Severian (main character of the Book
+of the New Sun series). Although, he is a womanizer and in great Gene Wolf
 tradition, an unreliable narrator (you will notice missing or wrongly described
 events).
 
 [epis-wiki]: https://en.wikipedia.org/wiki/Epistolary_novel
+
+## Sean Wallace - Anthology The Mammoth Book of Steampunk - 3.5/5 {#steam}
+Big steampunk anthology. I did not skip any stories in this book.
+
+My favorites:
+
+* "Cinderella Suicide": **My favorite story of the book.** Convicts are sent to
+  Australia to harvest extraterrestrial ores. Three of them are sent to find the source.
+  * This story reminded me of the "deCom" mercenary crews in [Woken Furies][woken-furies]
+    (the 3rd book of the 'Altered Carbon' series). The crews were paid to destroy
+    sentient machines on an island. That was a favorite part of that book for me
+    and unfortunately, did not appear in the Netflix adaptation. Honestly, a series
+    of books about these deCom crews battling sentient machines would be awesome.
+* "The Steam Dancer (1896)": How a dancer with augments survived a city alone and how she found love there.
+* "The Mechanical Aviary of Emperor Jala-ud-din Muhammad Akbar": This story
+  reminded me of stories in [Kalila wa-Dimna][kalila]. A couple of intertwined
+  fables about greed.
+  * "He did learn, that young ruler. He learned whom to trust, and whom
+    to heed, and that the two are not always the same."
+* "Prayers of Forges and Furnaces": The old gods have been defeated by the god-machine. One of them returns.
+  * "All gods are cruel, Xochipil. What else did you expect?"
+* "The Armature of Flight": A rich youth's (Leo) poor boyfriend (William)
+  sacrifices himself to make enough money so they can run way. The youth
+  squanders the chance away and regrets it for the rest of his life.
+  * "William reached up, took Leo's hand in his, squeezed, hard. 'Someday you'll let yourself have what you want,'"
+* "Numismatics in the Reigns of Naranh and Viu": A queen is disposed by her
+  brother. She travels around and gives away the secret of creating steam to the
+  populace. The revolution's propaganda is spread through coins.
+* "The People's Machine": In an alternate steampunk universe, South America is
+  not colonized, but North America is. An inquisitor from South America travels
+  north to solve a mysterious crime.
+  * "An insurrection, guided by machine, could be imminently useful."
+* "A Serpent in the Gears": A group of scientists encounter a cyborg serpent from an abandoned civilization.
+  * You can also read the story here in [Beneath Ceaseless Skies or BCS #34][bcs34]
+  * I liked the characters. They also appear in short story [Salvage - BCS #77][bcs77].
+  * Another good short story by this author in a fantasy/steampunk world, [Letters of Fire - BCS #69][bcs69]
+* "The Ballad of the Last Human": In a post-human society, animals are sentient. A dog and a spider go to find the last human.
+
+[bcs34]: https://www.beneath-ceaseless-skies.com/stories/a-serpent-in-the-gears-by-margaret-ronald/
+[bcs77]: https://www.beneath-ceaseless-skies.com/stories/salvage-by-margaret-ronald/
+[bcs69]: https://www.beneath-ceaseless-skies.com/stories/letters-of-fire-by-margaret-ronald/
+[woken-furies]: https://en.wikipedia.org/wiki/Woken_Furies
+
+I liked:
+
+* "Fixing Hanover": An inventor has run away from his past and taken refuge in a remote village. It catches up to him.
+  * Quote: "Suffering's going to come to everyone someday." – The Willard Grant Conspiracy
+* "Icebreaker": A lady travels to the south pole to discard the corpse of his late and beloved husband. Adventure ensues.
+* "Tom Edison and His Amazing Telegraphic Harpoon": A steam train is traveling
+  through the wild west is attacked by biblical giants. Can a couple of
+  inventors defeat them with technology?
+* "The Effluent Engine": A Haitian goes to New Orleans in search of a scientist
+  for a formula. While I liked the story and the setting, it looked like the
+  author just added a couple of zeppelins to the story to make it steampunk. You
+  could make it sci-fi by replacing them with spaceships.
+* "The Anachronist's Cookbook": A young girl tries a workers' revolution in a future steampunk Britain.
+  * "Jane Sallow did not vanish from the face of the earth – no mortal is
+    granted that power. But no reliable record of her exists after her arrest ..."
+* "The Hands That Feed": A pawn shop owner hires an immigrant worker. The worker
+  gets involved in a criminal conspiracy.
+* "To Follow the Waves": A girl can create dreams by weaving them into gems. But
+  the other people in the dream also experience it.
+* "Reluctance": In post civil war US, post is delivered by dirigibles. A postal worker reaches a city infested by zombies.
+* "Arbeitskraft": Friedrich Engels tries to free cyborg matchstick girls, but there's a twist.
+* "To Seek Her Fortune": A lady explorer spends all her life trying to find the cause of her death in order to save her son from it.
+
+I didn't like:
+
+* "The Zeppelin Conductors' Society Annual Gentlemen's Ball": Zeppelin
+  conductors mostly live in the Helium balloon. As a result their bodies change.
+  Their hands and legs are longer. This is a series of stories about how they're
+  discriminated against and how people think they're lunatics.
+* "Clockwork Fairies": A minister's rich fiance is a tinkerer. She runs away
+  from him and leaves him an automaton instead.
+* "The Clockwork Goat and the Smokestack Magi": A fable about why hoarding knowledge is bad.
+* "Zeppelin City": Minds removed from bodies are governing a city. They want to destroy all humans.
+  * "It followed that the victory would belong to him who was calmest, who shot
+    best, and who had the cleverest brain in a moment of danger." Baron Manfred
+    von Richthofen (1892–1918)
+* "Machine Maid": A colonial lady alters an automaton maid to kill her husband, but someone else might have done the job.
+* "Clockmaker's Requiem": In a dreamworld, clocks tell their own time instead of a standard one.
+* "Dr Lash Remembers": A plague is ravaging through a city. Victims hallucinate fantasy.
+* "Lady Witherspoon's Solution": A group of aristocratic ladies inject criminals
+  with a serum that turns them into neanderthals. A couple experiment with a
+  similar serum that does the opposite in hopes of getting smarter.
+* "The Celebrated Carousel of the Margravine of Blois": A woman wants to revive her dead lover as an automaton.
+* "Biographical Notes to 'A Discourse on the Nature of Causality, With Air-planes' by Benjamin Rosenbaum": An scholar tries to catch an assassin on zeppelin.
+* "Clockwork Chickadee": Yet another fable about greed.
+
+## James L. Cambias - Corsair - 3.5/5 {#corsair"}
+This is Cambias' second book. The world building is decent as usual. Helium 3 is
+harvested on the moon and sent to the Earth with rockets. There are pirates who
+steal these payloads by hacking the rocket with satellites on the way back.
+
+A US military officer is trying to catch such a pirate who used to be his old
+lover. The pirate is hired by a shady Middle-Eastern Colonel to hijack another
+payload. The bad guy is most likely Iranian because his cover last name is
+"Ghavami."
+
+The characters were not great (again, usual for Cambias). Although, they have
+gotten a lot better in his more recent books especially "The Billion Worlds"
+series (read the reviews of two books in that universe above).
+
+## Rhonda Parrish - Anthology - Clockwork, Curses, and Coal - 2/5 {#clockwork">}
+Quick and easy steampunk short stories.
+
+My favorites:
+
+* "Checkmate": **My favorite story of the book.** In an steampunk alternate
+  universe, battles are fought by 16 representatives from each side. Each
+  fighter is a chess piece (e.g., 8 pawns, 2 knights). An English Knight battles
+  a Russian Rook for London.
+* "The Giant and the Unicorn": A nice story. A mechanical unicorn saves a mechanical giant from madness.
+* "The Coach Girl": Steampunk retelling of [The Goose Girl][goose-girl] fable. A
+  rich girl is on her way to an arranged marriage. The driver of her coach
+  forces her to swap places. It's based 
+
+[goose-girl]: https://en.wikipedia.org/wiki/The_Goose_Girl
+
+I liked:
+
+* "Necromancy": A story based on the Pied Piper of Hamelin. A village starves
+  and kills their girls that want to leave the village and see the world. Seven
+  brothers arrive and promise to help the village with its rat problem, but they
+  end up seeking justice for the murdered and imprisoned girls.
+* "Blood and Clockwork": The court tinker is in love with the prince. She turns
+  herself into a clockwork soldier to serve the king against assassins, but her
+  body has been backdoored!
+* "Sappho and Erinna": A convict is hired to spy on the Governor's daughters.
+  She falls in love with one and they flee. I liked the story, but there was
+  nothing steampunk about it.
+* "Father Worm": Barely steampunk, but a unique setting. A girl is torn between
+  her parents. Her father wants to join the Earth and her mother wants to join
+  the sun.
+
+I didn't like or skipped:
+
+* "The Iron Revolution": Fairies threaten to put a curse on England unless a
+  hidden fairy is discovered amongst the participants of a beauty pageant. The
+  setting was interesting, but it turned into a whodunnit mystery with a cringe
+  ending.
+* "Clockwork Tea": A foreigner travels to China to discover the secret to tea.
+  He destroys a bunch of automata to keep his identity hidden, but one automata
+  is his undoing.
+* "A Future of Towers Made": An engineer woman is shadowed by his useless
+  husband. She takes revenge by filing her own patents.
+* "A Bird Girl in the Dark of Night": A girl turns herself into a human-bird mix
+  to gain access to a freak circus to free her twin sisters.
+* "Divine Spark": A girl who is part of a traveling religious group creates an automaton. It saves her.
+* "Ningyō": Japanese monks encounter a tinker who turns humans into automatons.
+* "Balance of Memory": A man is trying to resurrect the ghost of her late wife.
+  His only child has evolved into two half-human, half-machine bodies.

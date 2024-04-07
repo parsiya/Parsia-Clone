@@ -390,3 +390,6 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Jeff Somers | Avery Cates 01 | [The Electric Church]({{<relref "bookreviews.md#electricchurch">}}) | 2157 - 06 Mar 2024 |
 | Sean Patrick Hazlett | Anthology | [Weird World War III]({{<relref "bookreviews.md#www3">}}) | 1153 - 14 Mar 2024 |
 | Gene Wolf | | [The Sorcerer's House]({{<relref "bookreviews.md#srchouse">}}) | 1240 - 15 Mar 2024 |
+| Sean Wallace | Anthology | [The Mammoth Book of Steampunk]({{<relref "bookreviews.md#steam">}}) | 2009 - 24 Mar 2024 |
+| James L. Cambias | | [Corsair]({{<relref "bookreviews.md#corsair">}}) | 1314 - 26 Mar 2024 |
+| Rhonda Parrish | Anthology | [Clockwork, Curses, and Coal]({{<relref "bookreviews.md#clockwork">}}) | 2121 - 06 Apr 2024 |
