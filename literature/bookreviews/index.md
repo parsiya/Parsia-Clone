@@ -1260,7 +1260,7 @@ I didn't like:
 * "Biographical Notes to 'A Discourse on the Nature of Causality, With Air-planes' by Benjamin Rosenbaum": An scholar tries to catch an assassin on zeppelin.
 * "Clockwork Chickadee": Yet another fable about greed.
 
-## James L. Cambias - Corsair - 3.5/5 {#corsair"}
+## James L. Cambias - Corsair - 3.5/5 {#corsair}
 This is Cambias' second book. The world building is decent as usual. Helium 3 is
 harvested on the moon and sent to the Earth with rockets. There are pirates who
 steal these payloads by hacking the rocket with satellites on the way back.
@@ -1274,7 +1274,7 @@ The characters were not great (again, usual for Cambias). Although, they have
 gotten a lot better in his more recent books especially "The Billion Worlds"
 series (read the reviews of two books in that universe above).
 
-## Rhonda Parrish - Anthology - Clockwork, Curses, and Coal - 2/5 {#clockwork">}
+## Rhonda Parrish - Anthology - Clockwork, Curses, and Coal - 2/5 {#clockwork}
 Quick and easy steampunk short stories.
 
 My favorites:
@@ -1283,7 +1283,7 @@ My favorites:
   universe, battles are fought by 16 representatives from each side. Each
   fighter is a chess piece (e.g., 8 pawns, 2 knights). An English Knight battles
   a Russian Rook for London.
-* "The Giant and the Unicorn": A nice story. A mechanical unicorn saves a mechanical giant from madness.
+* "The Giant and the Unicorn": A nice story. A mechanical unicorn saves a giant from madness.
 * "The Coach Girl": Steampunk retelling of [The Goose Girl][goose-girl] fable. A
   rich girl is on her way to an arranged marriage. The driver of her coach
   forces her to swap places. It's based 
