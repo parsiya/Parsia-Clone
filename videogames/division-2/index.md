@@ -109,6 +109,71 @@ Specialization: gunner
 
 ----------
 
+## Marksman Rifle without Zoom
+Source: https://www.youtube.com/watch?v=rfI-Ic8LD20
+
+The trick with this build is using a marksman rifle with a 4x scope so you're
+not zooming. The rifle should have the talent `Determined`:
+
+> After killing an enemy with a headshot the next shot landed on any enemy will
+> be a guaranteed headshot.
+
+Ideally, you want the named marksman rifle `The White Death` because of the 137%
+bonus to headshot damage (HSD) and reroll the talent to `Determined`.
+
+**Note:** If you swap the weapon, you will lose the `Determined` bonus.
+
+So, after the first headshot, your other body shots will also count as
+headshots. One snag is enemies with a helmet. Your hit will destroy the helmet
+and you will lose the `Determined` bonus so you have to headshot another enemy.
+The bonus is not lost if you use it on drones or mechanical enemies.
+
+This is also coupled with the named chest `Chainkiller` talent that
+is `Perfect Headhunter`:
+
+> After killing an enemy with a headshot, your next weapon hit within 30 seconds
+> deals an additional 125% of that killing blow's damage.
+> 
+> Damage is capped to 800% of your weapon damage. This is raised to 1250% if
+> your headshot damage is greater than 150%.
+
+You can use the four piece brand `Hotshot` which adds headshot damage on mask,
+gloves, holster, and kneepads. Change the secondary talent to HSD. The 4th brand
+piece effect is not that important. You can use three of the brand and move
+things around. I usually use other things to gain expertise with them.
+
+Backpack is Arialdi holdings with the `Vigilant` talent. Arialdi for the HSD,
+but neither the gear brand nor the talent are not that important here.
+
+> Increases total weapon damage by 25%. Taking damage disables this buff for 4
+> seconds.
+
+Mods are all HSD.
+
+* Head: Hotshot brand.
+    * If using 3 brand pieces: Sometimes I use the `Coyote's Mask` because mine has HSD.
+* Chest: `Chainkiller`.
+* Holster: Hotshot brand.
+    * If using 3 brand pieces: I use `Dodge City Gunslinger’s Holster` for
+      instant kill with pistol. If using this, make sure to have a pistol with a
+      high damage like `Prophet` pistol because it works with `Chainkiller`.
+* Backpack: Arialdi Holdings with Vigilance talent.
+    * This is also another place that you can change gear.
+* Gloves: Hotshot brand.
+* Knees: Hotshot brand.
+    * If using 3 brand pieces: You can replace it with `Sawyer's Kneepads`.
+* Weapon 1: Marksman rifle with `Determined`, preferably `The White Death`.
+* Weapon 2: Not that important. I use a rifle or anything I want to gain expertise in.
+* Pistol: `Prophet` is good because it works with `Chainkiller`. But you can
+  also use it to gain expertise with items.
+* Specialization: Sniper. You will get so many special weapon ammo that you will
+  not use.
+* Skills: Not that important. I use the armor repair drone on one. The armor
+  repair or reviver hive on the other. Sometimes I use the skill I wanna train
+  for expertise instead of the hive.
+
+----------
+
 # Weapons
 Depends on your play style.
 
@@ -130,7 +195,7 @@ and one-shot the others. Allows you to switch your CHC to CHD.
 
 ## Snipers
 `Mantis` is a great choice with the decoy. Headshot kills refresh the decoy
-cooldown period.
+cool down period.
 
 ## Light Machine Guns
 These are great if you want to unload a ton of bullets.

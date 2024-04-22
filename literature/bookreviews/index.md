@@ -1172,7 +1172,7 @@ events).
 
 [epis-wiki]: https://en.wikipedia.org/wiki/Epistolary_novel
 
-## Sean Wallace - Anthology The Mammoth Book of Steampunk - 3.5/5 {#steam}
+## Sean Wallace - Anthology - The Mammoth Book of Steampunk - 3.5/5 {#steam}
 Big steampunk anthology. I did not skip any stories in this book.
 
 My favorites:
@@ -1286,7 +1286,7 @@ My favorites:
 * "The Giant and the Unicorn": A nice story. A mechanical unicorn saves a giant from madness.
 * "The Coach Girl": Steampunk retelling of [The Goose Girl][goose-girl] fable. A
   rich girl is on her way to an arranged marriage. The driver of her coach
-  forces her to swap places. It's based 
+  forces her to swap places.
 
 [goose-girl]: https://en.wikipedia.org/wiki/The_Goose_Girl
 
