@@ -393,3 +393,5 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Sean Wallace | Anthology | [The Mammoth Book of Steampunk]({{<relref "bookreviews.md#steam">}}) | 2009 - 24 Mar 2024 |
 | James L. Cambias | | [Corsair]({{<relref "bookreviews.md#corsair">}}) | 1314 - 26 Mar 2024 |
 | Rhonda Parrish | Anthology | [Clockwork, Curses, and Coal]({{<relref "bookreviews.md#clockwork">}}) | 2121 - 06 Apr 2024 |
+| David Drake | RCN 02 | Lt Leary Commanding | 0130 - 24 Apr 2024 - 2nd time |
+| David Drake | RCN 03 | The Far Side of the Stars | 1941 - 28 Apr 2024 - 2nd time |
