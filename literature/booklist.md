@@ -395,5 +395,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Rhonda Parrish | Anthology | [Clockwork, Curses, and Coal]({{<relref "bookreviews.md#clockwork">}}) | 2121 - 06 Apr 2024 |
 | David Drake | RCN 02 | Lt Leary Commanding | 0130 - 24 Apr 2024 - 2nd time |
 | David Drake | RCN 03 | The Far Side of the Stars | 1941 - 28 Apr 2024 - 2nd time |
-| Seanan Mcguire | Short Story | [Crystal Halloway and the Forgotten Passage]({{<relref "bookreviews.md#crystal">}}) | 12 May 2024 |
 | John J. Adams | Anthology | [Other Worlds Than These]({{<relref "bookreviews.md#otherworlds">}}) | 1633 - 25 Sep 2024 |
