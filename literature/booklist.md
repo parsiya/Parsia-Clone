@@ -356,7 +356,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | James L. Cambias | | [Arkad's World]({{<relref "bookreviews.md#arkad">}}) | 1114 - 14 Aug 2023 |
 | John Scalzi | | [The Kaiju Preservation Society]({{<relref "bookreviews.md#kaiju">}}) | 1844 - 26 Aug 2023 |
 | Kevin Anderson | Saga of the Seven Suns 03 | [Horizon Storms]({{<relref "bookreviews.md#saga03">}}) | 1527 - 01 Sep 2023 |
-| John J.Adams | Anthology | [Cosmic Powers: The Saga Anthology of Far-Away Galaxies]({{<relref "bookreviews.md#cosmic">}}) | 1726 - 16 Sep 2023 |
+| John J. Adams | Anthology | [Cosmic Powers: The Saga Anthology of Far-Away Galaxies]({{<relref "bookreviews.md#cosmic">}}) | 1726 - 16 Sep 2023 |
 | Alex Lamb | Roboteer 01 | [Roboteer]({{<relref "bookreviews.md#roboteer01">}}) | 20 Sep 2023 - DNF |
 | John Scalzi | The Dispatcher 03 | [Travel by Bullet]({{<relref "bookreviews.md#dispatcher03">}}) | 1406 - 27 Sep 2023 |
 | Bryan Thomas Schmidt | Infinite Stars Anthology 02 | [Infinite Stars: Dark Frontiers]({{<relref "bookreviews.md#infinite02">}}) | 1707 - 28 Sep 2023 |
@@ -395,3 +395,5 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Rhonda Parrish | Anthology | [Clockwork, Curses, and Coal]({{<relref "bookreviews.md#clockwork">}}) | 2121 - 06 Apr 2024 |
 | David Drake | RCN 02 | Lt Leary Commanding | 0130 - 24 Apr 2024 - 2nd time |
 | David Drake | RCN 03 | The Far Side of the Stars | 1941 - 28 Apr 2024 - 2nd time |
+| Seanan Mcguire | Short Story | [Crystal Halloway and the Forgotten Passage]({{<relref "bookreviews.md#crystal">}}) | 12 May 2024 |
+| John J. Adams | Anthology | [Other Worlds Than These]({{<relref "bookreviews.md#otherworlds">}}) | 1633 - 25 Sep 2024 |

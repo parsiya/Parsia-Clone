@@ -242,7 +242,7 @@ the different locations and how everything came together for the final showdown.
 ## John Ringo - Ghost - 0/5 - DNF
 Oh God, where do I start with this. I stopped a few chapters in. Ringo was the
 guy whose stories made me realize a not so insignificant portion of Military
-Sci-Fi aliens are in fact "bad brown people" (from the Middle-East).
+Sci-Fi evil aliens are in fact "bad brown people" (from the Middle-East).
 
 The only positive thing about this book is the famous
 ["Oh John Ringo, No"][ringo-no] meme.
@@ -431,8 +431,8 @@ was amusing, and the last part of the book (and the entire ending) was very very
 cheesy and written like fan fiction.
 
 ## David Boop - Gunfight on Europa Station (Anthology) - 4/5 {#guneuropa}
-[Western stories in space][gunfight]. 
-[List of stories on bibliocommons][gunfight-list].
+* [Western stories in space][gunfight]. 
+* [List of stories on bibliocommons][gunfight-list].
 
 These stories were really creative and blended the genres:
 
@@ -1207,7 +1207,7 @@ My favorites:
   * You can also read the story here in [Beneath Ceaseless Skies or BCS #34][bcs34]
   * I liked the characters. They also appear in short story [Salvage - BCS #77][bcs77].
   * Another good short story by this author in a fantasy/steampunk world, [Letters of Fire - BCS #69][bcs69]
-* "The Ballad of the Last Human": In a post-human society, animals are sentient. A dog and a spider go to find the last human.
+* "The Ballad of the Last Human": In a post-human society, animals are sentient. A dog and a spider embark on a journey to find the last human.
 
 [bcs34]: https://www.beneath-ceaseless-skies.com/stories/a-serpent-in-the-gears-by-margaret-ronald/
 [bcs77]: https://www.beneath-ceaseless-skies.com/stories/salvage-by-margaret-ronald/
@@ -1257,13 +1257,15 @@ I didn't like:
   with a serum that turns them into neanderthals. A couple experiment with a
   similar serum that does the opposite in hopes of getting smarter.
 * "The Celebrated Carousel of the Margravine of Blois": A woman wants to revive her dead lover as an automaton.
-* "Biographical Notes to 'A Discourse on the Nature of Causality, With Air-planes' by Benjamin Rosenbaum": An scholar tries to catch an assassin on zeppelin.
+* "Biographical Notes to 'A Discourse on the Nature of Causality, With Air-planes' by Benjamin Rosenbaum": An scholar tries to catch an assassin on a zeppelin airship.
 * "Clockwork Chickadee": Yet another fable about greed.
 
 ## James L. Cambias - Corsair - 3.5/5 {#corsair}
 This is Cambias' second book. The world building is decent as usual. Helium 3 is
 harvested on the moon and sent to the Earth with rockets. There are pirates who
-steal these payloads by hacking the rocket with satellites on the way back.
+steal these payloads by using satellites to hack these rockets on the way to the
+Earth. The hacked rockets are diverted to remote locations where pirates unload
+the Helium 3 and disappear.
 
 A US military officer is trying to catch such a pirate who used to be his old
 lover. The pirate is hired by a shady Middle-Eastern Colonel to hijack another
@@ -1279,7 +1281,7 @@ Quick and easy steampunk short stories.
 
 My favorites:
 
-* "Checkmate": **My favorite story of the book.** In an steampunk alternate
+* "Checkmate": **My favorite story in this book.** In an steampunk alternate
   universe, battles are fought by 16 representatives from each side. Each
   fighter is a chess piece (e.g., 8 pawns, 2 knights). An English Knight battles
   a Russian Rook for London.
@@ -1323,3 +1325,70 @@ I didn't like or skipped:
 * "Ningyō": Japanese monks encounter a tinker who turns humans into automatons.
 * "Balance of Memory": A man is trying to resurrect the ghost of her late wife.
   His only child has evolved into two half-human, half-machine bodies.
+
+## John J.Adams - Anthology - Other Worlds Than These - 3/5 {#otherworlds}
+I started this book May 2024, but a bunch of real life stuff interrupted my
+reading (you can see the gap in the book list) and I finished the second half of
+the book in September 2024.
+
+This is an anthology about parallel worlds. I don't remember most of the stories
+in the first half of the book so my reviews might not be great. Usually, I write
+these reviews soon after finishing the book.
+
+**My absolute favorite story of the book** was "Crystal Halloway and the
+Forgotten Passage" by Seanan Mcguire. You can also read it online at
+https://www.fantasy-magazine.com/fm/fiction/crystal-halloway-and-the-forgotten-passage/.
+
+I loved it so much that I want to put it here to remember. It was one of the
+most depressingly fantastic stories I have ever ever read. The way we forget our
+fantasies after we "grow up." Maybe we still read SFF and play videogames
+because it helps us keep that spark alive.
+
+The last part few paragraphs are depressing.
+
+> And none of them, not Crystal, not her parents, could hear the distant,
+> thready sound of a giant spider—the Guardian of the Passage to the Beyond, the
+> one who had guided and guarded a hundred generations of human children,
+> nurtured them, loved them, and lost them all—weeping.
+
+![](crystal1.png)
+
+My favorites (other than the one above):
+
+* "The Lonely Songs of Laren Dorr" by George R. R. Martin: Amazing story. A warrior travels between worlds through gates in search of her lover who was taken from him by the Gods. She enters an empty world with a single occupant who was banished there by the Gods. They stay together for a while. But eventually she has to leave.
+* "Impossible Dreams" by Tim Pratt: Movie buff visits a video store from an alternate reality where some movies have not been made or made with a different cast. He keeps going back every day to chat with the young attendant and falls in love with her.
+* "Like Minds" by Robert Reed: This was a really nice story. There's a being called "the Authority" that exists in all different realities and worlds. People can ask it for three things at a time (e.g., a book about a life of them in an alternate world who is God or a movie of them making love to someone). In return they have to offer three things of their own (e.g., a journal or a work of art). The Authority reminds me of LLMs (Large Language Models) creating alternate histories or endings to works of fiction and so on which are all the craze in 2024.
+
+I liked:
+
+* "Moon Six" by Stephen Baxter: An astronaut keeps transitioning between alternate realities.
+* "Twenty-Two Centimeters" by Gregory Benford: Nice setting. Humans go to a parallel Earth and meet aliens who have a message for them.
+* "The Thirteen Texts of Arthyria" John R. Fultz: Nice story. A man seeks and reads subsequent volumes of a book about the "One True World." With each book he is transported further into an alternate reality.
+* "Ruminations in an Alien Tongue" by Vandana Singh: Humans are studying an abandoned alien structure. A man keeps arriving from different timelines looking for his love, to no avail.
+* "Ten Sigmas" by Paul Melko: A man and his collective counterparts in all parallel worlds examine different choices of actions and their consequences on different worlds. E.g., if they decide to stop a kidnapper, most of them will die, but a few will survive.
+* "The Cristóbal Effect" by Simon McCaffery: Guy travels to alternate universes, changes the reality to create works of art that never existed. E.g., influence actors/directors to make movies that do not exist in his world. Then he sells them to the highest bidder in his world. The story mainly involves an actor who was not meant to be one, but becomes a miserable actor. In the end, he is caught by the authorities and placed into the actor's body just before his death in a car crash.
+  * Nice quote "All existence is a theft paid for by other existences; no life flowers except on a cemetery. — Remy de Gourmont"
+* "Signal to Noise" by Alastair Reynolds: It's possible to tap into alternate realities, but only for a few days before the signal to noise ratio becomes so bad that color vision and sense turn into black and white vision, then voice only and finally only text. Man who has recently lost his wife goes to an alternate reality for a few days to spend time with her alternate self. I think it's an allegory of his wife also experiencing losing him.
+* "Porridge on Islac" by Ursula K. Le Guin: Traveler goes to alternate worlds. In this specific world, people have mixed genes with plants and animals. Although, people with these mixed genes are considered second class citizens and inferior. It's an exploration of how different a world can be, because the gene scientists decided to mix everything together and messed up.
+* "Mrs. Todd's Shortcut" by Stephen King: A lady is obsessed with taking shortcuts during drives between states. The caretaker of her house travels with her by such a shortcut that is physically impossible. It might be a gateway to another world.
+* "The Ontological Factor" by David Barr Kirtley: Man goes to his deceased uncle's house to tally his belongings. He finds gateways to different worlds with different levels of sophistication (e.g., ours is a level 5, max is 10).
+* "Dear Annabehls" by Mercurio D. Rivera: Written in the style of letters to magazine columns and their answers. It talks about a world where traveling to parallel Earth's is possible so people come and go as they please and there can be multiples of someone.
+* "The Goat Variations" by Jeff VanderMeer: A US president is introduced to a secret project, a time machine. The president is visiting a school in September 2001 and experiences alternate realities of the 9/11 attacks happening. In some, it doesn't happen, in some he orders a nuclear strike and so on.
+* "Flower, Mercy, Needle, Chain" by Yoon Ha Lee: An ancient assassin is tasked with destroying a weapon. The weapon destroys the superior of the one who is shot.
+* "The Magician and the Maid and Other Stories" by Christie Yant: A woman is searching for his lost lover who left their village to become a powerful magician. She visits a magician in a different world for clues on how to find him. Turns out he is her lost lover and they were meant to be together in this reality.
+
+
+I didn't like or skipped:
+
+* "A Brief Guide to Other Histories" by Paul McAuley: A squad of soldiers go to an occupied alternate Earth. The main character goes to see his own double on alternate Earth.
+* "An Empty House with Many Doors" by Michael Swanwick: Guy who has lost his wife goes to an alternate reality and meets her. While it was a nice story, it was cliche. However, I think it was meant for readers who have lost someone close, so I cannot dismiss it as a bad story. Just not my cup of tea.
+* "Ana's Tag" by William Alexander: Girl's brother goes missing. He has gone to a magical land. She follows him.
+* "Nothing Personal" by Pat Cadigan: I lost interest a few pages in and skipped it.
+* "The Rose Wall" by Joyce Carol Oates: Kid leaves home to go into a city and enters an alternate universe where he has not been born.
+* "Magic for Beginners" by Kelly Link: I had already read it in "Ex Libris" (review above). It looks like a really nice story that I should "get." But I did not (again).
+* "[a ghost samba]" by Ian McDonald: Man finds an undiscovered music album from his favorite composer. Realizes there are infinite parallel universes.
+* "Beyond Porch and Portal" by E. Catherine Tobler: Lady in post industrial revolution Baltimore is transported to a magical world.
+* "Of Swords and Horses" by Carrie Vaughn: A girl goes missing. She returns for a brief visit and talks to her mother about her journey and life in a different world where they are fighting demons who want to destroy all realities.
+* "The City of Blind Delight" by Catherynne M. Valente: A man visits a different city with a train. While the setting appeared to be intriguing, I couldn't connect with the story. Sure, the other city is like another world, but how is it special?
+* "Angles" by Orson Scott Card: People have found a way to travel to alternate version of Earth. Japan is under the occupation of China in this world. A group of Japanese seek passage to a different Earth where they can live free.
+* "Trips" by Robert Silverberg: Man goes between parallel worlds in San Francisco. He meets different people and his wife in a different reality where they had not met. He returns home to find it, not being home, but a very close version of his reality which he has to leave again.
