@@ -11,7 +11,7 @@ wip: true
 snippet: "Small Burp Tips and Tricks."
 ---
 
-## Sharing Burp Projects without Secrets with Hackvertor
+# Sharing Burp Projects without Secrets with Hackvertor
 You want to share a Burp project with others without sharing tokens and secrets.
 
 1. Install [Hackvertor][hackvertor] (you probably already have it).
@@ -30,7 +30,7 @@ You want to share a Burp project with others without sharing tokens and secrets.
 
 [hackvertor]: https://github.com/hackvertor/hackvertor
 
-### Details
+## Details
 Recently, I was testing an API at work. Unsurprisingly, this API used an
 ~~AAD token~~ Entra ID token which is just a JWT.
 
@@ -77,14 +77,14 @@ And now you can share the project without any secrets.
 
 ![](token-06-oprah.jpg)
 
-### Other Benefits
+## Other Benefits
 This also works with secrets. Assume you have a client secret for getting a
 token, you can share the APIs without the token using the same method.
 
 This is also useful when tokens expire. Now you do not have to replace them in
 Burp Repeater/Scanner for older tabs. You can just update it in Hackvertor.
 
-### Limitations
+## Limitations
 This was done for a token that was valid for 24 hours and I was getting the
 token using a different method that was not a web API, so I did not need to do
 any automation. I mean, you could do automation, but I don't think it's worth it
@@ -94,6 +94,7 @@ A lot of folks automatically update their tokens using Burp macros. There are
 many blog posts showing how to do this. It looks like it's possible to update a
 Hackvertor variable from an extension, but I have not dived into this.
 
-See this [discussion on Twitter][twt].
+See this [discussion on Twitter][twt] about updating a custom Hackvertor tag
+from a Python script.
 
 [twt]: https://twitter.com/fransrosen/status/1361594153268871168
