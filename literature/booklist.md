@@ -368,8 +368,8 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Michael Mersault | The Deep Man 01 | [The Deep Man]({{<relref "bookreviews.md#deepman01">}}) | 2354 - 13 Nov 2023 |
 | Martha Wells | Murderbot Diaries 01 | [All Systems Red]({{<relref "bookreviews.md#murderbot01">}}) | 0215 - 15 Nov 2023 |
 | Christopher Ruocchio | Sun Eater 01 | [Empire of Silence]({{<relref "bookreviews.md#suneater01">}}) | 1926 - 21 Nov 2023 |
-| Gene Wolf | Book of the New Sun 01 | [The Shadow of the Torturer]({{<relref "bookreviews.md#newsun01">}}) | 0309 - 01 Dec 2023 |
-| Gene Wolf | Book of the New Sun 02 | [The Claw of the Conciliator]({{<relref "bookreviews.md#newsun02">}}) | 0241 - 04 Dec 2023 |
+| Gene Wolfe | Book of the New Sun 01 | [The Shadow of the Torturer]({{<relref "bookreviews.md#newsun01">}}) | 0309 - 01 Dec 2023 |
+| Gene Wolfe | Book of the New Sun 02 | [The Claw of the Conciliator]({{<relref "bookreviews.md#newsun02">}}) | 0241 - 04 Dec 2023 |
 | Gardner Dozois | Anthology | [Book of Swords]({{<relref "bookreviews.md#bookofswords">}}) | 1421 - 14 Dec 2023 |
 | Martha Wells | Murderbot Diaries 02 | [Artificial Condition]({{<relref "bookreviews.md#murderbot02">}}) | 2002 - 17 Dec 2023 |
 | Martha Wells | Murderbot Diaries 03 | [Rogue Protocol]({{<relref "bookreviews.md#murderbot03">}}) | 0223 - 19 Dec 2023 |
@@ -389,10 +389,16 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | Sean Patrick Hazlett | Anthology | [Weird World War IV]({{<relref "bookreviews.md#www4">}}) | 1824 - 27 Feb 2024 |
 | Jeff Somers | Avery Cates 01 | [The Electric Church]({{<relref "bookreviews.md#electricchurch">}}) | 2157 - 06 Mar 2024 |
 | Sean Patrick Hazlett | Anthology | [Weird World War III]({{<relref "bookreviews.md#www3">}}) | 1153 - 14 Mar 2024 |
-| Gene Wolf | | [The Sorcerer's House]({{<relref "bookreviews.md#srchouse">}}) | 1240 - 15 Mar 2024 |
+| Gene Wolfe | | [The Sorcerer's House]({{<relref "bookreviews.md#srchouse">}}) | 1240 - 15 Mar 2024 |
 | Sean Wallace | Anthology | [The Mammoth Book of Steampunk]({{<relref "bookreviews.md#steam">}}) | 2009 - 24 Mar 2024 |
 | James L. Cambias | | [Corsair]({{<relref "bookreviews.md#corsair">}}) | 1314 - 26 Mar 2024 |
 | Rhonda Parrish | Anthology | [Clockwork, Curses, and Coal]({{<relref "bookreviews.md#clockwork">}}) | 2121 - 06 Apr 2024 |
 | David Drake | RCN 02 | Lt Leary Commanding | 0130 - 24 Apr 2024 - 2nd time |
 | David Drake | RCN 03 | The Far Side of the Stars | 1941 - 28 Apr 2024 - 2nd time |
 | John J. Adams | Anthology | [Other Worlds Than These]({{<relref "bookreviews.md#otherworlds">}}) | 1633 - 25 Sep 2024 |
+| David Drake | RCN 04 | The Way to Glory | 0944 - 05 May 2024 - 2nd time |
+| Irene Gallo | Anthology | Worlds Seen in Passing | 1319 - 11 May 2024 |
+| Ray Bradbury | | The Illustrated Man | |
+| John Ringo & Brian Thomsen | Anthology | [Citizens]({{<relref "bookreviews.md#citizens>}}) | 0026 - 06 Feb 2025 | 
+| James L. Cambias | Billion Worlds 03 | [The Miranda Conspiracy]({{<relref "bookreviews.md#billion03">}}) | 1235 - 06 Oct 2025 |
+| Robert Silverberg | Anthology | [This Way to the End times]({{<relref "bookreviews.md#endtimes">}}) | 2002 - 10 Oct 2025 |

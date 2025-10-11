@@ -16,7 +16,8 @@ aliases:
 
 The local public library uses the bibliocommons platform. I've started adding
 short reviews for each of the books I've read. You can see most of them them at
-the bottom of the [book list](booklist.md).
+the bottom of the [book list]({{<relref "booklist.md">}}). I've tried to write
+spoiler-free reviews, but some parts have minor spoilers.
 
 The titles are
 "[author(s)] - [series (if any)] - [book name] - [finished timestamp] - [score/5]".
@@ -134,7 +135,7 @@ famous writer.
 ## Christopher Ruocchio & Tony Daniel - Star Destroyers (Anthology) - 3.5/5 {#stardestroyers}
 I gave this book 3.5/5 because not all of the stories were really revolving around "ships."
 
-My favorites:
+I loved:
 
 * "Superweapon" (disclosure: I am a huge [David Drake][david-drake] fan) and
   "Another Solution" were two of my favorites. Thoughtful and almost zero action
@@ -305,7 +306,7 @@ I liked most of the stories.
 I didn't like "Temporary Embarrassment in Spacetime", "Infinite Love Engine",
 "Dragon That Flew Out of the Sun", and "Diamond and the World Breaker."
 
-My favorites:
+I loved:
 
 * "The Deckhand, the Nova Blade, and the Thrice-Sung Texts": Story of a reluctant hero told through diary logs.
 * "Frost Giant's Data": Cyberpunk infiltration of a security planetoid.
@@ -335,7 +336,7 @@ story.
 Second anthology in the "Infinite Stars" series (see the previous one above). I
 don't think I skipped any stories in this one. [List of stories][l1].
 
-Some of my favorites:
+Some of I loved:
 
 * "The Traitor": Set in the Bolo universe by David Weber.
 * "Shambleau": Great story. I only skipped it because I had recently read it in
@@ -548,7 +549,7 @@ the first.
 
 [botns]: https://en.wikipedia.org/wiki/The_Book_of_the_New_Sun
 
-## Gene Wolf - Book of the New Sun 01 - The Shadow of the Torturer 3/5 {#newsun01}
+## Gene Wolfe - Book of the New Sun 01 - The Shadow of the Torturer 3/5 {#newsun01}
 I picked this up because of `Empire of Silence` (the review above).
 
 I am gonna be honest, people praise Gene's writing style. I hated it in this
@@ -562,7 +563,7 @@ how these things work anymore.
 
 Anyways, I just finished the book and moved to the 2nd.
 
-## Gene Wolf - Book of the New Sun 02 - The Claw of the Conciliator 4.5/5 {#newsun02}
+## Gene Wolfe - Book of the New Sun 02 - The Claw of the Conciliator 4.5/5 {#newsun02}
 I am glad I read the first book. This is much better. The pace is faster and the
 author actually figured out what they want to do with the main character.
 
@@ -593,7 +594,7 @@ Fantasy anthology. https://en.wikipedia.org/wiki/The_Book_of_Swords_(anthology).
 
 Starting from this story I am going to copy my favorite quotes from the books.
 
-My favorites:
+I loved:
 
 * "A Long, Cold Trail": Two members of the Council of the Treaty for Safety of
   the World (AKA fight unnatural evil) + an ally try to kill an unruly demigod.
@@ -945,7 +946,7 @@ Collection of short stories about libraries. I'd never read a book like this so
 the concept was intriguing. The introduction lists some related books that I am
 going to try, too.
 
-My favorites:
+I loved:
 
 * "In the Stacks": **This is my favorite story of the book**. A group of
   magicians fight their way through a magical library to retrieve/return books.
@@ -1024,7 +1025,7 @@ nukes. These short stories are about World War 4.
 Most stories assumed WW4 is happening soon after WW3 and is fought by humans.
 "Chaos Redeemed," "Mea Kaua," and "Lupus Belli" had new species.
 
-My favorites:
+I loved:
 
 * "Deep Trouble": The US is losing the war and some people decide to wake up
   something ancient. I did not expect the ending. Nicely done.
@@ -1107,7 +1108,7 @@ revolve around the US and USSR fighting either in alternate history or using
 magic/supernatural weapons. A lot of decent stories, but nothing to write home
 about.
 
-My favorites:
+I loved:
 
 * "Shadow Rook Red": The US and the USSR are fighting on both Earth and a shadow
   realm. People can go from one to the other quite easily with a "toggle
@@ -1154,8 +1155,8 @@ I didn't like or skipped:
   colonies are on the moon. A group of aliens arrive and clash with the
   colonists.
 
-## Gene Wolf - The Sorcerer's House - 4.5/5 {#srchouse}
-I was hesitant to pick up another Gene Wolf book after stopping in the middle of
+## Gene Wolfe - The Sorcerer's House - 4.5/5 {#srchouse}
+I was hesitant to pick up another Gene Wolfe book after stopping in the middle of
 the 3rd book of the new sun (The Sword of the Lictor).
 
 The book is written in the form of letters. I didn't know before, but this type
@@ -1175,7 +1176,7 @@ events).
 ## Sean Wallace - Anthology - The Mammoth Book of Steampunk - 3.5/5 {#steam}
 Big steampunk anthology. I did not skip any stories in this book.
 
-My favorites:
+I loved:
 
 * "Cinderella Suicide": **My favorite story of the book.** Convicts are sent to
   Australia to harvest extraterrestrial ores. Three of them are sent to find the source.
@@ -1279,7 +1280,7 @@ series (read the reviews of two books in that universe above).
 ## Rhonda Parrish - Anthology - Clockwork, Curses, and Coal - 2/5 {#clockwork}
 Quick and easy steampunk short stories.
 
-My favorites:
+I loved:
 
 * "Checkmate": **My favorite story in this book.** In an steampunk alternate
   universe, battles are fought by 16 representatives from each side. Each
@@ -1326,25 +1327,25 @@ I didn't like or skipped:
 * "Balance of Memory": A man is trying to resurrect the ghost of her late wife.
   His only child has evolved into two half-human, half-machine bodies.
 
-## John J.Adams - Anthology - Other Worlds Than These - 3/5 {#otherworlds}
-I started this book May 2024, but a bunch of real life stuff interrupted my
+## John J. Adams - Anthology - Other Worlds Than These - 3/5 {#otherworlds}
+I started this book in May 2024, but real life interrupted my
 reading (you can see the gap in the book list) and I finished the second half of
 the book in September 2024.
 
 This is an anthology about parallel worlds. I don't remember most of the stories
 in the first half of the book so my reviews might not be great. Usually, I write
-these reviews soon after finishing the book.
+these reviews right after finishing the book.
 
 **My absolute favorite story of the book** was "Crystal Halloway and the
-Forgotten Passage" by Seanan Mcguire. You can also read it online at
+Forgotten Passage" by Seanan McGuire. You can also read it online at
 https://www.fantasy-magazine.com/fm/fiction/crystal-halloway-and-the-forgotten-passage/.
 
 I loved it so much that I want to put it here to remember. It was one of the
-most depressingly fantastic stories I have ever ever read. The way we forget our
+most depressingly fantastic stories I have ever read. The way we forget our
 fantasies after we "grow up." Maybe we still read SFF and play videogames
 because it helps us keep that spark alive.
 
-The last part few paragraphs are depressing.
+The last few paragraphs are depressing.
 
 > And none of them, not Crystal, not her parents, could hear the distant,
 > thready sound of a giant spider—the Guardian of the Passage to the Beyond, the
@@ -1357,7 +1358,7 @@ My favorites (other than the one above):
 
 * "The Lonely Songs of Laren Dorr" by George R. R. Martin: Amazing story. A warrior travels between worlds through gates in search of her lover who was taken from him by the Gods. She enters an empty world with a single occupant who was banished there by the Gods. They stay together for a while. But eventually she has to leave.
 * "Impossible Dreams" by Tim Pratt: Movie buff visits a video store from an alternate reality where some movies have not been made or made with a different cast. He keeps going back every day to chat with the young attendant and falls in love with her.
-* "Like Minds" by Robert Reed: This was a really nice story. There's a being called "the Authority" that exists in all different realities and worlds. People can ask it for three things at a time (e.g., a book about a life of them in an alternate world who is God or a movie of them making love to someone). In return they have to offer three things of their own (e.g., a journal or a work of art). The Authority reminds me of LLMs (Large Language Models) creating alternate histories or endings to works of fiction and so on which are all the craze in 2024.
+* "Like Minds" by Robert Reed: This was a really nice story. There's a being called "the Authority" that exists in all different realities and worlds. People can ask it for three things at a time (e.g., a book about a life of theirs in an alternate world where they are God or a movie of them making love to someone). In return they have to offer three things of their own (e.g., a journal or a work of art). The Authority reminds me of LLMs (Large Language Models) creating alternate histories or endings to works of fiction and so on which are all the craze in 2024.
 
 I liked:
 
@@ -1369,14 +1370,13 @@ I liked:
 * "The Cristóbal Effect" by Simon McCaffery: Guy travels to alternate universes, changes the reality to create works of art that never existed. E.g., influence actors/directors to make movies that do not exist in his world. Then he sells them to the highest bidder in his world. The story mainly involves an actor who was not meant to be one, but becomes a miserable actor. In the end, he is caught by the authorities and placed into the actor's body just before his death in a car crash.
   * Nice quote "All existence is a theft paid for by other existences; no life flowers except on a cemetery. — Remy de Gourmont"
 * "Signal to Noise" by Alastair Reynolds: It's possible to tap into alternate realities, but only for a few days before the signal to noise ratio becomes so bad that color vision and sense turn into black and white vision, then voice only and finally only text. Man who has recently lost his wife goes to an alternate reality for a few days to spend time with her alternate self. I think it's an allegory of his wife also experiencing losing him.
-* "Porridge on Islac" by Ursula K. Le Guin: Traveler goes to alternate worlds. In this specific world, people have mixed genes with plants and animals. Although, people with these mixed genes are considered second class citizens and inferior. It's an exploration of how different a world can be, because the gene scientists decided to mix everything together and messed up.
+* "Porridge on Islac" by Ursula K. Le Guin: Traveler goes to alternate worlds. In this specific world, some people have mixed genes with plants and animals because the gene scientists decided to mix everything together and messed up. People with these mixed genes are considered second-class citizens and inferior. It's an exploration of how different a world can be.
 * "Mrs. Todd's Shortcut" by Stephen King: A lady is obsessed with taking shortcuts during drives between states. The caretaker of her house travels with her by such a shortcut that is physically impossible. It might be a gateway to another world.
 * "The Ontological Factor" by David Barr Kirtley: Man goes to his deceased uncle's house to tally his belongings. He finds gateways to different worlds with different levels of sophistication (e.g., ours is a level 5, max is 10).
-* "Dear Annabehls" by Mercurio D. Rivera: Written in the style of letters to magazine columns and their answers. It talks about a world where traveling to parallel Earth's is possible so people come and go as they please and there can be multiples of someone.
+* "Dear Annabehls" by Mercurio D. Rivera: Written in the style of letters to magazine columns and their answers. It talks about a world where traveling to parallel Earths is possible so people come and go as they please and there can be multiples of someone.
 * "The Goat Variations" by Jeff VanderMeer: A US president is introduced to a secret project, a time machine. The president is visiting a school in September 2001 and experiences alternate realities of the 9/11 attacks happening. In some, it doesn't happen, in some he orders a nuclear strike and so on.
 * "Flower, Mercy, Needle, Chain" by Yoon Ha Lee: An ancient assassin is tasked with destroying a weapon. The weapon destroys the superior of the one who is shot.
-* "The Magician and the Maid and Other Stories" by Christie Yant: A woman is searching for his lost lover who left their village to become a powerful magician. She visits a magician in a different world for clues on how to find him. Turns out he is her lost lover and they were meant to be together in this reality.
-
+* "The Magician and the Maid and Other Stories" by Christie Yant: A woman is searching for her lost lover who left their village to become a powerful magician. She visits a magician in a different world for clues on how to find him. Turns out he is her lost lover and they were meant to be together in this reality.
 
 I didn't like or skipped:
 
@@ -1392,3 +1392,91 @@ I didn't like or skipped:
 * "The City of Blind Delight" by Catherynne M. Valente: A man visits a different city with a train. While the setting appeared to be intriguing, I couldn't connect with the story. Sure, the other city is like another world, but how is it special?
 * "Angles" by Orson Scott Card: People have found a way to travel to alternate version of Earth. Japan is under the occupation of China in this world. A group of Japanese seek passage to a different Earth where they can live free.
 * "Trips" by Robert Silverberg: Man goes between parallel worlds in San Francisco. He meets different people and his wife in a different reality where they had not met. He returns home to find it, not being home, but a very close version of his reality which he has to leave again.
+
+## John Ringo & Brian Thomsen - Anthology - Citizens - {#citizens}
+Stories from veterans. Interestingly, I did not know Gene Wolfe and Arthur C.
+Clarke were veterans.
+
+I loved:
+
+* "Field Test" by Keith Laumer: Bolo stories are always fun. Bolos are autonomous fighting machines. Later generations (this one is generation 20) are very huge. This one was not authorized to perform a test, but a neighboring nation attacked and so the Bolo went on and saved the day "for the honor of the regiment."
+* "Horars of War" by Gene Wolfe: There's a clone army fighting a war. Embedded with them is a human who has pretended to be a clone to write stories. He bonds with them so much that he dies defending them and as one of them.
+* "Under the Hammer" by David Drake: I've read every Hammer's Slammers story at least three times, but I read it again. A new recruit's first firefight as a Slammer.
+  
+
+I liked:
+
+* "Allamagoosa" by Erik Frank Russell: A ship is getting inspected. They have to check that every part is present and accounted for. They see something named "offog" in their list that doesn't exist. So they claim they had one and it was destroyed. It turns out the item on the list was "Dog" and they claimed the ship dog disintegrated under gravitational stress.
+* "Exploration Team" by Murray Leinster: A guy is illegally colonizing a planet with some intelligent mutated bears (I think there was a bat, too). An inspector lands to investigate a legally established colony that used machines. They form a truce to figure out what happened to the last colony and survive. Moral of the story: those mutated living beings are superior to the machines for establishing colonies.
+* "Superiority" by Arthur C. Clarke: A letter from a general awaiting court martial that explains why their side lost a war despite being technologically superior to their enemy. They lost because they over-engineered their solutions.
+* "Peace With Honor" by Jerry Pournelle: A member of the current government is losing the next presidential election. Apparently, this means chaos. He sets up some members of the rival to fall in order to win. Turns out one of them is her daughter's fiancé, what a sacrifice, lol.
+  * I remember reading this story before, but I do not remember when or where. It is set in the Falkenberg's legion universe so it might have been there?
+  * You can read it with a few others in the sample chapters of ["The Best of Jerry Pournelle" on Baen's site][pr], maybe there?
+* "Time Piece" by Joe W. Haldeman: Interstellar war between humans and another species. Similar to "Forever War," the soldiers spend most of their time in transit while the world goes by. A vet has spent around 500 years in transit and cannot connect with society anymore, even the language has changed.
+* "Question" by Patrick A. Vanner: Good action scenes. A soldier is part of the guard duty for a diplomat who is making contact with a new species. The new species are cat-like. A member of the delegation is allergic to them and sneezes all over their leader (along with a lot of body fluids). This starts a shootout and the main character tries to extract the humans and escape.
+* "Long Watch" by Robert A. Heinlein: Mutineers want to take control of atomic bombs on the moon and nuke the Earth. A soldier stops them by sacrificing himself and dies of radioactivity.
+
+[pr]: https://www.baen.com/Chapters/9781982124175/9781982124175_toc.htm
+
+I didn't like or skipped:
+
+* "Fireproof" by Hal Clement: Countries have orbital stations with nuclear torpedoes as a form of deterrence. One spy infiltrates a rival country to destroy it.
+* "Neither Sleet, Nor Snow, Nor Alien Invasion" by Dave Freer: Comedy story. A postman (and zoologist) makes first contact with an invading species and makes a deal with them so humans become interstellar post and package delivery people.
+* "Light" by Kacey Grannis: Two American helicopter pilots crash in Iraq (I guess it's during the Iraq invasion). They flee on foot, but get captured. They turn into mythical shadow creatures that are invisible during the day.
+* "Price" by Michael Z. Williamson: Story in the Freehold universe. Part of the action where their covert teams destroyed UN assets at the end of the book. It's a good mil-scifi story if you skip the parts where Williamson is whining about the "woke," again, lol.
+* "Earth's First Improved Chimp Gets a Job as a Janitor" by John Ringo: "Good guy with a gun annihilates school invaders" fantasy, I mean it's Ringo after all. The good guy is a mutated first gen killing machine who works as a janitor and destroys all the bad people with an awakened generation two student.
+
+## James L. Cambias - Billion Worlds 03 - The Miranda Conspiracy - 5/5 {#billion03}
+Third book in the billion worlds universe (which is a favorite of mine). As
+usual Cambias is great with world building (6/5). I am not sure if the
+characters are just shallow or appear shallow compared to his excellent world
+building. They are very plain (3/5).
+
+I went to the New Westminster public library in British Columbia and was just
+browsing when I found it. It had been in the library for less than a month
+before. Overall, a great book, finished it in less than a day.
+
+This book continues the adventure from the first book. We have Adya, Zee, and our
+AI friend Daslakh. They have returned to Adya's home moon, Miranda. Adya is a
+member of the ruling elite (the sixty families). Her family has fallen on hard
+times.
+
+I will not spoil the ending, but the last few pages continued with the theme of
+some sort of evil being pulling strings from the shadows to make all the trouble
+in the three books in the series.
+
+## Robert Silverberg - Anthology - This Way to the End times - 4/5 {#endtimes}
+Collection of end stories about the end of the world or the human race.
+
+I loved:
+
+* "Guyal of Sfere" by Jack Vance: This was my favorite story. Guyal of Sfere (sphere?) sets out to find the Curator who has the answers to everything. The sun is dying and humanity is in a post civilization phase and is kinda feudal with some technology existing but it's mostly regarded as magic (there's also magic apparently). Unironically, the name of the book where this story was originally printed and the name of the setting is called "The Dying Earth."
+  * It reminded me of the Book of the New Sun series by Gene Wolfe.
+  * I will definitely read these series, soon. I am not sure why I never did. Looking at my [book list]({{<relref "booklist.md">}}) I read two Jack Vance stories in 2006 (The Last Castle and To Live Forever) and I never continued reading from him?
+* "Screwfly Solution" by James Tiptree Jr (pen name of Alice Bradley): My 2nd favorite story in the book. Humanity is killing itself off. The men appear to be infected with a virus that makes them kill women. It turns out this disease is induced by some extraterrestrial beings who want a new planet. The last sentences of the story is amazing:
+  * "But it wasn't an angel. *I think I saw a real estate agent*." 
+* "Heresies of the Huge God" by Brian W. Aldiss: This was a unique story about a very giant being (the Huge God) landing on Earth and changing the Earth's climate leading to the end of the world. It is narrated from the eyes of a priest of a religion created after worshiping this huge being.
+* "Daisy, in the Sun" by Connie Willis: More of a fantasy story. Daisy loves the sun and it turns out she is stuck in a world created from her last days on Earth before the sun went nova.
+  * I'd never heard of Connie Willis, but it looks like I might like her stories so I will try them.
+
+I liked:
+
+* "Eternal Adam" by Jules Verne: I started my sci-fi craze with Verne in my teens. This was a good story. A member of a future race of humans discovers a series of letters that explains why their entire civilization is on one big island and the rest of the planet is just water.
+* "Last Generation" by James Elroy Flecker: The wind of time takes a human to the future where he narrates the demise of society because a king makes every human sterile.
+* "Finis" by Frank Lillie Pollock: It turns out there's this big star in the center of the galaxy and well, humanity ends when the rays of this big star reach Earth. This was a novel "end of the world" cause.
+* "Coming of the Ice" by G. Peyton Wertenbaker: A man becomes immortal (and in the process loses emotions) and narrates the end of humanity when the entire planet goes into an ice age. He dies when he starts feeling love again.
+* "N Day" by Philip Latham: A modern day astronomer predicts the sun is going nova in a few days. No one believes him, but guess who has the last laugh?
+* "Pail of Air" by Fritz Leiber: The unique title is why it's in the "I liked" section instead of "I didn't like." It's a generic story. A black star has stolen Earth from the sun and carried it away. The Earth is cold and the air has frozen in layers so they literally have to go get buckets of oxygen. A kid and his family are barely surviving in this world, but not all hope is lost.
+* "New Atlantis" by Ursula K. Le Guin: A great story by any other writer, but a mediocre one from the great Ursula Le Guin. In a future US, an authoritarian bureaucracy has killed scientific innovation (ironically China is doing research) and has a tight grip on society by holding all forms of energy creation hostage. A group of renegade scientists create a new way to gather cheap solar energy, but the world is also ending from ecological disasters.
+* "When We Went to See the End of the World" by Robert Silverberg: In a dinner party, almost everyone has paid for an expensive trip "to the end of time." But they have all seen different endings that do not match. During the narration, there are news items and chatter about constant disasters happening in their current world (e.g., Los Angeles is destroyed by a quake or mutated amoeba is released into the wild). It was a clever way of saying people were paying to see a fabricated end of the world (their versions did not match) while the world is ending around them and they are too busy to notice.
+* "Wind and the Rain" by Robert Silverberg: The Earth has been destroyed but humanity survived by fleeing to the stars. The story is from the viewpoint of a future member of the ecological clean up crew on Earth. They explain the folly of ancient humans (e.g., storing radioactive waste that lasts for millions of years in barrels that last hundreds).
+
+I didn't like or skipped:
+
+* "Who Can Replace a Man?" Brian W. Aldiss: Humanity is dying so it created intelligent machines. Things with class 1 to class 8 brains (lower == more intelligent). The machines revolt and start fighting when there are no more orders from humans. A group of machines from a farm go far away from other machines to create their own civilization, but, well!
+* "After-images" by Malcolm Edwards: I would have skipped this if it wasn't short. The world ended and a village is surrounded by some walls of energy. Two inhabitants try to explore these.
+* "Three Days After" by Karen Haber: The world ended and a lady is either stuck in a time loop or just waiting to die. I didn't get it. Again, I did not skip it because it was only a few pages.
+* "Rain at the End of the World as We Know It" by Dale Bailey: Everyone is dead except one guy. He goes around the town and lives in a different house. A woman also shows up. He fixes her a drink.
+* "Final Exam" by Megan Arkenberg: This was a unique story told in the form of an exam's multiple choice questions and answer sheet. However, I did not connect with the story. Shambling horrors came out of the sea, killed people for a while and then left. This is the story of a woman and her estranged husband.
+* "Prayers to the Sun by a Dying Person" by Alvaro Zinos-Amaro: I did not connect with the story. A girl comes from the future to get help from a woman to save the world. They go to the end of time to find the cause of the end of the world.
+* "Last and First Men" by Olaf Stapledon: This is the last two (?) chapters of a book by the same name. It talks about the struggles of the 18th men (1st men are our species) who are doomed and are trying to propagate themselves through the galaxy.
