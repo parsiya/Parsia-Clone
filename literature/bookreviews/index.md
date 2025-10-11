@@ -1394,7 +1394,7 @@ I didn't like or skipped:
 * "Angles" by Orson Scott Card: People have found a way to travel to alternate version of Earth. Japan is under the occupation of China in this world. A group of Japanese seek passage to a different Earth where they can live free.
 * "Trips" by Robert Silverberg: Man goes between parallel worlds in San Francisco. He meets different people and his wife in a different reality where they had not met. He returns home to find it, not being home, but a very close version of his reality which he has to leave again.
 
-## John Ringo & Brian Thomsen - Anthology - Citizens - {#citizens}
+## John Ringo & Brian Thomsen - Anthology - Citizens - 3.5/5 {#citizens}
 Stories from veterans. Interestingly, I did not know Gene Wolfe and Arthur C.
 Clarke were veterans.
 
@@ -1403,7 +1403,6 @@ I loved:
 * "Field Test" by Keith Laumer: Bolo stories are always fun. Bolos are autonomous fighting machines. Later generations (this one is generation 20) are very huge. This one was not authorized to perform a test, but a neighboring nation attacked and so the Bolo went on and saved the day "for the honor of the regiment."
 * "Horars of War" by Gene Wolfe: There's a clone army fighting a war. Embedded with them is a human who has pretended to be a clone to write stories. He bonds with them so much that he dies defending them and as one of them.
 * "Under the Hammer" by David Drake: I've read every Hammer's Slammers story at least three times, but I read it again. A new recruit's first firefight as a Slammer.
-  
 
 I liked:
 
@@ -1421,11 +1420,11 @@ I liked:
 
 I didn't like or skipped:
 
-* "Fireproof" by Hal Clement: Countries have orbital stations with nuclear torpedoes as a form of deterrence. One spy infiltrates a rival country to destroy it.
+* "Fireproof" by Hal Clement: Countries have orbital stations with nuclear torpedoes as a form of deterrence. One spy infiltrates a rival country to destroy it. "Akshually, it was about physics in space."
 * "Neither Sleet, Nor Snow, Nor Alien Invasion" by Dave Freer: Comedy story. A postman (and zoologist) makes first contact with an invading species and makes a deal with them so humans become interstellar post and package delivery people.
 * "Light" by Kacey Grannis: Two American helicopter pilots crash in Iraq (I guess it's during the Iraq invasion). They flee on foot, but get captured. They turn into mythical shadow creatures that are invisible during the day.
 * "Price" by Michael Z. Williamson: Story in the Freehold universe. Part of the action where their covert teams destroyed UN assets at the end of the book. It's a good mil-scifi story if you skip the parts where Williamson is whining about the "woke," again, lol.
-* "Earth's First Improved Chimp Gets a Job as a Janitor" by John Ringo: "Good guy with a gun annihilates school invaders" fantasy, I mean it's Ringo after all. The good guy is a mutated first gen killing machine who works as a janitor and destroys all the bad people with an awakened generation two student.
+* "Earth's First Improved Chimp Gets a Job as a Janitor" by John Ringo: "Good guy with a gun annihilates school invaders" fantasy, I mean it's Ringo after all. The good guy is a mutated first gen killing chimp who works as a janitor and destroys all the bad people with an awakened generation two student (human this time).
 
 ## James L. Cambias - Billion Worlds 03 - The Miranda Conspiracy - 5/5 {#billion03}
 Third book in the billion worlds universe (which is a favorite of mine). As
@@ -1467,7 +1466,7 @@ I liked:
 * "Last Generation" by James Elroy Flecker: The wind of time takes a human to the future where he narrates the demise of society because a king makes every human sterile.
 * "Finis" by Frank Lillie Pollock: It turns out there's this big star in the center of the galaxy and well, humanity ends when the rays of this big star reach Earth. This was a novel "end of the world" cause.
 * "Coming of the Ice" by G. Peyton Wertenbaker: A man becomes immortal (and in the process loses emotions) and narrates the end of humanity when the entire planet goes into an ice age. He dies when he starts feeling love again.
-* "N Day" by Philip Latham: A modern day astronomer predicts the sun is going nova in a few days. No one believes him, but guess who has the last laugh?
+* "N Day" by Philip Latham: A modern-day astronomer predicts the sun is going nova in a few days. No one believes him, but guess who has the last laugh?
 * "Pail of Air" by Fritz Leiber: The unique title is why it's in the "I liked" section instead of "I didn't like." It's a generic story. A black star has stolen Earth from the sun and carried it away. The Earth is cold and the air has frozen in layers so they literally have to go get buckets of oxygen. A kid and his family are barely surviving in this world, but not all hope is lost.
 * "New Atlantis" by Ursula K. Le Guin: A great story by any other writer, but a mediocre one from the great Ursula Le Guin. In a future US, an authoritarian bureaucracy has killed scientific innovation (ironically China is doing research) and has a tight grip on society by holding all forms of energy creation hostage. A group of renegade scientists create a new way to gather cheap solar energy, but the world is also ending from ecological disasters.
   * Quote: "There are various degrees of death, and time spares us none of them."
