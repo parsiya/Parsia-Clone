@@ -435,7 +435,7 @@ cheesy and written like fan fiction.
 * [Western stories in space][gunfight]. 
 * [List of stories on bibliocommons][gunfight-list].
 
-These stories were really creative and blended the genres:
+I loved. These stories were really creative and blended the genres:
 
 * "Greenhorn" by Elizabeth Moon: A new farmer with a hidden agenda arrives in a
   space colony imitating the old wild west.
@@ -446,7 +446,7 @@ These stories were really creative and blended the genres:
   company creates a clone of an old western Gunslinger to deal with robbers. The
   clone is coming to terms with his existence.
 
-Western stories in space. Fun to read but nothing to write home about:
+I liked. Western stories in space. Fun to read but nothing to write home about:
 
 * "Penultimate Stand of Pina Gracchi": A classic "law enforcers break up the
   tyranny in a company town" western tale but in space and with aliens.
@@ -457,7 +457,7 @@ Western stories in space. Fun to read but nothing to write home about:
 * "Claim Jumped": Detective murder mystery in a mining asteroid. I liked how the
   sci-fi elements are mixed with the mystery, but the ending was meh.
 
-I did not like these:
+I didn't like or skipped:
 
 * "Showdown on Big Rock 27": An unfunny version of "kids bamboozle bad people."
 * "Last Stand at Europa Station A.": Are these aliens bad or what?
@@ -622,7 +622,7 @@ I loved:
 [merm]: https://www.beneath-ceaseless-skies.com/stories/the-mermaid-caper/
 [gorel]: https://www.goodreads.com/series/272116-gorel-of-goliris
 
-OK:
+I liked:
 
 * "The Best Man Wins": Stranger contracts a blacksmith to forge a sword. Twist ending.
 * ""I Am a Handsome Man," said Apollo Crow": Cursed crow(s) tracks down a revolutionary in ancient Rome.
@@ -641,7 +641,7 @@ OK:
 
 [quil]: https://www.goodreads.com/series/267729-quillifer
 
-I didn't like:
+I didn't like or skipped:
 
 * "Her Father's Sword": Kidnapped villagers return as selfish drones. Girl
   struggles to connect with the soulless husk of her father.
@@ -1186,6 +1186,7 @@ I loved:
     and unfortunately, did not appear in the Netflix adaptation. Honestly, a series
     of books about these deCom crews battling sentient machines would be awesome.
 * "The Steam Dancer (1896)": How a dancer with augments survived a city alone and how she found love there.
+  * Quote: "*Machines break down*, she thinks, *and the flesh is weak. Ain't nothing yet conjured by God nor man won't go and turn against you, sooner or later*.
 * "The Mechanical Aviary of Emperor Jala-ud-din Muhammad Akbar": This story
   reminded me of stories in [Kalila wa-Dimna][kalila]. A couple of intertwined
   fables about greed.
@@ -1453,6 +1454,7 @@ I loved:
 * "Guyal of Sfere" by Jack Vance: This was my favorite story. Guyal of Sfere (sphere?) sets out to find the Curator who has the answers to everything. The sun is dying and humanity is in a post civilization phase and is kinda feudal with some technology existing but it's mostly regarded as magic (there's also magic apparently). Unironically, the name of the book where this story was originally printed and the name of the setting is called "The Dying Earth."
   * It reminded me of the Book of the New Sun series by Gene Wolfe.
   * I will definitely read these series, soon. I am not sure why I never did. Looking at my [book list]({{<relref "booklist.md">}}) I read two Jack Vance stories in 2006 (The Last Castle and To Live Forever) and I never continued reading from him?
+  * Quote: "An ancient principle specifies that, in order to destroy a substance, the nature of the substance must be determined."
 * "Screwfly Solution" by James Tiptree Jr (pen name of Alice Bradley): My 2nd favorite story in the book. Humanity is killing itself off. The men appear to be infected with a virus that makes them kill women. It turns out this disease is induced by some extraterrestrial beings who want a new planet. The last sentences of the story is amazing:
   * "But it wasn't an angel. *I think I saw a real estate agent*." 
 * "Heresies of the Huge God" by Brian W. Aldiss: This was a unique story about a very giant being (the Huge God) landing on Earth and changing the Earth's climate leading to the end of the world. It is narrated from the eyes of a priest of a religion created after worshiping this huge being.
@@ -1468,6 +1470,8 @@ I liked:
 * "N Day" by Philip Latham: A modern day astronomer predicts the sun is going nova in a few days. No one believes him, but guess who has the last laugh?
 * "Pail of Air" by Fritz Leiber: The unique title is why it's in the "I liked" section instead of "I didn't like." It's a generic story. A black star has stolen Earth from the sun and carried it away. The Earth is cold and the air has frozen in layers so they literally have to go get buckets of oxygen. A kid and his family are barely surviving in this world, but not all hope is lost.
 * "New Atlantis" by Ursula K. Le Guin: A great story by any other writer, but a mediocre one from the great Ursula Le Guin. In a future US, an authoritarian bureaucracy has killed scientific innovation (ironically China is doing research) and has a tight grip on society by holding all forms of energy creation hostage. A group of renegade scientists create a new way to gather cheap solar energy, but the world is also ending from ecological disasters.
+  * Quote: "There are various degrees of death, and time spares us none of them."
+  * Quote: "sound is local, as sight is not."
 * "When We Went to See the End of the World" by Robert Silverberg: In a dinner party, almost everyone has paid for an expensive trip "to the end of time." But they have all seen different endings that do not match. During the narration, there are news items and chatter about constant disasters happening in their current world (e.g., Los Angeles is destroyed by a quake or mutated amoeba is released into the wild). It was a clever way of saying people were paying to see a fabricated end of the world (their versions did not match) while the world is ending around them and they are too busy to notice.
 * "Wind and the Rain" by Robert Silverberg: The Earth has been destroyed but humanity survived by fleeing to the stars. The story is from the viewpoint of a future member of the ecological clean up crew on Earth. They explain the folly of ancient humans (e.g., storing radioactive waste that lasts for millions of years in barrels that last hundreds).
 
@@ -1480,3 +1484,4 @@ I didn't like or skipped:
 * "Final Exam" by Megan Arkenberg: This was a unique story told in the form of an exam's multiple choice questions and answer sheet. However, I did not connect with the story. Shambling horrors came out of the sea, killed people for a while and then left. This is the story of a woman and her estranged husband.
 * "Prayers to the Sun by a Dying Person" by Alvaro Zinos-Amaro: I did not connect with the story. A girl comes from the future to get help from a woman to save the world. They go to the end of time to find the cause of the end of the world.
 * "Last and First Men" by Olaf Stapledon: This is the last two (?) chapters of a book by the same name. It talks about the struggles of the 18th men (1st men are our species) who are doomed and are trying to propagate themselves through the galaxy.
+* 

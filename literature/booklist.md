@@ -398,7 +398,7 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | John J. Adams | Anthology | [Other Worlds Than These]({{<relref "bookreviews.md#otherworlds">}}) | 1633 - 25 Sep 2024 |
 | David Drake | RCN 04 | The Way to Glory | 0944 - 05 May 2024 - 2nd time |
 | Irene Gallo | Anthology | Worlds Seen in Passing | 1319 - 11 May 2024 |
-| Ray Bradbury | | The Illustrated Man | |
-| John Ringo & Brian Thomsen | Anthology | [Citizens]({{<relref "bookreviews.md#citizens>}}) | 0026 - 06 Feb 2025 | 
+| Ray Bradbury | | The Illustrated Man | 0306 - 17 Jan 2025 |
+| John Ringo & Brian Thomsen | Anthology | [Citizens]({{<relref "bookreviews.md#citizens">}}) | 0026 - 06 Feb 2025 | 
 | James L. Cambias | Billion Worlds 03 | [The Miranda Conspiracy]({{<relref "bookreviews.md#billion03">}}) | 1235 - 06 Oct 2025 |
 | Robert Silverberg | Anthology | [This Way to the End times]({{<relref "bookreviews.md#endtimes">}}) | 2002 - 10 Oct 2025 |
