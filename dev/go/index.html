@@ -1,5 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Go</title>
-<link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.139.3"><meta name=twitter:card content="summary"><meta name=twitter:title content="Go"><meta name=twitter:description content="Note: You can use these notes instead, but it's nice to have everything in one page:
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Go</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.151.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="Go"><meta name=twitter:description content="Note: You can use these notes instead, but it's nice to have everything in one page:
 
 https://github.com/parsiya/Hacking-with-Go
 Gophercises - Lessons Learned
@@ -46,8 +45,8 @@ known as a "naked" return. <em>Don't use them.</em></p><div class=highlight><pre
 </span></span><span style=display:flex><span>	xPlusTwo = x <span style=color:#719e07>+</span> <span style=color:#2aa198>2</span>
 </span></span><span style=display:flex><span>	yPlusTwo = y <span style=color:#719e07>+</span> <span style=color:#2aa198>2</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Could do naked return too
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#719e07>return</span> xPlusTwo, yPlusTwo
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Could do naked return too</span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> xPlusTwo, yPlusTwo
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
@@ -89,14 +88,14 @@ on) and so the <code>:=</code> construct is not available.</p><div class=highlig
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#dc322f>string</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#dc322f>int</span>  <span style=color:#dc322f>int8</span>  <span style=color:#dc322f>int16</span>  <span style=color:#dc322f>int32</span>  <span style=color:#dc322f>int64</span>	<span style=color:#586e75>// use int unless you want a specific size
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#dc322f>uint</span> <span style=color:#dc322f>uint8</span> <span style=color:#dc322f>uint16</span> <span style=color:#dc322f>uint32</span> <span style=color:#dc322f>uint64</span> <span style=color:#dc322f>uintptr</span>	<span style=color:#586e75>// same here, use uint
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span><span style=color:#dc322f>byte</span> <span style=color:#586e75>// alias for uint8
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span><span style=color:#dc322f>rune</span> <span style=color:#586e75>// alias for int32
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>     <span style=color:#586e75>// represents a Unicode code point
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span><span style=color:#dc322f>int</span>  <span style=color:#dc322f>int8</span>  <span style=color:#dc322f>int16</span>  <span style=color:#dc322f>int32</span>  <span style=color:#dc322f>int64</span>	<span style=color:#586e75>// use int unless you want a specific size</span>
+</span></span><span style=display:flex><span><span style=color:#dc322f>uint</span> <span style=color:#dc322f>uint8</span> <span style=color:#dc322f>uint16</span> <span style=color:#dc322f>uint32</span> <span style=color:#dc322f>uint64</span> <span style=color:#dc322f>uintptr</span>	<span style=color:#586e75>// same here, use uint</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#dc322f>byte</span> <span style=color:#586e75>// alias for uint8</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#dc322f>rune</span> <span style=color:#586e75>// alias for int32</span>
+</span></span><span style=display:flex><span>     <span style=color:#586e75>// represents a Unicode code point</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#dc322f>float32</span> <span style=color:#dc322f>float64</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#dc322f>complex64</span> <span style=color:#dc322f>complex128</span>
@@ -110,8 +109,8 @@ in an <code>int</code> to skip the remainder.</p><p>Casting in Go is like this: 
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> a, b <span style=color:#dc322f>int</span> = <span style=color:#2aa198>20</span>, <span style=color:#2aa198>30</span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Need to convert a and b to float32 before the division
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#268bd2>var</span> div <span style=color:#dc322f>float32</span> = <span style=color:#b58900>float32</span>(a)<span style=color:#719e07>/</span><span style=color:#b58900>float32</span>(b)
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Need to convert a and b to float32 before the division</span>
+</span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> div <span style=color:#dc322f>float32</span> = <span style=color:#b58900>float32</span>(a)<span style=color:#719e07>/</span><span style=color:#b58900>float32</span>(b)
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> divInt = <span style=color:#b58900>int</span>(div)
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(div, divInt)
 </span></span><span style=display:flex><span>}
@@ -145,20 +144,20 @@ same line as for, if, etc.</li></ul><div class=highlight><pre tabindex=0 style=c
 </span></span><span style=display:flex><span>	i<span style=color:#719e07>++</span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Without the semicolons, it will be a <code>while</code> (<em>why not just have a while?</em>).</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span>i <span style=color:#719e07>:=</span> <span style=color:#2aa198>0</span>
-</span></span><span style=display:flex><span><span style=color:#719e07>for</span> i &lt;<span style=color:#2aa198>20</span> { <span style=color:#586e75>// while (i&lt;20)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	i<span style=color:#719e07>++</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>for</span> i &lt;<span style=color:#2aa198>20</span> { <span style=color:#586e75>// while (i&lt;20)</span>
+</span></span><span style=display:flex><span>	i<span style=color:#719e07>++</span>
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>Without the condition it will loop forever or <code>while(1)</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>for</span> {	<span style=color:#586e75>// while(1)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#719e07>...</span>
+</span></span></code></pre></div><p>Without the condition it will loop forever or <code>while(1)</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>for</span> {	<span style=color:#586e75>// while(1)</span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>...</span>
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>From <code>Effective Go</code> a better C/Golang comparison:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Like a C for
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>for</span> init; condition; post { }
+</span></span></code></pre></div><p>From <code>Effective Go</code> a better C/Golang comparison:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Like a C for</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>for</span> init; condition; post { }
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Like a C while
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>for</span> condition { }
+</span></span><span style=display:flex><span><span style=color:#586e75>// Like a C while</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>for</span> condition { }
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Like a C for(;;)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>for</span> { }
+</span></span><span style=display:flex><span><span style=color:#586e75>// Like a C for(;;)</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>for</span> { }
 </span></span></code></pre></div><h2 id=if>if
 <a class=header-link href=#if><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Does not need parenthesis (although you still can use them if you do not have a
 init component which is separated from the condition with a semicolon) but needs
@@ -172,8 +171,8 @@ end of the if."</p></blockquote><div class=highlight><pre tabindex=0 style=color
 </span></span><span style=display:flex><span>	<span style=color:#719e07>if</span> whatever <span style=color:#719e07>:=</span> <span style=color:#2aa198>20</span>; whatever &gt; <span style=color:#2aa198>10</span> {
 </span></span><span style=display:flex><span>		fmt.<span style=color:#268bd2>Println</span>(<span style=color:#2aa198>&#34;Inside if:&#34;</span>, whatever)
 </span></span><span style=display:flex><span>	}
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Cannot use the variable whatever here
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Cannot use the variable whatever here</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=else>else
 <a class=header-link href=#else><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><code>else</code> is similar to C else.</p><blockquote><p>Variables declared inside an if short statement are also available inside any
 of the else blocks.</p></blockquote><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>package</span> main
@@ -185,17 +184,17 @@ of the else blocks.</p></blockquote><div class=highlight><pre tabindex=0 style=c
 </span></span><span style=display:flex><span>	<span style=color:#719e07>if</span> whatever <span style=color:#719e07>:=</span> <span style=color:#2aa198>20</span>; whatever &gt; <span style=color:#2aa198>100</span> {
 </span></span><span style=display:flex><span>		fmt.<span style=color:#268bd2>Println</span>(<span style=color:#2aa198>&#34;Inside if:&#34;</span>, whatever)
 </span></span><span style=display:flex><span>	} <span style=color:#719e07>else</span> {
-</span></span><span style=display:flex><span>		<span style=color:#586e75>// Can use whatever here
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>		fmt.<span style=color:#268bd2>Println</span>(<span style=color:#2aa198>&#34;Inside else:&#34;</span>, whatever)
+</span></span><span style=display:flex><span>		<span style=color:#586e75>// Can use whatever here</span>
+</span></span><span style=display:flex><span>		fmt.<span style=color:#268bd2>Println</span>(<span style=color:#2aa198>&#34;Inside else:&#34;</span>, whatever)
 </span></span><span style=display:flex><span>	}
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Cannot use whatever here
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Cannot use whatever here</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=switch>switch
 <a class=header-link href=#switch><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Similar to C switch with some differences:</p><ul><li>Doesn't automatically go to the next <code>switch</code> statement unless you have
 <code>fallthough</code> at the end. "The <code>fallthrough</code> must be the last thing in the
 case."</li><li>Can have a short statement similar to if (the statement before the case that
-gets executed).</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Code taken from the tour
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>package</span> main
+gets executed).</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Code taken from the tour</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>package</span> main
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> (
 </span></span><span style=display:flex><span>	<span style=color:#2aa198>&#34;fmt&#34;</span>
@@ -210,9 +209,9 @@ gets executed).</li></ul><div class=highlight><pre tabindex=0 style=color:#93a1a
 </span></span><span style=display:flex><span>	<span style=color:#719e07>case</span> <span style=color:#2aa198>&#34;linux&#34;</span>:
 </span></span><span style=display:flex><span>		fmt.<span style=color:#268bd2>Println</span>(<span style=color:#2aa198>&#34;Linux.&#34;</span>)
 </span></span><span style=display:flex><span>	<span style=color:#719e07>default</span>:
-</span></span><span style=display:flex><span>		<span style=color:#586e75>// freebsd, openbsd,
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>		<span style=color:#586e75>// plan9, windows...
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>		fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%s.&#34;</span>, os)
+</span></span><span style=display:flex><span>		<span style=color:#586e75>// freebsd, openbsd,</span>
+</span></span><span style=display:flex><span>		<span style=color:#586e75>// plan9, windows...</span>
+</span></span><span style=display:flex><span>		fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%s.&#34;</span>, os)
 </span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We can still use <code>break</code> although it breaks at the end of every case.</p><blockquote><p>switch with no value is <code>switch true</code> and can be used to create long
@@ -264,30 +263,30 @@ is outside."</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgro
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(Student{<span style=color:#2aa198>&#34;John&#34;</span>, <span style=color:#2aa198>&#34;Smith&#34;</span>})
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// But we usually want to make instances(?) of structs
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	studentOne <span style=color:#719e07>:=</span> Student{<span style=color:#2aa198>&#34;Parsia&#34;</span>, <span style=color:#2aa198>&#34;H&#34;</span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// But we usually want to make instances(?) of structs</span>
+</span></span><span style=display:flex><span>	studentOne <span style=color:#719e07>:=</span> Student{<span style=color:#2aa198>&#34;Parsia&#34;</span>, <span style=color:#2aa198>&#34;H&#34;</span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Now we can access the fields using documents
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Println</span>(studentOne.FirstName)
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Now we can access the fields using documents</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(studentOne.FirstName)
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// We can just assign fields using names, anything not assigned will be
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// initialized with zero as we have seen before
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	studentTwo <span style=color:#719e07>:=</span> Student{FirstName: <span style=color:#2aa198>&#34;Ender&#34;</span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// We can just assign fields using names, anything not assigned will be</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// initialized with zero as we have seen before</span>
+</span></span><span style=display:flex><span>	studentTwo <span style=color:#719e07>:=</span> Student{FirstName: <span style=color:#2aa198>&#34;Ender&#34;</span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// We will print &#34;{Ender }&#34; notice the space after Ender which is supposed
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// to be the delimiter between the fields, LastName is nil because it is not
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// given a value
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Println</span>(studentTwo)	
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// We will print &#34;{Ender }&#34; notice the space after Ender which is supposed</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// to be the delimiter between the fields, LastName is nil because it is not</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// given a value</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(studentTwo)	
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Can make a pointer to a struct
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	p <span style=color:#719e07>:=</span> studentOne
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Can make a pointer to a struct</span>
+</span></span><span style=display:flex><span>	p <span style=color:#719e07>:=</span> studentOne
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Now instead of *p.LastName (doesn&#39;t work) we can just use p.LastName
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// fmt.Println((*p).LastName) will not work with error message: invalid indirect of p (type Student)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Println</span>(p.LastName)
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Now instead of *p.LastName (doesn&#39;t work) we can just use p.LastName</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// fmt.Println((*p).LastName) will not work with error message: invalid indirect of p (type Student)</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(p.LastName)
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Can just create a pointer out of the blue
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	p2 <span style=color:#719e07>:=</span> Student{<span style=color:#2aa198>&#34;Hercule&#34;</span>, <span style=color:#2aa198>&#34;Poirot&#34;</span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Can just create a pointer out of the blue</span>
+</span></span><span style=display:flex><span>	p2 <span style=color:#719e07>:=</span> Student{<span style=color:#2aa198>&#34;Hercule&#34;</span>, <span style=color:#2aa198>&#34;Poirot&#34;</span>}
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(p2)
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=arrays>Arrays
@@ -301,9 +300,9 @@ is outside."</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgro
 </span></span><span style=display:flex><span>	a[<span style=color:#2aa198>4</span>] = <span style=color:#2aa198>20</span>
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(a)
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// We can initialize arrays during creation
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// str[3] is empty
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	str <span style=color:#719e07>:=</span> [<span style=color:#2aa198>3</span>]<span style=color:#dc322f>string</span>{<span style=color:#2aa198>&#34;Ronny&#34;</span>, <span style=color:#2aa198>&#34;Johnson&#34;</span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// We can initialize arrays during creation</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// str[3] is empty</span>
+</span></span><span style=display:flex><span>	str <span style=color:#719e07>:=</span> [<span style=color:#2aa198>3</span>]<span style=color:#dc322f>string</span>{<span style=color:#2aa198>&#34;Ronny&#34;</span>, <span style=color:#2aa198>&#34;Johnson&#34;</span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(str)
 </span></span><span style=display:flex><span>}
@@ -314,27 +313,27 @@ via the slice, the array is modified.</p><div class=highlight><pre tabindex=0 st
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> <span style=color:#2aa198>&#34;fmt&#34;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Our favorite characters from the ThatHappened subreddit
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// If we do not specify a length, it will create a slice literal and
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// an underlying array as we will see later
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	thatHappened <span style=color:#719e07>:=</span> [<span style=color:#2aa198>3</span>]<span style=color:#dc322f>string</span>{<span style=color:#2aa198>&#34;RonnyJohnson&#34;</span>, <span style=color:#2aa198>&#34;AlbertEinstein&#34;</span>, <span style=color:#2aa198>&#34;MargaretHello&#34;</span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Our favorite characters from the ThatHappened subreddit</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// If we do not specify a length, it will create a slice literal and</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// an underlying array as we will see later</span>
+</span></span><span style=display:flex><span>	thatHappened <span style=color:#719e07>:=</span> [<span style=color:#2aa198>3</span>]<span style=color:#dc322f>string</span>{<span style=color:#2aa198>&#34;RonnyJohnson&#34;</span>, <span style=color:#2aa198>&#34;AlbertEinstein&#34;</span>, <span style=color:#2aa198>&#34;MargaretHello&#34;</span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Last index is non-inclusive - should have guessed
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// allMembers []string := thatHappened[0:3]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#268bd2>var</span> allMembers []<span style=color:#dc322f>string</span> = thatHappened[<span style=color:#2aa198>0</span>:<span style=color:#2aa198>3</span>]
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Last index is non-inclusive - should have guessed</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// allMembers []string := thatHappened[0:3]</span>
+</span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> allMembers []<span style=color:#dc322f>string</span> = thatHappened[<span style=color:#2aa198>0</span>:<span style=color:#2aa198>3</span>]
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(allMembers)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> lastTwoMembers []<span style=color:#dc322f>string</span> = thatHappened[<span style=color:#2aa198>1</span>:<span style=color:#2aa198>3</span>]
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(lastTwoMembers)
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Replace Ms.Hello with another popular character
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	allMembers[<span style=color:#2aa198>2</span>] = <span style=color:#2aa198>&#34;JoeDisney&#34;</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Replace Ms.Hello with another popular character</span>
+</span></span><span style=display:flex><span>	allMembers[<span style=color:#2aa198>2</span>] = <span style=color:#2aa198>&#34;JoeDisney&#34;</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Joe Disney added to the array
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Println</span>(thatHappened)
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Joe Disney added to the array</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(thatHappened)
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// The other slice changes
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Println</span>(lastTwoMembers)
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// The other slice changes</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(lastTwoMembers)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We can create array and slice literals. Meaning we can just initialize them by
@@ -346,14 +345,14 @@ slice). I guess it's maybe impossible.</p><div class=highlight><pre tabindex=0 s
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Slice literal of type struct, the underlying array is created automatically
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	sliceStruct <span style=color:#719e07>:=</span> []<span style=color:#268bd2>struct</span> {
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Slice literal of type struct, the underlying array is created automatically</span>
+</span></span><span style=display:flex><span>	sliceStruct <span style=color:#719e07>:=</span> []<span style=color:#268bd2>struct</span> {
 </span></span><span style=display:flex><span>		a,b <span style=color:#dc322f>int</span>
 </span></span><span style=display:flex><span>	}{
 </span></span><span style=display:flex><span>		{<span style=color:#2aa198>1</span>,<span style=color:#2aa198>2</span>},
 </span></span><span style=display:flex><span>		{<span style=color:#2aa198>3</span>,<span style=color:#2aa198>4</span>},
-</span></span><span style=display:flex><span>		{<span style=color:#2aa198>5</span>,<span style=color:#2aa198>6</span>},	<span style=color:#586e75>// need this comma in the end otherwise it will not work (why?)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	}
+</span></span><span style=display:flex><span>		{<span style=color:#2aa198>5</span>,<span style=color:#2aa198>6</span>},	<span style=color:#586e75>// need this comma in the end otherwise it will not work (why?)</span>
+</span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(sliceStruct)
 </span></span><span style=display:flex><span>
@@ -367,8 +366,8 @@ literal as seen above.</p><p>If we do not want to specify a length we can use <c
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	thatHappened <span style=color:#719e07>:=</span> [<span style=color:#719e07>...</span>]<span style=color:#dc322f>string</span>{<span style=color:#2aa198>&#34;RonnyJohnson&#34;</span>, <span style=color:#2aa198>&#34;AlbertEinstein&#34;</span>, <span style=color:#2aa198>&#34;MargaretHello&#34;</span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Joe Disney added to the array
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Println</span>(thatHappened)
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Joe Disney added to the array</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(thatHappened)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h3 id=slice-length-and-capacity>Slice length and capacity
@@ -388,17 +387,17 @@ ensures that the slice cannot go past the array.</li></ul><div class=highlight><
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice1 <span style=color:#719e07>:=</span> ints[<span style=color:#2aa198>2</span>:<span style=color:#2aa198>6</span>]
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=4 and cap=4 (from 3rd item of the array until the end)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#268bd2>printSlice</span>(slice1)
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=4 and cap=4 (from 3rd item of the array until the end)</span>
+</span></span><span style=display:flex><span>	<span style=color:#268bd2>printSlice</span>(slice1)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice1 = ints[<span style=color:#2aa198>2</span>:<span style=color:#2aa198>4</span>]
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=2 but cap will remain 4
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#268bd2>printSlice</span>(slice1)
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=2 but cap will remain 4</span>
+</span></span><span style=display:flex><span>	<span style=color:#268bd2>printSlice</span>(slice1)
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Copied from the tour
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>printSlice</span>(s []<span style=color:#dc322f>int</span>) {
+</span></span><span style=display:flex><span><span style=color:#586e75>// Copied from the tour</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>printSlice</span>(s []<span style=color:#dc322f>int</span>) {
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;len=%d cap=%d %v\n&#34;</span>, <span style=color:#b58900>len</span>(s), <span style=color:#b58900>cap</span>(s), s)
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h3 id=make-slices>make slices
@@ -414,27 +413,27 @@ type), we have to use <code>...</code> like this: <code>slice1 = append(slice1, 
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice1 <span style=color:#719e07>:=</span> <span style=color:#b58900>make</span>([]<span style=color:#dc322f>int</span>, <span style=color:#2aa198>10</span>)
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>printSlice</span>(slice1)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=10 cap=10 [0 0 0 0 0 0 0 0 0 0]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=10 cap=10 [0 0 0 0 0 0 0 0 0 0]</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice2 <span style=color:#719e07>:=</span> <span style=color:#b58900>make</span>([]<span style=color:#dc322f>int</span>, <span style=color:#2aa198>5</span>, <span style=color:#2aa198>10</span>)
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>printSlice</span>(slice2)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=5 cap=10 [0 0 0 0 0]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=5 cap=10 [0 0 0 0 0]</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice3 <span style=color:#719e07>:=</span> slice2[<span style=color:#2aa198>0</span>:<span style=color:#2aa198>0</span>]
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>printSlice</span>(slice3)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=0 cap=10 []
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=0 cap=10 []</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice1 = <span style=color:#b58900>append</span>(slice1, <span style=color:#2aa198>1</span>, <span style=color:#2aa198>2</span>)
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>printSlice</span>(slice1)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=12 cap=20 [0 0 0 0 0 0 0 0 0 0 1 2]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=12 cap=20 [0 0 0 0 0 0 0 0 0 0 1 2]</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice1 = <span style=color:#b58900>append</span>(slice1, slice2<span style=color:#719e07>...</span>)
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>printSlice</span>(slice1)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=17 cap=20 [0 0 0 0 0 0 0 0 0 0 1 2 0 0 0 0 0]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// len=17 cap=20 [0 0 0 0 0 0 0 0 0 0 1 2 0 0 0 0 0]</span>
+</span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Copied from the tour
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>printSlice</span>(x []<span style=color:#dc322f>int</span>) {
+</span></span><span style=display:flex><span><span style=color:#586e75>// Copied from the tour</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>printSlice</span>(x []<span style=color:#dc322f>int</span>) {
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;len=%d cap=%d %v\n&#34;</span>, <span style=color:#b58900>len</span>(x), <span style=color:#b58900>cap</span>(x), x)
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h3 id=range>Range
@@ -446,20 +445,20 @@ at that index. <code>for index, value := range slice</code>.</p><p><code>value</
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>	thatHappened <span style=color:#719e07>:=</span> [<span style=color:#2aa198>3</span>]<span style=color:#dc322f>string</span>{<span style=color:#2aa198>&#34;Ronny Johnson&#34;</span>, <span style=color:#2aa198>&#34;Albert Einstein&#34;</span>, <span style=color:#2aa198>&#34;Margaret Hello&#34;</span>}
 </span></span><span style=display:flex><span>	<span style=color:#719e07>for</span> index, value <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> thatHappened {
-</span></span><span style=display:flex><span>		<span style=color:#586e75>// No newline in the end of Printf but Println does not support formatting
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>		fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;thatHappened[%d]: %s\n&#34;</span>, index, value) 
+</span></span><span style=display:flex><span>		<span style=color:#586e75>// No newline in the end of Printf but Println does not support formatting</span>
+</span></span><span style=display:flex><span>		fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;thatHappened[%d]: %s\n&#34;</span>, index, value) 
 </span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(<span style=color:#2aa198>&#34;-----------&#34;</span>)
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Only using index
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#719e07>for</span> index <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> thatHappened {
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Only using index</span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>for</span> index <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> thatHappened {
 </span></span><span style=display:flex><span>		fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;thatHappened[%d]: %s\n&#34;</span>, index, thatHappened[index])
 </span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(<span style=color:#2aa198>&#34;-----------&#34;</span>)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Dropping index
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#719e07>for</span> _, value <span style=color:#719e07>:=</span><span style=color:#719e07>range</span> thatHappened {
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Dropping index</span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>for</span> _, value <span style=color:#719e07>:=</span><span style=color:#719e07>range</span> thatHappened {
 </span></span><span style=display:flex><span>		fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%s\n&#34;</span>, value)
 </span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>}
@@ -486,11 +485,11 @@ the object.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgrou
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> slice1 IntSlice = <span style=color:#b58900>make</span>([]<span style=color:#dc322f>int</span>, <span style=color:#2aa198>10</span>)
-</span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=10 cap=10 [0 0 0 0 0 0 0 0 0 0]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=10 cap=10 [0 0 0 0 0 0 0 0 0 0]</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> slice2 IntSlice = <span style=color:#b58900>make</span>([]<span style=color:#dc322f>int</span>, <span style=color:#2aa198>5</span>, <span style=color:#2aa198>10</span>)
-</span></span><span style=display:flex><span>	slice2.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=5 cap=10 [0 0 0 0 0]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	slice2.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=5 cap=10 [0 0 0 0 0]</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h3 id=pointer-receivers>Pointer Receivers
 <a class=header-link href=#pointer-receivers><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Pointer receivers get a pointer instead of a value but can modify the object
 that the pointer points to. Pointer receivers can be a pointer to a pointer
@@ -506,14 +505,14 @@ object. Probably only matters when passing large structs.</p><p><strong>All meth
 </span></span><span style=display:flex><span>	A, B <span style=color:#dc322f>int</span>
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Should not change the value of the object as it works on a copy of it
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> (x Tuple) <span style=color:#268bd2>ModifyTupleValue</span>() {
+</span></span><span style=display:flex><span><span style=color:#586e75>// Should not change the value of the object as it works on a copy of it</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> (x Tuple) <span style=color:#268bd2>ModifyTupleValue</span>() {
 </span></span><span style=display:flex><span>	x.A = <span style=color:#2aa198>2</span>
 </span></span><span style=display:flex><span>	x.B = <span style=color:#2aa198>2</span>
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Should change the value of the object
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> (x <span style=color:#719e07>*</span>Tuple) <span style=color:#268bd2>ModifyTuplePointer</span>() {
+</span></span><span style=display:flex><span><span style=color:#586e75>// Should change the value of the object</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> (x <span style=color:#719e07>*</span>Tuple) <span style=color:#268bd2>ModifyTuplePointer</span>() {
 </span></span><span style=display:flex><span>	x.A = <span style=color:#2aa198>3</span>
 </span></span><span style=display:flex><span>	x.B = <span style=color:#2aa198>3</span>
 </span></span><span style=display:flex><span>}
@@ -525,13 +524,13 @@ object. Probably only matters when passing large structs.</p><p><strong>All meth
 </span></span><span style=display:flex><span>		<span style=color:#b58900>len</span>(x), <span style=color:#b58900>cap</span>(x), x)
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Modifies the IntSlice although it&#39;s by value
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> (x IntSlice) <span style=color:#268bd2>ModifySliceValue</span>()  {
+</span></span><span style=display:flex><span><span style=color:#586e75>// Modifies the IntSlice although it&#39;s by value</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> (x IntSlice) <span style=color:#268bd2>ModifySliceValue</span>()  {
 </span></span><span style=display:flex><span>	x[<span style=color:#2aa198>0</span>] = <span style=color:#2aa198>1</span>
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Modifies the IntSlice
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> (x <span style=color:#719e07>*</span>IntSlice) <span style=color:#268bd2>ModifySlicePointer</span>()  {
+</span></span><span style=display:flex><span><span style=color:#586e75>// Modifies the IntSlice</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> (x <span style=color:#719e07>*</span>IntSlice) <span style=color:#268bd2>ModifySlicePointer</span>()  {
 </span></span><span style=display:flex><span>	(<span style=color:#719e07>*</span>x)[<span style=color:#2aa198>0</span>] = <span style=color:#2aa198>2</span>
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
@@ -540,22 +539,22 @@ object. Probably only matters when passing large structs.</p><p><strong>All meth
 </span></span><span style=display:flex><span>	nem <span style=color:#719e07>:=</span> Tuple{<span style=color:#2aa198>1</span>, <span style=color:#2aa198>1</span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	nem.<span style=color:#268bd2>ModifyTupleValue</span>()
-</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(nem)	<span style=color:#586e75>// {1 1}
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(nem)	<span style=color:#586e75>// {1 1}</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	nem.<span style=color:#268bd2>ModifyTuplePointer</span>()
-</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(nem)	<span style=color:#586e75>// {3 3}
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(nem)	<span style=color:#586e75>// {3 3}</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> slice1 IntSlice = <span style=color:#b58900>make</span>([]<span style=color:#dc322f>int</span>, <span style=color:#2aa198>5</span>)
-</span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=5 cap=5 [0 0 0 0 0]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=5 cap=5 [0 0 0 0 0]</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>ModifySliceValue</span>()
-</span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=5 cap=5 [1 0 0 0 0]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=5 cap=5 [1 0 0 0 0]</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>ModifySlicePointer</span>()
-</span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=5 cap=5 [2 0 0 0 0]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	slice1.<span style=color:#268bd2>PrintSlice</span>()	<span style=color:#586e75>// len=5 cap=5 [2 0 0 0 0]</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=interfaces>Interfaces
 <a class=header-link href=#interfaces><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><blockquote><p>An <em>interface type</em> is defined as a set of method signatures.</p><p>A value of interface type can hold any value that implements those methods.</p></blockquote><p>For example we will define an interface which has the method <code>MyPrint()</code>, now
 each type that has that method can be assigned to an interface of that type</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>package</span> main
@@ -587,12 +586,12 @@ each type that has that method can be assigned to an interface of that type</p><
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	thePrinter = float1
 </span></span><span style=display:flex><span>	thePrinter.<span style=color:#268bd2>MyPrint</span>()
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// 1.2345
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// 1.2345</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	thePrinter = int1
 </span></span><span style=display:flex><span>	thePrinter.<span style=color:#268bd2>MyPrint</span>()
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// 10
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// 10</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p><strong>Empty Interface</strong> is <code>interface {}</code> and can hold any type. Usually used to
 handle unknown types.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>package</span> main
@@ -607,24 +606,24 @@ handle unknown types.</p><div class=highlight><pre tabindex=0 style=color:#93a1a
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Use int
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	int1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>10</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Use int</span>
+</span></span><span style=display:flex><span>	int1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>10</span>
 </span></span><span style=display:flex><span>	emptyInterface = int1
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(emptyInterface)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// 10
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Use float
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	float1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>1.2345</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// 10</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Use float</span>
+</span></span><span style=display:flex><span>	float1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>1.2345</span>
 </span></span><span style=display:flex><span>	emptyInterface = float1
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(emptyInterface)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// 1.2345
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Use custom struct
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	tuple1 <span style=color:#719e07>:=</span> Tuple{<span style=color:#2aa198>5</span>, <span style=color:#2aa198>5</span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// 1.2345</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Use custom struct</span>
+</span></span><span style=display:flex><span>	tuple1 <span style=color:#719e07>:=</span> Tuple{<span style=color:#2aa198>5</span>, <span style=color:#2aa198>5</span>}
 </span></span><span style=display:flex><span>	emptyInterface = tuple1
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(emptyInterface)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// {5 5}
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// {5 5}</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We can access the value inside the interface like this
 <code>myFloat := myInterface(float64)</code>. If the interface does not contain a float,
@@ -639,18 +638,18 @@ interface has a float, <code>ok</code> will be <code>true</code> and otherwise <
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	myFloat, ok <span style=color:#719e07>:=</span> myInterface.(<span style=color:#dc322f>float64</span>)
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(myFloat, ok)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// 1234.5 true
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// 1234.5 true</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	myInt, ok <span style=color:#719e07>:=</span> myInterface.(<span style=color:#dc322f>int</span>)
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(myInt, ok)
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// 0 false -- which means it does not contain an int
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// This will trigger a panic
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#586e75>// myInt = myInterface.(int)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// 0 false -- which means it does not contain an int</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// This will trigger a panic</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// myInt = myInterface.(int)</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h3 id=type-switch>Type switch
-<a class=header-link href=#type-switch><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Do a switch on <code>interface.(type)</code>. Similar to what we did above.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Code copied from the tutorial
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>package</span> main
+<a class=header-link href=#type-switch><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Do a switch on <code>interface.(type)</code>. Similar to what we did above.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Code copied from the tutorial</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>package</span> main
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> <span style=color:#2aa198>&#34;fmt&#34;</span>
 </span></span><span style=display:flex><span>
@@ -666,10 +665,10 @@ interface has a float, <code>ok</code> will be <code>true</code> and otherwise <
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
-</span></span><span style=display:flex><span>	<span style=color:#268bd2>do</span>(<span style=color:#2aa198>21</span>)		<span style=color:#586e75>// Twice 21 is 42
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#268bd2>do</span>(<span style=color:#2aa198>&#34;hello&#34;</span>)	<span style=color:#586e75>// &#34;hello&#34; is 5 bytes long
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#268bd2>do</span>(<span style=color:#cb4b16>true</span>)	<span style=color:#586e75>// I don&#39;t know about type bool!
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	<span style=color:#268bd2>do</span>(<span style=color:#2aa198>21</span>)		<span style=color:#586e75>// Twice 21 is 42</span>
+</span></span><span style=display:flex><span>	<span style=color:#268bd2>do</span>(<span style=color:#2aa198>&#34;hello&#34;</span>)	<span style=color:#586e75>// &#34;hello&#34; is 5 bytes long</span>
+</span></span><span style=display:flex><span>	<span style=color:#268bd2>do</span>(<span style=color:#cb4b16>true</span>)	<span style=color:#586e75>// I don&#39;t know about type bool!</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h3 id=stringers>Stringers
 <a class=header-link href=#stringers><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Defined by the <code>fmt</code> package. Can describe itself as string.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#268bd2>type</span> Stringer <span style=color:#268bd2>interface</span> {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>String</span>() <span style=color:#dc322f>string</span>
@@ -693,9 +692,9 @@ with the <code>%v</code> format string <del>switch</del> verb.</p><div class=hig
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	tuple1 <span style=color:#719e07>:=</span> Tuple{<span style=color:#2aa198>10</span>, <span style=color:#2aa198>10</span>}
 </span></span><span style=display:flex><span>	tuple2 <span style=color:#719e07>:=</span> Tuple{<span style=color:#2aa198>20</span>, <span style=color:#2aa198>20</span>}
-</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(tuple1)	<span style=color:#586e75>// A: 10, B: 10
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Println</span>(tuple2)	<span style=color:#586e75>// A: 20, B: 20
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(tuple1)	<span style=color:#586e75>// A: 10, B: 10</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(tuple2)	<span style=color:#586e75>// A: 20, B: 20</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=solution-to-the-stringers-exercise>Solution to the Stringers exercise
 <a class=header-link href=#solution-to-the-stringers-exercise><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>package</span> main
 </span></span><span style=display:flex><span>
@@ -703,8 +702,8 @@ with the <code>%v</code> format string <del>switch</del> verb.</p><div class=hig
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>type</span> IPAddr [<span style=color:#2aa198>4</span>]<span style=color:#dc322f>byte</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// TODO: Add a &#34;String() string&#34; method to IPAddr.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> (ip IPAddr) <span style=color:#268bd2>String</span>() <span style=color:#dc322f>string</span> {
+</span></span><span style=display:flex><span><span style=color:#586e75>// TODO: Add a &#34;String() string&#34; method to IPAddr.</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> (ip IPAddr) <span style=color:#268bd2>String</span>() <span style=color:#dc322f>string</span> {
 </span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> fmt.<span style=color:#268bd2>Sprintf</span>(<span style=color:#2aa198>&#34;%v.%v.%v.%v&#34;</span>, ip[<span style=color:#2aa198>0</span>], ip[<span style=color:#2aa198>1</span>], ip[<span style=color:#2aa198>2</span>], ip[<span style=color:#2aa198>3</span>])
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
@@ -742,8 +741,8 @@ otherwise they will return <code>nil</code> for error which means no error.</p><
 </span></span><span style=display:flex><span>		<span style=color:#719e07>return</span> <span style=color:#2aa198>0</span>, <span style=color:#268bd2>ErrNegativeSqrt</span>(x)
 </span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Don&#39;t need else here
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#719e07>return</span> <span style=color:#2aa198>0</span>, <span style=color:#cb4b16>nil</span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Don&#39;t need else here</span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> <span style=color:#2aa198>0</span>, <span style=color:#cb4b16>nil</span>
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
@@ -753,15 +752,15 @@ otherwise they will return <code>nil</code> for error which means no error.</p><
 </span></span></code></pre></div><p><em>Skipped the rest of the module.</em></p><hr><h1 id=concurrency>Concurrency
 <a class=header-link href=#concurrency><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p><code>go function(a, b)</code> runs the function in parallel and continues with the rest of
 the program.</p><h2 id=channels>Channels
-<a class=header-link href=#channels><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Typed conduit. Support sending and receiving values using <code>&lt;-</code>.</p><p>Channels must be created before use.</p><blockquote><p>By default, sends and receives block until the other side is ready.</p></blockquote><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Make a channel of type int in honor of the famous hacker
-</span></span></span><span style=display:flex><span><span style=color:#586e75>// Note that we can only send/receive int via this channel
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>fourChan <span style=color:#719e07>:=</span> <span style=color:#b58900>make</span>(<span style=color:#268bd2>chan</span> <span style=color:#dc322f>int</span>)
+<a class=header-link href=#channels><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Typed conduit. Support sending and receiving values using <code>&lt;-</code>.</p><p>Channels must be created before use.</p><blockquote><p>By default, sends and receives block until the other side is ready.</p></blockquote><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Make a channel of type int in honor of the famous hacker</span>
+</span></span><span style=display:flex><span><span style=color:#586e75>// Note that we can only send/receive int via this channel</span>
+</span></span><span style=display:flex><span>fourChan <span style=color:#719e07>:=</span> <span style=color:#b58900>make</span>(<span style=color:#268bd2>chan</span> <span style=color:#dc322f>int</span>)
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Send to channel
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>fourChan <span style=color:#719e07>&lt;-</span> someInt
+</span></span><span style=display:flex><span><span style=color:#586e75>// Send to channel</span>
+</span></span><span style=display:flex><span>fourChan <span style=color:#719e07>&lt;-</span> someInt
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Receive data from channel
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>newInt <span style=color:#719e07>:=</span> <span style=color:#719e07>&lt;-</span> fourChan
+</span></span><span style=display:flex><span><span style=color:#586e75>// Receive data from channel</span>
+</span></span><span style=display:flex><span>newInt <span style=color:#719e07>:=</span> <span style=color:#719e07>&lt;-</span> fourChan
 </span></span></code></pre></div><h3 id=buffered-channels>Buffered channels
 <a class=header-link href=#buffered-channels><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>If channels are <code>buffered</code> then they will only block when the buffer is full.
 <code>fiveChan := make (chan int, 100)</code> will create a channel with a buffer size of
@@ -776,20 +775,20 @@ gets something.</p><h3 id=select>select
 <a class=header-link href=#select><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p><code>select</code> has some <code>case</code>s. It will block until one of the cases is ready and
 runs it. If multiple are ready, it will choose one at random.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>select</span>{
 </span></span><span style=display:flex><span><span style=color:#719e07>case</span> fourChan <span style=color:#719e07>&lt;-</span> x:
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Whatever
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>case</span> c <span style=color:#719e07>&lt;-</span> fiveChan:
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Whatever
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#719e07>default</span>:
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// This is run if no other case is ready
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Whatever</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>case</span> c <span style=color:#719e07>&lt;-</span> fiveChan:
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Whatever</span>
+</span></span><span style=display:flex><span><span style=color:#719e07>default</span>:
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// This is run if no other case is ready</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=syncmutex>sync.Mutex
 <a class=header-link href=#syncmutex><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><code>sync.Mutex</code> has two methods, <code>lock</code> and <code>unlock</code>. We can also <code>defer</code> the
 <code>unlock</code> if we want to return something and then unlock it like the <code>Value</code>
-method from the example.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Value returns the current value of the counter for the given key.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> (c <span style=color:#719e07>*</span>SafeCounter) <span style=color:#268bd2>Value</span>(key <span style=color:#dc322f>string</span>) <span style=color:#dc322f>int</span> {
+method from the example.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Value returns the current value of the counter for the given key.</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> (c <span style=color:#719e07>*</span>SafeCounter) <span style=color:#268bd2>Value</span>(key <span style=color:#dc322f>string</span>) <span style=color:#dc322f>int</span> {
 </span></span><span style=display:flex><span>	c.mux.<span style=color:#268bd2>Lock</span>()
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Lock so only one goroutine at a time can access the map c.v.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#719e07>defer</span> c.mux.<span style=color:#268bd2>Unlock</span>()
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Lock so only one goroutine at a time can access the map c.v.</span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>defer</span> c.mux.<span style=color:#268bd2>Unlock</span>()
 </span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> c.v[key]
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><hr><h1 id=printf-from-go-by-example>Printf from Go by example
@@ -821,45 +820,45 @@ happens.</p><h3 id=others>Others
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// struct type
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	struct1 <span style=color:#719e07>:=</span> myType{<span style=color:#2aa198>10</span>, <span style=color:#2aa198>&#34;Ronny&#34;</span>, <span style=color:#719e07>-</span><span style=color:#2aa198>10.2</span>}
-</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%v\n&#34;</span>, struct1)		<span style=color:#586e75>// {10 Ronny -10.2}
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%+v\n&#34;</span>, struct1)	<span style=color:#586e75>// {field1:10 field2:Ronny field3:-10.2}
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%#v\n&#34;</span>, struct1)	<span style=color:#586e75>// main.myType{field1:10, field2:&#34;Ronny&#34;, field3:-10.2}
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%T\n&#34;</span>, struct1)		<span style=color:#586e75>// main.myType
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// int
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	int1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>123</span>
-</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%v\n&#34;</span>, int1)		<span style=color:#586e75>// 123
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%d\n&#34;</span>, int1)		<span style=color:#586e75>// 123
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%6d|\n&#34;</span>, int1)		<span style=color:#586e75>// |   123|
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%-6d|\n&#34;</span>, int1)	<span style=color:#586e75>// |123   |
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%T\n&#34;</span>, int1)		<span style=color:#586e75>// int
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%x\n&#34;</span>, int1)		<span style=color:#586e75>// 7b
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%b\n&#34;</span>, int1)		<span style=color:#586e75>// 1111011
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%e\n&#34;</span>, int1)		<span style=color:#586e75>// %!e(int=123)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%c\n&#34;</span>, int1)		<span style=color:#586e75>// {
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// float
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	float1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>1234.56</span>
-</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%f\n&#34;</span>, float1)			<span style=color:#586e75>// 1234.560000
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%3.2f|\n&#34;</span>, float1)		<span style=color:#586e75>// |1234.56|
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%-3.2f|\n&#34;</span>, float1)	<span style=color:#586e75>// |1234.56|
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%e\n&#34;</span>, float1)			<span style=color:#586e75>// 1.234560e+03
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%E\n&#34;</span>, float1)			<span style=color:#586e75>// 1.234560E+03
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// string
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	string1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>&#34;Ronny&#34;</span>
-</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%s\n&#34;</span>, string1)			<span style=color:#586e75>// Ronny
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%10s|\n&#34;</span>, string1)		<span style=color:#586e75>// |     Ronny|
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%-10s|\n&#34;</span>, string1)	<span style=color:#586e75>// |Ronny     |
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%T\n&#34;</span>, string1)			<span style=color:#586e75>// string
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// boolean
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	boolean1 <span style=color:#719e07>:=</span> <span style=color:#cb4b16>true</span>
-</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%t\n&#34;</span>, boolean1)	<span style=color:#586e75>// true
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%T\n&#34;</span>, boolean1)	<span style=color:#586e75>// bool
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// struct type</span>
+</span></span><span style=display:flex><span>	struct1 <span style=color:#719e07>:=</span> myType{<span style=color:#2aa198>10</span>, <span style=color:#2aa198>&#34;Ronny&#34;</span>, <span style=color:#719e07>-</span><span style=color:#2aa198>10.2</span>}
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%v\n&#34;</span>, struct1)		<span style=color:#586e75>// {10 Ronny -10.2}</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%+v\n&#34;</span>, struct1)	<span style=color:#586e75>// {field1:10 field2:Ronny field3:-10.2}</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%#v\n&#34;</span>, struct1)	<span style=color:#586e75>// main.myType{field1:10, field2:&#34;Ronny&#34;, field3:-10.2}</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%T\n&#34;</span>, struct1)		<span style=color:#586e75>// main.myType</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// int</span>
+</span></span><span style=display:flex><span>	int1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>123</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%v\n&#34;</span>, int1)		<span style=color:#586e75>// 123</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%d\n&#34;</span>, int1)		<span style=color:#586e75>// 123</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%6d|\n&#34;</span>, int1)		<span style=color:#586e75>// |   123|</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%-6d|\n&#34;</span>, int1)	<span style=color:#586e75>// |123   |</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%T\n&#34;</span>, int1)		<span style=color:#586e75>// int</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%x\n&#34;</span>, int1)		<span style=color:#586e75>// 7b</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%b\n&#34;</span>, int1)		<span style=color:#586e75>// 1111011</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%e\n&#34;</span>, int1)		<span style=color:#586e75>// %!e(int=123)</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%c\n&#34;</span>, int1)		<span style=color:#586e75>// {</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// float</span>
+</span></span><span style=display:flex><span>	float1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>1234.56</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%f\n&#34;</span>, float1)			<span style=color:#586e75>// 1234.560000</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%3.2f|\n&#34;</span>, float1)		<span style=color:#586e75>// |1234.56|</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%-3.2f|\n&#34;</span>, float1)	<span style=color:#586e75>// |1234.56|</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%e\n&#34;</span>, float1)			<span style=color:#586e75>// 1.234560e+03</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%E\n&#34;</span>, float1)			<span style=color:#586e75>// 1.234560E+03</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// string</span>
+</span></span><span style=display:flex><span>	string1 <span style=color:#719e07>:=</span> <span style=color:#2aa198>&#34;Ronny&#34;</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%s\n&#34;</span>, string1)			<span style=color:#586e75>// Ronny</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%10s|\n&#34;</span>, string1)		<span style=color:#586e75>// |     Ronny|</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;|%-10s|\n&#34;</span>, string1)	<span style=color:#586e75>// |Ronny     |</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%T\n&#34;</span>, string1)			<span style=color:#586e75>// string</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// boolean</span>
+</span></span><span style=display:flex><span>	boolean1 <span style=color:#719e07>:=</span> <span style=color:#cb4b16>true</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%t\n&#34;</span>, boolean1)	<span style=color:#586e75>// true</span>
+</span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Printf</span>(<span style=color:#2aa198>&#34;%T\n&#34;</span>, boolean1)	<span style=color:#586e75>// bool</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h1 id=maps>Maps
 <a class=header-link href=#maps><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>Go map == hash table. Fast lookup/add/delete. Each key is associated with a
@@ -875,8 +874,8 @@ arrays/slices. In this case we get keys instead of indexes. Use it with a <code>
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> <span style=color:#2aa198>&#34;errors&#34;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>randomFunction</span>() (return1 <span style=color:#268bd2>interface</span>{}, err <span style=color:#dc322f>error</span>) {
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Whatever
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#268bd2>var</span> result <span style=color:#268bd2>interface</span>{}
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Whatever</span>
+</span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> result <span style=color:#268bd2>interface</span>{}
 </span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> result, errors.<span style=color:#268bd2>New</span>(<span style=color:#2aa198>&#34;Custom error string&#34;</span>)
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=hexdump>Hexdump
@@ -915,13 +914,13 @@ namespace having the same function name).</p><div class=highlight><pre tabindex=
 dev so I am biased), but it's a pain when debugging/testing. Send them to <code>_</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>package</span> main
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> (
-</span></span><span style=display:flex><span>    _ <span style=color:#2aa198>&#34;package name&#34;</span> <span style=color:#586e75>// gone to the dogs
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>)
+</span></span><span style=display:flex><span>    _ <span style=color:#2aa198>&#34;package name&#34;</span> <span style=color:#586e75>// gone to the dogs</span>
+</span></span><span style=display:flex><span>)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>    unUsedVar <span style=color:#719e07>:=</span> <span style=color:#2aa198>&#34;whatever&#34;</span>
-</span></span><span style=display:flex><span>    _ = unUsedVar	<span style=color:#586e75>// gone to the dogs
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span><span style=display:flex><span>    _ = unUsedVar	<span style=color:#586e75>// gone to the dogs</span>
+</span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=unix-timestamp-to-string>Unix Timestamp to String
 <a class=header-link href=#unix-timestamp-to-string><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>import</span> <span style=color:#2aa198>&#34;strconv&#34;</span>
 </span></span><span style=display:flex><span>
@@ -929,11 +928,11 @@ dev so I am biased), but it's a pain when debugging/testing. Send them to <code>
 </span></span></code></pre></div><h2 id=spawn-a-new-thread-goroutine-on-the-spot>Spawn a new thread (goroutine) on the spot
 <a class=header-link href=#spawn-a-new-thread-goroutine-on-the-spot><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Whatever
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Whatever</span>
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>	<span style=color:#719e07>go</span> <span style=color:#268bd2>func</span>() {
-</span></span><span style=display:flex><span>		<span style=color:#586e75>// Whatever happens in this goroutine
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	}()
+</span></span><span style=display:flex><span>		<span style=color:#586e75>// Whatever happens in this goroutine</span>
+</span></span><span style=display:flex><span>	}()
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=write-to-a-file-or-iobuffer-from-goroutines---dont>Write to a file or io.buffer from goroutines - DON'T
@@ -941,14 +940,14 @@ dev so I am biased), but it's a pain when debugging/testing. Send them to <code>
 goroutines, send stuff to the channel from goroutines. Make another goroutine
 that creates a file, does <code>defer fileHandle.Close()</code> (which makes closes the
 file after this goroutine ends) and then has an infinite loop where it reads
-from the channel and writes to a file.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// ...
-</span></span></span><span style=display:flex><span><span style=color:#586e75>// Logging channel- buffered so it&#39;s async
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>fourChan <span style=color:#719e07>:=</span> <span style=color:#b58900>make</span>(<span style=color:#268bd2>chan</span> <span style=color:#dc322f>string</span>, <span style=color:#2aa198>100</span>)
+from the channel and writes to a file.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// ...</span>
+</span></span><span style=display:flex><span><span style=color:#586e75>// Logging channel- buffered so it&#39;s async</span>
+</span></span><span style=display:flex><span>fourChan <span style=color:#719e07>:=</span> <span style=color:#b58900>make</span>(<span style=color:#268bd2>chan</span> <span style=color:#dc322f>string</span>, <span style=color:#2aa198>100</span>)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>go</span> <span style=color:#268bd2>func</span>() {
 </span></span><span style=display:flex><span>	<span style=color:#719e07>for</span> {
-</span></span><span style=display:flex><span>			<span style=color:#586e75>// Do something and get a string
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>			fourChan <span style=color:#719e07>&lt;-</span> string1
+</span></span><span style=display:flex><span>			<span style=color:#586e75>// Do something and get a string</span>
+</span></span><span style=display:flex><span>			fourChan <span style=color:#719e07>&lt;-</span> string1
 </span></span><span style=display:flex><span>		}
 </span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>}()
@@ -956,22 +955,22 @@ from the channel and writes to a file.</p><div class=highlight><pre tabindex=0 s
 </span></span><span style=display:flex><span><span style=color:#719e07>go</span> <span style=color:#268bd2>func</span>() {
 </span></span><span style=display:flex><span>	<span style=color:#719e07>for</span> {
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>		<span style=color:#586e75>// Do something else
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>		fourChan <span style=color:#719e07>&lt;-</span> string2
+</span></span><span style=display:flex><span>		<span style=color:#586e75>// Do something else</span>
+</span></span><span style=display:flex><span>		fourChan <span style=color:#719e07>&lt;-</span> string2
 </span></span><span style=display:flex><span>		}
 </span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>}()
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>go</span> <span style=color:#268bd2>func</span>() {
-</span></span><span style=display:flex><span>	<span style=color:#586e75>// Get a unique filename
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	dumpFile, _ <span style=color:#719e07>:=</span> os.<span style=color:#268bd2>Create</span>(<span style=color:#2aa198>&#34;whatever.txt&#34;</span>)
-</span></span><span style=display:flex><span>	<span style=color:#719e07>defer</span> dumpFile.<span style=color:#268bd2>Close</span>()  <span style=color:#586e75>// finally a good use for defer
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#719e07>for</span> {
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Get a unique filename</span>
+</span></span><span style=display:flex><span>	dumpFile, _ <span style=color:#719e07>:=</span> os.<span style=color:#268bd2>Create</span>(<span style=color:#2aa198>&#34;whatever.txt&#34;</span>)
+</span></span><span style=display:flex><span>	<span style=color:#719e07>defer</span> dumpFile.<span style=color:#268bd2>Close</span>()  <span style=color:#586e75>// finally a good use for defer</span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>for</span> {
 </span></span><span style=display:flex><span>		dumpFile.<span style=color:#268bd2>WriteString</span>(<span style=color:#719e07>&lt;-</span> fourChan)
 </span></span><span style=display:flex><span>	}
 </span></span><span style=display:flex><span>}()
-</span></span><span style=display:flex><span><span style=color:#586e75>// ...
-</span></span></span></code></pre></div><h2 id=generate-godoc-html-for-a-single-package>Generate godoc HTML for a Single Package
+</span></span><span style=display:flex><span><span style=color:#586e75>// ...</span>
+</span></span></code></pre></div><h2 id=generate-godoc-html-for-a-single-package>Generate godoc HTML for a Single Package
 <a class=header-link href=#generate-godoc-html-for-a-single-package><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>If godoc doesn't run locally because not all of your packages can be built
 (which is normal), create the HTML output for one single package to inspect:</p><pre tabindex=0><code>godoc -html cmd/github.com/user/package &gt; package-godoc.html
 </code></pre><h2 id=override-a-dependency-with-local-files>Override a Dependency with Local Files
@@ -1017,11 +1016,11 @@ from the channel and writes to a file.</p><div class=highlight><pre tabindex=0 s
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>myObjects <span style=color:#719e07>:=</span> <span style=color:#b58900>make</span>([]MyObj, <span style=color:#2aa198>10</span>)
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// ...
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Sort by Score
-</span></span></span><span style=display:flex><span><span style=color:#586e75>// We are passing a slice before sorting but underlying array will be sorted
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>sort.<span style=color:#268bd2>Slice</span>(myObjects[:], <span style=color:#268bd2>func</span>(i, j <span style=color:#dc322f>int</span>) <span style=color:#dc322f>bool</span> {
+</span></span><span style=display:flex><span><span style=color:#586e75>// ...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#586e75>// Sort by Score</span>
+</span></span><span style=display:flex><span><span style=color:#586e75>// We are passing a slice before sorting but underlying array will be sorted</span>
+</span></span><span style=display:flex><span>sort.<span style=color:#268bd2>Slice</span>(myObjects[:], <span style=color:#268bd2>func</span>(i, j <span style=color:#dc322f>int</span>) <span style=color:#dc322f>bool</span> {
 </span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> myObjects[i].Score &lt; myObjects[j].Score
 </span></span><span style=display:flex><span>})
 </span></span></code></pre></div><h2 id=append-two-slices>Append two slices
@@ -1040,8 +1039,8 @@ do:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(<span style=color:#b58900>string</span>(bytes))
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Some string1
-</span></span></span></code></pre></div><p>Now if we want to append two slices (e.g. two <code>[]byte</code>s) we need to do a bit of
+</span></span><span style=display:flex><span><span style=color:#586e75>// Some string1</span>
+</span></span></code></pre></div><p>Now if we want to append two slices (e.g. two <code>[]byte</code>s) we need to do a bit of
 magic because the second argument to append needs to be a <code>byte</code>:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>package</span> main
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> <span style=color:#2aa198>&#34;fmt&#34;</span>
@@ -1069,8 +1068,8 @@ members</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-c
 </span></span><span style=display:flex><span>	fmt.<span style=color:#268bd2>Println</span>(<span style=color:#b58900>string</span>(bytes1))
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// Some string Another string
-</span></span></span></code></pre></div><p>According to the documentation "As a special case, it is legal to append a
+</span></span><span style=display:flex><span><span style=color:#586e75>// Some string Another string</span>
+</span></span></code></pre></div><p>According to the documentation "As a special case, it is legal to append a
 string to a byte slice, like this:""</p><ul><li><code>slice = append([]byte("hello "), "world"...)"</code></li></ul><h1 id=generics>Generics
 <a class=header-link href=#generics><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p><del>lol no generics</del>!</p><h2 id=diff-two-generic-slices>Diff Two Generic Slices
 <a class=header-link href=#diff-two-generic-slices><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#268bd2>func</span> diffSlice[E comparable](first, second []E) (missing []E) {
@@ -1082,27 +1081,27 @@ string to a byte slice, like this:""</p><ul><li><code>slice = append([]byte("hel
 </span></span><span style=display:flex><span>	<span style=color:#719e07>return</span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=nil-generic-slice-and-map>Nil Generic Slice and Map
-<a class=header-link href=#nil-generic-slice-and-map><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// nilSlice creates a nil slice of type t.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> nilSlice[T any]() []T {
+<a class=header-link href=#nil-generic-slice-and-map><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// nilSlice creates a nil slice of type t.</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> nilSlice[T <span style=color:#dc322f>any</span>]() []T {
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> t []T
 </span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> t
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Unfortunately, the <code>map</code> is not as simple. This function technically creates a
-<code>nil</code> map but it's useless.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// nilMap creates a nil map[T1]T2.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> nilMap[T1 comparable, T2 any]() <span style=color:#268bd2>map</span>[T1]T2 {
+<code>nil</code> map but it's useless.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// nilMap creates a nil map[T1]T2.</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> nilMap[T1 comparable, T2 <span style=color:#dc322f>any</span>]() <span style=color:#268bd2>map</span>[T1]T2 {
 </span></span><span style=display:flex><span>	<span style=color:#268bd2>var</span> m <span style=color:#268bd2>map</span>[T1]T2
 </span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> m
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>We cannot do <code>make(m, 0)</code> because it's not a type. We cannot assign items to it
 because it's not initialized.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span>myMap <span style=color:#719e07>:=</span> nilMap[<span style=color:#dc322f>string</span>, <span style=color:#dc322f>string</span>]()
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#586e75>// error here - assignment to entry in nil map
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>myMap[<span style=color:#2aa198>&#34;1&#34;</span>] = <span style=color:#2aa198>&#34;val&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#586e75>// error here - assignment to entry in nil map</span>
+</span></span><span style=display:flex><span>myMap[<span style=color:#2aa198>&#34;1&#34;</span>] = <span style=color:#2aa198>&#34;val&#34;</span>
 </span></span></code></pre></div><p>We have to assign an empty map to it:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span>myMap <span style=color:#719e07>:=</span> nilMap[<span style=color:#dc322f>string</span>, <span style=color:#dc322f>string</span>]()
 </span></span><span style=display:flex><span>myMap = <span style=color:#268bd2>map</span>[T1]T2{}
 </span></span><span style=display:flex><span>myMap[<span style=color:#2aa198>&#34;1&#34;</span>] = <span style=color:#2aa198>&#34;val&#34;</span>
-</span></span></code></pre></div><p>So instead we return an empty map.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// emptyMap creates an initialized empty map[T1]T2.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> emptyMap[T1 comparable, T2 any]() <span style=color:#268bd2>map</span>[T1]T2 {
+</span></span></code></pre></div><p>So instead we return an empty map.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// emptyMap creates an initialized empty map[T1]T2.</span>
+</span></span><span style=display:flex><span><span style=color:#268bd2>func</span> emptyMap[T1 comparable, T2 <span style=color:#dc322f>any</span>]() <span style=color:#268bd2>map</span>[T1]T2 {
 </span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> <span style=color:#268bd2>map</span>[T1]T2{}
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=deep-copy>Deep Copy
@@ -1123,5 +1122,5 @@ be copied like:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;back
 </span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> tmpPerson
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div></div><footer><p class=meta><span class=categories>Tags:
-<a class=category href=https://parsiya.io/tags/go>Go</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#packages-variables-and-functions>Packages, variables, and functions</a><ul><li><a href=#exported-names>Exported names</a></li><li><a href=#functions>Functions</a></li><li><a href=#multiple-results>Multiple results</a></li><li><a href=#named-return-values>Named return values</a></li><li><a href=#variables>Variables</a><ul><li><a href=#initialize>Initialize:</a></li><li><a href=#short-variable-declarations>Short variable declarations</a></li></ul></li><li><a href=#basic-types>Basic types</a></li><li><a href=#casting>Casting</a></li><li><a href=#constants>Constants</a></li></ul></li><li><a href=#flow-control-statements-for-if-else-switch-and-defer>Flow control statements: for, if, else, switch and defer</a><ul><li><a href=#for>For</a></li><li><a href=#if>if</a></li><li><a href=#else>else</a></li><li><a href=#switch>switch</a></li><li><a href=#defer>defer</a></li></ul></li><li><a href=#more-types-structs-slices-and-maps>More types: structs, slices, and maps</a><ul><li><a href=#pointers>Pointers</a></li><li><a href=#structs>Structs</a></li><li><a href=#arrays>Arrays</a></li><li><a href=#slices>Slices</a><ul><li><a href=#slice-length-and-capacity>Slice length and capacity</a></li><li><a href=#make-slices>make slices</a></li><li><a href=#range>Range</a></li></ul></li></ul></li><li><a href=#methods-and-interfaces>Methods and interfaces</a><ul><li><a href=#methods>Methods</a><ul><li><a href=#pointer-receivers>Pointer Receivers</a></li></ul></li><li><a href=#interfaces>Interfaces</a><ul><li><a href=#type-switch>Type switch</a></li><li><a href=#stringers>Stringers</a></li></ul></li><li><a href=#solution-to-the-stringers-exercise>Solution to the Stringers exercise</a></li><li><a href=#errors>Errors</a></li><li><a href=#solution-to-the-errors-exercise>Solution to the Errors exercise</a></li></ul></li><li><a href=#concurrency>Concurrency</a><ul><li><a href=#channels>Channels</a><ul><li><a href=#buffered-channels>Buffered channels</a></li><li><a href=#closing-channels>Closing channels</a></li><li><a href=#reading-information-from-channels>Reading information from channels</a></li><li><a href=#select>select</a></li></ul></li><li><a href=#syncmutex>sync.Mutex</a></li></ul></li><li><a href=#printf-from-go-by-example>Printf from Go by example</a><ul><li><a href=#switches-verbs><del>Switches</del> Verbs</a><ul><li><a href=#decimals>Decimals</a></li><li><a href=#floats>Floats</a></li><li><a href=#value>Value</a></li><li><a href=#strings>Strings</a></li><li><a href=#others>Others</a></li></ul></li></ul></li><li><a href=#maps>Maps</a></li><li><a href=#other-tips-and-tricks>Other tips and tricks</a><ul><li><a href=#errors-1>Errors</a></li><li><a href=#hexdump>Hexdump</a></li><li><a href=#named-imports>Named imports</a></li><li><a href=#importing-a-package-into-the-current-namespace>Importing a package into the current namespace</a></li><li><a href=#avoiding-the-damn-unused-warnings>Avoiding the damn unused warnings</a></li><li><a href=#unix-timestamp-to-string>Unix Timestamp to String</a></li><li><a href=#spawn-a-new-thread-goroutine-on-the-spot>Spawn a new thread (goroutine) on the spot</a></li><li><a href=#write-to-a-file-or-iobuffer-from-goroutines---dont>Write to a file or io.buffer from goroutines - DON'T</a></li><li><a href=#generate-godoc-html-for-a-single-package>Generate godoc HTML for a Single Package</a></li><li><a href=#override-a-dependency-with-local-files>Override a Dependency with Local Files</a></li></ul></li><li><a href=#what-i-learned-from-cryptopals>What I Learned from Cryptopals</a><ul><li><a href=#long-string-on-multiple-lines>Long string on multiple lines</a></li><li><a href=#compare-two-bytes-with-bytesequal>Compare two []bytes with bytes.equal</a></li><li><a href=#sorting-a-arrayslice-of-struct-by-field>Sorting a array/slice of struct by field</a></li><li><a href=#append-two-slices>Append two slices</a></li></ul></li><li><a href=#generics>Generics</a><ul><li><a href=#diff-two-generic-slices>Diff Two Generic Slices</a></li><li><a href=#nil-generic-slice-and-map>Nil Generic Slice and Map</a></li><li><a href=#deep-copy>Deep Copy</a></li></ul></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2024 Parsia-Clone - <a href=https://parsiya.io/license/>License</a> -
+<a class=category href=https://parsiya.io/tags/go>Go</a></span></p></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#packages-variables-and-functions>Packages, variables, and functions</a><ul><li><a href=#exported-names>Exported names</a></li><li><a href=#functions>Functions</a></li><li><a href=#multiple-results>Multiple results</a></li><li><a href=#named-return-values>Named return values</a></li><li><a href=#variables>Variables</a><ul><li><a href=#initialize>Initialize:</a></li><li><a href=#short-variable-declarations>Short variable declarations</a></li></ul></li><li><a href=#basic-types>Basic types</a></li><li><a href=#casting>Casting</a></li><li><a href=#constants>Constants</a></li></ul></li><li><a href=#flow-control-statements-for-if-else-switch-and-defer>Flow control statements: for, if, else, switch and defer</a><ul><li><a href=#for>For</a></li><li><a href=#if>if</a></li><li><a href=#else>else</a></li><li><a href=#switch>switch</a></li><li><a href=#defer>defer</a></li></ul></li><li><a href=#more-types-structs-slices-and-maps>More types: structs, slices, and maps</a><ul><li><a href=#pointers>Pointers</a></li><li><a href=#structs>Structs</a></li><li><a href=#arrays>Arrays</a></li><li><a href=#slices>Slices</a><ul><li><a href=#slice-length-and-capacity>Slice length and capacity</a></li><li><a href=#make-slices>make slices</a></li><li><a href=#range>Range</a></li></ul></li></ul></li><li><a href=#methods-and-interfaces>Methods and interfaces</a><ul><li><a href=#methods>Methods</a><ul><li><a href=#pointer-receivers>Pointer Receivers</a></li></ul></li><li><a href=#interfaces>Interfaces</a><ul><li><a href=#type-switch>Type switch</a></li><li><a href=#stringers>Stringers</a></li></ul></li><li><a href=#solution-to-the-stringers-exercise>Solution to the Stringers exercise</a></li><li><a href=#errors>Errors</a></li><li><a href=#solution-to-the-errors-exercise>Solution to the Errors exercise</a></li></ul></li><li><a href=#concurrency>Concurrency</a><ul><li><a href=#channels>Channels</a><ul><li><a href=#buffered-channels>Buffered channels</a></li><li><a href=#closing-channels>Closing channels</a></li><li><a href=#reading-information-from-channels>Reading information from channels</a></li><li><a href=#select>select</a></li></ul></li><li><a href=#syncmutex>sync.Mutex</a></li></ul></li><li><a href=#printf-from-go-by-example>Printf from Go by example</a><ul><li><a href=#switches-verbs><del>Switches</del> Verbs</a><ul><li><a href=#decimals>Decimals</a></li><li><a href=#floats>Floats</a></li><li><a href=#value>Value</a></li><li><a href=#strings>Strings</a></li><li><a href=#others>Others</a></li></ul></li></ul></li><li><a href=#maps>Maps</a></li><li><a href=#other-tips-and-tricks>Other tips and tricks</a><ul><li><a href=#errors-1>Errors</a></li><li><a href=#hexdump>Hexdump</a></li><li><a href=#named-imports>Named imports</a></li><li><a href=#importing-a-package-into-the-current-namespace>Importing a package into the current namespace</a></li><li><a href=#avoiding-the-damn-unused-warnings>Avoiding the damn unused warnings</a></li><li><a href=#unix-timestamp-to-string>Unix Timestamp to String</a></li><li><a href=#spawn-a-new-thread-goroutine-on-the-spot>Spawn a new thread (goroutine) on the spot</a></li><li><a href=#write-to-a-file-or-iobuffer-from-goroutines---dont>Write to a file or io.buffer from goroutines - DON'T</a></li><li><a href=#generate-godoc-html-for-a-single-package>Generate godoc HTML for a Single Package</a></li><li><a href=#override-a-dependency-with-local-files>Override a Dependency with Local Files</a></li></ul></li><li><a href=#what-i-learned-from-cryptopals>What I Learned from Cryptopals</a><ul><li><a href=#long-string-on-multiple-lines>Long string on multiple lines</a></li><li><a href=#compare-two-bytes-with-bytesequal>Compare two []bytes with bytes.equal</a></li><li><a href=#sorting-a-arrayslice-of-struct-by-field>Sorting a array/slice of struct by field</a></li><li><a href=#append-two-slices>Append two slices</a></li></ul></li><li><a href=#generics>Generics</a><ul><li><a href=#diff-two-generic-slices>Diff Two Generic Slices</a></li><li><a href=#nil-generic-slice-and-map>Nil Generic Slice and Map</a></li><li><a href=#deep-copy>Deep Copy</a></li></ul></li></ul></nav></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2025 Parsia-Clone - <a href=https://parsiya.io/license/>License</a> -
 <span class=credit>Powered by <a target=_blank href=https://gohugo.io rel="noopener noreferrer">Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/ rel="noopener noreferrer">Hugo-Octopress</a> theme.</p></footer></body></html>
