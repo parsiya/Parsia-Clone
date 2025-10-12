@@ -55,7 +55,7 @@ peeling. Watch the video to see what I mean.
 
 https://www.youtube.com/watch?v=zKTb6mEviHU
 
-After putting the paper on the map use something like a roller to push it to the
+After putting the paper on the mat use something like a roller to push it to the
 mat so it's attached firmly. If the mat has lost stickiness, clean it with
 rubbing alcohol (do not overdo it) and it will regain it.
 
@@ -69,7 +69,7 @@ If the cut around offsets is not enough you can change the paper size to
 something thicker so the machine will apply more force. I did not have to do it.
 
 ### Smoothing Shapes
-If the shape is not smooth. E.g., if it was a picture and it has jagged edges,
+If the shape is not smooth, e.g., if it was a picture and it has jagged edges,
 the cutting takes a while. This happened to me.
 
 Let's say you have a round image with jagged edges. In my case, the background
@@ -77,24 +77,24 @@ color of the image was black and there was a 0.5 inch edge around the image that
 was black. It took 15 minutes to cut 6 circles because the edges were jagged so
 it was doing square cuts instead of one big round cut.
 
-Let's say the diameter of original image is 2 inches. Create a new circle shape
-with diameter of 2.1 with the same color as the image's background (black).
-Create a new circle with a diameter of 1.9 inch and change the color to the
-sheet's background color (white). Now select these two shapes and center them.
-Then select slice. This will give you three options. Choose the one that gives
-you a ring and delete the other two. Make sure you're using the ring that has
-nothing in the middle.
+Let's say the diameter of the original image is 2 inches. Create a new circle
+shape with a diameter of 2.1 inches with the same color as the image's
+background (black). Create a new circle with a diameter of 1.9 inches and change
+the color to the sheet's background color (white). Now select these two shapes
+and center them. Then select slice. This will give you three options. Choose the
+one that gives you a ring and delete the other two. Make sure you're using the
+ring that has nothing in the middle.
 
 Put the ring on top of the image and center them both. Then flatten. Now the
 ring overwrites the jagged edges of the image and you have a smooth edge.
 
 ### Saving Paper
-Cricut design is pretty bad with utilizing space. Create a 6.7 x 9.2 inch square
-with grey background, arrange your shapes on it to maximize space. Then select
+Cricut design software is bad at utilizing space. Create a 6.7 x 9.2 inch square
+with a grey background, arrange your shapes on it to maximize space. Then select
 everything and attach. Change the background to white/transparent and now the
-shapes appear as you designed on the final sheet.
+shapes appear as you designed them on the final sheet.
 
-## Save The Design as PDF
+## Save the Design as PDF
 Save as PDF on Windows to print on another printer.
 
 1. Send to Print.
@@ -108,7 +108,7 @@ https://www.youtube.com/watch?v=ttq_fHHH-M0
 Cutting is easy. Just follow the tutorials.
 
 ### Glossy Hacks
-For glossy paper we need to use glossy hack because the sensor cannot read the
+For glossy paper, we need to use glossy hacks because the sensor cannot read the
 registration marks (the angles around the page).
 
 https://www.reddit.com/r/cricut/wiki/glossyhacks

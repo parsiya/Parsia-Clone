@@ -15,13 +15,19 @@ aliases:
 ---
 
 The local public library uses the bibliocommons platform. I've started adding
-short reviews for each of the books I've read. You can see most of them them at
+short reviews for each of the books I've read. You can see most of them at
 the bottom of the [book list]({{<relref "booklist.md">}}). I've tried to write
-spoiler-free reviews, but some parts have minor spoilers.
+spoiler-free reviews, but some reviews have minor spoilers.
 
 The titles are
 "[author(s)] - [series (if any)] - [book name] - [finished timestamp] - [score/5]".
 DNF == Did Not Finish.
+
+Anthology reviews are in the form of three buckets. These are very time-consuming.
+
+* I loved: I usually mention my favorite story, too.
+* I liked: Enjoyable stories that are worth reading.
+* I didn't like or skipped: This doesn't necessarily mean the story was bad. You should at least give them a chance. Although in some cases the story is really bad.
 
 ## Greg Egan - Zendegi - 5/5 {#zendegi}
 Disclosure: I was born and raised in Iran. I liked the book and especially the
@@ -1480,6 +1486,6 @@ I didn't like or skipped:
 * "After-images" by Malcolm Edwards: I would have skipped this if it wasn't short. The world ended and a village is surrounded by some walls of energy. Two inhabitants try to explore these.
 * "Three Days After" by Karen Haber: The world ended and a lady is either stuck in a time loop or just waiting to die. I didn't get it. Again, I did not skip it because it was only a few pages.
 * "Rain at the End of the World as We Know It" by Dale Bailey: Everyone is dead except one guy. He goes around the town and lives in a different house. A woman also shows up. He fixes her a drink.
-* "Final Exam" by Megan Arkenberg: This was a unique story told in the form of an exam's multiple choice questions and answer sheet. However, I did not connect with the story. Shambling horrors came out of the sea, killed people for a while and then left. This is the story of a woman and her estranged husband.
-* "Prayers to the Sun by a Dying Person" by Alvaro Zinos-Amaro: I did not connect with the story. A girl comes from the future to get help from a woman to save the world. They go to the end of time to find the cause of the end of the world.
+* "Final Exam" by Megan Arkenberg: This was a unique story in the form of an exam's multiple choice questions and answer sheet. I did not connect with the story. Shambling horrors came out of the sea, killed people for a while and then left. This is the story of a woman and her estranged husband.
+* "Prayers to the Sun by a Dying Person" by Alvaro Zinos-Amaro: A girl comes from the future to get help from a woman to save the world. They go to the end of time to find the cause of the end of the world.
 * "Last and First Men" by Olaf Stapledon: This is the last two (?) chapters of a book by the same name. It talks about the struggles of the 18th men (1st men are our species) who are doomed and are trying to propagate themselves through the galaxy.
