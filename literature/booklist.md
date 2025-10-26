@@ -301,7 +301,7 @@ ones I had read.
 | Bruce Bethke | | Cyberpunk | 0843 - 26 Aug 2010 |
 | William Gibson| Sprawl 01 | Neuromancer | 1750 - 26 Aug 2010 |
 | William Gibson| Sprawl 02 | Count Zero | 0416 - 30 Aug 2010 |
-| Alastair Reynolds | Terminal World | 0457 - 10 Oct 2010 |
+| Alastair Reynolds | | Terminal World | 0457 - 10 Oct 2010 |
 | Wen Spencer | | Tinker | 1728 - 18 Oct 2010 |
 | David Sherman & Dan Cragg | Starfist 12 | Firestorm | 1830 - 25 Oct 2010 |
 | David Drake | Reaches 01 | Igniting The Reaches | 0404 - 26 Oct 2010 - 2nd time |
@@ -402,3 +402,4 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | John Ringo & Brian Thomsen | Anthology | [Citizens]({{<relref "bookreviews.md#citizens">}}) | 0026 - 06 Feb 2025 | 
 | James L. Cambias | Billion Worlds 03 | [The Miranda Conspiracy]({{<relref "bookreviews.md#billion03">}}) | 1235 - 06 Oct 2025 |
 | Robert Silverberg | Anthology | [This Way to the End times]({{<relref "bookreviews.md#endtimes">}}) | 2002 - 10 Oct 2025 |
+| Gene Wolfe | The Wizard Knight 01 | [The Knight]({{<relref "bookreviews.md#wizardknight01">}}) | 2146 - 25 Oct 2025 |
