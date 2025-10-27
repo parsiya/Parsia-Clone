@@ -1488,9 +1488,9 @@ I didn't like or skipped:
 * "Rain at the End of the World as We Know It" by Dale Bailey: Everyone is dead except one guy. He goes around the town and lives in a different house. A woman also shows up. He fixes her a drink.
 * "Final Exam" by Megan Arkenberg: This was a unique story in the form of an exam's multiple choice questions and answer sheet. I did not connect with the story. Shambling horrors came out of the sea, killed people for a while and then left. This is the story of a woman and her estranged husband.
 * "Prayers to the Sun by a Dying Person" by Alvaro Zinos-Amaro: A girl comes from the future to get help from a woman to save the world. They go to the end of time to find the cause of the end of the world.
-* "Last and First Men" by Olaf Stapledon: This is the last two (?) chapters of a book by the same name. It talks about the struggles of the 18th men (1st men are our species) who are doomed and are trying to propagate themselves through the galaxy.
+* "Last and First Men" by Olaf Stapledon: This is the last two (?) chapters of a book by the same name. The book narrates the story of different dominant species on Earth (our are called 1st men and it goes up to 18th men). It talks about the struggles of the 18th men who are doomed to death and their goal to propagate themselves through the galaxy.
 
-## Gene Wolfe - The Wizard Knight 01 - The Knight - 4/5 - {#wizardknight01}
+## Gene Wolfe - The Wizard Knight 01 - The Knight - 4/5 {#wizardknight01}
 A little kid from the US is transported to a fantasy world and wants to be a
 knight. Think medieval Europe with knights and lances, with magic and elves and
 so on. There seven worlds on Earth with our world being the 4th from the top
