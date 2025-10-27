@@ -1507,3 +1507,7 @@ I liked the book. My only issues are:
    acknowledgements and denials.
 2. Unreliable narrator. I know it's a Gene Wolfe book, but Severian looks like a
    genius compared to this guy. This one has a shorter memory than LLMs.
+
+Favorite quote:
+
+> ... war cries the eldest trees were too young to have heard.
