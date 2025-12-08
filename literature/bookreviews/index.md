@@ -1511,3 +1511,45 @@ I liked the book. My only issues are:
 Favorite quote:
 
 > ... war cries the eldest trees were too young to have heard.
+
+## Gene Wolfe - The Best of Gene Wolfe - 4/5 {#bestofwolfe}
+This is a collection of short stories by Gene Wolfe. I read this over the course
+of a few months with several break (e.g., I had to return the book to the
+library because someone else had a hold then wait a month to get it back). So I
+will mention my favorite stories and a few others.
+
+Wolfe, being a Catholic (and I quite like them but not the American adult
+converts, mind you), has a lot of religious symbolism in his stories.
+
+I loved:
+
+* Seven American Nights (1978): **my absolute favorite story**. It's about a future where US has become an underdeveloped country but Iran is advanced and has colonies on the moon (New Tabriz). An Iranian scholar visits Washington DC and is mysteriously killed. I wish Wolfe was alive so I could write to him and introduce him to [Haji Washington][haji-wiki] who was the first Iranian ambassador to the US, but more importantly to the somewhat related [comedy/drama movie of the same name][haji-movie]. I think Gene would've appreciated the movie. The Wolfewiki has extensive discussion about the story.
+* The Fifth Head of Cerberus (1972): On a planet modeled after post-industrial England (e.g., they have slaves and live in a feudal society but there are robots and star ships). The narrator is a kid living in a house with his father, brother, aunt, the staff, and a tutor robot. As the kid grows, the father starts experimenting on him more and more. Until [spoilers].
+* Forlesen (1974): I didn't like the story in my first read, but I loved it in my second. It's a story about people who work in corporate American all their lives and then die, to be replaced by the next day.
+
+I liked:
+
+* The Toy Theater (1971): A young puppeteer travels to another planet to learn from the master. These puppets are a mix of robotics and manual control. The master can do five at a time. The story mentions they can be more automated, but the master does it the old fashioned way.
+* Beech Hill (1972): A man goes to a mansion named Beech Hill once a year where everyone plays a mysterious character (he pretends to be a secret agent) for a week. He sees one of the visitors on TV who is a billionaire and starts to think the billionaire set this up to laugh at them or other people there are not actually playing a character and he is a fool.
+* The Hero as Werwolf (1975): Humans have advanced through genetic manipulation. Some humans have been left as-is.
+* The Marvelous Brass Chessplaying Automaton (1977): In a post-apocalypse feudal Earth there are no machines. A traveler goes around with a chess machine that supposedly still works.
+* The Detective of Dreams (1980): A detective investigates a group of people with recurring dreams. I did not understand the ending.
+* The God and His Man (1980): A God sends an alien to a planet. The alien lives among the population for ages and finally commits deicide.
+* From the Desk of Gilmer C. Merton (1983): An Epistolary short story (in form of letters) like the Sorceror's House by the same author (review above) between a new author and their agent. It looks like the author is being consumed by the writing machine of a famous horror author.
+* Straw (1975): A group of mercenaries are traveling by hot air balloon. They land in a estate and the hosts insist they spent the night.
+
+I didn't like:
+
+* The Island of Doctor Death and Other Stories (1970): A kid is reading a book and imagines the characters from the book are alive and the people in his life.
+* The Recording (1972): A man remembers a childhood memory where his uncle was supposed to buy him a record.
+* Hour of Trust (1973): The US is going through a civil war. The US government side is being bankrolled by corporation. A group of American business people are gathering foreign investments to continue the war.
+* La Befana (1973): Christmas on another world.
+* Westwind (1973): Everyone is Westwind. Was this a metaphor for religion?
+* The Eyeflash Miracles (1976): A blind kid in a dystopian Earth can perform miracles.
+* Kevin Malone (1980): A young couple of recruited to cosplay as owners in an expensive mansion.
+* On the Train [Redwood Coast Roamer] (1983): Narrated by a passenger on an infinite train?
+* Redbeard (1984): Story of serial murders in a rural abandoned house.
+* And When They Appear (1993): Story of a kid's Christmas in a robotic house with holograms and a mob closing in.
+
+[haji-wiki]: https://en.wikipedia.org/wiki/Haji_Washington
+[haji-movie]: https://en.wikipedia.org/wiki/Hajji_Washington
