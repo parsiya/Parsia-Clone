@@ -1523,9 +1523,9 @@ converts, mind you), has a lot of religious symbolism in his stories.
 
 I loved:
 
-* Seven American Nights (1978): **my absolute favorite story**. It's about a future where US has become an underdeveloped country but Iran is advanced and has colonies on the moon (New Tabriz). An Iranian scholar visits Washington DC and is mysteriously killed. I wish Wolfe was alive so I could write to him and introduce him to [Haji Washington][haji-wiki] who was the first Iranian ambassador to the US, but more importantly to the somewhat related [comedy/drama movie of the same name][haji-movie]. I think Gene would've appreciated the movie. The Wolfewiki has extensive discussion about the story.
+* Seven American Nights (1978): **my absolute favorite story**. It's about a future where US has become an underdeveloped country but Iran is advanced and has colonies on the moon (New Tabriz). An Iranian scholar visits Washington DC and is mysteriously killed. The Wolfewiki has extensive discussion about the story because it has many layers. I wish Wolfe was alive so I could write to him and introduce him to [Haji Washington][haji-wiki] who was the first Iranian ambassador to the US, but more importantly to the somewhat related [comedy/drama movie of the same name][haji-movie]. You can find it on YouTube. I think Gene would've appreciated the movie especially.
 * The Fifth Head of Cerberus (1972): On a planet modeled after post-industrial England (e.g., they have slaves and live in a feudal society but there are robots and star ships). The narrator is a kid living in a house with his father, brother, aunt, the staff, and a tutor robot. As the kid grows, the father starts experimenting on him more and more. Until [spoilers].
-* Forlesen (1974): I didn't like the story in my first read, but I loved it in my second. It's a story about people who work in corporate American all their lives and then die, to be replaced by the next day.
+* Forlesen (1974): I didn't like the story in my first read, but I loved it in my second. It's a story about people who work in corporate American all their lives to be replaced by the next day after their death. Oh wait!
 
 I liked:
 

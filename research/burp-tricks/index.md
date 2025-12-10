@@ -19,14 +19,16 @@ You want to share a Burp project with others without sharing tokens and secrets.
     1. Click the `Hackvertor` in the menu bar (not the tab).
     2. Select `Global variables`
     3. Create a new variable named `token` (or anything really).
-3. In Repeater, use `<@get_token/>` for the token.
-4. When you're ready to share, modify the value of the global variable(s) from step 2 to some random value.
-5. Create a copy of the project with just Repeater (or the tools you want to share).
+3. You can also create a global variable in the Hackvertor tab like this:
+    1. `<@set_token ('true')>1234</@set_token>`
+4. In Repeater, use `<@get_token/>` for the token.
+5. When you're ready to share, modify the value of the global variable(s) from step 2 to some random value.
+6. Create a copy of the project with just Repeater (or the tools you want to share).
     1. Click the project menu item.
     2. Select `Save copy`.
     3. Select the tools.
-6. ???
-7. Profit.
+7. ???
+8. Profit.
 
 [hackvertor]: https://github.com/hackvertor/hackvertor
 
@@ -56,8 +58,11 @@ Now you can create a new global variable. Let's name it `token` and assign it a
 
 {{< imgcap title="Create the token global variable" src="token-03.png" >}}
 
+You can also create a global variable in the Hackvertor tab like this:
+`<@set_token ('true')>1234</@set_token>`.
+
 Use the Hackvertor variable in Repeater. You can reference a variable
-like this `<@get_{variable_name}/>` which in our case will be `<@get_token>`.
+like this `<@get_{variable_name}/>` which in our case will be `<@get_token/>`.
 
 {{< imgcap title="Sample API request using the variable" src="token-04.png" >}}
 
