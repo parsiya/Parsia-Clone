@@ -23,7 +23,9 @@ The titles are
 "[author(s)] - [series (if any)] - [book name] - [finished timestamp] - [score/5]".
 DNF == Did Not Finish.
 
-Anthology reviews are in the form of three buckets. These are very time-consuming.
+Anthology reviews are in the form of three buckets. These are very
+time-consuming so sometimes I skip writing them (which is a disservice to both
+you and me).
 
 * I loved: I usually mention my favorite story, too.
 * I liked: Enjoyable stories that are worth reading.
@@ -1512,7 +1514,7 @@ Favorite quote:
 
 > ... war cries the eldest trees were too young to have heard.
 
-## Gene Wolfe - The Best of Gene Wolfe - 4/5 {#bestofwolfe}
+## Gene Wolfe - The Best of Gene Wolfe - 4.5/5 {#bestofwolfe}
 This is a collection of short stories by Gene Wolfe. I read this over the course
 of a few months with several break (e.g., I had to return the book to the
 library because someone else had a hold then wait a month to get it back). So I
@@ -1553,3 +1555,94 @@ I didn't like:
 
 [haji-wiki]: https://en.wikipedia.org/wiki/Haji_Washington
 [haji-movie]: https://en.wikipedia.org/wiki/Hajji_Washington
+
+## Walter Jon Williams - The Best of Walter Jon Williams - 4.5/5 {#bestofjonwilliams}
+Collection of novellas (am I using this correctly?) from Walter Jon Williams. He
+is my favorite Cyberpunk author. I love his Hardwired and Voice of the Whirlwind
+series. For a while, my gamer tag was `Hardw!red` (pretty rad IMO but I am
+biased).
+
+I had already read some of these like Videostar (read 2008), Daddy's World
+(read 2009) and Prayers On the Wind (read 2009) as you can see them in the
+[book list]({{<relref "booklist.md">}}). Now that I look at the list, I see that
+Voice of the Whirlwind and Solip:System are both missing from the reading list
+and I am sure I actually did read them. I've also read The Millennium Party.
+
+I liked most stories in this book. I only skipped the last story. 
+
+I loved:
+
+* "Videostar": **My favorite story from this book.** Happens in the Hardwired
+  universe. It's your typical cyberpunk dystopia. Governments are almost
+  powerless. Corporate nation states reign supreme and issue their own currency.
+  Nano technology and body modifications are around. Guy scams a group of gangs
+  out of money but gets poisoned. He is sent to a hospital and the hospital AI
+  decides to milk him for all of his savings and provides the real cure when he
+  is almost penny less (now what does that remind me of). He devises a plan to
+  use a gang of teens to steal the miracle cure from the hospital and sell it.
+* "The Golden Age": **Oh I loved this one. What a setting!**. It's a close
+  second and would be my favorite story of the book if not for Videostar being
+  my favorite cyberpunk universe. It's a very weird story of a steampunk wild
+  west. The setting is lawless western California coast during the gold rush.
+  Condor, a vigilante fights crimes and inspires a great number of weird
+  supervillain-esque characters. I was bummed to see Walter has not expanded
+  this universe, but not all hope was lost. The "story notes" section at the end
+  of the book mentioned this story was written for
+  [Dead Man's Hand: An Anthology of the Weird West][dead] so I am definitely
+  going to read that one.
+* "Margaux": Happens in the "Dread Empires Fall" universe. A serf meets a vapid
+  and party-going member of the nobility (with an appointment to the fleet) who
+  looks exactly like her. Well, you can probably guess what happens in the
+  end :)
+
+[dead]: https://www.johnjosephadams.com/projects/dead-mans-hand/
+
+I liked:
+
+* "Daddy's World": A kid lives in an idyllic fantasy land. It turns out he lives
+  in a virtual reality. In the "story notes" section Walter says he doesn't
+  understand why some people would want to live full-time in VR. Like him I also
+  love videogames and escaping reality, but not forever. For an interesting
+  story about one of the side effects of mind upload, read [Lena by qntm][lena].
+* "Dinosaurs": Humans have evolved and become very specialized. E.g., they have
+  a lower brain that handles the body and is always screaming for food and sex
+  and a higher brain that can swap brains. Such a specialist in politics is sent
+  to a different species to negotiate a treaty because these other aliens have
+  been attacked by human's machines. It turns out the humans have completely
+  lost all of their humanity and are just mindless creatures reacting to
+  stimuli.
+* "Surfacing": It's a story in the "Knight Moves" universe. I am sure I've read
+  it but it's also missing from the reading list. A scientist is trying to
+  decipher the language of large underwater alien creatures with the help of
+  whales. He falls in love with a woman who can be inhabited by an
+  extra-dimensional alien. It could be an allegory for Bipolar Disorder.
+* "The Green Leopard Plague": What if our needs are met and labor becomes
+  meaningless. A researcher in the far future is investigating a historical
+  figure who set the baseline for the economics of a post-scarcity society. The
+  author shows that while the society solved the economic issues, life became
+  meaningless when you could just clone minds and recreate bodies.
+* "Prayers on the Wind": A future human society ruled by an amalgam of many
+  religions is negotiating with an alien civilization. The head of state is the
+  Buddha (gets reincarnated) living on a planet almost entirely made from a
+  living crystal (the library) that acts as a computer. The new reincarnation is
+  somewhat quirky. But why?
+
+[lena]: https://qntm.org/mmacevedo
+
+I didn't like:
+
+* "The Millennium Party": A man swaps his brain to relive his anniversary with
+  his wife. It's an allegory for memories, but I did not like it.
+* "The Bad Twin": Time travel paradoxes and ancient Greece trivia. I just read
+  to finish the story. While the initial plot of the story was interesting it
+  looked like the author wanted to talk about history.
+* "Diamonds from Tequila": Story in the "This is not a game" or "Dagmar Shaw"
+  universe. An actor on a movie set is involved in murder, drug trafficking and
+  3D printing. I never really liked the Dagmar Shaw universe.
+
+I skipped:
+
+* "Wall, Stone, Craft": The only story that I skipped. I generally do not like
+horror, or maybe I had fatigue from reading the entire book in a few days. I
+read through the first ten pages and realized that is not my thing. Maybe it
+will be your type of story.
