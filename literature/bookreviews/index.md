@@ -1669,6 +1669,11 @@ two books. It also features the kitten Tanga (tertiary character).
 
 [redline-heist]: https://www.simonandschuster.com/books/The-Redline-Heist/Michael-Mersault/9781668073131
 
+> ... And then the old wise man spoke unto the Little Princeling, saying, "Those
+> who acknowledge past error come to know the pain of regret, but those who
+> acknowledge no error will never find wisdom. Thus you will find that fools
+> speak of a life free from regret.
+
 2025 holiday reading list courtesy of the work and local public libraries. Yes,
 I am going to read that brainrot tech book, smh. That green thing is my book
 light and the thick book at the bottom is "The Cat Encyclopedia."
