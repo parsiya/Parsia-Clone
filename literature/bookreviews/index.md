@@ -1646,3 +1646,31 @@ I skipped:
 horror, or maybe I had fatigue from reading the entire book in a few days. I
 read through the first ten pages and realized that is not my thing. Maybe it
 will be your type of story.
+
+## Michael Mersault - The Deep Man 03 - The Presence Malign - 3.5/5 {#deepman03}
+Third book in the Deep Man series. It was called a trilogy, but this book
+doesn't appear to be the ending. My ratings are going down for it, from 4.5 to 4
+and finally, 3.5. The action is getting less interesting. Similar to book #2,
+the last 3rd of the book although the last 3rd of the book is action packed.
+There's action on the ground, in space, and well, somewhere else.
+
+The author attempted to add more emotional depth to the recurring character
+which is in contrast to the calm and emotionless technique the series is named
+after. We're all human after all, no matter how many psychological and physical
+modifications we have gone through.
+
+The ending is not an ending. If the author decides to leave this book as a
+trilogy then things are not wrapped up. His new book
+[The Redline Heist][redline-heist] is coming out in two months (Feb 2026) so he
+might continue the series after.
+
+The cover gives Saef and Inga, a new look that is different from the previous
+two books. It also features the kitten Tanga (tertiary character).
+
+[redline-heist]: https://www.simonandschuster.com/books/The-Redline-Heist/Michael-Mersault/9781668073131
+
+2025 holiday reading list courtesy of the work and local public libraries. Yes,
+I am going to read that brainrot tech book, smh. That green thing is my book
+light and the thick book at the bottom is "The Cat Encyclopedia."
+
+![2025 holiday reading list](holiday2025.jpg)
