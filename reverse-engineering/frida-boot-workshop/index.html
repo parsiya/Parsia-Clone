@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Frida-Boot Workshop Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.152.2"><meta name=twitter:card content="summary"><meta name=twitter:title content="Frida-Boot Workshop Notes"><meta name=twitter:description content="Frida-Boot workshop
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Frida-Boot Workshop Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.153.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="Frida-Boot Workshop Notes"><meta name=twitter:description content="Frida-Boot workshop
 
 https://github.com/leonjza/frida-boot
 Youtube link: https://www.youtube.com/watch?v=CLpW1tZCblo
@@ -52,7 +52,7 @@ sleep(2^C &lt;no return ...&gt;
     U srand@@GLIBC_2.2.5
     U time@@GLIBC_2.2.5
 </code></pre><p>We want to hook <code>sleep</code> and ``.</p><p>Make our own implementation of sleep. We need to know the function signature.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#719e07>#include</span> <span style=color:#719e07>&lt;stdio.h&gt;</span><span style=color:#719e07>
-</span></span></span><span style=display:flex><span><span style=color:#719e07></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> <span style=color:#268bd2>sleep</span>(<span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> seconds) {
 </span></span><span style=display:flex><span>    
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>printf</span>(<span style=color:#2aa198>&#34; [-] sleep goes brrr</span><span style=color:#cb4b16>\n</span><span style=color:#2aa198>&#34;</span>);
@@ -64,22 +64,22 @@ sleep(2^C &lt;no return ...&gt;
 </code></pre><p>The app prints the strings but does not sleep at all because we have modified
 the <code>sleep</code> function.</p><p>Now let's make a proxy so. E.g., <code>fake_sleep</code> calls <code>sleep</code>. To get the original
 sleep we need to call <a href=https://man7.org/linux/man-pages/man3/dlsym.3.html target=_blank rel="noreferrer noopener">dlsym</a>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#719e07>#define _GNU_SOURCE
-</span></span></span><span style=display:flex><span><span style=color:#719e07></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>#include</span> <span style=color:#719e07>&lt;stdio.h&gt;</span><span style=color:#719e07>
 </span></span></span><span style=display:flex><span><span style=color:#719e07>#include</span> <span style=color:#719e07>&lt;dlfcn.h&gt;</span><span style=color:#719e07>
-</span></span></span><span style=display:flex><span><span style=color:#719e07></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// man 3 sleep
 </span></span></span><span style=display:flex><span><span style=color:#586e75>//  unsigned int sleep(unsigned int seconds);
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> <span style=color:#268bd2>sleep</span>(<span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> seconds) {
+</span></span></span><span style=display:flex><span><span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> <span style=color:#268bd2>sleep</span>(<span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> seconds) {
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// you&#39;ve never slept this well in your life!
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    printf(<span style=color:#2aa198>&#34;[-] sleep goes brrr</span><span style=color:#cb4b16>\n</span><span style=color:#2aa198>&#34;</span>);
+</span></span></span><span style=display:flex><span>    printf(<span style=color:#2aa198>&#34;[-] sleep goes brrr</span><span style=color:#cb4b16>\n</span><span style=color:#2aa198>&#34;</span>);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    seconds <span style=color:#719e07>=</span> <span style=color:#2aa198>1</span>;
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span> (<span style=color:#719e07>*</span>original_sleep)(<span style=color:#dc322f>unsigned</span> <span style=color:#dc322f>int</span>);
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// &#34;RTLD_NEXT&#34;: Get the handle for the next symbol named &#34;sleep&#34;
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    original_sleep <span style=color:#719e07>=</span> dlsym(RTLD_NEXT, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+</span></span></span><span style=display:flex><span>    original_sleep <span style=color:#719e07>=</span> dlsym(RTLD_NEXT, <span style=color:#2aa198>&#34;sleep&#34;</span>);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> (original_sleep)(seconds);
 </span></span><span style=display:flex><span>}
@@ -189,7 +189,7 @@ sleep in section .text of /lib/x86_64-linux-gnu/libc.so.6
 </code></pre><p>But we can also pass a filter here which is a function.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>Process.enumerateModulesSync().filter(ex =&gt; ex.name.includes(<span style=color:#2aa198>&#34;libc&#34;</span>));
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// Without the v8 runtime, we had to use:
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Process.enumerateModulesSync().filter(<span style=color:#268bd2>function</span>(m) { <span style=color:#719e07>return</span> m.name.includes(<span style=color:#2aa198>&#34;libc&#34;</span>);});
 </span></span></code></pre></div><p>Both return the same result:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>[
 </span></span><span style=display:flex><span>    {
@@ -209,7 +209,7 @@ sleep in section .text of /lib/x86_64-linux-gnu/libc.so.6
 </span></span></code></pre></div><p>We can just get the <code>base</code> with <code>.base</code> in both cases:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Process.getModuleByName(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>).base;
 </span></span><span style=display:flex><span><span style=color:#2aa198>&#34;0x7f7286eb2000&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// enumerateModulesSync returns an array so we need to choose the first element.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Process.enumerateModulesSync().filter(ex =&gt; ex.name.includes(<span style=color:#2aa198>&#34;libc&#34;</span>))[<span style=color:#2aa198>0</span>].base;
+</span></span></span><span style=display:flex><span>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Process.enumerateModulesSync().filter(ex =&gt; ex.name.includes(<span style=color:#2aa198>&#34;libc&#34;</span>))[<span style=color:#2aa198>0</span>].base;
 </span></span><span style=display:flex><span><span style=color:#2aa198>&#34;0x7f7286eb2000&#34;</span>
 </span></span></code></pre></div><h3 id=modulegetbaseaddress>Module.getBaseAddress
 <a class=header-link href=#modulegetbaseaddress><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Module.getBaseAddress(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>);
@@ -233,7 +233,7 @@ end of the command above).</p><h3 id=modulegetexportbyname>Module.getExportByNam
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// first argument is the name of the library but sleep is unique so we do not
 </span></span></span><span style=display:flex><span><span style=color:#586e75>// care about duplicates
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>[Local<span style=color:#719e07>::</span>pew]<span style=color:#719e07>-&gt;</span> Module.getExportByName(<span style=color:#2aa198>&#34;libc-2.30.so&#34;</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
 </span></span><span style=display:flex><span><span style=color:#2aa198>&#34;0x7f7286f7cd90&#34;</span>
 </span></span></code></pre></div><h3 id=debugsymbolgetfunctionbyname>DebugSymbol.getFunctionByName
@@ -243,19 +243,19 @@ end of the command above).</p><h3 id=modulegetexportbyname>Module.getExportByNam
 <a class=header-link href=#interceptor><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p><code>Inteceptor.attach(target, callbacks[, data]);</code></p><p>callbacks is an object with two functions.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>Interceptor.attach(sleepPtr, {
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(args) {},  <span style=color:#586e75>// we can modify the arguments
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onLeave<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(retval) {} <span style=color:#586e75>// we can modify the return value
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>});
+</span></span></span><span style=display:flex><span>});
 </span></span></code></pre></div><p><strong>Note:</strong> It's important to not use the arrow function syntax for <code>onEnter</code> and
 <code>onLeave</code>. Oh, well!</p><p>Now, we can modify the <code>sleep</code> function with Frida. I am going to use ES6
 because I will change my runtime to v8.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// frida pew -l myinterceptor-attach.js --runtime=v8
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Interceptor.attach(sleep, {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// in this case using the arrow function is not that bad because we are not
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// doing anything complex.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>    <span style=color:#586e75>// doing anything complex.
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onEnter<span style=color:#719e07>:</span> args =&gt; { console.log(<span style=color:#2aa198>&#34;[*] Sleep from Frida!&#34;</span>); },
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onLeave<span style=color:#719e07>:</span> retval =&gt; {console.log(<span style=color:#2aa198>&#34;[*] Done sleeping from Frida!&#34;</span>); }
@@ -264,7 +264,7 @@ because I will change my runtime to v8.</p><div class=highlight><pre tabindex=0 
 <a class=header-link href=#chapter-2---part-3-hooking-arguments-and-return-values><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><h2 id=modifying-arguments>Modifying Arguments
 <a class=header-link href=#modifying-arguments><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>We can modify the arguments inside <code>onEnter</code>.</p><ul><li><code>args</code> does not know how many arguments are in there.</li><li><code>args[0]</code> is the first arg.</li><li>Args are of type <a href=https://frida.re/docs/javascript-api/#nativepointer target=_blank rel="noreferrer noopener">NativePointer</a>.</li></ul><p>Frida does not do bounds checking here. It's possible to read the memory past
 the valid arguments. E.g., <code>args[10]</code> when the function only has 2 arguments.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// parse-sleep-args.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Interceptor.attach(sleep, {
 </span></span><span style=display:flex><span>
@@ -275,7 +275,7 @@ the valid arguments. E.g., <code>args[10]</code> when the function only has 2 ar
 </span></span></code></pre></div><p>Now, we can modify the arguments. Create a new pointer and assign it.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> ptr(<span style=color:#2aa198>&#34;0x01&#34;</span>);
 </span></span><span style=display:flex><span>args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativePointer(<span style=color:#2aa198>&#34;0x01&#34;</span>);
 </span></span></code></pre></div><p>Let's modify sleep argument to 2.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// modify-sleep-args.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;sleep&#34;</span>);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Interceptor.attach(sleep, {
 </span></span><span style=display:flex><span>
@@ -283,16 +283,16 @@ the valid arguments. E.g., <code>args[10]</code> when the function only has 2 ar
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>        console.log(<span style=color:#2aa198>&#34;[*] The original argument for sleep() =&gt; &#34;</span>, <span style=color:#b58900>parseInt</span>(args[<span style=color:#2aa198>0</span>]));
 </span></span><span style=display:flex><span>        args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> ptr(<span style=color:#2aa198>&#34;0x02&#34;</span>); <span style=color:#586e75>// change it to 2
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    },
+</span></span></span><span style=display:flex><span>    },
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onLeave<span style=color:#719e07>:</span> retval =&gt; { console.log(<span style=color:#2aa198>&#34;[*] Done sleeping from Frida!&#34;</span>); }
 </span></span><span style=display:flex><span>});
 </span></span></code></pre></div><h4 id=how-to-allocate-strings>How to Allocate Strings
 <a class=header-link href=#how-to-allocate-strings><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4><p>Allocate a new char array with <code>Memory.allocUtf8String</code> like this:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span> (args) {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>var</span> buf <span style=color:#719e07>=</span> Memory.allocUtf8String(<span style=color:#2aa198>&#39;mystring&#39;</span>); <span style=color:#586e75>// create a new string on memory
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#719e07>this</span>.buf <span style=color:#719e07>=</span> buf;                               <span style=color:#586e75>// assign it to this
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> buf;                                <span style=color:#586e75>// pass it to args
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span></span><span style=display:flex><span>    <span style=color:#719e07>this</span>.buf <span style=color:#719e07>=</span> buf;                               <span style=color:#586e75>// assign it to this
+</span></span></span><span style=display:flex><span>    args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> buf;                                <span style=color:#586e75>// pass it to args
+</span></span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>According to
 <a href=https://frida.re/docs/best-practices/#string-allocation-utf-8utf-16ansi target=_blank rel="noreferrer noopener">Best Practices - String allocation</a></p><blockquote><p>this is bound to an object that is per-thread and per-invocation, and anything
 you store there will be available in onLeave, and this even works in case of
@@ -305,18 +305,18 @@ the duration of the function-call.</p></blockquote><p>Let's modify <code>printf<
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onEnter<span style=color:#719e07>:</span> args =&gt; {
 </span></span><span style=display:flex><span>        <span style=color:#586e75>// this did not work, I would get the pews printed after detaching Frida
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#586e75>// maybe because I am in an arrow function?
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#586e75>// var strBuf = Memory.allocUtf8String(&#34;pewpewpew\n&#34;); 
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>        <span style=color:#586e75>// maybe because I am in an arrow function?
+</span></span></span><span style=display:flex><span>        <span style=color:#586e75>// var strBuf = Memory.allocUtf8String(&#34;pewpewpew\n&#34;); 
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>        console.log(<span style=color:#2aa198>&#34;[*] The original argument for printf() =&gt; &#34;</span>, args[<span style=color:#2aa198>0</span>]);
 </span></span><span style=display:flex><span>        args[<span style=color:#2aa198>0</span>] <span style=color:#719e07>=</span> strBuf;
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// onLeave: retval =&gt; { console.log(&#34;[*] Done sleeping from Frida!&#34;); }
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>});
+</span></span></span><span style=display:flex><span>});
 </span></span></code></pre></div><h4 id=get-registerscontext>Get Registers/Context
 <a class=header-link href=#get-registerscontext><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4><p><code>this</code> does not work in the arrow function so, we have to use a normal one.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// get-context.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;printf&#34;</span>);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> sleep <span style=color:#719e07>=</span> Module.getExportByName(<span style=color:#cb4b16>null</span>, <span style=color:#2aa198>&#34;printf&#34;</span>);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Interceptor.attach(sleep, {
 </span></span><span style=display:flex><span>
@@ -327,8 +327,8 @@ the duration of the function-call.</p></blockquote><p>Let's modify <code>printf<
 </span></span></code></pre></div><p>We can modify the registers here, too.</p><h2 id=modifying-return-values>Modifying Return Values
 <a class=header-link href=#modifying-return-values><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Trying to modifying the return value <code>rand_range</code> in pew. We need to do
 <code>retval.replace(ptr(...));</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// modify-return-rand-range.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> randRange <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;rand_range&#34;</span>); <span style=color:#586e75>// we have symbols
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> randRange <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;rand_range&#34;</span>); <span style=color:#586e75>// we have symbols
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Interceptor.attach(randRange, {
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onLeave<span style=color:#719e07>:</span> retval =&gt; { retval.replace(ptr(<span style=color:#2aa198>&#34;0x01&#34;</span>)); }
@@ -336,8 +336,8 @@ the duration of the function-call.</p></blockquote><p>Let's modify <code>printf<
 </span></span></code></pre></div><p>Without using arrow functions and like it was mentioned in the string allocation
 section, we can pass variables to <code>this</code> inside <code>onEnter</code> and then use them in
 <code>onLeave</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// modify-return-rand-range2.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> randRange <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;rand_range&#34;</span>); <span style=color:#586e75>// we have symbols
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> randRange <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;rand_range&#34;</span>); <span style=color:#586e75>// we have symbols
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Interceptor.attach(randRange, {
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(args) {
@@ -347,7 +347,7 @@ section, we can pass variables to <code>this</code> inside <code>onEnter</code> 
 </span></span><span style=display:flex><span>    onLeave<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(retval) {
 </span></span><span style=display:flex><span>        console.log(retval);
 </span></span><span style=display:flex><span>        retval.replace(<span style=color:#719e07>this</span>.arg0); <span style=color:#586e75>// now we can use this.arg0 here
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    }
+</span></span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>});
 </span></span></code></pre></div><h1 id=chapter-2---part-4-reusing-existing-code>Chapter 2 - Part 4: Reusing Existing Code
 <a class=header-link href=#chapter-2---part-4-reusing-existing-code><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>The <code>crypt</code> utility asks for a PIN and then checks it with <code>test_pin</code>. We want
@@ -369,11 +369,11 @@ to hook this function and return 1.</p><p><a href=https://frida.re/docs/javascri
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onEnter<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(args) {
 </span></span><span style=display:flex><span>        <span style=color:#586e75>// console.log(&#34;test_pin args:&#34;, hexdump(args[0]));
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    },
+</span></span></span><span style=display:flex><span>    },
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    onLeave<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(retval) {
 </span></span><span style=display:flex><span>        <span style=color:#586e75>// console.log(&#34;test_pin return value:&#34;, retval);
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        retval.replace(ptr(<span style=color:#2aa198>&#34;0x01&#34;</span>));
+</span></span></span><span style=display:flex><span>        retval.replace(ptr(<span style=color:#2aa198>&#34;0x01&#34;</span>));
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>});
 </span></span></code></pre></div><h2 id=calling-functions>Calling Functions
@@ -381,17 +381,17 @@ to hook this function and return 1.</p><p><a href=https://frida.re/docs/javascri
 Create a JavaScript wrapper around a function. We can use it to call the target
 function.</p><p><code>NativeFunction(address, returnType, argTypes[, abi])</code></p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
 </span></span><span style=display:flex><span><span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>var</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(<span style=color:#2aa198>&#34;1234&#34;</span>);
 </span></span><span style=display:flex><span><span style=color:#268bd2>var</span> res <span style=color:#719e07>=</span> testPINFunction(pin);
 </span></span><span style=display:flex><span>console.log(<span style=color:#2aa198>&#34;test_pin(1234):&#34;</span>, res);
 </span></span></code></pre></div><p>We can do this to call arbitrary functions or do things like bruteforce. Run
 with <code>--runtime=v8</code> to enable the raw string.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// frida crypt -l crypt-bruteforce-pin.js  --runtime=v8
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
 </span></span><span style=display:flex><span><span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>for</span> (<span style=color:#268bd2>var</span> i<span style=color:#719e07>=</span><span style=color:#2aa198>0</span>; i<span style=color:#719e07>&lt;</span><span style=color:#2aa198>9999</span>; i<span style=color:#719e07>++</span>) {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>var</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(i);
@@ -414,7 +414,7 @@ agent and the Python script. Do fancy stuff.</p><div class=highlight><pre tabind
 </span></span></span><span style=display:flex><span><span style=color:#2aa198>&#34;&#34;&#34;</span>)
 </span></span><span style=display:flex><span>script<span style=color:#719e07>.</span>load()
 </span></span></code></pre></div><p>If we want to load an external agent instead.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// tool2.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>console.log(Frida.version);
+</span></span></span><span style=display:flex><span>console.log(Frida.version);
 </span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#719e07>import</span> frida
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> sys
 </span></span><span style=display:flex><span>
@@ -445,9 +445,9 @@ of stuff happening in the initial script that is loaded.</p><h2 id=send-from-jav
 </span></span><span style=display:flex><span>script<span style=color:#719e07>.</span>on(<span style=color:#2aa198>&#34;message&#34;</span>, incoming)
 </span></span><span style=display:flex><span>script<span style=color:#719e07>.</span>load()
 </span></span></code></pre></div><p>The agent is the same, it sends out the PIN instead of printing it locally:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// tool4.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
 </span></span><span style=display:flex><span><span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>send(<span style=color:#2aa198>&#34;Starting brute forcer&#34;</span>);
 </span></span><span style=display:flex><span>
@@ -483,21 +483,21 @@ Frida's own APIs – and still be able to follow PEP 8 on the Python side, i.e.
 <code>readByte</code> on the JS side becomes <code>read_byte</code> on the Python side. Similarly a
 C#/.NET binding would map it to <code>ReadByte</code>. Cheers!</p></blockquote><p><a href=https://github.com/frida/frida-python/issues/104#issuecomment-281666759 target=_blank rel="noreferrer noopener">https://github.com/frida/frida-python/issues/104#issuecomment-281666759</a></p><p><strong>Tip:</strong> Better to export everything as all lower case.</p><p>Seems like we can also name things in <code>rpc.exports</code> like this:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#268bd2>function</span> internalFunction(e) {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// ...
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>rpc.exports <span style=color:#719e07>=</span> {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// export an internal function
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    exportedName<span style=color:#719e07>:</span> internalFunction, <span style=color:#586e75>// exported_name in Python
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// we can also define and export a function right here
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    name2<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(e) {
+</span></span></span><span style=display:flex><span>    exportedName<span style=color:#719e07>:</span> internalFunction, <span style=color:#586e75>// exported_name in Python
+</span></span></span><span style=display:flex><span>    <span style=color:#586e75>// we can also define and export a function right here
+</span></span></span><span style=display:flex><span>    name2<span style=color:#719e07>:</span> <span style=color:#268bd2>function</span>(e) {
 </span></span><span style=display:flex><span>        <span style=color:#586e75>// ...
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    }
+</span></span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h3 id=refactor-bruteforce>Refactor Bruteforce
 <a class=header-link href=#refactor-bruteforce><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>The agent is like this:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// tool6.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
 </span></span><span style=display:flex><span><span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>function</span> brute() {
 </span></span><span style=display:flex><span>    send(<span style=color:#2aa198>&#34;Starting brute forcer&#34;</span>);
@@ -516,7 +516,7 @@ C#/.NET binding would map it to <code>ReadByte</code>. Cheers!</p></blockquote><
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>rpc.exports <span style=color:#719e07>=</span> {
 </span></span><span style=display:flex><span>    bruteForcer<span style=color:#719e07>:</span> brute <span style=color:#586e75>// become brute_forcer in Python
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>};
+</span></span></span><span style=display:flex><span>};
 </span></span></code></pre></div><p>We can call it as <code>brute_forcer</code> in Python:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#586e75># tool6.py</span>
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> frida
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> sys
@@ -538,9 +538,9 @@ C#/.NET binding would map it to <code>ReadByte</code>. Cheers!</p></blockquote><
 </span></span></code></pre></div><h3 id=bruteforce-in-python>Bruteforce in Python
 <a class=header-link href=#bruteforce-in-python><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Change the agent and export the <code>test_pin</code> function, then loop and brute force
 in Python. The agent just exports the <code>testpin</code> function.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// tool7.js
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPIN <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
 </span></span><span style=display:flex><span><span style=color:#586e75>// Wrapper. output is int and input is an array with one pointer.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>var</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPIN, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>function</span> testPin(e) {
 </span></span><span style=display:flex><span>    <span style=color:#268bd2>var</span> pin <span style=color:#719e07>=</span> Memory.allocUtf8String(e.toString());
@@ -549,7 +549,7 @@ in Python. The agent just exports the <code>testpin</code> function.</p><div cla
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>rpc.exports <span style=color:#719e07>=</span> {
 </span></span><span style=display:flex><span>    testpin<span style=color:#719e07>:</span> testPin <span style=color:#586e75>// all lowercase export name
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>};
+</span></span></span><span style=display:flex><span>};
 </span></span></code></pre></div><p>And the Python script calls <code>testpin</code> and does the bruteforce.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#586e75># tool7.py</span>
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> frida
 </span></span><span style=display:flex><span><span style=color:#719e07>import</span> sys
@@ -570,7 +570,7 @@ in Python. The agent just exports the <code>testpin</code> function.</p><div cla
 </span></span></code></pre></div><h1 id=chapter-3---part-3-typescript>Chapter 3 - Part 3: Typescript
 <a class=header-link href=#chapter-3---part-3-typescript><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>We are gonna use <a href=https://github.com/oleavr/frida-agent-example target=_blank rel="noreferrer noopener">https://github.com/oleavr/frida-agent-example</a>.</p><p>Rewriting <code>testPIN</code> in TypeScript.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ts data-lang=ts><span style=display:flex><span><span style=color:#586e75>// agent1.ts
 </span></span></span><span style=display:flex><span><span style=color:#586e75>// reimplementing testPIN in Typescript
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>import</span> { log } <span style=color:#268bd2>from</span> <span style=color:#2aa198>&#34;./logger&#34;</span>;
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>import</span> { log } <span style=color:#268bd2>from</span> <span style=color:#2aa198>&#34;./logger&#34;</span>;
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>const</span> testPINSymbol <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);
 </span></span><span style=display:flex><span><span style=color:#268bd2>const</span> testPINFunction <span style=color:#719e07>=</span> <span style=color:#719e07>new</span> NativeFunction(testPINSymbol, <span style=color:#2aa198>&#34;int&#34;</span>, [<span style=color:#2aa198>&#34;pointer&#34;</span>]);
@@ -585,7 +585,7 @@ in Python. The agent just exports the <code>testpin</code> function.</p><div cla
 </span></span><span style=display:flex><span>};
 </span></span></code></pre></div><p>And the Python tool does not change other than loading <code>_agent.js</code>.</p><h2 id=inject-a-web-server-into-the-target-process>Inject a Web Server into the Target Process
 <a class=header-link href=#inject-a-web-server-into-the-target-process><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>We need to modify our agent and do it.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#586e75>// agent2.ts
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>import</span> { log } from <span style=color:#2aa198>&#34;./logger&#34;</span>;
+</span></span></span><span style=display:flex><span><span style=color:#268bd2>import</span> { log } from <span style=color:#2aa198>&#34;./logger&#34;</span>;
 </span></span><span style=display:flex><span><span style=color:#268bd2>import</span> <span style=color:#719e07>*</span> as http from <span style=color:#2aa198>&#34;http&#34;</span>;
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#268bd2>const</span> testPINSymbol <span style=color:#719e07>=</span> DebugSymbol.getFunctionByName(<span style=color:#2aa198>&#34;test_pin&#34;</span>);

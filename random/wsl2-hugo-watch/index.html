@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Hugo Server doesn't See File Notification Events in WSL2</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.152.2"><meta name=twitter:card content="summary"><meta name=twitter:title content="Hugo Server doesn't See File Notification Events in WSL2"><meta name=twitter:description content="Problem
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Hugo Server doesn't See File Notification Events in WSL2</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.153.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="Hugo Server doesn't See File Notification Events in WSL2"><meta name=twitter:description content="Problem
 
 The local Hugo server running in WSL2 doesn't see file updates so it doesn't
 rebuild the website. The files are under the Windows file system (e.g.,
@@ -27,23 +27,23 @@ file, the website is rebuilt and it navigates to the modified section.</p><p>Thi
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;start-hugo-server&#34;</span>,
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;type&#34;</span>: <span style=color:#2aa198>&#34;shell&#34;</span>,
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;hugo server -v --navigateToChanged&#34;</span>, <span style=color:#586e75>// if the default VS Code terminal on Windows is cmd, use `wsl.exe hugo serve -vw`
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;isBackground&#34;</span>: <span style=color:#cb4b16>true</span>    <span style=color:#586e75>// this is a watch process that keeps running
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        },
+</span></span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;isBackground&#34;</span>: <span style=color:#cb4b16>true</span>    <span style=color:#586e75>// this is a watch process that keeps running
+</span></span></span><span style=display:flex><span>        },
 </span></span><span style=display:flex><span>        {
 </span></span><span style=display:flex><span>            <span style=color:#586e75>// opens http://localhost:1313 in the system browser to preview the site.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>,
+</span></span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>,
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;type&#34;</span>: <span style=color:#2aa198>&#34;shell&#34;</span>,
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;command&#34;</span>: <span style=color:#2aa198>&#34;/c start http://localhost:1313&#34;</span>, <span style=color:#586e75>// Windows only thing.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;options&#34;</span>: {
+</span></span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;options&#34;</span>: {
 </span></span><span style=display:flex><span>                <span style=color:#268bd2>&#34;shell&#34;</span>: {
 </span></span><span style=display:flex><span>                    <span style=color:#268bd2>&#34;executable&#34;</span>: <span style=color:#2aa198>&#34;cmd.exe&#34;</span>, <span style=color:#586e75>// My VS Code&#39;s default shell is wsl so I have to change the shell to cmd.exe here.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>                }
+</span></span></span><span style=display:flex><span>                }
 </span></span><span style=display:flex><span>            }
 </span></span><span style=display:flex><span>        },
 </span></span><span style=display:flex><span>        {
 </span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;label&#34;</span>: <span style=color:#2aa198>&#34;preview-blog&#34;</span>,
 </span></span><span style=display:flex><span>            <span style=color:#586e75>// runs both of these together
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>            <span style=color:#268bd2>&#34;dependsOn&#34;</span>: [
+</span></span></span><span style=display:flex><span>            <span style=color:#268bd2>&#34;dependsOn&#34;</span>: [
 </span></span><span style=display:flex><span>                <span style=color:#2aa198>&#34;start-hugo-server&#34;</span>,
 </span></span><span style=display:flex><span>                <span style=color:#2aa198>&#34;open-browser-1313&#34;</span>
 </span></span><span style=display:flex><span>            ],

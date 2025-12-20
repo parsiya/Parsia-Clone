@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Gradle Plugin Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.152.2"><meta name=twitter:card content="summary"><meta name=twitter:title content="Gradle Plugin Notes"><meta name=twitter:description content="To add a plugin to an existing Java project we can add it under buildSrc. This
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Gradle Plugin Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.153.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="Gradle Plugin Notes"><meta name=twitter:description content="To add a plugin to an existing Java project we can add it under buildSrc. This
 way we can use it in the project build.gradle without hassle.
 
 https://www.vogella.com/tutorials/Gradle/article.html#apply-the-java-gradle-plugin-plug-in
@@ -284,7 +284,7 @@ create a task like this, it will be executed every time any task is executed.
 Meaning the task is executed in the configuration phase.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy><span style=display:flex><span>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>    exec <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>        <span style=color:#586e75>// optional workingDir &#39;path/to/workingdir`
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        commandLine <span style=color:#2aa198>&#39;cmd.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;/c&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;dir&#39;</span>
+</span></span></span><span style=display:flex><span>        commandLine <span style=color:#2aa198>&#39;cmd.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;/c&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;dir&#39;</span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>}</span>
 </span></span><span style=display:flex><span>    exec <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>        commandLine <span style=color:#268bd2>osAdaptiveCommand</span><span style=color:#719e07>(</span><span style=color:#2aa198>&#39;whatever.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;--switch&#39;</span><span style=color:#719e07>)</span>
@@ -294,7 +294,7 @@ Meaning the task is executed in the configuration phase.</p><div class=highlight
 </span></span><span style=display:flex><span>    doLast <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>        exec <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>        <span style=color:#586e75>// optional workingDir &#39;path/to/workingdir`
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>            commandLine <span style=color:#2aa198>&#39;cmd.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;/c&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;dir&#39;</span>
+</span></span></span><span style=display:flex><span>            commandLine <span style=color:#2aa198>&#39;cmd.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;/c&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;dir&#39;</span>
 </span></span><span style=display:flex><span>        <span style=color:#719e07>}</span>
 </span></span><span style=display:flex><span>        exec <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>            commandLine <span style=color:#268bd2>osAdaptiveCommand</span><span style=color:#719e07>(</span><span style=color:#2aa198>&#39;whatever.exe&#39;</span><span style=color:#719e07>,</span> <span style=color:#2aa198>&#39;--switch&#39;</span><span style=color:#719e07>)</span>
@@ -306,7 +306,7 @@ Meaning the task is executed in the configuration phase.</p><div class=highlight
 pass it to the Gradle task like this <code>gradle taskname -Pparam=value</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy><span style=display:flex><span>task <span style=color:#268bd2>whatever</span><span style=color:#719e07>()</span> <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>    doLast <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>        println <span style=color:#2aa198>&#34;param = $param&#34;</span> <span style=color:#586e75>// Note that we have to use double-quotes.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#719e07>}</span>
+</span></span></span><span style=display:flex><span>    <span style=color:#719e07>}</span>
 </span></span><span style=display:flex><span><span style=color:#719e07>}</span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// Run `gradle whatever -Pparam=value`
 </span></span></span></code></pre></div><ol><li>Some parameters are reserved and already have values like <code>$path</code> and
@@ -317,7 +317,7 @@ has such a property first.</p><p><a href=https://docs.gradle.org/current/javadoc
 </span></span><span style=display:flex><span>            println <span style=color:#2aa198>&#34;param = $param&#34;</span>
 </span></span><span style=display:flex><span>        <span style=color:#719e07>}</span> <span style=color:#719e07>else</span> <span style=color:#719e07>{</span>
 </span></span><span style=display:flex><span>            <span style=color:#586e75>// Can also use else.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#719e07>}</span>
+</span></span></span><span style=display:flex><span>        <span style=color:#719e07>}</span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>}</span>
 </span></span><span style=display:flex><span><span style=color:#719e07>}</span>
 </span></span></code></pre></div><h3 id=get-current-working-directory>Get Current Working directory

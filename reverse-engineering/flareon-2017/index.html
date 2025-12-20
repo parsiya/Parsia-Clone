@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>FlareOn 2017 CTF Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.152.2"><meta name=twitter:card content="summary"><meta name=twitter:title content="FlareOn 2017 CTF Notes"><meta name=twitter:description content="Random notes from FlareOn-2017 Challenge
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>FlareOn 2017 CTF Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.153.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="FlareOn 2017 CTF Notes"><meta name=twitter:description content="Random notes from FlareOn-2017 Challenge
 
 
 
@@ -22,73 +22,73 @@ F8: Step Over</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgr
 </span></span><span style=display:flex><span>var8 <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>if</span> (var8 <span style=color:#719e07>&lt;</span> <span style=color:#2aa198>0x104</span>) <span style=color:#586e75>// 0x104 = 260
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>{
+</span></span></span><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  ecx <span style=color:#719e07>=</span> var8
 </span></span><span style=display:flex><span>  ecx<span style=color:#719e07>+</span>Buffer <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span> <span style=color:#586e75>// is it zero-ing out a 260 byte buffer?
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  <span style=color:#586e75>// eax = var8
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  <span style=color:#586e75>// eax++
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  <span style=color:#586e75>// var8 = eax
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>  <span style=color:#586e75>// eax++
+</span></span></span><span style=display:flex><span>  <span style=color:#586e75>// var8 = eax
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  var8<span style=color:#719e07>++</span>
 </span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>*</span>edx <span style=color:#719e07>=</span> NumberOfBytesRead <span style=color:#719e07>=</span> <span style=color:#2aa198>0x98</span> <span style=color:#719e07>=</span> <span style=color:#2aa198>152</span>  <span style=color:#586e75>// why is this not 0?
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>push <span style=color:#719e07>*</span>dex
+</span></span></span><span style=display:flex><span>push <span style=color:#719e07>*</span>dex
 </span></span><span style=display:flex><span>push <span style=color:#2aa198>0x104</span> <span style=color:#719e07>=</span> <span style=color:#2aa198>206</span> <span style=color:#586e75>// nNumberOfBytesToRead
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>push <span style=color:#268bd2>Buffer</span> (<span style=color:#2aa198>260</span> <span style=color:#dc322f>char</span> zero<span style=color:#719e07>-</span>ed out that we saw before)
+</span></span></span><span style=display:flex><span>push <span style=color:#268bd2>Buffer</span> (<span style=color:#2aa198>260</span> <span style=color:#dc322f>char</span> zero<span style=color:#719e07>-</span>ed out that we saw before)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>ds:ReadFile <span style=color:#719e07>=</span> read from input and put into Buffer.
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>counter <span style=color:#719e07>=</span> var8 <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span> <span style=color:#586e75>// var8 is reset
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>while</span> (counter <span style=color:#719e07>&lt;</span> <span style=color:#268bd2>strlen</span>(Buffer))
 </span></span><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  eax <span style=color:#719e07>=</span> Buffer
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  push eax <span style=color:#586e75>// push Buffer
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  <span style=color:#268bd2>strlen</span>(Buffer) <span style=color:#586e75>// sub_401020(Buffer) see below
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  <span style=color:#719e07>if</span> (<span style=color:#268bd2>strlen</span>(Buffer) <span style=color:#719e07>&lt;</span> <span style=color:#2aa198>0</span>) <span style=color:#586e75>// function returns 0 if string is empty
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  {
+</span></span></span><span style=display:flex><span>  {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// mov eax, 1
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// return
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#719e07>return</span> <span style=color:#2aa198>1</span>
+</span></span></span><span style=display:flex><span>    <span style=color:#586e75>// return
+</span></span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> <span style=color:#2aa198>1</span>
 </span></span><span style=display:flex><span>  }
 </span></span><span style=display:flex><span>  <span style=color:#719e07>else</span>
 </span></span><span style=display:flex><span>  {
 </span></span><span style=display:flex><span>      <span style=color:#586e75>// dl = Buffer[ecx]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// var1 = dl
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// var1 = Buffer[ecx]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// var1 = dl
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// var1 = Buffer[ecx]
+</span></span></span><span style=display:flex><span>      
 </span></span><span style=display:flex><span>      <span style=color:#586e75>// look for 0x0A
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// mov var1, eax
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// cmp eax, 0x0A
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// mov var1, eax
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// cmp eax, 0x0A
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>      <span style=color:#586e75>// look for 0x0D
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// movzx  ecx, [ebp+var_1]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// cmp     ecx, 0Dh
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// jz      short loc_4011A4
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// movzx  ecx, [ebp+var_1]
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// cmp     ecx, 0Dh
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// jz      short loc_4011A4
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>      <span style=color:#586e75>// check for 0x00
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// movzx   edx, [ebp+var_1]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// test    edx, edx
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// jz      short loc_4011A4
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// movzx   edx, [ebp+var_1]
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// test    edx, edx
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// jz      short loc_4011A4
+</span></span></span><span style=display:flex><span>      
 </span></span><span style=display:flex><span>      <span style=color:#719e07>if</span> (Buffer[counter] <span style=color:#719e07>!=</span> <span style=color:#2aa198>0x0A</span> <span style=color:#719e07>||</span> <span style=color:#2aa198>0x0D</span> <span style=color:#719e07>||</span> <span style=color:#2aa198>0x00</span> ) <span style=color:#586e75>// newline or end of string
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      {
+</span></span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#586e75>// eax = var8 // ecx
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#586e75>// cl = Buffer[ecx]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        <span style=color:#586e75>// byte_403078[eax] = cl // Copy buffer to byte_403078 but bypass new those 3 chars
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>        byte_403078[counter] <span style=color:#719e07>=</span> Buffer[counter]
+</span></span></span><span style=display:flex><span>        <span style=color:#586e75>// cl = Buffer[ecx]
+</span></span></span><span style=display:flex><span>        <span style=color:#586e75>// byte_403078[eax] = cl // Copy buffer to byte_403078 but bypass new those 3 chars
+</span></span></span><span style=display:flex><span>        byte_403078[counter] <span style=color:#719e07>=</span> Buffer[counter]
 </span></span><span style=display:flex><span>      }
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>      loc_4011A4:
 </span></span><span style=display:flex><span>      <span style=color:#586e75>// edx = var8
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// edx++
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      <span style=color:#586e75>// var8 = edx
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>      counter<span style=color:#719e07>++</span>
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// edx++
+</span></span></span><span style=display:flex><span>      <span style=color:#586e75>// var8 = edx
+</span></span></span><span style=display:flex><span>      counter<span style=color:#719e07>++</span>
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p><strong>Seems like it reads input and removes newlines and copies the rest to byte_403078.</strong></p><p><code>sub_401020</code></p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>arg0 <span style=color:#719e07>=</span> Buffer
@@ -98,21 +98,21 @@ F8: Step Over</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgr
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> Buffer
 </span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> eax <span style=color:#719e07>+</span> var4 <span style=color:#586e75>// 0
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// movsx ecx, byte ptr [eax]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>ecx <span style=color:#719e07>=</span> Buffer[<span style=color:#2aa198>0</span>]
+</span></span></span><span style=display:flex><span>ecx <span style=color:#719e07>=</span> Buffer[<span style=color:#2aa198>0</span>]
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// test ecx, ecx
 </span></span></span><span style=display:flex><span><span style=color:#586e75>// jz short loc_401043
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>if</span> (ecx <span style=color:#719e07>==</span> <span style=color:#2aa198>0</span>) <span style=color:#719e07>goto</span> loc_401043 <span style=color:#586e75>// e.g. jmp there if we have reached the end of the string
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// else
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// edx = var4
 </span></span></span><span style=display:flex><span><span style=color:#586e75>// edx++
 </span></span></span><span style=display:flex><span><span style=color:#586e75>// var4 = edx
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>var4<span style=color:#719e07>++</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>goto</span> loc_40102B
@@ -121,7 +121,7 @@ F8: Step Over</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgr
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// eax = var4
 </span></span></span><span style=display:flex><span><span style=color:#586e75>// return
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>return</span> var4
 </span></span></code></pre></div><p>In other words it's just strlen(Buffer).</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>var4 <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>
 </span></span><span style=display:flex><span>
@@ -132,27 +132,27 @@ F8: Step Over</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgr
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>return</span> var4
 </span></span></code></pre></div><p>Now let's look at <code>sub_401050</code></p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>push byte_403078  <span style=color:#586e75>// cleaned string
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>varC <span style=color:#719e07>=</span> <span style=color:#268bd2>strlen</span>(byte_403078)  <span style=color:#586e75>// strlen(cleaned_string)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>varC <span style=color:#719e07>=</span> <span style=color:#268bd2>strlen</span>(byte_403078)  <span style=color:#586e75>// strlen(cleaned_string)
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>call sub_401000
 </span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> <span style=color:#2aa198>0x00700004</span>
 </span></span><span style=display:flex><span>var1 <span style=color:#719e07>=</span> al <span style=color:#719e07>=</span> <span style=color:#2aa198>0x04</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> varC <span style=color:#586e75>// len(cleaned string)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>eax<span style=color:#719e07>--</span>
+</span></span></span><span style=display:flex><span>eax<span style=color:#719e07>--</span>
 </span></span><span style=display:flex><span>var8 <span style=color:#719e07>=</span> eax <span style=color:#586e75>// varC--
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>if</span> (var8 <span style=color:#719e07>&lt;</span> <span style=color:#2aa198>0</span>) <span style=color:#586e75>// if (len(cleaned_string) - 1 &lt; 0) aka if (len(cleaned_string) == 0)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>{
+</span></span></span><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  var8 <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>
 </span></span><span style=display:flex><span>  <span style=color:#719e07>if</span> (var8 <span style=color:#719e07>&lt;</span> <span style=color:#2aa198>0x27</span>) <span style=color:#586e75>// which obviously always happens
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  {
+</span></span></span><span style=display:flex><span>  {
 </span></span><span style=display:flex><span>    <span style=color:#586e75>// eax = var8
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// ecx = xor_string[eax]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// edx = var8
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// eax = target_string[var8]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#586e75>// cmp ecx, eax
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>    <span style=color:#586e75>// ecx = xor_string[eax]
+</span></span></span><span style=display:flex><span>    <span style=color:#586e75>// edx = var8
+</span></span></span><span style=display:flex><span>    <span style=color:#586e75>// eax = target_string[var8]
+</span></span></span><span style=display:flex><span>    <span style=color:#586e75>// cmp ecx, eax
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#719e07>if</span> (xor_string[var8] <span style=color:#719e07>==</span> target_string[var8])
 </span></span><span style=display:flex><span>    {
 </span></span><span style=display:flex><span>      var8<span style=color:#719e07>++</span>
@@ -167,21 +167,21 @@ F8: Step Over</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgr
 </span></span><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  edx <span style=color:#719e07>=</span> var8
 </span></span><span style=display:flex><span>  eax <span style=color:#719e07>=</span> cleaned_string[var8] <span style=color:#586e75>// in this case it&#39;s the last char (because null termination?)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  ecx <span style=color:#719e07>=</span> var1 <span style=color:#586e75>// 0x04
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  eax <span style=color:#719e07>=</span> eax xor ecx <span style=color:#586e75>// last one is xor-ed by 0x04
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  edx <span style=color:#719e07>=</span> var8
+</span></span></span><span style=display:flex><span>  ecx <span style=color:#719e07>=</span> var1 <span style=color:#586e75>// 0x04
+</span></span></span><span style=display:flex><span>  eax <span style=color:#719e07>=</span> eax xor ecx <span style=color:#586e75>// last one is xor-ed by 0x04
+</span></span></span><span style=display:flex><span>  edx <span style=color:#719e07>=</span> var8
 </span></span><span style=display:flex><span>  mov byte_403180[edx], al <span style=color:#586e75>// first char of xor_string = last char of cleaned_string xor 0x04
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  var1 <span style=color:#719e07>=</span> cl <span style=color:#586e75>// clearned_string[var8]
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>  var1 <span style=color:#719e07>=</span> cl <span style=color:#586e75>// clearned_string[var8]
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  var8<span style=color:#719e07>--</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  <span style=color:#586e75>// next round the previous char is xor-ed with next one
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  <span style=color:#586e75>// in other words
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  <span style=color:#586e75>// parse the string in reverse
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  <span style=color:#586e75>// first char is xor-ed by 0x04
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  <span style=color:#586e75>// next chat is xor-ed by previous char in clearned_string
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span></span><span style=display:flex><span>  <span style=color:#586e75>// parse the string in reverse
+</span></span></span><span style=display:flex><span>  <span style=color:#586e75>// first char is xor-ed by 0x04
+</span></span></span><span style=display:flex><span>  <span style=color:#586e75>// next chat is xor-ed by previous char in clearned_string
+</span></span></span><span style=display:flex><span>}
 </span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>kstr1 <span style=color:#719e07>=</span> <span style=color:#2aa198>&#34;0D2649452A1778442B6C5D5E45122F172B446F6E56095F454773260A0D1317484201404D0C0269&#34;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>str1 <span style=color:#719e07>=</span> str1<span style=color:#719e07>.</span>decode(<span style=color:#2aa198>&#34;hex&#34;</span>)
@@ -203,9 +203,9 @@ F8: Step Over</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;backgr
 </span></span></code></pre></div><p><code>sub_401000</code></p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>eax <span style=color:#719e07>=</span> <span style=color:#2aa198>0x80070057</span>
 </span></span><span style=display:flex><span>edx <span style=color:#719e07>=</span> eax <span style=color:#719e07>=</span> <span style=color:#2aa198>0x80070057</span>
 </span></span><span style=display:flex><span>xor ax, ax  <span style=color:#586e75>// eax = 0x80070000 -- the first 4 bytes of eax (ax) is zero-ed
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>rol eax, <span style=color:#2aa198>4</span>  <span style=color:#586e75>// eax = 0x00700008 -- remember it&#39;s rotate left by 4 bits (not bytes)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>shr ax, <span style=color:#2aa198>1</span>   <span style=color:#586e75>// eax = 0x00700004 -- remember shift-right by 1 bit on only ax (everything is replaced by 0 last one goes into CF but the rest fall off)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>rol eax, <span style=color:#2aa198>4</span>  <span style=color:#586e75>// eax = 0x00700008 -- remember it&#39;s rotate left by 4 bits (not bytes)
+</span></span></span><span style=display:flex><span>shr ax, <span style=color:#2aa198>1</span>   <span style=color:#586e75>// eax = 0x00700004 -- remember shift-right by 1 bit on only ax (everything is replaced by 0 last one goes into CF but the rest fall off)
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>return</span> eax <span style=color:#2aa198>0x00700004</span>
 </span></span></code></pre></div><p><strong>flag: <a href=mailto:R_y0u_H0t_3n0ugH_t0_1gn1t3@flare-on.com>R_y0u_H0t_3n0ugH_t0_1gn1t3@flare-on.com</a></strong></p><hr><h1 id=3---greek_to_meexe>3 - greek_to_me.exe
 <a class=header-link href=#3---greek_to_meexe><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>Running strings (from Sysinternals) on it we get:</p><ul><li><code>-nobanner</code>: do not display banner.</li><li><code>-o</code>: print the offset of the string (useful in case we want to use find the string in a hex editor like HxD).</li></ul><pre tabindex=0><code>PS &gt; .\SysinternalsSuite\strings64.exe -o -nobanner .\3-GreektoMe\greek_to_me.exe
@@ -332,19 +332,19 @@ D3 72 F5 16 CB 73 58 D3 78 AE 58 D3 79 F8 58 D3 76 FA 58 D3
 </span></span><span style=display:flex><span>esi <span style=color:#719e07>=</span> edx
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>if</span> (edx <span style=color:#719e07>&gt;</span> eax) <span style=color:#586e75>// if remaining data &gt; block size use blocksize, otherwise use remaining data in blob2
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>{
+</span></span></span><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  esi <span style=color:#719e07>=</span> eax  <span style=color:#586e75>// cmova esi, eax
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span></span><span style=display:flex><span>}
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>edx <span style=color:#719e07>=</span> edx <span style=color:#719e07>-</span> esi <span style=color:#586e75>// remove one block from size of remaining data
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// initial values
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>var4 <span style=color:#719e07>=</span> <span style=color:#2aa198>0xFF</span>
+</span></span></span><span style=display:flex><span>var4 <span style=color:#719e07>=</span> <span style=color:#2aa198>0xFF</span>
 </span></span><span style=display:flex><span>ecx  <span style=color:#719e07>=</span> <span style=color:#2aa198>0xFF</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#586e75>// for each block do these
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>di <span style=color:#719e07>=</span> var4
+</span></span></span><span style=display:flex><span>di <span style=color:#719e07>=</span> var4
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#719e07>for</span> (i<span style=color:#719e07>=</span><span style=color:#2aa198>0</span>; i<span style=color:#719e07>&lt;</span>esi; i<span style=color:#719e07>++</span>)
 </span></span><span style=display:flex><span>{
@@ -355,13 +355,13 @@ D3 72 F5 16 CB 73 58 D3 78 AE 58 D3 79 F8 58 D3 76 FA 58 D3
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>ax <span style=color:#719e07>=</span> first byte of var4
 </span></span><span style=display:flex><span>shr di, <span style=color:#2aa198>8</span> <span style=color:#586e75>// shift right one byte. In case of di, second byte is zero-ed and replaces first byte (e.g. 0B 25 &gt;  00 0B)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>          <span style=color:#586e75>// in other worde divide di by 256
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>ax <span style=color:#719e07>=</span> ax <span style=color:#719e07>+</span> di
+</span></span></span><span style=display:flex><span>          <span style=color:#586e75>// in other worde divide di by 256
+</span></span></span><span style=display:flex><span>ax <span style=color:#719e07>=</span> ax <span style=color:#719e07>+</span> di
 </span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> ax <span style=color:#586e75>// doesn&#39;t matter
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>var4 <span style=color:#719e07>=</span> eax <span style=color:#586e75>// this overwrites all of var4 (remember we only copied the first byte)
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>eax <span style=color:#719e07>=</span> <span style=color:#268bd2>cl</span> (only first byte of ecx from last <span style=color:#719e07>while</span> is saved)
+</span></span></span><span style=display:flex><span>var4 <span style=color:#719e07>=</span> eax <span style=color:#586e75>// this overwrites all of var4 (remember we only copied the first byte)
+</span></span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> <span style=color:#268bd2>cl</span> (only first byte of ecx from last <span style=color:#719e07>while</span> is saved)
 </span></span><span style=display:flex><span>shr cx, <span style=color:#2aa198>8</span> (shift cx right one byte) <span style=color:#586e75>// cx = cx / 8
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>ax <span style=color:#719e07>=</span> ax <span style=color:#719e07>+</span> cx
+</span></span></span><span style=display:flex><span>ax <span style=color:#719e07>=</span> ax <span style=color:#719e07>+</span> cx
 </span></span><span style=display:flex><span>ecx <span style=color:#719e07>=</span> ax
 </span></span><span style=display:flex><span>eax <span style=color:#719e07>=</span> <span style=color:#2aa198>0x14</span>  <span style=color:#586e75>// reset block size
 </span></span></span></code></pre></div><p>After all these</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-nasm data-lang=nasm><span style=display:flex><span>loc_40124A:
@@ -452,7 +452,7 @@ for char in filename:
 </span></span><span style=display:flex><span>    LIST_ENTRY InMemoryOrderLinks;
 </span></span><span style=display:flex><span>    PVOID Reserved2[<span style=color:#2aa198>2</span>];
 </span></span><span style=display:flex><span>    PVOID DllBase;      <span style=color:#586e75>// +0x10
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    PVOID EntryPoint;
+</span></span></span><span style=display:flex><span>    PVOID EntryPoint;
 </span></span><span style=display:flex><span>    PVOID Reserved3;
 </span></span><span style=display:flex><span>    UNICODE_STRING FullDllName;
 </span></span><span style=display:flex><span>    BYTE Reserved4[<span style=color:#2aa198>8</span>];
@@ -600,11 +600,11 @@ var4C = MapViewOfFile(var44)</p><h4 id=mapviewoffile>MapViewOfFile
 </span></span><span style=display:flex><span>.rsrc:01014<span style=color:#268bd2>D54</span> <span style=color:#268bd2>jnz</span>     <span style=color:#268bd2>short</span> <span style=color:#268bd2>loc_1014D83</span>
 </span></span></code></pre></div><p>Looking back at the MSDN link for CreateFile we can see what is being pushed.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#268bd2>CreateFile</span>(hTemplateFile <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>,
 </span></span><span style=display:flex><span>    dwFlagsAndAttributes <span style=color:#719e07>=</span> <span style=color:#2aa198>0x80</span>, <span style=color:#586e75>// FILE_ATTRIBUTE_NORMAL - The file does not have other attributes set. This attribute is valid only if used alone.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    dwCreationDisposition<span style=color:#719e07>=</span> <span style=color:#2aa198>0x03</span>, <span style=color:#586e75>// OPEN_EXISTING
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    lpSecurityAttributes <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>,    <span style=color:#586e75>// The handle returned by CreateFile cannot be inherited by any child processes the application
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    dwShareMode          <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>,    <span style=color:#586e75>// Prevents other processes from opening a file or device if they request delete, read, or write access.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    dwDesiredAccess<span style=color:#719e07>=</span> <span style=color:#2aa198>0x80000000</span>, <span style=color:#586e75>// FILE_FLAG_WRITE_THROUGH - No caching - Write operations will go directly to disk.
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    lpFileName           <span style=color:#719e07>=</span> <span style=color:#2aa198>&#34;...</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>flareon2016challenge</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>key.bin&#34;</span>
+</span></span></span><span style=display:flex><span>    dwCreationDisposition<span style=color:#719e07>=</span> <span style=color:#2aa198>0x03</span>, <span style=color:#586e75>// OPEN_EXISTING
+</span></span></span><span style=display:flex><span>    lpSecurityAttributes <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>,    <span style=color:#586e75>// The handle returned by CreateFile cannot be inherited by any child processes the application
+</span></span></span><span style=display:flex><span>    dwShareMode          <span style=color:#719e07>=</span> <span style=color:#2aa198>0</span>,    <span style=color:#586e75>// Prevents other processes from opening a file or device if they request delete, read, or write access.
+</span></span></span><span style=display:flex><span>    dwDesiredAccess<span style=color:#719e07>=</span> <span style=color:#2aa198>0x80000000</span>, <span style=color:#586e75>// FILE_FLAG_WRITE_THROUGH - No caching - Write operations will go directly to disk.
+</span></span></span><span style=display:flex><span>    lpFileName           <span style=color:#719e07>=</span> <span style=color:#2aa198>&#34;...</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>flareon2016challenge</span><span style=color:#cb4b16>\\</span><span style=color:#2aa198>key.bin&#34;</span>
 </span></span><span style=display:flex><span>    )
 </span></span></code></pre></div><p>Handle to the key file goes into var60.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-nasm data-lang=nasm><span style=display:flex><span>loc_1014D83:
 </span></span><span style=display:flex><span><span style=color:#268bd2>push</span>    <span style=color:#2aa198>0</span>
@@ -623,11 +623,11 @@ var4C = MapViewOfFile(var44)</p><h4 id=mapviewoffile>MapViewOfFile
 </span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>
 </span></span><span style=display:flex><span>BOOL WINAPI <span style=color:#268bd2>ReadFile</span>(
 </span></span><span style=display:flex><span>  _In_        HANDLE       hFile,                <span style=color:#586e75>// var60 - file handle to key.bin
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  _Out_       LPVOID       lpBuffer,             <span style=color:#586e75>// var44 - pointer to an empty buffer?
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  _In_        DWORD        nNumberOfBytesToRead, <span style=color:#586e75>// 0x20  - 32 decimal
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  _Out_opt_   LPDWORD      lpNumberOfBytesRead,  <span style=color:#586e75>// var18 - which looks like an empty buffer
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  _Inout_opt_ LPOVERLAPPED lpOverlapped          <span style=color:#586e75>// 0
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>);
+</span></span></span><span style=display:flex><span>  _Out_       LPVOID       lpBuffer,             <span style=color:#586e75>// var44 - pointer to an empty buffer?
+</span></span></span><span style=display:flex><span>  _In_        DWORD        nNumberOfBytesToRead, <span style=color:#586e75>// 0x20  - 32 decimal
+</span></span></span><span style=display:flex><span>  _Out_opt_   LPDWORD      lpNumberOfBytesRead,  <span style=color:#586e75>// var18 - which looks like an empty buffer
+</span></span></span><span style=display:flex><span>  _Inout_opt_ LPOVERLAPPED lpOverlapped          <span style=color:#586e75>// 0
+</span></span></span><span style=display:flex><span>);
 </span></span></code></pre></div><p>So it reads 32 bytes from the key file.</p><p>Let's put some text into the key file and re-run.</p><p><code>012345678901234567890123456789AB</code></p><p>Then it checks if we read 0x20 bytes which we did.</p><p>push 0x20
 push
 push 0x20

@@ -1,4 +1,4 @@
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Static Program Analysis Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.152.2"><meta name=twitter:card content="summary"><meta name=twitter:title content="Static Program Analysis Notes"><meta name=twitter:description content="Reading the version dated February 10, 2022.
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Static Program Analysis Notes</title><link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=https://parsiya.io//clone.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://parsiya.io/favicon.png rel=icon><meta name=description content><meta name=keywords content="[Parsia Hakimian Parsiya infosec information security]"><meta name=author content="Parsia-Clone"><meta name=generator content="Hugo 0.153.0"><meta name=twitter:card content="summary"><meta name=twitter:title content="Static Program Analysis Notes"><meta name=twitter:description content="Reading the version dated February 10, 2022.
 https://cs.au.dk/~amoeller/spa/
 I am gonna copy/paste stuff from the PDF and then add my notes instead of
 writing digitally on the PDF because I think it will be better for
@@ -21,25 +21,25 @@ needed.</p><p>Rice’s theorem: all interesting questions about the input/output
 programs (written in Turing-complete programming languages) are undecidable.</p><blockquote><p>[it's] possible to build analysis tools that give useful answers for most
 realistic programs.</p></blockquote><p><strong>Exercise 1.1</strong></p><p>The code (removed the argc check) so we can just paste it in a REPL.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#719e07>#include</span> <span style=color:#719e07>&lt;stdio.h&gt;</span><span style=color:#719e07>
 </span></span></span><span style=display:flex><span><span style=color:#719e07>#include</span> <span style=color:#719e07>&lt;string.h&gt;</span><span style=color:#719e07>
-</span></span></span><span style=display:flex><span><span style=color:#719e07></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#dc322f>int</span> <span style=color:#268bd2>main</span>() {
 </span></span><span style=display:flex><span>  <span style=color:#dc322f>char</span> <span style=color:#719e07>*</span>p,<span style=color:#719e07>*</span>q;
 </span></span><span style=display:flex><span>  p <span style=color:#719e07>=</span> <span style=color:#b58900>NULL</span>;
 </span></span><span style=display:flex><span>  <span style=color:#268bd2>printf</span>(<span style=color:#2aa198>&#34;%s&#34;</span>,p);   <span style=color:#586e75>// Just prints (null) in modern compilers, not a security issue
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  q <span style=color:#719e07>=</span> (<span style=color:#dc322f>char</span> <span style=color:#719e07>*</span>)<span style=color:#268bd2>malloc</span>(<span style=color:#2aa198>100</span>);
 </span></span><span style=display:flex><span>  p <span style=color:#719e07>=</span> q;
 </span></span><span style=display:flex><span>  <span style=color:#268bd2>free</span>(q);
 </span></span><span style=display:flex><span>  <span style=color:#719e07>*</span>p <span style=color:#719e07>=</span> <span style=color:#2aa198>&#39;x&#39;</span>; <span style=color:#586e75>// Use-after-free but it&#39;s not an error by itself in this code
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  <span style=color:#268bd2>printf</span>(<span style=color:#2aa198>&#34;%s&#34;</span>,p); <span style=color:#586e75>// Adding this line will trigger the UAF
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>  <span style=color:#268bd2>printf</span>(<span style=color:#2aa198>&#34;%s&#34;</span>,p); <span style=color:#586e75>// Adding this line will trigger the UAF
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  <span style=color:#268bd2>free</span>(p);  <span style=color:#586e75>// Double free
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  p <span style=color:#719e07>=</span> (<span style=color:#dc322f>char</span> <span style=color:#719e07>*</span>)<span style=color:#268bd2>malloc</span>(<span style=color:#2aa198>100</span>);
 </span></span><span style=display:flex><span>  p <span style=color:#719e07>=</span> (<span style=color:#dc322f>char</span> <span style=color:#719e07>*</span>)<span style=color:#268bd2>malloc</span>(<span style=color:#2aa198>100</span>); <span style=color:#586e75>// memory leak because we did not free(p) before the new malloc
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  q <span style=color:#719e07>=</span> p;    <span style=color:#586e75>// another memory leak? because we did not free(q) before reassigning it
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>  <span style=color:#268bd2>strcat</span>(p,q);  <span style=color:#586e75>// Buffer overflow - strcat doesn&#39;t do any bounds check
-</span></span></span><span style=display:flex><span><span style=color:#586e75></span>}
+</span></span></span><span style=display:flex><span>  q <span style=color:#719e07>=</span> p;    <span style=color:#586e75>// another memory leak? because we did not free(q) before reassigning it
+</span></span></span><span style=display:flex><span>  <span style=color:#268bd2>strcat</span>(p,q);  <span style=color:#586e75>// Buffer overflow - strcat doesn&#39;t do any bounds check
+</span></span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p><strong>End of Exercise 1.1</strong></p><blockquote><p>a program analyzer is sound if it never gives incorrect results (but it may
 answer maybe).</p></blockquote><p>Does this mean we can call every static analysis tool <code>sound</code>? They could give
 us false positives but also say "Well, that was a maybe."</p><blockquote><p>the notion of soundness depends on the intended application of the analysis
