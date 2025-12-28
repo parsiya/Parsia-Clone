@@ -1753,7 +1753,7 @@ library because someone else had a hold then wait a month to get it back). So I
 will mention my favorite stories and a few others.
 
 Wolfe, being a Catholic (and I quite like them but not the American adult
-converts, mind you), has a lot of religious symbolism in his stories.
+converts, mind you), has a lot of religious symbolisms in his stories.
 
 I loved:
 
@@ -1799,7 +1799,8 @@ I liked:
   of letters) between a new author and their agent. Gene's
   [Sorcerer's House]({{<relref "#srchouse">}}) uses the same technique. It looks
   like the author is being consumed by the writing machine of a famous horror author.
-* Straw (1975): A group of mercenaries are traveling by hot air balloon. They land in a estate and the hosts insist they spent the night.
+* Straw (1975): A group of mercenaries are traveling by hot air balloon. They
+  land in a estate and the hosts insist they spent the night.
 
 I didn't like:
 
@@ -1818,9 +1819,9 @@ I didn't like:
 * On the Train [Redwood Coast Roamer] (1983): Narrated by a passenger on an infinite train?
 * Redbeard (1984): Story of serial murders in a rural abandoned house.
 * And When They Appear (1993): Story of a kid's Christmas in a robotic house
-  with holograms and a mob closing in. Is this an allegory for getting punished
-  for not believing in Jesus (Christmas) and always having the option to repent?
-  Damn Gene, a little kid shouldn't get that kind of punishment!
+  with holograms and a mob closing in. Damn Gene, a little kid shouldn't get
+  that kind of punishment for not believing in Christmas. Is this an allegory
+  for getting punished for not believing in Jesus?
 
 [haji-wiki]: https://en.wikipedia.org/wiki/Haji_Washington
 [haji-movie]: https://en.wikipedia.org/wiki/Hajji_Washington
@@ -1918,13 +1919,13 @@ read through the first ten pages and realized that is not my thing. Maybe it
 will be your type of story.
 
 ## Michael Mersault - The Deep Man 03 - The Presence Malign - 3.5/5 {#deepman03}
-Third book in the Deep Man series. It was called a trilogy, but this book
-doesn't appear to be the ending. My ratings are going down for it, from 4.5 to 4
-and finally, 3.5. The action is getting less interesting. Similar to book #2,
-the last 3rd of the book although the last 3rd of the book is action packed.
-There's action on the ground, in space, and well, somewhere else.
+Third book in the Deep Man series. It was originally called a trilogy, but this
+book doesn't appear to be the ending. My ratings are going down for each volume,
+from 4.5 to 4 and finally, 3.5. The action is getting less interesting. Similar
+to book #2, the last 3rd of the book is action packed. There's action on the
+ground, in space, and well, somewhere else.
 
-The author attempted to add more emotional depth to the recurring character
+The author attempted to add more emotional depth to the recurring characters
 which is in contrast to the calm and emotionless technique the series is named
 after. We're all human after all, no matter how many psychological and physical
 modifications we have gone through.
