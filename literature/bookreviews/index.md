@@ -950,8 +950,8 @@ distributed." If I could paraphrase, "The dystopia is already here, it's just
 not evenly distributed." 
 
 If you know me and my background, you know why I've lived some of the stories.
-Why I moved to Canada (and I am Canadian as of a few weeks ago) almost exactly
-one year after naturalizing as a US citizen.
+Why I moved to Canada (and I am Canadian as of a few weeks ago) exactly one year
+after naturalizing as a US citizen.
 
 Some of the stories I really didn't like, but maybe that was again because they
 were too depressing.
@@ -1757,7 +1757,7 @@ converts, mind you), has a lot of religious symbolisms in his stories.
 
 I loved:
 
-* Seven American Nights (1978): **my absolute favorite story**. It's about a
+* Seven American Nights (1978): **My absolute favorite story**. It's about a
   future where US has become an underdeveloped country but Iran is advanced and
   has colonies on the moon (New Tabriz). An Iranian scholar visits Washington DC
   and is mysteriously killed. The Wolfewiki has extensive discussion about the
@@ -1781,9 +1781,9 @@ I liked:
   from the master. These puppets are a mix of robotics and manual control. The
   master can do five at a time. The story mentions they can be more automated,
   but the master does it the old fashioned way. Was even the visitor a puppet?
-* Beech Hill (1972): A man goes to a mansion named Beech Hill once a year where
-  everyone plays a mysterious character (he pretends to be a secret agent) for a
-  week. He sees one of the visitors on TV who is a billionaire and starts to
+* Beech Hill (1972): Once a year a man goes to the Beech Hill mansion where
+  everyone plays a mysterious character for a week (he pretends to be a secret
+  agent). He sees one of the visitors on TV who is a billionaire and starts to
   think the billionaire set this up to laugh at them or other people there are
   not actually playing a character and he is a fool.
 * The Hero as Werwolf (1975): Humans have advanced through genetic manipulation.
@@ -1810,8 +1810,8 @@ I didn't like:
 * The Recording (1972): A man remembers a childhood memory where his uncle was
   supposed to buy him a record.
 * Hour of Trust (1973): The US is going through a civil war. The US government
-  side is being bankrolled by corporation. A group of American business people
-  are gathering foreign investments to continue the war.
+  side is bankrolled by corporations. A group of American business people are
+  gathering foreign investments to continue the war.
 * La Befana (1973): Christmas on another world.
 * Westwind (1973): Everyone is Westwind. Is this a metaphor for religion?
 * The Eyeflash Miracles (1976): A blind kid in a dystopian Earth can perform miracles.
@@ -2015,3 +2015,30 @@ I didn't like or didn't finish:
 * Edge Case - Richard Fox: A maintenance worker is woken from cryosleep on the
   Moon by a robot. Apparently the Russians have hit the US colonies. So these
   two go to rescue his friend.
+
+## Walter Jon Williams - Quillifer 01 - Quillifer - 5/5 {#quill01}
+Finally managed to find all three books in this series in the public library
+(digital loan for book two). Originally, I had read "The Triumph of Virtue" in
+"The Book of Swords" (review above) and I thought it's a separate story in the
+same universe, but it's actually part of the first book.
+
+The setting is very similar to "The Three Musketeers." There's some magic, but
+humans cannot use it. Mythical beasts exists but are very rare. The court is
+full of people trying to back stab each other. There are lords who basically
+don't do much other than collect rent and gamble it away and a somewhat
+permanent underclass of peasants.
+
+Quillifer is your typical happy-go-lucky gentleman womanizer. Originally, he is
+the son of a butcher training to become a lawyer until the raiders sack his city
+and kill his family. So he sets out into the world and ends up at the royal
+court in the middle of a civil war.
+
+Quotes:
+
+> [Quillifer:] "Necessity is a cold mistress, but Liberty inspires delightful
+> bed-play."
+> "Finely phrased," said Orlanda, "but finely phrased delusion."
+
+I love this one.
+
+> What means human ambition if it is but the prompting of a god.
