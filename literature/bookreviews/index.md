@@ -2042,3 +2042,23 @@ Quotes:
 I love this one.
 
 > What means human ambition if it is but the prompting of a god.
+
+## Walter Jon Williams - Quillifer 02 - Quillifer The Knight - 4.5/5 {#quill02}
+Part two of the Quillifer series. He continues his life through the world while
+womanizing, making money and doing hijinks at court. I skimmed the first few
+chapters until the end of the sea voyage and landfall. That part was not
+interesting to me.
+
+Quillifer doesn't go to war directly this time, but he gets involved in all
+manners of conspiracy in court. Of course, he keeps relations with ladies at
+court (married ones as usual). I do not want to spoil the ending, but he gets
+involved with much more than he bargained for at court. The last part where he
+cashes out that 
+
+Orlanda is still trying to mess with him, but apart from the beginning, she is
+mostly a nuisance and for some reason has taken an active role in his life.
+Doesn't she have anything better to do?
+
+Overall, a great book, apart from the first few chapters, I liked the rest. The
+public library did not have it in paper so I used a digital loan. I cannot wait
+to start the 3rd book in the series (paperback from the public library).
