@@ -2062,3 +2062,29 @@ Doesn't she have anything better to do?
 Overall, a great book, apart from the first few chapters, I liked the rest. The
 public library did not have it in paper so I used a digital loan. I cannot wait
 to start the 3rd book in the series (paperback from the public library).
+
+## Walter Jon Williams - Quillifer 03 - Lord Quillifer - 4.5/5 {#quill03}
+Third and hopefully not the final Quillifer book. I love this series. He managed
+to be Queen maker and install Queen Floria. He is now scheming in the royal
+court and dealing with the nobles.
+
+He unveils two separate assassination plots. Goes to war and destroys an entire
+navy. Even defends a city under siege. I did not like the naval battles that much but
+I loved the siege chapters. Unfortunately, for Quillifer, none of this is enough
+to fix his deficit. The consequences of his birth and as a first time lord.
+Floria did so [redacted for spoilers] that even Orlanda was jealous.
+
+Each Quillifer book is written as if Quillifer is narrating the stories to a
+woman. In the previous book it was to d'Altrey and finally to Floria. In
+this one it's Orlanda and why I hope there will be more to come. Orlanda barely
+appeared in this book.
+
+[According to the author][wjw-comment]:
+
+> Q3 is the last on the contract, though I’ve plotted out six volumes and hope
+> to sell them all.
+
+[wjw-comment]: https://www.walterjonwilliams.net/2019/11/all-spoilers/#comment-184915
+
+Fingers crossed! If I were a billionaire I would fund that. I wouldn't imagine
+Walter wanting more than a million dollars for all three books.
