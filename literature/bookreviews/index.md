@@ -2075,9 +2075,10 @@ to fix his deficit. The consequences of his birth and as a first time lord.
 Floria did so [redacted for spoilers] that even Orlanda was jealous.
 
 Each Quillifer book is written as if Quillifer is narrating the stories to a
-woman. In the previous book it was to d'Altrey and finally to Floria. In
-this one it's Orlanda and why I hope there will be more to come. Orlanda barely
-appeared in this book.
+woman. In the previous book it was to d'Altrey and finally to Floria. In this
+one it's Orlanda and why I hope there will be more to come. Orlanda barely
+appeared in this book and in the end and was practically praising his
+resilience.
 
 [According to the author][wjw-comment]:
 
@@ -2088,3 +2089,8 @@ appeared in this book.
 
 Fingers crossed! If I were a billionaire I would fund that. I wouldn't imagine
 Walter wanting more than a million dollars for all three books.
+
+Quote from the last few pages. Quillifer is quoting Orlanda:
+
+> You may not live in a world of whispers and enmity without suffering some
+> loss. And in your position, to suffer any loss is to to lose it all.
