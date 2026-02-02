@@ -617,7 +617,7 @@ I loved:
   only regret is not finding the concept art of characters before reading the
   story. Check the middle of this page:
   https://scottlynch.substack.com/p/blame-of-thrones. See my favorite quotes
-  from this story at the bottom of this section.
+  from this story at the end of the review.
 * "The Colgrid Conundrum": Two thieves do a drug heist in an industrial (almost
   steampunk) city. I loved the city and was disappointed to see 
   [the author][rich] has not written anything else there, fortunately he has two
@@ -656,7 +656,7 @@ I didn't like or skipped:
 * "Her Father's Sword": Kidnapped villagers return as selfish drones. Girl
   struggles to connect with the soulless husk of her father.
 * "The Hidden Girl": 10 year old girl is kidnapped and trained as an assassin.
-  She develops a conscious.
+  She develops a conscious. [Read it on Lightspeed magazine][hidden-girl].
   * "We're all thieves in this world of suffering," the nun says, "Honor and
     faith are not virtues, only excuses for stealing more."
 * "The Sword of Destiny": Wizard's apprentice is sent to steal a magic sword.
@@ -668,6 +668,8 @@ I didn't like or skipped:
   books. I didn't like this story, but I am gonna try some of the other books.
 * "The Sword Tyraste": Man tries to avenge his family with the help of a magic
   sword. It was an easy read, but very bland.
+
+[hidden-girl]: https://www.lightspeedmagazine.com/fiction/the-hidden-girl/
 
 Quotes from "The Smoke of Gold is Glory"
 
@@ -1386,7 +1388,7 @@ these reviews right after finishing the book.
 
 **My absolute favorite story of the book** was "Crystal Halloway and the
 Forgotten Passage" by Seanan McGuire.You can also read it online at
-https://www.fantasy-magazine.com/fm/fiction/crystal-halloway-and-the-forgotten-passage/.
+https://psychopomp.com/fantasy/dec-2011-issue-57/crystal-halloway-and-the-forgotten-passage/.
 
 I love it, it's amazing! It was one of the most depressingly fantastic stories I
 have ever read. The way we forget our fantasies after we "grow up." Maybe I read
@@ -1851,15 +1853,15 @@ I loved:
   is almost penny less (now what does that remind me of). He devises a plan to
   use a gang of teens to steal the miracle cure from the hospital and sell it.
 * "The Golden Age": **Oh I loved this one. What a setting!**. It's a close
-  second and would be my favorite story of the book if not for Videostar being
-  my favorite cyberpunk universe. It's a very weird story of a steampunk wild
-  west. The setting is lawless western California coast during the gold rush.
-  Condor, a vigilante fights crimes and inspires a great number of weird
-  supervillain-esque characters. I was bummed to see Walter has not expanded
-  this universe, but not all hope was lost. The "story notes" section at the end
-  of the book mentioned this story was written for
-  [Dead Man's Hand: An Anthology of the Weird West][dead] so I am definitely
-  going to read that one.
+  second and would be my favorite story of the book if not for Videostar. It's a
+  very weird story of a steampunk wild west. The setting is lawless western
+  California coast during the gold rush. Condor, a vigilante fights crimes and
+  inspires a great number of weird supervillain-esque characters. I was bummed
+  to see Walter has not expanded this universe, but not all hope was lost. The
+  "story notes" section at the end of the book mentioned this story was written
+  for [Dead Man's Hand: An Anthology of the Weird West][dead] ~~so I am definitely
+  going to read that one~~ and I did read it, [review]({{<relref "#deadmanshand">}}).
+  * I added my favorite quotes from this story below after this new reading.
 * "Margaux": Happens in the "Dread Empires Fall" universe. A serf meets a vapid
   and party-going member of the nobility (with an appointment to the fleet) who
   looks exactly like her. Well, you can probably guess what happens in the
@@ -1917,6 +1919,39 @@ I skipped:
 horror, or maybe I had fatigue from reading the entire book in a few days. I
 read through the first ten pages and realized that is not my thing. Maybe it
 will be your type of story.
+
+### Favorite Quotes from "The Golden Age"
+
+> [Commodore to Condor]
+> 
+> We're all inmates of your private madhouse—none of this would exist without
+> you! This is all part of your demented fantasy, you glibbering moon-calf.
+
+> [Condor to Commodore after the suggestion to got Utah]
+>
+> And how would I foil a polygamist, exactly? Kidnap his wives? I'd end up with
+> a bigger harem than Brigham Young.
+
+> [The Commodore musing what he would ask the Condor after capturing him]
+> 
+> *What are you?* I'll ask. A crusader for justice? A madman in a cloak?—but not
+> simply a madman, but rather a madman who has so infected Alta California with
+> his own brand of lunacy that an entire host of strangers are now donning masks
+> and swirling capes and brawling over the flood of gold coming from the
+> Sierras? Fellow lunatics who, like me, would have simply gone about our lives
+> if we hadn't somehow been chosen to share the Condor's dream?
+
+> [The Commodore in the closing sentences of the story]
+>
+> *I am the Commodore!* What does it matter who or what made me—? I am myself, [...]. It's far to late to quibble over origins, [...]. What matters is the battle to come, the final confrontation between the titan of order and the grand nabob of piracy. The last great fight of the Golden Age.
+>
+> Can you see him? There—a swift shadow against the sun?
+>
+> Can you hear it? Above the sound of the hissing stream, the thrashing paddles,
+> the scream of the whistles? The sound that brings a snarl to my lips, that
+> causes me to brandish my sword in defiance at the diving body in the sky...
+>
+> *Ky-yeeeee*
 
 ## Michael Mersault - The Deep Man 03 - The Presence Malign - 3.5/5 {#deepman03}
 Third book in the Deep Man series. It was originally called a trilogy, but this
@@ -2082,15 +2117,235 @@ resilience.
 
 [According to the author][wjw-comment]:
 
-> Q3 is the last on the contract, though I’ve plotted out six volumes and hope
+> Q3 is the last on the contract, though I've plotted out six volumes and hope
 > to sell them all.
 
 [wjw-comment]: https://www.walterjonwilliams.net/2019/11/all-spoilers/#comment-184915
 
-Fingers crossed! If I were a billionaire I would fund that. I wouldn't imagine
-Walter wanting more than a million dollars for all three books.
+Fingers crossed! If my net worth was over 100-200 million I would fund that. I
+the rights for all three subsequent books being more than a million dollars. You
+could even recoup some of it publishing it. Our rich don't even support arts
+anymore, smh.
 
 Quote from the last few pages. Quillifer is quoting Orlanda:
 
 > You may not live in a world of whispers and enmity without suffering some
 > loss. And in your position, to suffer any loss is to to lose it all.
+
+## John Joseph Adams - Anthology - Dead Man's Hand - 4.5/5 {#deadmanshand}
+I borrowed it from the public library after reading "The Golden Age" in "The
+Best of Walter Jon Williams." It's a great story and I am glad I read this book.
+I anthologies where it looks like stories have been written especially for the
+book and are not already written stories (at least that's what I think happened
+here). The stories are also relatively short with "The Golden Age" being on the
+longer side. I never got tired of them and only skipped one.
+
+It took three hours to write this review and the quote. The song on repeat was
+"Meiko Nakahara - Scorpion."
+
+I loved:
+
+* "The Golden Age" by Walter Jon Williams: My **absolute favorite story** and
+  why I started this book (review above). I read it two more times.
+* "What I Assume You Shall Assume" by Ken Liu: A **very close second favorite**.
+  A wanderer cowboy meets a freedom fighter from China. She introduces her to
+  the power of words. What a great story and I collected many quotes (see below)
+  that I will use in my blogs and presentations. Can't only quote Hafiz and
+  Saadi to a Western audience ;). [Read it on Lightspeed magazine][assume].
+  * Ken has also written "The Hidden Girl" (review above).
+* "The Old Slow Man and His Gold Gun From Space" by Ben H. Winters: The story
+  was certainly unique in the book. Two gold hunters are approached by a man who
+  is seemingly from the dark side of Neptune. He has a gun that can find gold
+  and suggests they partner so he can eat. Allegedly Neptunians eat gold.
+* "Hellfire on the High Frontier" by David Farland: Cowboy (Morgan) goes to a
+  floating city to take revenge on an automaton.
+* "Stingers and Strangers" by Seanan McGuire: Set in the wild west with
+  supernatural beings living amongst humans. A couple are sent to a small town
+  to take care of memory stealing wasps. But the colony is running from
+  something more dangerous.
+  * This is a short story in her [InCryptid series][incryptid], she also has a
+    separate page for [InCryptid short stories][incryptid-short] including this
+    one.
+  * Seanan is also the author of my favorite short stories Crystal Halloway and
+    the Forgotten Passage. Review is above and you can
+    [read it here, too][crys].
+* "Second Hand" by Rajan Khanna: A very interesting story. Some people in the
+  wild west are given a pack of magic playing cards. They can use each to
+  perform magic. The packs are a once in a lifetime opportunity and you are not
+  given a second. Two people with magic packs are following leads on who else
+  can use them. They run into someone who is killing other magic pack users
+  because they think they can repurpose their packs.
+  [Read it on Lightspeed magazine][second] and [interview with the author][raj].
+* "Strong Medicine" by Tad Williams: There's a town that moves in time every
+  midsummer for a day. Every 39 years the shift is massive. A stranger arrives
+  with every big shift to help the town. This year the town has gone into the
+  age of dinosaurs.
+* "Neversleeps" by Fred Van Lente: Magic exists but science is outlawed. A man
+  goes to save a descendant of Nikola Tesla. I loved the setting.
+  [Read it on Lightspeed magazine][never].
+
+[crys]: https://psychopomp.com/fantasy/dec-2011-issue-57/crystal-halloway-and-the-forgotten-passage/
+[incryptid]: https://seananmcguire.com/incryptid.php
+[incryptid-short]:https://seananmcguire.com/icshorts.php
+[second]: https://www.lightspeedmagazine.com/fiction/second-hand/
+[raj]: https://www.lightspeedmagazine.com/nonfiction/author-spotlight-rajan-khanna/
+[never]: https://www.lightspeedmagazine.com/fiction/neversleeps/
+[assume]: https://www.lightspeedmagazine.com/fiction/what-i-assume-you-shall-assume/
+
+I liked:
+
+* "The Red-headed Dead" by Joe R. Lansdale: A cowboy receives orders from God to
+  destroy unholy creatures. This time he is tasked with killing a vampire. I
+  liked the straightforward tone of the story. The setting, the action, and the
+  final conclusion in a few pages.
+* "The Hell-bound Stagecoach" by Mike Resnick: A few murderer cowboys on a
+  stagecoach to Hell take up new jobs in the purgatory instead.
+* "Bookkeeper, Narrator, Gunslinger" by Charles Yu: The town's book keeper and
+  general store owner is challenged to a duel and becomes a very fast and
+  accurate gunslinger overnight. People come to the town by droves to challenge
+  him. It turns out, his new powers came into existence when he needed them. At
+  the end of the story he even becomes a telepath. I liked the story but did not
+  understand where the powers came from. [Read it on Lightspeed magazine][bookkeeper]
+  along with [an interview with the author about it][charles-yu].
+* "The Man With No Heart" by Beth Revis: A man follows a lead to know more about
+  a mechanical spider. He discovers there are other worlds and he is from one of
+  them.
+* "Wrecking Party" by Alastair Reynolds: A man is destroying an early automobile
+  because he has discovered a weird truth. There are machines from other planets
+  here and the humans will eventually become machines themselves.
+* "Hell From the East" by Hugh Howey: A man is tasked with figuring out why a
+  fellow soldier has committed a mass shooting in the army camp. It turns our he
+  was possessed by the sun.
+* "Madam Damnable's Sewing Circle" by Elizabeth Bear: A brothel in the wild west
+  version of Seattle protects two runaways from predators.
+* "Red Dreams" by Jonathan Maberry: A cowboy and his band are hunting Indians.
+  Turns out he is dead and he is looking at the long line of dead people going,
+  well, somewhere. It turned into the serious version of the first chapters of
+  one of my favorite Persian books "Sahra-ye Mahshar" (The Plain of
+  Resurrection) which is a comedy on resurrection day.
+  [See the book's wikipedia page in Farsi][mahshar].
+* "Sundown" by Tobias S. Buckell: In an alternate universe (but not so alternate
+  that racism and civil war doesn't exist hence the name of the story), a black
+  marshall is sent to find an escapee. Turns out a spaceship has crashed close
+  by and most of the town has been possessed by aliens. We even meet Frederick
+  Douglass and a Zeppelin. For some reason the author's name is familiar but
+  doesn't appear on this page. Might be one of the short stories I've read where
+  I didn't note the author's name.
+* "The Devil's Jack" by Laura Anne Gilman: A man has sold his soul to the devil
+  and must do his bidding. He is sent to find ten more men who have done the
+  same, but finds a way to outsmart the devil in this case and save nine of
+  them.
+* "Dead Man's Hand" by Christie Yant: Several newspaper articles depicting the
+  different versions of killing of Wild Bill Hickok (the original guy with the
+  'Dead Man's Hand') by John McCall. Each chapter is named after a poker hand
+  that belonged to the dead party on the table.
+
+[bookkeeper]: https://www.lightspeedmagazine.com/fiction/bookkeeper-narrator-gunslinger/
+[charles-yu]: https://www.lightspeedmagazine.com/nonfiction/author-spotlight-charles-yu-2/
+[mahshar]: https://fa.wikipedia.org/wiki/%D8%B5%D8%AD%D8%B1%D8%A7%DB%8C_%D9%85%D8%AD%D8%B4%D8%B1
+
+I didn't like or skipped:
+
+* "Holy Jingle" by Alan Dean Foster: A cowboy exorcises an ancient Chinese demon
+  from the body of a woman.
+* "Alvin and the Apple Tree" by Orson Scott Card: I skipped the story halfway
+  through. Sorry, not interested in yet another Orson sermon. I mean Gene Wolfe
+  was also very religious but not preachy.
+* "La Madre Del Oro" by Jeffrey Ford: I couldn't connect with the story. I think
+  it was a good enough story, but it was cliche. A kid joins a murderer hunting
+  party and meets demons in the gold mines.
+
+### My Favorite Quotes
+"Hellfire on the High Frontier" by David Farland:
+
+> "Mmm..." the squaw mused. "The world must get rid of the old wonders, so that
+> it can make way for the new."
+
+> But Morgan was on his way out, like the buffalo, and the Indians, and the
+> thunderbirds, and all the other great things in the wide world. The gambler
+> aimed at Morgan's head. There was no shaking in his hands, no hesitation. He
+> pulled the trigger. Thus, a new wonder in the world supplanted an old.
+
+"What I Assume You Shall Assume" by Ken Liu. The title is from 'Song of Myself'
+by Walt Whitman and even ends with this verse from it:
+
+> They are alive and well somewhere,
+> 
+> The smallest sprout shows there is really no death,
+
+**"What I Assume You Shall Assume" by Ken Liu**
+
+> Sister Wen stared at the character. She was weary. "When the heart no longer
+> believes, the magic of words is useless."
+
+> But the magic of writing is strongest in the least skilled ...
+
+> "Our ancestors are dead," Sister Wen said. "But we are alive. If we want
+> something, then we must take it and make it true.
+
+> "I saw a single character shake the foundation of an Empire," she said to
+> Amos. "And you dare tell me that words are mere words. Now, eat."
+
+> "So the magic of words failed," Amos said. He was disappointed. The story had
+> seemed like a fairy tale, one that he wanted to believe in.
+>
+> "No," Yun said. "We just picked the wrong words."
+
+> It was an old story, and a familiar one. Those who sought freedom were tempted
+> by power instead, and became indistinguishable from those they sought to
+> overthrow.
+
+The book has quite a few quotes from Henry David Thoreau's Walden:
+
+> The mass of men lead lives of quiet desperation. What is called resignation is
+> confirmed desperation. From the desperate city you go into the desperate
+> country, and have to console yourself with the bravery of minks and muskrats.
+
+> No way of thinking or doing, however ancient, can be trusted without proof.
+
+> What a man thinks of himself, that it is which determines, or rather
+> indicates, his fate.
+
+It's quite an American patriotic story. And I mean the kind I believe in and not
+the kind you see these days. It even quotes our national anthem:
+
+> Then conquer we must, when our cause it is just,
+> And this be our motto: 'In God is our trust.'
+
+But it was a bit too much even for me, like this quote:
+
+> The Western frontier, like a kite high in the sky, is where the ideals of the
+> Republic take flight and soar, with the stagnant East pulled behind it like a
+> reluctant boy.
+
+Or this one. I mean the words matter as much as the force behind that enforces
+them:
+
+> Yes, it was true. Words did matter. A piece of paper from a court, a little
+> novel, a proclamation, a few amendments to an old parchment—had these not torn
+> a Republic apart and then sewn it back together?
+
+**"Neversleeps" by Fred Van Lente**
+
+> You are trying to remake the world, Edison man. How did you hope to accomplish
+> that without blood and thunder?
+
+> "That is why you are better than your enemies, Edison man. Not because of your
+> body count. Because you are fighting for what is real and true and natural.
+> The world behind their veil of lies and superstition ... The common man, the
+> worker, the peasant, does not need oracles and magicians to get ahead in that
+> world. All she needs is what she was born with. That is what makes us
+> different, Edison man. That is what makes us different." She jabbed a finger
+> into his bare sternum. "And that is why we will win."
+
+**"Dead Man's Hand" by Christie Yant**
+
+> *The whisper of the cards as they're shuffled is a deception, a ritual enacted
+> to make you believe that your hand will be fairly dealt.*
+>
+> The fly that lands on the whiskey glass by the dealer's hand means that the
+> deck is cut three cards deeper than it would have been. The hand you're dealt
+> is not the one that would have been dealt a moment before.
+>
+> Your cards are dealt anew every moment of every day. So are the cards of the
+> other players.
