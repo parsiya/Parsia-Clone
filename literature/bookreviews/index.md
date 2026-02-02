@@ -1850,9 +1850,9 @@ I loved:
   Nano technology and body modifications are around. Guy scams a group of gangs
   out of money but gets poisoned. He is sent to a hospital and the hospital AI
   decides to milk him for all of his savings and provides the real cure when he
-  is almost penny less (now what does that remind me of). He devises a plan to
+  is almost penniless (now what does that remind me of). He devises a plan to
   use a gang of teens to steal the miracle cure from the hospital and sell it.
-* "The Golden Age": **Oh I loved this one. What a setting!**. It's a close
+* "The Golden Age": **Oh I loved this one. What a setting!** It's a close
   second and would be my favorite story of the book if not for Videostar. It's a
   very weird story of a steampunk wild west. The setting is lawless western
   California coast during the gold rush. Condor, a vigilante fights crimes and
@@ -1927,7 +1927,7 @@ will be your type of story.
 > We're all inmates of your private madhouse—none of this would exist without
 > you! This is all part of your demented fantasy, you glibbering moon-calf.
 
-> [Condor to Commodore after the suggestion to got Utah]
+> [Condor to Commodore after suggesting he go to Utah]
 >
 > And how would I foil a polygamist, exactly? Kidnap his wives? I'd end up with
 > a bigger harem than Brigham Young.
@@ -1943,7 +1943,10 @@ will be your type of story.
 
 > [The Commodore in the closing sentences of the story]
 >
-> *I am the Commodore!* What does it matter who or what made me—? I am myself, [...]. It's far to late to quibble over origins, [...]. What matters is the battle to come, the final confrontation between the titan of order and the grand nabob of piracy. The last great fight of the Golden Age.
+> *I am the Commodore!* What does it matter who or what made me—? I am myself,
+> [...]. It's far too late to quibble over origins, [...]. What matters is the
+> battle to come, the final confrontation between the titan of order and the
+> grand nabob of piracy. The last great fight of the Golden Age.
 >
 > Can you see him? There—a swift shadow against the sun?
 >
@@ -2058,8 +2061,8 @@ Finally managed to find all three books in this series in the public library
 same universe, but it's actually part of the first book.
 
 The setting is very similar to "The Three Musketeers." There's some magic, but
-humans cannot use it. Mythical beasts exists but are very rare. The court is
-full of people trying to back stab each other. There are lords who basically
+humans cannot use it. Mythical beasts exist but are very rare. The court is
+full of people trying to backstab each other. There are lords who basically
 don't do much other than collect rent and gamble it away and a somewhat
 permanent underclass of peasants.
 
@@ -2087,8 +2090,7 @@ interesting to me.
 Quillifer doesn't go to war directly this time, but he gets involved in all
 manners of conspiracy in court. Of course, he keeps relations with ladies at
 court (married ones as usual). I do not want to spoil the ending, but he gets
-involved with much more than he bargained for at court. The last part where he
-cashes out that 
+involved with much more than he bargained for at court.
 
 Orlanda is still trying to mess with him, but apart from the beginning, she is
 mostly a nuisance and for some reason has taken an active role in his life.
@@ -2123,19 +2125,19 @@ resilience.
 [wjw-comment]: https://www.walterjonwilliams.net/2019/11/all-spoilers/#comment-184915
 
 Fingers crossed! If my net worth was over 100-200 million I would fund that. I
-the rights for all three subsequent books being more than a million dollars. You
-could even recoup some of it publishing it. Our rich don't even support arts
+doubt the rights for all three subsequent books are more than a million dollars.
+You could even recoup some from publishing them. Our rich don't even support arts
 anymore, smh.
 
 Quote from the last few pages. Quillifer is quoting Orlanda:
 
 > You may not live in a world of whispers and enmity without suffering some
-> loss. And in your position, to suffer any loss is to to lose it all.
+> loss. And in your position, to suffer any loss is to lose it all.
 
 ## John Joseph Adams - Anthology - Dead Man's Hand - 4.5/5 {#deadmanshand}
 I borrowed it from the public library after reading "The Golden Age" in "The
 Best of Walter Jon Williams." It's a great story and I am glad I read this book.
-I anthologies where it looks like stories have been written especially for the
+I like anthologies where it looks like stories have been written especially for the
 book and are not already written stories (at least that's what I think happened
 here). The stories are also relatively short with "The Golden Age" being on the
 longer side. I never got tired of them and only skipped one.
@@ -2148,7 +2150,7 @@ I loved:
 * "The Golden Age" by Walter Jon Williams: My **absolute favorite story** and
   why I started this book (review above). I read it two more times.
 * "What I Assume You Shall Assume" by Ken Liu: A **very close second favorite**.
-  A wanderer cowboy meets a freedom fighter from China. She introduces her to
+  A wanderer cowboy meets a freedom fighter from China. She introduces him to
   the power of words. What a great story and I collected many quotes (see below)
   that I will use in my blogs and presentations. Can't only quote Hafiz and
   Saadi to a Western audience ;). [Read it on Lightspeed magazine][assume].
@@ -2214,7 +2216,7 @@ I liked:
   because he has discovered a weird truth. There are machines from other planets
   here and the humans will eventually become machines themselves.
 * "Hell From the East" by Hugh Howey: A man is tasked with figuring out why a
-  fellow soldier has committed a mass shooting in the army camp. It turns our he
+  fellow soldier has committed a mass shooting in the army camp. It turns out he
   was possessed by the sun.
 * "Madam Damnable's Sewing Circle" by Elizabeth Bear: A brothel in the wild west
   version of Seattle protects two runaways from predators.
@@ -2225,8 +2227,8 @@ I liked:
   Resurrection) which is a comedy on resurrection day.
   [See the book's wikipedia page in Farsi][mahshar].
 * "Sundown" by Tobias S. Buckell: In an alternate universe (but not so alternate
-  that racism and civil war doesn't exist hence the name of the story), a black
-  marshall is sent to find an escapee. Turns out a spaceship has crashed close
+  that racism and civil war don't exist hence the name of the story), a black
+  marshal is sent to find an escapee. Turns out a spaceship has crashed close
   by and most of the town has been possessed by aliens. We even meet Frederick
   Douglass and a Zeppelin. For some reason the author's name is familiar but
   doesn't appear on this page. Might be one of the short stories I've read where
