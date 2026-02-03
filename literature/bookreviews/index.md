@@ -2106,10 +2106,10 @@ to be Queen maker and install Queen Floria. He is now scheming in the royal
 court and dealing with the nobles.
 
 He unveils two separate assassination plots. Goes to war and destroys an entire
-navy. Even defends a city under siege. I did not like the naval battles that much but
-I loved the siege chapters. Unfortunately, for Quillifer, none of this is enough
-to fix his deficit. The consequences of his birth and as a first time lord.
-Floria did so [redacted for spoilers] that even Orlanda was jealous.
+navy. Even defends a city under siege. I did not like the naval battles that
+much but I loved the siege chapters. Unfortunately, for Quillifer, none of this
+is enough to fix his deficit. The consequences of his birth and as a first time
+lord. Floria did so [redacted for spoilers] that even Orlanda was jealous.
 
 Each Quillifer book is written as if Quillifer is narrating the stories to a
 woman. In the previous book it was to d'Altrey and finally to Floria. In this
@@ -2137,10 +2137,10 @@ Quote from the last few pages. Quillifer is quoting Orlanda:
 ## John Joseph Adams - Anthology - Dead Man's Hand - 4.5/5 {#deadmanshand}
 I borrowed it from the public library after reading "The Golden Age" in "The
 Best of Walter Jon Williams." It's a great story and I am glad I read this book.
-I like anthologies where it looks like stories have been written especially for the
-book and are not already written stories (at least that's what I think happened
-here). The stories are also relatively short with "The Golden Age" being on the
-longer side. I never got tired of them and only skipped one.
+I like anthologies where it looks like stories have been written especially for
+the book and are not already written stories (at least that's what I think
+happened here). The stories are also relatively short with "The Golden Age"
+being on the longer side. I never got tired of them and only skipped one.
 
 It took three hours to write this review and the quote. The song on repeat was
 "Meiko Nakahara - Scorpion."
@@ -2258,7 +2258,7 @@ I didn't like or skipped:
   party and meets demons in the gold mines.
 
 ### My Favorite Quotes
-"Hellfire on the High Frontier" by David Farland:
+**"Hellfire on the High Frontier" by David Farland:**
 
 > "Mmm..." the squaw mused. "The world must get rid of the old wonders, so that
 > it can make way for the new."
@@ -2276,6 +2276,8 @@ by Walt Whitman and even ends with this verse from it:
 > The smallest sprout shows there is really no death,
 
 **"What I Assume You Shall Assume" by Ken Liu**
+
+> Words hold magic for the desperate and the hopeful.
 
 > Sister Wen stared at the character. She was weary. "When the heart no longer
 > believes, the magic of words is useless."
@@ -2297,7 +2299,7 @@ by Walt Whitman and even ends with this verse from it:
 > by power instead, and became indistinguishable from those they sought to
 > overthrow.
 
-The book has quite a few quotes from Henry David Thoreau's Walden:
+The story has quite a few quotes from Henry David Thoreau's Walden:
 
 > The mass of men lead lives of quiet desperation. What is called resignation is
 > confirmed desperation. From the desperate city you go into the desperate
@@ -2351,3 +2353,13 @@ them:
 >
 > Your cards are dealt anew every moment of every day. So are the cards of the
 > other players.
+
+**"The Man With No Heart" by Beth Revis**
+
+> The paths across the worlds are complicated and long.
+
+
+**"Red Dreams" by Jonathan Maberry**
+
+> An angel, maybe, he thought bitterly, but if so, then it's sure damn coming
+> for me with a flaming sword.
