@@ -32,6 +32,42 @@ You want to share a Burp project with others without sharing tokens and secrets.
 
 [hackvertor]: https://github.com/hackvertor/hackvertor
 
+## Custom Action
+You can create a custom Repeater action that replaces the value of the `Authorization`
+header with `Bearer <@get_token/>`.
+
+```java
+var req = requestResponse.request();
+var newHeader = HttpHeader.httpHeader("Authorization", "Bearer <@get_token/>");
+var modifiedReq = req.withHeader(newHeader);
+httpEditor.requestPane().set(modifiedReq);
+```
+
+There is one snag here:
+
+1. We have to manually run the custom action for each repeater tab.
+2. Repeater actions have a `Auto-Run on Send` setting but it has to be enabled
+   for each repeater tab individually. If you enable it for my repeater tab, it's not
+   automatically enabled for all others.
+
+My current workflow is:
+
+1. Set a hotkey for `Run last used custom action`. For me it's `ctrl+shift+e`.
+2. I've created a macro on my keyboard set to `fn+r`. When I press it on a
+   request, it does the following with 50ms delay between key presses:
+    1. `ctrl+r` to send the request to Repeater.
+    2. `ctrl+shift+r` to switch to Repeater.
+    3. `ctrl+shift+e` to run the last used custom action.
+    4. `ctrl+space` to send the request.
+
+This works for the most part, but if I use any other action, I need to go and
+run the custom action above once so it becomes the `last used custom action`.
+
+Having a "default custom action" that is shared between repeater tabs will help
+here because I can enable `Auto-Run on Send` and then send a request to repeater
+and send it with one key and not have to worry about what the last used action
+was.
+
 ## Details
 Recently, I was testing an API at work. Unsurprisingly, this API used an
 ~~AAD token~~ Entra ID token which is just a JWT.
@@ -76,8 +112,6 @@ Then I clicked the `Project` menu item and selected `Save copy`.
 
 This allows us to create a copy of the project with just the Repeater tab.
 
-{{< imgcap title="Selecting the tools that will be copied to the new project" src="token-06.png" >}}
-
 And now you can share the project without any secrets.
 
 ![](token-06-oprah.jpg)
@@ -97,9 +131,10 @@ for something you need to do once a day for a few weeks.
 
 A lot of folks automatically update their tokens using Burp macros. There are
 many blog posts showing how to do this. It looks like it's possible to update a
-Hackvertor variable from an extension, but I have not dived into this.
+Hackvertor variable from an extension, but I have not looked into this.
 
 See this [discussion on Twitter][twt] about updating a custom Hackvertor tag
-from a Python script.
+from a Python script. Adding the gist from that Tweet here, too:
+https://gist.github.com/fransr/34a17f59c71d4d525c41284766a48ebe.
 
 [twt]: https://twitter.com/fransrosen/status/1361594153268871168

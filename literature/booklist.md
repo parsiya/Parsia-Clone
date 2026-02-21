@@ -206,7 +206,7 @@ ones I had read.
 | Walter Jon Williams                           | Dread Empire's Fall 02                         | The Sundering                                   | 0317 - 16 Nov 2008                 |
 | Walter Jon Williams                           | Dread Empire's Fall 03                         | Conventions of War                              | 1123 - 17 Nov 2008                 |
 | Walter Jon Williams                           | Hardwired 02                                   | Voice of the Whirlwind                          | 0352 - 18 Nov 2008                 |
-| Walter Jon Williams                           |                                                | Videostar                                       | 1811 - 18 Nov 2008                 |
+| Walter Jon Williams                           | Hardwired                                      | Videostar                                       | 1811 - 18 Nov 2008                 |
 | David Drake                                   | Hammer's Slammers 09 -                         | 0057 04 Dec 2008 - 4th time                     |
 | David Drake                                   | Hammer's Slammers 01                           | Hammer's Slammers                               | 1355 - 04 Dec 2008                 |
 | David Drake                                   | Hammer's Slammers 10                           | Paying The Piper                                | 1850 - 06 Dec 2008                 |
