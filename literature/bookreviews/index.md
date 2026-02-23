@@ -2268,14 +2268,16 @@ I didn't like or skipped:
 > aimed at Morgan's head. There was no shaking in his hands, no hesitation. He
 > pulled the trigger. Thus, a new wonder in the world supplanted an old.
 
-"What I Assume You Shall Assume" by Ken Liu. The title is from 'Song of Myself'
-by Walt Whitman and even ends with this verse from it:
+**"What I Assume You Shall Assume" by Ken Liu**
+
+The title is from 'Song of Myself' by Walt Whitman and even ends with this verse
+from it:
 
 > They are alive and well somewhere,
 > 
 > The smallest sprout shows there is really no death,
 
-**"What I Assume You Shall Assume" by Ken Liu**
+More quotes:
 
 > Words hold magic for the desperate and the hopeful.
 
