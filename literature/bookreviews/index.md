@@ -2346,8 +2346,8 @@ them:
 
 **"Dead Man's Hand" by Christie Yant**
 
-> *The whisper of the cards as they're shuffled is a deception, a ritual enacted
-> to make you believe that your hand will be fairly dealt.*
+> The whisper of the cards as they're shuffled is a deception, a ritual enacted
+> to make you believe that your hand will be fairly dealt.
 >
 > The fly that lands on the whiskey glass by the dealer's hand means that the
 > deck is cut three cards deeper than it would have been. The hand you're dealt
@@ -2365,3 +2365,63 @@ them:
 
 > An angel, maybe, he thought bitterly, but if so, then it's sure damn coming
 > for me with a flaming sword.
+
+## David Boop - Anthology - High Noon on Proxima B - 2/5 {#highnoon}
+
+> It's always high noon on Proxima Centauri b. Original stories about the final frontier.
+
+Website: https://www.baen.com/high-noon-on-proxima-b.html
+
+I had read a similar anthology by David before and liked it. See [Gunfight on Europa Station]({{<relref "#guneuropa">}}) above.
+
+Quick, easy reads. I did not like most of the stories, but each was around 20
+pages, so I finished them all.
+
+I loved:
+
+* "West. World" by Walter Jon Williams: The story is narrated by a movie
+  production assistant. A director wants to shoot a western on a habitat. They
+  import horses and trainers. I liked this narrative twist on the genre.
+
+I liked:
+
+* "Justice and Prosperity" by Milton Davis: Pirates kill a group of miners.
+  Their household robot is resurrected as a war machine with the help of an
+  indentured servant. Classic revenge tale.
+* "Past Sins" by Ward Dayton and Kevin Dilmore: A sheriff has to deal with a
+  bunch of military deserters on his planet. Classic feel-good story.
+* "High Noon on Proxima Centauri B." by Cliff Winnig: A sheriff has to use
+  pistols to deal with some high-tech corporate assassins (due to the EMP
+  field). This is a classic cowboy tale, and the sheriff is even riding an
+  eight-legged lizard in place of a horse.
+* "Harley Takes a Wife" by Ken Scholes: A hermit miner buys an Android wife. He
+  is sent a gunslinger wife by mistake and is invited to the manufacturer's HQ
+  to fix it. Apparently it was all a trap. He finds a wife in the end, though.
+* "Warlock Rules" by Hank Schwaeble: A man is sent to duel with an alien to
+  settle a cross-species dispute. But he was really sent to start a new war
+  with them, so he goes rogue.
+  * I did not understand the ending. His partner suddenly turning into a very
+    resourceful fighter was absurd. If the government wanted him to fail, they
+    would have chosen someone loyal or at least useless instead.
+
+I didn't like:
+
+* "Five Mules for Madame Calypso" by Thea Hutcheson: Set in a space
+  brothel/bordello. A story of corporate vigilantes in space.
+* "Last Round" by Susan R. Matthews: The beginning was very, very confusing. The
+  unreliable narrator puts Severian to shame. A planet is abandoned by corpos
+  after the valuable harvest is done. The corporate guy who wronged the
+  remaining inhabitants returns a few years later and meets his demise because
+  someone never forgot what he did.
+* "Black Box" by Peter J. Wacks: The military returns to an abandoned colony to
+  find almost everyone dead from famine and civil war. They discover the black
+  box of a sentient airship AI, and the readers learn about the civil war from
+  its logs.
+  * I did not like the narrative: "Oh, we forgot about these people after we
+    colonized a planet that can barely sustain life and left them to fend for
+    themselves. How dare they turn savage and start killing each other?"
+* "Planet and the Pig" by Brenda Cooper: People live in space stations and the
+  only habitable planet in the sector is mostly off limits and a big park
+  because the environment was almost destroyed. A family is sent to the planet
+  to steal a live animal in exchange for a place in a habitat.
+  * What was "western" about this story even?
