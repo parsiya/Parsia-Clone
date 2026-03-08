@@ -32,9 +32,31 @@ You want to share a Burp project with others without sharing tokens and secrets.
 
 [hackvertor]: https://github.com/hackvertor/hackvertor
 
+## Automatically Replacing the Token with the Hackvertor Variable
+After sending a request to Repeater I wanted to swap the token with
+`<@get_token/>`.
+
+I originally used a custom action (below), but `Boffman` from Agarri's Discord
+suggested using a session handling rule instead.
+
+1. Search for `Session Handling` in the command palette.
+2. Create a new session handling rule.
+3. Under `Rule Actions` click `Add` and choose `Set a specific header value`.
+    1. Name: `Authorization`.
+    2. Value: `Bearer <@get_token/>`
+4. Select the `Scope` tab.
+5. Under `Tools Scope` keep only `Repeater`.
+    1. Optional: also add `Intruder` and `Scanner`.
+6. Under `URL Scope` select `Include all URLs`.
+    1. Useful for multiple domains or one Hackvertor tag per domain.
+7. Catch: the header is set after the request lands in Repeater, before the first send.
+
 ## Custom Action
-You can create a custom Repeater action that replaces the value of the `Authorization`
-header with `Bearer <@get_token/>`.
+This is not as great, but I am keeping this section because it might come handy
+in the future for another scenario.
+
+You can create a custom Repeater action that replaces the value of the
+`Authorization` header with `Bearer <@get_token/>`.
 
 ```java
 var req = requestResponse.request();
@@ -72,8 +94,9 @@ was.
 Recently, I was testing an API at work. Unsurprisingly, this API used an
 ~~AAD token~~ Entra ID token which is just a JWT.
 
-Hint: If you get such a token, drop it into http://jwt.ms (it's a Microsoft
-website) and the claims section will give a lot more info that the other site.
+Hint: If you get such a token, drop it into http://jwt.ms (Don't Panic! it's a
+Microsoft website) and the claims section will give a lot more info that the
+other site.
 
 I had all the APIs mapped up in nice tab groups in Burp and I wanted to share it
 with my team members so they can easily start poking the API. But I did not
