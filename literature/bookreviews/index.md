@@ -2421,7 +2421,7 @@ I didn't like:
     colonized a planet that can barely sustain life and left them to fend for
     themselves. How dare they turn savage and start killing each other?"
 * "Planet and the Pig" by Brenda Cooper: People live in space stations and the
-  only habitable planet in the sector is mostly off limits and a big park
+  only habitable planet in the sector is mostly off limits and is a big park
   because the environment was almost destroyed. A family is sent to the planet
   to steal a live animal in exchange for a place in a habitat.
-  * What was "western" about this story even?
+  * What was "western" about this story, even?
