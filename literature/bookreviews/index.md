@@ -2403,6 +2403,7 @@ I liked:
   * I did not understand the ending. His partner suddenly turning into a very
     resourceful fighter was absurd. If the government wanted him to fail, they
     would have chosen someone loyal or at least useless instead.
+  * > Every place had rules, the only questions was, how did you learn then, and who enforced them?
 
 I didn't like:
 
@@ -2417,8 +2418,8 @@ I didn't like:
   find almost everyone dead from famine and civil war. They discover the black
   box of a sentient airship AI, and the readers learn about the civil war from
   its logs.
-  * I did not like the narrative: "Oh, we forgot about these people after we
-    colonized a planet that can barely sustain life and left them to fend for
+  * I did not like the narrative: "Oh, we colonized a planet that can barely
+    sustain life and then forgot about them and they were left to fend for
     themselves. How dare they turn savage and start killing each other?"
 * "Planet and the Pig" by Brenda Cooper: People live in space stations and the
   only habitable planet in the sector is mostly off limits and is a big park
