@@ -2360,7 +2360,6 @@ them:
 
 > The paths across the worlds are complicated and long.
 
-
 **"Red Dreams" by Jonathan Maberry**
 
 > An angel, maybe, he thought bitterly, but if so, then it's sure damn coming
@@ -2426,3 +2425,21 @@ I didn't like:
   because the environment was almost destroyed. A family is sent to the planet
   to steal a live animal in exchange for a place in a habitat.
   * What was "western" about this story, even?
+
+## S.M. Stirling - Anthology - The Change: Tales of Downfall and Rebirth - 2/5 - DNF {#change}
+Anthology of stories in the Emberverse by S.M. Stirling where all technology
+stopped working after "the change." I only read some of the stories at random
+and was not able to connect with the universe.
+
+I liked:
+
+* "The Venetian Dialectic" by Walter Jon Williams: Post change Venice and other similar city states. A story of war and betrayal.
+* "Against the Wind" by Lauren C. Teffeau: A father and his kids salvage deserted ships.
+
+I didn't like or skipped:
+
+* "Hot Night at the Hopping Toad" by S.M. Stirling: Bar fight and a whodunnit murder mystery.
+* "The Demons of Witmer Hall" by M.T. Reiten: A couple of scientists in the early days after the change try to figure out what has happened.
+* "The New Normal" by Jody Lynn Nye: A group of people living in the forest as pagans.
+
+I did not read the rest of the stories.

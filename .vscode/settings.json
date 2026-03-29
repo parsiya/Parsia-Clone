@@ -52,5 +52,6 @@
         "Zahn",
         "Zendegi"
     ],
-    "codeQL.githubDatabase.download": "never"
+    "codeQL.githubDatabase.download": "never",
+    "sarif-viewer.connectToGithubCodeScanning": "off"
 }
