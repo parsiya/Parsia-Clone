@@ -2367,7 +2367,7 @@ them:
 
 ## David Boop - Anthology - High Noon on Proxima B - 2/5 {#highnoon}
 
-> It's always high noon on Proxima Centauri b. Original stories about the final frontier.
+> It's always high noon on Proxima Centauri B. Original stories about the final frontier.
 
 Website: https://www.baen.com/high-noon-on-proxima-b.html
 
@@ -2378,7 +2378,7 @@ pages, so I finished them all.
 
 I loved:
 
-* "West. World" by Walter Jon Williams: The story is narrated by a movie
+* "West World" by Walter Jon Williams: The story is narrated by a movie
   production assistant. A director wants to shoot a western on a habitat. They
   import horses and trainers. I liked this narrative twist on the genre.
 
@@ -2388,11 +2388,11 @@ I liked:
   Their household robot is resurrected as a war machine with the help of an
   indentured servant. Classic revenge tale.
 * "Past Sins" by Ward Dayton and Kevin Dilmore: A sheriff has to deal with a
-  bunch of military deserters on his planet. Classic feel-good story.
+  couple of military deserters on his planet. Classic feel-good story.
 * "High Noon on Proxima Centauri B." by Cliff Winnig: A sheriff has to use
   pistols to deal with some high-tech corporate assassins (due to the EMP
   field). This is a classic cowboy tale, and the sheriff is even riding an
-  eight-legged lizard in place of a horse.
+  eight-legged lizard like a horse.
 * "Harley Takes a Wife" by Ken Scholes: A hermit miner buys an Android wife. He
   is sent a gunslinger wife by mistake and is invited to the manufacturer's HQ
   to fix it. Apparently it was all a trap. He finds a wife in the end, though.
