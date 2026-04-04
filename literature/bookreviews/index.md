@@ -2443,3 +2443,250 @@ I didn't like or skipped:
 * "The New Normal" by Jody Lynn Nye: A group of people living in the forest as pagans.
 
 I did not read the rest of the stories.
+
+### Quotes
+
+**From the Introduction:**
+
+> History cannot be completely undone, even by the Change, nor can the past be
+> truly brought back even if you wear its clothes.
+
+> As the saying goes, worldbuilding is good occupational therapy for lunatics
+> who think they’re God, and a lesson in the almost paralyzing complexity and
+> interconnectedness of reality.
+
+**The Venetian Dialectic**:
+
+> The important thing, Foscari thought, was not death, but the life that
+> preceded it, ideally a life in service to an ideal.
+
+**Hot Night at the Hopping Toad:**
+
+> whatever happened to the wheat or barley there was never a failure in the
+> annual crop of fools.
+
+## Alastair Reynolds - Anthology - Beyond The Aquila Rift - 3.5/5 {#aquilarift}
+Alastair Reynolds anthology. A huge book with a few 100-page novellas. Overall a
+good book. I really loved some of the stories, but I also couldn't connect with
+quite a few. Not a lot in-between.
+
+Changed the format from list to headings because the reviews were too long to be
+easily read in lists. Now I can also include the quotes right after the story:
+
+### I Loved
+
+#### Diamond Dogs - Spoilers
+**This is my favorite story in the book.** Holy shit. I almost did not sleep the
+night I read it and dreamed about it and kept thinking about it for a couple of
+days after. The ending was, well, disappointing to me and more frightening than
+horror stories, but mainly because one of my greatest fears is being stuck in an
+unwanted cyborg/machine body. Hence why, in the game Cyberpunk 2077, I never did
+more than the basic augmentations.
+
+It's a classic "murder maze" story. There's an alien structure dubbed "Blood
+Spire." The spire shows increasingly more difficult math puzzles and punishes
+people by killing them when they get it wrong. However, people are allowed to
+leave freely after finishing each puzzle.
+
+A group of people from "Chasm City" (part of the Revelation Space universe)
+attempt to solve the spire. As the puzzles grow more difficult, they add
+physical and mental augmentations to their bodies. In the end, two of them
+become unrecognizable, heavily augmented forms that look like "diamond dogs."
+One of them gives up and leaves the spire with his ex-wife (some augmentation
+but still human), but the guy who did the augmentation has killed himself. When
+they return to Chasm City, a plague has wiped out most of the tech and he is
+stuck in this dog form and has to live in poverty. In the end he seeks passage
+to return to the Spire.
+
+I liked the story and the shock value. The setting was perfect but could have
+been better. The story notes at the end of the book mention this was not
+supposed to be the original ending. I think the original ending was "Richard
+gives up and returns to Chasm City with his ex-wife, but still has the fever and
+returns to the spire."
+
+> I wrote the piece and felt that it had come out fairly well. But Peter
+> Crowther, who'd commissioned it from me, felt that the ending could use an
+> even darker twist. Peter suggested roughly where I might take it, and the
+> result is unquestionably a much better story.
+
+There are holes in the story. For example, their analysis showed the spire has
+all elements of the periodic table except Silver. Nothing is done with this
+info. These smart people with super advanced tech who can 3D print matter just
+hand-wave it. Alastair put the gun on the wall but forgot to shoot it.
+
+I think this was the biggest hole in the story because of the ending change.
+The spaceship had all the tech needed for augmentation and to return one of the
+diamond dogs to human form. When they return to Chasm City, a plague has
+destroyed most of the tech and only "a few people know how to do this anymore."
+But you already have the tech, won't such a spaceship with advanced tech be very
+very valuable in this post-plague city? Won't any of those few do the procedure
+in return for getting the tech? Why weren't they able to at least sell the ship
+with this advanced tech and become rich at least?
+
+While we never know what's at the top of the spire, a different story "Turquoise
+Days" has the answer. These two stories were actually published in the same book
+at one point.
+
+> "Makes you wonder what kind of beings built it," I said. "Whether they had the
+> same hopes and fears as us, or whether they were so far beyond us as to seem
+> like gods."
+
+Oh, a side note: the story was a nod to [Rogue Moon by Algis Budrys][roguemoon]
+and I am going to read it. I saw the local public library system has a copy of
+it "from 1977 apparently?" in storage, so I've requested it. Excited to 1. read
+the story 2. see if it's an original copy, lol. I literally have a copy of
+[Kalila wa-Dimna][kalila] on my desk printed more than 100 years ago, but I
+also want to hold yet another book printed before I was born.
+
+[roguemoon]: https://en.wikipedia.org/wiki/Rogue_Moon
+
+#### Zima Blue
+This is my 2nd favorite story and also my favorite in "Love, Death & Robots."
+The animation's narration is different from the story but stays true to the
+facts. An artist becomes obsessed with a specific shade of blue (Zima Blue).
+Turns out he's a robot and originally a non-thinking pool cleaning robot. Zima
+Blue was the color of the pool tiles. In his final art, he disassembles himself
+and becomes the original mindless robot. Nothing beats the satisfaction of a
+simple job well done.
+
+> 'There's always been something about blue. A thousand years ago Yves Klein
+> said it was the essence of colour itself: the colour that stood for all other
+> colours.
+
+#### Weather
+Another Revelation Space (RS) universe story. Ultras who are spacers with
+ships running Conjoiner engines. An Ultra pirate ship is chasing an Ultra
+trader. The traders manage to defeat it against all odds because of flying
+debris, but their engine is damaged. They find a lone Conjoiner onboard.
+Conjoiners are almost never alone because they need to be part of their mesh
+network and this one is going crazy? The Ultra almost falls in love with the
+Conjoiner and names her Weather. Weather helps fix the engine. It turns out the
+Conjoiner engines are a lot more than meets the eye.
+
+#### Beyond the Aquila Rift
+You might have seen it in "Love, Death & Robots." The animated version was
+mostly faithful to the story, but I think the actual story was better. People
+travel the universe using portals. An alien technology they do not understand
+much. A ship gets lost because of a glitch and ends up far away from the
+civilization "beyond the Aquila rift." The captain wakes up at a space station
+that was built by other survivors of similar glitches. But it turns out the
+station might also not be real.
+
+#### Minla's Flowers
+A cautionary story about not meddling in other civilizations. What a great
+story. A lone spacer in an intelligent ship is searching for a weapon to destroy
+humanity's enemies. He lands on a planet for repairs. The current humans are way
+below in technology and only have flying machines. He informs them their sun
+will die in 70 years. He gives them the basics of technology to get started on
+developing spaceships to flee. The spacer then goes into hibernation and wakes
+up in 20-year intervals. The 2nd time he is asked to give them the technology to
+create atomic bombs in order to unify the planet. Well, you can guess what
+happens after that.
+
+> 'I'm afraid I have to go now. There won't be much time when I get back to Lecythus.'
+> 
+> 'Please,' she said. 'Not like this. Not this way.'
+> 
+> 'This is how it ends,' he said, before turning from her bed and walking to
+> the exit. 'Goodbye, Minla.'
+
+### I Liked
+
+#### Great Wall of Mars
+Part of a universe called Revelation Space (RS). There was a war between the
+Conjoiners and the rest of humanity. Conjoiners add machines to their head and
+become part of a network and achieve "Transenlightenment." At the time of the
+story, Conjoiners have lost the war and are stuck on Mars surrounded by humanity
+to prevent their escape. A current human diplomat and former prisoner of war
+goes to talk to them because they keep trying to leave with shuttles. The other
+humans (instigated by the human's brother who was injured in the war) claim he
+has been killed by the Conjoiners and attack them. It was a nice story and
+somewhat intriguing, but I feel like it needed more information about the
+universe to appreciate it.
+
+#### Fury
+The emperor of humankind is murdered. Well, one of his bodies because his real
+form is guarded in the palace. The bullet has some soil in it from a red planet.
+His faithful sentient robot (think grand vizier) goes off to find the murderer.
+The robot tracks where the soil came from and ends up on Mars. He meets another
+sentient robot, his brother, Fury. Fury assassinated the emperor because he
+wanted to get him out there and show him the evil that the current emperor had
+done on Mars 32000 years ago.
+
+#### Troika - Spoilers
+A Russian cosmonaut escapes a mental facility. He reaches out to an astronaut
+and retells the tale of them going into space and inside an alien artifact where
+they found a human from the future and a music box. He gives the music box to
+the astronaut.
+
+When the authorities arrive, it turns out the astronaut was actually the doctor
+treating the original astronaut and he started thinking he's a different person
+after he was given the music box. Maybe the music box is the way for the future
+humans to spread their cautionary tale.
+
+#### Trauma Pod
+There's a war going on with mostly mechs and AI fighting with very few humans. A
+human is injured in the war. He is kept alive in the trauma pod of a medical
+robot while waiting for rescue. Somehow his personality mixes with the robot and
+now the robot thinks he is the human.
+
+#### The Old Man and the Martian Sea
+In future Mars, the planet is almost terraformed. A teenager flees home via a
+local airship and meets an old guy operating one of the ancient terraforming
+machines. The old man tells the girl about the original settlers and goes back to
+return the helmet of one of the first explorers to one of the original colonies
+and stays there to die. I think the old man was "the original explorer."
+
+### I didn't Like or Skipped
+
+#### The Star Surgeon's Apprentice
+A kid running away from the mob takes passage on a spaceship as a surgeon's
+apprentice. He realizes it's a pirate ship and the slaves on the ship, lobots.
+People who have been lobotomized. He falls in love with one of the lobots and
+discovers how the ship is powered, by two aliens.
+
+It's a typical boy-meets-girl story but in space.
+
+#### The Sledge-maker's Daughter
+After some super advanced war, humans live in the pre-technology era. Around the
+level of tech you see in US westerns. There are still some advanced tech here
+and there. A girl meets a witch who gives her some advice and a healing
+bracelet.
+
+#### Thousandth Night
+In the future, there are groups called "The Line." Each group was created from
+the consciousness of one person called. These beings are almost eternal and have
+very advanced tech. There are also normal humans living on other planets and
+almost never meeting these beings. This Line meets every 200,000 years and they
+share what they have done during this time called "the strand." It's a murder
+mystery with a twist.
+
+#### Sleepover
+This was an interesting setting but I did not like the story. A man was frozen
+in the 21st century to be woken up in the future when humanity has solved
+immortality. He is woken up and most of the 2 billion remaining humans are in
+deep sleep with around 200,000 caretakers.
+
+But why is everyone asleep and what are these magical dragons attacking them?
+
+#### Vainglory
+What was this story even? An artist is tasked to sculpt an asteroid into the
+likeness of Michelangelo's David. The client who ordered the sculpture then
+crashes the asteroid into a location that was supposed to be inhabitable, but
+had illegal inhabitants. Those inhabitants die. A former law enforcement officer
+tracks down the artist and recalls the tale while trying to convince him to
+accept the blame for his part of the incident for glory??
+
+#### The Last Log of the Lachrimosa
+A group of explorers find a cave filled with some ancient horror. I did not like
+the story.
+
+#### The Water Thief
+A woman in a refugee camp in the future does odd jobs controlling robots
+remotely. She finds someone injured on the Moon and instead of sending him to the
+authorities, lets him escape.
+
+#### In Babelsberg
+A sentient probe returns from the edges of the solar system and is doing a tour
+like a famous human astronaut. It turns out he may have committed a crime and
+let one of the original colonies die because of his programming.
