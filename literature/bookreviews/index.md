@@ -103,6 +103,7 @@ of activities on this planet and have this thingamajig that solves it." At least
 3 of them where unnecessary.
 
 ## John Scalzi - The Dispatcher 01 - The Dispatcher - 4/5 {#dispatcher01}
+
 ## John Scalzi - The Dispatcher 02 - Murder by Other Means - 4/5 {#dispatcher02}
 Scalzi writes "Sci-Fi that sells" and I guess I respect that. You gotta earn a
 living. Not every book can be [Old Man's War][old-war].
@@ -158,11 +159,11 @@ I loved:
 I didn't like:
 
 * "Boomers" (ironically, also mirrors the generation mindset) and "Icebreaker"
-were a copy of the typical "non-US country bad" online discourse. 
+  were a copy of the typical "non-US country bad" online discourse.
 * "Magnolia Incident" was "don't complain about the military taking away your
-civil rights because they're the only thing between you and scary aliens and I
-added some ships to this story to include it in this anthology."
-[Starship Troopers][starship-troopers-novel] did this better.
+  civil rights because they're the only thing between you and scary aliens and I
+  added some ships to this story to include it in this anthology."
+  [Starship Troopers][starship-troopers-novel] did this better.
 
 [starship-troopers-novel]: https://en.wikipedia.org/wiki/Starship_Troopers
 
@@ -442,7 +443,8 @@ was amusing, and the last part of the book (and the entire ending) was very very
 cheesy and written like fan fiction.
 
 ## David Boop - Anthology - Gunfight on Europa Station - 4/5 {#guneuropa}
-* [Western stories in space][gunfight]. 
+
+* [Western stories in space][gunfight].
 * [List of stories on bibliocommons][gunfight-list].
 
 I loved. These stories were really creative and blended the genres:
@@ -619,7 +621,7 @@ I loved:
   https://scottlynch.substack.com/p/blame-of-thrones. See my favorite quotes
   from this story at the end of the review.
 * "The Colgrid Conundrum": Two thieves do a drug heist in an industrial (almost
-  steampunk) city. I loved the city and was disappointed to see 
+  steampunk) city. I loved the city and was disappointed to see
   [the author][rich] has not written anything else there, fortunately he has two
   free short stories with the same characters:
   * [The Delusive Cartographer][carto]
@@ -691,7 +693,9 @@ Quotes from "The Smoke of Gold is Glory"
   dull haze. But don't you see? **The smoke of gold ... is glory**."
 
 ## Martha Wells - Murderbot Diaries 02 - All Systems Red - 2/5 {#murderbot02}
+
 ## Martha Wells - Murderbot Diaries 03 - Rogue Protocol - 2/5 {#murderbot03}
+
 ## Martha Wells - Murderbot Diaries 04 - Exit Strategy - 2/5 {#murderbot04}
 The series is popular, but I think it's mid. It's not my cup of tea. The only
 reason I am reading them is because they're small books.
@@ -785,7 +789,7 @@ can reshape or reuse. Is it advanced technology or magic? Doesn't matter, you
 know the famous quote:
 
 > Any sufficiently advanced technology is indistinguishable from magic.
-> 
+>
 > Arthur C. Clarke
 
 The people who can modify these magical items and reshape them are called
@@ -949,7 +953,7 @@ The stories hit too close to home.
 
 William Gibson has a quote "The future is already here, it's just not evenly
 distributed." If I could paraphrase, "The dystopia is already here, it's just
-not evenly distributed." 
+not evenly distributed."
 
 If you know me and my background, you know why I've lived some of the stories.
 Why I moved to Canada (and I am Canadian as of a few weeks ago) exactly one year
@@ -1122,7 +1126,7 @@ I didn't like or skipped:
 ## Jeff Somers - Avery Cates 01 - The Electric Church - 3.5/5 {#electricchurch}
 It's a western book in a cyberpunk setting. There's a fair amount of gunslinger
 action in the book. The main character doesn't use any augmentations and the
-augmented are usually easily defeated by the protagonists. 
+augmented are usually easily defeated by the protagonists.
 
 The "Joint Council" rules the Earth with an iron first. The "System Cops" are
 the ultimate authority. Most people live a desperate life of poverty and die
@@ -1642,7 +1646,7 @@ I loved:
   be infected with a virus that makes them kill women. It turns out this disease
   is induced by some extraterrestrial beings who want a new planet. The last
   sentences of the story is amazing:
-  * "But it wasn't an angel. *I think I saw a real estate agent*." 
+  * "But it wasn't an angel. *I think I saw a real estate agent*."
 * "Heresies of the Huge God" by Brian W. Aldiss: This was a unique story about a
   very giant (continent big) being (the Huge God) landing on Earth and changing
   the Earth's climate leading to the end of the world. It is narrated from the
@@ -1840,7 +1844,7 @@ I had already read some of these like Videostar (read 2008), Daddy's World
 Voice of the Whirlwind and Solip:System are both missing from the reading list
 and I am sure I actually did read them. I've also read The Millennium Party.
 
-I liked most stories in this book. I only skipped the last story. 
+I liked most stories in this book. I only skipped the last story.
 
 I loved:
 
@@ -1916,14 +1920,14 @@ I didn't like:
 I skipped:
 
 * "Wall, Stone, Craft": The only story that I skipped. I generally do not like
-horror, or maybe I had fatigue from reading the entire book in a few days. I
-read through the first ten pages and realized that is not my thing. Maybe it
-will be your type of story.
+  horror, or maybe I had fatigue from reading the entire book in a few days. I
+  read through the first ten pages and realized that is not my thing. Maybe it
+  will be your type of story.
 
 ### Favorite Quotes from "The Golden Age"
 
 > [Commodore to Condor]
-> 
+>
 > We're all inmates of your private madhouse—none of this would exist without
 > you! This is all part of your demented fantasy, you glibbering moon-calf.
 
@@ -1933,7 +1937,7 @@ will be your type of story.
 > a bigger harem than Brigham Young.
 
 > [The Commodore musing what he would ask the Condor after capturing him]
-> 
+>
 > *What are you?* I'll ask. A crusader for justice? A madman in a cloak?—but not
 > simply a madman, but rather a madman who has so infected Alta California with
 > his own brand of lunacy that an entire host of strangers are now donning masks
@@ -2188,7 +2192,7 @@ I loved:
 
 [crys]: https://psychopomp.com/fantasy/dec-2011-issue-57/crystal-halloway-and-the-forgotten-passage/
 [incryptid]: https://seananmcguire.com/incryptid.php
-[incryptid-short]:https://seananmcguire.com/icshorts.php
+[incryptid-short]: https://seananmcguire.com/icshorts.php
 [second]: https://www.lightspeedmagazine.com/fiction/second-hand/
 [raj]: https://www.lightspeedmagazine.com/nonfiction/author-spotlight-rajan-khanna/
 [never]: https://www.lightspeedmagazine.com/fiction/neversleeps/
@@ -2274,7 +2278,7 @@ The title is from 'Song of Myself' by Walt Whitman and even ends with this verse
 from it:
 
 > They are alive and well somewhere,
-> 
+>
 > The smallest sprout shows there is really no death,
 
 More quotes:
@@ -2445,7 +2449,6 @@ I didn't like or skipped:
 I did not read the rest of the stories.
 
 ### Quotes
-
 **From the Introduction:**
 
 > History cannot be completely undone, even by the Change, nor can the past be
@@ -2584,9 +2587,9 @@ create atomic bombs in order to unify the planet. Well, you can guess what
 happens after that.
 
 > 'I'm afraid I have to go now. There won't be much time when I get back to Lecythus.'
-> 
+>
 > 'Please,' she said. 'Not like this. Not this way.'
-> 
+>
 > 'This is how it ends,' he said, before turning from her bed and walking to
 > the exit. 'Goodbye, Minla.'
 
