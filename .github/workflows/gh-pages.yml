@@ -22,6 +22,7 @@ jobs:
         with:
           repository: 'parsiya/parsia-clone'
           path: 'content'
+          submodules: true # Fetch submodules for the clone
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
