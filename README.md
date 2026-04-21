@@ -31,6 +31,18 @@ Also see [ai-docs/markdown-formatting](ai-docs/markdown-formatting/).
 [l1]: https://parsiya.net/blog/machine-god-1/
 [lint]: https://github.com/DavidAnson/markdownlint/
 
+## Updating the submodules
+As I am adding submodules to the repo especially in `ai-docs`. Here are the
+commands to update them all so the GitHub action see and build the latest
+version.
+
+```
+git submodule update --remote
+git add .
+git commit -m "update all submodules"
+git push
+```
+
 ## LLM Usage
 LLM generated documents are clearly marked. I've not started adding LLM
 generated content to this clone yet, but they will have a tag (**TODO**: update
