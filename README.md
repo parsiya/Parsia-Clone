@@ -13,7 +13,7 @@ pages at [parsiya.io][parsiya-io].
 
 [parsiya-io]: https://parsiya.io
 
-## How this site is/was deployed/created:
+## How this site is/was deployed/created
 
 * Current: [Automagically Deploying Websites with Custom Domains to GitHub Pages][github-pages-custom-domain]
 * Old: [Deploying my Knowledge Base at parsiya.io to S3 with Travis CI][deploying-with-travis]
@@ -24,10 +24,12 @@ pages at [parsiya.io][parsiya-io].
 [deploying-with-travis]: https://parsiya.net/blog/2018-04-24-deploying-my-knowledge-base-at-parsiya.io-to-s3-with-travis-ci/
 
 ## Formatting
-Using the [remark VS Code extension][remark] and a custom config in
-[.remarkrc.mjs](.remarkrc.mjs).
+Using the [markdownlint][lint] extension with instructions at
+[Harnessing the Wayward Machine-God, 1: Manual Markdown Cleanup Is a Bug][l1].
+Also see [ai-docs/markdown-formatting](ai-docs/markdown-formatting/).
 
-[remark]: https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-remark
+[l1]: https://parsiya.net/blog/machine-god-1/
+[lint]: https://github.com/DavidAnson/markdownlint/
 
 ## LLM Usage
 LLM generated documents are clearly marked. I've not started adding LLM
