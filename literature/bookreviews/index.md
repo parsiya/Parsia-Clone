@@ -2536,10 +2536,9 @@ at one point.
 
 Oh, a side note: the story was a nod to [Rogue Moon by Algis Budrys][roguemoon]
 and I am going to read it. I saw the local public library system has a copy of
-it "from 1977 apparently?" in storage, so I've requested it. Excited to 1. read
-the story 2. see if it's an original copy, lol. I literally have a copy of
-[Kalila wa-Dimna][kalila] on my desk printed more than 100 years ago, but I
-also want to hold yet another book printed before I was born.
+it "from 1977 apparently?" in storage, so I've requested it. Update, got the
+book and it turns out the book is a reprint from 2020. The book was very
+underwhelming, see the review below.
 
 [roguemoon]: https://en.wikipedia.org/wiki/Rogue_Moon
 
@@ -2693,3 +2692,46 @@ authorities, lets him escape.
 A sentient probe returns from the edges of the solar system and is doing a tour
 like a famous human astronaut. It turns out he may have committed a crime and
 let one of the original colonies die because of his programming.
+
+
+## Algis Budrys - Rogue Moon - 2/5 {#roguemoon}
+I got the book after I read Diamond Dogs from Alastair Reynolds. It was a very
+underwhelming book in multiple facets. 1. I thought the local library copy was
+old, but it was a reprint from 2020, and 2. I kept reading the book for the
+action that never came. The only common thing between the book and Diamond Dogs
+(which was action packed) was the plot.
+
+Humanity has found a structure on the Moon. They have figured out a way to
+transmit consciousness to the Moon and replicate a copy of the body there. The
+body on the Moon and the original on Earth share the same experience for a
+while. They use this method to send people into the structure. The structure has
+a set of unknown rules that humans (well, a wave of clones) try to discover by
+trial and error. Things like "you cannot hold your hand higher than your
+shoulder" or "say yes." If you break one of the rules, you die.
+
+Because the human on Earth and the copy on the Moon share the same sensory data,
+the human on Earth invariably goes crazy after dying in the structure in a very
+brutal way.
+
+The story is about the lead scientist who recruits a half-crazed thrill seeker
+(Al Barker) who finally clears the structure after many deaths. The only action
+was one chapter where the copies of the candidate and the scientist clear the
+structure. Unlike Diamond Dogs, the challenges were mostly physical.
+
+All the characters in the book were messed up human beings. There were a lot of
+minor characters who could have just been omitted from the story with no effect.
+Like Al's girlfriend who threw herself at any man she came across. Like, dude,
+wut?
+
+A good portion of the book was "talking," and the only part that I liked was the
+discussion between the two copies in the end. They talked about themselves not
+being able to go back and even if they could, the copy on Earth is now a
+separate person and going back means two of the same person on Earth.
+
+If you want to read the book, start from chapter five where the scientist
+explains the structure to Al and then the last two chapters where they go into
+the structure and the final discussion. While I liked the final discussion, the
+ending was also underwhelming. Nothing happened after they cleared the
+structure, so lol.
+
+## Alastair Reynolds - Anthology - Beyond The Aquila Rift - 3.5/5 {#galacticnorth}
