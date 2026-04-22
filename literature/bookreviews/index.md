@@ -602,7 +602,7 @@ I am gonna take a break before reading the 3rd book.
 [kalila]: https://en.wikipedia.org/wiki/Kal%C4%ABla_wa-Dimna
 
 ## Gardner Dozois - Anthology - Book of Swords - 4/5 {#bookofswords}
-Fantasy anthology. https://en.wikipedia.org/wiki/The_Book_of_Swords_(anthology).
+Fantasy anthology. <https://en.wikipedia.org/wiki/The_Book_of_Swords_(anthology)>.
 
 Starting from this story I am going to copy my favorite quotes from the books.
 
@@ -618,7 +618,7 @@ I loved:
   Amazing setting and five very interesting characters including the dragon. My
   only regret is not finding the concept art of characters before reading the
   story. Check the middle of this page:
-  https://scottlynch.substack.com/p/blame-of-thrones. See my favorite quotes
+  <https://scottlynch.substack.com/p/blame-of-thrones>. See my favorite quotes
   from this story at the end of the review.
 * "The Colgrid Conundrum": Two thieves do a drug heist in an industrial (almost
   steampunk) city. I loved the city and was disappointed to see
@@ -1392,7 +1392,7 @@ these reviews right after finishing the book.
 
 **My absolute favorite story of the book** was "Crystal Halloway and the
 Forgotten Passage" by Seanan McGuire.You can also read it online at
-https://psychopomp.com/fantasy/dec-2011-issue-57/crystal-halloway-and-the-forgotten-passage/.
+<https://psychopomp.com/fantasy/dec-2011-issue-57/crystal-halloway-and-the-forgotten-passage/>.
 
 I love it, it's amazing! It was one of the most depressingly fantastic stories I
 have ever read. The way we forget our fantasies after we "grow up." Maybe I read
@@ -1406,7 +1406,7 @@ The last few paragraphs are depressing.
 > one who had guided and guarded a hundred generations of human children,
 > nurtured them, loved them, and lost them all—weeping.
 
-![](crystal1.png)
+![last page](crystal1.png)
 
 My favorites (other than the one above):
 
@@ -2373,7 +2373,7 @@ them:
 
 > It's always high noon on Proxima Centauri B. Original stories about the final frontier.
 
-Website: https://www.baen.com/high-noon-on-proxima-b.html
+Website: <https://www.baen.com/high-noon-on-proxima-b.html>
 
 I had read a similar anthology by David before and liked it. See [Gunfight on Europa Station]({{<relref "#guneuropa">}}) above.
 
@@ -2695,10 +2695,10 @@ let one of the original colonies die because of his programming.
 
 ## Algis Budrys - Rogue Moon - 1.5/5 {#roguemoon}
 I got the book after I read Diamond Dogs from Alastair Reynolds. It was a very
-underwhelming book in multiple facets. 1. I thought the local library copy was
+underwhelming book in multiple facets: 1. I thought the local library copy was
 old, but it was a reprint from 2020, and 2. I kept reading the book for the
 action that never came. The only common thing between the book and Diamond Dogs
-(which was action packed) was the plot.
+(which was action-packed) was the plot.
 
 Humanity has found a structure on the Moon. They have figured out a way to
 transmit consciousness to the Moon and replicate a copy of the body there. The
@@ -2708,9 +2708,10 @@ a set of unknown rules that humans (well, a wave of clones) try to discover by
 trial and error. Things like "you cannot hold your hand higher than your
 shoulder" or "say yes." If you break one of the rules, you die.
 
+Roland's clones in Diamond Dogs were based on the wave of clones in this book.
 Because the human on Earth and the copy on the Moon share the same sensory data,
-the human on Earth invariably goes crazy after dying in the structure in a very
-brutal way.
+the human on Earth invariably goes crazy after dying in a very brutal way in the
+structure.
 
 The story is about the lead scientist who recruits a half-crazed thrill seeker
 (Al Barker) who finally clears the structure after many deaths. The only action
@@ -2724,12 +2725,12 @@ wut?
 
 A good portion of the book was "talking," and the only part that I liked was the
 discussion between the two copies in the end. They talked about themselves not
-being able to go back and even if they could, the copy on Earth is now a
-separate person and going back means two of the same person on Earth.
+being able to go back, and even if they could, the copy on Earth is now a
+separate person and there cannot be two of the same person on Earth.
 
-If you want to read the book, start from chapter five where the scientist
-explains the structure to Al and then the last two chapters where they go into
-the structure and the final discussion. While I liked the final discussion, the
+If you want to read the book, start from chapter five, where the scientist
+explains the structure to Al, and then read the last two chapters where they go
+into the structure and the final discussion. While I liked the final discussion, the
 ending was also underwhelming. Nothing happened after they cleared the
 structure, so lol.
 
@@ -2737,36 +2738,160 @@ structure, so lol.
 Another Revelation Space anthology. I skipped "Great Wall of Mars" and "Weather"
 because I had read them in "Beyond the Aquila Rift." The stories are in
 chronological order. "Great Wall of Mars" is right when the Conjoiners flee the
-solar system.
+solar system. I didn't *love* any of the stories. Maybe I just cannot connect
+with the Revelation Space universe.
 
-I didn't _love_ any of the stories.
+Spoilers ahead.
 
-## I Liked
+### I Liked
 
-### 
-
-
-### I didn't Like or Skipped
-
-#### Glacial - Spoilers
+#### Glacial
 This is immediately after "Great Wall of Mars" and when the spaceship with the
 fleeing Conjoiners is looking for a suitable world. It has reached an icy planet
 and has found the remains of a human colony. Everyone is dead except one person
 who has frozen himself. The only other major species on the planet are small
 worms with basic intelligence rummaging through the ice.
 
-The Conjoiners discover the entire colony so it turns into a murder mystery. THe
+The Conjoiners discover the entire colony so it turns into a murder mystery. The
 worms turn out to be sentient as a colony where the entire colony acts with
-intelligence and avoid dangers.The only survivor killed the colony because they
-wanted to harvest the ice that houses the colony and he thought they should not
-kill a sentient being. Then swapped suits with a dead body and assumed his
+intelligence and avoids danger. The only survivor killed the colony because they
+wanted to harvest the ice that housed the colony and he thought they should not
+kill a sentient being. Then he swapped suits with a dead body and assumed his
 identity. The Conjoiners want to leave the man on the planet but he gets violent
 so they kill him and leave the planet without destroying the ice.
 
 #### A Spy in Europa
-A spy is sent to Europa to make contact 
+A spy from a rival colony is sent to Europa to make contact with a long-standing
+informant. He is given a sample of the material used in balloons that are
+keeping their cities floating or so he thinks. As part of the cover he undergoes
+surgery to get gills and other modifications to be able to swim in Europa's
+oceans.
 
-"Dilation Sleep"	Interzone 39	1990–09	5
-"Grafenwalder's Bestiary"	Galactic North	2006	6
-"Nightingale"	Galactic North	2006	7
-"Galactic North"	Interzone 145	1999–07	8
+When he tries to flee he is redirected to the depths where he meets the
+"Denizens." This was my intro to them. The informant had actually designed the
+Denizens as genetically modified beings to live in the depths of Europa's
+oceans. They have been specifically gimped so they can only survive near the
+volcanic vents and not the rest (this is important and used in another story).
+
+When the spy reaches the Denizens, it turns out the informant had put a virus in
+his blood that can liberate the Denizens and he was just a vessel. The whole
+thing about the material and the information was a ruse to get him to the
+Denizens.
+
+### Grafenwalder's Bestiary
+Set in Yellowstone after the Melding Plague and Diamond Dogs. Melding Plague has
+ravaged the planet and Chasm City but some habitats remain. Many people have
+removed their implants. I liked the story because of its many connections to
+Diamond Dogs.
+
+Circle is a group of rich people who collect rare animals. Grafenwalder collects
+species even some sentient ones. He is obsessed with finding a Denizen (from the
+"A Spy in Europa"). At this point, the Denizens are more of a myth. He starts a
+rivalry with a new collector, Ursula Goodglass.
+
+Ursula one-ups Grafenwalder's latest exhibition by displaying the remains of Dr.
+Trintignant. Yes, the character who performed all the modifications and turned
+Richard and Roland to Diamond Dogs. The story mentions Richard has gone back to
+the spire.
+
+When Dr. Trintignant "committed suicide" and disassembled himself in the end of
+Diamond Dogs, he did it in such a way that he could be put back together. His
+mind is alive and all his body parts are in jars as was explained in that
+story.
+
+A seller approaches Grafenwalder to sell him a Denizen. He gives him real
+samples and tissues belonging to a Denizen to convince him he has one. When he
+receives the Denizen he realizes it's not real because the samples are
+different. He tortures the creature trying to communicate with him. Nevertheless
+he is desperate to beat Ursula and claims he has found a real Denizen and
+invites everyone to visit.
+
+Ursula arrives and it turns out Grafenwalder was the person from "A Spy in
+Europa" who sabotaged the Denizens and had his mind wiped. That's why he is
+obsessed with Denizens. The Denizens are almost extinct and Ursula is apparently
+the last one. The story mentions they actually brought down Europa. Ursula has
+put back Dr. Trintignant together and has brought him to "punish" Grafenwalder
+for his sins. He is supposed to be another "exhibit."
+
+### I didn't Like or Skipped
+
+#### Dilation Sleep
+This was "Beyond the Aquila Rift" written in a different way.
+
+A colony ship is escaping Yellowstone and the Melding Plague towards Earth.
+Chasm City from Diamond Dogs is the capital of the Yellowstone planet. The
+Melding Plague is a virus that corrupts implants. It ravaged through Chasm City
+and Yellowstone towards the end of Diamond Dogs. The passengers are in deep
+sleep and the crew are in half-sleep.
+
+One crew member is woken up by the ship's AI. The ship's AI is modeled after the
+crew member's wife who didn't want to make the trip. After going through the
+ship, he encounters a shadow and runs away. The AI tells the crew member that
+one of his colleagues has contracted the plague and he must perform surgery on
+him and remove his implants.
+
+In the middle of the surgery the crew member sees the shadow again and realizes
+he is performing surgery on himself from a virtual reality and the shadow is the
+corruption caused by the Melding Plague.
+
+#### Nightingale
+This is basically "Diamond Dogs" in a different setting.
+
+A planet has had a devastating civil war. After the war a man recruits a group
+of ex-soldiers to go after a war criminal, Jax. Jax is rumored to be in the
+hospital ship Nightingale. Nightingale was created by some charitable rich
+people during the war. It was a hospital spaceship manned by a small crew of
+people and run by an AI.
+
+All recruited people had at some point been treated in the Nightingale. Similar
+to Diamond Dogs, the group goes into the ship without knowing what to expect and
+encounter very weird things. In the end they find the AI and Jax.
+
+The AI has gone somewhat crazy because of a bug in its software because of
+treating the soldiers and then sending them off to the war to be killed and
+injured again. It has decapitated Jax and put him on a wall with all his
+different parts of his body disjointed like a picture. It was supposed to be an
+exhibit showing the bad side of war to prevent another civil war. The AI is Dr.
+Trintignant from Diamond Dogs.
+
+The AI tells the team they can leave right now or they can talk to Jax before it
+kills him and then they can leave. The AI kills Jax and then performs surgery
+and combines all their bodies together like Diamond Dogs. Then it sends this
+abomination back to the planet as a reminder of war being a bad thing.
+
+When humans go back to find it, Nightingale has vanished. No one on the planet
+can undo the damage. Like Diamond Dogs, the main character(s) is stuck in a body
+they don't want (remember when I said that's one of my fears? Thanks Alastair).
+They just hope the planet decides to never have war again and Nightingale
+returns to make them whole again.
+
+### Galactic North
+A captain is transporting colonists and sentient terraforming machines in deep
+sleep on the way to a new colony. The ship has an accident and they have to
+repair it. Pirates attack and torture the captain and her second for the codes
+to the colony ship.
+
+She wakes up finding all the colonists dead and 200 missing. The second in
+command had joined the pirates in return for the captain not getting killed.
+Later she realized she also gave access to the terraforming machines during the
+torture. She is alone in the original ship along with one Conjoiner and the
+former pirate second in command. The pirate was abandoned as punishment after
+she killed three of the four Conjoiners.
+
+This becomes a story of revenge through the ages. Because faster than light
+travel doesn't exist in the RS universe, the passengers go into sleep. She
+follows the pirates for thousands of real-time years (the entire story happens
+around 38,000 years of real time). During that time, she is killed and cloned and the
+clones continue the process. This story becomes a myth in the galaxy.
+
+She catches up to the pirates and meets the clone of her former second in
+command after tens of thousands of years. In the meanwhile, they realize the
+sentient terraforming machines have gone rogue and are destroying all species
+one solar system at a time. They find radio waves of a dying human civilization
+headed by the Conjoiner from the beginning of the story.
+
+When they reach the civilization, she finds her former second in command dead.
+In his ship are the memories of the 200 missing colonists. The captain and the
+remaining humans flee the galaxy and go towards the Galactic North to find a
+place of refuge. They hope to be able to regain their strength and come back to
+take their galaxy back from the terraforming machines.

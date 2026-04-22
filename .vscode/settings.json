@@ -54,4 +54,11 @@
   ],
   "codeQL.githubDatabase.download": "never",
   "sarif-viewer.connectToGithubCodeScanning": "off",
+  "markdownlint.config": {
+    "markdown-format-ascii-arrows": false,
+    "markdown-format-bold-list-code": false,
+    "markdown-format-bold-heading": false,
+    "MD012": false,
+    "MD036": false
+  }
 }
