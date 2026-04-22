@@ -2693,8 +2693,7 @@ A sentient probe returns from the edges of the solar system and is doing a tour
 like a famous human astronaut. It turns out he may have committed a crime and
 let one of the original colonies die because of his programming.
 
-
-## Algis Budrys - Rogue Moon - 2/5 {#roguemoon}
+## Algis Budrys - Rogue Moon - 1.5/5 {#roguemoon}
 I got the book after I read Diamond Dogs from Alastair Reynolds. It was a very
 underwhelming book in multiple facets. 1. I thought the local library copy was
 old, but it was a reprint from 2020, and 2. I kept reading the book for the
@@ -2734,4 +2733,40 @@ the structure and the final discussion. While I liked the final discussion, the
 ending was also underwhelming. Nothing happened after they cleared the
 structure, so lol.
 
-## Alastair Reynolds - Anthology - Beyond The Aquila Rift - 3.5/5 {#galacticnorth}
+## Alastair Reynolds - Anthology - Galactic North - 2.5/5 {#galacticnorth}
+Another Revelation Space anthology. I skipped "Great Wall of Mars" and "Weather"
+because I had read them in "Beyond the Aquila Rift." The stories are in
+chronological order. "Great Wall of Mars" is right when the Conjoiners flee the
+solar system.
+
+I didn't _love_ any of the stories.
+
+## I Liked
+
+### 
+
+
+### I didn't Like or Skipped
+
+#### Glacial - Spoilers
+This is immediately after "Great Wall of Mars" and when the spaceship with the
+fleeing Conjoiners is looking for a suitable world. It has reached an icy planet
+and has found the remains of a human colony. Everyone is dead except one person
+who has frozen himself. The only other major species on the planet are small
+worms with basic intelligence rummaging through the ice.
+
+The Conjoiners discover the entire colony so it turns into a murder mystery. THe
+worms turn out to be sentient as a colony where the entire colony acts with
+intelligence and avoid dangers.The only survivor killed the colony because they
+wanted to harvest the ice that houses the colony and he thought they should not
+kill a sentient being. Then swapped suits with a dead body and assumed his
+identity. The Conjoiners want to leave the man on the planet but he gets violent
+so they kill him and leave the planet without destroying the ice.
+
+#### A Spy in Europa
+A spy is sent to Europa to make contact 
+
+"Dilation Sleep"	Interzone 39	1990–09	5
+"Grafenwalder's Bestiary"	Galactic North	2006	6
+"Nightingale"	Galactic North	2006	7
+"Galactic North"	Interzone 145	1999–07	8
