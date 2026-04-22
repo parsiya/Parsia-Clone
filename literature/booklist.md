@@ -23,53 +23,53 @@ ones I had read.
 
 | Author(s)                                     | Series                                         | Name                                            | Timestamp                          |
 | --------------------------------------------- | ---------------------------------------------- | ----------------------------------------------- | ---------------------------------- |
-| Poul Anderson                                 |                                                | Shield                                          |
-| Poul Anderson                                 |                                                | Sky People                                      |
-| Isaac Asimov                                  |                                                | Dreaming Is a Private Thing                     |
-| Isaac Asimov                                  | Foundation 01                                  | Prelude to Foundation                           |
-| Isaac Asimov                                  | Foundation 02                                  | Foundation                                      |
-| Isaac Asimov                                  | Foundation 03                                  | Foundation and Empire                           |
-| Isaac Asimov                                  | Foundation 04                                  | Forward the Foundation                          |
-| Isaac Asimov                                  | Foundation 05                                  | Foundation's Edge                               |
-| Isaac Asimov                                  | Foundation 06                                  | Foundation and Earth                            |
-| Isaac Asimov                                  |                                                | Hell-Fire                                       |
-| Isaac Asimov                                  | Lucky Starr 02                                 | Pirates Of The Asteroids                        |
-| Isaac Asimov                                  | Galactic Empire 03                             | Pebble In The Sky                               |
-| Robert L. Asprin                              |                                                | The Cold Cash War                               |
-| Brian Aldiss                                  |                                                | Super-Toys Last All Summer Long                 |
-| Arthur C. Clarke                              |                                                | Inheritance                                     |
-| Joe Haldeman                                  | The Forever War 01                             | The Forever War                                 |
-| Joe Haldeman                                  | The Forever War 02                             | A Separate War                                  |
-| Joe Haldeman                                  | The Forever War 03                             | Forever Free                                    |
-| Jerry Pournelle                               | Falkenberg's Legion A                          | The Mercenary                                   |
-| Jerry Pournelle & S.M. Stirling               | Falkenberg's Legion 04                         | Prince of Sparta                                |
-| Jerry Pournelle                               | Falkenberg's Legion 01                         | Falkenberg's Legion                             |
-| H. Beam Piper                                 |                                                | The Cosmic Computer                             |
-| Larry Niven                                   |                                                | Wishing Game                                    |
-| Larry Niven                                   |                                                | Wrong Way Street                                |
-| Robert Heinlein                               |                                                | Orphans Of The Sky                              |
-| Robert Heinlein                               |                                                | The Sixth Column                                |
-| David Weber & John Ringo                      | Empire of Man 01                               | March Upcountry                                 |
-| David Weber & John Ringo                      | Empire of Man 02                               | March To The Sea                                |
-| David Weber & John Ringo                      | Empire of Man 03                               | March To The Stars                              |
-| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 01            | Hitchhiker's Guide to the Galaxy                |
-| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 02            | The Restaurant at the End of the Universe       |
-| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 03            | Life, the Universe, and Everything              |
-| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 04            | So Long, and Thanks for all the Fish            |
-| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 05            | Mostly Harmless                                 |
-| Jim Lester                                    |                                                | Fallout                                         |
-| Robert J. Sawyer                              |                                                | Calculating God                                 |
-| Anne McCaffrey & Elizabeth Moon & Jody L. Nye | Planet Pirates 01-03                           | The Planet Pirates                              |
-| Chris Bunch                                   |                                                | Mirror                                          |
+| Poul Anderson                                 |                                                | Shield                                          |                                    |
+| Poul Anderson                                 |                                                | Sky People                                      |                                    |
+| Isaac Asimov                                  |                                                | Dreaming Is a Private Thing                     |                                    |
+| Isaac Asimov                                  | Foundation 01                                  | Prelude to Foundation                           |                                    |
+| Isaac Asimov                                  | Foundation 02                                  | Foundation                                      |                                    |
+| Isaac Asimov                                  | Foundation 03                                  | Foundation and Empire                           |                                    |
+| Isaac Asimov                                  | Foundation 04                                  | Forward the Foundation                          |                                    |
+| Isaac Asimov                                  | Foundation 05                                  | Foundation's Edge                               |                                    |
+| Isaac Asimov                                  | Foundation 06                                  | Foundation and Earth                            |                                    |
+| Isaac Asimov                                  |                                                | Hell-Fire                                       |                                    |
+| Isaac Asimov                                  | Lucky Starr 02                                 | Pirates Of The Asteroids                        |                                    |
+| Isaac Asimov                                  | Galactic Empire 03                             | Pebble In The Sky                               |                                    |
+| Robert L. Asprin                              |                                                | The Cold Cash War                               |                                    |
+| Brian Aldiss                                  |                                                | Super-Toys Last All Summer Long                 |                                    |
+| Arthur C. Clarke                              |                                                | Inheritance                                     |                                    |
+| Joe Haldeman                                  | The Forever War 01                             | The Forever War                                 |                                    |
+| Joe Haldeman                                  | The Forever War 02                             | A Separate War                                  |                                    |
+| Joe Haldeman                                  | The Forever War 03                             | Forever Free                                    |                                    |
+| Jerry Pournelle                               | Falkenberg's Legion A                          | The Mercenary                                   |                                    |
+| Jerry Pournelle & S.M. Stirling               | Falkenberg's Legion 04                         | Prince of Sparta                                |                                    |
+| Jerry Pournelle                               | Falkenberg's Legion 01                         | Falkenberg's Legion                             |                                    |
+| H. Beam Piper                                 |                                                | The Cosmic Computer                             |                                    |
+| Larry Niven                                   |                                                | Wishing Game                                    |                                    |
+| Larry Niven                                   |                                                | Wrong Way Street                                |                                    |
+| Robert Heinlein                               |                                                | Orphans Of The Sky                              |                                    |
+| Robert Heinlein                               |                                                | The Sixth Column                                |                                    |
+| David Weber & John Ringo                      | Empire of Man 01                               | March Upcountry                                 |                                    |
+| David Weber & John Ringo                      | Empire of Man 02                               | March To The Sea                                |                                    |
+| David Weber & John Ringo                      | Empire of Man 03                               | March To The Stars                              |                                    |
+| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 01            | Hitchhiker's Guide to the Galaxy                |                                    |
+| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 02            | The Restaurant at the End of the Universe       |                                    |
+| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 03            | Life, the Universe, and Everything              |                                    |
+| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 04            | So Long, and Thanks for all the Fish            |                                    |
+| Douglas Adams                                 | Hitchhiker's Guide to the Galaxy 05            | Mostly Harmless                                 |                                    |
+| Jim Lester                                    |                                                | Fallout                                         |                                    |
+| Robert J. Sawyer                              |                                                | Calculating God                                 |                                    |
+| Anne McCaffrey & Elizabeth Moon & Jody L. Nye | Planet Pirates 01-03                           | The Planet Pirates                              |                                    |
+| Chris Bunch                                   |                                                | Mirror                                          |                                    |
 | John Ringo                                    | Aldenata 01                                    | A Hymn Before Battle                            |                                    |
 | John Ringo                                    | Aldenata 02                                    | Gust Front                                      |                                    |
-| John Ringo                                    | Aldenata 03                                    | When The Devil Dances                           |
+| John Ringo                                    | Aldenata 03                                    | When The Devil Dances                           |                                    |
 | John Ringo                                    | Aldenata 04                                    | Hell's Faire                                    |                                    |
 | John Ringo & Cochrane Julie                   | Aldenata 06                                    | Cally's War                                     |                                    |
-| Robert Heinlein                               |                                                | All You Zombies                                 |
-| Robert Heinlein                               |                                                | Bulletin Board                                  |
-| Robert Heinlein                               |                                                | Citizen Of The Galaxy                           |
-| John Steakley                                 |                                                | Armor                                           |
+| Robert Heinlein                               |                                                | All You Zombies                                 |                                    |
+| Robert Heinlein                               |                                                | Bulletin Board                                  |                                    |
+| Robert Heinlein                               |                                                | Citizen Of The Galaxy                           |                                    |
+| John Steakley                                 |                                                | Armor                                           |                                    |
 | Walter Jon Williams                           | Hardwired 01                                   | Hardwired                                       |                                    |
 | Fredrick Brown                                |                                                | Martians Go Home                                | 2005 - 2-3 March                   |
 | Charles Stross                                |                                                | A Boy And His God                               | 0030 - 12 March 2005               |
@@ -92,7 +92,7 @@ ones I had read.
 | Keith Laumer                                  | Bolos 06                                       | Bolo Strike                                     | 2132 - 27 May 2005                 |
 | Keith Laumer                                  | Bolos Anthology 03                             | The Triumphant                                  | 2254 - 29 May 2005                 |
 | John Ringo                                    | Looking Glass 01                               | Into The Looking Glass                          | 2112 - 01 June 2005                |
-| Jack Williamson                               | Afterlife                                      | 1129 - 02 June 2005                             |
+| Jack Williamson                               | Afterlife                                      | 1129 - 02 June 2005                             |                                    |
 | Michael Z. Williamson                         | Freehold 01                                    | Freehold                                        | 0336 - 06 June 2005 - 2nd Time     |
 | Keith Laumer                                  | Bolos Anthology 05                             | Old Guard                                       | 1740 - 08 June 2005                |
 | Kevin Anderson                                |                                                | Resurrection, Inc                               | 0132 - 12 June 2005                |
@@ -156,7 +156,7 @@ ones I had read.
 | David Drake                                   |                                                | Grimmer Than Hell                               | 1930 - 10 Aug 2006                 |
 | David Drake                                   | Hammer's Slammers 10                           | Paying The Piper                                | 1840 - 12 Aug 2006                 |
 | William C. Dietz                              | Legion 05                                      | For More Than Glory                             | 1320 - 15 Aug 2006                 |
-| Jerry Pournelle & S.M. Stirling               | Falkenberg's Legion 03 -  Go Tell the Spartans | 1631 - 18 Aug 2006                              |
+| Jerry Pournelle & S.M. Stirling               | Falkenberg's Legion 03 -  Go Tell the Spartans | 1631 - 18 Aug 2006                              |                                    |
 | Poul Anderson & Gordon Dickson                |                                                | Hoka shorts                                     | 0222 - 19 Aug 2006                 |
 | David Drake                                   |                                                | Redliners                                       | 1506 - 20 Aug 2006 - 2nd time?     |
 | David Drake                                   | RCN 01                                         | With The Lightnings                             | 1903 - 22 Aug 2006                 |
@@ -207,7 +207,7 @@ ones I had read.
 | Walter Jon Williams                           | Dread Empire's Fall 03                         | Conventions of War                              | 1123 - 17 Nov 2008                 |
 | Walter Jon Williams                           | Hardwired 02                                   | Voice of the Whirlwind                          | 0352 - 18 Nov 2008                 |
 | Walter Jon Williams                           | Hardwired                                      | Videostar                                       | 1811 - 18 Nov 2008                 |
-| David Drake                                   | Hammer's Slammers 09 -                         | 0057 04 Dec 2008 - 4th time                     |
+| David Drake                                   | Hammer's Slammers 09 -                         | 0057 04 Dec 2008 - 4th time                     |                                    |
 | David Drake                                   | Hammer's Slammers 01                           | Hammer's Slammers                               | 1355 - 04 Dec 2008                 |
 | David Drake                                   | Hammer's Slammers 10                           | Paying The Piper                                | 1850 - 06 Dec 2008                 |
 | David Drake                                   | Hammer's Slammers 07                           | The Sharp End                                   | 1300 - 08 Dec 2008                 |
@@ -230,7 +230,7 @@ ones I had read.
 | Walter Jon Williams                           |                                                | Daddy's World                                   | 0257 - 13 Jan 2009                 |
 | Walter Jon Williams                           |                                                | Prayers On the Wind                             | 0349 - 13 Jan 2009                 |
 | Michael Z. Williamson                         | Freehold 03                                    | Better to Beg Forgiveness                       | 2351 - 15 Jan 2009                 |
-| Don Wismer                                    | Warrior Planet                                 | 2107 - 16 Jan 2009                              |
+| Don Wismer                                    | Warrior Planet                                 | 2107 - 16 Jan 2009                              |                                    |
 | Robert Buettner                               | Jason Wander 01                                | Orphanage                                       | 1356 - 11 March 2009               |
 | Robert Buettner                               | Jason Wander 02                                | Orphan's Destiny                                | 2040 - 12 March 2009               |
 | Frederik Pohl                                 | The Space Merchants 01                         | The Space Merchants                             | 0300 - 16 March 2009               |

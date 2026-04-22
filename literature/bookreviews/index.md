@@ -2734,6 +2734,13 @@ into the structure and the final discussion. While I liked the final discussion,
 ending was also underwhelming. Nothing happened after they cleared the
 structure, so lol.
 
+> There are the people in the world who act, and the people who scheme. The ones
+> who act get things done; and the ones who scheme try to get credit for it.
+
+> A man is a phoenix, who must be reborn from his ashes, for there is no other
+> like him in the universe. If the wind stirs the ashes into a clumsy parody,
+> then the phoenix is dead forever.
+
 ## Alastair Reynolds - Anthology - Galactic North - 2.5/5 {#galacticnorth}
 Another Revelation Space anthology. I skipped "Great Wall of Mars" and "Weather"
 because I had read them in "Beyond the Aquila Rift." The stories are in
@@ -2777,6 +2784,10 @@ When the spy reaches the Denizens, it turns out the informant had put a virus in
 his blood that can liberate the Denizens and he was just a vessel. The whole
 thing about the material and the information was a ruse to get him to the
 Denizens.
+
+> 'Only trying to make conversation, friend.'
+>
+> 'Don't bother - it's an overrated activity at the best of times.'
 
 ### Grafenwalder's Bestiary
 Set in Yellowstone after the Melding Plague and Diamond Dogs. Melding Plague has
