@@ -2892,8 +2892,8 @@ she killed three of the four Conjoiners.
 This becomes a story of revenge through the ages. Because faster than light
 travel doesn't exist in the RS universe, the passengers go into sleep. She
 follows the pirates for thousands of real-time years (the entire story happens
-around 38,000 years of real time). During that time, she is killed and cloned and the
-clones continue the process. This story becomes a myth in the galaxy.
+around 38,000 years of real time). During that time, she is killed and cloned
+and the clones continue the process. This story becomes a myth in the galaxy.
 
 She catches up to the pirates and meets the clone of her former second in
 command after tens of thousands of years. In the meanwhile, they realize the
@@ -2909,7 +2909,7 @@ take their galaxy back from the machines.
 
 ## Ben Bova - Anthology - The Science Fiction Hall of Fame Vol 2B - ZZ/5 {#fame2b}
 Old school sci-fi anthology. I will need to hunt down the 2A volume. I'd read
-these stories before but I don't remember where:
+these stories before, not sure where, but probably not at the same place:
 
 * The Martian Way
 * Earthman, Come Home
@@ -2922,59 +2922,61 @@ these stories before but I don't remember where:
 #### The Machine Stops by E. M. Forster
 **My favorite story of the book.** The humans have created the machine. Each
 human lives in a pod and all of their needs are met by the machine. Human
-contact is rare. The story mentions how the machine starts breaking down and
-stops.
+contact is rare. The machine starts breaking down and finally stops. We got a
+taste of it when gpt-4o was discontinued and people were revolting. And I guess
+we will see more when the LLM token subsidies end.
 
 #### The Specter General by Theodore R. Cogswell
-An empire has collapsed. A maintenance battalion is living on a planet and
-trains technicians like before as if nothing has happened, even though none of
-them have even seen a spaceship or understand the training. One of the factions
-that has emerged from the empire is also collapsing. Central command keeps
-taking away their technicians. Well, you can see what happens when these two
-factions start a new union.
+A galactic empire has collapsed. A maintenance battalion is living on a planet
+and trains technicians like before as if nothing has happened, even though none
+of them have even seen a spaceship or understand the training. One of the
+factions that has emerged from the empire is also collapsing. Central command
+keeps taking away their technicians. Well, you can see what happens when these
+two factions start a new union.
 
 #### The Moon Moth by Jack Vance
-An officer of the empire goes to a backwater planet where people wear masks all
-the time and speak to each other by singing and playing different instruments. I
-like the idea of using a mask to show one's mood and using different instruments
-to convey the tone and type of the conversation (e.g., a certain musical
-instrument is used when talking between friends.)
+An officer of the empire goes to a backwater planet where people wear never show
+their naked face. They wear masks and speak to each other by singing and playing
+different instruments. I like the idea of using a mask to show one's mood and
+using different instruments to convey the tone and type of the conversation
+(e.g., a certain musical instrument when talking between friends.)
 
 ### I Liked
 
 #### The Martian Way by Isaac Asimov
 Spaceships use water as propellant. A populist Earth politician's election
-campaign is around cutting off the water supply for Mars. A group of Martians go
-to Saturn's moons and return with lots of ice.
+campaign is around cutting off the water supply for Mars and other colonies. A
+group of Martians go to Saturn's moons and return with lots of ice.
 
 #### The Midas Plague by Frederik Pohl
-In the future, humans have automated manufacturing, but do not know how to turn
-it off. In this post scarcity society, everyone must consume an allocated share
-of resources. Lower classes must do it more. For example, a really poor person
-lives in a 27 room home and has to consume a huge amount of food and clothing.
-They can probably work one day a week, if at all. A lower class person realizes
-he can order his robots to use the material for him (e.g., wear their shoes and
-wear them out).
+A new take on a post-scarcity society. Humans have automated manufacturing, but
+do not know how to turn it off so every one has a consumption quota. Humans are
+divided into eight classes. The lower classes must consume more. For example, a
+really poor person lives in a 27 room home and has to consume a huge amount of
+food and clothing. They can probably work one day a week, if at all. A lower
+class person realizes he can order his robots to use the material for him (e.g.,
+walk around with human shoes to wear them out).
 
 #### E for Effort by T. L. Sherred
-A man has found a way to view any time in the past. In order to raise capital,
-they start using it to create historical movies using the real events. After
-becoming rich, they make a movie where they mention how a cabal of world leaders
-is responsible for all wars, and chaos starts. I really like the settings and
-the idea of "making movies from literally the past," but the ending was
-incoherent.
+A man has found a way to view any time in the past. With a partner they start
+making historical movies using real events and raise capital. After becoming
+rich, they make a movie where they mention how a cabal of world leaders is
+responsible for all wars, and chaos starts. I really like the settings and the
+idea of "making movies from literally the past," but the ending was incoherent.
 
 #### In Hiding by Wilmar H. Shiras
 A school psychiatrist studies and befriends a genius student. Most of the story
-is about how the student is super smart and is trying to hide it.
+is about how the student is super smart and is trying to hide it. The kids was
+mutated by a nuclear power plant and there are more like him. The story ends
+implying they will bring about a new world order.
 
 ### I didn't Like or Skipped
 
 #### Earthman, Come Home by James Blish
-A wandering spaceship (called a city) is looking for a planet to settle on. They
-arrive in a place where another city has enslaved the population. The tension
+A wandering spaceship (called a city) is looking for a planet to settle on. It
+arrives on a place where another city has enslaved the population. The tension
 starts between these two cities.
-buy 
+
 #### Rogue Moon by Algis Budrys
 See [review above]({{< relref "#roguemoon" >}}).
 
@@ -2985,7 +2987,7 @@ free her siblings. They all turn out to be from a witch planet with magical
 powers. This turns the captain's work upside down.
 
 #### The Big Front Yard by Clifford D. Simak
-A thinker lives in a small town and keeps to himself. One day his house becomes
-a portal to another planet. For some reason both the US government and UN back
-off and do not interfere with it while he becomes the middleman between the
-aliens and humans.
+A tinkerer and handyman lives in a small town and keeps to himself. One day his
+house becomes a portal to another planet. For some reason both the US government
+and UN back off and do not interfere with this while he becomes the middleman
+between the aliens and humans.
