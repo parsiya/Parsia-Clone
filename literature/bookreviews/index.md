@@ -2789,7 +2789,7 @@ Denizens.
 >
 > 'Don't bother - it's an overrated activity at the best of times.'
 
-### Grafenwalder's Bestiary
+#### Grafenwalder's Bestiary
 Set in Yellowstone after the Melding Plague and Diamond Dogs. Melding Plague has
 ravaged the planet and Chasm City but some habitats remain. Many people have
 removed their implants. I liked the story because of its many connections to
@@ -2876,7 +2876,7 @@ they don't want (remember when I said that's one of my fears? Thanks Alastair).
 They just hope the planet decides to never have war again and Nightingale
 returns to make them whole again.
 
-### Galactic North
+#### Galactic North
 A captain is transporting colonists and sentient terraforming machines in deep
 sleep on the way to a new colony. The ship has an accident and they have to
 repair it. Pirates attack and torture the captain and her second for the codes
@@ -2905,4 +2905,87 @@ When they reach the civilization, she finds her former second in command dead.
 In his ship are the memories of the 200 missing colonists. The captain and the
 remaining humans flee the galaxy and go towards the Galactic North to find a
 place of refuge. They hope to be able to regain their strength and come back to
-take their galaxy back from the terraforming machines.
+take their galaxy back from the machines.
+
+## Ben Bova - Anthology - The Science Fiction Hall of Fame Vol 2B - ZZ/5 {#fame2b}
+Old school sci-fi anthology. I will need to hunt down the 2A volume. I'd read
+these stories before but I don't remember where:
+
+* The Martian Way
+* Earthman, Come Home
+* The Machine Stops
+* The Midas Plague
+* The Big Front Yard
+
+### I Loved
+
+#### The Machine Stops by E. M. Forster
+**My favorite story of the book.** The humans have created the machine. Each
+human lives in a pod and all of their needs are met by the machine. Human
+contact is rare. The story mentions how the machine starts breaking down and
+stops.
+
+#### The Specter General by Theodore R. Cogswell
+An empire has collapsed. A maintenance battalion is living on a planet and
+trains technicians like before as if nothing has happened, even though none of
+them have even seen a spaceship or understand the training. One of the factions
+that has emerged from the empire is also collapsing. Central command keeps
+taking away their technicians. Well, you can see what happens when these two
+factions start a new union.
+
+#### The Moon Moth by Jack Vance
+An officer of the empire goes to a backwater planet where people wear masks all
+the time and speak to each other by singing and playing different instruments. I
+like the idea of using a mask to show one's mood and using different instruments
+to convey the tone and type of the conversation (e.g., a certain musical
+instrument is used when talking between friends.)
+
+### I Liked
+
+#### The Martian Way by Isaac Asimov
+Spaceships use water as propellant. A populist Earth politician's election
+campaign is around cutting off the water supply for Mars. A group of Martians go
+to Saturn's moons and return with lots of ice.
+
+#### The Midas Plague by Frederik Pohl
+In the future, humans have automated manufacturing, but do not know how to turn
+it off. In this post scarcity society, everyone must consume an allocated share
+of resources. Lower classes must do it more. For example, a really poor person
+lives in a 27 room home and has to consume a huge amount of food and clothing.
+They can probably work one day a week, if at all. A lower class person realizes
+he can order his robots to use the material for him (e.g., wear their shoes and
+wear them out).
+
+#### E for Effort by T. L. Sherred
+A man has found a way to view any time in the past. In order to raise capital,
+they start using it to create historical movies using the real events. After
+becoming rich, they make a movie where they mention how a cabal of world leaders
+is responsible for all wars, and chaos starts. I really like the settings and
+the idea of "making movies from literally the past," but the ending was
+incoherent.
+
+#### In Hiding by Wilmar H. Shiras
+A school psychiatrist studies and befriends a genius student. Most of the story
+is about how the student is super smart and is trying to hide it.
+
+### I didn't Like or Skipped
+
+#### Earthman, Come Home by James Blish
+A wandering spaceship (called a city) is looking for a planet to settle on. They
+arrive in a place where another city has enslaved the population. The tension
+starts between these two cities.
+buy 
+#### Rogue Moon by Algis Budrys
+See [review above]({{< relref "#roguemoon" >}}).
+
+#### The Witches of Karres by James H. Schmitz
+A spaceship captain and trader gets into an altercation on a planet and has to
+purchase a slave to get out of trouble. The slave convinces the captain to also
+free her siblings. They all turn out to be from a witch planet with magical
+powers. This turns the captain's work upside down.
+
+#### The Big Front Yard by Clifford D. Simak
+A thinker lives in a small town and keeps to himself. One day his house becomes
+a portal to another planet. For some reason both the US government and UN back
+off and do not interfere with it while he becomes the middleman between the
+aliens and humans.
