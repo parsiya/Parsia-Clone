@@ -2406,7 +2406,7 @@ I liked:
   * I did not understand the ending. His partner suddenly turning into a very
     resourceful fighter was absurd. If the government wanted him to fail, they
     would have chosen someone loyal or at least useless instead.
-  * > Every place had rules, the only questions was, how did you learn then, and who enforced them?
+  * > Every place had rules, the only questions was, how did you learn them, and who enforced them?
 
 I didn't like:
 
