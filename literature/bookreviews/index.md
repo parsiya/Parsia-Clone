@@ -2907,7 +2907,7 @@ remaining humans flee the galaxy and go towards the Galactic North to find a
 place of refuge. They hope to be able to regain their strength and come back to
 take their galaxy back from the machines.
 
-## Ben Bova - Anthology - The Science Fiction Hall of Fame Vol 2B - ZZ/5 {#fame2b}
+## Ben Bova - Anthology - The Science Fiction Hall of Fame Vol 2B - 2.5/5 {#fame2b}
 Old school sci-fi anthology. I will need to hunt down the 2A volume. I'd read
 these stories before, not sure where, but probably not at the same place:
 
@@ -2976,6 +2976,8 @@ implying they will bring about a new world order.
 A wandering spaceship (called a city) is looking for a planet to settle on. It
 arrives on a place where another city has enslaved the population. The tension
 starts between these two cities.
+
+> Steak yesterday and steak tomorrow, but never steak today.
 
 #### Rogue Moon by Algis Budrys
 See [review above]({{< relref "#roguemoon" >}}).
