@@ -449,14 +449,14 @@ cheesy and written like fan fiction.
 
 I loved. These stories were really creative and blended the genres:
 
+* "Doc Holliday 2.0" by Will McCarthy: **My favorite story in the book**. A
+  company creates a clone of an old western Gunslinger to deal with robbers. The
+  clone is coming to terms with his existence.
 * "Greenhorn" by Elizabeth Moon: A new farmer with a hidden agenda arrives in a
   space colony imitating the old wild west.
 * "Hydration" by Alan Dean Foster: A lost prospector does an unusual trade.
 * "Winner Takes All" by Alex Shvartsman: A commando team is extracting the head
   of the resistance (an AI) from a low-technology zone (great setting).
-* "Doc Holliday 2.0" by Will McCarthy: **My favorite story in the book**. A
-  company creates a clone of an old western Gunslinger to deal with robbers. The
-  clone is coming to terms with his existence.
 
 I liked. Western stories in space. Fun to read but nothing to write home about:
 
@@ -2375,7 +2375,8 @@ them:
 
 Website: <https://www.baen.com/high-noon-on-proxima-b.html>
 
-I had read a similar anthology by David before and liked it. See [Gunfight on Europa Station]({{<relref "#guneuropa">}}) above.
+I had read a similar anthology by David before and liked it.
+See [Gunfight on Europa Station]({{<relref "#guneuropa">}}) above.
 
 Quick, easy reads. I did not like most of the stories, but each was around 20
 pages, so I finished them all.
@@ -2993,3 +2994,147 @@ A tinkerer and handyman lives in a small town and keeps to himself. One day his
 house becomes a portal to another planet. For some reason both the US government
 and UN back off and do not interfere with this while he becomes the middleman
 between the aliens and humans.
+
+## David Boop - Anthology - Last Train Outta Kepler-283c - 2.5/5 {#kepler283c}
+The third and last installment in David Boop's series of sci-fi westerns. I've
+read and reviewed the previous two:
+
+* [Gunfight on Europa Station]({{<relref "#guneuropa">}})
+* [High Noon on Proxima B]({{<relref "#highnoon">}})
+
+My problem with this genre is that a lot of stories are just westerns in a
+sci-fi setting. There are literal cows and horses. There were a few in the book
+that were original and I liked them.
+
+### I Loved
+
+#### Living by the Sword by David Mack - Spoilers
+**My favorite story of the series.** A kid and her father live on a frontier
+planet. They are hated by the people because the father is connected to the
+mining company. One day, two town residents try to kill the father, but a woman
+arrives and saves them. The woman knows an extraordinary amount of personal
+information about the kid.
+
+The woman hires the father to check out a remote structure. It's an alien time
+machine. Sheriffs arrive to kill the woman for time travel crimes but the woman
+was anticipating them. The woman is killed but leaves a message for the kid to
+destroy the machine. The woman was the kid from a different timeline where the
+two town residents had killed her father. She had become a rogue outlaw
+searching for ways to go back in time and give herself another chance.
+
+> The human gaze has real weight; never let anyone tell you differently.
+
+> There is nothing at the end of this road but pain.
+
+#### Jasper and the Mare by John E. Stith - Spoilers
+One of the different stories.
+
+Classic cowboy story on a different planet. Jasper and his horse are in a posse
+following a bunch of outlaws. The outlaws bomb the canyon. Jasper narrowly
+escapes but both him and his horse are mortally wounded. When he tries to kill
+the horse, it starts talking to him and heals.
+
+The horse is a shape shifter alien. Some of the species live among the humans
+for fun. When help is about to arrive, the horse kills Jasper because the secret
+must be kept.
+
+> As the prophet once said, "No matter where you go, there you are."
+
+#### The Double R Bar Ranch on Alpha Centauri 5 by David Afsharirad
+I loved this story because it was written in the form of a comedy TV episode.
+
+A frontier planet has been colonized because it has Uranium. The residents start
+seeing a monster and some of them start fleeing. The Uranium also turns out to
+be a fluke.
+
+The monster is an alien and the last of their species. They can shape shift and
+convert matter. They created the Uranium on the planet to get colonists to
+arrive and cure their loneliness. The TV episode was quite cheesy, but I liked
+it.
+
+### I Liked
+
+#### Time Marches On by Kevin Ikenberry
+A peacekeeper (think western Marshal) and her sentient ship AI arrive at a
+remote space station. Things are not as they seem. The station is rundown and a
+mercenary company has taken over the station's security. You know the drill,
+you've read the same western story a hundred times. The addition is a criminal
+who is wanted for creating inter-species creatures.
+
+#### The Rogue Tractor of Sunshine Gulch by Kelli Fitzpatrick
+Another different story.
+
+The main character's work is catching rogue machines who have gone haywire. The
+robots are not sentient, usually something in their programming goes wrong. They
+are caught and their memory is reset.
+
+In this story, they are sent to find a maintenance robot. The intern has
+modified the robot and it has become sentient. Machines are not supposed to be
+sentient by law. The robot has detected messages from the nearest sun indicating
+it will go nova so it has left the work and gone to investigate. The bounty
+hunter comes to an agreement with the robot and the intern.
+
+#### Grace Under Fire by Lezli Robyn
+I liked the story because of the different theme, but the ending was the
+stereotypical feel-good Christmas movie.
+
+A coalition has colonized a planet. Each part of the coalition has its own domed
+city and travel and immigration between domes are strictly prohibited. There are
+exceptions like bounty hunters and smart kids who are given admission to school
+in other domes. Reminds me of myself whose ticket to salvation, if you will, was
+a US student visa and many people despite being smarter and more hardworking
+than me couldn't make it because they were not this lucky. Each city has its own
+local laws.
+
+Grace is a former bounty hunter and runs a brothel in a dome resembling the old
+western society where women had no rights. Her adopted daughter has won a
+scholarship to immigrate to a different dome. A new bartender "elopes" with her.
+
+> Unfortunately, narrow-mindedness becomes short-sightedness, which becomes
+> willful ignorance.
+
+#### Enjoy Every Sandwich by Mark L. Van Name
+A man and a killer robot wanted by the authorities arrive on a planet. The man
+goes into a restaurant to eat. The restaurant is famous for not allowing weapons
+inside so he feels quite safe. A local bounty hunter and her team surround the
+restaurant. While the team leader is in the restaurant with the fugitive, the
+robot stuns the rest of the team.
+
+### I didn't Like or Skipped
+
+#### Last Train to Clarkesville by Sharon Lee and Steve Miller
+A literal western story on another planet. There are alien species that are bred
+for their hide (AKA cows) and other ones used for riding (AKA horses), there are
+even trains. A cowboy has been framed and is running from law enforcement.
+Someone is trying to kill and/or frame all shareholders of a state to sell it.
+
+#### The Ballad of the Junk Heap Gun Man and Mistress Bullet by M. Todd Gallowglas
+I skipped a few pages in.
+
+#### This World Belongs to the Monsters by Dr. Chesya Burke
+The story is a parallel to missionaries colonizing the Americas. Humanity has
+colonized the stars with a dogmatic religion (coalition). Their main
+antagonist is "Mary, Queen of Wagons" who once defied them.
+
+A messenger is sent to Mary to ask for help. The coalition is fighting a losing
+war on a planet where magical god-like creatures protect the population. Mary
+reaches the planet and meets with the creatures. They are Gods of that planet.
+Humanity had one on Earth but forgot about it (Mary literally mentions this is
+the Abrahamic religions' God) and twisted the religion. Mary and the Gods of all
+planets band together to free the humans from the coalition.
+
+#### Support Your Local Audit Chief by D. J. Butler
+Classic western story. Cowboys arrive in a small town and try to sexually
+assault the residents. The townspeople with regular jobs stop them.
+
+#### Last Transport to Kepler-283c by Christopher L. Smith - Spoilers
+Train hijack story in space. A group of outlaws board a spaceship to hijack it.
+One of them kills the only guard and they start in-fighting. One of them turns
+out to be a sheriff. He lets the only one with a conscience escape for a second
+chance.
+
+#### Not My Problem by Mel Todd
+A man running from law enforcement arrives in a colony to refuel. The colony is
+abandoned so he tries to find a way out. As time goes by he sees shadows and
+becomes mad because some sort of alien mold has taken over the air recycling
+system.
