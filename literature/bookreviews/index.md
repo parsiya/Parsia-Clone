@@ -3138,3 +3138,178 @@ A man running from law enforcement arrives in a colony to refuel. The colony is
 abandoned so he tries to find a way out. As time goes by he sees shadows and
 becomes mad because some sort of alien mold has taken over the air recycling
 system.
+
+## David Boop - Anthology - Last Train Outta Deadwood - 3.5/5 {#deadwood}
+Weird western anthology by David Boop. These are actually better than his sci-fi
+western series I've reviewed (see "Last Train Outta Kepler-283c" just above).
+These actually have more western in them.
+
+### I Loved
+
+#### Pinkerton's Prey by Frog and Esther Jones
+**My favorite story of the book.** In this western, some people are "summoners."
+They can summon things, for example, animals or inanimate objects like tents and
+stoves. A summoner outlaw and his gang are stealing the payrolls of a mining
+company, so they hire a Pinkerton.
+
+The Pinkerton and the representative of the mining company are on the payroll
+train when the outlaw hits it. The hired gun doesn't do anything. The
+representative is furious. The Pinkerton says his contract covers killing the
+summoner and not defending the train so he will follow their trail and snipe the
+outlaw from afar the morning after they make camp.
+
+The representative insists on accompanying the Pinkerton despite him saying it's
+dangerous. They catch up to the outlaw camp, where the representative tries to
+infiltrate it despite the Pinkerton warning him not to, and gets caught by the
+summoner. The summoner then summons the Pinkerton to the camp to kill him, but
+the Pinkerton is actually a stronger summoner (the agency only sends summoners
+after summoner outlaws). The Pinkerton kills the whole gang, and then the
+representative because the agency's secret must be preserved.
+
+#### Doth Make Thee Mad by Jane M. Lindskold
+A gunslinger lady and schoolteacher is recruited by a small town to teach their
+school. The previous teacher heavily punished the students for every simple
+mistake until he actually killed one. Then he disappeared.
+
+A few students disappear after they make small mistakes even though the new
+teacher does not punish them. So the new teacher, who is also a werewolf, lays
+out a trap. The old teacher has turned himself into some sort of monster and is
+punishing the missing children in some sort of hell. The werewolf kills him.
+
+> There is a time to set a wolf to guard the flocks.
+
+> "Much learning doth make thee mad." This is a Bible quote and is said in
+> relation to the old teacher going mad because he thought he was too smart for
+> his students.
+
+#### The Spinners by Jennifer Campbell-Hicks - Spoiler
+Monkey's paw. The spinners grant favors but they are not always as they seem.
+
+A lady has lost her husband, who had been a childhood friend of both her and her
+dead sister. She goes to the spinners to bring him back. The spinners ask her to
+do a favor. Her husband returns, but he is from a parallel universe and has a
+kid there. The lady goes to the spinners again and does another favor to bring
+his kid to this world.
+
+The kid misses his mother. In that parallel world, the husband had married her
+sister instead of her. She goes to the spinners to send them back to their
+original world. The spinners reveal that everyone who is being moved between
+worlds is actually doing it out of their own volition and for example the
+husband also wanted to leave his world. The lady must give herself to the
+spinners to make it happen, which she does.
+
+#### The Stoker and the Plague Doctor by Alex Acks
+In an alternate western some people have magical powers. For example the plague
+doctors can heal people, and the stokers can talk to trains and power them with
+their magic.
+
+A plague doctor recruits a stoker on death row, convicted of sending a train
+into a crowd, to get him to a small town that has been plagued by a
+deathly illness.
+
+### I Liked
+
+#### The Greatest Horse Thief in History by D. J. Butler
+500 horses have gone missing and the ranch owners think it was the work of their
+experienced worker. The worker says it was stolen by "indians." A guy who can
+speak with the dead arrives and realizes a few native Americans were buried here
+and their angry spirits stole the horses. He makes a bargain with them to get
+the horses back.
+
+#### Sunlight and Silver by Jeff Mariotte - Spoiler
+A photographer has been hired to travel to a small town to photograph the dead
+children from a pandemic. On the way, he meets a guy looking for work, and they
+travel to the town together. The town is very strange, but the pay is good. He
+returns to his own city after his work is done. A few months later he sees that
+the kids in the photographs have faded away as if they were never in them.
+
+He is hired to go to the small town again and photograph dead children again.
+When he gets there he finds out the kids are alive. The people in the town
+had a ritual where they would sacrifice a human in return for their children
+coming back to life (hence why they had been removed from the photographs). They
+had sacrificed the worker he had found on the first trip, and they sacrifice the
+photographer on the second.
+
+#### The Relay Station at Wrigley's Pass by Derrick Ferguson
+A bounty hunter is in search of an outlaw. He thinks the outlaw is going to the
+relay station at Wrigley's Pass. There is a coach that comes there once a month
+and takes people "where they want to go." On the way he meets a couple who also
+want to use the coach to go somewhere else after their child had died. They had
+hired someone to get them there, but the guard had taken all of their belongings.
+
+They all reach the station and are greeted by the caretaker. The guard who had
+robbed the couple also arrives and there is some tension, but the bounty hunter
+defuses the situation. The outlaw and his two men arrive and there's a gunfight.
+
+#### Not Fade Away by Cliff Winnig - Spoiler
+A woman is running away from a monster. She reaches a deserted town. There's no
+one around except chalk drawings of people on the ground. She goes to a church to
+find a little girl, the only survivor. The town had a mine and something bad
+came from the mine. The pastor summoned a golem to defeat it.
+
+The golem attacked people and turned them to chalk. The lady and the kid take
+refuge in the church. The golem kills the monster. The lady kills the golem but
+the creature from the mine has kidnapped the little girl. She goes into the mine
+and kills the ancient creature.
+
+#### The Petrified Man by Betsy Dornbusch
+A guy is called into a town to take care of an undead who is killing the
+population. It's an OK story.
+
+> ... scraping the rock for silver without pause in underground hells fueled by
+> steam power and prayers.
+
+> Everyone deserved justice in death, even if they hadn't quite deserved it in
+> life.
+
+### I didn't Like or Skipped
+
+#### Cookie by Shane Lacy Hensley
+The heroes of the west are gathered in one place. An evil force sends a
+poisonous plague in the form of a little girl to town to take care of them. The
+humble cook, "Cookie," takes care of her.
+
+#### A Talk With My Mother by Charlaine Harris
+A girl is the result of a magician raping a woman. The girl goes and kills the
+magician. The father being a magician has no bearing on the story.
+
+#### The Doctor and the Spectre by Michael D. Resnick
+The famous gunslinger Doc Holliday says "This is funny" before dying. This is
+the story. Doc Holliday is sick and his current girlfriend is taking care of
+him. Death comes to take her away but Doc makes a bargain with death to take him
+instead. Death says he cannot take the doctor because he still needs to kill
+someone. Doc is too sick to kill anyone and death comes and takes him.
+
+I didn't get the story. I was expecting Doc to start some grand adventure or
+at least a gunfight to kill the hypothetical enemy, but nothing happened and
+nothing was funny on his deathbed to warrant the "this is funny" comment.
+
+#### Bigger Than Life by Steve Rasnic Tem
+It's the gold rush. A guy goes around and asks every woman to marry him. This
+usually ends with him being beaten up. Finally, when he is running away from
+such a crowd, he encounters two giant snail-like creatures. The male eats him
+because he thinks the guy is proposing to his mate. Supposed to be funny, but
+not for me.
+
+#### Dreamcatcher by Marsheila Rockwell
+A Catholic priest admonishes a woman with magical powers and forbids her to make
+dreamcatchers for his congregation. The lady was making them to save the
+children from angry spirits of those who were unjustly killed. The children fall
+ill or die and the lady takes the priest to a cave and binds him to some magical
+form
+so he can fight off the demons on his own for eternity and keep them away from
+his congregation.
+
+#### El Jefe de la Comancheria by Mario Acevedo
+A bounty hunter duo (one is a vampire) capture the son of a powerful magician.
+The magic and the weirdness were only minor points in the story. The main plot
+had nothing to do with them.
+
+#### Stands Twice and the Magpie Man by Stephen Graham Jones - Spoiler
+A native American village is slaughtered. One survivor cannot die but is
+followed around by a magpie. Long story short, he puts the magpie into a
+humanoid corpse, goes to town, and takes revenge.
+
+#### Blood Lust and Gold Dust by Travis Heermann
+An evil spirit has come to a town and is turning people into zombies. Four
+heroes battle through the town to kill it.
