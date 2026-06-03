@@ -3142,7 +3142,7 @@ system.
 ## David Boop - Anthology - Last Train Outta Deadwood - 3.5/5 {#deadwood}
 Weird western anthology by David Boop. These are actually better than his sci-fi
 western series I've reviewed (see "Last Train Outta Kepler-283c" just above).
-These actually have more western in them.
+These actually have a lot more western in them.
 
 ### I Loved
 
