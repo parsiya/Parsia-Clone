@@ -2908,7 +2908,7 @@ remaining humans flee the galaxy and go towards the Galactic North to find a
 place of refuge. They hope to be able to regain their strength and come back to
 take their galaxy back from the machines.
 
-## Ben Bova - Anthology - The Science Fiction Hall of Fame Vol 2B - 2.5/5 {#fame2b}
+## Ben Bova - Anthology - The Science Fiction Hall of Fame Vol 2B - 3.5/5 {#fame2b}
 Old school sci-fi anthology. I will need to hunt down the 2A volume. I'd read
 these stories before, not sure where, but probably not at the same place:
 
