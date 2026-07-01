@@ -3313,3 +3313,104 @@ humanoid corpse, goes to town, and takes revenge.
 #### Blood Lust and Gold Dust by Travis Heermann
 An evil spirit has come to a town and is turning people into zombies. Four
 heroes battle through the town to kill it.
+
+## David Boop - Anthology - Last Train Outta Dodge City - 3.5/5 {#dodgecity}
+
+### I Loved
+
+#### Stealing Thunder From the Gods by Kim May
+**My favorite story of the book. I loved the title.**
+
+An airship operated by a husband-and-wife team is transporting passengers and an
+exotic creature as cargo. A large magical bird appears in their way and wants to
+stop them. The bird is a Native American deity and has come to free their child
+(the cargo).
+
+#### Junior & Me by Harry Turtledove
+A bit confusing, but a nice and quick read. It's in a western setting but "the
+natives" are kind of alien creatures. A man is riding shotgun on a coach and is
+protecting it against the natives. During the trip, the man adopts newly born
+native and names him "Junior."
+
+Apparently, it's the prequel to the novelette [Bonehunters][bonehunters].
+
+[bonehunters]: https://turtledove.fandom.com/wiki/Bonehunters
+
+#### Ghost Men of Sunrise Mesa by Jonathan Maberry
+A bounty hunter is dispatched to find someone's brother killed in a mine. After
+arriving at the mine he meets a lady with a futuristic microwave pistol who has
+arrived from the future with a time machine.
+
+The lady is from a future race of humans who has fallen prey to their
+genetically engineered servants. The servants use them for food like cattle. The
+lady is the daughter of a human who invented a time machine and went to the
+future and liberated the humans. Some servants have followed her here to take
+over the past. The lady and the bounty hunter take care of them but in the
+process all time machines are destroyed so they both continue living in the present
+time.
+
+> The sun was slightly to the west and, from that angle, it chased the shadows
+> deep inside the opening. Only, they retreated just so far and then coalesced
+> into an impenetrable wall of utter blackness.
+
+### I Liked
+
+#### The Hoodoo Man and the Midnight Train by Joe R. Lansdale
+Interesting story. A kid works for a "Hoodoo Man" (Hoodoo is a type of magic
+here). The man is atoning for his old sins by having to do good deeds for
+people. Another person involved with magic who is also atoning for his sins
+comes to the Hoodoo Man. The objective is to get an innocent lady out of the
+Midnight Train (a train where souls are tortured).
+
+#### As Long as Grass Shall Grow by Mercedes Lackey
+Another interesting story. An Earth magic user is sent to find someone. The
+missing person (also a magic user) asks him to take part in a land rush to claim
+a specific parcel of land. He joins forces with a lady who is an Air magic user.
+The parcel of land is magical and inhabited by great elementals. A native
+American magic user is there and helps him defend it against invaders.
+
+#### A Simple Pine Box by James Van Pelt
+Fun story about a traveling photographer who finds a magical casket. Sleeping in
+it appears to cure illnesses.
+
+#### Fang for Fan, Fire for Blood by Ava Morgan
+OK story. A werewolf lady is living a normal life in a western town. She kills
+an evil vampire.
+
+#### Rara Lupus by Julie Frost
+Interesting setting. The writing was not that great so it's not in the "loved"
+section.
+
+A werewolf lady is part of a circus. A werewolf man takes her away to a hideout.
+In the hideout are three extraterrestrial aliens who are studying Earth. The
+aliens' experimentation is what caused both of them to be werewolves. They
+cannot cure her correctly so she stays in a state between human and wolf.
+
+The circus owner comes and captures her to take her back. She and the other
+werewolf overpower the owner and his lackeys and take over the circus.
+
+#### Kachina by James A. Moore
+Two hunters (one being a Native American shapeshifter) defeat an ogre.
+
+#### The Murder of the Rag Doll Kid by David Boop
+Rag Doll Kid has been killed. His ghost goes around town to solve his own murder
+and take revenge.
+
+### I didn't Like or Skipped
+
+#### The Dead Can't Die Twice by Samantha Lee Howe
+A dead gambler's soul possesses people and kills those who have betrayed him.
+
+#### The Adventures of Rabbi Shlomo Jones and the Half-Baked Kid by Eytan Kollin
+A Rabbi creates a stone golem to clear out a mine occupied by Native Americans.
+He wants to do it without bloodshed but his employers have other things in mind.
+
+#### Finding Home by Irene Radford
+A group of kids with heritage going back to Eastern Europe with a magical evil
+housegod are trying to start a mill(?) in a forest. Sasquatches who own the
+forest attack them. They get the housegod to negotiate with the Sasquatches and
+go to a town to set up their enterprise.
+
+#### Hell-bent by Tex Thompson
+I mostly skimmed this story. A traveling snakeoil medicine salesman is scammed
+by magical creatures.
