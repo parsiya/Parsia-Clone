@@ -802,7 +802,7 @@ out after looking at the cover for the 3rd book.)
 
 The story has a huge gaping hole. I am going to try and not spoil it. Pal
 acquires his first kingdom and castle. In the kingdom there's an ancient
-artifact that acts like an all-seeing eye. You think of anyone and it will give
+artifact that acts as an all-seeing eye. You think of anyone and it will give
 you a live feed of them and their immediate surrounding. The artifact is never
 used. In the last part of this book Pal nearly dies because a certain person is
 missing. No one, including Pal thinks of using this artifact to locate that
@@ -3414,3 +3414,112 @@ go to a town to set up their enterprise.
 #### Hell-bent by Tex Thompson
 I mostly skimmed this story. A traveling snakeoil medicine salesman is scammed
 by magical creatures.
+
+## John Joseph Adams - Anthology - Lost Worlds & Mythological Kingdoms - 2.5/5 {#lostworlds}
+
+### I Loved
+
+#### Pellargonia: A Letter to the Journal of Imaginary Anthropology by Theodora Goss
+**My favorite story of the book.** A few high school students invent a country
+named Pellargonia. They start creating wikipedia pages and internet content
+around it. The country suddenly comes into existence.
+
+#### The Voyage of Brenya by Carrie Vaughn
+Their Gods left their land a long time ago and went West. The raiders are
+attacking and prayers are unanswered. Brenya sails West to find the land of the
+Gods and ask for help. After a long journey she reaches the island and meets the
+Gods in human form. She is sent back and when she returns the raiders are gone.
+
+#### Out of the by Dark James L. Cambias
+Great world building and not so great characters as is tradition with Mr.
+Cambias. The story happens in the Billion Worlds universe (search in the page
+for a few books in this universe, I quite like it). Two pilots reach an
+abandoned habitat and try to investigate if it can be salvaged. In order for the
+habitat to be salvageable, either no one should be on the habitat or the should
+not have the knowledge to maintain it.
+
+The habitat has become a jungle and has some very primitive humans. After a few
+encounters, one of the remains (as the person who can maintain it) to invalidate
+the salvage title and keep the residents alive.
+
+#### On the Cold Hill Side by Seanan McGuire
+An island appears and disappears off the coast every few decades. A few
+scientists are sent to investigate.
+
+### I Liked
+
+#### The Cleft of Bones by Kate Elliott
+On an island there are slaves and masters. The slaves are treated brutally. The
+oldest slave works in the archive/library and is well read. The sea pulls back
+and the land under the sea becomes visible. She remembers something from the
+books about a similar phenomenon in the past where the sea came crushing back
+and took over the island. She sends callers around to gather all the slaves and
+bring them to the library which is one of the highest points of the island. When
+fleeing they go into a temple inside "the cleft of bones" and see the statues of
+some lizard people who were the original inhabitants of the island.
+
+#### Comfort Lodge, Enigma Valley by Charles Yu
+A novel way to tell a story. Series of social media reviewing an inn with a
+portal to other worlds(?).
+
+#### Down in the Dim Kingdoms by Tobias S Buckell
+Grandpa discovered a land inside the Earth and enslaved the people like a
+conqueror. Now Grandpa and his family are going down for one last visit before
+he passes away. The narrator is his unscrupulous grand daughter.
+
+#### Hotel Motel Holiday Inn by Dexter Palmer
+Quick story about traveling salespersons narrating strange and super natural
+hotels and accommodations.
+
+#### There, She Didn't Need Air to Fill Her Lungs by Cadwell Turnbull
+First, the title rocks. A group of friends go to Nepal and start a voyage
+towards a tree on top of a high mountain. As they get closer, things become more
+magical when finally they reach and it's the gateway to another world.
+
+### I didn't Like or Skipped
+
+#### The Light Long Lost at Sea by An Owomoyela
+It was well written, but I couldn't connect with the story. Some magic remnants
+of an old empire persist. A few people visit the living echo of a long dead
+city.
+
+#### The Expedition Stops for the Evening at the Foot of the Mountain Pass by Genevieve Valentine
+I mean, what? There's an expedition to a volcano? and apparently the members are
+not supposed to return. This is their story as they are camping before the last
+stop.
+
+#### Those Who Have Gone by C.C. Finlay
+Asshole guy takes his girlfriend on a motorcycle camping trip to propose. He
+also destroys a bunch of sacred artifacts. He gets what he deserved. Cliche!
+
+#### An Account, by Dr. Inge Kühn, of the Summer Expedition and Its Discoveries by E. Lily Yu
+The Earth is becoming uninhabitable because of ecological disasters. Three
+scientists discover a barely surviving civilization of humans living inside the
+Earth. Two stay and one returns. No one believes him.
+
+#### Endosymbiosis by Darcie Little Badger
+A group of oceanographers are on a ship to go and study a phenomenon in a remote
+location. They are taken by the sirens of the seas.
+
+#### The Orpheus Gate by Jonathan Maberry
+Someone finally repairs and activates a portal device built by their grandfather
+and Tesla. The device is a portal between this world and the next and where
+ghosts should go. After activating the portal all the ghosts are gone.
+
+#### The Return of Grace Malfrey by Jeffrey Ford
+A lady was taken to a different world. The other world has magical creatures but
+is very mundane. She had to work in factory and gave birth to, well, herself??
+
+#### The Tomb Ship by Becky Chambers
+A salvage pilot discovers an old spaceship full of gold and riches that belonged
+to a long dead queen. She gives it away to the colonies that were ravaged by the
+queen.
+
+
+
+
+
+
+
+
+

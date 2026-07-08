@@ -420,3 +420,5 @@ anthologies. Surprisingly, they have a great collection of SF books.
 | David Boop                                                      | Anthology                    | [Last Train Outta Kepler-283c]({{<relref "bookreviews.md#kepler283c">}})                                            | 2148 - 24 May 2026               |
 | David Boop                                                      | Anthology                    | [Straight Outta Deadwood]({{<relref "bookreviews.md#deadwood">}})                                                   | 2155 - 01 Jun 2026               |
 | David Boop                                                      | Anthology                    | [Straight Outta Dodge City]({{<relref "bookreviews.md#dodgecity">}})                                                | 1103 - 13 Jun 2026               |
+| John Joseph Adams                                               | Anthology                    | [Lost Worlds & Mythological Kingdoms]({{<relref "bookreviews.md#lostworlds">}})                                     | 0056 - 30 Jun 2026               |
+
