@@ -3,7 +3,7 @@ Note: US citizens do not show up here. US permanent residents records are also
 spotty.
 
 Entry/exit records especially via the land border are mixed up. Neither country
-has exist checks so it relies on the other side to report. "Uncontrolled
+has exist checks so it relies on the other side to report. "non-controlled
 Canadians" (the term is hilarious but it's actually the immigration jargon)
 which are basically Canadians who enter as a visitor like you via land or sea
 may or may not get an I-94 so their travel records are very prone to this issue.
